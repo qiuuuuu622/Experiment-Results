@@ -1,0 +1,314 @@
+[
+  {
+    "remote_path": "/root/dsv41-vision-20261107/source/vllm/models/deepseek_v4/common/vision.py",
+    "relative": "vllm/models/deepseek_v4/common/vision.py",
+    "loaded_sha256": "a8e4c34d9b15f075d1b8a2c01138a5b786138669434db104eb0bc5656d89500c",
+    "local_sha256": "a8e4c34d9b15f075d1b8a2c01138a5b786138669434db104eb0bc5656d89500c",
+    "match": true,
+    "comparison_status": "identical_source"
+  },
+  {
+    "remote_path": "/root/dsv41-vision-20261107/source/vllm/models/deepseek_v41/common/mm_preprocess.py",
+    "relative": "vllm/models/deepseek_v41/common/mm_preprocess.py",
+    "loaded_sha256": "cd891a7842e9aef118a391ec6e6f804dcc2adefc3692095ca8a615f5107d5fb5",
+    "local_sha256": "cd891a7842e9aef118a391ec6e6f804dcc2adefc3692095ca8a615f5107d5fb5",
+    "match": true,
+    "comparison_status": "identical_source"
+  },
+  {
+    "remote_path": "/root/dsv41-vision-20261107/source/vllm/models/deepseek_v41/common/vl_cudagraph.py",
+    "relative": "vllm/models/deepseek_v41/common/vl_cudagraph.py",
+    "loaded_sha256": "a10dfc708123c86c5feac1f9f03d0bf5945f5790de6c3cb9e7315c2a4ee8b9d9",
+    "local_sha256": "a10dfc708123c86c5feac1f9f03d0bf5945f5790de6c3cb9e7315c2a4ee8b9d9",
+    "match": true,
+    "comparison_status": "identical_source"
+  },
+  {
+    "remote_path": "/root/dsv41-vision-20261107/source/vllm/models/deepseek_v41/nvidia/vl_model.py",
+    "relative": "vllm/models/deepseek_v41/nvidia/vl_model.py",
+    "loaded_sha256": "ff2c16614dc694f0c07a45929def3c76f30cb547f897b57c18c70bb99587171c",
+    "local_sha256": "ff2c16614dc694f0c07a45929def3c76f30cb547f897b57c18c70bb99587171c",
+    "match": true,
+    "comparison_status": "identical_source"
+  },
+  {
+    "remote_path": "/root/dsv41-vision-20261107/source/vllm/v1/worker/encoder_cudagraph.py",
+    "relative": "vllm/v1/worker/encoder_cudagraph.py",
+    "loaded_sha256": "dcb11e8f73c44bec22dff8af37e23c1c411314a7690cf3a1a401b673768b4bc6",
+    "local_sha256": "dcb11e8f73c44bec22dff8af37e23c1c411314a7690cf3a1a401b673768b4bc6",
+    "match": true,
+    "comparison_status": "identical_source"
+  },
+  {
+    "remote_path": "/root/dsv41-vision-20261107/source/vllm/v1/worker/encoder_cudagraph_defs.py",
+    "relative": "vllm/v1/worker/encoder_cudagraph_defs.py",
+    "loaded_sha256": "bb7be050fcaa8868e7816c84caec875da57050d65fe7eaf00f3d41473df25e3a",
+    "local_sha256": "bb7be050fcaa8868e7816c84caec875da57050d65fe7eaf00f3d41473df25e3a",
+    "match": true,
+    "comparison_status": "identical_source"
+  },
+  {
+    "remote_path": "/usr/local/lib/python3.12/dist-packages/vllm/distributed/device_communicators/__init__.py",
+    "relative": "vllm/distributed/device_communicators/__init__.py",
+    "loaded_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "local_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "match": true,
+    "comparison_status": "identical_source"
+  },
+  {
+    "remote_path": "/usr/local/lib/python3.12/dist-packages/vllm/distributed/device_communicators/aiter_custom_all_reduce.py",
+    "relative": "vllm/distributed/device_communicators/aiter_custom_all_reduce.py",
+    "loaded_sha256": "ca1a61d9a5dac3674db695eee9f854979aaac58008b42711df2dde5e4f192dcf",
+    "local_sha256": "ca1a61d9a5dac3674db695eee9f854979aaac58008b42711df2dde5e4f192dcf",
+    "match": true,
+    "comparison_status": "identical_source"
+  },
+  {
+    "remote_path": "/usr/local/lib/python3.12/dist-packages/vllm/distributed/device_communicators/all_reduce_utils.py",
+    "relative": "vllm/distributed/device_communicators/all_reduce_utils.py",
+    "loaded_sha256": "b41e3ab17e21d81c7516cbef29850b0096ad3efd73d23538300af652ffce42d6",
+    "local_sha256": "b41e3ab17e21d81c7516cbef29850b0096ad3efd73d23538300af652ffce42d6",
+    "match": true,
+    "comparison_status": "identical_source"
+  },
+  {
+    "remote_path": "/usr/local/lib/python3.12/dist-packages/vllm/distributed/device_communicators/base_device_communicator.py",
+    "relative": "vllm/distributed/device_communicators/base_device_communicator.py",
+    "loaded_sha256": "e50d348c1818cd3ef4fc6451ccbcd23ee269226b6ef71dac705c48c7dac85715",
+    "local_sha256": "e50d348c1818cd3ef4fc6451ccbcd23ee269226b6ef71dac705c48c7dac85715",
+    "match": true,
+    "comparison_status": "identical_source"
+  },
+  {
+    "remote_path": "/usr/local/lib/python3.12/dist-packages/vllm/distributed/device_communicators/cuda_communicator.py",
+    "relative": "vllm/distributed/device_communicators/cuda_communicator.py",
+    "loaded_sha256": "2f5368d6ca1856a7b2b49fc423cc4728483d0c9289f913a7bc7cbe0baa040ec0",
+    "local_sha256": "2f5368d6ca1856a7b2b49fc423cc4728483d0c9289f913a7bc7cbe0baa040ec0",
+    "match": true,
+    "comparison_status": "identical_source"
+  },
+  {
+    "remote_path": "/usr/local/lib/python3.12/dist-packages/vllm/distributed/device_communicators/cuda_wrapper.py",
+    "relative": "vllm/distributed/device_communicators/cuda_wrapper.py",
+    "loaded_sha256": "c5d3ad54260dbab5f81961d8722371b463da7da24dd89dfc129ac86e3497fe11",
+    "local_sha256": "c5d3ad54260dbab5f81961d8722371b463da7da24dd89dfc129ac86e3497fe11",
+    "match": true,
+    "comparison_status": "identical_source"
+  },
+  {
+    "remote_path": "/usr/local/lib/python3.12/dist-packages/vllm/distributed/device_communicators/custom_all_reduce.py",
+    "relative": "vllm/distributed/device_communicators/custom_all_reduce.py",
+    "loaded_sha256": "d3ad720ac93e0b94f9ff032dbda8a41308929d68c674f8bad85343d64f1b823b",
+    "local_sha256": "d3ad720ac93e0b94f9ff032dbda8a41308929d68c674f8bad85343d64f1b823b",
+    "match": true,
+    "comparison_status": "identical_source"
+  },
+  {
+    "remote_path": "/usr/local/lib/python3.12/dist-packages/vllm/distributed/device_communicators/flashinfer_all_reduce.py",
+    "relative": "vllm/distributed/device_communicators/flashinfer_all_reduce.py",
+    "loaded_sha256": "a568184b2209e3679cc3d385518825452c38de0ca3c2d1c9ce416e2c995f95dc",
+    "local_sha256": "a568184b2209e3679cc3d385518825452c38de0ca3c2d1c9ce416e2c995f95dc",
+    "match": true,
+    "comparison_status": "identical_source"
+  },
+  {
+    "remote_path": "/usr/local/lib/python3.12/dist-packages/vllm/distributed/device_communicators/flashinfer_pcie_ipc_all_reduce.py",
+    "relative": "vllm/distributed/device_communicators/flashinfer_pcie_ipc_all_reduce.py",
+    "loaded_sha256": "8b67b0fc356a565095f56b475cc89c513e3a5eff051ab1c52e5beb0c1a79e9f2",
+    "local_sha256": "8b67b0fc356a565095f56b475cc89c513e3a5eff051ab1c52e5beb0c1a79e9f2",
+    "match": true,
+    "comparison_status": "identical_source"
+  },
+  {
+    "remote_path": "/usr/local/lib/python3.12/dist-packages/vllm/distributed/device_communicators/pynccl.py",
+    "relative": "vllm/distributed/device_communicators/pynccl.py",
+    "loaded_sha256": "4c51becc2ebfd41910526b93d7bd8e9e36312df444fdfb55fa2fbc92b0f8f88e",
+    "local_sha256": "4c51becc2ebfd41910526b93d7bd8e9e36312df444fdfb55fa2fbc92b0f8f88e",
+    "match": true,
+    "comparison_status": "identical_source"
+  },
+  {
+    "remote_path": "/usr/local/lib/python3.12/dist-packages/vllm/distributed/device_communicators/pynccl_allocator.py",
+    "relative": "vllm/distributed/device_communicators/pynccl_allocator.py",
+    "loaded_sha256": "5eb6108ef0c8c2b83ff8d312b70a9e60203939edc04461bd4c54cadd30b1ff6b",
+    "local_sha256": "5eb6108ef0c8c2b83ff8d312b70a9e60203939edc04461bd4c54cadd30b1ff6b",
+    "match": true,
+    "comparison_status": "identical_source"
+  },
+  {
+    "remote_path": "/usr/local/lib/python3.12/dist-packages/vllm/distributed/device_communicators/pynccl_wrapper.py",
+    "relative": "vllm/distributed/device_communicators/pynccl_wrapper.py",
+    "loaded_sha256": "ce63c8da57bb88d4cf89956bd70bb63f0f44bfad468ddb37b765611551f6d99f",
+    "local_sha256": "ce63c8da57bb88d4cf89956bd70bb63f0f44bfad468ddb37b765611551f6d99f",
+    "match": true,
+    "comparison_status": "identical_source"
+  },
+  {
+    "remote_path": "/usr/local/lib/python3.12/dist-packages/vllm/distributed/device_communicators/quick_all_reduce.py",
+    "relative": "vllm/distributed/device_communicators/quick_all_reduce.py",
+    "loaded_sha256": "37642241f6ff2e2ff16744d5323ab30c49b29ab85f3ce6a077a89df3045fc057",
+    "local_sha256": "37642241f6ff2e2ff16744d5323ab30c49b29ab85f3ce6a077a89df3045fc057",
+    "match": true,
+    "comparison_status": "identical_source"
+  },
+  {
+    "remote_path": "/usr/local/lib/python3.12/dist-packages/vllm/distributed/device_communicators/shm_broadcast.py",
+    "relative": "vllm/distributed/device_communicators/shm_broadcast.py",
+    "loaded_sha256": "8b122fa8a8ae05a489c2a15069e67d17b626da5d9939524f088cda2ef3c1d75b",
+    "local_sha256": "8b122fa8a8ae05a489c2a15069e67d17b626da5d9939524f088cda2ef3c1d75b",
+    "match": true,
+    "comparison_status": "identical_source"
+  },
+  {
+    "remote_path": "/usr/local/lib/python3.12/dist-packages/vllm/distributed/device_communicators/shm_object_storage.py",
+    "relative": "vllm/distributed/device_communicators/shm_object_storage.py",
+    "loaded_sha256": "9f78b4f7b2ed8254c459f8bc006ea44e42a6af07b56524847ef35007db38bfe5",
+    "local_sha256": "9f78b4f7b2ed8254c459f8bc006ea44e42a6af07b56524847ef35007db38bfe5",
+    "match": true,
+    "comparison_status": "identical_source"
+  },
+  {
+    "remote_path": "/usr/local/lib/python3.12/dist-packages/vllm/distributed/device_communicators/symm_mem.py",
+    "relative": "vllm/distributed/device_communicators/symm_mem.py",
+    "loaded_sha256": "b06e3ddb9ae880a30ec4a103ce32eb9794223bb0293832e89572af28adaaa544",
+    "local_sha256": "b06e3ddb9ae880a30ec4a103ce32eb9794223bb0293832e89572af28adaaa544",
+    "match": true,
+    "comparison_status": "identical_source"
+  },
+  {
+    "remote_path": "/usr/local/lib/python3.12/dist-packages/vllm/distributed/device_communicators/xpu_communicator.py",
+    "relative": "vllm/distributed/device_communicators/xpu_communicator.py",
+    "loaded_sha256": "a87dbe139946e447e42f35a72d50873acb54c0534371e694f013cae87806ae5a",
+    "local_sha256": "a87dbe139946e447e42f35a72d50873acb54c0534371e694f013cae87806ae5a",
+    "match": true,
+    "comparison_status": "identical_source"
+  },
+  {
+    "remote_path": "/usr/local/lib/python3.12/dist-packages/vllm/distributed/parallel_state.py",
+    "relative": "vllm/distributed/parallel_state.py",
+    "loaded_sha256": "0e47cff9a89717183bdce6403f0454961848247f51306a0f1dfbe3d6e1b93336",
+    "local_sha256": "0e47cff9a89717183bdce6403f0454961848247f51306a0f1dfbe3d6e1b93336",
+    "match": true,
+    "comparison_status": "identical_source"
+  },
+  {
+    "remote_path": "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/layers/linear.py",
+    "relative": "vllm/model_executor/layers/linear.py",
+    "loaded_sha256": "7a9b90937865fa35d955ffc2017f23d3997bc4fba954e2667870b1b4854a38e0",
+    "local_sha256": "7a9b90937865fa35d955ffc2017f23d3997bc4fba954e2667870b1b4854a38e0",
+    "match": true,
+    "comparison_status": "identical_source"
+  },
+  {
+    "remote_path": "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/models/vision.py",
+    "relative": "vllm/model_executor/models/vision.py",
+    "loaded_sha256": "c6936825b529a59d12e5249fba69a4d0376988aded198b7391e443ee6d455ca8",
+    "local_sha256": "c6936825b529a59d12e5249fba69a4d0376988aded198b7391e443ee6d455ca8",
+    "match": true,
+    "comparison_status": "identical_source"
+  },
+  {
+    "remote_path": "/usr/local/lib/python3.12/dist-packages/vllm/ir/ops/activation.py",
+    "relative": "vllm/ir/ops/activation.py",
+    "loaded_sha256": "68a99983e8c24da224f0869899e888ebcc343b078b070aae2c5f3749872abe98",
+    "local_sha256": "68a99983e8c24da224f0869899e888ebcc343b078b070aae2c5f3749872abe98",
+    "match": true,
+    "comparison_status": "identical_source"
+  },
+  {
+    "remote_path": "/usr/local/lib/python3.12/dist-packages/vllm/kernels/triton/activation.py",
+    "relative": "vllm/kernels/triton/activation.py",
+    "loaded_sha256": "6c63e9a6f3245cd4f7dcb2d8c483a55c607d31ebb5b5f4973a5df475081b4ae9",
+    "local_sha256": "6c63e9a6f3245cd4f7dcb2d8c483a55c607d31ebb5b5f4973a5df475081b4ae9",
+    "match": true,
+    "comparison_status": "identical_source"
+  },
+  {
+    "remote_path": "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/layers/activation.py",
+    "relative": "vllm/model_executor/layers/activation.py",
+    "loaded_sha256": "bebeddbd4997f49f54471ee31ac42b22c3c11dfe25244e55d20c36f390489c05",
+    "local_sha256": "bebeddbd4997f49f54471ee31ac42b22c3c11dfe25244e55d20c36f390489c05",
+    "match": true,
+    "comparison_status": "identical_source"
+  },
+  {
+    "remote_path": "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/layers/attention/mm_encoder_attention.py",
+    "relative": "vllm/model_executor/layers/attention/mm_encoder_attention.py",
+    "loaded_sha256": "336e665cd84574d72185338018e0860850032d0ee39f584acaa64181243e0aba",
+    "local_sha256": "336e665cd84574d72185338018e0860850032d0ee39f584acaa64181243e0aba",
+    "match": true,
+    "comparison_status": "identical_source"
+  },
+  {
+    "remote_path": "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/layers/fused_moe/activation.py",
+    "relative": "vllm/model_executor/layers/fused_moe/activation.py",
+    "loaded_sha256": "d955095c44b8de4954da61efa01f2e360eda76f4724eb53dd98d7b8f5cb9048f",
+    "local_sha256": "d955095c44b8de4954da61efa01f2e360eda76f4724eb53dd98d7b8f5cb9048f",
+    "match": true,
+    "comparison_status": "identical_source"
+  },
+  {
+    "remote_path": "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/layers/fusion/quant_activation.py",
+    "relative": "vllm/model_executor/layers/fusion/quant_activation.py",
+    "loaded_sha256": "2a906ce3925f06bfc672d9b24ccc578a54f09d881b947f8d3e3306dea89b5534",
+    "local_sha256": "2a906ce3925f06bfc672d9b24ccc578a54f09d881b947f8d3e3306dea89b5534",
+    "match": true,
+    "comparison_status": "identical_source"
+  },
+  {
+    "remote_path": "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/layers/quantization/utils/humming/activation.py",
+    "relative": "vllm/model_executor/layers/quantization/utils/humming/activation.py",
+    "loaded_sha256": "0f5c667252d31034ea44d2529fcede54379429715f634b6c2ca99e8b38f57eda",
+    "local_sha256": "0f5c667252d31034ea44d2529fcede54379429715f634b6c2ca99e8b38f57eda",
+    "match": true,
+    "comparison_status": "identical_source"
+  },
+  {
+    "remote_path": "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/model_loader/weight_utils.py",
+    "relative": "vllm/model_executor/model_loader/weight_utils.py",
+    "loaded_sha256": "a8fd6c258774406b4611474a351c1e64ac320cda21d9e8f10d648ebaf621f7b8",
+    "local_sha256": "a8fd6c258774406b4611474a351c1e64ac320cda21d9e8f10d648ebaf621f7b8",
+    "match": true,
+    "comparison_status": "identical_source"
+  },
+  {
+    "remote_path": "/usr/local/lib/python3.12/dist-packages/vllm/transformers_utils/configs/deepseek_v41.py",
+    "relative": "vllm/transformers_utils/configs/deepseek_v41.py",
+    "loaded_sha256": "0eca0d67503f92e668078626ea60856aaa2a5f2afff87d565f6c02e08eb88630",
+    "local_sha256": "0eca0d67503f92e668078626ea60856aaa2a5f2afff87d565f6c02e08eb88630",
+    "match": true,
+    "comparison_status": "identical_source"
+  },
+  {
+    "remote_path": "/usr/local/lib/python3.12/dist-packages/vllm/vllm_flash_attn/__init__.py",
+    "relative": "vllm/vllm_flash_attn/__init__.py",
+    "loaded_sha256": "68d256feb9db6c1c397dc1458f6b42e2bbdc66429ae14d6a2d41c27ef0dbd878",
+    "local_sha256": "68d256feb9db6c1c397dc1458f6b42e2bbdc66429ae14d6a2d41c27ef0dbd878",
+    "match": true,
+    "comparison_status": "identical_source"
+  },
+  {
+    "remote_path": "/usr/local/lib/python3.12/dist-packages/vllm/vllm_flash_attn/_vllm_fa2_C.abi3.so",
+    "relative": "vllm/vllm_flash_attn/_vllm_fa2_C.abi3.so",
+    "loaded_sha256": "3a0c7b066b55301f5446089f6398b21f18fbd70e578f33d7ea00e310ca89e15d",
+    "local_sha256": null,
+    "match": false,
+    "comparison_status": "no_local_binary_for_comparison"
+  },
+  {
+    "remote_path": "/usr/local/lib/python3.12/dist-packages/vllm/vllm_flash_attn/_vllm_fa3_C.abi3.so",
+    "relative": "vllm/vllm_flash_attn/_vllm_fa3_C.abi3.so",
+    "loaded_sha256": "bd6e26c0947cc28b805f2e0a35b3a58355ab91dad74c109f69d8b2ad36e97429",
+    "local_sha256": null,
+    "match": false,
+    "comparison_status": "no_local_binary_for_comparison"
+  },
+  {
+    "remote_path": "/usr/local/lib/python3.12/dist-packages/vllm/vllm_flash_attn/flash_attn_interface.py",
+    "relative": "vllm/vllm_flash_attn/flash_attn_interface.py",
+    "loaded_sha256": "adea0bc66605b44f9d9f23e298535899f4d0f68323d95261ab088035c881ddc9",
+    "local_sha256": "adea0bc66605b44f9d9f23e298535899f4d0f68323d95261ab088035c881ddc9",
+    "match": true,
+    "comparison_status": "identical_source"
+  }
+]

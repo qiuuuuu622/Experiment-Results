@@ -1,0 +1,66 @@
+phase=config
+phase=config
+phase=config
+phase=config
+phase=distributed
+phase=distributed
+phase=distributed
+phase=distributed
+phase=construct_vision_only
+phase=construct_vision_only
+phase=construct_vision_only
+phase=construct_vision_only
+phase=load_selected_weights
+phase=load_selected_weights
+phase=load_selected_weights
+phase=load_selected_weights
+phase=weights_loaded count=266
+phase=weights_loaded count=266
+phase=weights_loaded count=266
+phase=weights_loaded count=266
+/usr/local/lib/python3.12/dist-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+{"count": 4, "variant": "eager", "order": "forward", "p50_us": 160568.14498901367}
+{"count": 4, "variant": "eager_rope", "order": "forward", "p50_us": 147415.09170532227}
+{"count": 4, "variant": "eager_rmsnorm", "order": "forward", "p50_us": 148254.9949645996}
+{"count": 4, "variant": "eager_rope_rmsnorm", "order": "forward", "p50_us": 136020.83129882812}
+{"count": 4, "variant": "eager_rope_rmsnorm", "order": "reverse", "p50_us": 135766.49856567383}
+{"count": 4, "variant": "eager_rmsnorm", "order": "reverse", "p50_us": 148367.20962524414}
+{"count": 4, "variant": "eager_rope", "order": "reverse", "p50_us": 147140.53573608398}
+{"count": 4, "variant": "eager", "order": "reverse", "p50_us": 159521.26922607422}
+W1107 13:18:12.152000 57172 torch/distributed/elastic/agent/server/api.py:753] Received 15 death signal, shutting down workers
+W1107 13:18:12.154000 57172 torch/distributed/elastic/multiprocessing/api.py:1028] Sending process 57179 closing signal SIGTERM
+W1107 13:18:12.156000 57172 torch/distributed/elastic/multiprocessing/api.py:1028] Sending process 57180 closing signal SIGTERM
+W1107 13:18:12.156000 57172 torch/distributed/elastic/multiprocessing/api.py:1028] Sending process 57181 closing signal SIGTERM
+W1107 13:18:12.158000 57172 torch/distributed/elastic/multiprocessing/api.py:1028] Sending process 57182 closing signal SIGTERM
+/usr/lib/python3.12/multiprocessing/resource_tracker.py:254: UserWarning: resource_tracker: There appear to be 1 leaked shared_memory objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 1032, in <module>
+    main()
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 367, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 1028, in main
+    run(args)
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 1019, in run
+    elastic_launch(
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 194, in __call__
+    return launch_agent(
+           ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 374, in launch_agent
+    result = agent.run()
+             ^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/metrics/api.py", line 134, in wrapper
+    result = f(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/agent/server/api.py", line 745, in run
+    result = self._invoke_run(role)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/agent/server/api.py", line 923, in _invoke_run
+    time.sleep(monitor_interval)
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/multiprocessing/api.py", line 86, in _terminate_process_handler
+    raise SignalException(f"Process {os.getpid()} got signal: {sigval}", sigval=sigval)
+torch.distributed.elastic.multiprocessing.api.SignalException: Process 57172 got signal: 15

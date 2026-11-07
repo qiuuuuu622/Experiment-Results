@@ -1,0 +1,8 @@
+{
+  "reason": "user_requested_stop",
+  "time_utc": "2026-11-07T13:18:19.168304+00:00",
+  "verified_processes": [],
+  "signal_owner": "root_agent",
+  "signal_reported_pid": 57172,
+  "verification": "target PIDs absent when child checked; no additional SIGTERM sent"
+}

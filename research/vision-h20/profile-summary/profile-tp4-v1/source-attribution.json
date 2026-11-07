@@ -1,0 +1,1594 @@
+[
+  {
+    "trace": "results/vision/20261107-phone-screenshots/profile-tp4-v1/weights-b4-eager-rank0.json",
+    "kernel_sum_us": 279707.14600000106,
+    "family_gpu_us": {
+      "gemm": 53448.793000000005,
+      "rms_norm": 48431.791,
+      "apply_rotary": 13026.225999999984,
+      "other_vision": 2765.339000000001,
+      "flash_attention": 89638.76900000004,
+      "symmetric_memory_multimem_all_reduce": 68290.25100000002,
+      "block_residual_add": 3821.0440000000003,
+      "unattributed": 284.933
+    },
+    "source_frames": {
+      "gemm": [
+        "source/vllm/models/deepseek_v4/common/vision.py(132): forward",
+        "source/vllm/models/deepseek_v4/common/vision.py(176): forward",
+        "source/vllm/models/deepseek_v4/common/vision.py(365): forward",
+        "source/vllm/models/deepseek_v4/common/vision.py(92): forward"
+      ],
+      "rms_norm": [
+        "source/vllm/models/deepseek_v4/common/vision.py(74): forward"
+      ],
+      "apply_rotary": [
+        "source/vllm/models/deepseek_v4/common/vision.py(62): apply_rotary"
+      ],
+      "other_vision": [
+        "source/vllm/models/deepseek_v4/common/vision.py(132): forward",
+        "source/vllm/models/deepseek_v4/common/vision.py(176): forward",
+        "source/vllm/models/deepseek_v4/common/vision.py(365): forward"
+      ],
+      "flash_attention": [
+        "source/vllm/models/deepseek_v4/common/vision.py(132): forward"
+      ],
+      "block_residual_add": [
+        "source/vllm/models/deepseek_v4/common/vision.py(190): forward"
+      ]
+    },
+    "operations": [
+      {
+        "family": "apply_rotary",
+        "cpu_op": "aten::add",
+        "count": 256,
+        "gpu_us": 720.7449999999994
+      },
+      {
+        "family": "apply_rotary",
+        "cpu_op": "aten::cat",
+        "count": 256,
+        "gpu_us": 1248.2750000000005
+      },
+      {
+        "family": "apply_rotary",
+        "cpu_op": "aten::copy_",
+        "count": 512,
+        "gpu_us": 3893.877999999998
+      },
+      {
+        "family": "apply_rotary",
+        "cpu_op": "aten::mul",
+        "count": 1024,
+        "gpu_us": 6421.347999999986
+      },
+      {
+        "family": "apply_rotary",
+        "cpu_op": "aten::sub",
+        "count": 256,
+        "gpu_us": 741.9799999999996
+      },
+      {
+        "family": "block_residual_add",
+        "cpu_op": "aten::add",
+        "count": 256,
+        "gpu_us": 3821.0440000000003
+      },
+      {
+        "family": "flash_attention",
+        "cpu_op": "_vllm_fa3_C::fwd",
+        "count": 128,
+        "gpu_us": 89638.76900000004
+      },
+      {
+        "family": "gemm",
+        "cpu_op": "aten::addmm",
+        "count": 268,
+        "gpu_us": 19733.399000000005
+      },
+      {
+        "family": "gemm",
+        "cpu_op": "aten::mm",
+        "count": 256,
+        "gpu_us": 33715.394
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "_C::silu_and_mul",
+        "count": 128,
+        "gpu_us": 1868.1850000000013
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "_vllm_fa3_C::fwd",
+        "count": 128,
+        "gpu_us": 306.566
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "aten::arange",
+        "count": 128,
+        "gpu_us": 94.78099999999999
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "aten::copy_",
+        "count": 4,
+        "gpu_us": 269.696
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "aten::fill_",
+        "count": 4,
+        "gpu_us": 23.839
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "aten::gelu",
+        "count": 4,
+        "gpu_us": 14.303999999999998
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "aten::im2col",
+        "count": 4,
+        "gpu_us": 187.968
+      },
+      {
+        "family": "rms_norm",
+        "cpu_op": "aten::add",
+        "count": 260,
+        "gpu_us": 328.2800000000003
+      },
+      {
+        "family": "rms_norm",
+        "cpu_op": "aten::copy_",
+        "count": 520,
+        "gpu_us": 13391.407000000001
+      },
+      {
+        "family": "rms_norm",
+        "cpu_op": "aten::mean",
+        "count": 260,
+        "gpu_us": 3628.706000000003
+      },
+      {
+        "family": "rms_norm",
+        "cpu_op": "aten::mul",
+        "count": 520,
+        "gpu_us": 26216.879999999997
+      },
+      {
+        "family": "rms_norm",
+        "cpu_op": "aten::pow",
+        "count": 260,
+        "gpu_us": 4505.080000000003
+      },
+      {
+        "family": "rms_norm",
+        "cpu_op": "aten::rsqrt",
+        "count": 260,
+        "gpu_us": 361.4379999999996
+      },
+      {
+        "family": "symmetric_memory_multimem_all_reduce",
+        "cpu_op": "record_param_comms",
+        "count": 260,
+        "gpu_us": 68290.25100000002
+      },
+      {
+        "family": "unattributed",
+        "cpu_op": "aten::_index_put_impl_",
+        "count": 16,
+        "gpu_us": 187.07300000000004
+      },
+      {
+        "family": "unattributed",
+        "cpu_op": "aten::copy_",
+        "count": 12,
+        "gpu_us": 12.483000000000002
+      },
+      {
+        "family": "unattributed",
+        "cpu_op": "aten::eq",
+        "count": 16,
+        "gpu_us": 19.484999999999996
+      },
+      {
+        "family": "unattributed",
+        "cpu_op": "aten::nonzero",
+        "count": 48,
+        "gpu_us": 65.892
+      }
+    ],
+    "method": "GPU correlation -> runtime timestamp -> innermost source frame",
+    "limitations": "Kernel sums are not critical-path latency; pinned source lines"
+  },
+  {
+    "trace": "results/vision/20261107-phone-screenshots/profile-tp4-v1/weights-b4-eager-rank1.json",
+    "kernel_sum_us": 276095.64900000015,
+    "family_gpu_us": {
+      "gemm": 53167.82499999996,
+      "rms_norm": 48379.855,
+      "apply_rotary": 12986.06099999999,
+      "other_vision": 2753.5939999999996,
+      "flash_attention": 89369.93300000002,
+      "symmetric_memory_multimem_all_reduce": 65351.51900000002,
+      "block_residual_add": 3800.196000000001,
+      "unattributed": 286.666
+    },
+    "source_frames": {
+      "gemm": [
+        "source/vllm/models/deepseek_v4/common/vision.py(132): forward",
+        "source/vllm/models/deepseek_v4/common/vision.py(176): forward",
+        "source/vllm/models/deepseek_v4/common/vision.py(365): forward",
+        "source/vllm/models/deepseek_v4/common/vision.py(92): forward"
+      ],
+      "rms_norm": [
+        "source/vllm/models/deepseek_v4/common/vision.py(74): forward"
+      ],
+      "apply_rotary": [
+        "source/vllm/models/deepseek_v4/common/vision.py(62): apply_rotary"
+      ],
+      "other_vision": [
+        "source/vllm/models/deepseek_v4/common/vision.py(132): forward",
+        "source/vllm/models/deepseek_v4/common/vision.py(176): forward",
+        "source/vllm/models/deepseek_v4/common/vision.py(365): forward"
+      ],
+      "flash_attention": [
+        "source/vllm/models/deepseek_v4/common/vision.py(132): forward"
+      ],
+      "block_residual_add": [
+        "source/vllm/models/deepseek_v4/common/vision.py(190): forward"
+      ]
+    },
+    "operations": [
+      {
+        "family": "apply_rotary",
+        "cpu_op": "aten::add",
+        "count": 256,
+        "gpu_us": 720.4849999999997
+      },
+      {
+        "family": "apply_rotary",
+        "cpu_op": "aten::cat",
+        "count": 256,
+        "gpu_us": 1242.0950000000014
+      },
+      {
+        "family": "apply_rotary",
+        "cpu_op": "aten::copy_",
+        "count": 512,
+        "gpu_us": 3884.777999999995
+      },
+      {
+        "family": "apply_rotary",
+        "cpu_op": "aten::mul",
+        "count": 1024,
+        "gpu_us": 6393.825999999995
+      },
+      {
+        "family": "apply_rotary",
+        "cpu_op": "aten::sub",
+        "count": 256,
+        "gpu_us": 744.8769999999996
+      },
+      {
+        "family": "block_residual_add",
+        "cpu_op": "aten::add",
+        "count": 256,
+        "gpu_us": 3800.196000000001
+      },
+      {
+        "family": "flash_attention",
+        "cpu_op": "_vllm_fa3_C::fwd",
+        "count": 128,
+        "gpu_us": 89369.93300000002
+      },
+      {
+        "family": "gemm",
+        "cpu_op": "aten::addmm",
+        "count": 136,
+        "gpu_us": 14749.557000000003
+      },
+      {
+        "family": "gemm",
+        "cpu_op": "aten::mm",
+        "count": 388,
+        "gpu_us": 38418.26799999996
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "_C::silu_and_mul",
+        "count": 128,
+        "gpu_us": 1857.9939999999997
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "_vllm_fa3_C::fwd",
+        "count": 128,
+        "gpu_us": 304.9120000000001
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "aten::arange",
+        "count": 128,
+        "gpu_us": 95.459
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "aten::copy_",
+        "count": 4,
+        "gpu_us": 268.975
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "aten::fill_",
+        "count": 4,
+        "gpu_us": 24.002
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "aten::gelu",
+        "count": 4,
+        "gpu_us": 14.081
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "aten::im2col",
+        "count": 4,
+        "gpu_us": 188.171
+      },
+      {
+        "family": "rms_norm",
+        "cpu_op": "aten::add",
+        "count": 260,
+        "gpu_us": 327.21200000000044
+      },
+      {
+        "family": "rms_norm",
+        "cpu_op": "aten::copy_",
+        "count": 520,
+        "gpu_us": 13386.536000000013
+      },
+      {
+        "family": "rms_norm",
+        "cpu_op": "aten::mean",
+        "count": 260,
+        "gpu_us": 3608.3749999999964
+      },
+      {
+        "family": "rms_norm",
+        "cpu_op": "aten::mul",
+        "count": 520,
+        "gpu_us": 26195.601999999995
+      },
+      {
+        "family": "rms_norm",
+        "cpu_op": "aten::pow",
+        "count": 260,
+        "gpu_us": 4507.4540000000015
+      },
+      {
+        "family": "rms_norm",
+        "cpu_op": "aten::rsqrt",
+        "count": 260,
+        "gpu_us": 354.67600000000004
+      },
+      {
+        "family": "symmetric_memory_multimem_all_reduce",
+        "cpu_op": "record_param_comms",
+        "count": 260,
+        "gpu_us": 65351.51900000002
+      },
+      {
+        "family": "unattributed",
+        "cpu_op": "aten::_index_put_impl_",
+        "count": 16,
+        "gpu_us": 188.231
+      },
+      {
+        "family": "unattributed",
+        "cpu_op": "aten::copy_",
+        "count": 12,
+        "gpu_us": 12.671000000000003
+      },
+      {
+        "family": "unattributed",
+        "cpu_op": "aten::eq",
+        "count": 16,
+        "gpu_us": 19.392
+      },
+      {
+        "family": "unattributed",
+        "cpu_op": "aten::nonzero",
+        "count": 48,
+        "gpu_us": 66.372
+      }
+    ],
+    "method": "GPU correlation -> runtime timestamp -> innermost source frame",
+    "limitations": "Kernel sums are not critical-path latency; pinned source lines"
+  },
+  {
+    "trace": "results/vision/20261107-phone-screenshots/profile-tp4-v1/weights-b4-eager-rank2.json",
+    "kernel_sum_us": 230675.6630000009,
+    "family_gpu_us": {
+      "gemm": 52958.57999999995,
+      "rms_norm": 48454.326999999976,
+      "apply_rotary": 13049.445999999984,
+      "other_vision": 2678.178000000001,
+      "flash_attention": 88929.05500000002,
+      "symmetric_memory_multimem_all_reduce": 20501.296999999988,
+      "block_residual_add": 3817.8969999999977,
+      "unattributed": 286.8829999999999
+    },
+    "source_frames": {
+      "gemm": [
+        "source/vllm/models/deepseek_v4/common/vision.py(132): forward",
+        "source/vllm/models/deepseek_v4/common/vision.py(176): forward",
+        "source/vllm/models/deepseek_v4/common/vision.py(365): forward",
+        "source/vllm/models/deepseek_v4/common/vision.py(92): forward"
+      ],
+      "rms_norm": [
+        "source/vllm/models/deepseek_v4/common/vision.py(74): forward"
+      ],
+      "apply_rotary": [
+        "source/vllm/models/deepseek_v4/common/vision.py(62): apply_rotary"
+      ],
+      "other_vision": [
+        "source/vllm/models/deepseek_v4/common/vision.py(132): forward",
+        "source/vllm/models/deepseek_v4/common/vision.py(176): forward",
+        "source/vllm/models/deepseek_v4/common/vision.py(365): forward"
+      ],
+      "flash_attention": [
+        "source/vllm/models/deepseek_v4/common/vision.py(132): forward"
+      ],
+      "block_residual_add": [
+        "source/vllm/models/deepseek_v4/common/vision.py(190): forward"
+      ]
+    },
+    "operations": [
+      {
+        "family": "apply_rotary",
+        "cpu_op": "aten::add",
+        "count": 256,
+        "gpu_us": 723.9399999999997
+      },
+      {
+        "family": "apply_rotary",
+        "cpu_op": "aten::cat",
+        "count": 256,
+        "gpu_us": 1251.4550000000004
+      },
+      {
+        "family": "apply_rotary",
+        "cpu_op": "aten::copy_",
+        "count": 512,
+        "gpu_us": 3901.1379999999936
+      },
+      {
+        "family": "apply_rotary",
+        "cpu_op": "aten::mul",
+        "count": 1024,
+        "gpu_us": 6430.4259999999895
+      },
+      {
+        "family": "apply_rotary",
+        "cpu_op": "aten::sub",
+        "count": 256,
+        "gpu_us": 742.4869999999996
+      },
+      {
+        "family": "block_residual_add",
+        "cpu_op": "aten::add",
+        "count": 256,
+        "gpu_us": 3817.8969999999977
+      },
+      {
+        "family": "flash_attention",
+        "cpu_op": "_vllm_fa3_C::fwd",
+        "count": 128,
+        "gpu_us": 88929.05500000002
+      },
+      {
+        "family": "gemm",
+        "cpu_op": "aten::addmm",
+        "count": 136,
+        "gpu_us": 14685.808999999992
+      },
+      {
+        "family": "gemm",
+        "cpu_op": "aten::mm",
+        "count": 388,
+        "gpu_us": 38272.77099999996
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "_C::silu_and_mul",
+        "count": 128,
+        "gpu_us": 1874.3710000000005
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "_vllm_fa3_C::fwd",
+        "count": 128,
+        "gpu_us": 212.51100000000008
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "aten::arange",
+        "count": 128,
+        "gpu_us": 95.39299999999999
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "aten::copy_",
+        "count": 4,
+        "gpu_us": 269.44
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "aten::fill_",
+        "count": 4,
+        "gpu_us": 23.904000000000003
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "aten::gelu",
+        "count": 4,
+        "gpu_us": 14.270999999999999
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "aten::im2col",
+        "count": 4,
+        "gpu_us": 188.288
+      },
+      {
+        "family": "rms_norm",
+        "cpu_op": "aten::add",
+        "count": 260,
+        "gpu_us": 328.2620000000002
+      },
+      {
+        "family": "rms_norm",
+        "cpu_op": "aten::copy_",
+        "count": 520,
+        "gpu_us": 13431.789999999999
+      },
+      {
+        "family": "rms_norm",
+        "cpu_op": "aten::mean",
+        "count": 260,
+        "gpu_us": 3611.9720000000016
+      },
+      {
+        "family": "rms_norm",
+        "cpu_op": "aten::mul",
+        "count": 520,
+        "gpu_us": 26241.372999999978
+      },
+      {
+        "family": "rms_norm",
+        "cpu_op": "aten::pow",
+        "count": 260,
+        "gpu_us": 4481.962000000003
+      },
+      {
+        "family": "rms_norm",
+        "cpu_op": "aten::rsqrt",
+        "count": 260,
+        "gpu_us": 358.96799999999945
+      },
+      {
+        "family": "symmetric_memory_multimem_all_reduce",
+        "cpu_op": "record_param_comms",
+        "count": 260,
+        "gpu_us": 20501.296999999988
+      },
+      {
+        "family": "unattributed",
+        "cpu_op": "aten::_index_put_impl_",
+        "count": 16,
+        "gpu_us": 188.19499999999996
+      },
+      {
+        "family": "unattributed",
+        "cpu_op": "aten::copy_",
+        "count": 12,
+        "gpu_us": 13.121000000000002
+      },
+      {
+        "family": "unattributed",
+        "cpu_op": "aten::eq",
+        "count": 16,
+        "gpu_us": 19.391
+      },
+      {
+        "family": "unattributed",
+        "cpu_op": "aten::nonzero",
+        "count": 48,
+        "gpu_us": 66.17599999999999
+      }
+    ],
+    "method": "GPU correlation -> runtime timestamp -> innermost source frame",
+    "limitations": "Kernel sums are not critical-path latency; pinned source lines"
+  },
+  {
+    "trace": "results/vision/20261107-phone-screenshots/profile-tp4-v1/weights-b4-eager-rank3.json",
+    "kernel_sum_us": 285748.3530000011,
+    "family_gpu_us": {
+      "gemm": 53341.23800000003,
+      "rms_norm": 48404.580000000016,
+      "apply_rotary": 12997.16599999999,
+      "other_vision": 2729.7590000000005,
+      "flash_attention": 89582.24300000003,
+      "symmetric_memory_multimem_all_reduce": 74596.24499999995,
+      "block_residual_add": 3811.9049999999993,
+      "unattributed": 285.217
+    },
+    "source_frames": {
+      "gemm": [
+        "source/vllm/models/deepseek_v4/common/vision.py(132): forward",
+        "source/vllm/models/deepseek_v4/common/vision.py(176): forward",
+        "source/vllm/models/deepseek_v4/common/vision.py(365): forward",
+        "source/vllm/models/deepseek_v4/common/vision.py(92): forward"
+      ],
+      "rms_norm": [
+        "source/vllm/models/deepseek_v4/common/vision.py(74): forward"
+      ],
+      "apply_rotary": [
+        "source/vllm/models/deepseek_v4/common/vision.py(62): apply_rotary"
+      ],
+      "other_vision": [
+        "source/vllm/models/deepseek_v4/common/vision.py(132): forward",
+        "source/vllm/models/deepseek_v4/common/vision.py(176): forward",
+        "source/vllm/models/deepseek_v4/common/vision.py(365): forward"
+      ],
+      "flash_attention": [
+        "source/vllm/models/deepseek_v4/common/vision.py(132): forward"
+      ],
+      "block_residual_add": [
+        "source/vllm/models/deepseek_v4/common/vision.py(190): forward"
+      ]
+    },
+    "operations": [
+      {
+        "family": "apply_rotary",
+        "cpu_op": "aten::add",
+        "count": 256,
+        "gpu_us": 718.9389999999999
+      },
+      {
+        "family": "apply_rotary",
+        "cpu_op": "aten::cat",
+        "count": 256,
+        "gpu_us": 1244.2320000000013
+      },
+      {
+        "family": "apply_rotary",
+        "cpu_op": "aten::copy_",
+        "count": 512,
+        "gpu_us": 3888.1690000000012
+      },
+      {
+        "family": "apply_rotary",
+        "cpu_op": "aten::mul",
+        "count": 1024,
+        "gpu_us": 6406.430999999986
+      },
+      {
+        "family": "apply_rotary",
+        "cpu_op": "aten::sub",
+        "count": 256,
+        "gpu_us": 739.3949999999996
+      },
+      {
+        "family": "block_residual_add",
+        "cpu_op": "aten::add",
+        "count": 256,
+        "gpu_us": 3811.9049999999993
+      },
+      {
+        "family": "flash_attention",
+        "cpu_op": "_vllm_fa3_C::fwd",
+        "count": 128,
+        "gpu_us": 89582.24300000003
+      },
+      {
+        "family": "gemm",
+        "cpu_op": "aten::addmm",
+        "count": 136,
+        "gpu_us": 14796.777000000013
+      },
+      {
+        "family": "gemm",
+        "cpu_op": "aten::mm",
+        "count": 388,
+        "gpu_us": 38544.46100000002
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "_C::silu_and_mul",
+        "count": 128,
+        "gpu_us": 1862.048000000001
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "_vllm_fa3_C::fwd",
+        "count": 128,
+        "gpu_us": 286.6539999999998
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "aten::arange",
+        "count": 128,
+        "gpu_us": 84.89999999999996
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "aten::copy_",
+        "count": 4,
+        "gpu_us": 269.66200000000003
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "aten::fill_",
+        "count": 4,
+        "gpu_us": 24.065
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "aten::gelu",
+        "count": 4,
+        "gpu_us": 14.142999999999999
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "aten::im2col",
+        "count": 4,
+        "gpu_us": 188.287
+      },
+      {
+        "family": "rms_norm",
+        "cpu_op": "aten::add",
+        "count": 260,
+        "gpu_us": 331.8959999999997
+      },
+      {
+        "family": "rms_norm",
+        "cpu_op": "aten::copy_",
+        "count": 520,
+        "gpu_us": 13404.378000000012
+      },
+      {
+        "family": "rms_norm",
+        "cpu_op": "aten::mean",
+        "count": 260,
+        "gpu_us": 3601.923000000001
+      },
+      {
+        "family": "rms_norm",
+        "cpu_op": "aten::mul",
+        "count": 520,
+        "gpu_us": 26207.103999999996
+      },
+      {
+        "family": "rms_norm",
+        "cpu_op": "aten::pow",
+        "count": 260,
+        "gpu_us": 4496.802000000002
+      },
+      {
+        "family": "rms_norm",
+        "cpu_op": "aten::rsqrt",
+        "count": 260,
+        "gpu_us": 362.47699999999963
+      },
+      {
+        "family": "symmetric_memory_multimem_all_reduce",
+        "cpu_op": "record_param_comms",
+        "count": 260,
+        "gpu_us": 74596.24499999995
+      },
+      {
+        "family": "unattributed",
+        "cpu_op": "aten::_index_put_impl_",
+        "count": 16,
+        "gpu_us": 188.893
+      },
+      {
+        "family": "unattributed",
+        "cpu_op": "aten::copy_",
+        "count": 12,
+        "gpu_us": 12.962000000000003
+      },
+      {
+        "family": "unattributed",
+        "cpu_op": "aten::eq",
+        "count": 16,
+        "gpu_us": 18.785
+      },
+      {
+        "family": "unattributed",
+        "cpu_op": "aten::nonzero",
+        "count": 48,
+        "gpu_us": 64.577
+      }
+    ],
+    "method": "GPU correlation -> runtime timestamp -> innermost source frame",
+    "limitations": "Kernel sums are not critical-path latency; pinned source lines"
+  },
+  {
+    "trace": "results/vision/20261107-phone-screenshots/profile-tp4-v1/weights-b4-packed-rank0.json",
+    "kernel_sum_us": 206955.50799999977,
+    "family_gpu_us": {
+      "gemm": 50466.23000000001,
+      "rms_norm": 48080.924000000006,
+      "apply_rotary": 12714.809000000001,
+      "other_vision": 2124.122,
+      "flash_attention": 67186.495,
+      "nccl_collective": 22504.478,
+      "block_residual_add": 3826.2580000000003,
+      "unattributed": 52.192
+    },
+    "source_frames": {
+      "gemm": [
+        "source/vllm/models/deepseek_v4/common/vision.py(132): forward",
+        "source/vllm/models/deepseek_v4/common/vision.py(176): forward",
+        "source/vllm/models/deepseek_v4/common/vision.py(374): forward_packed",
+        "source/vllm/models/deepseek_v4/common/vision.py(92): forward"
+      ],
+      "rms_norm": [
+        "source/vllm/models/deepseek_v4/common/vision.py(74): forward"
+      ],
+      "apply_rotary": [
+        "source/vllm/models/deepseek_v4/common/vision.py(62): apply_rotary"
+      ],
+      "other_vision": [
+        "source/vllm/models/deepseek_v4/common/vision.py(132): forward",
+        "source/vllm/models/deepseek_v4/common/vision.py(176): forward",
+        "source/vllm/models/deepseek_v4/common/vision.py(374): forward_packed"
+      ],
+      "flash_attention": [
+        "source/vllm/models/deepseek_v4/common/vision.py(132): forward"
+      ],
+      "block_residual_add": [
+        "source/vllm/models/deepseek_v4/common/vision.py(190): forward"
+      ]
+    },
+    "operations": [
+      {
+        "family": "apply_rotary",
+        "cpu_op": "aten::add",
+        "count": 64,
+        "gpu_us": 680.8929999999997
+      },
+      {
+        "family": "apply_rotary",
+        "cpu_op": "aten::cat",
+        "count": 64,
+        "gpu_us": 1328.573
+      },
+      {
+        "family": "apply_rotary",
+        "cpu_op": "aten::copy_",
+        "count": 128,
+        "gpu_us": 3844.753000000001
+      },
+      {
+        "family": "apply_rotary",
+        "cpu_op": "aten::mul",
+        "count": 256,
+        "gpu_us": 6150.933000000001
+      },
+      {
+        "family": "apply_rotary",
+        "cpu_op": "aten::sub",
+        "count": 64,
+        "gpu_us": 709.6570000000002
+      },
+      {
+        "family": "block_residual_add",
+        "cpu_op": "aten::add",
+        "count": 64,
+        "gpu_us": 3826.2580000000003
+      },
+      {
+        "family": "flash_attention",
+        "cpu_op": "_vllm_fa3_C::fwd",
+        "count": 32,
+        "gpu_us": 67186.495
+      },
+      {
+        "family": "gemm",
+        "cpu_op": "aten::addmm",
+        "count": 67,
+        "gpu_us": 17810.483000000004
+      },
+      {
+        "family": "gemm",
+        "cpu_op": "aten::mm",
+        "count": 64,
+        "gpu_us": 32655.747000000007
+      },
+      {
+        "family": "nccl_collective",
+        "cpu_op": "vllm::all_reduce",
+        "count": 65,
+        "gpu_us": 22504.478
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "_C::silu_and_mul",
+        "count": 32,
+        "gpu_us": 1718.618
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "_vllm_fa3_C::fwd",
+        "count": 32,
+        "gpu_us": 79.32900000000001
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "aten::copy_",
+        "count": 1,
+        "gpu_us": 124.703
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "aten::gelu",
+        "count": 1,
+        "gpu_us": 10.976
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "aten::index",
+        "count": 1,
+        "gpu_us": 47.328
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "aten::mul",
+        "count": 1,
+        "gpu_us": 143.168
+      },
+      {
+        "family": "rms_norm",
+        "cpu_op": "aten::add",
+        "count": 65,
+        "gpu_us": 97.18499999999997
+      },
+      {
+        "family": "rms_norm",
+        "cpu_op": "aten::copy_",
+        "count": 130,
+        "gpu_us": 13950.962999999996
+      },
+      {
+        "family": "rms_norm",
+        "cpu_op": "aten::mean",
+        "count": 65,
+        "gpu_us": 3728.1220000000008
+      },
+      {
+        "family": "rms_norm",
+        "cpu_op": "aten::mul",
+        "count": 130,
+        "gpu_us": 25397.04800000001
+      },
+      {
+        "family": "rms_norm",
+        "cpu_op": "aten::pow",
+        "count": 65,
+        "gpu_us": 4810.133999999999
+      },
+      {
+        "family": "rms_norm",
+        "cpu_op": "aten::rsqrt",
+        "count": 65,
+        "gpu_us": 97.47200000000001
+      },
+      {
+        "family": "unattributed",
+        "cpu_op": "aten::cat",
+        "count": 2,
+        "gpu_us": 24.032
+      },
+      {
+        "family": "unattributed",
+        "cpu_op": "aten::copy_",
+        "count": 1,
+        "gpu_us": 1.088
+      },
+      {
+        "family": "unattributed",
+        "cpu_op": "aten::index",
+        "count": 1,
+        "gpu_us": 27.072
+      }
+    ],
+    "method": "GPU correlation -> runtime timestamp -> innermost source frame",
+    "limitations": "Kernel sums are not critical-path latency; pinned source lines"
+  },
+  {
+    "trace": "results/vision/20261107-phone-screenshots/profile-tp4-v1/weights-b4-packed-rank1.json",
+    "kernel_sum_us": 206457.9489999999,
+    "family_gpu_us": {
+      "gemm": 50241.361,
+      "rms_norm": 48067.00100000001,
+      "apply_rotary": 12704.338999999998,
+      "other_vision": 2115.702,
+      "flash_attention": 66954.29400000001,
+      "nccl_collective": 22457.901,
+      "block_residual_add": 3864.7329999999997,
+      "unattributed": 52.618
+    },
+    "source_frames": {
+      "gemm": [
+        "source/vllm/models/deepseek_v4/common/vision.py(132): forward",
+        "source/vllm/models/deepseek_v4/common/vision.py(176): forward",
+        "source/vllm/models/deepseek_v4/common/vision.py(374): forward_packed",
+        "source/vllm/models/deepseek_v4/common/vision.py(92): forward"
+      ],
+      "rms_norm": [
+        "source/vllm/models/deepseek_v4/common/vision.py(74): forward"
+      ],
+      "apply_rotary": [
+        "source/vllm/models/deepseek_v4/common/vision.py(62): apply_rotary"
+      ],
+      "other_vision": [
+        "source/vllm/models/deepseek_v4/common/vision.py(132): forward",
+        "source/vllm/models/deepseek_v4/common/vision.py(176): forward",
+        "source/vllm/models/deepseek_v4/common/vision.py(374): forward_packed"
+      ],
+      "flash_attention": [
+        "source/vllm/models/deepseek_v4/common/vision.py(132): forward"
+      ],
+      "block_residual_add": [
+        "source/vllm/models/deepseek_v4/common/vision.py(190): forward"
+      ]
+    },
+    "operations": [
+      {
+        "family": "apply_rotary",
+        "cpu_op": "aten::add",
+        "count": 64,
+        "gpu_us": 683.3579999999997
+      },
+      {
+        "family": "apply_rotary",
+        "cpu_op": "aten::cat",
+        "count": 64,
+        "gpu_us": 1325.3080000000007
+      },
+      {
+        "family": "apply_rotary",
+        "cpu_op": "aten::copy_",
+        "count": 128,
+        "gpu_us": 3840.9209999999994
+      },
+      {
+        "family": "apply_rotary",
+        "cpu_op": "aten::mul",
+        "count": 256,
+        "gpu_us": 6145.913999999998
+      },
+      {
+        "family": "apply_rotary",
+        "cpu_op": "aten::sub",
+        "count": 64,
+        "gpu_us": 708.838
+      },
+      {
+        "family": "block_residual_add",
+        "cpu_op": "aten::add",
+        "count": 64,
+        "gpu_us": 3864.7329999999997
+      },
+      {
+        "family": "flash_attention",
+        "cpu_op": "_vllm_fa3_C::fwd",
+        "count": 32,
+        "gpu_us": 66954.29400000001
+      },
+      {
+        "family": "gemm",
+        "cpu_op": "aten::addmm",
+        "count": 34,
+        "gpu_us": 13347.848000000004
+      },
+      {
+        "family": "gemm",
+        "cpu_op": "aten::mm",
+        "count": 97,
+        "gpu_us": 36893.51299999999
+      },
+      {
+        "family": "nccl_collective",
+        "cpu_op": "vllm::all_reduce",
+        "count": 65,
+        "gpu_us": 22457.901
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "_C::silu_and_mul",
+        "count": 32,
+        "gpu_us": 1711.3020000000001
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "_vllm_fa3_C::fwd",
+        "count": 32,
+        "gpu_us": 78.225
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "aten::copy_",
+        "count": 1,
+        "gpu_us": 124.472
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "aten::gelu",
+        "count": 1,
+        "gpu_us": 10.818
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "aten::index",
+        "count": 1,
+        "gpu_us": 47.465
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "aten::mul",
+        "count": 1,
+        "gpu_us": 143.42
+      },
+      {
+        "family": "rms_norm",
+        "cpu_op": "aten::add",
+        "count": 65,
+        "gpu_us": 97.07599999999998
+      },
+      {
+        "family": "rms_norm",
+        "cpu_op": "aten::copy_",
+        "count": 130,
+        "gpu_us": 13948.059000000007
+      },
+      {
+        "family": "rms_norm",
+        "cpu_op": "aten::mean",
+        "count": 65,
+        "gpu_us": 3729.834999999999
+      },
+      {
+        "family": "rms_norm",
+        "cpu_op": "aten::mul",
+        "count": 130,
+        "gpu_us": 25385.399000000005
+      },
+      {
+        "family": "rms_norm",
+        "cpu_op": "aten::pow",
+        "count": 65,
+        "gpu_us": 4809.3
+      },
+      {
+        "family": "rms_norm",
+        "cpu_op": "aten::rsqrt",
+        "count": 65,
+        "gpu_us": 97.33200000000004
+      },
+      {
+        "family": "unattributed",
+        "cpu_op": "aten::cat",
+        "count": 2,
+        "gpu_us": 24.517
+      },
+      {
+        "family": "unattributed",
+        "cpu_op": "aten::copy_",
+        "count": 1,
+        "gpu_us": 1.12
+      },
+      {
+        "family": "unattributed",
+        "cpu_op": "aten::index",
+        "count": 1,
+        "gpu_us": 26.981
+      }
+    ],
+    "method": "GPU correlation -> runtime timestamp -> innermost source frame",
+    "limitations": "Kernel sums are not critical-path latency; pinned source lines"
+  },
+  {
+    "trace": "results/vision/20261107-phone-screenshots/profile-tp4-v1/weights-b4-packed-rank2.json",
+    "kernel_sum_us": 205310.32899999977,
+    "family_gpu_us": {
+      "gemm": 50040.86200000001,
+      "rms_norm": 48109.72699999999,
+      "apply_rotary": 12717.957000000004,
+      "other_vision": 2121.4970000000008,
+      "flash_attention": 66649.048,
+      "nccl_collective": 21781.016,
+      "block_residual_add": 3837.3839999999996,
+      "unattributed": 52.838
+    },
+    "source_frames": {
+      "gemm": [
+        "source/vllm/models/deepseek_v4/common/vision.py(132): forward",
+        "source/vllm/models/deepseek_v4/common/vision.py(176): forward",
+        "source/vllm/models/deepseek_v4/common/vision.py(374): forward_packed",
+        "source/vllm/models/deepseek_v4/common/vision.py(92): forward"
+      ],
+      "rms_norm": [
+        "source/vllm/models/deepseek_v4/common/vision.py(74): forward"
+      ],
+      "apply_rotary": [
+        "source/vllm/models/deepseek_v4/common/vision.py(62): apply_rotary"
+      ],
+      "other_vision": [
+        "source/vllm/models/deepseek_v4/common/vision.py(132): forward",
+        "source/vllm/models/deepseek_v4/common/vision.py(176): forward",
+        "source/vllm/models/deepseek_v4/common/vision.py(374): forward_packed"
+      ],
+      "flash_attention": [
+        "source/vllm/models/deepseek_v4/common/vision.py(132): forward"
+      ],
+      "block_residual_add": [
+        "source/vllm/models/deepseek_v4/common/vision.py(190): forward"
+      ]
+    },
+    "operations": [
+      {
+        "family": "apply_rotary",
+        "cpu_op": "aten::add",
+        "count": 64,
+        "gpu_us": 685.8210000000001
+      },
+      {
+        "family": "apply_rotary",
+        "cpu_op": "aten::cat",
+        "count": 64,
+        "gpu_us": 1323.9530000000002
+      },
+      {
+        "family": "apply_rotary",
+        "cpu_op": "aten::copy_",
+        "count": 128,
+        "gpu_us": 3840.2990000000013
+      },
+      {
+        "family": "apply_rotary",
+        "cpu_op": "aten::mul",
+        "count": 256,
+        "gpu_us": 6158.159000000002
+      },
+      {
+        "family": "apply_rotary",
+        "cpu_op": "aten::sub",
+        "count": 64,
+        "gpu_us": 709.7250000000003
+      },
+      {
+        "family": "block_residual_add",
+        "cpu_op": "aten::add",
+        "count": 64,
+        "gpu_us": 3837.3839999999996
+      },
+      {
+        "family": "flash_attention",
+        "cpu_op": "_vllm_fa3_C::fwd",
+        "count": 32,
+        "gpu_us": 66649.048
+      },
+      {
+        "family": "gemm",
+        "cpu_op": "aten::addmm",
+        "count": 34,
+        "gpu_us": 13281.621000000003
+      },
+      {
+        "family": "gemm",
+        "cpu_op": "aten::mm",
+        "count": 97,
+        "gpu_us": 36759.241
+      },
+      {
+        "family": "nccl_collective",
+        "cpu_op": "vllm::all_reduce",
+        "count": 65,
+        "gpu_us": 21781.016
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "_C::silu_and_mul",
+        "count": 32,
+        "gpu_us": 1715.2500000000005
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "_vllm_fa3_C::fwd",
+        "count": 32,
+        "gpu_us": 78.89000000000001
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "aten::copy_",
+        "count": 1,
+        "gpu_us": 124.683
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "aten::gelu",
+        "count": 1,
+        "gpu_us": 10.785
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "aten::index",
+        "count": 1,
+        "gpu_us": 47.717
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "aten::mul",
+        "count": 1,
+        "gpu_us": 144.172
+      },
+      {
+        "family": "rms_norm",
+        "cpu_op": "aten::add",
+        "count": 65,
+        "gpu_us": 96.64199999999995
+      },
+      {
+        "family": "rms_norm",
+        "cpu_op": "aten::copy_",
+        "count": 130,
+        "gpu_us": 13971.345
+      },
+      {
+        "family": "rms_norm",
+        "cpu_op": "aten::mean",
+        "count": 65,
+        "gpu_us": 3718.7860000000005
+      },
+      {
+        "family": "rms_norm",
+        "cpu_op": "aten::mul",
+        "count": 130,
+        "gpu_us": 25407.185999999994
+      },
+      {
+        "family": "rms_norm",
+        "cpu_op": "aten::pow",
+        "count": 65,
+        "gpu_us": 4819.115
+      },
+      {
+        "family": "rms_norm",
+        "cpu_op": "aten::rsqrt",
+        "count": 65,
+        "gpu_us": 96.65300000000006
+      },
+      {
+        "family": "unattributed",
+        "cpu_op": "aten::cat",
+        "count": 2,
+        "gpu_us": 24.611
+      },
+      {
+        "family": "unattributed",
+        "cpu_op": "aten::copy_",
+        "count": 1,
+        "gpu_us": 1.089
+      },
+      {
+        "family": "unattributed",
+        "cpu_op": "aten::index",
+        "count": 1,
+        "gpu_us": 27.138
+      }
+    ],
+    "method": "GPU correlation -> runtime timestamp -> innermost source frame",
+    "limitations": "Kernel sums are not critical-path latency; pinned source lines"
+  },
+  {
+    "trace": "results/vision/20261107-phone-screenshots/profile-tp4-v1/weights-b4-packed-rank3.json",
+    "kernel_sum_us": 206256.1699999995,
+    "family_gpu_us": {
+      "gemm": 50465.04500000003,
+      "rms_norm": 48060.69099999998,
+      "apply_rotary": 12702.424000000005,
+      "other_vision": 2113.8039999999996,
+      "flash_attention": 67239.66000000002,
+      "nccl_collective": 21825.189,
+      "block_residual_add": 3797.4469999999988,
+      "unattributed": 51.91
+    },
+    "source_frames": {
+      "gemm": [
+        "source/vllm/models/deepseek_v4/common/vision.py(132): forward",
+        "source/vllm/models/deepseek_v4/common/vision.py(176): forward",
+        "source/vllm/models/deepseek_v4/common/vision.py(374): forward_packed",
+        "source/vllm/models/deepseek_v4/common/vision.py(92): forward"
+      ],
+      "rms_norm": [
+        "source/vllm/models/deepseek_v4/common/vision.py(74): forward"
+      ],
+      "apply_rotary": [
+        "source/vllm/models/deepseek_v4/common/vision.py(62): apply_rotary"
+      ],
+      "other_vision": [
+        "source/vllm/models/deepseek_v4/common/vision.py(132): forward",
+        "source/vllm/models/deepseek_v4/common/vision.py(176): forward",
+        "source/vllm/models/deepseek_v4/common/vision.py(374): forward_packed"
+      ],
+      "flash_attention": [
+        "source/vllm/models/deepseek_v4/common/vision.py(132): forward"
+      ],
+      "block_residual_add": [
+        "source/vllm/models/deepseek_v4/common/vision.py(190): forward"
+      ]
+    },
+    "operations": [
+      {
+        "family": "apply_rotary",
+        "cpu_op": "aten::add",
+        "count": 64,
+        "gpu_us": 685.3980000000001
+      },
+      {
+        "family": "apply_rotary",
+        "cpu_op": "aten::cat",
+        "count": 64,
+        "gpu_us": 1323.0829999999999
+      },
+      {
+        "family": "apply_rotary",
+        "cpu_op": "aten::copy_",
+        "count": 128,
+        "gpu_us": 3837.9590000000003
+      },
+      {
+        "family": "apply_rotary",
+        "cpu_op": "aten::mul",
+        "count": 256,
+        "gpu_us": 6150.005000000004
+      },
+      {
+        "family": "apply_rotary",
+        "cpu_op": "aten::sub",
+        "count": 64,
+        "gpu_us": 705.9789999999999
+      },
+      {
+        "family": "block_residual_add",
+        "cpu_op": "aten::add",
+        "count": 64,
+        "gpu_us": 3797.4469999999988
+      },
+      {
+        "family": "flash_attention",
+        "cpu_op": "_vllm_fa3_C::fwd",
+        "count": 32,
+        "gpu_us": 67239.66000000002
+      },
+      {
+        "family": "gemm",
+        "cpu_op": "aten::addmm",
+        "count": 34,
+        "gpu_us": 13387.886999999999
+      },
+      {
+        "family": "gemm",
+        "cpu_op": "aten::mm",
+        "count": 97,
+        "gpu_us": 37077.158000000025
+      },
+      {
+        "family": "nccl_collective",
+        "cpu_op": "vllm::all_reduce",
+        "count": 65,
+        "gpu_us": 21825.189
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "_C::silu_and_mul",
+        "count": 32,
+        "gpu_us": 1712.6989999999998
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "_vllm_fa3_C::fwd",
+        "count": 32,
+        "gpu_us": 76.26200000000001
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "aten::copy_",
+        "count": 1,
+        "gpu_us": 124.144
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "aten::gelu",
+        "count": 1,
+        "gpu_us": 10.722
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "aten::index",
+        "count": 1,
+        "gpu_us": 47.174
+      },
+      {
+        "family": "other_vision",
+        "cpu_op": "aten::mul",
+        "count": 1,
+        "gpu_us": 142.803
+      },
+      {
+        "family": "rms_norm",
+        "cpu_op": "aten::add",
+        "count": 65,
+        "gpu_us": 97.77099999999999
+      },
+      {
+        "family": "rms_norm",
+        "cpu_op": "aten::copy_",
+        "count": 130,
+        "gpu_us": 13952.945000000002
+      },
+      {
+        "family": "rms_norm",
+        "cpu_op": "aten::mean",
+        "count": 65,
+        "gpu_us": 3710.2639999999997
+      },
+      {
+        "family": "rms_norm",
+        "cpu_op": "aten::mul",
+        "count": 130,
+        "gpu_us": 25381.74099999998
+      },
+      {
+        "family": "rms_norm",
+        "cpu_op": "aten::pow",
+        "count": 65,
+        "gpu_us": 4821.863999999998
+      },
+      {
+        "family": "rms_norm",
+        "cpu_op": "aten::rsqrt",
+        "count": 65,
+        "gpu_us": 96.10600000000001
+      },
+      {
+        "family": "unattributed",
+        "cpu_op": "aten::cat",
+        "count": 2,
+        "gpu_us": 23.971
+      },
+      {
+        "family": "unattributed",
+        "cpu_op": "aten::copy_",
+        "count": 1,
+        "gpu_us": 1.152
+      },
+      {
+        "family": "unattributed",
+        "cpu_op": "aten::index",
+        "count": 1,
+        "gpu_us": 26.787
+      }
+    ],
+    "method": "GPU correlation -> runtime timestamp -> innermost source frame",
+    "limitations": "Kernel sums are not critical-path latency; pinned source lines"
+  }
+]

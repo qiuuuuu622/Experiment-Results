@@ -1,0 +1,30 @@
+phase=config
+phase=config
+phase=config
+phase=config
+phase=distributed
+phase=distributed
+phase=distributed
+phase=distributed
+phase=construct_vision_only
+phase=construct_vision_only
+phase=construct_vision_only
+phase=construct_vision_only
+phase=load_selected_weights
+phase=load_selected_weights
+phase=load_selected_weights
+phase=load_selected_weights
+phase=weights_loaded count=266
+phase=weights_loaded count=266
+phase=weights_loaded count=266
+phase=weights_loaded count=266
+/usr/local/lib/python3.12/dist-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+{"count": 4, "variant": "eager", "order": "forward", "p50_us": 160733.97369384766}
+{"count": 4, "variant": "eager_rope", "order": "forward", "p50_us": 147622.45025634766}
+{"count": 4, "variant": "eager_rope", "order": "reverse", "p50_us": 146938.67568969727}
+{"count": 4, "variant": "eager", "order": "reverse", "p50_us": 159650.1968383789}
+{"count": 8, "variant": "eager", "order": "forward", "p50_us": 316596.3439941406}
+{"count": 8, "variant": "eager_rope", "order": "forward", "p50_us": 291633.2962036133}
+{"count": 8, "variant": "eager_rope", "order": "reverse", "p50_us": 291690.11993408203}
+{"count": 8, "variant": "eager", "order": "reverse", "p50_us": 316886.4227294922}

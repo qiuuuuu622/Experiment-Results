@@ -1,0 +1,30 @@
+{
+  "torch_version": "2.13.0+cu130",
+  "torch_git": "cf30153c4c131c8164ee7798e5022d810682e2cb",
+  "files": {
+    "CUDAMathCompat.h": {
+      "sha256": "fb2706cb01f8481efe00562ccdcb616edccdded61e44b0b9f706e1bde512f067",
+      "source": "installed PyTorch headers"
+    },
+    "PYTORCH_LICENSE": {
+      "sha256": "bd018feef8825e88181c84eb7e3aa4eafb8f08a20d9fd6ef948569610c4a3e43",
+      "source": "https://github.com/pytorch/pytorch/blob/cf30153c4c131c8164ee7798e5022d810682e2cb/LICENSE"
+    },
+    "Reduce.cuh": {
+      "sha256": "ef9bea8fdfd03cec2d7e7421cbe75d98fddfdaafddb4f25a1ed655c5861dfb65",
+      "source": "installed PyTorch headers"
+    },
+    "ReduceMomentKernel.cu": {
+      "sha256": "f563fdfc101667cb7d637de622cceea7a8d0e40c29cac8c342c3439db3727f4c",
+      "source": "https://github.com/pytorch/pytorch/blob/cf30153c4c131c8164ee7798e5022d810682e2cb/aten/src/ATen/native/cuda/ReduceMomentKernel.cu"
+    },
+    "SharedReduceOps.h": {
+      "sha256": "75a6bad9a3c7f47572ab8264fd66487697e2a77bb9fba1b0d555d967aac18b5e",
+      "source": "installed PyTorch headers"
+    },
+    "UnaryOpsKernel.cu": {
+      "sha256": "ae9e870121de229ffb5cac1cfccab0bde4184d1c6da91dcd2c10de3ddaa9a4e5",
+      "source": "https://github.com/pytorch/pytorch/blob/cf30153c4c131c8164ee7798e5022d810682e2cb/aten/src/ATen/native/cuda/UnaryOpsKernel.cu"
+    }
+  }
+}

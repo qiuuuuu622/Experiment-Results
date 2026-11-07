@@ -8,6 +8,7 @@ H20 上 DeepSeek V4.1 Flash **FP8 index cache 函数／模块级优化**的代�
 
 |内容|入口|
 |---|---|
+|新增：四卡视觉 RoPE / RMSNorm 融合|[报告与核心代码](research/vision-h20/README.md)、[原始性能数据](research/vision-h20/results/)|
 |最新：四卡 Top-k 大行数调优|[完整报告与数据](research/topk-h20/REPORT.md)、[研究代码](research/topk-h20/tune_topk.py)、[CUDA 改动](research/topk-h20/experimental-kernels.patch)|
 |优化前后机制、source＋4 consumer 链路|[机制详解](docs/MECHANISMS.md)|
 |性能对照、正反序、收益和负结果|[性能汇总](docs/PERFORMANCE.md)|
@@ -17,6 +18,12 @@ H20 上 DeepSeek V4.1 Flash **FP8 index cache 函数／模块级优化**的代�
 |原始数据、日志、冻结源码、独立审阅|[完整实验索引](experiments/README.md)|
 |复现、环境、验证范围|[复现说明](docs/REPRODUCE.md)、[限制与验收](docs/STATUS_AND_LIMITS.md)|
 |逐文件版本与完整性|[源码来源](SOURCE_PROVENANCE.json)、[发布校验清单](SHA256SUMS.json)|
+
+## 新增视觉组件结果（2026-11-07）
+
+真实四卡H20、只加载视觉权重。DP4四图：原生159.52–160.57ms，RoPE+RMSNorm为135.77–136.02ms，总延迟降低14.89–15.29%；RMSNorm独立降低6.99–7.67%，同模式输出逐位一致。
+
+RMSNorm整轮已按用户要求中止：四图正反8组完成，八图正式0组。**优化后的多图packed和视觉CUDA Graph对照测试仍待补；当前视觉Graph仅支持FLASH_ATTN，不支持FLASHINFER。** 详见[视觉报告](research/vision-h20/REPORT.md)，不要将已有原生smoke视为融合路径验收。
 
 ## 最新 Top-k 调优（2026-11-07）
 

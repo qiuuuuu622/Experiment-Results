@@ -1,0 +1,2 @@
+ce39388f4c4c61ddf50dabc399c42010e5471377d9b70f075ed1daf350b69708  benchmarks/kernels/dsv41_vision/07_rmsnorm_correctness_v2.sh
+5fa4865404b98c06ba841633670cf94b28f36fa30b3282f3bcd61341f20bc0e6  benchmarks/kernels/dsv41_vision/08_rmsnorm_formal_dp4_v2.sh

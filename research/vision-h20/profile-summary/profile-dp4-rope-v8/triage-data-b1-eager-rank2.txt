@@ -1,0 +1,19 @@
+Triage View
+Mode: single-trace
+Framework: vLLM
+Input traces: /Users/a1-6/Documents/ChatGPT/答辩学习/vllm_dsv41_flash_opt/results/vision/20261107-phone-screenshots/profile-dp4-rope-v8/data-b1-eager-rank2.json
+
+Kernel Table
+| Kernel | Category | GPU time | Share | Launches | Python location (site share) | CPU op |
+| --- | --- | ---: | ---: | ---: | --- | --- |
+| ncclDevKernel_AllGather_RING_LL(ncclDevKernelArgsStorage<4096ul>) | communication | 145.33 ms | 99.9% | 1 | vllm/distributed/parallel_state.py:752 all_gather | vllm::all_gather |
+
+Overlap Opportunity Table
+| Priority | Verdict | Kernel | Python scope | Formal signal | Dep risk | Recommendation |
+| --- | --- | --- | --- | --- | --- | --- |
+| - | - | No rows cleared the 1.0% reporting bar. Use mapping/formal mode for overlap attribution. | - | - | - | - |
+
+Fuse Opportunity Table
+| Pattern | Confidence | Related GPU time | Share | Evidence kernels | Current kernel Python location | Candidate fused Python path | Rationale |
+| --- | --- | ---: | ---: | --- | --- | --- | --- |
+| No medium-confidence source-backed fusion opportunity matched this trace. | - | - | - | - | - | - | - |

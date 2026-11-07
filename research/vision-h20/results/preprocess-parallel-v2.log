@@ -1,0 +1,19 @@
+B8 exact native checks passed
+B8 round=0 forward decode=False workers=0
+P50=748.549ms
+B8 round=0 forward decode=False workers=4
+P50=236.561ms
+B8 round=0 forward decode=True workers=0
+CV > 10%: adding three rounds
+P50=1034.538ms
+B8 round=0 forward decode=True workers=4
+P50=316.756ms
+B8 round=0 reverse decode=False workers=4
+P50=211.735ms
+B8 round=0 reverse decode=False workers=0
+P50=681.320ms
+B8 round=0 reverse decode=True workers=4
+CV > 10%: adding three rounds
+P50=318.753ms
+B8 round=0 reverse decode=True workers=0
+P50=1014.303ms

@@ -1,0 +1,62 @@
+{
+  "kind": "deterministic synthetic UI fixtures, not real screenshots",
+  "generator_sha256": "61a4d9cda7e7d2d15f868ad5984451611836093717c2fb84106fd5f1d3daa6bb",
+  "images": [
+    {
+      "file": "01-messages.png",
+      "width": 1080,
+      "height": 2400,
+      "seed": 20261107,
+      "sha256": "2a8f91d3a6f2a90acc443af4273f14d8105e326d8fc58b8f93436f43deb7f07a"
+    },
+    {
+      "file": "02-weather.png",
+      "width": 1170,
+      "height": 2532,
+      "seed": 20261108,
+      "sha256": "35ce0004f0ed12e007a0ef8df7f299ac3693a4ed29ec4ed5d6d2ecdf7b964194"
+    },
+    {
+      "file": "03-reading.png",
+      "width": 1080,
+      "height": 1920,
+      "seed": 20261109,
+      "sha256": "fd3d3834599e96b4e1acc8c9d8650c51972624717dadf7651506183108769127"
+    },
+    {
+      "file": "04-dashboard.png",
+      "width": 1440,
+      "height": 3200,
+      "seed": 20261110,
+      "sha256": "c4695aa331f448253492c2355ba973f261186251604c567391c37a61aca4844f"
+    },
+    {
+      "file": "05-tasks.png",
+      "width": 720,
+      "height": 1600,
+      "seed": 20261111,
+      "sha256": "9f746b16948495030ca6b1979473ae693b5d08bd6e28d9999051dadbe1f352f0"
+    },
+    {
+      "file": "06-photo-journal.png",
+      "width": 1284,
+      "height": 2778,
+      "seed": 20261112,
+      "sha256": "3265db8334ce4a0cb7f7a564598239f5509c1e9d399552daabe765e966939d88"
+    },
+    {
+      "file": "07-settings.png",
+      "width": 1080,
+      "height": 2340,
+      "seed": 20261113,
+      "sha256": "c21b78bcd84f787e7927e4e654a805fc38f51ffe2c8aa8dfa7064d21530aadd0"
+    },
+    {
+      "file": "08-shopping-list.png",
+      "width": 1290,
+      "height": 2796,
+      "seed": 20261114,
+      "sha256": "9f59f2200b193913b857678165aec7c51d2f6dc8a61f1cc02ecb942fd0596b69"
+    }
+  ]
+}

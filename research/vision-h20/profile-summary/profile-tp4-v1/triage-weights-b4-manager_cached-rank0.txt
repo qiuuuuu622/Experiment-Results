@@ -1,0 +1,29 @@
+Triage View
+Mode: single-trace
+Framework: vLLM
+Input traces: /Users/a1-6/Documents/ChatGPT/答辩学习/vllm_dsv41_flash_opt/results/vision/20261107-phone-screenshots/profile-tp4-v1/weights-b4-manager_cached-rank0.json
+
+Kernel Table
+| Kernel | Category | GPU time | Share | Launches | Python location (site share) | CPU op |
+| --- | --- | ---: | ---: | ---: | --- | --- |
+| ncclDevKernel_AllReduce_Sum_bf16_RING_LL(ncclDevKernelArgsStorage<4096ul>) | communication | 228.09 ms | 53.3% | 65 | vllm/v1/worker/encoder_cudagraph.py:403 _run_budget_graph | cudaGraphLaunch |
+| void cutlass::device_kernel<flash::enable_sm90_or_later<flash::FlashAttnFwdSm90<flash::CollectiveMainloopFwdSm90<2, cute::tuple<cute::C<1>, cute::C<1>, cute::C<1> >, cute::tuple<cute::C<192>, cute::C<192>, cute::C<64> >, 64, cutlass::bfloat16_t, float, cutlass::arch::Sm90, false, false, false, true, false, false, false, false, false, true, true, false, false, cutlass::bfloat16_t, 1>, flash::CollectiveEpilogueFwd<cute::tuple<cute::C<192>, cute::C<64>, cute::C<192> >, cute::tuple<cute::C<1>, cute::C<1>, cute::C<1> >, cutlass::bfloat16_t, cutlass::arch::Sm90, 384, true, true, false, false, 1>, flash::VarlenDynamicPersistentTileScheduler<192, 192, 384, 128, false, true, true, false, false, true> > > > | gemm | 67.22 ms | 15.7% | 32 | vllm/v1/worker/encoder_cudagraph.py:403 _run_budget_graph | cudaGraphLaunch |
+| nvjet_sm90_tst_128x256_64x4_1x2_h_bz_coopA_TNN | gemm | 24.92 ms | 5.8% | 32 | vllm/v1/worker/encoder_cudagraph.py:403 _run_budget_graph | cudaGraphLaunch |
+| void at::native::elementwise_kernel<128, 2, at::native::gpu_kernel_impl_nocast<at::native::BinaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > >(at::TensorIteratorBase&, at::native::BinaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > const&)::{lambda(int)#1}> | elementwise | 18.72 ms | 4.4% | 321 | vllm/v1/worker/encoder_cudagraph.py:403 _run_budget_graph | cudaGraphLaunch |
+| void at::native::elementwise_kernel<128, 4, at::native::gpu_kernel_impl<at::native::BinaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > >(at::TensorIteratorBase&, at::native::BinaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > const&)::{lambda(int)#1}> | elementwise | 16.76 ms | 3.9% | 65 | vllm/v1/worker/encoder_cudagraph.py:403 _run_budget_graph | cudaGraphLaunch |
+| nvjet_sm90_tst_192x192_64x4_1x2_h_bz_coopB_bias_TNN | gemm | 14.32 ms | 3.3% | 33 | vllm/v1/worker/encoder_cudagraph.py:403 _run_budget_graph | cudaGraphLaunch |
+| nvjet_sm90_tst_128x256_64x4_2x1_v_bz_coopA_TNN | gemm | 12.37 ms | 2.9% | 32 | vllm/v1/worker/encoder_cudagraph.py:403 _run_budget_graph | cudaGraphLaunch |
+| void at::native::unrolled_elementwise_kernel<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul>, 4, TrivialOffsetCalculator<1, unsigned int>, TrivialOffsetCalculator<1, unsigned int>, at::native::memory::LoadWithCast<1>, at::native::memory::StoreWithCast<1> > | memory | 11.67 ms | 2.7% | 65 | vllm/v1/worker/encoder_cudagraph.py:403 _run_budget_graph | cudaGraphLaunch |
+| void at::native::vectorized_elementwise_kernel<4, at::native::(anonymous namespace)::pow_tensor_scalar_kernel_impl<float, float>(at::TensorIteratorBase&, float)::{lambda(float)#1}, std::array<char*, 2ul> > | elementwise | 5.44 ms | 1.3% | 65 | vllm/v1/worker/encoder_cudagraph.py:403 _run_budget_graph | cudaGraphLaunch |
+| void at::native::vectorized_elementwise_kernel<8, at::native::bfloat16_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda(float)#1}, std::array<char*, 2ul> > | memory | 5.00 ms | 1.2% | 130 | vllm/v1/worker/encoder_cudagraph.py:403 _run_budget_graph (site share 100%)<br>vllm/models/deepseek_v41/common/vl_cudagraph.py:343 postprocess_encoder_output (site share 0%) | cudaGraphLaunch<br>aten::copy_ |
+| nvjet_sm90_tst_128x256_64x4_2x1_v_bz_coopA_bias_TNN | gemm | 4.64 ms | 1.1% | 32 | vllm/v1/worker/encoder_cudagraph.py:403 _run_budget_graph | cudaGraphLaunch |
+
+Overlap Opportunity Table
+| Priority | Verdict | Kernel | Python scope | Formal signal | Dep risk | Recommendation |
+| --- | --- | --- | --- | --- | --- | --- |
+| - | - | No rows cleared the 1.0% reporting bar. Use mapping/formal mode for overlap attribution. | - | - | - | - |
+
+Fuse Opportunity Table
+| Pattern | Confidence | Related GPU time | Share | Evidence kernels | Current kernel Python location | Candidate fused Python path | Rationale |
+| --- | --- | ---: | ---: | --- | --- | --- | --- |
+| No medium-confidence source-backed fusion opportunity matched this trace. | - | - | - | - | - | - | - |

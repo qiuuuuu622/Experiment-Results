@@ -1,0 +1,20 @@
+{
+  "vllm_dsv41_vision/__init__.py": "b0e0405a67e1b62d9f9ffb67dacadf7fd2bae0a939d2f95f9d226ba65e83881e",
+  "vllm_dsv41_vision/metadata_cache.py": "048ef69774ec823d40f18e6bd0b7cafaa44db797e6a94995cab94f27900e7153",
+  "vllm_dsv41_vision/replay_metadata.py": "19e59da2d6c8029166ca5edbafafbe0689c86efd17f57e1affd69ef1f8816014",
+  "vllm_dsv41_vision/rotary.py": "b46ece00ea1c827173d7ed006ac238381c9afe4ae7cf8090cba68d457874a40d",
+  "vllm_dsv41_vision/preprocess.py": "58696591bf3b93995d098ee267230733762b1ae99717ed31ae6080dbad8780da",
+  "vllm/models/deepseek_v4/common/vision.py": "a8e4c34d9b15f075d1b8a2c01138a5b786138669434db104eb0bc5656d89500c",
+  "vllm/models/deepseek_v41/common/mm_preprocess.py": "cd891a7842e9aef118a391ec6e6f804dcc2adefc3692095ca8a615f5107d5fb5",
+  "vllm/models/deepseek_v41/common/vl_cudagraph.py": "a10dfc708123c86c5feac1f9f03d0bf5945f5790de6c3cb9e7315c2a4ee8b9d9",
+  "vllm/models/deepseek_v41/nvidia/vl_model.py": "ff2c16614dc694f0c07a45929def3c76f30cb547f897b57c18c70bb99587171c",
+  "vllm/v1/worker/encoder_cudagraph_defs.py": "bb7be050fcaa8868e7816c84caec875da57050d65fe7eaf00f3d41473df25e3a",
+  "vllm/v1/worker/encoder_cudagraph.py": "dcb11e8f73c44bec22dff8af37e23c1c411314a7690cf3a1a401b673768b4bc6",
+  "benchmarks/kernels/dsv41_vision/bench_vision.py": "cbc9f1934b54aacfe767263218070319bc269a68989f618e174d3c11c6f18c77",
+  "benchmarks/kernels/dsv41_vision/bench_preprocess_parallel.py": "296032281f52b81ce1acf685a397cba77ff97d892ead90e444af54c5f7592690",
+  "benchmarks/kernels/dsv41_vision/bench_preprocess.py": "78e93913679f439f9cc9b76e72e1d8a49cd3f562482692335379f21d793fce19",
+  "benchmarks/kernels/dsv41_vision/test_preprocess_contract.py": "c6e10277fe0a7b407b8a20e01e5e2ad50c014cb2db5bcaeab72a8973fb43a87a",
+  "benchmarks/kernels/dsv41_vision/analyze_profiles.py": "29c58c83cd419b46af10d8a588ed3078cb55eba076bed91aff7c8645d9753dfc",
+  "benchmarks/kernels/dsv41_vision/attribute_vision_kernels.py": "e24ee9b19c00429e6448649be829e757edcae4eebbf11a34c2e00bc91a6dfad6",
+  "benchmarks/kernels/dsv41_vision/analyze_layer_drift.py": "1c4bbdc937076081c8f22721472ae1ee4f9ea50b6a5121758cb4f2c5ca2fe93d"
+}

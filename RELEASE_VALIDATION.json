@@ -1,5 +1,5 @@
 {
-  "status": "passed",
+  "status": "not_revalidated_user_requested_push",
   "kind": "publication validation; no new GPU runs",
   "created_utc": "2026-11-07T09:41:50.306094+00:00",
   "branch": "DSV4.1-Flash-Indexer-opt",
@@ -78,5 +78,17 @@
       "Selector only; root dispatch unchanged",
       "Historical failures retained"
     ]
+  },
+  "previous_status": "passed",
+  "vision_publication_update": {
+    "created_utc": "2026-11-07T13:24:49.404672+00:00",
+    "base_commit": "7a29c80de45b560f1ae08b901fb127cd57409a9b",
+    "status": "publication_checks_not_run_by_user_request",
+    "experiments": "Rope v10 completed; RMS B4 8 measurements complete, overall aborted by user, B8 formal 0",
+    "pending": [
+      "optimized multi-image packed tests",
+      "vision CUDA Graph tests: FLASH_ATTN only; FLASHINFER unsupported"
+    ],
+    "core_tests_already_recorded": "RoPE stage 21 tests; RMS kernel v2 19 tests; six DP4 module batches bitwise equal; no final RMS whole-suite rerun"
   }
 }

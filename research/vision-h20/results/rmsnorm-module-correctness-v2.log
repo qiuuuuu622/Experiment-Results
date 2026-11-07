@@ -1,0 +1,20 @@
+phase=config
+phase=config
+phase=config
+phase=config
+phase=distributed
+phase=distributed
+phase=distributed
+phase=distributed
+phase=construct_vision_only
+phase=construct_vision_only
+phase=construct_vision_only
+phase=construct_vision_only
+phase=load_selected_weights
+phase=load_selected_weights
+phase=load_selected_weights
+phase=load_selected_weights
+phase=weights_loaded count=266
+phase=weights_loaded count=266
+phase=weights_loaded count=266
+phase=weights_loaded count=266

@@ -1,0 +1,13 @@
+{
+  "v1": {
+    "_rmsnorm_1024_kernel": "675075960b2a48b752567e8fb1e1982bf84a5b1a9da96f41b6c270413cd3998d",
+    "_square_kernel": "bd4005c5a8f5f69af95824bd13e6813e720a3e22dc190e29e00cc90bf971bdd0",
+    "_epilogue_kernel": "046fa7c871e92ce7984e30dd06ed3a1f3fc7d31d29cf9704c905899e6702db39"
+  },
+  "v2": {
+    "_rmsnorm_1024_kernel": "675075960b2a48b752567e8fb1e1982bf84a5b1a9da96f41b6c270413cd3998d",
+    "_square_kernel": "bd4005c5a8f5f69af95824bd13e6813e720a3e22dc190e29e00cc90bf971bdd0",
+    "_epilogue_kernel": "046fa7c871e92ce7984e30dd06ed3a1f3fc7d31d29cf9704c905899e6702db39"
+  },
+  "gpu_kernel_ast_identical": true
+}

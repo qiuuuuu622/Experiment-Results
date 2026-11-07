@@ -1,0 +1,42 @@
+{
+  "status": "research_complete_no_dispatch_change",
+  "scope": "P5b dedicated Ant scorer; P5c real perquery compact prefill remains separate",
+  "primary_model_shapes": 23,
+  "primary_orders": 2,
+  "primary_candidate": {
+    "role": "source",
+    "rows": 4096,
+    "original_context": 262144,
+    "ratio": 1
+  },
+  "isolated_same_core_source": true,
+  "isolated_probe": [
+    {
+      "order": "forward",
+      "pipeline_p50_us": {
+        "deepgemm": 41848.33984375,
+        "current_keys_major": 37496.839904785156,
+        "ant": 37242.21496582031
+      },
+      "ant_speedup_over_best": 1.006836997724183,
+      "max_cv": 0.0002715090730024422
+    },
+    {
+      "order": "reverse",
+      "pipeline_p50_us": {
+        "deepgemm": 41836.79656982422,
+        "current_keys_major": 37494.36492919922,
+        "ant": 37229.92706298828
+      },
+      "ant_speedup_over_best": 1.0071028306277243,
+      "max_cv": 0.00022453439458782783
+    }
+  ],
+  "admitted_shapes": [],
+  "reason": "Only primary >=5% candidate did not reproduce; isolated gain <1%",
+  "causal_attribution": "unknown; no controlled isolation of device, layout, clock and thermal factors",
+  "original_ant_sha256": "0bdde39dd1ddb4805492badbd838aa40a51a7dc79f29c070d27b661fc3f66b3f",
+  "adapted_core_sha256": "957557aa4ac9944073ae4e2c2a370775df446f93437fa82de821b3051d3184c9",
+  "model_driver_sha256": "f422bdd3a5593e031c16e9270f0e93fb3dd343402c4eacd13cfe087987c7ef49",
+  "primary_source_archive_sha256": "99c0ffdae2fd8497c0f610477c8cc846a9428ed494d3f69ba50423b6b0d22445"
+}

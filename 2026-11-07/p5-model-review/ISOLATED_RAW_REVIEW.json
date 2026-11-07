@@ -1,0 +1,29 @@
+{
+  "status": "sole_candidate_withdrawn",
+  "reason": "Neither isolated order reaches 5 percent over best baseline; no causal attribution to GPU or temperature.",
+  "records": [
+    {
+      "order": "forward",
+      "graph_p50_us": {
+        "deepgemm": 41848.33984375,
+        "current_keys_major": 37496.839904785156,
+        "ant": 37242.21496582031
+      },
+      "speedup_vs_best": 1.006836997724183,
+      "file_sha256": "04895c5ac7bc85da234fd47e53ef6f3af8fcf064d26146e030c70cc01eb9c802"
+    },
+    {
+      "order": "reverse",
+      "graph_p50_us": {
+        "deepgemm": 41836.79656982422,
+        "current_keys_major": 37494.36492919922,
+        "ant": 37229.92706298828
+      },
+      "speedup_vs_best": 1.0071028306277243,
+      "file_sha256": "1b2dc296c8f8d4ba6d869558fe72616096ce3e4296eccbfde30e7e666af4b115"
+    }
+  ],
+  "automatic_admission": false,
+  "factory_added": false,
+  "before_after_identity_equal_except_stage_label": true
+}

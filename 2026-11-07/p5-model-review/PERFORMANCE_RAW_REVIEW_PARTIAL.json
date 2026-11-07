@@ -1,0 +1,57 @@
+{
+  "status": "partial_sample_provenance_valid_fp32_strict_analysis_pending",
+  "completed_roles": [
+    "full"
+  ],
+  "pending_roles": [
+    "source",
+    "consumer"
+  ],
+  "notes": [
+    "Counts are diagnostic samples, not whole model failures and not a rate denominator.",
+    "Native and Ant both miss initial FP32 threshold. Shared numerical cause requires separate analysis; no tolerance was changed.",
+    "This is not dispatch admission."
+  ],
+  "records": [
+    {
+      "path": "results/indexer/20261107-resume/p5-ant-keys-major/model-aligned/final-v3/full-forward.json",
+      "sha256": "db0e1fff53f91fce0247a42ad58a0a170f725760da9cd065fedb870ae6dcfffa",
+      "role": "full",
+      "order": "forward",
+      "complete_shapes": 7,
+      "validated_sample_rounds": 153,
+      "strict_failure_counts_by_backend": {
+        "deepgemm": 944,
+        "current_keys_major": 943,
+        "ant": 944
+      },
+      "max_fp32_abs_by_backend": {
+        "deepgemm": 0.002154827117919922,
+        "current_keys_major": 0.002155303955078125,
+        "ant": 0.002154827117919922
+      },
+      "max_ant_vs_native": 2.86102294921875e-06,
+      "ant_changed_topk_rows": 1
+    },
+    {
+      "path": "results/indexer/20261107-resume/p5-ant-keys-major/model-aligned/final-v3/full-reverse.json",
+      "sha256": "4d2137de7c1724312212ee9dd2bf17fb37dac16ee24570844c7228c066dfceee",
+      "role": "full",
+      "order": "reverse",
+      "complete_shapes": 7,
+      "validated_sample_rounds": 159,
+      "strict_failure_counts_by_backend": {
+        "deepgemm": 944,
+        "current_keys_major": 943,
+        "ant": 944
+      },
+      "max_fp32_abs_by_backend": {
+        "deepgemm": 0.002154827117919922,
+        "current_keys_major": 0.002155303955078125,
+        "ant": 0.002154827117919922
+      },
+      "max_ant_vs_native": 2.86102294921875e-06,
+      "ant_changed_topk_rows": 1
+    }
+  ]
+}

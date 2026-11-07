@@ -1,0 +1,5 @@
+index, temperature.gpu, clocks.current.sm [MHz], clocks.current.memory [MHz], power.draw [W], power.limit [W], utilization.gpu [%]
+0, 29, 345 MHz, 2619 MHz, 72.10 W, 500.00 W, 0 %
+1, 27, 1980 MHz, 2619 MHz, 111.18 W, 500.00 W, 0 %
+2, 53, 345 MHz, 2619 MHz, 87.07 W, 500.00 W, 0 %
+3, 25, 345 MHz, 2619 MHz, 70.26 W, 500.00 W, 0 %

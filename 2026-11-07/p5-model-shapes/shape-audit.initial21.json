@@ -1,0 +1,1238 @@
+{
+  "scope": "CPU arithmetic/configuration audit; no GPU results",
+  "baseline_head": "29be941d8d5746cd98135bdd5e710eeebd8d7014",
+  "source_hashes": {
+    "results/indexer/20261101/model-config.json": "8be45ce0476004a3f529fd896115a4a2e800a129ad2d3ec05b16050f52e21879",
+    "benchmarks/kernels/dsv41_indexer/benchmark_prefill_model.py": "d19eda72c3c5e04d912f5a2549720c06bd1a7b197394b3bd990fb38c391ee1c3",
+    "vllm/models/deepseek_v41/attention.py": "dd146642fc7d7034f32feecf35ff4d7d9460f59a8a57444c0dd6f367fe8f15fb",
+    "vllm/models/deepseek_v41/nvidia/model.py": "5fe8b4a758ab586dd24ac218873a2c064cd3d72687b196dec4edf1b5e53f83a3",
+    "vllm/v1/attention/backends/mla/indexer.py": "aabcb7f2e78b1136072edc87223b0d6e3bbd359b91dda5e1d0c86cba22f98f0e",
+    "vllm/model_executor/layers/sparse_attn_indexer.py": "75d14da5e2b8c237f7fc0a807d2b72677660a945c70d23825da3517801d9ca10",
+    "vllm/model_executor/kernels/attention/dsa/candidate_blocks.py": "45f1eaa3b5f1d9f6a7b554697709646ce41d79d55f2d82415d008e6b00a1136f",
+    "vllm_dsv41_indexer/prefill.py": "78e49d3eeebc593b7604a6375d00f10b9bcbf21236510e1819d7c7fddb391ade",
+    "vllm_dsv41_indexer/prefill_keys_major_ant.py": "957557aa4ac9944073ae4e2c2a370775df446f93437fa82de821b3051d3184c9",
+    "benchmarks/kernels/dsv41_indexer/inputs.py": "9710a3078c5f7ec170374d208ac4cb96ca057af518c3620f9ba30e76c68cc56c",
+    "benchmarks/kernels/dsv41_indexer/verify_prefill.py": "46b1d4b721fdc8ff88fdaf2cad0b792a3db98440fa3726775fde739bfb083691"
+  },
+  "examples": [
+    {
+      "prefix": 0,
+      "query_rows": 5,
+      "ratio": 2,
+      "visible": [
+        0,
+        1,
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "prefix": 1,
+      "query_rows": 5,
+      "ratio": 2,
+      "visible": [
+        1,
+        1,
+        2,
+        2,
+        3
+      ]
+    },
+    {
+      "prefix": 2,
+      "query_rows": 5,
+      "ratio": 2,
+      "visible": [
+        1,
+        2,
+        2,
+        3,
+        3
+      ]
+    },
+    {
+      "prefix": 1019,
+      "query_rows": 5,
+      "ratio": 2,
+      "visible": [
+        510,
+        510,
+        511,
+        511,
+        512
+      ]
+    },
+    {
+      "prefix": 1020,
+      "query_rows": 5,
+      "ratio": 2,
+      "visible": [
+        510,
+        511,
+        511,
+        512,
+        512
+      ]
+    },
+    {
+      "prefix": 32763,
+      "query_rows": 5,
+      "ratio": 2,
+      "visible": [
+        16382,
+        16382,
+        16383,
+        16383,
+        16384
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "label": "initial_2k",
+      "role": "full",
+      "ratio": 2,
+      "layers": [
+        2,
+        8,
+        14
+      ],
+      "requests": [
+        {
+          "query_rows": 2048,
+          "final_original_tokens": 2048,
+          "prefix": 0,
+          "closed_index_keys": 1024,
+          "first_eight": [
+            0,
+            1,
+            1,
+            2,
+            2,
+            3,
+            3,
+            4
+          ],
+          "last_eight": [
+            1020,
+            1021,
+            1021,
+            1022,
+            1022,
+            1023,
+            1023,
+            1024
+          ],
+          "score_chunks": 1
+        }
+      ],
+      "total_rows": 2048,
+      "padded_width": 1024,
+      "visible_score_count": 1048576,
+      "unchunked_score_bytes": 8388608,
+      "arena_score_bytes": 8388608,
+      "arena_max_rows": 262144,
+      "allocated_cache_or_one_prepared_pool_bytes": 135168,
+      "query_bytes": 8388608,
+      "perquery_candidate_bytes": 0,
+      "perquery_output_bytes": 4194304,
+      "source_maxima_bytes": 0,
+      "allquery_mask_flags_bytes": 0
+    },
+    {
+      "label": "initial_8k",
+      "role": "full",
+      "ratio": 2,
+      "layers": [
+        2,
+        8,
+        14
+      ],
+      "requests": [
+        {
+          "query_rows": 8192,
+          "final_original_tokens": 8192,
+          "prefix": 0,
+          "closed_index_keys": 4096,
+          "first_eight": [
+            0,
+            1,
+            1,
+            2,
+            2,
+            3,
+            3,
+            4
+          ],
+          "last_eight": [
+            4092,
+            4093,
+            4093,
+            4094,
+            4094,
+            4095,
+            4095,
+            4096
+          ],
+          "score_chunks": 1
+        }
+      ],
+      "total_rows": 8192,
+      "padded_width": 4096,
+      "visible_score_count": 16777216,
+      "unchunked_score_bytes": 134217728,
+      "arena_score_bytes": 134217728,
+      "arena_max_rows": 65536,
+      "allocated_cache_or_one_prepared_pool_bytes": 540672,
+      "query_bytes": 33554432,
+      "perquery_candidate_bytes": 0,
+      "perquery_output_bytes": 16777216,
+      "source_maxima_bytes": 0,
+      "allquery_mask_flags_bytes": 0
+    },
+    {
+      "label": "steady_16k",
+      "role": "full",
+      "ratio": 2,
+      "layers": [
+        2,
+        8,
+        14
+      ],
+      "requests": [
+        {
+          "query_rows": 512,
+          "final_original_tokens": 16384,
+          "prefix": 15872,
+          "closed_index_keys": 8192,
+          "first_eight": [
+            7936,
+            7937,
+            7937,
+            7938,
+            7938,
+            7939,
+            7939,
+            7940
+          ],
+          "last_eight": [
+            8188,
+            8189,
+            8189,
+            8190,
+            8190,
+            8191,
+            8191,
+            8192
+          ],
+          "score_chunks": 1
+        }
+      ],
+      "total_rows": 512,
+      "padded_width": 8192,
+      "visible_score_count": 4128768,
+      "unchunked_score_bytes": 16777216,
+      "arena_score_bytes": 16777216,
+      "arena_max_rows": 32768,
+      "allocated_cache_or_one_prepared_pool_bytes": 1081344,
+      "query_bytes": 2097152,
+      "perquery_candidate_bytes": 0,
+      "perquery_output_bytes": 1048576,
+      "source_maxima_bytes": 0,
+      "allquery_mask_flags_bytes": 0
+    },
+    {
+      "label": "steady_64k",
+      "role": "full",
+      "ratio": 2,
+      "layers": [
+        2,
+        8,
+        14
+      ],
+      "requests": [
+        {
+          "query_rows": 2048,
+          "final_original_tokens": 65536,
+          "prefix": 63488,
+          "closed_index_keys": 32768,
+          "first_eight": [
+            31744,
+            31745,
+            31745,
+            31746,
+            31746,
+            31747,
+            31747,
+            31748
+          ],
+          "last_eight": [
+            32764,
+            32765,
+            32765,
+            32766,
+            32766,
+            32767,
+            32767,
+            32768
+          ],
+          "score_chunks": 1
+        }
+      ],
+      "total_rows": 2048,
+      "padded_width": 32768,
+      "visible_score_count": 66060288,
+      "unchunked_score_bytes": 268435456,
+      "arena_score_bytes": 268435456,
+      "arena_max_rows": 8192,
+      "allocated_cache_or_one_prepared_pool_bytes": 4325376,
+      "query_bytes": 8388608,
+      "perquery_candidate_bytes": 0,
+      "perquery_output_bytes": 4194304,
+      "source_maxima_bytes": 0,
+      "allquery_mask_flags_bytes": 0
+    },
+    {
+      "label": "steady_256k",
+      "role": "full",
+      "ratio": 2,
+      "layers": [
+        2,
+        8,
+        14
+      ],
+      "requests": [
+        {
+          "query_rows": 4096,
+          "final_original_tokens": 262144,
+          "prefix": 258048,
+          "closed_index_keys": 131072,
+          "first_eight": [
+            129024,
+            129025,
+            129025,
+            129026,
+            129026,
+            129027,
+            129027,
+            129028
+          ],
+          "last_eight": [
+            131068,
+            131069,
+            131069,
+            131070,
+            131070,
+            131071,
+            131071,
+            131072
+          ],
+          "score_chunks": 2
+        }
+      ],
+      "total_rows": 4096,
+      "padded_width": 131072,
+      "visible_score_count": 532676608,
+      "unchunked_score_bytes": 2147483648,
+      "arena_score_bytes": 1073741824,
+      "arena_max_rows": 2048,
+      "allocated_cache_or_one_prepared_pool_bytes": 17301504,
+      "query_bytes": 16777216,
+      "perquery_candidate_bytes": 0,
+      "perquery_output_bytes": 8388608,
+      "source_maxima_bytes": 0,
+      "allquery_mask_flags_bytes": 0
+    },
+    {
+      "label": "tail_1m",
+      "role": "full",
+      "ratio": 2,
+      "layers": [
+        2,
+        8,
+        14
+      ],
+      "requests": [
+        {
+          "query_rows": 256,
+          "final_original_tokens": 1048576,
+          "prefix": 1048320,
+          "closed_index_keys": 524288,
+          "first_eight": [
+            524160,
+            524161,
+            524161,
+            524162,
+            524162,
+            524163,
+            524163,
+            524164
+          ],
+          "last_eight": [
+            524284,
+            524285,
+            524285,
+            524286,
+            524286,
+            524287,
+            524287,
+            524288
+          ],
+          "score_chunks": 1
+        }
+      ],
+      "total_rows": 256,
+      "padded_width": 524288,
+      "visible_score_count": 134201344,
+      "unchunked_score_bytes": 536870912,
+      "arena_score_bytes": 536870912,
+      "arena_max_rows": 512,
+      "allocated_cache_or_one_prepared_pool_bytes": 69206016,
+      "query_bytes": 1048576,
+      "perquery_candidate_bytes": 0,
+      "perquery_output_bytes": 524288,
+      "source_maxima_bytes": 0,
+      "allquery_mask_flags_bytes": 0
+    },
+    {
+      "label": "ragged",
+      "role": "full",
+      "ratio": 2,
+      "layers": [
+        2,
+        8,
+        14
+      ],
+      "requests": [
+        {
+          "query_rows": 512,
+          "final_original_tokens": 65535,
+          "prefix": 65023,
+          "closed_index_keys": 32767,
+          "first_eight": [
+            32512,
+            32512,
+            32513,
+            32513,
+            32514,
+            32514,
+            32515,
+            32515
+          ],
+          "last_eight": [
+            32764,
+            32764,
+            32765,
+            32765,
+            32766,
+            32766,
+            32767,
+            32767
+          ],
+          "score_chunks": 1
+        },
+        {
+          "query_rows": 128,
+          "final_original_tokens": 16384,
+          "prefix": 16256,
+          "closed_index_keys": 8192,
+          "first_eight": [
+            8128,
+            8129,
+            8129,
+            8130,
+            8130,
+            8131,
+            8131,
+            8132
+          ],
+          "last_eight": [
+            8188,
+            8189,
+            8189,
+            8190,
+            8190,
+            8191,
+            8191,
+            8192
+          ],
+          "score_chunks": 1
+        }
+      ],
+      "total_rows": 640,
+      "padded_width": 32768,
+      "visible_score_count": 17755904,
+      "unchunked_score_bytes": 83886080,
+      "arena_score_bytes": 67108864,
+      "arena_max_rows": 8192,
+      "allocated_cache_or_one_prepared_pool_bytes": 8650752,
+      "query_bytes": 2621440,
+      "perquery_candidate_bytes": 0,
+      "perquery_output_bytes": 1310720,
+      "source_maxima_bytes": 0,
+      "allquery_mask_flags_bytes": 0
+    },
+    {
+      "label": "initial_2k",
+      "role": "source",
+      "ratio": 1,
+      "layers": [
+        20
+      ],
+      "requests": [
+        {
+          "query_rows": 2048,
+          "final_original_tokens": 2048,
+          "prefix": 0,
+          "closed_index_keys": 2048,
+          "first_eight": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "last_eight": [
+            2041,
+            2042,
+            2043,
+            2044,
+            2045,
+            2046,
+            2047,
+            2048
+          ],
+          "score_chunks": 1
+        }
+      ],
+      "total_rows": 2048,
+      "padded_width": 2048,
+      "visible_score_count": 2098176,
+      "unchunked_score_bytes": 16777216,
+      "arena_score_bytes": 16777216,
+      "arena_max_rows": 131072,
+      "allocated_cache_or_one_prepared_pool_bytes": 270336,
+      "query_bytes": 8388608,
+      "perquery_candidate_bytes": 16777216,
+      "perquery_output_bytes": 4194304,
+      "source_maxima_bytes": 2097152,
+      "allquery_mask_flags_bytes": 0
+    },
+    {
+      "label": "initial_8k",
+      "role": "source",
+      "ratio": 1,
+      "layers": [
+        20
+      ],
+      "requests": [
+        {
+          "query_rows": 8192,
+          "final_original_tokens": 8192,
+          "prefix": 0,
+          "closed_index_keys": 8192,
+          "first_eight": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "last_eight": [
+            8185,
+            8186,
+            8187,
+            8188,
+            8189,
+            8190,
+            8191,
+            8192
+          ],
+          "score_chunks": 1
+        }
+      ],
+      "total_rows": 8192,
+      "padded_width": 8192,
+      "visible_score_count": 33558528,
+      "unchunked_score_bytes": 268435456,
+      "arena_score_bytes": 268435456,
+      "arena_max_rows": 32768,
+      "allocated_cache_or_one_prepared_pool_bytes": 1081344,
+      "query_bytes": 33554432,
+      "perquery_candidate_bytes": 67108864,
+      "perquery_output_bytes": 16777216,
+      "source_maxima_bytes": 33554432,
+      "allquery_mask_flags_bytes": 0
+    },
+    {
+      "label": "steady_16k",
+      "role": "source",
+      "ratio": 1,
+      "layers": [
+        20
+      ],
+      "requests": [
+        {
+          "query_rows": 512,
+          "final_original_tokens": 16384,
+          "prefix": 15872,
+          "closed_index_keys": 16384,
+          "first_eight": [
+            15873,
+            15874,
+            15875,
+            15876,
+            15877,
+            15878,
+            15879,
+            15880
+          ],
+          "last_eight": [
+            16377,
+            16378,
+            16379,
+            16380,
+            16381,
+            16382,
+            16383,
+            16384
+          ],
+          "score_chunks": 1
+        }
+      ],
+      "total_rows": 512,
+      "padded_width": 16384,
+      "visible_score_count": 8257792,
+      "unchunked_score_bytes": 33554432,
+      "arena_score_bytes": 33554432,
+      "arena_max_rows": 16384,
+      "allocated_cache_or_one_prepared_pool_bytes": 2162688,
+      "query_bytes": 2097152,
+      "perquery_candidate_bytes": 4194304,
+      "perquery_output_bytes": 1048576,
+      "source_maxima_bytes": 4194304,
+      "allquery_mask_flags_bytes": 0
+    },
+    {
+      "label": "steady_64k",
+      "role": "source",
+      "ratio": 1,
+      "layers": [
+        20
+      ],
+      "requests": [
+        {
+          "query_rows": 2048,
+          "final_original_tokens": 65536,
+          "prefix": 63488,
+          "closed_index_keys": 65536,
+          "first_eight": [
+            63489,
+            63490,
+            63491,
+            63492,
+            63493,
+            63494,
+            63495,
+            63496
+          ],
+          "last_eight": [
+            65529,
+            65530,
+            65531,
+            65532,
+            65533,
+            65534,
+            65535,
+            65536
+          ],
+          "score_chunks": 1
+        }
+      ],
+      "total_rows": 2048,
+      "padded_width": 65536,
+      "visible_score_count": 132121600,
+      "unchunked_score_bytes": 536870912,
+      "arena_score_bytes": 536870912,
+      "arena_max_rows": 4096,
+      "allocated_cache_or_one_prepared_pool_bytes": 8650752,
+      "query_bytes": 8388608,
+      "perquery_candidate_bytes": 16777216,
+      "perquery_output_bytes": 4194304,
+      "source_maxima_bytes": 67108864,
+      "allquery_mask_flags_bytes": 0
+    },
+    {
+      "label": "steady_256k",
+      "role": "source",
+      "ratio": 1,
+      "layers": [
+        20
+      ],
+      "requests": [
+        {
+          "query_rows": 4096,
+          "final_original_tokens": 262144,
+          "prefix": 258048,
+          "closed_index_keys": 262144,
+          "first_eight": [
+            258049,
+            258050,
+            258051,
+            258052,
+            258053,
+            258054,
+            258055,
+            258056
+          ],
+          "last_eight": [
+            262137,
+            262138,
+            262139,
+            262140,
+            262141,
+            262142,
+            262143,
+            262144
+          ],
+          "score_chunks": 4
+        }
+      ],
+      "total_rows": 4096,
+      "padded_width": 262144,
+      "visible_score_count": 1065355264,
+      "unchunked_score_bytes": 4294967296,
+      "arena_score_bytes": 1073741824,
+      "arena_max_rows": 1024,
+      "allocated_cache_or_one_prepared_pool_bytes": 34603008,
+      "query_bytes": 16777216,
+      "perquery_candidate_bytes": 33554432,
+      "perquery_output_bytes": 8388608,
+      "source_maxima_bytes": 134217728,
+      "allquery_mask_flags_bytes": 0
+    },
+    {
+      "label": "tail_1m",
+      "role": "source",
+      "ratio": 1,
+      "layers": [
+        20
+      ],
+      "requests": [
+        {
+          "query_rows": 256,
+          "final_original_tokens": 1048576,
+          "prefix": 1048320,
+          "closed_index_keys": 1048576,
+          "first_eight": [
+            1048321,
+            1048322,
+            1048323,
+            1048324,
+            1048325,
+            1048326,
+            1048327,
+            1048328
+          ],
+          "last_eight": [
+            1048569,
+            1048570,
+            1048571,
+            1048572,
+            1048573,
+            1048574,
+            1048575,
+            1048576
+          ],
+          "score_chunks": 1
+        }
+      ],
+      "total_rows": 256,
+      "padded_width": 1048576,
+      "visible_score_count": 268402816,
+      "unchunked_score_bytes": 1073741824,
+      "arena_score_bytes": 1073741824,
+      "arena_max_rows": 256,
+      "allocated_cache_or_one_prepared_pool_bytes": 138412032,
+      "query_bytes": 1048576,
+      "perquery_candidate_bytes": 2097152,
+      "perquery_output_bytes": 524288,
+      "source_maxima_bytes": 134217728,
+      "allquery_mask_flags_bytes": 0
+    },
+    {
+      "label": "ragged",
+      "role": "source",
+      "ratio": 1,
+      "layers": [
+        20
+      ],
+      "requests": [
+        {
+          "query_rows": 512,
+          "final_original_tokens": 65535,
+          "prefix": 65023,
+          "closed_index_keys": 65535,
+          "first_eight": [
+            65024,
+            65025,
+            65026,
+            65027,
+            65028,
+            65029,
+            65030,
+            65031
+          ],
+          "last_eight": [
+            65528,
+            65529,
+            65530,
+            65531,
+            65532,
+            65533,
+            65534,
+            65535
+          ],
+          "score_chunks": 1
+        },
+        {
+          "query_rows": 128,
+          "final_original_tokens": 16384,
+          "prefix": 16256,
+          "closed_index_keys": 16384,
+          "first_eight": [
+            16257,
+            16258,
+            16259,
+            16260,
+            16261,
+            16262,
+            16263,
+            16264
+          ],
+          "last_eight": [
+            16377,
+            16378,
+            16379,
+            16380,
+            16381,
+            16382,
+            16383,
+            16384
+          ],
+          "score_chunks": 1
+        }
+      ],
+      "total_rows": 640,
+      "padded_width": 65536,
+      "visible_score_count": 35512128,
+      "unchunked_score_bytes": 167772160,
+      "arena_score_bytes": 134217728,
+      "arena_max_rows": 4096,
+      "allocated_cache_or_one_prepared_pool_bytes": 17301504,
+      "query_bytes": 2621440,
+      "perquery_candidate_bytes": 5242880,
+      "perquery_output_bytes": 1310720,
+      "source_maxima_bytes": 16777216,
+      "allquery_mask_flags_bytes": 0
+    },
+    {
+      "label": "initial_2k",
+      "role": "consumer",
+      "ratio": 1,
+      "layers": [
+        24,
+        28,
+        32,
+        36
+      ],
+      "requests": [
+        {
+          "query_rows": 2048,
+          "final_original_tokens": 2048,
+          "prefix": 0,
+          "closed_index_keys": 2048,
+          "first_eight": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "last_eight": [
+            2041,
+            2042,
+            2043,
+            2044,
+            2045,
+            2046,
+            2047,
+            2048
+          ],
+          "score_chunks": 1
+        }
+      ],
+      "total_rows": 2048,
+      "padded_width": 2048,
+      "visible_score_count": 2098176,
+      "unchunked_score_bytes": 16777216,
+      "arena_score_bytes": 16777216,
+      "arena_max_rows": 131072,
+      "allocated_cache_or_one_prepared_pool_bytes": 270336,
+      "query_bytes": 8388608,
+      "perquery_candidate_bytes": 16777216,
+      "perquery_output_bytes": 4194304,
+      "source_maxima_bytes": 0,
+      "allquery_mask_flags_bytes": 526336
+    },
+    {
+      "label": "initial_8k",
+      "role": "consumer",
+      "ratio": 1,
+      "layers": [
+        24,
+        28,
+        32,
+        36
+      ],
+      "requests": [
+        {
+          "query_rows": 8192,
+          "final_original_tokens": 8192,
+          "prefix": 0,
+          "closed_index_keys": 8192,
+          "first_eight": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "last_eight": [
+            8185,
+            8186,
+            8187,
+            8188,
+            8189,
+            8190,
+            8191,
+            8192
+          ],
+          "score_chunks": 1
+        }
+      ],
+      "total_rows": 8192,
+      "padded_width": 8192,
+      "visible_score_count": 33558528,
+      "unchunked_score_bytes": 268435456,
+      "arena_score_bytes": 268435456,
+      "arena_max_rows": 32768,
+      "allocated_cache_or_one_prepared_pool_bytes": 1081344,
+      "query_bytes": 33554432,
+      "perquery_candidate_bytes": 67108864,
+      "perquery_output_bytes": 16777216,
+      "source_maxima_bytes": 0,
+      "allquery_mask_flags_bytes": 8396800
+    },
+    {
+      "label": "steady_16k",
+      "role": "consumer",
+      "ratio": 1,
+      "layers": [
+        24,
+        28,
+        32,
+        36
+      ],
+      "requests": [
+        {
+          "query_rows": 512,
+          "final_original_tokens": 16384,
+          "prefix": 15872,
+          "closed_index_keys": 16384,
+          "first_eight": [
+            15873,
+            15874,
+            15875,
+            15876,
+            15877,
+            15878,
+            15879,
+            15880
+          ],
+          "last_eight": [
+            16377,
+            16378,
+            16379,
+            16380,
+            16381,
+            16382,
+            16383,
+            16384
+          ],
+          "score_chunks": 1
+        }
+      ],
+      "total_rows": 512,
+      "padded_width": 16384,
+      "visible_score_count": 8257792,
+      "unchunked_score_bytes": 33554432,
+      "arena_score_bytes": 33554432,
+      "arena_max_rows": 16384,
+      "allocated_cache_or_one_prepared_pool_bytes": 2162688,
+      "query_bytes": 2097152,
+      "perquery_candidate_bytes": 4194304,
+      "perquery_output_bytes": 1048576,
+      "source_maxima_bytes": 0,
+      "allquery_mask_flags_bytes": 1049088
+    },
+    {
+      "label": "steady_64k",
+      "role": "consumer",
+      "ratio": 1,
+      "layers": [
+        24,
+        28,
+        32,
+        36
+      ],
+      "requests": [
+        {
+          "query_rows": 2048,
+          "final_original_tokens": 65536,
+          "prefix": 63488,
+          "closed_index_keys": 65536,
+          "first_eight": [
+            63489,
+            63490,
+            63491,
+            63492,
+            63493,
+            63494,
+            63495,
+            63496
+          ],
+          "last_eight": [
+            65529,
+            65530,
+            65531,
+            65532,
+            65533,
+            65534,
+            65535,
+            65536
+          ],
+          "score_chunks": 1
+        }
+      ],
+      "total_rows": 2048,
+      "padded_width": 65536,
+      "visible_score_count": 132121600,
+      "unchunked_score_bytes": 536870912,
+      "arena_score_bytes": 536870912,
+      "arena_max_rows": 4096,
+      "allocated_cache_or_one_prepared_pool_bytes": 8650752,
+      "query_bytes": 8388608,
+      "perquery_candidate_bytes": 16777216,
+      "perquery_output_bytes": 4194304,
+      "source_maxima_bytes": 0,
+      "allquery_mask_flags_bytes": 16779264
+    },
+    {
+      "label": "steady_256k",
+      "role": "consumer",
+      "ratio": 1,
+      "layers": [
+        24,
+        28,
+        32,
+        36
+      ],
+      "requests": [
+        {
+          "query_rows": 4096,
+          "final_original_tokens": 262144,
+          "prefix": 258048,
+          "closed_index_keys": 262144,
+          "first_eight": [
+            258049,
+            258050,
+            258051,
+            258052,
+            258053,
+            258054,
+            258055,
+            258056
+          ],
+          "last_eight": [
+            262137,
+            262138,
+            262139,
+            262140,
+            262141,
+            262142,
+            262143,
+            262144
+          ],
+          "score_chunks": 4
+        }
+      ],
+      "total_rows": 4096,
+      "padded_width": 262144,
+      "visible_score_count": 1065355264,
+      "unchunked_score_bytes": 4294967296,
+      "arena_score_bytes": 1073741824,
+      "arena_max_rows": 1024,
+      "allocated_cache_or_one_prepared_pool_bytes": 34603008,
+      "query_bytes": 16777216,
+      "perquery_candidate_bytes": 33554432,
+      "perquery_output_bytes": 8388608,
+      "source_maxima_bytes": 0,
+      "allquery_mask_flags_bytes": 134221824
+    },
+    {
+      "label": "tail_1m",
+      "role": "consumer",
+      "ratio": 1,
+      "layers": [
+        24,
+        28,
+        32,
+        36
+      ],
+      "requests": [
+        {
+          "query_rows": 256,
+          "final_original_tokens": 1048576,
+          "prefix": 1048320,
+          "closed_index_keys": 1048576,
+          "first_eight": [
+            1048321,
+            1048322,
+            1048323,
+            1048324,
+            1048325,
+            1048326,
+            1048327,
+            1048328
+          ],
+          "last_eight": [
+            1048569,
+            1048570,
+            1048571,
+            1048572,
+            1048573,
+            1048574,
+            1048575,
+            1048576
+          ],
+          "score_chunks": 1
+        }
+      ],
+      "total_rows": 256,
+      "padded_width": 1048576,
+      "visible_score_count": 268402816,
+      "unchunked_score_bytes": 1073741824,
+      "arena_score_bytes": 1073741824,
+      "arena_max_rows": 256,
+      "allocated_cache_or_one_prepared_pool_bytes": 138412032,
+      "query_bytes": 1048576,
+      "perquery_candidate_bytes": 2097152,
+      "perquery_output_bytes": 524288,
+      "source_maxima_bytes": 0,
+      "allquery_mask_flags_bytes": 33554688
+    },
+    {
+      "label": "ragged",
+      "role": "consumer",
+      "ratio": 1,
+      "layers": [
+        24,
+        28,
+        32,
+        36
+      ],
+      "requests": [
+        {
+          "query_rows": 512,
+          "final_original_tokens": 65535,
+          "prefix": 65023,
+          "closed_index_keys": 65535,
+          "first_eight": [
+            65024,
+            65025,
+            65026,
+            65027,
+            65028,
+            65029,
+            65030,
+            65031
+          ],
+          "last_eight": [
+            65528,
+            65529,
+            65530,
+            65531,
+            65532,
+            65533,
+            65534,
+            65535
+          ],
+          "score_chunks": 1
+        },
+        {
+          "query_rows": 128,
+          "final_original_tokens": 16384,
+          "prefix": 16256,
+          "closed_index_keys": 16384,
+          "first_eight": [
+            16257,
+            16258,
+            16259,
+            16260,
+            16261,
+            16262,
+            16263,
+            16264
+          ],
+          "last_eight": [
+            16377,
+            16378,
+            16379,
+            16380,
+            16381,
+            16382,
+            16383,
+            16384
+          ],
+          "score_chunks": 1
+        }
+      ],
+      "total_rows": 640,
+      "padded_width": 65536,
+      "visible_score_count": 35512128,
+      "unchunked_score_bytes": 167772160,
+      "arena_score_bytes": 134217728,
+      "arena_max_rows": 4096,
+      "allocated_cache_or_one_prepared_pool_bytes": 17301504,
+      "query_bytes": 2621440,
+      "perquery_candidate_bytes": 5242880,
+      "perquery_output_bytes": 1310720,
+      "source_maxima_bytes": 0,
+      "allquery_mask_flags_bytes": 5243520
+    }
+  ]
+}

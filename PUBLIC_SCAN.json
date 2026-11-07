@@ -1,7 +1,7 @@
 {
   "status": "passed",
-  "file_payloads": 8019,
-  "archives_inspected": 35,
+  "file_payloads": 8989,
+  "archives_inspected": 55,
   "patterns": [
     "private_key",
     "github_token",
@@ -110,6 +110,96 @@
       "sha256": "8d33c55261fdfb8ce31a04f402ab99a75869438ed35591ff4c77289c78acc5bc"
     },
     {
+      "archive": "2026-11-07/p5-ant-keys-major/model-aligned/final-v3/frozen/source.tar.gz",
+      "member": "vllm_dsv41_indexer/NOTICE.md",
+      "sha256": "8d33c55261fdfb8ce31a04f402ab99a75869438ed35591ff4c77289c78acc5bc"
+    },
+    {
+      "archive": "2026-11-07/p5-ant-keys-major/model-aligned/final-v3/frozen/source.tar.gz",
+      "member": "vllm_dsv41_indexer/third_party/ant/LICENSE",
+      "sha256": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747"
+    },
+    {
+      "archive": "2026-11-07/p5-ant-keys-major/model-aligned/isolated-source/frozen/source.tar.gz",
+      "member": "vllm_dsv41_indexer/NOTICE.md",
+      "sha256": "8d33c55261fdfb8ce31a04f402ab99a75869438ed35591ff4c77289c78acc5bc"
+    },
+    {
+      "archive": "2026-11-07/p5-ant-keys-major/model-aligned/isolated-source/frozen/source.tar.gz",
+      "member": "vllm_dsv41_indexer/third_party/ant/LICENSE",
+      "sha256": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747"
+    },
+    {
+      "archive": "2026-11-07/p5-model-shapes/dynamic-verifier-v1/frozen/source.tar.gz",
+      "member": "vllm_dsv41_indexer/NOTICE.md",
+      "sha256": "8d33c55261fdfb8ce31a04f402ab99a75869438ed35591ff4c77289c78acc5bc"
+    },
+    {
+      "archive": "2026-11-07/p5-model-shapes/dynamic-verifier-v1/frozen/source.tar.gz",
+      "member": "vllm_dsv41_indexer/third_party/ant/LICENSE",
+      "sha256": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747"
+    },
+    {
+      "archive": "2026-11-07/p5-model-shapes/dynamic-verifier-v1/model-source.tar.gz",
+      "member": "vllm_dsv41_indexer/NOTICE.md",
+      "sha256": "8d33c55261fdfb8ce31a04f402ab99a75869438ed35591ff4c77289c78acc5bc"
+    },
+    {
+      "archive": "2026-11-07/p5-model-shapes/dynamic-verifier-v1/model-source.tar.gz",
+      "member": "vllm_dsv41_indexer/third_party/ant/LICENSE",
+      "sha256": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747"
+    },
+    {
+      "archive": "2026-11-07/p5-model-shapes/dynamic-verifier-v2/frozen/source.tar.gz",
+      "member": "vllm_dsv41_indexer/third_party/ant/LICENSE",
+      "sha256": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747"
+    },
+    {
+      "archive": "2026-11-07/p5-model-shapes/dynamic-verifier-v2/frozen/source.tar.gz",
+      "member": "vllm_dsv41_indexer/NOTICE.md",
+      "sha256": "8d33c55261fdfb8ce31a04f402ab99a75869438ed35591ff4c77289c78acc5bc"
+    },
+    {
+      "archive": "2026-11-07/p5-model-shapes/numerical-diagnostic/attempt1/frozen/source.tar.gz",
+      "member": "vllm_dsv41_indexer/third_party/ant/LICENSE",
+      "sha256": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747"
+    },
+    {
+      "archive": "2026-11-07/p5-model-shapes/numerical-diagnostic/attempt1/frozen/source.tar.gz",
+      "member": "vllm_dsv41_indexer/NOTICE.md",
+      "sha256": "8d33c55261fdfb8ce31a04f402ab99a75869438ed35591ff4c77289c78acc5bc"
+    },
+    {
+      "archive": "2026-11-07/p5-model-shapes/numerical-diagnostic/attempt2/frozen/source.tar.gz",
+      "member": "vllm_dsv41_indexer/NOTICE.md",
+      "sha256": "8d33c55261fdfb8ce31a04f402ab99a75869438ed35591ff4c77289c78acc5bc"
+    },
+    {
+      "archive": "2026-11-07/p5-model-shapes/numerical-diagnostic/attempt2/frozen/source.tar.gz",
+      "member": "vllm_dsv41_indexer/third_party/ant/LICENSE",
+      "sha256": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747"
+    },
+    {
+      "archive": "2026-11-07/p5-model-shapes/numerical-diagnostic/boundary-supplement/frozen/source.tar.gz",
+      "member": "vllm_dsv41_indexer/third_party/ant/LICENSE",
+      "sha256": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747"
+    },
+    {
+      "archive": "2026-11-07/p5-model-shapes/numerical-diagnostic/boundary-supplement/frozen/source.tar.gz",
+      "member": "vllm_dsv41_indexer/NOTICE.md",
+      "sha256": "8d33c55261fdfb8ce31a04f402ab99a75869438ed35591ff4c77289c78acc5bc"
+    },
+    {
+      "archive": "2026-11-07/p5-model-shapes/numerical-diagnostic/frozen/source.tar.gz",
+      "member": "vllm_dsv41_indexer/third_party/ant/LICENSE",
+      "sha256": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747"
+    },
+    {
+      "archive": "2026-11-07/p5-model-shapes/numerical-diagnostic/frozen/source.tar.gz",
+      "member": "vllm_dsv41_indexer/NOTICE.md",
+      "sha256": "8d33c55261fdfb8ce31a04f402ab99a75869438ed35591ff4c77289c78acc5bc"
+    },
+    {
       "archive": "2026-11-07/p7-tp4-row-sharding/source-compact-v1.tar.gz",
       "member": "vllm_dsv41_indexer/third_party/ant/LICENSE",
       "sha256": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747"
@@ -210,5 +300,5 @@
       "sha256": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747"
     }
   ],
-  "limitations": "Pattern scan, recursive tar payload inspection and explicit inventory minimization; no universal secret-detection guarantee."
+  "limitations": "Pattern scan, recursive tar and ZIP/Torch payload inspection and explicit inventory minimization; no universal secret-detection guarantee."
 }

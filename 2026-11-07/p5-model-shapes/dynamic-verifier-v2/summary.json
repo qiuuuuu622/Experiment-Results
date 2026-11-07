@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "fixtures": 5,
+  "phase_backend_execution_checks": 186,
+  "row_checks": 2976,
+  "source_rows_exact_stable": 1056,
+  "max_abs_vs_deepgemm": 1.430511474609375e-06,
+  "source_and_native_identity_unchanged": true,
+  "candidate_update_changed_rows": {
+    "consumer_dynamic": 16,
+    "candidate_cutoff": 12
+  },
+  "archive_sha256": "9a836a2490655d97498ec1aeb341d43c54c757bef350b026c3667472b179ff46",
+  "gpu_scope": "h20-4 physical GPU0; single GPU correctness only"
+}

@@ -1,0 +1,938 @@
+{
+  "model_config_sha256": "8be45ce0476004a3f529fd896115a4a2e800a129ad2d3ec05b16050f52e21879",
+  "cases": [
+    {
+      "name": "initial_2k",
+      "role": "full",
+      "layers": [
+        2,
+        8,
+        14
+      ],
+      "queries_per_request": [
+        2048
+      ],
+      "prefixes_original_tokens": [
+        0
+      ],
+      "logical_contexts": [
+        2048
+      ],
+      "ratio": 2,
+      "actual_index_keys": [
+        1024
+      ],
+      "index_heads": 32,
+      "index_dim": 128,
+      "topk": 512,
+      "candidate_blocks": 2048,
+      "candidate_block_size": 8,
+      "visible_scores": 1048576,
+      "allocated_scores": 2097152,
+      "score_arena_bytes": 8388608,
+      "query_chunk_rows": [
+        2048
+      ],
+      "additional_source_blockmax_bytes": 0,
+      "common_key_prepare_bytes": 135168,
+      "conservative_resident_estimate_bytes": 2172649472,
+      "bypass": false,
+      "workload": "architecture-aligned synthetic module fixture; not a deployment default"
+    },
+    {
+      "name": "initial_8k",
+      "role": "full",
+      "layers": [
+        2,
+        8,
+        14
+      ],
+      "queries_per_request": [
+        8192
+      ],
+      "prefixes_original_tokens": [
+        0
+      ],
+      "logical_contexts": [
+        8192
+      ],
+      "ratio": 2,
+      "actual_index_keys": [
+        4096
+      ],
+      "index_heads": 32,
+      "index_dim": 128,
+      "topk": 512,
+      "candidate_blocks": 2048,
+      "candidate_block_size": 8,
+      "visible_scores": 16777216,
+      "allocated_scores": 33554432,
+      "score_arena_bytes": 134217728,
+      "query_chunk_rows": [
+        8192
+      ],
+      "additional_source_blockmax_bytes": 0,
+      "common_key_prepare_bytes": 540672,
+      "conservative_resident_estimate_bytes": 2550136832,
+      "bypass": false,
+      "workload": "architecture-aligned synthetic module fixture; not a deployment default"
+    },
+    {
+      "name": "steady_16k",
+      "role": "full",
+      "layers": [
+        2,
+        8,
+        14
+      ],
+      "queries_per_request": [
+        512
+      ],
+      "prefixes_original_tokens": [
+        15872
+      ],
+      "logical_contexts": [
+        16384
+      ],
+      "ratio": 2,
+      "actual_index_keys": [
+        8192
+      ],
+      "index_heads": 32,
+      "index_dim": 128,
+      "topk": 512,
+      "candidate_blocks": 2048,
+      "candidate_block_size": 8,
+      "visible_scores": 4128768,
+      "allocated_scores": 4194304,
+      "score_arena_bytes": 16777216,
+      "query_chunk_rows": [
+        512
+      ],
+      "additional_source_blockmax_bytes": 0,
+      "common_key_prepare_bytes": 1081344,
+      "conservative_resident_estimate_bytes": 2197815296,
+      "bypass": false,
+      "workload": "architecture-aligned synthetic module fixture; not a deployment default"
+    },
+    {
+      "name": "steady_64k",
+      "role": "full",
+      "layers": [
+        2,
+        8,
+        14
+      ],
+      "queries_per_request": [
+        2048
+      ],
+      "prefixes_original_tokens": [
+        63488
+      ],
+      "logical_contexts": [
+        65536
+      ],
+      "ratio": 2,
+      "actual_index_keys": [
+        32768
+      ],
+      "index_heads": 32,
+      "index_dim": 128,
+      "topk": 512,
+      "candidate_blocks": 2048,
+      "candidate_block_size": 8,
+      "visible_scores": 66060288,
+      "allocated_scores": 67108864,
+      "score_arena_bytes": 268435456,
+      "query_chunk_rows": [
+        2048
+      ],
+      "additional_source_blockmax_bytes": 0,
+      "common_key_prepare_bytes": 4325376,
+      "conservative_resident_estimate_bytes": 2952790016,
+      "bypass": false,
+      "workload": "architecture-aligned synthetic module fixture; not a deployment default"
+    },
+    {
+      "name": "steady_256k",
+      "role": "full",
+      "layers": [
+        2,
+        8,
+        14
+      ],
+      "queries_per_request": [
+        4096
+      ],
+      "prefixes_original_tokens": [
+        258048
+      ],
+      "logical_contexts": [
+        262144
+      ],
+      "ratio": 2,
+      "actual_index_keys": [
+        131072
+      ],
+      "index_heads": 32,
+      "index_dim": 128,
+      "topk": 512,
+      "candidate_blocks": 2048,
+      "candidate_block_size": 8,
+      "visible_scores": 532676608,
+      "allocated_scores": 536870912,
+      "score_arena_bytes": 1073741824,
+      "query_chunk_rows": [
+        2048,
+        2048
+      ],
+      "additional_source_blockmax_bytes": 0,
+      "common_key_prepare_bytes": 17301504,
+      "conservative_resident_estimate_bytes": 5368709120,
+      "bypass": false,
+      "workload": "architecture-aligned synthetic module fixture; not a deployment default"
+    },
+    {
+      "name": "tail_1m",
+      "role": "full",
+      "layers": [
+        2,
+        8,
+        14
+      ],
+      "queries_per_request": [
+        256
+      ],
+      "prefixes_original_tokens": [
+        1048320
+      ],
+      "logical_contexts": [
+        1048576
+      ],
+      "ratio": 2,
+      "actual_index_keys": [
+        524288
+      ],
+      "index_heads": 32,
+      "index_dim": 128,
+      "topk": 512,
+      "candidate_blocks": 2048,
+      "candidate_block_size": 8,
+      "visible_scores": 134201344,
+      "allocated_scores": 134217728,
+      "score_arena_bytes": 536870912,
+      "query_chunk_rows": [
+        256
+      ],
+      "additional_source_blockmax_bytes": 0,
+      "common_key_prepare_bytes": 69206016,
+      "conservative_resident_estimate_bytes": 3758096384,
+      "bypass": false,
+      "workload": "architecture-aligned synthetic module fixture; not a deployment default"
+    },
+    {
+      "name": "ragged",
+      "role": "full",
+      "layers": [
+        2,
+        8,
+        14
+      ],
+      "queries_per_request": [
+        512,
+        128
+      ],
+      "prefixes_original_tokens": [
+        65023,
+        16256
+      ],
+      "logical_contexts": [
+        65535,
+        16384
+      ],
+      "ratio": 2,
+      "actual_index_keys": [
+        32767,
+        8192
+      ],
+      "index_heads": 32,
+      "index_dim": 128,
+      "topk": 512,
+      "candidate_blocks": 2048,
+      "candidate_block_size": 8,
+      "visible_scores": 17755904,
+      "allocated_scores": 20971520,
+      "score_arena_bytes": 67108864,
+      "query_chunk_rows": [
+        512,
+        128
+      ],
+      "additional_source_blockmax_bytes": 0,
+      "common_key_prepare_bytes": 8650752,
+      "conservative_resident_estimate_bytes": 2348810240,
+      "bypass": false,
+      "workload": "architecture-aligned synthetic module fixture; not a deployment default"
+    },
+    {
+      "name": "initial_2k",
+      "role": "source",
+      "layers": [
+        20
+      ],
+      "queries_per_request": [
+        2048
+      ],
+      "prefixes_original_tokens": [
+        0
+      ],
+      "logical_contexts": [
+        2048
+      ],
+      "ratio": 1,
+      "actual_index_keys": [
+        2048
+      ],
+      "index_heads": 32,
+      "index_dim": 128,
+      "topk": 512,
+      "candidate_blocks": 2048,
+      "candidate_block_size": 8,
+      "visible_scores": 2098176,
+      "allocated_scores": 4194304,
+      "score_arena_bytes": 16777216,
+      "query_chunk_rows": [
+        2048
+      ],
+      "additional_source_blockmax_bytes": 2097152,
+      "common_key_prepare_bytes": 270336,
+      "conservative_resident_estimate_bytes": 2197815296,
+      "bypass": false,
+      "workload": "architecture-aligned synthetic module fixture; not a deployment default"
+    },
+    {
+      "name": "initial_8k",
+      "role": "source",
+      "layers": [
+        20
+      ],
+      "queries_per_request": [
+        8192
+      ],
+      "prefixes_original_tokens": [
+        0
+      ],
+      "logical_contexts": [
+        8192
+      ],
+      "ratio": 1,
+      "actual_index_keys": [
+        8192
+      ],
+      "index_heads": 32,
+      "index_dim": 128,
+      "topk": 512,
+      "candidate_blocks": 2048,
+      "candidate_block_size": 8,
+      "visible_scores": 33558528,
+      "allocated_scores": 67108864,
+      "score_arena_bytes": 268435456,
+      "query_chunk_rows": [
+        8192
+      ],
+      "additional_source_blockmax_bytes": 33554432,
+      "common_key_prepare_bytes": 1081344,
+      "conservative_resident_estimate_bytes": 2952790016,
+      "bypass": false,
+      "workload": "architecture-aligned synthetic module fixture; not a deployment default"
+    },
+    {
+      "name": "initial_32k",
+      "role": "source",
+      "layers": [
+        20
+      ],
+      "queries_per_request": [
+        32768
+      ],
+      "prefixes_original_tokens": [
+        0
+      ],
+      "logical_contexts": [
+        32768
+      ],
+      "ratio": 1,
+      "actual_index_keys": [
+        32768
+      ],
+      "index_heads": 32,
+      "index_dim": 128,
+      "topk": 512,
+      "candidate_blocks": 2048,
+      "candidate_block_size": 8,
+      "visible_scores": 536887296,
+      "allocated_scores": 1073741824,
+      "score_arena_bytes": 1073741824,
+      "query_chunk_rows": [
+        8192,
+        8192,
+        8192,
+        8192
+      ],
+      "additional_source_blockmax_bytes": 134217728,
+      "common_key_prepare_bytes": 4325376,
+      "conservative_resident_estimate_bytes": 5368709120,
+      "bypass": false,
+      "workload": "architecture-aligned synthetic module fixture; not a deployment default"
+    },
+    {
+      "name": "steady_16k",
+      "role": "source",
+      "layers": [
+        20
+      ],
+      "queries_per_request": [
+        512
+      ],
+      "prefixes_original_tokens": [
+        15872
+      ],
+      "logical_contexts": [
+        16384
+      ],
+      "ratio": 1,
+      "actual_index_keys": [
+        16384
+      ],
+      "index_heads": 32,
+      "index_dim": 128,
+      "topk": 512,
+      "candidate_blocks": 2048,
+      "candidate_block_size": 8,
+      "visible_scores": 8257792,
+      "allocated_scores": 8388608,
+      "score_arena_bytes": 33554432,
+      "query_chunk_rows": [
+        512
+      ],
+      "additional_source_blockmax_bytes": 4194304,
+      "common_key_prepare_bytes": 2162688,
+      "conservative_resident_estimate_bytes": 2248146944,
+      "bypass": false,
+      "workload": "architecture-aligned synthetic module fixture; not a deployment default"
+    },
+    {
+      "name": "steady_64k",
+      "role": "source",
+      "layers": [
+        20
+      ],
+      "queries_per_request": [
+        2048
+      ],
+      "prefixes_original_tokens": [
+        63488
+      ],
+      "logical_contexts": [
+        65536
+      ],
+      "ratio": 1,
+      "actual_index_keys": [
+        65536
+      ],
+      "index_heads": 32,
+      "index_dim": 128,
+      "topk": 512,
+      "candidate_blocks": 2048,
+      "candidate_block_size": 8,
+      "visible_scores": 132121600,
+      "allocated_scores": 134217728,
+      "score_arena_bytes": 536870912,
+      "query_chunk_rows": [
+        2048
+      ],
+      "additional_source_blockmax_bytes": 67108864,
+      "common_key_prepare_bytes": 8650752,
+      "conservative_resident_estimate_bytes": 3758096384,
+      "bypass": false,
+      "workload": "architecture-aligned synthetic module fixture; not a deployment default"
+    },
+    {
+      "name": "steady_256k",
+      "role": "source",
+      "layers": [
+        20
+      ],
+      "queries_per_request": [
+        4096
+      ],
+      "prefixes_original_tokens": [
+        258048
+      ],
+      "logical_contexts": [
+        262144
+      ],
+      "ratio": 1,
+      "actual_index_keys": [
+        262144
+      ],
+      "index_heads": 32,
+      "index_dim": 128,
+      "topk": 512,
+      "candidate_blocks": 2048,
+      "candidate_block_size": 8,
+      "visible_scores": 1065355264,
+      "allocated_scores": 1073741824,
+      "score_arena_bytes": 1073741824,
+      "query_chunk_rows": [
+        1024,
+        1024,
+        1024,
+        1024
+      ],
+      "additional_source_blockmax_bytes": 134217728,
+      "common_key_prepare_bytes": 34603008,
+      "conservative_resident_estimate_bytes": 5368709120,
+      "bypass": false,
+      "workload": "architecture-aligned synthetic module fixture; not a deployment default"
+    },
+    {
+      "name": "tail_1m",
+      "role": "source",
+      "layers": [
+        20
+      ],
+      "queries_per_request": [
+        256
+      ],
+      "prefixes_original_tokens": [
+        1048320
+      ],
+      "logical_contexts": [
+        1048576
+      ],
+      "ratio": 1,
+      "actual_index_keys": [
+        1048576
+      ],
+      "index_heads": 32,
+      "index_dim": 128,
+      "topk": 512,
+      "candidate_blocks": 2048,
+      "candidate_block_size": 8,
+      "visible_scores": 268402816,
+      "allocated_scores": 268435456,
+      "score_arena_bytes": 1073741824,
+      "query_chunk_rows": [
+        256
+      ],
+      "additional_source_blockmax_bytes": 134217728,
+      "common_key_prepare_bytes": 138412032,
+      "conservative_resident_estimate_bytes": 5368709120,
+      "bypass": false,
+      "workload": "architecture-aligned synthetic module fixture; not a deployment default"
+    },
+    {
+      "name": "ragged",
+      "role": "source",
+      "layers": [
+        20
+      ],
+      "queries_per_request": [
+        512,
+        128
+      ],
+      "prefixes_original_tokens": [
+        65023,
+        16256
+      ],
+      "logical_contexts": [
+        65535,
+        16384
+      ],
+      "ratio": 1,
+      "actual_index_keys": [
+        65535,
+        16384
+      ],
+      "index_heads": 32,
+      "index_dim": 128,
+      "topk": 512,
+      "candidate_blocks": 2048,
+      "candidate_block_size": 8,
+      "visible_scores": 35512128,
+      "allocated_scores": 41943040,
+      "score_arena_bytes": 134217728,
+      "query_chunk_rows": [
+        512,
+        128
+      ],
+      "additional_source_blockmax_bytes": 16777216,
+      "common_key_prepare_bytes": 17301504,
+      "conservative_resident_estimate_bytes": 2550136832,
+      "bypass": false,
+      "workload": "architecture-aligned synthetic module fixture; not a deployment default"
+    },
+    {
+      "name": "initial_2k",
+      "role": "consumer",
+      "layers": [
+        24,
+        28,
+        32,
+        36
+      ],
+      "queries_per_request": [
+        2048
+      ],
+      "prefixes_original_tokens": [
+        0
+      ],
+      "logical_contexts": [
+        2048
+      ],
+      "ratio": 1,
+      "actual_index_keys": [
+        2048
+      ],
+      "index_heads": 32,
+      "index_dim": 128,
+      "topk": 512,
+      "candidate_blocks": 2048,
+      "candidate_block_size": 8,
+      "visible_scores": 2098176,
+      "allocated_scores": 4194304,
+      "score_arena_bytes": 16777216,
+      "query_chunk_rows": [
+        2048
+      ],
+      "additional_source_blockmax_bytes": 0,
+      "common_key_prepare_bytes": 270336,
+      "conservative_resident_estimate_bytes": 2197815296,
+      "bypass": false,
+      "workload": "architecture-aligned synthetic module fixture; not a deployment default"
+    },
+    {
+      "name": "initial_8k",
+      "role": "consumer",
+      "layers": [
+        24,
+        28,
+        32,
+        36
+      ],
+      "queries_per_request": [
+        8192
+      ],
+      "prefixes_original_tokens": [
+        0
+      ],
+      "logical_contexts": [
+        8192
+      ],
+      "ratio": 1,
+      "actual_index_keys": [
+        8192
+      ],
+      "index_heads": 32,
+      "index_dim": 128,
+      "topk": 512,
+      "candidate_blocks": 2048,
+      "candidate_block_size": 8,
+      "visible_scores": 33558528,
+      "allocated_scores": 67108864,
+      "score_arena_bytes": 268435456,
+      "query_chunk_rows": [
+        8192
+      ],
+      "additional_source_blockmax_bytes": 0,
+      "common_key_prepare_bytes": 1081344,
+      "conservative_resident_estimate_bytes": 2952790016,
+      "bypass": false,
+      "workload": "architecture-aligned synthetic module fixture; not a deployment default"
+    },
+    {
+      "name": "initial_32k",
+      "role": "consumer",
+      "layers": [
+        24,
+        28,
+        32,
+        36
+      ],
+      "queries_per_request": [
+        32768
+      ],
+      "prefixes_original_tokens": [
+        0
+      ],
+      "logical_contexts": [
+        32768
+      ],
+      "ratio": 1,
+      "actual_index_keys": [
+        32768
+      ],
+      "index_heads": 32,
+      "index_dim": 128,
+      "topk": 512,
+      "candidate_blocks": 2048,
+      "candidate_block_size": 8,
+      "visible_scores": 536887296,
+      "allocated_scores": 1073741824,
+      "score_arena_bytes": 1073741824,
+      "query_chunk_rows": [
+        8192,
+        8192,
+        8192,
+        8192
+      ],
+      "additional_source_blockmax_bytes": 0,
+      "common_key_prepare_bytes": 4325376,
+      "conservative_resident_estimate_bytes": 5368709120,
+      "bypass": false,
+      "workload": "architecture-aligned synthetic module fixture; not a deployment default"
+    },
+    {
+      "name": "steady_16k",
+      "role": "consumer",
+      "layers": [
+        24,
+        28,
+        32,
+        36
+      ],
+      "queries_per_request": [
+        512
+      ],
+      "prefixes_original_tokens": [
+        15872
+      ],
+      "logical_contexts": [
+        16384
+      ],
+      "ratio": 1,
+      "actual_index_keys": [
+        16384
+      ],
+      "index_heads": 32,
+      "index_dim": 128,
+      "topk": 512,
+      "candidate_blocks": 2048,
+      "candidate_block_size": 8,
+      "visible_scores": 8257792,
+      "allocated_scores": 8388608,
+      "score_arena_bytes": 33554432,
+      "query_chunk_rows": [
+        512
+      ],
+      "additional_source_blockmax_bytes": 0,
+      "common_key_prepare_bytes": 2162688,
+      "conservative_resident_estimate_bytes": 2248146944,
+      "bypass": false,
+      "workload": "architecture-aligned synthetic module fixture; not a deployment default"
+    },
+    {
+      "name": "steady_64k",
+      "role": "consumer",
+      "layers": [
+        24,
+        28,
+        32,
+        36
+      ],
+      "queries_per_request": [
+        2048
+      ],
+      "prefixes_original_tokens": [
+        63488
+      ],
+      "logical_contexts": [
+        65536
+      ],
+      "ratio": 1,
+      "actual_index_keys": [
+        65536
+      ],
+      "index_heads": 32,
+      "index_dim": 128,
+      "topk": 512,
+      "candidate_blocks": 2048,
+      "candidate_block_size": 8,
+      "visible_scores": 132121600,
+      "allocated_scores": 134217728,
+      "score_arena_bytes": 536870912,
+      "query_chunk_rows": [
+        2048
+      ],
+      "additional_source_blockmax_bytes": 0,
+      "common_key_prepare_bytes": 8650752,
+      "conservative_resident_estimate_bytes": 3758096384,
+      "bypass": false,
+      "workload": "architecture-aligned synthetic module fixture; not a deployment default"
+    },
+    {
+      "name": "steady_256k",
+      "role": "consumer",
+      "layers": [
+        24,
+        28,
+        32,
+        36
+      ],
+      "queries_per_request": [
+        4096
+      ],
+      "prefixes_original_tokens": [
+        258048
+      ],
+      "logical_contexts": [
+        262144
+      ],
+      "ratio": 1,
+      "actual_index_keys": [
+        262144
+      ],
+      "index_heads": 32,
+      "index_dim": 128,
+      "topk": 512,
+      "candidate_blocks": 2048,
+      "candidate_block_size": 8,
+      "visible_scores": 1065355264,
+      "allocated_scores": 1073741824,
+      "score_arena_bytes": 1073741824,
+      "query_chunk_rows": [
+        1024,
+        1024,
+        1024,
+        1024
+      ],
+      "additional_source_blockmax_bytes": 0,
+      "common_key_prepare_bytes": 34603008,
+      "conservative_resident_estimate_bytes": 5368709120,
+      "bypass": false,
+      "workload": "architecture-aligned synthetic module fixture; not a deployment default"
+    },
+    {
+      "name": "tail_1m",
+      "role": "consumer",
+      "layers": [
+        24,
+        28,
+        32,
+        36
+      ],
+      "queries_per_request": [
+        256
+      ],
+      "prefixes_original_tokens": [
+        1048320
+      ],
+      "logical_contexts": [
+        1048576
+      ],
+      "ratio": 1,
+      "actual_index_keys": [
+        1048576
+      ],
+      "index_heads": 32,
+      "index_dim": 128,
+      "topk": 512,
+      "candidate_blocks": 2048,
+      "candidate_block_size": 8,
+      "visible_scores": 268402816,
+      "allocated_scores": 268435456,
+      "score_arena_bytes": 1073741824,
+      "query_chunk_rows": [
+        256
+      ],
+      "additional_source_blockmax_bytes": 0,
+      "common_key_prepare_bytes": 138412032,
+      "conservative_resident_estimate_bytes": 5368709120,
+      "bypass": false,
+      "workload": "architecture-aligned synthetic module fixture; not a deployment default"
+    },
+    {
+      "name": "ragged",
+      "role": "consumer",
+      "layers": [
+        24,
+        28,
+        32,
+        36
+      ],
+      "queries_per_request": [
+        512,
+        128
+      ],
+      "prefixes_original_tokens": [
+        65023,
+        16256
+      ],
+      "logical_contexts": [
+        65535,
+        16384
+      ],
+      "ratio": 1,
+      "actual_index_keys": [
+        65535,
+        16384
+      ],
+      "index_heads": 32,
+      "index_dim": 128,
+      "topk": 512,
+      "candidate_blocks": 2048,
+      "candidate_block_size": 8,
+      "visible_scores": 35512128,
+      "allocated_scores": 41943040,
+      "score_arena_bytes": 134217728,
+      "query_chunk_rows": [
+        512,
+        128
+      ],
+      "additional_source_blockmax_bytes": 0,
+      "common_key_prepare_bytes": 17301504,
+      "conservative_resident_estimate_bytes": 2550136832,
+      "bypass": false,
+      "workload": "architecture-aligned synthetic module fixture; not a deployment default"
+    }
+  ],
+  "excluded": [
+    {
+      "role": "full",
+      "case": "initial_32k",
+      "reason": "extra long-initial points specifically cover source/consumer candidate cutoff; staged matrix"
+    }
+  ],
+  "short_context_bypass": [
+    {
+      "ratio": 1,
+      "logical_context": 512,
+      "eager_bypass": true,
+      "capture_bypass": false
+    },
+    {
+      "ratio": 1,
+      "logical_context": 513,
+      "eager_bypass": false,
+      "capture_bypass": false
+    },
+    {
+      "ratio": 2,
+      "logical_context": 1024,
+      "eager_bypass": true,
+      "capture_bypass": false
+    },
+    {
+      "ratio": 2,
+      "logical_context": 1025,
+      "eager_bypass": true,
+      "capture_bypass": false
+    },
+    {
+      "ratio": 2,
+      "logical_context": 1026,
+      "eager_bypass": false,
+      "capture_bypass": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "path": "../p5-model-shapes/numerical-diagnostic/diagnostic.json",
+    "sha256": "e8d3b7f7b92051ac4f82e9a08d369c42e29d090abc533be44b66b5f8d56c64a5"
+  },
+  {
+    "path": "../p5-model-shapes/dynamic-verifier-v2/verify.json",
+    "sha256": "9c53c8dade024d88cab05f2365f306f0eea36c2ef76a44fe46749e9e102120e9"
+  },
+  {
+    "path": "../p5-model-shapes/dynamic-verifier-v2/REPORT.md",
+    "sha256": "c0ead614f903ab0c8d43997528425945d022932ed57f3e85d3f453e9fdc4369f"
+  },
+  {
+    "path": "../p5-ant-grid/summary.json",
+    "sha256": "2a80cb56346923045cf75ae173489e804eedd504d852df852197d7bf7db1c15e"
+  },
+  {
+    "path": "../p5-ant-grid/REPORT.md",
+    "sha256": "7d9d1c76b32036ed36239eecfabd4aab4cc9ceb946130ee12aa6de6a6e396a5f"
+  }
+]

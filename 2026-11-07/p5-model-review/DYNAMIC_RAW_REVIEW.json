@@ -1,0 +1,49 @@
+{
+  "status": "independent_raw_review_passed",
+  "checks": 186,
+  "rows": 2976,
+  "source_rows": 1056,
+  "max_abs_vs_deepgemm": 1.430511474609375e-06,
+  "runtime_source_native_versions_identical": true,
+  "expected_metadata_difference": "native_identity_capture",
+  "sources": {
+    "benchmark_prefill_model.py": "f422bdd3a5593e031c16e9270f0e93fb3dd343402c4eacd13cfe087987c7ef49",
+    "verify_prefill_model.py": "fd406778241d6d9e53f58266d1e4cab9ffc2e4812f09ebe6378f8b8c246ad0a4",
+    "prefill_keys_major_ant.py": "957557aa4ac9944073ae4e2c2a370775df446f93437fa82de821b3051d3184c9",
+    "prefill.py": "78e49d3eeebc593b7604a6375d00f10b9bcbf21236510e1819d7c7fddb391ade"
+  },
+  "raw_sha256": {
+    "results/indexer/20261107-resume/p5-model-shapes/dynamic-verifier-v2/verify.json": "9c53c8dade024d88cab05f2365f306f0eea36c2ef76a44fe46749e9e102120e9",
+    "results/indexer/20261107-resume/p5-model-shapes/dynamic-verifier-v2/summary.json": "149a40c497972acf8d3cb6ab807c2487f21f1a10b1a62d3a02cce695eec3ed72",
+    "results/indexer/20261107-resume/p5-model-shapes/dynamic-verifier-v2/runtime-before.json": "d8ac3a5858288ca5aec6b4c53548905fc71aaded2c7606174915d04e2be7c9f8",
+    "results/indexer/20261107-resume/p5-model-shapes/dynamic-verifier-v2/runtime-after.json": "4ab7894572033b16a378e103385f3ab42bd0724cf5f054b9ed208c223f1ea7d5",
+    "results/indexer/20261107-resume/p5-model-shapes/dynamic-verifier-v2/frozen/source.tar.gz": "9a836a2490655d97498ec1aeb341d43c54c757bef350b026c3667472b179ff46"
+  },
+  "fixtures": [
+    [
+      "ratio2_dynamic",
+      "full",
+      54
+    ],
+    [
+      "source_dynamic",
+      "source",
+      54
+    ],
+    [
+      "consumer_dynamic",
+      "consumer",
+      54
+    ],
+    [
+      "candidate_cutoff",
+      "source",
+      12
+    ],
+    [
+      "candidate_cutoff",
+      "consumer",
+      12
+    ]
+  ]
+}

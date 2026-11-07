@@ -1,0 +1,1916 @@
+{
+  "status": "completed",
+  "args": {
+    "output": "/root/dsv41-indexer-resume-20261107/results/indexer/20261107-resume/p5-model-shapes/dynamic-verifier-v2/verify.json",
+    "case": "all"
+  },
+  "identity_before": {
+    "/root/dsv41-indexer-resume-20261107/runs/p5-model-verify-v2/benchmarks/kernels/dsv41_indexer/verify_prefill_model.py": "fd406778241d6d9e53f58266d1e4cab9ffc2e4812f09ebe6378f8b8c246ad0a4",
+    "/root/dsv41-indexer-resume-20261107/runs/p5-model-verify-v2/benchmarks/kernels/dsv41_indexer/benchmark_prefill_model.py": "f422bdd3a5593e031c16e9270f0e93fb3dd343402c4eacd13cfe087987c7ef49",
+    "/root/dsv41-indexer-resume-20261107/runs/p5-model-verify-v2/vllm_dsv41_indexer/prefill.py": "78e49d3eeebc593b7604a6375d00f10b9bcbf21236510e1819d7c7fddb391ade",
+    "/root/dsv41-indexer-resume-20261107/runs/p5-model-verify-v2/vllm_dsv41_indexer/prefill_keys_major_ant.py": "957557aa4ac9944073ae4e2c2a370775df446f93437fa82de821b3051d3184c9",
+    "architecture/model-config.json": "8be45ce0476004a3f529fd896115a4a2e800a129ad2d3ec05b16050f52e21879"
+  },
+  "device_before": {
+    "name": "NVIDIA H20",
+    "sm_count": 78,
+    "topology": "\t\u001b[4mGPU0\tGPU1\tGPU2\tGPU3\tNIC0\tNIC1\tNIC2\tNIC3\tCPU Affinity\tNUMA Affinity\tGPU NUMA ID\u001b[0m\nGPU0\t X \tNV18\tNV18\tNV18\tPXB\tPIX\tPXB\tPXB\t0-187\t0-1\t\tN/A\nGPU1\tNV18\t X \tNV18\tNV18\tPXB\tPIX\tPXB\tPXB\t0-187\t0-1\t\tN/A\nGPU2\tNV18\tNV18\t X \tNV18\tPXB\tPXB\tPIX\tPXB\t0-187\t0-1\t\tN/A\nGPU3\tNV18\tNV18\tNV18\t X \tPXB\tPXB\tPIX\tPXB\t0-187\t0-1\t\tN/A\nNIC0\tPXB\tPXB\tPXB\tPXB\t X \tPXB\tPXB\tPXB\t\t\t\t\nNIC1\tPIX\tPIX\tPXB\tPXB\tPXB\t X \tPXB\tPXB\t\t\t\t\nNIC2\tPXB\tPXB\tPIX\tPIX\tPXB\tPXB\t X \tPXB\t\t\t\t\nNIC3\tPXB\tPXB\tPXB\tPXB\tPXB\tPXB\tPXB\t X \t\t\t\t\n\nLegend:\n\n  X    = Self\n  SYS  = Connection traversing PCIe as well as the SMP interconnect between NUMA nodes (e.g., QPI/UPI)\n  NODE = Connection traversing PCIe as well as the interconnect between PCIe Host Bridges within a NUMA node\n  PHB  = Connection traversing PCIe as well as a PCIe Host Bridge (typically the CPU)\n  PXB  = Connection traversing multiple PCIe bridges (without traversing the PCIe Host Bridge)\n  PIX  = Connection traversing at most a single PCIe bridge\n  NV#  = Connection traversing a bonded set of # NVLinks\n\nNIC Legend:\n\n  NIC0: mlx5_0\n  NIC1: mlx5_1\n  NIC2: mlx5_2\n  NIC3: mlx5_3\n\n",
+    "torch": "2.13.0+cu130",
+    "cuda": "13.0",
+    "memory_bytes": 101997346816
+  },
+  "physical_gpu": "0",
+  "cpu_logic": {
+    "bypass": [
+      {
+        "batch_max": 1024,
+        "capturing": false,
+        "bypass": true
+      },
+      {
+        "batch_max": 1024,
+        "capturing": true,
+        "bypass": false
+      },
+      {
+        "batch_max": 1025,
+        "capturing": false,
+        "bypass": true
+      },
+      {
+        "batch_max": 1025,
+        "capturing": true,
+        "bypass": false
+      },
+      {
+        "batch_max": 1026,
+        "capturing": false,
+        "bypass": false
+      },
+      {
+        "batch_max": 1026,
+        "capturing": true,
+        "bypass": false
+      }
+    ],
+    "model_branch": "max_seq_len // ratio <= 512 and not stream_capturing",
+    "scope": "CPU predicate only; module does not implement host bypass",
+    "floor_even_prefix": [
+      0,
+      1,
+      1,
+      2,
+      2
+    ],
+    "floor_odd_prefix": [
+      1,
+      1,
+      2,
+      2,
+      3
+    ]
+  },
+  "cases": [
+    {
+      "label": "ratio2_dynamic",
+      "role": "full",
+      "ratio": 2,
+      "query_lens": [
+        8,
+        8
+      ],
+      "contexts": [
+        1026,
+        1025
+      ],
+      "phases": [
+        "base",
+        "candidate_update",
+        "length_update",
+        "physical_page_permutation",
+        "request_reorder",
+        "all_zero_with_page_permutation",
+        "restore",
+        "zero_query_ties",
+        "restore_after_ties"
+      ],
+      "checks": [
+        {
+          "phase": "base",
+          "execution": "graph",
+          "backend": "deepgemm",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "base",
+          "execution": "graph",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 4.76837158203125e-07
+        },
+        {
+          "phase": "base",
+          "execution": "graph",
+          "backend": "ant",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 9.5367431640625e-07
+        },
+        {
+          "phase": "base",
+          "execution": "eager",
+          "backend": "deepgemm",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "base",
+          "execution": "eager",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 4.76837158203125e-07
+        },
+        {
+          "phase": "base",
+          "execution": "eager",
+          "backend": "ant",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 9.5367431640625e-07
+        },
+        {
+          "phase": "candidate_update",
+          "execution": "graph",
+          "backend": "deepgemm",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "candidate_update",
+          "execution": "graph",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 4.76837158203125e-07
+        },
+        {
+          "phase": "candidate_update",
+          "execution": "graph",
+          "backend": "ant",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 9.5367431640625e-07
+        },
+        {
+          "phase": "candidate_update",
+          "execution": "eager",
+          "backend": "deepgemm",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "candidate_update",
+          "execution": "eager",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 4.76837158203125e-07
+        },
+        {
+          "phase": "candidate_update",
+          "execution": "eager",
+          "backend": "ant",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 9.5367431640625e-07
+        },
+        {
+          "phase": "length_update",
+          "execution": "graph",
+          "backend": "deepgemm",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "length_update",
+          "execution": "graph",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 4.76837158203125e-07
+        },
+        {
+          "phase": "length_update",
+          "execution": "graph",
+          "backend": "ant",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 4.76837158203125e-07
+        },
+        {
+          "phase": "length_update",
+          "execution": "eager",
+          "backend": "deepgemm",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "length_update",
+          "execution": "eager",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 4.76837158203125e-07
+        },
+        {
+          "phase": "length_update",
+          "execution": "eager",
+          "backend": "ant",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 4.76837158203125e-07
+        },
+        {
+          "phase": "physical_page_permutation",
+          "execution": "graph",
+          "backend": "deepgemm",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "physical_page_permutation",
+          "execution": "graph",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 4.76837158203125e-07
+        },
+        {
+          "phase": "physical_page_permutation",
+          "execution": "graph",
+          "backend": "ant",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 4.76837158203125e-07
+        },
+        {
+          "phase": "physical_page_permutation",
+          "execution": "eager",
+          "backend": "deepgemm",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "physical_page_permutation",
+          "execution": "eager",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 4.76837158203125e-07
+        },
+        {
+          "phase": "physical_page_permutation",
+          "execution": "eager",
+          "backend": "ant",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 4.76837158203125e-07
+        },
+        {
+          "phase": "request_reorder",
+          "execution": "graph",
+          "backend": "deepgemm",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "request_reorder",
+          "execution": "graph",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 4.76837158203125e-07
+        },
+        {
+          "phase": "request_reorder",
+          "execution": "graph",
+          "backend": "ant",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 4.76837158203125e-07
+        },
+        {
+          "phase": "request_reorder",
+          "execution": "eager",
+          "backend": "deepgemm",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "request_reorder",
+          "execution": "eager",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 4.76837158203125e-07
+        },
+        {
+          "phase": "request_reorder",
+          "execution": "eager",
+          "backend": "ant",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 4.76837158203125e-07
+        },
+        {
+          "phase": "all_zero_with_page_permutation",
+          "execution": "graph",
+          "backend": "deepgemm",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "all_zero_with_page_permutation",
+          "execution": "graph",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "all_zero_with_page_permutation",
+          "execution": "graph",
+          "backend": "ant",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "all_zero_with_page_permutation",
+          "execution": "eager",
+          "backend": "deepgemm",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "all_zero_with_page_permutation",
+          "execution": "eager",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "all_zero_with_page_permutation",
+          "execution": "eager",
+          "backend": "ant",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "restore",
+          "execution": "graph",
+          "backend": "deepgemm",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "restore",
+          "execution": "graph",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 4.76837158203125e-07
+        },
+        {
+          "phase": "restore",
+          "execution": "graph",
+          "backend": "ant",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 9.5367431640625e-07
+        },
+        {
+          "phase": "restore",
+          "execution": "eager",
+          "backend": "deepgemm",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "restore",
+          "execution": "eager",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 4.76837158203125e-07
+        },
+        {
+          "phase": "restore",
+          "execution": "eager",
+          "backend": "ant",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 9.5367431640625e-07
+        },
+        {
+          "phase": "zero_query_ties",
+          "execution": "graph",
+          "backend": "deepgemm",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "zero_query_ties",
+          "execution": "graph",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "zero_query_ties",
+          "execution": "graph",
+          "backend": "ant",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "zero_query_ties",
+          "execution": "eager",
+          "backend": "deepgemm",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "zero_query_ties",
+          "execution": "eager",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "zero_query_ties",
+          "execution": "eager",
+          "backend": "ant",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "restore_after_ties",
+          "execution": "graph",
+          "backend": "deepgemm",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "restore_after_ties",
+          "execution": "graph",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 4.76837158203125e-07
+        },
+        {
+          "phase": "restore_after_ties",
+          "execution": "graph",
+          "backend": "ant",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 9.5367431640625e-07
+        },
+        {
+          "phase": "restore_after_ties",
+          "execution": "eager",
+          "backend": "deepgemm",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "restore_after_ties",
+          "execution": "eager",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 4.76837158203125e-07
+        },
+        {
+          "phase": "restore_after_ties",
+          "execution": "eager",
+          "backend": "ant",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 9.5367431640625e-07
+        }
+      ],
+      "fixed_logits_exact": true,
+      "source_reference_scope": "every query row",
+      "candidate_layout": "per-query [Q,2048], source generated outside consumer call",
+      "request_reorder": "swap full equal-size groups then normalize request IDs",
+      "graph_contract": "fixed pointers, descriptor sizes, request groups and chunks",
+      "graph_validation": "poison all prepared K/scales, prefix and output; save all graph results before any eager/oracle preparation",
+      "physical_permutation": "cache storage and logical-to-physical table changed together",
+      "scope": "module correctness; no timing or model accuracy claim"
+    },
+    {
+      "label": "source_dynamic",
+      "role": "source",
+      "ratio": 1,
+      "query_lens": [
+        8,
+        8
+      ],
+      "contexts": [
+        16400,
+        16409
+      ],
+      "phases": [
+        "base",
+        "candidate_update",
+        "length_update",
+        "physical_page_permutation",
+        "request_reorder",
+        "all_zero_with_page_permutation",
+        "restore",
+        "zero_query_ties",
+        "restore_after_ties"
+      ],
+      "checks": [
+        {
+          "phase": "base",
+          "execution": "graph",
+          "backend": "deepgemm",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "base",
+          "execution": "graph",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 9.5367431640625e-07
+        },
+        {
+          "phase": "base",
+          "execution": "graph",
+          "backend": "ant",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 1.430511474609375e-06
+        },
+        {
+          "phase": "base",
+          "execution": "eager",
+          "backend": "deepgemm",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "base",
+          "execution": "eager",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 9.5367431640625e-07
+        },
+        {
+          "phase": "base",
+          "execution": "eager",
+          "backend": "ant",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 1.430511474609375e-06
+        },
+        {
+          "phase": "candidate_update",
+          "execution": "graph",
+          "backend": "deepgemm",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "candidate_update",
+          "execution": "graph",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 9.5367431640625e-07
+        },
+        {
+          "phase": "candidate_update",
+          "execution": "graph",
+          "backend": "ant",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 1.430511474609375e-06
+        },
+        {
+          "phase": "candidate_update",
+          "execution": "eager",
+          "backend": "deepgemm",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "candidate_update",
+          "execution": "eager",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 9.5367431640625e-07
+        },
+        {
+          "phase": "candidate_update",
+          "execution": "eager",
+          "backend": "ant",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 1.430511474609375e-06
+        },
+        {
+          "phase": "length_update",
+          "execution": "graph",
+          "backend": "deepgemm",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "length_update",
+          "execution": "graph",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 4.76837158203125e-07
+        },
+        {
+          "phase": "length_update",
+          "execution": "graph",
+          "backend": "ant",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 7.152557373046875e-07
+        },
+        {
+          "phase": "length_update",
+          "execution": "eager",
+          "backend": "deepgemm",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "length_update",
+          "execution": "eager",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 4.76837158203125e-07
+        },
+        {
+          "phase": "length_update",
+          "execution": "eager",
+          "backend": "ant",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 7.152557373046875e-07
+        },
+        {
+          "phase": "physical_page_permutation",
+          "execution": "graph",
+          "backend": "deepgemm",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "physical_page_permutation",
+          "execution": "graph",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 4.76837158203125e-07
+        },
+        {
+          "phase": "physical_page_permutation",
+          "execution": "graph",
+          "backend": "ant",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 7.152557373046875e-07
+        },
+        {
+          "phase": "physical_page_permutation",
+          "execution": "eager",
+          "backend": "deepgemm",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "physical_page_permutation",
+          "execution": "eager",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 4.76837158203125e-07
+        },
+        {
+          "phase": "physical_page_permutation",
+          "execution": "eager",
+          "backend": "ant",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 7.152557373046875e-07
+        },
+        {
+          "phase": "request_reorder",
+          "execution": "graph",
+          "backend": "deepgemm",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "request_reorder",
+          "execution": "graph",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 4.76837158203125e-07
+        },
+        {
+          "phase": "request_reorder",
+          "execution": "graph",
+          "backend": "ant",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 7.152557373046875e-07
+        },
+        {
+          "phase": "request_reorder",
+          "execution": "eager",
+          "backend": "deepgemm",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "request_reorder",
+          "execution": "eager",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 4.76837158203125e-07
+        },
+        {
+          "phase": "request_reorder",
+          "execution": "eager",
+          "backend": "ant",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 7.152557373046875e-07
+        },
+        {
+          "phase": "all_zero_with_page_permutation",
+          "execution": "graph",
+          "backend": "deepgemm",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "all_zero_with_page_permutation",
+          "execution": "graph",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "all_zero_with_page_permutation",
+          "execution": "graph",
+          "backend": "ant",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "all_zero_with_page_permutation",
+          "execution": "eager",
+          "backend": "deepgemm",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "all_zero_with_page_permutation",
+          "execution": "eager",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "all_zero_with_page_permutation",
+          "execution": "eager",
+          "backend": "ant",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "restore",
+          "execution": "graph",
+          "backend": "deepgemm",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "restore",
+          "execution": "graph",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 9.5367431640625e-07
+        },
+        {
+          "phase": "restore",
+          "execution": "graph",
+          "backend": "ant",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 1.430511474609375e-06
+        },
+        {
+          "phase": "restore",
+          "execution": "eager",
+          "backend": "deepgemm",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "restore",
+          "execution": "eager",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 9.5367431640625e-07
+        },
+        {
+          "phase": "restore",
+          "execution": "eager",
+          "backend": "ant",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 1.430511474609375e-06
+        },
+        {
+          "phase": "zero_query_ties",
+          "execution": "graph",
+          "backend": "deepgemm",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "zero_query_ties",
+          "execution": "graph",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "zero_query_ties",
+          "execution": "graph",
+          "backend": "ant",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "zero_query_ties",
+          "execution": "eager",
+          "backend": "deepgemm",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "zero_query_ties",
+          "execution": "eager",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "zero_query_ties",
+          "execution": "eager",
+          "backend": "ant",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "restore_after_ties",
+          "execution": "graph",
+          "backend": "deepgemm",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "restore_after_ties",
+          "execution": "graph",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 9.5367431640625e-07
+        },
+        {
+          "phase": "restore_after_ties",
+          "execution": "graph",
+          "backend": "ant",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 1.430511474609375e-06
+        },
+        {
+          "phase": "restore_after_ties",
+          "execution": "eager",
+          "backend": "deepgemm",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "restore_after_ties",
+          "execution": "eager",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 9.5367431640625e-07
+        },
+        {
+          "phase": "restore_after_ties",
+          "execution": "eager",
+          "backend": "ant",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 1.430511474609375e-06
+        }
+      ],
+      "fixed_logits_exact": true,
+      "source_reference_scope": "every query row",
+      "candidate_layout": "per-query [Q,2048], source generated outside consumer call",
+      "request_reorder": "swap full equal-size groups then normalize request IDs",
+      "graph_contract": "fixed pointers, descriptor sizes, request groups and chunks",
+      "graph_validation": "poison all prepared K/scales, prefix and output; save all graph results before any eager/oracle preparation",
+      "physical_permutation": "cache storage and logical-to-physical table changed together",
+      "scope": "module correctness; no timing or model accuracy claim"
+    },
+    {
+      "label": "consumer_dynamic",
+      "role": "consumer",
+      "ratio": 1,
+      "query_lens": [
+        8,
+        8
+      ],
+      "contexts": [
+        16400,
+        16409
+      ],
+      "phases": [
+        "base",
+        "candidate_update",
+        "length_update",
+        "physical_page_permutation",
+        "request_reorder",
+        "all_zero_with_page_permutation",
+        "restore",
+        "zero_query_ties",
+        "restore_after_ties"
+      ],
+      "checks": [
+        {
+          "phase": "base",
+          "execution": "graph",
+          "backend": "deepgemm",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "base",
+          "execution": "graph",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 9.5367431640625e-07
+        },
+        {
+          "phase": "base",
+          "execution": "graph",
+          "backend": "ant",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 1.430511474609375e-06
+        },
+        {
+          "phase": "base",
+          "execution": "eager",
+          "backend": "deepgemm",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "base",
+          "execution": "eager",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 9.5367431640625e-07
+        },
+        {
+          "phase": "base",
+          "execution": "eager",
+          "backend": "ant",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 1.430511474609375e-06
+        },
+        {
+          "phase": "candidate_update",
+          "execution": "graph",
+          "backend": "deepgemm",
+          "candidate_changed_rows": 16,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "candidate_update",
+          "execution": "graph",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": 16,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 9.5367431640625e-07
+        },
+        {
+          "phase": "candidate_update",
+          "execution": "graph",
+          "backend": "ant",
+          "candidate_changed_rows": 16,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 1.430511474609375e-06
+        },
+        {
+          "phase": "candidate_update",
+          "execution": "eager",
+          "backend": "deepgemm",
+          "candidate_changed_rows": 16,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "candidate_update",
+          "execution": "eager",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": 16,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 9.5367431640625e-07
+        },
+        {
+          "phase": "candidate_update",
+          "execution": "eager",
+          "backend": "ant",
+          "candidate_changed_rows": 16,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 1.430511474609375e-06
+        },
+        {
+          "phase": "length_update",
+          "execution": "graph",
+          "backend": "deepgemm",
+          "candidate_changed_rows": 16,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "length_update",
+          "execution": "graph",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": 16,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 4.76837158203125e-07
+        },
+        {
+          "phase": "length_update",
+          "execution": "graph",
+          "backend": "ant",
+          "candidate_changed_rows": 16,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 7.152557373046875e-07
+        },
+        {
+          "phase": "length_update",
+          "execution": "eager",
+          "backend": "deepgemm",
+          "candidate_changed_rows": 16,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "length_update",
+          "execution": "eager",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": 16,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 4.76837158203125e-07
+        },
+        {
+          "phase": "length_update",
+          "execution": "eager",
+          "backend": "ant",
+          "candidate_changed_rows": 16,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 7.152557373046875e-07
+        },
+        {
+          "phase": "physical_page_permutation",
+          "execution": "graph",
+          "backend": "deepgemm",
+          "candidate_changed_rows": 0,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "physical_page_permutation",
+          "execution": "graph",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": 0,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 4.76837158203125e-07
+        },
+        {
+          "phase": "physical_page_permutation",
+          "execution": "graph",
+          "backend": "ant",
+          "candidate_changed_rows": 0,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 7.152557373046875e-07
+        },
+        {
+          "phase": "physical_page_permutation",
+          "execution": "eager",
+          "backend": "deepgemm",
+          "candidate_changed_rows": 0,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "physical_page_permutation",
+          "execution": "eager",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": 0,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 4.76837158203125e-07
+        },
+        {
+          "phase": "physical_page_permutation",
+          "execution": "eager",
+          "backend": "ant",
+          "candidate_changed_rows": 0,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 7.152557373046875e-07
+        },
+        {
+          "phase": "request_reorder",
+          "execution": "graph",
+          "backend": "deepgemm",
+          "candidate_changed_rows": 16,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "request_reorder",
+          "execution": "graph",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": 16,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 4.76837158203125e-07
+        },
+        {
+          "phase": "request_reorder",
+          "execution": "graph",
+          "backend": "ant",
+          "candidate_changed_rows": 16,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 7.152557373046875e-07
+        },
+        {
+          "phase": "request_reorder",
+          "execution": "eager",
+          "backend": "deepgemm",
+          "candidate_changed_rows": 16,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "request_reorder",
+          "execution": "eager",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": 16,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 4.76837158203125e-07
+        },
+        {
+          "phase": "request_reorder",
+          "execution": "eager",
+          "backend": "ant",
+          "candidate_changed_rows": 16,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 7.152557373046875e-07
+        },
+        {
+          "phase": "all_zero_with_page_permutation",
+          "execution": "graph",
+          "backend": "deepgemm",
+          "candidate_changed_rows": 16,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "all_zero_with_page_permutation",
+          "execution": "graph",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": 16,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "all_zero_with_page_permutation",
+          "execution": "graph",
+          "backend": "ant",
+          "candidate_changed_rows": 16,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "all_zero_with_page_permutation",
+          "execution": "eager",
+          "backend": "deepgemm",
+          "candidate_changed_rows": 16,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "all_zero_with_page_permutation",
+          "execution": "eager",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": 16,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "all_zero_with_page_permutation",
+          "execution": "eager",
+          "backend": "ant",
+          "candidate_changed_rows": 16,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "restore",
+          "execution": "graph",
+          "backend": "deepgemm",
+          "candidate_changed_rows": 16,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "restore",
+          "execution": "graph",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": 16,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 9.5367431640625e-07
+        },
+        {
+          "phase": "restore",
+          "execution": "graph",
+          "backend": "ant",
+          "candidate_changed_rows": 16,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 1.430511474609375e-06
+        },
+        {
+          "phase": "restore",
+          "execution": "eager",
+          "backend": "deepgemm",
+          "candidate_changed_rows": 16,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "restore",
+          "execution": "eager",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": 16,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 9.5367431640625e-07
+        },
+        {
+          "phase": "restore",
+          "execution": "eager",
+          "backend": "ant",
+          "candidate_changed_rows": 16,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 1.430511474609375e-06
+        },
+        {
+          "phase": "zero_query_ties",
+          "execution": "graph",
+          "backend": "deepgemm",
+          "candidate_changed_rows": 16,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "zero_query_ties",
+          "execution": "graph",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": 16,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "zero_query_ties",
+          "execution": "graph",
+          "backend": "ant",
+          "candidate_changed_rows": 16,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "zero_query_ties",
+          "execution": "eager",
+          "backend": "deepgemm",
+          "candidate_changed_rows": 16,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "zero_query_ties",
+          "execution": "eager",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": 16,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "zero_query_ties",
+          "execution": "eager",
+          "backend": "ant",
+          "candidate_changed_rows": 16,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "restore_after_ties",
+          "execution": "graph",
+          "backend": "deepgemm",
+          "candidate_changed_rows": 16,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "restore_after_ties",
+          "execution": "graph",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": 16,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 9.5367431640625e-07
+        },
+        {
+          "phase": "restore_after_ties",
+          "execution": "graph",
+          "backend": "ant",
+          "candidate_changed_rows": 16,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 1.430511474609375e-06
+        },
+        {
+          "phase": "restore_after_ties",
+          "execution": "eager",
+          "backend": "deepgemm",
+          "candidate_changed_rows": 16,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "restore_after_ties",
+          "execution": "eager",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": 16,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 9.5367431640625e-07
+        },
+        {
+          "phase": "restore_after_ties",
+          "execution": "eager",
+          "backend": "ant",
+          "candidate_changed_rows": 16,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 1.430511474609375e-06
+        }
+      ],
+      "fixed_logits_exact": true,
+      "source_reference_scope": "every query row",
+      "candidate_layout": "per-query [Q,2048], source generated outside consumer call",
+      "request_reorder": "swap full equal-size groups then normalize request IDs",
+      "graph_contract": "fixed pointers, descriptor sizes, request groups and chunks",
+      "graph_validation": "poison all prepared K/scales, prefix and output; save all graph results before any eager/oracle preparation",
+      "physical_permutation": "cache storage and logical-to-physical table changed together",
+      "scope": "module correctness; no timing or model accuracy claim"
+    },
+    {
+      "label": "candidate_cutoff",
+      "role": "source",
+      "ratio": 1,
+      "query_lens": [
+        16
+      ],
+      "contexts": [
+        16396
+      ],
+      "phases": [
+        "base",
+        "candidate_update"
+      ],
+      "checks": [
+        {
+          "phase": "base",
+          "execution": "graph",
+          "backend": "deepgemm",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "base",
+          "execution": "graph",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 9.5367431640625e-07
+        },
+        {
+          "phase": "base",
+          "execution": "graph",
+          "backend": "ant",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 1.430511474609375e-06
+        },
+        {
+          "phase": "base",
+          "execution": "eager",
+          "backend": "deepgemm",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "base",
+          "execution": "eager",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 9.5367431640625e-07
+        },
+        {
+          "phase": "base",
+          "execution": "eager",
+          "backend": "ant",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 1.430511474609375e-06
+        },
+        {
+          "phase": "candidate_update",
+          "execution": "graph",
+          "backend": "deepgemm",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "candidate_update",
+          "execution": "graph",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 9.5367431640625e-07
+        },
+        {
+          "phase": "candidate_update",
+          "execution": "graph",
+          "backend": "ant",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 1.430511474609375e-06
+        },
+        {
+          "phase": "candidate_update",
+          "execution": "eager",
+          "backend": "deepgemm",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "candidate_update",
+          "execution": "eager",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 9.5367431640625e-07
+        },
+        {
+          "phase": "candidate_update",
+          "execution": "eager",
+          "backend": "ant",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 16,
+          "max_abs_vs_deepgemm": 1.430511474609375e-06
+        }
+      ],
+      "fixed_logits_exact": true,
+      "source_reference_scope": "every query row",
+      "candidate_layout": "per-query [Q,2048], source generated outside consumer call",
+      "request_reorder": "swap full equal-size groups then normalize request IDs",
+      "graph_contract": "fixed pointers, descriptor sizes, request groups and chunks",
+      "graph_validation": "poison all prepared K/scales, prefix and output; save all graph results before any eager/oracle preparation",
+      "physical_permutation": "cache storage and logical-to-physical table changed together",
+      "scope": "module correctness; no timing or model accuracy claim"
+    },
+    {
+      "label": "candidate_cutoff",
+      "role": "consumer",
+      "ratio": 1,
+      "query_lens": [
+        16
+      ],
+      "contexts": [
+        16396
+      ],
+      "phases": [
+        "base",
+        "candidate_update"
+      ],
+      "checks": [
+        {
+          "phase": "base",
+          "execution": "graph",
+          "backend": "deepgemm",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "base",
+          "execution": "graph",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 9.5367431640625e-07
+        },
+        {
+          "phase": "base",
+          "execution": "graph",
+          "backend": "ant",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 1.430511474609375e-06
+        },
+        {
+          "phase": "base",
+          "execution": "eager",
+          "backend": "deepgemm",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "base",
+          "execution": "eager",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 9.5367431640625e-07
+        },
+        {
+          "phase": "base",
+          "execution": "eager",
+          "backend": "ant",
+          "candidate_changed_rows": null,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 1.430511474609375e-06
+        },
+        {
+          "phase": "candidate_update",
+          "execution": "graph",
+          "backend": "deepgemm",
+          "candidate_changed_rows": 12,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "candidate_update",
+          "execution": "graph",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": 12,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 9.5367431640625e-07
+        },
+        {
+          "phase": "candidate_update",
+          "execution": "graph",
+          "backend": "ant",
+          "candidate_changed_rows": 12,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 1.430511474609375e-06
+        },
+        {
+          "phase": "candidate_update",
+          "execution": "eager",
+          "backend": "deepgemm",
+          "candidate_changed_rows": 12,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 0.0
+        },
+        {
+          "phase": "candidate_update",
+          "execution": "eager",
+          "backend": "current_keys_major",
+          "candidate_changed_rows": 12,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 9.5367431640625e-07
+        },
+        {
+          "phase": "candidate_update",
+          "execution": "eager",
+          "backend": "ant",
+          "candidate_changed_rows": 12,
+          "rows_exact_stable": 16,
+          "source_rows_exact": 0,
+          "max_abs_vs_deepgemm": 1.430511474609375e-06
+        }
+      ],
+      "fixed_logits_exact": true,
+      "source_reference_scope": "every query row",
+      "candidate_layout": "per-query [Q,2048], source generated outside consumer call",
+      "request_reorder": "swap full equal-size groups then normalize request IDs",
+      "graph_contract": "fixed pointers, descriptor sizes, request groups and chunks",
+      "graph_validation": "poison all prepared K/scales, prefix and output; save all graph results before any eager/oracle preparation",
+      "physical_permutation": "cache storage and logical-to-physical table changed together",
+      "scope": "module correctness; no timing or model accuracy claim"
+    }
+  ],
+  "identity_after": {
+    "/root/dsv41-indexer-resume-20261107/runs/p5-model-verify-v2/benchmarks/kernels/dsv41_indexer/verify_prefill_model.py": "fd406778241d6d9e53f58266d1e4cab9ffc2e4812f09ebe6378f8b8c246ad0a4",
+    "/root/dsv41-indexer-resume-20261107/runs/p5-model-verify-v2/benchmarks/kernels/dsv41_indexer/benchmark_prefill_model.py": "f422bdd3a5593e031c16e9270f0e93fb3dd343402c4eacd13cfe087987c7ef49",
+    "/root/dsv41-indexer-resume-20261107/runs/p5-model-verify-v2/vllm_dsv41_indexer/prefill.py": "78e49d3eeebc593b7604a6375d00f10b9bcbf21236510e1819d7c7fddb391ade",
+    "/root/dsv41-indexer-resume-20261107/runs/p5-model-verify-v2/vllm_dsv41_indexer/prefill_keys_major_ant.py": "957557aa4ac9944073ae4e2c2a370775df446f93437fa82de821b3051d3184c9",
+    "architecture/model-config.json": "8be45ce0476004a3f529fd896115a4a2e800a129ad2d3ec05b16050f52e21879"
+  },
+  "device_after": {
+    "name": "NVIDIA H20",
+    "sm_count": 78,
+    "topology": "\t\u001b[4mGPU0\tGPU1\tGPU2\tGPU3\tNIC0\tNIC1\tNIC2\tNIC3\tCPU Affinity\tNUMA Affinity\tGPU NUMA ID\u001b[0m\nGPU0\t X \tNV18\tNV18\tNV18\tPXB\tPIX\tPXB\tPXB\t0-187\t0-1\t\tN/A\nGPU1\tNV18\t X \tNV18\tNV18\tPXB\tPIX\tPXB\tPXB\t0-187\t0-1\t\tN/A\nGPU2\tNV18\tNV18\t X \tNV18\tPXB\tPXB\tPIX\tPXB\t0-187\t0-1\t\tN/A\nGPU3\tNV18\tNV18\tNV18\t X \tPXB\tPXB\tPIX\tPXB\t0-187\t0-1\t\tN/A\nNIC0\tPXB\tPXB\tPXB\tPXB\t X \tPXB\tPXB\tPXB\t\t\t\t\nNIC1\tPIX\tPIX\tPXB\tPXB\tPXB\t X \tPXB\tPXB\t\t\t\t\nNIC2\tPXB\tPXB\tPIX\tPIX\tPXB\tPXB\t X \tPXB\t\t\t\t\nNIC3\tPXB\tPXB\tPXB\tPXB\tPXB\tPXB\tPXB\t X \t\t\t\t\n\nLegend:\n\n  X    = Self\n  SYS  = Connection traversing PCIe as well as the SMP interconnect between NUMA nodes (e.g., QPI/UPI)\n  NODE = Connection traversing PCIe as well as the interconnect between PCIe Host Bridges within a NUMA node\n  PHB  = Connection traversing PCIe as well as a PCIe Host Bridge (typically the CPU)\n  PXB  = Connection traversing multiple PCIe bridges (without traversing the PCIe Host Bridge)\n  PIX  = Connection traversing at most a single PCIe bridge\n  NV#  = Connection traversing a bonded set of # NVLinks\n\nNIC Legend:\n\n  NIC0: mlx5_0\n  NIC1: mlx5_1\n  NIC2: mlx5_2\n  NIC3: mlx5_3\n\n",
+    "torch": "2.13.0+cu130",
+    "cuda": "13.0",
+    "memory_bytes": 101997346816
+  }
+}

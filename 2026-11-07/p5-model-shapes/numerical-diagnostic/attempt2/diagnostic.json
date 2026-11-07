@@ -1,0 +1,22 @@
+{
+  "status": "failed",
+  "identity_before": {
+    "/root/dsv41-indexer-resume-20261107/runs/p5-model-numerical-v2/benchmarks/kernels/dsv41_indexer/verify_prefill_model.py": "fd406778241d6d9e53f58266d1e4cab9ffc2e4812f09ebe6378f8b8c246ad0a4",
+    "/root/dsv41-indexer-resume-20261107/runs/p5-model-numerical-v2/benchmarks/kernels/dsv41_indexer/benchmark_prefill_model.py": "f422bdd3a5593e031c16e9270f0e93fb3dd343402c4eacd13cfe087987c7ef49",
+    "/root/dsv41-indexer-resume-20261107/runs/p5-model-numerical-v2/vllm_dsv41_indexer/prefill.py": "78e49d3eeebc593b7604a6375d00f10b9bcbf21236510e1819d7c7fddb391ade",
+    "/root/dsv41-indexer-resume-20261107/runs/p5-model-numerical-v2/vllm_dsv41_indexer/prefill_keys_major_ant.py": "957557aa4ac9944073ae4e2c2a370775df446f93437fa82de821b3051d3184c9",
+    "architecture/model-config.json": "8be45ce0476004a3f529fd896115a4a2e800a129ad2d3ec05b16050f52e21879"
+  },
+  "diagnostic_sha256": "a13e4c9bae147f66b8eea137d68b885c0a645e5b8606e8b7f20bb1f5b23a1c4c",
+  "device": {
+    "name": "NVIDIA H20",
+    "sm_count": 78,
+    "topology": "\t\u001b[4mGPU0\tGPU1\tGPU2\tGPU3\tNIC0\tNIC1\tNIC2\tNIC3\tCPU Affinity\tNUMA Affinity\tGPU NUMA ID\u001b[0m\nGPU0\t X \tNV18\tNV18\tNV18\tPXB\tPIX\tPXB\tPXB\t0-187\t0-1\t\tN/A\nGPU1\tNV18\t X \tNV18\tNV18\tPXB\tPIX\tPXB\tPXB\t0-187\t0-1\t\tN/A\nGPU2\tNV18\tNV18\t X \tNV18\tPXB\tPXB\tPIX\tPXB\t0-187\t0-1\t\tN/A\nGPU3\tNV18\tNV18\tNV18\t X \tPXB\tPXB\tPIX\tPXB\t0-187\t0-1\t\tN/A\nNIC0\tPXB\tPXB\tPXB\tPXB\t X \tPXB\tPXB\tPXB\t\t\t\t\nNIC1\tPIX\tPIX\tPXB\tPXB\tPXB\t X \tPXB\tPXB\t\t\t\t\nNIC2\tPXB\tPXB\tPIX\tPIX\tPXB\tPXB\t X \tPXB\t\t\t\t\nNIC3\tPXB\tPXB\tPXB\tPXB\tPXB\tPXB\tPXB\t X \t\t\t\t\n\nLegend:\n\n  X    = Self\n  SYS  = Connection traversing PCIe as well as the SMP interconnect between NUMA nodes (e.g., QPI/UPI)\n  NODE = Connection traversing PCIe as well as the interconnect between PCIe Host Bridges within a NUMA node\n  PHB  = Connection traversing PCIe as well as a PCIe Host Bridge (typically the CPU)\n  PXB  = Connection traversing multiple PCIe bridges (without traversing the PCIe Host Bridge)\n  PIX  = Connection traversing at most a single PCIe bridge\n  NV#  = Connection traversing a bonded set of # NVLinks\n\nNIC Legend:\n\n  NIC0: mlx5_0\n  NIC1: mlx5_1\n  NIC2: mlx5_2\n  NIC3: mlx5_3\n\n",
+    "torch": "2.13.0+cu130",
+    "cuda": "13.0",
+    "memory_bytes": 101997346816
+  },
+  "cases": [],
+  "scope": "read-only dot/epilogue diagnosis; no default change or timing",
+  "error": "RuntimeError('error encountered during parsing')"
+}

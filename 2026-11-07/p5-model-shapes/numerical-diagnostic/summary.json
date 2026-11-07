@@ -1,0 +1,45 @@
+{
+  "status": "completed",
+  "rows": 9,
+  "visible_scores": 911549,
+  "per_head_dots": 29169568,
+  "max_ant_reconstruction_residual": 9.5367431640625e-07,
+  "max_native_reconstruction_residual": 1.430511474609375e-06,
+  "max_scale_rounding": 0.0,
+  "max_fp32_fp64_dot_difference": 0.0,
+  "score_aggregates": {
+    "d128_default": {
+      "max_abs_vs_fp64": 0.0021547168266167205,
+      "strict_failures": 12227,
+      "min_topk_overlap_vs_fp64": 1.0
+    },
+    "d128_max_imprecise_32": {
+      "max_abs_vs_fp64": 0.00036625027929915177,
+      "strict_failures": 244,
+      "min_topk_overlap_vs_fp64": 0.998046875
+    },
+    "four_d32_default": {
+      "max_abs_vs_fp64": 0.00036625027929915177,
+      "strict_failures": 244,
+      "min_topk_overlap_vs_fp64": 0.998046875
+    },
+    "fp32_dot": {
+      "max_abs_vs_fp64": 1.332507281404105e-06,
+      "strict_failures": 0,
+      "min_topk_overlap_vs_fp64": 1.0
+    },
+    "fp64_dot_cast_fp32": {
+      "max_abs_vs_fp64": 1.332507281404105e-06,
+      "strict_failures": 0,
+      "min_topk_overlap_vs_fp64": 1.0
+    }
+  },
+  "original_sampling_failures_reproduced": {
+    "initial_2k": 36,
+    "steady_256k_excluding_added_row1401": 247
+  },
+  "pre_post_native_and_source_unchanged": true,
+  "diag_base_sha256": "0332aef408d675af918b5802e5eeb48deb542b05f38d990dec825ae5ec3589ea",
+  "diag_boundary_sha256": "c7250768f6df86ec5e9ffcf1cd33c48215060793ad93a15752b7afc9b1937b77",
+  "scope": "H20 GPU0, representative ratio2 FULL shapes, same quantized inputs; no performance or default-path change"
+}

@@ -1,0 +1,47 @@
+{
+  "status": "P5b_model_aligned_research_review_complete_no_automatic_admission",
+  "driver": "benchmarks/kernels/dsv41_indexer/benchmark_prefill_model.py",
+  "driver_sha256": "f422bdd3a5593e031c16e9270f0e93fb3dd343402c4eacd13cfe087987c7ef49",
+  "scheduled_shapes": 23,
+  "excluded_shapes": [
+    {
+      "label": "initial_32k",
+      "role": "full",
+      "reason": "scope_not_memory: extra initial32K targets ratio1 source/consumer candidate cutoff"
+    }
+  ],
+  "pending": [],
+  "artifacts": {
+    "BENCHMARK_FAIRNESS.md": "b3fcd865116ec24240b2c19ec61166d10439eab3eb10f3a6c8330c70b128b482",
+    "INITIAL_REVIEW.md": "50fb731eb2d94d36fbf9ee00ad34085da403703efeddff2a619c77576797004e",
+    "CPU_CONTRACT_AUDIT.json": "57d425343d56b7772f0822823b76b6c17a3bacdc6de73f5cbe8e5189cbb9abec",
+    "audit_shapes.py": "5e631f31f4e7d192879fb44c1d64b86297c84aa73bf20946be6b4da4e9d87437",
+    "DYNAMIC_RAW_REVIEW.json": "d85a3e762d9c0fb461111d2e7141f1bf0fcc9dbd9fd79500b067f32809c89ef0",
+    "PERFORMANCE_RAW_REVIEW_PARTIAL.json": "11be58c49d1355e9eb047a8957fdfdd31c5997e85770c03f4c0e89ada64c0b56",
+    "PERFORMANCE_RAW_REVIEW.json": "6ba86ae213e0b45945e12df1bed99c3a7c21ab0a242f36ab87c4370825b43337",
+    "ISOLATED_RAW_REVIEW.json": "cec6f23d480c951a5f35e3d9f47b74bb035efafda9445870827b951ce69d6f25",
+    "NUMERICAL_RAW_REVIEW.json": "e3a3a4bf73c50e9882ef6820f311dabe2007d5bc4c26a897ccc58c6eab2a43b9"
+  },
+  "dynamic_review": {
+    "status": "passed",
+    "checks": 186,
+    "token_rows": 2976,
+    "source_rows": 1056
+  },
+  "limitations": [
+    "Initial FP32 strict threshold remains unmet; shared FP8 dot cause analyzed without changing tolerance.",
+    "No stable >=5% Ant win after isolated rerun; no new factory or dispatch admission.",
+    "P5c per-query compact consumer is separate ongoing scope."
+  ],
+  "final_counts_forward_Ant_only": {
+    "token_topk_changed_rows": 6,
+    "source_candidate_changed_rows": 5
+  },
+  "performance_raw_review": {
+    "shapes": 23,
+    "orders": 2,
+    "raw_reports": 6,
+    "sample_rounds_checked": 1055,
+    "source_files_checked": 79
+  }
+}

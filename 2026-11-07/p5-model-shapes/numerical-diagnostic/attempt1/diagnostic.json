@@ -1,0 +1,22 @@
+{
+  "status": "failed",
+  "identity_before": {
+    "/root/dsv41-indexer-resume-20261107/runs/p5-model-numerical-v1/benchmarks/kernels/dsv41_indexer/verify_prefill_model.py": "fd406778241d6d9e53f58266d1e4cab9ffc2e4812f09ebe6378f8b8c246ad0a4",
+    "/root/dsv41-indexer-resume-20261107/runs/p5-model-numerical-v1/benchmarks/kernels/dsv41_indexer/benchmark_prefill_model.py": "f422bdd3a5593e031c16e9270f0e93fb3dd343402c4eacd13cfe087987c7ef49",
+    "/root/dsv41-indexer-resume-20261107/runs/p5-model-numerical-v1/vllm_dsv41_indexer/prefill.py": "78e49d3eeebc593b7604a6375d00f10b9bcbf21236510e1819d7c7fddb391ade",
+    "/root/dsv41-indexer-resume-20261107/runs/p5-model-numerical-v1/vllm_dsv41_indexer/prefill_keys_major_ant.py": "957557aa4ac9944073ae4e2c2a370775df446f93437fa82de821b3051d3184c9",
+    "architecture/model-config.json": "8be45ce0476004a3f529fd896115a4a2e800a129ad2d3ec05b16050f52e21879"
+  },
+  "diagnostic_sha256": "17a0426658acf92989a9a0c2e63a5ae8354cbaac72a17f561ba8f410114cdc33",
+  "device": {
+    "name": "NVIDIA H20",
+    "sm_count": 78,
+    "topology": "\t\u001b[4mGPU0\tGPU1\tGPU2\tGPU3\tNIC0\tNIC1\tNIC2\tNIC3\tCPU Affinity\tNUMA Affinity\tGPU NUMA ID\u001b[0m\nGPU0\t X \tNV18\tNV18\tNV18\tPXB\tPIX\tPXB\tPXB\t0-187\t0-1\t\tN/A\nGPU1\tNV18\t X \tNV18\tNV18\tPXB\tPIX\tPXB\tPXB\t0-187\t0-1\t\tN/A\nGPU2\tNV18\tNV18\t X \tNV18\tPXB\tPXB\tPIX\tPXB\t0-187\t0-1\t\tN/A\nGPU3\tNV18\tNV18\tNV18\t X \tPXB\tPXB\tPIX\tPXB\t0-187\t0-1\t\tN/A\nNIC0\tPXB\tPXB\tPXB\tPXB\t X \tPXB\tPXB\tPXB\t\t\t\t\nNIC1\tPIX\tPIX\tPXB\tPXB\tPXB\t X \tPXB\tPXB\t\t\t\t\nNIC2\tPXB\tPXB\tPIX\tPIX\tPXB\tPXB\t X \tPXB\t\t\t\t\nNIC3\tPXB\tPXB\tPXB\tPXB\tPXB\tPXB\tPXB\t X \t\t\t\t\n\nLegend:\n\n  X    = Self\n  SYS  = Connection traversing PCIe as well as the SMP interconnect between NUMA nodes (e.g., QPI/UPI)\n  NODE = Connection traversing PCIe as well as the interconnect between PCIe Host Bridges within a NUMA node\n  PHB  = Connection traversing PCIe as well as a PCIe Host Bridge (typically the CPU)\n  PXB  = Connection traversing multiple PCIe bridges (without traversing the PCIe Host Bridge)\n  PIX  = Connection traversing at most a single PCIe bridge\n  NV#  = Connection traversing a bonded set of # NVLinks\n\nNIC Legend:\n\n  NIC0: mlx5_0\n  NIC1: mlx5_1\n  NIC2: mlx5_2\n  NIC3: mlx5_3\n\n",
+    "torch": "2.13.0+cu130",
+    "cuda": "13.0",
+    "memory_bytes": 101997346816
+  },
+  "cases": [],
+  "scope": "read-only dot/epilogue diagnosis; no default change or timing",
+  "error": "CompilationError('def dots(Q, K, OUT, N, D: gl.constexpr, PRECISE: gl.constexpr):\\n    tile, segment = gl.program_id(0), gl.program_id(1)\\n    load: gl.constexpr = gl.BlockedLayout([1, 4], [4, 8], [4, 1], [1, 0])\\n    mma: gl.constexpr = gl.NVMMADistributedLayout(\\n        version=[3, 0], warps_per_cta=[4, 1], instr_shape=[16, 32, 32]\\n    )\\n    dim = segment * D + gl.arange(0, D, layout=gl.SliceLayout(0, load))\\n    key = tile * 64 + gl.arange(0, 64, layout=gl.SliceLayout(1, load))\\n    head = gl.arange(0, 32, layout=gl.SliceLayout(1, load))\\n    k = gl.load(K + key[:, None] * 128 + dim[None, :], key[:, None] < N, 0)\\n    q = gl.load(Q + head[:, None] * 128 + dim[None, :])\\n    qs = gl.allocate_shared_memory(\\n        gl.float8e4nv,\\n        [32, D],\\n        gl.NVMMASharedLayout.get_default_for([32, D], gl.float8e4nv),\\n    )\\n    ks = gl.allocate_shared_memory(\\n        gl.float8e4nv,\\n        [64, D],\\n        gl.NVMMASharedLayout.get_default_for([64, D], gl.float8e4nv),\\n    )\\n    qs.store(q)\\n    ks.store(k)\\n    fence_async_shared()\\n    gl.barrier()\\n    acc = gl.zeros([64, 32], gl.float32, layout=mma)\\n    if PRECISE:\\n        acc = warpgroup_mma(\\n            ks, qs.permute((1, 0)), acc, use_acc=False, max_num_imprecise_acc=0\\n        )\\n    else:\\n        acc = warpgroup_mma(ks, qs.permute((1, 0)), acc, use_acc=False)\\n    key_out = tile * 64 + gl.arange(0, 64, layout=gl.SliceLayout(1, mma))\\n    head_out = gl.arange(0, 32, layout=gl.SliceLayout(0, mma))\\n    gl.store(\\n        OUT + (segment * N + key_out[:, None]) * 32 + head_out[None, :],\\n        acc,\\n        key_out[:, None] < N,\\n    )\\n', <ast.Call object at 0x7f320abce4d0>, \"cannot cast int32[constexpr[64], constexpr[128]] to <['64', '128'], fp8e4nv, BlockedLayout(size_per_thread=[1, 4], threads_per_warp=[4, 8], warps_per_cta=[4, 1], order=[1, 0], cga_layout=[])>\")"
+}

@@ -1,0 +1,5 @@
+{"completed": "ratio2_dynamic", "role": "full"}
+{"completed": "source_dynamic", "role": "source"}
+{"completed": "consumer_dynamic", "role": "consumer"}
+{"completed": "candidate_cutoff", "role": "source"}
+{"completed": "candidate_cutoff", "role": "consumer"}

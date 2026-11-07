@@ -1,0 +1,66 @@
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/dist-packages/triton/language/core.py", line 43, in wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/triton/language/core.py", line 2203, in load
+    return _semantic.load(pointer, mask, other, boundary_check, padding_option, cache_modifier, eviction_policy,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/triton/language/semantic.py", line 1099, in load
+    return self._load_legacy(ptr, mask, other, boundary_check, padding, cache, eviction, is_volatile)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/triton/language/semantic.py", line 1067, in _load_legacy
+    other = self.cast(other, elt_ty)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/triton/language/semantic.py", line 909, in cast
+    assert False, f'cannot cast {input} to {dst_ty}'
+           ^^^^^
+AssertionError: cannot cast int32[constexpr[32], constexpr[128]] to <['32', '128'], fp8e4nv>
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/root/dsv41-indexer-port/benchmarks/kernels/dsv41_indexer/verify_module.py", line 79, in <module>
+    main()
+  File "/root/dsv41-indexer-port/benchmarks/kernels/dsv41_indexer/verify_module.py", line 73, in main
+    results = run_checks()
+              ^^^^^^^^^^^^
+  File "/root/dsv41-indexer-port/benchmarks/kernels/dsv41_indexer/verify_module.py", line 36, in run_checks
+    op.forward()
+  File "/root/dsv41-indexer-port/vllm_dsv41_indexer/module.py", line 101, in forward
+    self.score()
+  File "/root/dsv41-indexer-port/vllm_dsv41_indexer/module.py", line 90, in score
+    grouped_scores(i.q, i.weights, i.cache, i.table, i.requests, i.lengths,
+  File "/root/dsv41-indexer-port/vllm_dsv41_indexer/full_score.py", line 62, in grouped_scores
+    _grouped_scores[grid](q, weights, cache, table, requests, lengths, groups,
+  File "/usr/local/lib/python3.12/dist-packages/triton/runtime/jit.py", line 370, in <lambda>
+    return lambda *args, **kwargs: self.run(grid=grid, warmup=False, *args, **kwargs)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/triton/runtime/jit.py", line 739, in run
+    kernel = self._do_compile(key, signature, device, constexprs, options, attrs, warmup)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/triton/runtime/jit.py", line 884, in _do_compile
+    kernel = self.compile(src, target=target, options=options.__dict__)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/triton/compiler/compiler.py", line 307, in compile
+    module = src.make_ir(target, options, codegen_fns, module_map, context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/triton/compiler/compiler.py", line 80, in make_ir
+    return ast_to_ttir(self.fn, self, context=context, options=options, codegen_fns=codegen_fns,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+triton.compiler.errors.CompilationError: at 25:18:
+        keys = tile * BK + tl.arange(0, BK)
+        valid = (keys < limit) & (keys < WIDTH)
+        pages = tl.load(TABLE + req * TABLE_STRIDE + keys // 64, valid, 0)
+        d = tl.arange(0, 128)
+        payload = tl.load(CACHE + pages[:, None] * (64 * 132)
+                          + (keys % 64)[:, None] * 128 + d[None, :],
+                          valid[:, None], 0).to(tl.float8e4nv, bitcast=True)
+        scales = tl.load((CACHE + pages * (64 * 132) + 64 * 128
+                         + keys % 64 * 4).to(tl.pointer_type(tl.float32)), valid, 1)
+        h = tl.arange(0, GROUP_ROWS * 32)
+        qrows = tl.gather(rows, h // 32, 0)
+        queries = tl.load(Q + qrows[:, None] * 4096 + (h % 32)[:, None] * 128
+                  ^
+cannot cast int32[constexpr[32], constexpr[128]] to <['32', '128'], fp8e4nv>

@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/root/dsv41-indexer-port/benchmarks/kernels/dsv41_indexer/verify_module.py", line 128, in <module>
+    main()
+  File "/root/dsv41-indexer-port/benchmarks/kernels/dsv41_indexer/verify_module.py", line 119, in main
+    results = run_checks()
+              ^^^^^^^^^^^^
+  File "/root/dsv41-indexer-port/benchmarks/kernels/dsv41_indexer/verify_module.py", line 63, in run_checks
+    torch.testing.assert_close(
+  File "/usr/local/lib/python3.12/dist-packages/torch/testing/_comparison.py", line 1631, in assert_close
+    raise error_metas[0].to_error(msg)
+AssertionError: Tensor-likes are not close!
+
+Mismatched elements: 6 / 511 (1.2%)
+Greatest absolute difference: 0.00048573315143585205 at index (509,) (up to 0.0001 allowed)
+Greatest relative difference: 0.0443589948117733 at index (216,) (up to 0.001 allowed)

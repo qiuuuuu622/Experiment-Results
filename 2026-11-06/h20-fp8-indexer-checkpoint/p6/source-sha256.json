@@ -1,0 +1,36 @@
+{
+  "files": [
+    {
+      "path": "vllm_dsv41_indexer/native.py",
+      "sha256": "ac8ec647cf2f35ea0a7d8ff5b9bf9aff2b857b95d1bf84ad8e94dd2b5383d40a"
+    },
+    {
+      "path": "vllm_dsv41_indexer/topk.py",
+      "sha256": "90ceea7412f123245db61e3856d6db10844a12b333c371e7c7ce92aa639a3961"
+    },
+    {
+      "path": "benchmarks/kernels/dsv41_indexer/verify_topk.py",
+      "sha256": "a3aa6922665e064012319a55c6a80474597672b2c98fd51ec55660c0eee3b5b0"
+    },
+    {
+      "path": "benchmarks/kernels/dsv41_indexer/benchmark_topk.py",
+      "sha256": "fa776ca54a04532189f853d283fa0c9ba1af89360120f5d68293d001a18ece38"
+    },
+    {
+      "path": "benchmarks/kernels/dsv41_indexer/06_topk.sh",
+      "sha256": "bd9fa2d158433061539e3312376bc69907a79efb0299b28abe60ce92639e97d0"
+    },
+    {
+      "path": "benchmarks/kernels/dsv41_indexer/common.py",
+      "sha256": "7c2cd4daf8c8e5d702c3aa19905db0ef05729b497b73ca76c1009d30e459895f"
+    },
+    {
+      "path": "benchmarks/kernels/dsv41_indexer/inputs.py",
+      "sha256": "9710a3078c5f7ec170374d208ac4cb96ca057af518c3620f9ba30e76c68cc56c"
+    },
+    {
+      "path": "benchmarks/kernels/dsv41_indexer/baseline.json",
+      "sha256": "0331b099289d70d7058bba90e7ba1f3566ebcdb10edaf117cca1e5b22839dcab"
+    }
+  ]
+}

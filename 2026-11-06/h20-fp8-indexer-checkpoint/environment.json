@@ -1,0 +1,120 @@
+{
+  "source": {
+    "vllm_commit": "29be941d8d5746cd98135bdd5e710eeebd8d7014",
+    "ant_commit": "6e6d5d9e13915adb01db0856b15d6908eaaa2c48",
+    "files": [
+      {
+        "source": "vllm/utils/deep_gemm.py",
+        "sha256": "3fae19d459c220d36eb00f1f4818c07fdfe28c0056c5a48dbee9e907a74b0bc8"
+      },
+      {
+        "source": "vllm/model_executor/layers/indexer_topk.py",
+        "sha256": "4dc91f83043c659304e0f0808bd9082574f919361b0b12f7c87fef5e261469bb"
+      },
+      {
+        "source": "vllm/model_executor/kernels/attention/dsa/candidate_blocks.py",
+        "sha256": "45f1eaa3b5f1d9f6a7b554697709646ce41d79d55f2d82415d008e6b00a1136f"
+      },
+      {
+        "source": "vllm/model_executor/layers/sparse_attn_indexer.py",
+        "sha256": "75d14da5e2b8c237f7fc0a807d2b72677660a945c70d23825da3517801d9ca10"
+      },
+      {
+        "source": "vllm/models/deepseek_v41/attention.py",
+        "sha256": "dd146642fc7d7034f32feecf35ff4d7d9460f59a8a57444c0dd6f367fe8f15fb"
+      },
+      {
+        "source": "vllm/models/deepseek_v41/common/ops/indexer_k_store.py",
+        "sha256": "d89d7043ec7924f1636f8ef257acf5ed0c66687681c7e905ceb16321155360f6"
+      },
+      {
+        "source": "vllm/models/deepseek_v4/common/ops/fused_indexer_q.py",
+        "sha256": "5d27632f3b1fc67a407393221ba06f72a8cbc2a138bc8ee5076423000d56e7eb"
+      }
+    ],
+    "note": "HEAD Python snapshots only; installed binaries are identified separately, never asserted built from this HEAD."
+  },
+  "installed_versions": {
+    "vllm": "0.32.0",
+    "torch": "2.13.0+cu130",
+    "triton": "3.7.1",
+    "apache-tvm-ffi": "0.1.11",
+    "deep-gemm": "no distribution metadata"
+  },
+  "binary_build_commit": "unknown; not asserted to be current HEAD",
+  "binaries": [
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/_C_stable_libtorch.abi3.so",
+      "sha256": "ae9c8a293020e422e0b6b61d1024263dc476a772337f5d39d46d18baa7ce0ad9"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/_deepselect_C.abi3.so",
+      "sha256": "84e0dafb560846f1cac04cfe45b511242d3757990eec6dcda303cc84ed459893"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/_flashkda_C.abi3.so",
+      "sha256": "94fed636cc610e199b7b486f97c790d0919ae384f80d264e380566196dcdb862"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/_flashmla_C.abi3.so",
+      "sha256": "8328c30ff0036508d16ca695a950790d37259c2642c874d5ed8780640bacdb36"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/_flashmla_extension_C.abi3.so",
+      "sha256": "f65900227f2b9441d3cba602eab4381073205c125e9ad2f3f6630e3e908427b5"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/_moe_C_stable_libtorch.abi3.so",
+      "sha256": "321127292e0bcac5f90845cc94085475f1859db82d8e8a0985f833f29922f23f"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/_qutlass_C.abi3.so",
+      "sha256": "fe01010ecabe95b179acaa6817ac7771f66f0fd2fef99caf44f607f0cf737ebe"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/cumem_allocator.abi3.so",
+      "sha256": "92ad21a86537952bd9229c2ecd88ac66a5787f37ec60ddf8b26be3ff04205c32"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/fs_io_C.abi3.so",
+      "sha256": "33a2230eee458b5585a1da6a02fa3a2927891e7c29608e2cab1490bec1e9a3f5"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/spinloop.abi3.so",
+      "sha256": "d9611e3b08ab8ed4ec80c28d483371aad10b212ab597603e60452ab0e8549b7f"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/_C_extension.abi3.so",
+      "sha256": "0042598bc0770e70bc4ea4b9c3d27d8efc8e395d6f766d41e939c746c2bd3046"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/vllm_flash_attn/_vllm_fa2_C.abi3.so",
+      "sha256": "3a0c7b066b55301f5446089f6398b21f18fbd70e578f33d7ea00e310ca89e15d"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/vllm_flash_attn/_vllm_fa3_C.abi3.so",
+      "sha256": "bd6e26c0947cc28b805f2e0a35b3a58355ab91dad74c109f69d8b2ad36e97429"
+    }
+  ],
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "device": {
+    "name": "NVIDIA H20",
+    "sm_count": 78,
+    "topology": "\t\u001b[4mGPU0\tGPU1\tGPU2\tGPU3\tNIC0\tNIC1\tNIC2\tNIC3\tCPU Affinity\tNUMA Affinity\tGPU NUMA ID\u001b[0m\nGPU0\t X \tNV18\tNV18\tNV18\tPIX\tPXB\tPXB\tPXB\t0-187\t0-1\t\tN/A\nGPU1\tNV18\t X \tNV18\tNV18\tPIX\tPXB\tPXB\tPXB\t0-187\t0-1\t\tN/A\nGPU2\tNV18\tNV18\t X \tNV18\tPXB\tPXB\tPXB\tPIX\t0-187\t0-1\t\tN/A\nGPU3\tNV18\tNV18\tNV18\t X \tPXB\tPXB\tPXB\tPIX\t0-187\t0-1\t\tN/A\nNIC0\tPIX\tPIX\tPXB\tPXB\t X \tPXB\tPXB\tPXB\t\t\t\t\nNIC1\tPXB\tPXB\tPXB\tPXB\tPXB\t X \tPXB\tPXB\t\t\t\t\nNIC2\tPXB\tPXB\tPXB\tPXB\tPXB\tPXB\t X \tPXB\t\t\t\t\nNIC3\tPXB\tPXB\tPIX\tPIX\tPXB\tPXB\tPXB\t X \t\t\t\t\n\nLegend:\n\n  X    = Self\n  SYS  = Connection traversing PCIe as well as the SMP interconnect between NUMA nodes (e.g., QPI/UPI)\n  NODE = Connection traversing PCIe as well as the interconnect between PCIe Host Bridges within a NUMA node\n  PHB  = Connection traversing PCIe as well as a PCIe Host Bridge (typically the CPU)\n  PXB  = Connection traversing multiple PCIe bridges (without traversing the PCIe Host Bridge)\n  PIX  = Connection traversing at most a single PCIe bridge\n  NV#  = Connection traversing a bonded set of # NVLinks\n\nNIC Legend:\n\n  NIC0: mlx5_0\n  NIC1: mlx5_1\n  NIC2: mlx5_2\n  NIC3: mlx5_3\n\n",
+    "torch": "2.13.0+cu130",
+    "cuda": "13.0",
+    "memory_bytes": 101997346816
+  },
+  "nvcc": {
+    "command": [
+      "/usr/local/cuda/bin/nvcc",
+      "--version"
+    ],
+    "returncode": 0,
+    "stdout": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2025 NVIDIA Corporation\nBuilt on Wed_Aug_20_01:58:59_PM_PDT_2025\nCuda compilation tools, release 13.0, V13.0.88\nBuild cuda_13.0.r13.0/compiler.36424714_0\n",
+    "stderr": ""
+  },
+  "compile_flags_source": "vllm_dsv41_indexer/native.py",
+  "driver_version": "550.54.15",
+  "public_export_note": "Full nvidia-smi inventory, platform, and interpreter path omitted; kernel versions and hardware topology retained."
+}

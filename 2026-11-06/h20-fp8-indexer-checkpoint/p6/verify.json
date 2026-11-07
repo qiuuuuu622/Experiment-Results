@@ -1,0 +1,6877 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "rows": 1,
+      "width": 4096,
+      "k": 512,
+      "distribution": "random",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 4096,
+      "k": 512,
+      "distribution": "random",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 4096,
+      "k": 512,
+      "distribution": "zero",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 4096,
+      "k": 512,
+      "distribution": "zero",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 4096,
+      "k": 512,
+      "distribution": "equal_nonzero",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 4096,
+      "k": 512,
+      "distribution": "equal_nonzero",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 4096,
+      "k": 512,
+      "distribution": "tie_bin_overflow",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 4096,
+      "k": 512,
+      "distribution": "tie_bin_overflow",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 4096,
+      "k": 512,
+      "distribution": "cutoff_ties",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 4096,
+      "k": 512,
+      "distribution": "cutoff_ties",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 4096,
+      "k": 2048,
+      "distribution": "random",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 4096,
+      "k": 2048,
+      "distribution": "random",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 4096,
+      "k": 2048,
+      "distribution": "zero",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 4096,
+      "k": 2048,
+      "distribution": "zero",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 4096,
+      "k": 2048,
+      "distribution": "equal_nonzero",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 4096,
+      "k": 2048,
+      "distribution": "equal_nonzero",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 4096,
+      "k": 2048,
+      "distribution": "tie_bin_overflow",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 4096,
+      "k": 2048,
+      "distribution": "tie_bin_overflow",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 4096,
+      "k": 2048,
+      "distribution": "cutoff_ties",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 4096,
+      "k": 2048,
+      "distribution": "cutoff_ties",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 16384,
+      "k": 512,
+      "distribution": "random",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 16384,
+      "k": 512,
+      "distribution": "random",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 16384,
+      "k": 512,
+      "distribution": "zero",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 16384,
+      "k": 512,
+      "distribution": "zero",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 16384,
+      "k": 512,
+      "distribution": "equal_nonzero",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 16384,
+      "k": 512,
+      "distribution": "equal_nonzero",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 16384,
+      "k": 512,
+      "distribution": "tie_bin_overflow",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 16384,
+      "k": 512,
+      "distribution": "tie_bin_overflow",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 16384,
+      "k": 512,
+      "distribution": "cutoff_ties",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 16384,
+      "k": 512,
+      "distribution": "cutoff_ties",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 16384,
+      "k": 2048,
+      "distribution": "random",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 16384,
+      "k": 2048,
+      "distribution": "random",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 16384,
+      "k": 2048,
+      "distribution": "zero",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 16384,
+      "k": 2048,
+      "distribution": "zero",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 16384,
+      "k": 2048,
+      "distribution": "equal_nonzero",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 16384,
+      "k": 2048,
+      "distribution": "equal_nonzero",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 16384,
+      "k": 2048,
+      "distribution": "tie_bin_overflow",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 16384,
+      "k": 2048,
+      "distribution": "tie_bin_overflow",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 16384,
+      "k": 2048,
+      "distribution": "cutoff_ties",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 16384,
+      "k": 2048,
+      "distribution": "cutoff_ties",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 65536,
+      "k": 512,
+      "distribution": "random",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 65536,
+      "k": 512,
+      "distribution": "random",
+      "backend": "cluster",
+      "dispatched_path": "small_cluster",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 65536,
+      "k": 512,
+      "distribution": "zero",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 65536,
+      "k": 512,
+      "distribution": "zero",
+      "backend": "cluster",
+      "dispatched_path": "small_cluster",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 65536,
+      "k": 512,
+      "distribution": "equal_nonzero",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 65536,
+      "k": 512,
+      "distribution": "equal_nonzero",
+      "backend": "cluster",
+      "dispatched_path": "small_cluster",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 65536,
+      "k": 512,
+      "distribution": "tie_bin_overflow",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 65536,
+      "k": 512,
+      "distribution": "tie_bin_overflow",
+      "backend": "cluster",
+      "dispatched_path": "small_cluster",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 65536,
+      "k": 512,
+      "distribution": "cutoff_ties",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 65536,
+      "k": 512,
+      "distribution": "cutoff_ties",
+      "backend": "cluster",
+      "dispatched_path": "small_cluster",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 65536,
+      "k": 2048,
+      "distribution": "random",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 65536,
+      "k": 2048,
+      "distribution": "random",
+      "backend": "cluster",
+      "dispatched_path": "small_cluster",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 65536,
+      "k": 2048,
+      "distribution": "zero",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 65536,
+      "k": 2048,
+      "distribution": "zero",
+      "backend": "cluster",
+      "dispatched_path": "small_cluster",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 65536,
+      "k": 2048,
+      "distribution": "equal_nonzero",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 65536,
+      "k": 2048,
+      "distribution": "equal_nonzero",
+      "backend": "cluster",
+      "dispatched_path": "small_cluster",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 65536,
+      "k": 2048,
+      "distribution": "tie_bin_overflow",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 65536,
+      "k": 2048,
+      "distribution": "tie_bin_overflow",
+      "backend": "cluster",
+      "dispatched_path": "small_cluster",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 65536,
+      "k": 2048,
+      "distribution": "cutoff_ties",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 65536,
+      "k": 2048,
+      "distribution": "cutoff_ties",
+      "backend": "cluster",
+      "dispatched_path": "small_cluster",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 131072,
+      "k": 512,
+      "distribution": "random",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 131072,
+      "k": 512,
+      "distribution": "random",
+      "backend": "cluster",
+      "dispatched_path": "small_cluster",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 131072,
+      "k": 512,
+      "distribution": "zero",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 131072,
+      "k": 512,
+      "distribution": "zero",
+      "backend": "cluster",
+      "dispatched_path": "small_cluster",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 131072,
+      "k": 512,
+      "distribution": "equal_nonzero",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 131072,
+      "k": 512,
+      "distribution": "equal_nonzero",
+      "backend": "cluster",
+      "dispatched_path": "small_cluster",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 131072,
+      "k": 512,
+      "distribution": "tie_bin_overflow",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 131072,
+      "k": 512,
+      "distribution": "tie_bin_overflow",
+      "backend": "cluster",
+      "dispatched_path": "small_cluster",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 131072,
+      "k": 512,
+      "distribution": "cutoff_ties",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 131072,
+      "k": 512,
+      "distribution": "cutoff_ties",
+      "backend": "cluster",
+      "dispatched_path": "small_cluster",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 131072,
+      "k": 2048,
+      "distribution": "random",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 131072,
+      "k": 2048,
+      "distribution": "random",
+      "backend": "cluster",
+      "dispatched_path": "small_cluster",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 131072,
+      "k": 2048,
+      "distribution": "zero",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 131072,
+      "k": 2048,
+      "distribution": "zero",
+      "backend": "cluster",
+      "dispatched_path": "small_cluster",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 131072,
+      "k": 2048,
+      "distribution": "equal_nonzero",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 131072,
+      "k": 2048,
+      "distribution": "equal_nonzero",
+      "backend": "cluster",
+      "dispatched_path": "small_cluster",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 131072,
+      "k": 2048,
+      "distribution": "tie_bin_overflow",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 131072,
+      "k": 2048,
+      "distribution": "tie_bin_overflow",
+      "backend": "cluster",
+      "dispatched_path": "small_cluster",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 131072,
+      "k": 2048,
+      "distribution": "cutoff_ties",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 131072,
+      "k": 2048,
+      "distribution": "cutoff_ties",
+      "backend": "cluster",
+      "dispatched_path": "small_cluster",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 262144,
+      "k": 512,
+      "distribution": "random",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 262144,
+      "k": 512,
+      "distribution": "random",
+      "backend": "cluster",
+      "dispatched_path": "small_cluster",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 262144,
+      "k": 512,
+      "distribution": "zero",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 262144,
+      "k": 512,
+      "distribution": "zero",
+      "backend": "cluster",
+      "dispatched_path": "small_cluster",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 262144,
+      "k": 512,
+      "distribution": "equal_nonzero",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 262144,
+      "k": 512,
+      "distribution": "equal_nonzero",
+      "backend": "cluster",
+      "dispatched_path": "small_cluster",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 262144,
+      "k": 512,
+      "distribution": "tie_bin_overflow",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 262144,
+      "k": 512,
+      "distribution": "tie_bin_overflow",
+      "backend": "cluster",
+      "dispatched_path": "small_cluster",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 262144,
+      "k": 512,
+      "distribution": "cutoff_ties",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 262144,
+      "k": 512,
+      "distribution": "cutoff_ties",
+      "backend": "cluster",
+      "dispatched_path": "small_cluster",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "random",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "random",
+      "backend": "cluster",
+      "dispatched_path": "small_cluster",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "zero",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "zero",
+      "backend": "cluster",
+      "dispatched_path": "small_cluster",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "equal_nonzero",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "equal_nonzero",
+      "backend": "cluster",
+      "dispatched_path": "small_cluster",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "tie_bin_overflow",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "tie_bin_overflow",
+      "backend": "cluster",
+      "dispatched_path": "small_cluster",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "cutoff_ties",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 1,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "cutoff_ties",
+      "backend": "cluster",
+      "dispatched_path": "small_cluster",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 16384,
+      "k": 512,
+      "distribution": "random",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 16384,
+      "k": 512,
+      "distribution": "random",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 16384,
+      "k": 512,
+      "distribution": "zero",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 16384,
+      "k": 512,
+      "distribution": "zero",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 16384,
+      "k": 512,
+      "distribution": "equal_nonzero",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 16384,
+      "k": 512,
+      "distribution": "equal_nonzero",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 16384,
+      "k": 512,
+      "distribution": "tie_bin_overflow",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 16384,
+      "k": 512,
+      "distribution": "tie_bin_overflow",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 16384,
+      "k": 512,
+      "distribution": "cutoff_ties",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 16384,
+      "k": 512,
+      "distribution": "cutoff_ties",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 16384,
+      "k": 2048,
+      "distribution": "random",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 16384,
+      "k": 2048,
+      "distribution": "random",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 16384,
+      "k": 2048,
+      "distribution": "zero",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 16384,
+      "k": 2048,
+      "distribution": "zero",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 16384,
+      "k": 2048,
+      "distribution": "equal_nonzero",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 16384,
+      "k": 2048,
+      "distribution": "equal_nonzero",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 16384,
+      "k": 2048,
+      "distribution": "tie_bin_overflow",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 16384,
+      "k": 2048,
+      "distribution": "tie_bin_overflow",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 16384,
+      "k": 2048,
+      "distribution": "cutoff_ties",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 16384,
+      "k": 2048,
+      "distribution": "cutoff_ties",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 65536,
+      "k": 512,
+      "distribution": "random",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 65536,
+      "k": 512,
+      "distribution": "random",
+      "backend": "cluster",
+      "dispatched_path": "small_cluster",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 65536,
+      "k": 512,
+      "distribution": "zero",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 65536,
+      "k": 512,
+      "distribution": "zero",
+      "backend": "cluster",
+      "dispatched_path": "small_cluster",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 65536,
+      "k": 512,
+      "distribution": "equal_nonzero",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 65536,
+      "k": 512,
+      "distribution": "equal_nonzero",
+      "backend": "cluster",
+      "dispatched_path": "small_cluster",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 65536,
+      "k": 512,
+      "distribution": "tie_bin_overflow",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 65536,
+      "k": 512,
+      "distribution": "tie_bin_overflow",
+      "backend": "cluster",
+      "dispatched_path": "small_cluster",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 65536,
+      "k": 512,
+      "distribution": "cutoff_ties",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 65536,
+      "k": 512,
+      "distribution": "cutoff_ties",
+      "backend": "cluster",
+      "dispatched_path": "small_cluster",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 65536,
+      "k": 2048,
+      "distribution": "random",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 65536,
+      "k": 2048,
+      "distribution": "random",
+      "backend": "cluster",
+      "dispatched_path": "small_cluster",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 65536,
+      "k": 2048,
+      "distribution": "zero",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 65536,
+      "k": 2048,
+      "distribution": "zero",
+      "backend": "cluster",
+      "dispatched_path": "small_cluster",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 65536,
+      "k": 2048,
+      "distribution": "equal_nonzero",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 65536,
+      "k": 2048,
+      "distribution": "equal_nonzero",
+      "backend": "cluster",
+      "dispatched_path": "small_cluster",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 65536,
+      "k": 2048,
+      "distribution": "tie_bin_overflow",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 65536,
+      "k": 2048,
+      "distribution": "tie_bin_overflow",
+      "backend": "cluster",
+      "dispatched_path": "small_cluster",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 65536,
+      "k": 2048,
+      "distribution": "cutoff_ties",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 65536,
+      "k": 2048,
+      "distribution": "cutoff_ties",
+      "backend": "cluster",
+      "dispatched_path": "small_cluster",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 262144,
+      "k": 512,
+      "distribution": "random",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 262144,
+      "k": 512,
+      "distribution": "random",
+      "backend": "cluster",
+      "dispatched_path": "small_cluster",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 262144,
+      "k": 512,
+      "distribution": "zero",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 262144,
+      "k": 512,
+      "distribution": "zero",
+      "backend": "cluster",
+      "dispatched_path": "small_cluster",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 262144,
+      "k": 512,
+      "distribution": "equal_nonzero",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 262144,
+      "k": 512,
+      "distribution": "equal_nonzero",
+      "backend": "cluster",
+      "dispatched_path": "small_cluster",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 262144,
+      "k": 512,
+      "distribution": "tie_bin_overflow",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 262144,
+      "k": 512,
+      "distribution": "tie_bin_overflow",
+      "backend": "cluster",
+      "dispatched_path": "small_cluster",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 262144,
+      "k": 512,
+      "distribution": "cutoff_ties",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 262144,
+      "k": 512,
+      "distribution": "cutoff_ties",
+      "backend": "cluster",
+      "dispatched_path": "small_cluster",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "random",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "random",
+      "backend": "cluster",
+      "dispatched_path": "small_cluster",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "zero",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "zero",
+      "backend": "cluster",
+      "dispatched_path": "small_cluster",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "equal_nonzero",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "equal_nonzero",
+      "backend": "cluster",
+      "dispatched_path": "small_cluster",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "tie_bin_overflow",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "tie_bin_overflow",
+      "backend": "cluster",
+      "dispatched_path": "small_cluster",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "cutoff_ties",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 8,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "cutoff_ties",
+      "backend": "cluster",
+      "dispatched_path": "small_cluster",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 16384,
+      "k": 512,
+      "distribution": "random",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 16384,
+      "k": 512,
+      "distribution": "random",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 16384,
+      "k": 512,
+      "distribution": "zero",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 16384,
+      "k": 512,
+      "distribution": "zero",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 16384,
+      "k": 512,
+      "distribution": "equal_nonzero",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 16384,
+      "k": 512,
+      "distribution": "equal_nonzero",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 16384,
+      "k": 512,
+      "distribution": "tie_bin_overflow",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 16384,
+      "k": 512,
+      "distribution": "tie_bin_overflow",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 16384,
+      "k": 512,
+      "distribution": "cutoff_ties",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 16384,
+      "k": 512,
+      "distribution": "cutoff_ties",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 16384,
+      "k": 2048,
+      "distribution": "random",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 16384,
+      "k": 2048,
+      "distribution": "random",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 16384,
+      "k": 2048,
+      "distribution": "zero",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 16384,
+      "k": 2048,
+      "distribution": "zero",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 16384,
+      "k": 2048,
+      "distribution": "equal_nonzero",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 16384,
+      "k": 2048,
+      "distribution": "equal_nonzero",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 16384,
+      "k": 2048,
+      "distribution": "tie_bin_overflow",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 16384,
+      "k": 2048,
+      "distribution": "tie_bin_overflow",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 16384,
+      "k": 2048,
+      "distribution": "cutoff_ties",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 16384,
+      "k": 2048,
+      "distribution": "cutoff_ties",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 65536,
+      "k": 512,
+      "distribution": "random",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 65536,
+      "k": 512,
+      "distribution": "random",
+      "backend": "cluster",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 65536,
+      "k": 512,
+      "distribution": "zero",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 65536,
+      "k": 512,
+      "distribution": "zero",
+      "backend": "cluster",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 65536,
+      "k": 512,
+      "distribution": "equal_nonzero",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 65536,
+      "k": 512,
+      "distribution": "equal_nonzero",
+      "backend": "cluster",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 65536,
+      "k": 512,
+      "distribution": "tie_bin_overflow",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 65536,
+      "k": 512,
+      "distribution": "tie_bin_overflow",
+      "backend": "cluster",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 65536,
+      "k": 512,
+      "distribution": "cutoff_ties",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 65536,
+      "k": 512,
+      "distribution": "cutoff_ties",
+      "backend": "cluster",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 65536,
+      "k": 2048,
+      "distribution": "random",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 65536,
+      "k": 2048,
+      "distribution": "random",
+      "backend": "cluster",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 65536,
+      "k": 2048,
+      "distribution": "zero",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 65536,
+      "k": 2048,
+      "distribution": "zero",
+      "backend": "cluster",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 65536,
+      "k": 2048,
+      "distribution": "equal_nonzero",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 65536,
+      "k": 2048,
+      "distribution": "equal_nonzero",
+      "backend": "cluster",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 65536,
+      "k": 2048,
+      "distribution": "tie_bin_overflow",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 65536,
+      "k": 2048,
+      "distribution": "tie_bin_overflow",
+      "backend": "cluster",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 65536,
+      "k": 2048,
+      "distribution": "cutoff_ties",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 65536,
+      "k": 2048,
+      "distribution": "cutoff_ties",
+      "backend": "cluster",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 262144,
+      "k": 512,
+      "distribution": "random",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 262144,
+      "k": 512,
+      "distribution": "random",
+      "backend": "cluster",
+      "dispatched_path": "persistent_cluster",
+      "initial_plan": [
+        65536,
+        9
+      ],
+      "changed_plan": [
+        65536,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 262144,
+      "k": 512,
+      "distribution": "zero",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 262144,
+      "k": 512,
+      "distribution": "zero",
+      "backend": "cluster",
+      "dispatched_path": "persistent_cluster",
+      "initial_plan": [
+        65536,
+        9
+      ],
+      "changed_plan": [
+        65536,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 262144,
+      "k": 512,
+      "distribution": "equal_nonzero",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 262144,
+      "k": 512,
+      "distribution": "equal_nonzero",
+      "backend": "cluster",
+      "dispatched_path": "persistent_cluster",
+      "initial_plan": [
+        65536,
+        9
+      ],
+      "changed_plan": [
+        65536,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 262144,
+      "k": 512,
+      "distribution": "tie_bin_overflow",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 262144,
+      "k": 512,
+      "distribution": "tie_bin_overflow",
+      "backend": "cluster",
+      "dispatched_path": "persistent_cluster",
+      "initial_plan": [
+        65536,
+        9
+      ],
+      "changed_plan": [
+        65536,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 262144,
+      "k": 512,
+      "distribution": "cutoff_ties",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 262144,
+      "k": 512,
+      "distribution": "cutoff_ties",
+      "backend": "cluster",
+      "dispatched_path": "persistent_cluster",
+      "initial_plan": [
+        65536,
+        9
+      ],
+      "changed_plan": [
+        65536,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "random",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "random",
+      "backend": "cluster",
+      "dispatched_path": "persistent_cluster",
+      "initial_plan": [
+        65536,
+        9
+      ],
+      "changed_plan": [
+        65536,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "zero",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "zero",
+      "backend": "cluster",
+      "dispatched_path": "persistent_cluster",
+      "initial_plan": [
+        65536,
+        9
+      ],
+      "changed_plan": [
+        65536,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "equal_nonzero",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "equal_nonzero",
+      "backend": "cluster",
+      "dispatched_path": "persistent_cluster",
+      "initial_plan": [
+        65536,
+        9
+      ],
+      "changed_plan": [
+        65536,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "tie_bin_overflow",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "tie_bin_overflow",
+      "backend": "cluster",
+      "dispatched_path": "persistent_cluster",
+      "initial_plan": [
+        65536,
+        9
+      ],
+      "changed_plan": [
+        65536,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "cutoff_ties",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 32,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "cutoff_ties",
+      "backend": "cluster",
+      "dispatched_path": "persistent_cluster",
+      "initial_plan": [
+        65536,
+        9
+      ],
+      "changed_plan": [
+        65536,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 16384,
+      "k": 512,
+      "distribution": "random",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 16384,
+      "k": 512,
+      "distribution": "random",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 16384,
+      "k": 512,
+      "distribution": "zero",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 16384,
+      "k": 512,
+      "distribution": "zero",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 16384,
+      "k": 512,
+      "distribution": "equal_nonzero",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 16384,
+      "k": 512,
+      "distribution": "equal_nonzero",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 16384,
+      "k": 512,
+      "distribution": "tie_bin_overflow",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 16384,
+      "k": 512,
+      "distribution": "tie_bin_overflow",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 16384,
+      "k": 512,
+      "distribution": "cutoff_ties",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 16384,
+      "k": 512,
+      "distribution": "cutoff_ties",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 16384,
+      "k": 2048,
+      "distribution": "random",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 16384,
+      "k": 2048,
+      "distribution": "random",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 16384,
+      "k": 2048,
+      "distribution": "zero",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 16384,
+      "k": 2048,
+      "distribution": "zero",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 16384,
+      "k": 2048,
+      "distribution": "equal_nonzero",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 16384,
+      "k": 2048,
+      "distribution": "equal_nonzero",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 16384,
+      "k": 2048,
+      "distribution": "tie_bin_overflow",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 16384,
+      "k": 2048,
+      "distribution": "tie_bin_overflow",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 16384,
+      "k": 2048,
+      "distribution": "cutoff_ties",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 16384,
+      "k": 2048,
+      "distribution": "cutoff_ties",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 65536,
+      "k": 512,
+      "distribution": "random",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 65536,
+      "k": 512,
+      "distribution": "random",
+      "backend": "cluster",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 65536,
+      "k": 512,
+      "distribution": "zero",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 65536,
+      "k": 512,
+      "distribution": "zero",
+      "backend": "cluster",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 65536,
+      "k": 512,
+      "distribution": "equal_nonzero",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 65536,
+      "k": 512,
+      "distribution": "equal_nonzero",
+      "backend": "cluster",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 65536,
+      "k": 512,
+      "distribution": "tie_bin_overflow",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 65536,
+      "k": 512,
+      "distribution": "tie_bin_overflow",
+      "backend": "cluster",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 65536,
+      "k": 512,
+      "distribution": "cutoff_ties",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 65536,
+      "k": 512,
+      "distribution": "cutoff_ties",
+      "backend": "cluster",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 65536,
+      "k": 2048,
+      "distribution": "random",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 65536,
+      "k": 2048,
+      "distribution": "random",
+      "backend": "cluster",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 65536,
+      "k": 2048,
+      "distribution": "zero",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 65536,
+      "k": 2048,
+      "distribution": "zero",
+      "backend": "cluster",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 65536,
+      "k": 2048,
+      "distribution": "equal_nonzero",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 65536,
+      "k": 2048,
+      "distribution": "equal_nonzero",
+      "backend": "cluster",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 65536,
+      "k": 2048,
+      "distribution": "tie_bin_overflow",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 65536,
+      "k": 2048,
+      "distribution": "tie_bin_overflow",
+      "backend": "cluster",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 65536,
+      "k": 2048,
+      "distribution": "cutoff_ties",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 65536,
+      "k": 2048,
+      "distribution": "cutoff_ties",
+      "backend": "cluster",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 262144,
+      "k": 512,
+      "distribution": "random",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 262144,
+      "k": 512,
+      "distribution": "random",
+      "backend": "cluster",
+      "dispatched_path": "persistent_cluster",
+      "initial_plan": [
+        65536,
+        19
+      ],
+      "changed_plan": [
+        65536,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 262144,
+      "k": 512,
+      "distribution": "zero",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 262144,
+      "k": 512,
+      "distribution": "zero",
+      "backend": "cluster",
+      "dispatched_path": "persistent_cluster",
+      "initial_plan": [
+        65536,
+        19
+      ],
+      "changed_plan": [
+        65536,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 262144,
+      "k": 512,
+      "distribution": "equal_nonzero",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 262144,
+      "k": 512,
+      "distribution": "equal_nonzero",
+      "backend": "cluster",
+      "dispatched_path": "persistent_cluster",
+      "initial_plan": [
+        65536,
+        19
+      ],
+      "changed_plan": [
+        65536,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 262144,
+      "k": 512,
+      "distribution": "tie_bin_overflow",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 262144,
+      "k": 512,
+      "distribution": "tie_bin_overflow",
+      "backend": "cluster",
+      "dispatched_path": "persistent_cluster",
+      "initial_plan": [
+        65536,
+        19
+      ],
+      "changed_plan": [
+        65536,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 262144,
+      "k": 512,
+      "distribution": "cutoff_ties",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 262144,
+      "k": 512,
+      "distribution": "cutoff_ties",
+      "backend": "cluster",
+      "dispatched_path": "persistent_cluster",
+      "initial_plan": [
+        65536,
+        19
+      ],
+      "changed_plan": [
+        65536,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "random",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "random",
+      "backend": "cluster",
+      "dispatched_path": "persistent_cluster",
+      "initial_plan": [
+        65536,
+        19
+      ],
+      "changed_plan": [
+        65536,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "zero",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "zero",
+      "backend": "cluster",
+      "dispatched_path": "persistent_cluster",
+      "initial_plan": [
+        65536,
+        19
+      ],
+      "changed_plan": [
+        65536,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "equal_nonzero",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "equal_nonzero",
+      "backend": "cluster",
+      "dispatched_path": "persistent_cluster",
+      "initial_plan": [
+        65536,
+        19
+      ],
+      "changed_plan": [
+        65536,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "tie_bin_overflow",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "tie_bin_overflow",
+      "backend": "cluster",
+      "dispatched_path": "persistent_cluster",
+      "initial_plan": [
+        65536,
+        19
+      ],
+      "changed_plan": [
+        65536,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "cutoff_ties",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "cutoff_ties",
+      "backend": "cluster",
+      "dispatched_path": "persistent_cluster",
+      "initial_plan": [
+        65536,
+        19
+      ],
+      "changed_plan": [
+        65536,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 16384,
+      "k": 512,
+      "distribution": "random",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 16384,
+      "k": 512,
+      "distribution": "random",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 16384,
+      "k": 512,
+      "distribution": "zero",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 16384,
+      "k": 512,
+      "distribution": "zero",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 16384,
+      "k": 512,
+      "distribution": "equal_nonzero",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 16384,
+      "k": 512,
+      "distribution": "equal_nonzero",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 16384,
+      "k": 512,
+      "distribution": "tie_bin_overflow",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 16384,
+      "k": 512,
+      "distribution": "tie_bin_overflow",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 16384,
+      "k": 512,
+      "distribution": "cutoff_ties",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 16384,
+      "k": 512,
+      "distribution": "cutoff_ties",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 16384,
+      "k": 2048,
+      "distribution": "random",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 16384,
+      "k": 2048,
+      "distribution": "random",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 16384,
+      "k": 2048,
+      "distribution": "zero",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 16384,
+      "k": 2048,
+      "distribution": "zero",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 16384,
+      "k": 2048,
+      "distribution": "equal_nonzero",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 16384,
+      "k": 2048,
+      "distribution": "equal_nonzero",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 16384,
+      "k": 2048,
+      "distribution": "tie_bin_overflow",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 16384,
+      "k": 2048,
+      "distribution": "tie_bin_overflow",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 16384,
+      "k": 2048,
+      "distribution": "cutoff_ties",
+      "backend": "streaming",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 16384,
+      "k": 2048,
+      "distribution": "cutoff_ties",
+      "backend": "cluster",
+      "dispatched_path": "register",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 65536,
+      "k": 512,
+      "distribution": "random",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 65536,
+      "k": 512,
+      "distribution": "random",
+      "backend": "cluster",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 65536,
+      "k": 512,
+      "distribution": "zero",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 65536,
+      "k": 512,
+      "distribution": "zero",
+      "backend": "cluster",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 65536,
+      "k": 512,
+      "distribution": "equal_nonzero",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 65536,
+      "k": 512,
+      "distribution": "equal_nonzero",
+      "backend": "cluster",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 65536,
+      "k": 512,
+      "distribution": "tie_bin_overflow",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 65536,
+      "k": 512,
+      "distribution": "tie_bin_overflow",
+      "backend": "cluster",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 65536,
+      "k": 512,
+      "distribution": "cutoff_ties",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 65536,
+      "k": 512,
+      "distribution": "cutoff_ties",
+      "backend": "cluster",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 65536,
+      "k": 2048,
+      "distribution": "random",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 65536,
+      "k": 2048,
+      "distribution": "random",
+      "backend": "cluster",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 65536,
+      "k": 2048,
+      "distribution": "zero",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 65536,
+      "k": 2048,
+      "distribution": "zero",
+      "backend": "cluster",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 65536,
+      "k": 2048,
+      "distribution": "equal_nonzero",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 65536,
+      "k": 2048,
+      "distribution": "equal_nonzero",
+      "backend": "cluster",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 65536,
+      "k": 2048,
+      "distribution": "tie_bin_overflow",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 65536,
+      "k": 2048,
+      "distribution": "tie_bin_overflow",
+      "backend": "cluster",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 65536,
+      "k": 2048,
+      "distribution": "cutoff_ties",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 65536,
+      "k": 2048,
+      "distribution": "cutoff_ties",
+      "backend": "cluster",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 262144,
+      "k": 512,
+      "distribution": "random",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 262144,
+      "k": 512,
+      "distribution": "random",
+      "backend": "cluster",
+      "dispatched_path": "persistent_cluster",
+      "initial_plan": [
+        65536,
+        37
+      ],
+      "changed_plan": [
+        65536,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 262144,
+      "k": 512,
+      "distribution": "zero",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 262144,
+      "k": 512,
+      "distribution": "zero",
+      "backend": "cluster",
+      "dispatched_path": "persistent_cluster",
+      "initial_plan": [
+        65536,
+        37
+      ],
+      "changed_plan": [
+        65536,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 262144,
+      "k": 512,
+      "distribution": "equal_nonzero",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 262144,
+      "k": 512,
+      "distribution": "equal_nonzero",
+      "backend": "cluster",
+      "dispatched_path": "persistent_cluster",
+      "initial_plan": [
+        65536,
+        37
+      ],
+      "changed_plan": [
+        65536,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 262144,
+      "k": 512,
+      "distribution": "tie_bin_overflow",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 262144,
+      "k": 512,
+      "distribution": "tie_bin_overflow",
+      "backend": "cluster",
+      "dispatched_path": "persistent_cluster",
+      "initial_plan": [
+        65536,
+        37
+      ],
+      "changed_plan": [
+        65536,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 262144,
+      "k": 512,
+      "distribution": "cutoff_ties",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 262144,
+      "k": 512,
+      "distribution": "cutoff_ties",
+      "backend": "cluster",
+      "dispatched_path": "persistent_cluster",
+      "initial_plan": [
+        65536,
+        37
+      ],
+      "changed_plan": [
+        65536,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "random",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "random",
+      "backend": "cluster",
+      "dispatched_path": "persistent_cluster",
+      "initial_plan": [
+        65536,
+        37
+      ],
+      "changed_plan": [
+        65536,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "zero",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "zero",
+      "backend": "cluster",
+      "dispatched_path": "persistent_cluster",
+      "initial_plan": [
+        65536,
+        37
+      ],
+      "changed_plan": [
+        65536,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "equal_nonzero",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "equal_nonzero",
+      "backend": "cluster",
+      "dispatched_path": "persistent_cluster",
+      "initial_plan": [
+        65536,
+        37
+      ],
+      "changed_plan": [
+        65536,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "tie_bin_overflow",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "tie_bin_overflow",
+      "backend": "cluster",
+      "dispatched_path": "persistent_cluster",
+      "initial_plan": [
+        65536,
+        37
+      ],
+      "changed_plan": [
+        65536,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "cutoff_ties",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 128,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "cutoff_ties",
+      "backend": "cluster",
+      "dispatched_path": "persistent_cluster",
+      "initial_plan": [
+        65536,
+        37
+      ],
+      "changed_plan": [
+        65536,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 513,
+      "width": 131072,
+      "k": 512,
+      "distribution": "random",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 513,
+      "width": 131072,
+      "k": 512,
+      "distribution": "random",
+      "backend": "cluster",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 513,
+      "width": 131072,
+      "k": 512,
+      "distribution": "zero",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 513,
+      "width": 131072,
+      "k": 512,
+      "distribution": "zero",
+      "backend": "cluster",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 513,
+      "width": 131072,
+      "k": 512,
+      "distribution": "equal_nonzero",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 513,
+      "width": 131072,
+      "k": 512,
+      "distribution": "equal_nonzero",
+      "backend": "cluster",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 513,
+      "width": 131072,
+      "k": 512,
+      "distribution": "tie_bin_overflow",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 513,
+      "width": 131072,
+      "k": 512,
+      "distribution": "tie_bin_overflow",
+      "backend": "cluster",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 513,
+      "width": 131072,
+      "k": 512,
+      "distribution": "cutoff_ties",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 513,
+      "width": 131072,
+      "k": 512,
+      "distribution": "cutoff_ties",
+      "backend": "cluster",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 513,
+      "width": 131072,
+      "k": 2048,
+      "distribution": "random",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 513,
+      "width": 131072,
+      "k": 2048,
+      "distribution": "random",
+      "backend": "cluster",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 513,
+      "width": 131072,
+      "k": 2048,
+      "distribution": "zero",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 513,
+      "width": 131072,
+      "k": 2048,
+      "distribution": "zero",
+      "backend": "cluster",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 513,
+      "width": 131072,
+      "k": 2048,
+      "distribution": "equal_nonzero",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 513,
+      "width": 131072,
+      "k": 2048,
+      "distribution": "equal_nonzero",
+      "backend": "cluster",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 513,
+      "width": 131072,
+      "k": 2048,
+      "distribution": "tie_bin_overflow",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 513,
+      "width": 131072,
+      "k": 2048,
+      "distribution": "tie_bin_overflow",
+      "backend": "cluster",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 513,
+      "width": 131072,
+      "k": 2048,
+      "distribution": "cutoff_ties",
+      "backend": "streaming",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    },
+    {
+      "rows": 513,
+      "width": 131072,
+      "k": 2048,
+      "distribution": "cutoff_ties",
+      "backend": "cluster",
+      "dispatched_path": "streaming",
+      "initial_plan": [
+        0,
+        0
+      ],
+      "changed_plan": [
+        0,
+        0
+      ],
+      "fixed_logits": "exact",
+      "graph_replan": "exact",
+      "poisoned_tail": "passed"
+    }
+  ],
+  "ragged": [
+    {
+      "k": 512,
+      "distribution": "random",
+      "ragged": "exact"
+    },
+    {
+      "k": 512,
+      "distribution": "equal_nonzero",
+      "ragged": "exact"
+    },
+    {
+      "k": 512,
+      "distribution": "tie_bin_overflow",
+      "ragged": "exact"
+    },
+    {
+      "k": 2048,
+      "distribution": "random",
+      "ragged": "exact"
+    },
+    {
+      "k": 2048,
+      "distribution": "equal_nonzero",
+      "ragged": "exact"
+    },
+    {
+      "k": 2048,
+      "distribution": "tie_bin_overflow",
+      "ragged": "exact"
+    }
+  ]
+}

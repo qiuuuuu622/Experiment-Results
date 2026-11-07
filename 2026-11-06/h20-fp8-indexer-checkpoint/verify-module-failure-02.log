@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/root/dsv41-indexer-port/benchmarks/kernels/dsv41_indexer/verify_module.py", line 79, in <module>
+    main()
+  File "/root/dsv41-indexer-port/benchmarks/kernels/dsv41_indexer/verify_module.py", line 73, in main
+    results = run_checks()
+              ^^^^^^^^^^^^
+  File "/root/dsv41-indexer-port/benchmarks/kernels/dsv41_indexer/verify_module.py", line 36, in run_checks
+    op.forward()
+  File "/root/dsv41-indexer-port/vllm_dsv41_indexer/module.py", line 102, in forward
+    return self.select()
+           ^^^^^^^^^^^^^
+  File "/root/dsv41-indexer-port/vllm_dsv41_indexer/module.py", line 96, in select
+    self.native.topk(self.scores, self.inputs.lengths, None,
+  File "python/tvm_ffi/cython/function.pxi", line 968, in tvm_ffi.core.Function.__call__
+RuntimeError: Failed at /root/dsv41-indexer-port/vllm_dsv41_indexer/third_party/ant/csrc/deepseek_v4/topk_v2.cuh:1290: score_stride must be a multiple of 4 (16-byte vectorized load)

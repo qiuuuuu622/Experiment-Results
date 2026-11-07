@@ -1,0 +1,77 @@
+{
+  "captured_at_utc": "2026-11-06T07:30:36.970230+00:00",
+  "status": "checkpoint_after_runs_not_exact_historical_runtime_snapshot",
+  "baseline_commit": "29be941d8d5746cd98135bdd5e710eeebd8d7014",
+  "ant_commit": "6e6d5d9e13915adb01db0856b15d6908eaaa2c48",
+  "note": "No complete source hash/archive was recorded before P3 forward/reverse. This is current checkpoint source; later P4 added PAIR_ROWS to grouped helpers. Final regression must bind its exact source version.",
+  "files": [
+    {
+      "path": "vllm_dsv41_indexer/module.py",
+      "sha256": "f9fdf95aacf3ccc3fd40b30148792552523874ecd75eb1cc03ba348863067dc9"
+    },
+    {
+      "path": "vllm_dsv41_indexer/contract.py",
+      "sha256": "35b073f106fd5770d1d05a2d7e2be7026c1ad23faf88ba20257259bc41a8858e"
+    },
+    {
+      "path": "vllm_dsv41_indexer/full_score.py",
+      "sha256": "e978e3a305e8b19437c4e4c5575735769f888ca68dcb63be1d4c33911e0e1d53"
+    },
+    {
+      "path": "vllm_dsv41_indexer/grouped.py",
+      "sha256": "eccb9ee137fbf19d410b22c4c202ef8d2f3d079479ebf2248fd6d45e179b094b"
+    },
+    {
+      "path": "vllm_dsv41_indexer/grouped_score.py",
+      "sha256": "5d0b1fd5496f6a2946d685e028ea06e813a9688b648ab1304f26922e5b36e94c"
+    },
+    {
+      "path": "vllm_dsv41_indexer/workspace.py",
+      "sha256": "5c5a86c2e71d3d95e4f996780a81f1045cb31fa594170d7301aa9c3fd792fbb0"
+    },
+    {
+      "path": "vllm_dsv41_indexer/score.py",
+      "sha256": "669a839062a0d9de642fa3709bb93f5cd056612b2f30455d7de8ce94f29a237b"
+    },
+    {
+      "path": "vllm_dsv41_indexer/prepare.py",
+      "sha256": "8234723ab24dab5c37fe4898ef925032e8fef1a3e2a3403d1d7abe0076d27fd2"
+    },
+    {
+      "path": "vllm_dsv41_indexer/native.py",
+      "sha256": "ac8ec647cf2f35ea0a7d8ff5b9bf9aff2b857b95d1bf84ad8e94dd2b5383d40a"
+    },
+    {
+      "path": "vllm_dsv41_indexer/reference.py",
+      "sha256": "6984d36ec42272ca5ded2f8b1ac77a2dcf43ed5e56f93ce23975a098d4e75bd8"
+    },
+    {
+      "path": "vllm_dsv41_indexer/parallel.py",
+      "sha256": "78a3794c89b0188f519cdd1a0fb41f8efb544dff3dce7bb6605a4def94b1f82f"
+    },
+    {
+      "path": "benchmarks/kernels/dsv41_indexer/benchmark_full.py",
+      "sha256": "0f21af9310e6bd4c26c1664736300c48bec815de451be7d5cd84ca5d126535d9"
+    },
+    {
+      "path": "benchmarks/kernels/dsv41_indexer/03_p3_gpu0.sh",
+      "sha256": "83f2035a550eafe0a63d35b8eeff888d8231c7768368c211fe90b7bd2e552f9d"
+    },
+    {
+      "path": "benchmarks/kernels/dsv41_indexer/common.py",
+      "sha256": "7c2cd4daf8c8e5d702c3aa19905db0ef05729b497b73ca76c1009d30e459895f"
+    },
+    {
+      "path": "benchmarks/kernels/dsv41_indexer/inputs.py",
+      "sha256": "9710a3078c5f7ec170374d208ac4cb96ca057af518c3620f9ba30e76c68cc56c"
+    },
+    {
+      "path": "benchmarks/kernels/dsv41_indexer/baseline.json",
+      "sha256": "0331b099289d70d7058bba90e7ba1f3566ebcdb10edaf117cca1e5b22839dcab"
+    },
+    {
+      "path": "tests/kernels/dsv41_indexer/test_contract.py",
+      "sha256": "4d7730a2dd54792f1c3e3dbae100477389e11bfd5c7d43e8437a56a3cc70f140"
+    }
+  ]
+}

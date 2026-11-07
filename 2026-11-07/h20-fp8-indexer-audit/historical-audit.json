@@ -1,0 +1,2344 @@
+{
+  "status": "audited",
+  "phases": {
+    "p4": [
+      {
+        "path": "results/indexer/20261106-tp4/p4/benchmark-paired-v1.json",
+        "sha256": "c5c11c3244ce80956de8271d52645848c1d2c604785f81f00d45d0a31d2bedb6",
+        "status": "completed",
+        "checks": 0,
+        "ragged": 0,
+        "cases": 7,
+        "measurement_nodes": 393,
+        "sampling_violations": [],
+        "high_cv": [
+          {
+            "location": "root.cases[0].timings.forward.eager.native_source",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[0].timings.forward.eager.native_source.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.reverse.eager.shared_consumer_publish_included",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[1].timings.forward.eager.grouped_gluon_source",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[1].timings.forward.eager.grouped_gluon_source.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[1].timings.forward.eager.rowwise_consumer_publish_included",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[1].timings.reverse.eager.native_source",
+            "extra_rounds": 3
+          }
+        ],
+        "log_exists": true
+      },
+      {
+        "path": "results/indexer/20261106-tp4/p4/benchmark-paired.json",
+        "sha256": "d5ea53b8109e6f35f8a4cab1221880ed949729a8601f5d894996da72e7cfef09",
+        "status": "completed",
+        "checks": 0,
+        "ragged": 0,
+        "cases": 7,
+        "measurement_nodes": 402,
+        "sampling_violations": [],
+        "high_cv": [
+          {
+            "location": "root.cases[0].timings.forward.eager.native_source",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[0].timings.forward.eager.native_source.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.forward.eager.native_source.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.reverse.eager.native_score",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[0].timings.reverse.eager.native_score.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[1].timings.reverse.eager.native_source",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[2].timings.forward.eager.native_source",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[2].timings.forward.eager.native_source.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[2].timings.reverse.eager.rowwise_gluon_source",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[2].timings.reverse.eager.rowwise_gluon_score",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[3].timings.forward.eager.shared_consumer_publish_included",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[3].timings.forward.eager.shared_consumer_publish_included.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[4].timings.reverse.eager.grouped_gluon_full",
+            "extra_rounds": 3
+          }
+        ],
+        "log_exists": true
+      },
+      {
+        "path": "results/indexer/20261106-tp4/p4/benchmark.json",
+        "sha256": "2705ca02aa562c9d30f8bd73c436a5817f809d05054f183b9a0956d0afbd1b0e",
+        "status": "completed",
+        "checks": 0,
+        "ragged": 0,
+        "cases": 7,
+        "measurement_nodes": 414,
+        "sampling_violations": [],
+        "high_cv": [
+          {
+            "location": "root.cases[0].timings.reverse.eager.rowwise_consumer_publish_included",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[0].timings.reverse.eager.native_source",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[0].timings.reverse.eager.native_source.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.reverse.eager.grouped_gluon_score",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[0].timings.reverse.eager.grouped_gluon_score.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[1].timings.forward.eager.grouped_gluon_score",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[1].timings.forward.eager.grouped_gluon_score.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[1].timings.forward.eager.grouped_gluon_score.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[1].timings.forward.eager.grouped_gluon_score.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[1].timings.forward.eager.rowwise_gluon_source",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[1].timings.reverse.eager.rowwise_consumer_publish_included",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[2].timings.forward.eager.rowwise_gluon_score",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[2].timings.reverse.eager.shared_consumer_publish_included",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[2].timings.reverse.eager.grouped_gluon_source",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[3].timings.forward.eager.rowwise_consumer_publish_included",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[3].timings.forward.eager.rowwise_consumer_publish_included.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[5].timings.reverse.graph.shared_consumer_publish_included",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[6].timings.forward.eager.rowwise_consumer_publish_included",
+            "extra_rounds": 3
+          }
+        ],
+        "log_exists": true
+      },
+      {
+        "path": "results/indexer/20261106-tp4/p4/planning.json",
+        "sha256": "2d388ed6e1c2b92e9600ce465de6242e10857be28f0a834ec6e79f232d27cbc7",
+        "status": "completed",
+        "checks": 0,
+        "ragged": 0,
+        "cases": 6,
+        "measurement_nodes": 69,
+        "sampling_violations": [],
+        "high_cv": [
+          {
+            "location": "root.cases[0].timings.forward.shared_eligibility_plan_only",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[0].timings.forward.shared_eligibility_plan_only.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.reverse.shared_publish_replan_execute",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[0].timings.reverse.shared_eligibility_plan_only",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[0].timings.reverse.shared_eligibility_plan_only.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.reverse.shared_eligibility_plan_only.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[1].timings.forward.shared_publish_execute_preplanned",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[1].timings.forward.shared_publish_execute_preplanned.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[1].timings.forward.shared_publish_execute_preplanned.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[1].timings.forward.shared_eligibility_plan_only",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[2].timings.forward.rowwise_publish_execute",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[5].timings.reverse.shared_eligibility_plan_only",
+            "extra_rounds": 3
+          }
+        ],
+        "log_exists": true
+      },
+      {
+        "path": "results/indexer/20261106-tp4/p4/smoke.json",
+        "sha256": "7f96fb55947431c32ad52d3e54cc1351cb34f45bad7d5e3b7e0384e0bb02b4ab",
+        "status": "completed",
+        "checks": 0,
+        "ragged": 0,
+        "cases": 1,
+        "measurement_nodes": 54,
+        "sampling_violations": [],
+        "high_cv": [],
+        "log_exists": true
+      },
+      {
+        "path": "results/indexer/20261106-tp4/p4/verify-paired-v2.json",
+        "sha256": "333dbe5b7f8daa5ddca1bd1aaec132fd1cc8a8a97bb42dafd19f9b8c04fce872",
+        "status": "passed",
+        "checks": 31,
+        "ragged": 0,
+        "cases": 0,
+        "measurement_nodes": 0,
+        "sampling_violations": [],
+        "high_cv": [],
+        "log_exists": true
+      },
+      {
+        "path": "results/indexer/20261106-tp4/p4/verify-paired.json",
+        "sha256": "a890acd9227ef5ce011b30e1c289b0d5faf169b323c80d586842baee7081f2aa",
+        "status": "passed",
+        "checks": 16,
+        "ragged": 0,
+        "cases": 0,
+        "measurement_nodes": 0,
+        "sampling_violations": [],
+        "high_cv": [],
+        "log_exists": true
+      },
+      {
+        "path": "results/indexer/20261106-tp4/p4/verify-v2.json",
+        "sha256": "9720410e1c1b0bac545289225abaef073e0f9889c7ce8c309221c41ae75a3e8f",
+        "status": "passed",
+        "checks": 31,
+        "ragged": 0,
+        "cases": 0,
+        "measurement_nodes": 0,
+        "sampling_violations": [],
+        "high_cv": [],
+        "log_exists": true
+      },
+      {
+        "path": "results/indexer/20261106-tp4/p4/verify.json",
+        "sha256": "77e45738fa7cf26d4bb5273352a4e4bee2c413dfed0e0ef5483bf9431ba33259",
+        "status": "passed",
+        "checks": 16,
+        "ragged": 0,
+        "cases": 0,
+        "measurement_nodes": 0,
+        "sampling_violations": [],
+        "high_cv": [],
+        "log_exists": true
+      }
+    ],
+    "p5": [
+      {
+        "path": "results/indexer/20261106-tp4/p5/checkpoint.json",
+        "sha256": "e37115c365e85394d2011cc2c9ac7d783df16476d1a9de48d5532d6111998567",
+        "status": "completed",
+        "checks": 0,
+        "ragged": 0,
+        "cases": 0,
+        "measurement_nodes": 0,
+        "sampling_violations": [],
+        "high_cv": [],
+        "log_exists": false
+      },
+      {
+        "path": "results/indexer/20261106-tp4/p5/gluon-forward.json",
+        "sha256": "a775cfc1b53a7784a08d313d11a9787b8347b1a85e6e78394b61059db61f0915",
+        "status": "completed",
+        "checks": 0,
+        "ragged": 0,
+        "cases": 4,
+        "measurement_nodes": 84,
+        "sampling_violations": [],
+        "high_cv": [
+          {
+            "location": "root.cases[0].timings.graph.optimized_prepare",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[0].timings.graph.optimized_prepare.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.graph.optimized_prepare.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.graph.optimized_prepare.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[1].timings.graph.optimized_prepare",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[1].timings.graph.optimized_prepare.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[3].timings.graph.native_prepare",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[3].timings.graph.native_prepare.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[3].timings.graph.optimized_prepare",
+            "extra_rounds": 3
+          }
+        ],
+        "log_exists": true
+      },
+      {
+        "path": "results/indexer/20261106-tp4/p5/gluon-reverse.json",
+        "sha256": "1b4b1b5209d840127d6f828db001e5250e5482c009485414bf58699a96e210d6",
+        "status": "completed",
+        "checks": 0,
+        "ragged": 0,
+        "cases": 4,
+        "measurement_nodes": 87,
+        "sampling_violations": [],
+        "high_cv": [
+          {
+            "location": "root.cases[0].timings.eager.optimized_prepare",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[1].timings.graph.optimized_prepare",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[3].timings.eager.native_prepare",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[3].timings.graph.optimized_prepare",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[3].timings.graph.native_prepare",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[3].timings.graph.native_prepare.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[3].timings.graph.native_prepare.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[3].timings.graph.native_prepare.extra_rounds[2]",
+            "extra_rounds": 0
+          }
+        ],
+        "log_exists": true
+      },
+      {
+        "path": "results/indexer/20261106-tp4/p5/gluon-verify.json",
+        "sha256": "dc1058c73f5c9454f9ee25e36f1371bb9783b2ea047fca34409cdbf85bbb544d",
+        "status": "passed",
+        "checks": 27,
+        "ragged": 0,
+        "cases": 0,
+        "measurement_nodes": 0,
+        "sampling_violations": [],
+        "high_cv": [],
+        "log_exists": true
+      },
+      {
+        "path": "results/indexer/20261106-tp4/p5/matrix-forward.json",
+        "sha256": "bfcf50bf2dd49603e755eec11d9406aeb1e83f2e276039e69a619ac318f097ee",
+        "status": "completed",
+        "checks": 0,
+        "ragged": 0,
+        "cases": 13,
+        "measurement_nodes": 277,
+        "sampling_violations": [],
+        "high_cv": [
+          {
+            "location": "root.cases[0].timings.eager.keys_major_pipeline",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[0].timings.eager.keys_major_pipeline.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.eager.keys_major_pipeline.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.eager.native_prepare",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[0].timings.eager.native_prepare.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.eager.native_prepare.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.eager.optimized_prepare",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[0].timings.eager.optimized_prepare.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.eager.optimized_prepare.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.graph.row_tiled_pipeline",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[0].timings.graph.row_tiled_pipeline.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.graph.row_tiled_pipeline.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.graph.row_tiled_pipeline.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.graph.indirect_pipeline",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[0].timings.graph.indirect_pipeline.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.graph.indirect_pipeline.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.graph.native_prepare",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[0].timings.graph.native_prepare.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.graph.native_prepare.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.graph.native_prepare.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.graph.optimized_prepare",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[0].timings.graph.optimized_prepare.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.graph.optimized_prepare.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.graph.optimized_prepare.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[1].timings.eager.native_prepare",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[2].timings.graph.native_prepare",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[2].timings.graph.native_prepare.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[2].timings.graph.native_prepare.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[2].timings.graph.native_prepare.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[2].timings.graph.optimized_prepare",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[2].timings.graph.optimized_prepare.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[2].timings.graph.optimized_prepare.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[2].timings.graph.optimized_prepare.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[3].timings.graph.optimized_prepare",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[3].timings.graph.optimized_prepare.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[4].timings.eager.keys_major_pipeline",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[5].timings.graph.native_prepare",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[5].timings.graph.native_prepare.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[5].timings.graph.native_prepare.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[5].timings.graph.native_prepare.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[5].timings.graph.optimized_prepare",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[5].timings.graph.optimized_prepare.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[5].timings.graph.optimized_prepare.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[5].timings.graph.optimized_prepare.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[6].timings.graph.native_prepare",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[6].timings.graph.native_prepare.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[6].timings.graph.native_prepare.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[6].timings.graph.native_prepare.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[6].timings.graph.optimized_prepare",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[6].timings.graph.optimized_prepare.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[6].timings.graph.optimized_prepare.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[6].timings.graph.optimized_prepare.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[7].timings.graph.native_prepare",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[7].timings.graph.native_prepare.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[7].timings.graph.native_prepare.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[8].timings.eager.indirect_pipeline",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[9].timings.graph.native_prepare",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[9].timings.graph.native_prepare.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[9].timings.graph.native_prepare.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[9].timings.graph.native_prepare.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[9].timings.graph.optimized_prepare",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[9].timings.graph.optimized_prepare.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[9].timings.graph.optimized_prepare.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[9].timings.graph.optimized_prepare.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[12].timings.eager.optimized_prepare",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[12].timings.eager.optimized_prepare.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[12].timings.eager.optimized_prepare.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[12].timings.eager.optimized_prepare.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[12].timings.graph.keys_major_pipeline",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[12].timings.graph.native_prepare",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[12].timings.graph.native_prepare.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[12].timings.graph.native_prepare.extra_rounds[2]",
+            "extra_rounds": 0
+          }
+        ],
+        "log_exists": true
+      },
+      {
+        "path": "results/indexer/20261106-tp4/p5/matrix-reverse.json",
+        "sha256": "fb6e56a673b1e9ffbe39f3d37bf4242cfa53f7789ef8ff93b994cfe68f7f7f4a",
+        "status": "completed",
+        "checks": 0,
+        "ragged": 0,
+        "cases": 13,
+        "measurement_nodes": 271,
+        "sampling_violations": [],
+        "high_cv": [
+          {
+            "location": "root.cases[0].timings.eager.deepgemm_score_only",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[0].timings.eager.deepgemm_score_only.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.eager.deepgemm_score_only.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.eager.indirect_pipeline",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[0].timings.graph.optimized_prepare",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[0].timings.graph.optimized_prepare.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.graph.optimized_prepare.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.graph.optimized_prepare.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.graph.native_prepare",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[0].timings.graph.native_prepare.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.graph.native_prepare.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.graph.native_prepare.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.graph.indirect_pipeline",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[0].timings.graph.indirect_pipeline.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.graph.indirect_pipeline.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.graph.keys_major_pipeline",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[0].timings.graph.keys_major_pipeline.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.graph.keys_major_pipeline.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.graph.keys_major_pipeline.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.graph.row_tiled_pipeline",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[0].timings.graph.row_tiled_pipeline.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.graph.row_tiled_pipeline.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.graph.row_tiled_pipeline.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[2].timings.graph.optimized_prepare",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[2].timings.graph.optimized_prepare.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[2].timings.graph.optimized_prepare.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[2].timings.graph.optimized_prepare.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[2].timings.graph.native_prepare",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[2].timings.graph.native_prepare.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[2].timings.graph.native_prepare.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[2].timings.graph.native_prepare.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[3].timings.graph.optimized_prepare",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[3].timings.graph.optimized_prepare.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[3].timings.graph.optimized_prepare.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[5].timings.graph.optimized_prepare",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[5].timings.graph.optimized_prepare.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[5].timings.graph.optimized_prepare.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[5].timings.graph.optimized_prepare.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[5].timings.graph.native_prepare",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[5].timings.graph.native_prepare.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[5].timings.graph.native_prepare.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[5].timings.graph.native_prepare.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[6].timings.graph.optimized_prepare",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[6].timings.graph.optimized_prepare.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[6].timings.graph.optimized_prepare.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[6].timings.graph.optimized_prepare.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[6].timings.graph.native_prepare",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[6].timings.graph.native_prepare.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[6].timings.graph.native_prepare.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[6].timings.graph.native_prepare.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[8].timings.eager.indirect_pipeline",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[8].timings.eager.indirect_pipeline.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[8].timings.eager.indirect_pipeline.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[8].timings.eager.row_tiled_pipeline",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[8].timings.eager.row_tiled_pipeline.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[8].timings.eager.row_tiled_pipeline.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[9].timings.eager.native_pipeline",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[9].timings.graph.optimized_prepare",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[9].timings.graph.optimized_prepare.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[9].timings.graph.optimized_prepare.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[9].timings.graph.optimized_prepare.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[9].timings.graph.native_prepare",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[9].timings.graph.native_prepare.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[9].timings.graph.native_prepare.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[9].timings.graph.native_prepare.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[12].timings.eager.native_prepare",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[12].timings.graph.native_prepare",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[12].timings.graph.native_prepare.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[12].timings.graph.native_prepare.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[12].timings.graph.native_prepare.extra_rounds[2]",
+            "extra_rounds": 0
+          }
+        ],
+        "log_exists": true
+      },
+      {
+        "path": "results/indexer/20261106-tp4/p5/smoke-forward.json",
+        "sha256": "29c00862cbf7ba23ecffa6ab7f9dbfb9b2dcfcbb8c62505e929fc59a736e7527",
+        "status": "completed",
+        "checks": 0,
+        "ragged": 0,
+        "cases": 3,
+        "measurement_nodes": 63,
+        "sampling_violations": [],
+        "high_cv": [
+          {
+            "location": "root.cases[0].timings.graph.optimized_prepare",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[0].timings.graph.optimized_prepare.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.graph.optimized_prepare.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[1].timings.eager.row_tiled_pipeline",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[1].timings.graph.optimized_prepare",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[1].timings.graph.optimized_prepare.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[1].timings.graph.optimized_prepare.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[1].timings.graph.optimized_prepare.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[2].timings.eager.deepgemm_pipeline",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[2].timings.eager.keys_major_pipeline",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[2].timings.eager.keys_major_pipeline.extra_rounds[2]",
+            "extra_rounds": 0
+          }
+        ],
+        "log_exists": true
+      },
+      {
+        "path": "results/indexer/20261106-tp4/p5/smoke-initial-forward.json",
+        "sha256": "840c6e160f8fc08cd0a45f91642fdac29527b623707f5f2dee1a6857a618a217",
+        "status": "completed",
+        "checks": 0,
+        "ragged": 0,
+        "cases": 3,
+        "measurement_nodes": 66,
+        "sampling_violations": [],
+        "high_cv": [
+          {
+            "location": "root.cases[0].timings.eager.keys_major_pipeline",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[0].timings.graph.optimized_prepare",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[0].timings.graph.optimized_prepare.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.graph.optimized_prepare.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.graph.optimized_prepare.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[1].timings.eager.row_tiled_pipeline",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[1].timings.graph.native_prepare",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[2].timings.eager.native_prepare",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[2].timings.eager.native_prepare.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[2].timings.eager.native_prepare.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[2].timings.eager.native_prepare.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[2].timings.eager.optimized_prepare",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[2].timings.eager.optimized_prepare.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[2].timings.eager.optimized_prepare.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[2].timings.eager.optimized_prepare.extra_rounds[2]",
+            "extra_rounds": 0
+          }
+        ],
+        "log_exists": true
+      },
+      {
+        "path": "results/indexer/20261106-tp4/p5/smoke-reverse.json",
+        "sha256": "6054359ba66ce9ee23d8d45baa33b1194b0d9db13c055875c280d0ceeeeb1605",
+        "status": "completed",
+        "checks": 0,
+        "ragged": 0,
+        "cases": 3,
+        "measurement_nodes": 57,
+        "sampling_violations": [],
+        "high_cv": [
+          {
+            "location": "root.cases[0].timings.graph.optimized_prepare",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[0].timings.graph.optimized_prepare.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.graph.optimized_prepare.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.graph.optimized_prepare.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[1].timings.eager.keys_major_pipeline",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[1].timings.graph.optimized_prepare",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[1].timings.graph.optimized_prepare.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[1].timings.graph.optimized_prepare.extra_rounds[1]",
+            "extra_rounds": 0
+          }
+        ],
+        "log_exists": true
+      },
+      {
+        "path": "results/indexer/20261106-tp4/p5/verify-final.json",
+        "sha256": "f08952103db975542856ffaeba8ba53c3c90c3d7b7303012e956e47e37829c21",
+        "status": "passed",
+        "checks": 24,
+        "ragged": 0,
+        "cases": 0,
+        "measurement_nodes": 0,
+        "sampling_violations": [],
+        "high_cv": [],
+        "log_exists": true
+      },
+      {
+        "path": "results/indexer/20261106-tp4/p5/verify.json",
+        "sha256": "84b5c2d3494bb6a05c73057f6881ca94ee113a0573ab96e3a8b3e7f19ff61992",
+        "status": "passed",
+        "checks": 24,
+        "ragged": 0,
+        "cases": 0,
+        "measurement_nodes": 0,
+        "sampling_violations": [],
+        "high_cv": [],
+        "log_exists": true
+      }
+    ],
+    "p6": [
+      {
+        "path": "results/indexer/20261106-tp4/p6/forward.json",
+        "sha256": "0a383119c441f63d92e3395243b7c45816b32fe46521cf918887ce3521572cb4",
+        "status": "completed",
+        "checks": 0,
+        "ragged": 0,
+        "cases": 29,
+        "measurement_nodes": 307,
+        "sampling_violations": [],
+        "high_cv": [
+          {
+            "location": "root.cases[0].timings.eager.cluster_preplanned",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[0].timings.eager.cluster_preplanned.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.eager.cluster_preplanned.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.eager.cluster_preplanned.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.graph.vllm_cooperative",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[0].timings.graph.vllm_cooperative.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[2].timings.eager.vllm_cooperative",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[2].timings.eager.vllm_cooperative.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[3].timings.graph.streaming",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[5].timings.eager.streaming",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[5].timings.eager.streaming.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[5].timings.eager.cluster_preplanned",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[5].timings.eager.cluster_preplanned.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[5].timings.eager.cluster_replan_each_call",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[10].timings.eager.plan",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[10].timings.eager.plan.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[10].timings.eager.plan.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[10].timings.graph.plan",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[10].timings.graph.plan.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[10].timings.graph.plan.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[10].timings.graph.plan.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[11].timings.eager.cluster_preplanned",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[13].timings.graph.plan",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[13].timings.graph.plan.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[13].timings.graph.plan.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[13].timings.graph.plan.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[16].timings.eager.plan",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[16].timings.eager.plan.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[16].timings.graph.plan",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[16].timings.graph.plan.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[16].timings.graph.plan.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[16].timings.graph.plan.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[17].timings.eager.cluster_preplanned",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[17].timings.graph.streaming",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[17].timings.graph.cluster_replan_each_call",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[17].timings.graph.cluster_replan_each_call.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[20].timings.eager.cluster_preplanned",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[20].timings.graph.streaming",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[20].timings.graph.streaming.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[23].timings.eager.streaming",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[23].timings.graph.cluster_preplanned",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[23].timings.graph.cluster_preplanned.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[24].timings.eager.vllm_source_torch_topk",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[24].timings.eager.vllm_source_torch_topk.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[26].timings.eager.cluster_preplanned",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[26].timings.eager.cluster_preplanned.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[26].timings.eager.cluster_replan_each_call",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[26].timings.eager.cluster_replan_each_call.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[26].timings.eager.cluster_replan_each_call.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[26].timings.eager.cluster_replan_each_call.extra_rounds[2]",
+            "extra_rounds": 0
+          }
+        ],
+        "log_exists": true
+      },
+      {
+        "path": "results/indexer/20261106-tp4/p6/reverse.json",
+        "sha256": "4081d405d6fbe1b5591bf3d9dc0baca32a36679cc1532b783a5bb244a6ce4c77",
+        "status": "completed",
+        "checks": 0,
+        "ragged": 0,
+        "cases": 29,
+        "measurement_nodes": 352,
+        "sampling_violations": [],
+        "high_cv": [
+          {
+            "location": "root.cases[0].timings.eager.cluster_replan_each_call",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[0].timings.eager.cluster_replan_each_call.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.eager.cluster_replan_each_call.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.eager.cluster_preplanned",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[0].timings.eager.cluster_preplanned.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.eager.cluster_preplanned.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.eager.cluster_preplanned.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.eager.streaming",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[0].timings.eager.streaming.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.eager.streaming.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.eager.streaming.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.graph.cluster_replan_each_call",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[0].timings.graph.cluster_replan_each_call.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.graph.cluster_replan_each_call.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.graph.cluster_preplanned",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[0].timings.graph.cluster_preplanned.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.graph.cluster_preplanned.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.graph.cluster_preplanned.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.graph.streaming",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[0].timings.graph.streaming.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.graph.streaming.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.graph.vllm_cooperative",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[0].timings.graph.vllm_cooperative.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.graph.vllm_cooperative.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[0].timings.graph.vllm_cooperative.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[1].timings.eager.cluster_replan_each_call",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[1].timings.eager.cluster_replan_each_call.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[1].timings.eager.cluster_replan_each_call.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[1].timings.eager.cluster_replan_each_call.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[1].timings.eager.cluster_preplanned",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[1].timings.eager.cluster_preplanned.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[1].timings.eager.cluster_preplanned.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[1].timings.eager.cluster_preplanned.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[1].timings.eager.streaming",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[1].timings.eager.streaming.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[1].timings.eager.streaming.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[1].timings.eager.vllm_cooperative",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[1].timings.eager.vllm_cooperative.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[1].timings.eager.vllm_cooperative.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[1].timings.eager.vllm_cooperative.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[2].timings.eager.vllm_cooperative",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[2].timings.eager.vllm_cooperative.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[2].timings.eager.vllm_cooperative.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[2].timings.eager.vllm_cooperative.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[3].timings.eager.cluster_replan_each_call",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[3].timings.eager.cluster_replan_each_call.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[3].timings.eager.cluster_replan_each_call.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[3].timings.eager.vllm_cooperative",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[3].timings.eager.vllm_cooperative.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[3].timings.eager.vllm_cooperative.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[3].timings.graph.cluster_replan_each_call",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[5].timings.eager.cluster_replan_each_call",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[5].timings.eager.cluster_replan_each_call.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[5].timings.eager.cluster_replan_each_call.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[5].timings.graph.cluster_replan_each_call",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[6].timings.eager.streaming",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[6].timings.eager.streaming.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[8].timings.eager.cluster_replan_each_call",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[8].timings.eager.cluster_replan_each_call.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[8].timings.eager.cluster_preplanned",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[10].timings.graph.plan",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[10].timings.graph.plan.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[10].timings.graph.plan.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[10].timings.graph.plan.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[11].timings.eager.cluster_replan_each_call",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[13].timings.eager.plan",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[13].timings.eager.plan.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[13].timings.eager.plan.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[13].timings.eager.plan.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[13].timings.graph.plan",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[13].timings.graph.plan.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[13].timings.graph.plan.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[13].timings.graph.plan.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[16].timings.graph.plan",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[16].timings.graph.plan.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[16].timings.graph.plan.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[16].timings.graph.plan.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[16].timings.graph.cluster_preplanned",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[17].timings.eager.cluster_replan_each_call",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[17].timings.eager.cluster_replan_each_call.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[17].timings.eager.cluster_replan_each_call.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[17].timings.eager.cluster_replan_each_call.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[17].timings.eager.cluster_preplanned",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[17].timings.eager.cluster_preplanned.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[17].timings.graph.cluster_replan_each_call",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[17].timings.graph.cluster_replan_each_call.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[20].timings.eager.cluster_replan_each_call",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[20].timings.eager.cluster_replan_each_call.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[20].timings.eager.cluster_replan_each_call.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[20].timings.graph.cluster_replan_each_call",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[23].timings.eager.cluster_replan_each_call",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[23].timings.eager.cluster_replan_each_call.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[23].timings.eager.cluster_preplanned",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[23].timings.eager.cluster_preplanned.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[23].timings.eager.cluster_preplanned.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[23].timings.eager.streaming",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[23].timings.eager.streaming.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[23].timings.graph.cluster_replan_each_call",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[23].timings.graph.cluster_replan_each_call.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[26].timings.eager.cluster_replan_each_call",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[26].timings.eager.cluster_replan_each_call.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[26].timings.eager.cluster_replan_each_call.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[26].timings.eager.cluster_replan_each_call.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[26].timings.eager.cluster_preplanned",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[26].timings.eager.cluster_preplanned.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[26].timings.eager.cluster_preplanned.extra_rounds[1]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[26].timings.eager.cluster_preplanned.extra_rounds[2]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[26].timings.eager.streaming",
+            "extra_rounds": 3
+          },
+          {
+            "location": "root.cases[26].timings.eager.streaming.extra_rounds[0]",
+            "extra_rounds": 0
+          },
+          {
+            "location": "root.cases[26].timings.eager.streaming.extra_rounds[1]",
+            "extra_rounds": 0
+          }
+        ],
+        "log_exists": true
+      },
+      {
+        "path": "results/indexer/20261106-tp4/p6/source-sha256.json",
+        "sha256": "62f9ad1bcfd98b6f67470fec1f6a997bdbf62a06ceef46b248b10178cd6c809d",
+        "status": null,
+        "checks": 0,
+        "ragged": 0,
+        "cases": 0,
+        "measurement_nodes": 0,
+        "sampling_violations": [],
+        "high_cv": [],
+        "log_exists": false
+      },
+      {
+        "path": "results/indexer/20261106-tp4/p6/verify.json",
+        "sha256": "8207ccd0c3cc1534e957da9c59e4c2f384a8424ee5f3d36eb01057f8f26e3585",
+        "status": "passed",
+        "checks": 360,
+        "ragged": 6,
+        "cases": 0,
+        "measurement_nodes": 0,
+        "sampling_violations": [],
+        "high_cv": [],
+        "log_exists": true
+      }
+    ]
+  },
+  "archives": [
+    {
+      "path": "results/indexer/20261106-tp4/p4/source-final.tgz",
+      "sha256": "5a4073f10b37241d6ff4b3088707d879226740408510f3e975a741bfe878e10d",
+      "files": [
+        {
+          "path": "vllm_dsv41_indexer/grouped.py",
+          "sha256": "eccb9ee137fbf19d410b22c4c202ef8d2f3d079479ebf2248fd6d45e179b094b",
+          "current_exists": true,
+          "current_equal": true
+        },
+        {
+          "path": "vllm_dsv41_indexer/grouped_score.py",
+          "sha256": "5d0b1fd5496f6a2946d685e028ea06e813a9688b648ab1304f26922e5b36e94c",
+          "current_exists": true,
+          "current_equal": true
+        },
+        {
+          "path": "vllm_dsv41_indexer/contract.py",
+          "sha256": "35b073f106fd5770d1d05a2d7e2be7026c1ad23faf88ba20257259bc41a8858e",
+          "current_exists": true,
+          "current_equal": true
+        },
+        {
+          "path": "vllm_dsv41_indexer/module.py",
+          "sha256": "f9fdf95aacf3ccc3fd40b30148792552523874ecd75eb1cc03ba348863067dc9",
+          "current_exists": true,
+          "current_equal": true
+        },
+        {
+          "path": "vllm_dsv41_indexer/native.py",
+          "sha256": "ac8ec647cf2f35ea0a7d8ff5b9bf9aff2b857b95d1bf84ad8e94dd2b5383d40a",
+          "current_exists": true,
+          "current_equal": true
+        },
+        {
+          "path": "vllm_dsv41_indexer/score.py",
+          "sha256": "669a839062a0d9de642fa3709bb93f5cd056612b2f30455d7de8ce94f29a237b",
+          "current_exists": true,
+          "current_equal": true
+        },
+        {
+          "path": "vllm_dsv41_indexer/workspace.py",
+          "sha256": "5c5a86c2e71d3d95e4f996780a81f1045cb31fa594170d7301aa9c3fd792fbb0",
+          "current_exists": true,
+          "current_equal": true
+        },
+        {
+          "path": "benchmarks/kernels/dsv41_indexer/benchmark_grouped.py",
+          "sha256": "99b97de1ff34e47a94d4fcd517b8d5152a95ebc075168e329efcf92a9ffd91ff",
+          "current_exists": true,
+          "current_equal": true
+        },
+        {
+          "path": "benchmarks/kernels/dsv41_indexer/benchmark_grouped_planning.py",
+          "sha256": "9ed869796ea411e22710d668bf356d37295c3a2c54a9f19eb74500e808ccca94",
+          "current_exists": true,
+          "current_equal": false
+        },
+        {
+          "path": "benchmarks/kernels/dsv41_indexer/verify_grouped.py",
+          "sha256": "7fa44466ceb3278d186b076dff78c2298778e94ca39a22feb4e7eeeb5e6b7e5f",
+          "current_exists": true,
+          "current_equal": false
+        },
+        {
+          "path": "benchmarks/kernels/dsv41_indexer/common.py",
+          "sha256": "7c2cd4daf8c8e5d702c3aa19905db0ef05729b497b73ca76c1009d30e459895f",
+          "current_exists": true,
+          "current_equal": true
+        },
+        {
+          "path": "benchmarks/kernels/dsv41_indexer/inputs.py",
+          "sha256": "9710a3078c5f7ec170374d208ac4cb96ca057af518c3620f9ba30e76c68cc56c",
+          "current_exists": true,
+          "current_equal": true
+        },
+        {
+          "path": "scripts/04_p4_gpu3.sh",
+          "sha256": "4c0e11807bc3f494c2178b47341a06bbeac74dbe03cca45e23ac26e28b1042f7",
+          "current_exists": true,
+          "current_equal": true
+        }
+      ]
+    },
+    {
+      "path": "results/indexer/20261106-tp4/p4/source-v1.tgz",
+      "sha256": "06bc3a8351709129d1ce9a4956e89ae2eaa2febe41e4c3b43e8ec29f1c268ca0",
+      "files": [
+        {
+          "path": "vllm_dsv41_indexer/grouped.py",
+          "sha256": "1f85e6fa20c2566de990b041082424cd3eeee4603b77b805e206c7d34e9d04f5",
+          "current_exists": true,
+          "current_equal": false
+        },
+        {
+          "path": "vllm_dsv41_indexer/grouped_score.py",
+          "sha256": "e795fcd41d6366ba67d62e3299b845e3f09e789f64d631a23b9237cbc2fdea54",
+          "current_exists": true,
+          "current_equal": false
+        },
+        {
+          "path": "vllm_dsv41_indexer/contract.py",
+          "sha256": "35b073f106fd5770d1d05a2d7e2be7026c1ad23faf88ba20257259bc41a8858e",
+          "current_exists": true,
+          "current_equal": true
+        },
+        {
+          "path": "benchmarks/kernels/dsv41_indexer/benchmark_grouped.py",
+          "sha256": "99b97de1ff34e47a94d4fcd517b8d5152a95ebc075168e329efcf92a9ffd91ff",
+          "current_exists": true,
+          "current_equal": true
+        },
+        {
+          "path": "benchmarks/kernels/dsv41_indexer/verify_grouped.py",
+          "sha256": "604b37ea60fc236c77e1c612396d4dc1580d31adbddebf8c45dba7b875d9c5d3",
+          "current_exists": true,
+          "current_equal": false
+        }
+      ]
+    },
+    {
+      "path": "results/indexer/20261106-tp4/p5/gluon-source.tgz",
+      "sha256": "4f3c2819ac7e5e0ced9dd529aff5585a393077204e46aa5a0f6fca2ede1fd57e",
+      "files": [
+        {
+          "path": "vllm_dsv41_indexer/prefill.py",
+          "sha256": "78e49d3eeebc593b7604a6375d00f10b9bcbf21236510e1819d7c7fddb391ade",
+          "current_exists": true,
+          "current_equal": true
+        },
+        {
+          "path": "vllm_dsv41_indexer/grouped_score.py",
+          "sha256": "5d0b1fd5496f6a2946d685e028ea06e813a9688b648ab1304f26922e5b36e94c",
+          "current_exists": true,
+          "current_equal": true
+        },
+        {
+          "path": "benchmarks/kernels/dsv41_indexer/benchmark_prefill.py",
+          "sha256": "e77329e87052756c4036797ea1fc7274eb0f6aceb16945daf7b348cb41fd294c",
+          "current_exists": true,
+          "current_equal": true
+        },
+        {
+          "path": "benchmarks/kernels/dsv41_indexer/verify_prefill.py",
+          "sha256": "46b1d4b721fdc8ff88fdaf2cad0b792a3db98440fa3726775fde739bfb083691",
+          "current_exists": true,
+          "current_equal": true
+        },
+        {
+          "path": "tests/kernels/dsv41_indexer/test_prefill.py",
+          "sha256": "dd49c7967a3ba4e3b87121af53b1fb0191e560158ca00d7542e946c6eef70056",
+          "current_exists": true,
+          "current_equal": true
+        },
+        {
+          "path": "scripts/06_prefill_gluon.sh",
+          "sha256": "b6beb2be478957fa7369c3de4a25b10bbf81a1bf2843e0eabeaa4cd82b590882",
+          "current_exists": true,
+          "current_equal": true
+        }
+      ]
+    },
+    {
+      "path": "results/indexer/20261106-tp4/p5/source.tgz",
+      "sha256": "0703b5893a2a8efbffd1042da3c61a78405376308c07906a9f5d7d62c8319f15",
+      "files": [
+        {
+          "path": "vllm_dsv41_indexer/prefill.py",
+          "sha256": "6fe4a6c8556ddba16d2aaa99d40862a1f28b0f2c8539b3adf8d816d2f2968a4b",
+          "current_exists": true,
+          "current_equal": false
+        },
+        {
+          "path": "benchmarks/kernels/dsv41_indexer/benchmark_prefill.py",
+          "sha256": "848960fcdaceef4f935ad09687b406be76bb59e8e7d1b7a80e2e88ae90c58f73",
+          "current_exists": true,
+          "current_equal": false
+        },
+        {
+          "path": "benchmarks/kernels/dsv41_indexer/verify_prefill.py",
+          "sha256": "1b11c30620e435ea476e35b18aae9c8d4ee78e7df1a1d005e4a90d2207ddb59d",
+          "current_exists": true,
+          "current_equal": false
+        },
+        {
+          "path": "tests/kernels/dsv41_indexer/test_prefill.py",
+          "sha256": "dd49c7967a3ba4e3b87121af53b1fb0191e560158ca00d7542e946c6eef70056",
+          "current_exists": true,
+          "current_equal": true
+        },
+        {
+          "path": "scripts/05_prefill.sh",
+          "sha256": "92bbb315b35f8c1ee181fdd7d3fb1ce4fbf76289fd671a799be14f005b675253",
+          "current_exists": true,
+          "current_equal": true
+        }
+      ]
+    },
+    {
+      "path": "results/indexer/20261106-tp4/p6/source-snapshot.tgz",
+      "sha256": "44724c1d4fbf4986b2fc9e7206cab40fdaf8d9bc5ab82371b16ec20186c144be",
+      "files": [
+        {
+          "path": "vllm_dsv41_indexer/native.py",
+          "sha256": "ac8ec647cf2f35ea0a7d8ff5b9bf9aff2b857b95d1bf84ad8e94dd2b5383d40a",
+          "current_exists": true,
+          "current_equal": true
+        },
+        {
+          "path": "vllm_dsv41_indexer/topk.py",
+          "sha256": "90ceea7412f123245db61e3856d6db10844a12b333c371e7c7ce92aa639a3961",
+          "current_exists": true,
+          "current_equal": true
+        },
+        {
+          "path": "vllm_dsv41_indexer/csrc/candidate_publish.cuh",
+          "sha256": "4c7928614af36aa75f5bbb2abf70556144d7ed176ea9285f2ab2a8f9fa68fdef",
+          "current_exists": true,
+          "current_equal": true
+        },
+        {
+          "path": "vllm_dsv41_indexer/third_party/ant/csrc/deepseek_v4/topk_v2.cuh",
+          "sha256": "36578d30b309cfe67df436bc7a4d5d56ba29d574ad8fedd575598afca7e5e2bb",
+          "current_exists": true,
+          "current_equal": true
+        },
+        {
+          "path": "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/deepseek_v4/topk_impl.cuh",
+          "sha256": "14e8a8973a4161e8adb5e12f1726b8f72bc89e94ad9d7cf0d51029aeca8dda57",
+          "current_exists": true,
+          "current_equal": true
+        },
+        {
+          "path": "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/utils.h",
+          "sha256": "fe54010a29dd4d65110bf4afe60ff91b0f37f3b9704bb5bae4f1086347d7e32d",
+          "current_exists": true,
+          "current_equal": true
+        },
+        {
+          "path": "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/utils.cuh",
+          "sha256": "18b0bb2e27dccc20d7509e8b6b6c16e2b57a5ce98be648865fb75059be8a13db",
+          "current_exists": true,
+          "current_equal": true
+        },
+        {
+          "path": "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/vec.cuh",
+          "sha256": "11224cc483b7fbc93e2bcb1c2092715d80f1fa645920f4c82ee0e1d45a4eb551",
+          "current_exists": true,
+          "current_equal": true
+        },
+        {
+          "path": "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/math.cuh",
+          "sha256": "73e182466976d821f8ad89017fd2492c50ea456d5e7007d4e869cb6730568477",
+          "current_exists": true,
+          "current_equal": true
+        },
+        {
+          "path": "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/tile.cuh",
+          "sha256": "692446727a0353f1eb0d7249f6564d2c79ee6c9066e2c61e2ab450014fb217b7",
+          "current_exists": true,
+          "current_equal": true
+        },
+        {
+          "path": "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/warp.cuh",
+          "sha256": "264e64c3f386a70de938ed831f05f7a5f3c4b3ed9cfea58e1fbad433a8f860db",
+          "current_exists": true,
+          "current_equal": true
+        },
+        {
+          "path": "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/runtime.cuh",
+          "sha256": "1f989a2dee7a32ab519eeb49adf407c5e4054195faa77aa92ce4211343973213",
+          "current_exists": true,
+          "current_equal": true
+        },
+        {
+          "path": "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/tensor.h",
+          "sha256": "c66eba28e0f7661711947309c12014d2e880025c7d91ff8a7ac544d4ece60ce2",
+          "current_exists": true,
+          "current_equal": true
+        },
+        {
+          "path": "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/source_location.h",
+          "sha256": "300026cbeeabe03b10b0c46b70e2e85b19a743cbe9ff462faa1dff4268cf806e",
+          "current_exists": true,
+          "current_equal": true
+        },
+        {
+          "path": "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/type.cuh",
+          "sha256": "4c72b0892e8d003490bdab2633056172a674bc6a9689be552861564c7aaf8edc",
+          "current_exists": true,
+          "current_equal": true
+        },
+        {
+          "path": "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/bits.h",
+          "sha256": "5bab56d2578d151d3224994eeeae0abb939c26a1ac1e84205a1c942dab9cd605",
+          "current_exists": true,
+          "current_equal": true
+        },
+        {
+          "path": "vllm_dsv41_indexer/third_party/ant/sources.json",
+          "sha256": "55bf3d8fe6bef42bd05dfb47452365c9e6df08cdac47a0b132110dab617859f8",
+          "current_exists": true,
+          "current_equal": true
+        },
+        {
+          "path": "vllm_dsv41_indexer/third_party/ant/LICENSE",
+          "sha256": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747",
+          "current_exists": true,
+          "current_equal": true
+        },
+        {
+          "path": "benchmarks/kernels/dsv41_indexer/verify_topk.py",
+          "sha256": "a3aa6922665e064012319a55c6a80474597672b2c98fd51ec55660c0eee3b5b0",
+          "current_exists": true,
+          "current_equal": true
+        },
+        {
+          "path": "benchmarks/kernels/dsv41_indexer/benchmark_topk.py",
+          "sha256": "fa776ca54a04532189f853d283fa0c9ba1af89360120f5d68293d001a18ece38",
+          "current_exists": true,
+          "current_equal": true
+        },
+        {
+          "path": "benchmarks/kernels/dsv41_indexer/common.py",
+          "sha256": "7c2cd4daf8c8e5d702c3aa19905db0ef05729b497b73ca76c1009d30e459895f",
+          "current_exists": true,
+          "current_equal": true
+        },
+        {
+          "path": "benchmarks/kernels/dsv41_indexer/inputs.py",
+          "sha256": "9710a3078c5f7ec170374d208ac4cb96ca057af518c3620f9ba30e76c68cc56c",
+          "current_exists": true,
+          "current_equal": true
+        },
+        {
+          "path": "benchmarks/kernels/dsv41_indexer/baseline.json",
+          "sha256": "0331b099289d70d7058bba90e7ba1f3566ebcdb10edaf117cca1e5b22839dcab",
+          "current_exists": true,
+          "current_equal": true
+        },
+        {
+          "path": "scripts/06_topk.sh",
+          "sha256": "bd9fa2d158433061539e3312376bc69907a79efb0299b28abe60ce92639e97d0",
+          "current_exists": true,
+          "current_equal": true
+        }
+      ]
+    }
+  ],
+  "anchored_archive_hashes": [
+    {
+      "path": "p4/source-final.tgz",
+      "expected": "5a4073f10b37241d6ff4b3088707d879226740408510f3e975a741bfe878e10d",
+      "actual": "5a4073f10b37241d6ff4b3088707d879226740408510f3e975a741bfe878e10d",
+      "match": true
+    },
+    {
+      "path": "p5/source.tgz",
+      "expected": "0703b5893a2a8efbffd1042da3c61a78405376308c07906a9f5d7d62c8319f15",
+      "actual": "0703b5893a2a8efbffd1042da3c61a78405376308c07906a9f5d7d62c8319f15",
+      "match": true
+    },
+    {
+      "path": "p5/gluon-source.tgz",
+      "expected": "4f3c2819ac7e5e0ced9dd529aff5585a393077204e46aa5a0f6fca2ede1fd57e",
+      "actual": "4f3c2819ac7e5e0ced9dd529aff5585a393077204e46aa5a0f6fca2ede1fd57e",
+      "match": true
+    }
+  ],
+  "p6_manifest_vs_snapshot": [
+    {
+      "path": "vllm_dsv41_indexer/native.py",
+      "sha256": "ac8ec647cf2f35ea0a7d8ff5b9bf9aff2b857b95d1bf84ad8e94dd2b5383d40a",
+      "archive_path": "vllm_dsv41_indexer/native.py",
+      "archive_match": true
+    },
+    {
+      "path": "vllm_dsv41_indexer/topk.py",
+      "sha256": "90ceea7412f123245db61e3856d6db10844a12b333c371e7c7ce92aa639a3961",
+      "archive_path": "vllm_dsv41_indexer/topk.py",
+      "archive_match": true
+    },
+    {
+      "path": "benchmarks/kernels/dsv41_indexer/verify_topk.py",
+      "sha256": "a3aa6922665e064012319a55c6a80474597672b2c98fd51ec55660c0eee3b5b0",
+      "archive_path": "benchmarks/kernels/dsv41_indexer/verify_topk.py",
+      "archive_match": true
+    },
+    {
+      "path": "benchmarks/kernels/dsv41_indexer/benchmark_topk.py",
+      "sha256": "fa776ca54a04532189f853d283fa0c9ba1af89360120f5d68293d001a18ece38",
+      "archive_path": "benchmarks/kernels/dsv41_indexer/benchmark_topk.py",
+      "archive_match": true
+    },
+    {
+      "path": "benchmarks/kernels/dsv41_indexer/06_topk.sh",
+      "sha256": "bd9fa2d158433061539e3312376bc69907a79efb0299b28abe60ce92639e97d0",
+      "archive_path": "scripts/06_topk.sh",
+      "archive_match": true
+    },
+    {
+      "path": "benchmarks/kernels/dsv41_indexer/common.py",
+      "sha256": "7c2cd4daf8c8e5d702c3aa19905db0ef05729b497b73ca76c1009d30e459895f",
+      "archive_path": "benchmarks/kernels/dsv41_indexer/common.py",
+      "archive_match": true
+    },
+    {
+      "path": "benchmarks/kernels/dsv41_indexer/inputs.py",
+      "sha256": "9710a3078c5f7ec170374d208ac4cb96ca057af518c3620f9ba30e76c68cc56c",
+      "archive_path": "benchmarks/kernels/dsv41_indexer/inputs.py",
+      "archive_match": true
+    },
+    {
+      "path": "benchmarks/kernels/dsv41_indexer/baseline.json",
+      "sha256": "0331b099289d70d7058bba90e7ba1f3566ebcdb10edaf117cca1e5b22839dcab",
+      "archive_path": "benchmarks/kernels/dsv41_indexer/baseline.json",
+      "archive_match": true
+    }
+  ]
+}

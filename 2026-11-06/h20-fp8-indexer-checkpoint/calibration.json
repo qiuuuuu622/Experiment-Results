@@ -1,0 +1,1038 @@
+{
+  "status": "completed",
+  "scope": "numerical calibration, no performance claim",
+  "checks": [
+    {
+      "keys": 4099,
+      "distribution": "signed_weights",
+      "row": 0,
+      "native_vs_fp32": {
+        "max_abs": 0.0007101297378540039,
+        "nrmse": 0.00014085954171605408,
+        "strict_mismatches": 27
+      },
+      "variants": {
+        "wgmma": {
+          "vs_fp32": {
+            "max_abs": 0.0007101297378540039,
+            "nrmse": 0.00014085853763390332,
+            "strict_mismatches": 27
+          },
+          "vs_native": {
+            "max_abs": 2.384185791015625e-07,
+            "nrmse": 8.031630471805329e-08,
+            "strict_mismatches": 0
+          },
+          "native_overlap": 1.0,
+          "fp32_overlap": 1.0,
+          "changed_boundary_distance": 0.0
+        },
+        "precise": {
+          "vs_fp32": {
+            "max_abs": 3.5762786865234375e-07,
+            "nrmse": 6.904848959266019e-08,
+            "strict_mismatches": 0
+          },
+          "vs_native": {
+            "max_abs": 0.0007102489471435547,
+            "nrmse": 0.00014086491137277335,
+            "strict_mismatches": 27
+          },
+          "native_overlap": 1.0,
+          "fp32_overlap": 1.0,
+          "changed_boundary_distance": 0.0
+        }
+      },
+      "native_fp32_overlap": 1.0
+    },
+    {
+      "keys": 4099,
+      "distribution": "signed_weights",
+      "row": 1,
+      "native_vs_fp32": {
+        "max_abs": 0.001001596450805664,
+        "nrmse": 0.00012690346920862794,
+        "strict_mismatches": 54
+      },
+      "variants": {
+        "wgmma": {
+          "vs_fp32": {
+            "max_abs": 0.001001596450805664,
+            "nrmse": 0.0001269020576728508,
+            "strict_mismatches": 54
+          },
+          "vs_native": {
+            "max_abs": 4.76837158203125e-07,
+            "nrmse": 6.760280513162797e-08,
+            "strict_mismatches": 0
+          },
+          "native_overlap": 1.0,
+          "fp32_overlap": 1.0,
+          "changed_boundary_distance": 0.0
+        },
+        "precise": {
+          "vs_fp32": {
+            "max_abs": 9.5367431640625e-07,
+            "nrmse": 5.990145268697233e-08,
+            "strict_mismatches": 0
+          },
+          "vs_native": {
+            "max_abs": 0.001001596450805664,
+            "nrmse": 0.00012690880976151675,
+            "strict_mismatches": 54
+          },
+          "native_overlap": 1.0,
+          "fp32_overlap": 1.0,
+          "changed_boundary_distance": 0.0
+        }
+      },
+      "native_fp32_overlap": 1.0
+    },
+    {
+      "keys": 4099,
+      "distribution": "signed_weights",
+      "row": 2,
+      "native_vs_fp32": {
+        "max_abs": 0.0009598731994628906,
+        "nrmse": 0.00014226161874830723,
+        "strict_mismatches": 64
+      },
+      "variants": {
+        "wgmma": {
+          "vs_fp32": {
+            "max_abs": 0.0009598731994628906,
+            "nrmse": 0.00014226244820747524,
+            "strict_mismatches": 64
+          },
+          "vs_native": {
+            "max_abs": 4.76837158203125e-07,
+            "nrmse": 7.049052896945796e-08,
+            "strict_mismatches": 0
+          },
+          "native_overlap": 1.0,
+          "fp32_overlap": 1.0,
+          "changed_boundary_distance": 0.0
+        },
+        "precise": {
+          "vs_fp32": {
+            "max_abs": 4.76837158203125e-07,
+            "nrmse": 6.674827801589345e-08,
+            "strict_mismatches": 0
+          },
+          "vs_native": {
+            "max_abs": 0.0009598731994628906,
+            "nrmse": 0.00014226861821953207,
+            "strict_mismatches": 64
+          },
+          "native_overlap": 1.0,
+          "fp32_overlap": 1.0,
+          "changed_boundary_distance": 0.0
+        }
+      },
+      "native_fp32_overlap": 1.0
+    },
+    {
+      "keys": 4099,
+      "distribution": "signed_weights",
+      "row": 3,
+      "native_vs_fp32": {
+        "max_abs": 0.0008676052093505859,
+        "nrmse": 0.0001119643056881614,
+        "strict_mismatches": 35
+      },
+      "variants": {
+        "wgmma": {
+          "vs_fp32": {
+            "max_abs": 0.0008676052093505859,
+            "nrmse": 0.00011196656851097941,
+            "strict_mismatches": 35
+          },
+          "vs_native": {
+            "max_abs": 4.76837158203125e-07,
+            "nrmse": 5.5778908603087984e-08,
+            "strict_mismatches": 0
+          },
+          "native_overlap": 1.0,
+          "fp32_overlap": 1.0,
+          "changed_boundary_distance": 0.0
+        },
+        "precise": {
+          "vs_fp32": {
+            "max_abs": 4.76837158203125e-07,
+            "nrmse": 5.410250381032711e-08,
+            "strict_mismatches": 0
+          },
+          "vs_native": {
+            "max_abs": 0.0008676052093505859,
+            "nrmse": 0.00011196889681741595,
+            "strict_mismatches": 35
+          },
+          "native_overlap": 1.0,
+          "fp32_overlap": 1.0,
+          "changed_boundary_distance": 0.0
+        }
+      },
+      "native_fp32_overlap": 1.0
+    },
+    {
+      "keys": 4099,
+      "distribution": "positive_weights",
+      "row": 0,
+      "native_vs_fp32": {
+        "max_abs": 0.0007905960083007812,
+        "nrmse": 5.422057074611075e-05,
+        "strict_mismatches": 0
+      },
+      "variants": {
+        "wgmma": {
+          "vs_fp32": {
+            "max_abs": 0.0007905960083007812,
+            "nrmse": 5.422224785434082e-05,
+            "strict_mismatches": 0
+          },
+          "vs_native": {
+            "max_abs": 4.76837158203125e-07,
+            "nrmse": 4.908071815634685e-08,
+            "strict_mismatches": 0
+          },
+          "native_overlap": 1.0,
+          "fp32_overlap": 1.0,
+          "changed_boundary_distance": 0.0
+        },
+        "precise": {
+          "vs_fp32": {
+            "max_abs": 4.76837158203125e-07,
+            "nrmse": 3.7985998346812266e-08,
+            "strict_mismatches": 0
+          },
+          "vs_native": {
+            "max_abs": 0.0007905960083007812,
+            "nrmse": 5.422172762337141e-05,
+            "strict_mismatches": 0
+          },
+          "native_overlap": 1.0,
+          "fp32_overlap": 1.0,
+          "changed_boundary_distance": 0.0
+        }
+      },
+      "native_fp32_overlap": 1.0
+    },
+    {
+      "keys": 4099,
+      "distribution": "positive_weights",
+      "row": 1,
+      "native_vs_fp32": {
+        "max_abs": 0.0010023117065429688,
+        "nrmse": 5.833091199747287e-05,
+        "strict_mismatches": 0
+      },
+      "variants": {
+        "wgmma": {
+          "vs_fp32": {
+            "max_abs": 0.0010025501251220703,
+            "nrmse": 5.832942406414077e-05,
+            "strict_mismatches": 0
+          },
+          "vs_native": {
+            "max_abs": 9.5367431640625e-07,
+            "nrmse": 5.2299441222203313e-08,
+            "strict_mismatches": 0
+          },
+          "native_overlap": 1.0,
+          "fp32_overlap": 1.0,
+          "changed_boundary_distance": 0.0
+        },
+        "precise": {
+          "vs_fp32": {
+            "max_abs": 9.5367431640625e-07,
+            "nrmse": 3.9526742767748146e-08,
+            "strict_mismatches": 0
+          },
+          "vs_native": {
+            "max_abs": 0.0010023117065429688,
+            "nrmse": 5.83331857342273e-05,
+            "strict_mismatches": 0
+          },
+          "native_overlap": 1.0,
+          "fp32_overlap": 1.0,
+          "changed_boundary_distance": 0.0
+        }
+      },
+      "native_fp32_overlap": 1.0
+    },
+    {
+      "keys": 4099,
+      "distribution": "positive_weights",
+      "row": 2,
+      "native_vs_fp32": {
+        "max_abs": 0.0009999275207519531,
+        "nrmse": 5.822803723276593e-05,
+        "strict_mismatches": 0
+      },
+      "variants": {
+        "wgmma": {
+          "vs_fp32": {
+            "max_abs": 0.0009999275207519531,
+            "nrmse": 5.8228328271070495e-05,
+            "strict_mismatches": 0
+          },
+          "vs_native": {
+            "max_abs": 9.5367431640625e-07,
+            "nrmse": 4.9358245490793706e-08,
+            "strict_mismatches": 0
+          },
+          "native_overlap": 1.0,
+          "fp32_overlap": 1.0,
+          "changed_boundary_distance": 0.0
+        },
+        "precise": {
+          "vs_fp32": {
+            "max_abs": 9.5367431640625e-07,
+            "nrmse": 4.008171572422725e-08,
+            "strict_mismatches": 0
+          },
+          "vs_native": {
+            "max_abs": 0.0009999275207519531,
+            "nrmse": 5.823117317049764e-05,
+            "strict_mismatches": 0
+          },
+          "native_overlap": 1.0,
+          "fp32_overlap": 1.0,
+          "changed_boundary_distance": 0.0
+        }
+      },
+      "native_fp32_overlap": 1.0
+    },
+    {
+      "keys": 4099,
+      "distribution": "positive_weights",
+      "row": 3,
+      "native_vs_fp32": {
+        "max_abs": 0.0008406639099121094,
+        "nrmse": 5.820775550091639e-05,
+        "strict_mismatches": 0
+      },
+      "variants": {
+        "wgmma": {
+          "vs_fp32": {
+            "max_abs": 0.0008406639099121094,
+            "nrmse": 5.8207388065056875e-05,
+            "strict_mismatches": 0
+          },
+          "vs_native": {
+            "max_abs": 9.5367431640625e-07,
+            "nrmse": 5.007935399703456e-08,
+            "strict_mismatches": 0
+          },
+          "native_overlap": 1.0,
+          "fp32_overlap": 1.0,
+          "changed_boundary_distance": 0.0
+        },
+        "precise": {
+          "vs_fp32": {
+            "max_abs": 9.5367431640625e-07,
+            "nrmse": 3.761871170127051e-08,
+            "strict_mismatches": 0
+          },
+          "vs_native": {
+            "max_abs": 0.0008406639099121094,
+            "nrmse": 5.8209650887874886e-05,
+            "strict_mismatches": 0
+          },
+          "native_overlap": 1.0,
+          "fp32_overlap": 1.0,
+          "changed_boundary_distance": 0.0
+        }
+      },
+      "native_fp32_overlap": 1.0
+    },
+    {
+      "keys": 4099,
+      "distribution": "zero_query",
+      "row": 0,
+      "native_vs_fp32": {
+        "max_abs": 0.0,
+        "nrmse": 0.0,
+        "strict_mismatches": 0
+      },
+      "variants": {
+        "wgmma": {
+          "vs_fp32": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "strict_mismatches": 0
+          },
+          "vs_native": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "strict_mismatches": 0
+          },
+          "native_overlap": 1.0,
+          "fp32_overlap": 1.0,
+          "changed_boundary_distance": 0.0
+        },
+        "precise": {
+          "vs_fp32": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "strict_mismatches": 0
+          },
+          "vs_native": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "strict_mismatches": 0
+          },
+          "native_overlap": 1.0,
+          "fp32_overlap": 1.0,
+          "changed_boundary_distance": 0.0
+        }
+      },
+      "native_fp32_overlap": 1.0
+    },
+    {
+      "keys": 4099,
+      "distribution": "zero_query",
+      "row": 1,
+      "native_vs_fp32": {
+        "max_abs": 0.0,
+        "nrmse": 0.0,
+        "strict_mismatches": 0
+      },
+      "variants": {
+        "wgmma": {
+          "vs_fp32": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "strict_mismatches": 0
+          },
+          "vs_native": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "strict_mismatches": 0
+          },
+          "native_overlap": 1.0,
+          "fp32_overlap": 1.0,
+          "changed_boundary_distance": 0.0
+        },
+        "precise": {
+          "vs_fp32": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "strict_mismatches": 0
+          },
+          "vs_native": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "strict_mismatches": 0
+          },
+          "native_overlap": 1.0,
+          "fp32_overlap": 1.0,
+          "changed_boundary_distance": 0.0
+        }
+      },
+      "native_fp32_overlap": 1.0
+    },
+    {
+      "keys": 4099,
+      "distribution": "zero_query",
+      "row": 2,
+      "native_vs_fp32": {
+        "max_abs": 0.0,
+        "nrmse": 0.0,
+        "strict_mismatches": 0
+      },
+      "variants": {
+        "wgmma": {
+          "vs_fp32": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "strict_mismatches": 0
+          },
+          "vs_native": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "strict_mismatches": 0
+          },
+          "native_overlap": 1.0,
+          "fp32_overlap": 1.0,
+          "changed_boundary_distance": 0.0
+        },
+        "precise": {
+          "vs_fp32": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "strict_mismatches": 0
+          },
+          "vs_native": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "strict_mismatches": 0
+          },
+          "native_overlap": 1.0,
+          "fp32_overlap": 1.0,
+          "changed_boundary_distance": 0.0
+        }
+      },
+      "native_fp32_overlap": 1.0
+    },
+    {
+      "keys": 4099,
+      "distribution": "zero_query",
+      "row": 3,
+      "native_vs_fp32": {
+        "max_abs": 0.0,
+        "nrmse": 0.0,
+        "strict_mismatches": 0
+      },
+      "variants": {
+        "wgmma": {
+          "vs_fp32": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "strict_mismatches": 0
+          },
+          "vs_native": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "strict_mismatches": 0
+          },
+          "native_overlap": 1.0,
+          "fp32_overlap": 1.0,
+          "changed_boundary_distance": 0.0
+        },
+        "precise": {
+          "vs_fp32": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "strict_mismatches": 0
+          },
+          "vs_native": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "strict_mismatches": 0
+          },
+          "native_overlap": 1.0,
+          "fp32_overlap": 1.0,
+          "changed_boundary_distance": 0.0
+        }
+      },
+      "native_fp32_overlap": 1.0
+    },
+    {
+      "keys": 65536,
+      "distribution": "signed_weights",
+      "row": 0,
+      "native_vs_fp32": {
+        "max_abs": 0.0009000301361083984,
+        "nrmse": 0.00014320778427645564,
+        "strict_mismatches": 156
+      },
+      "variants": {
+        "wgmma": {
+          "vs_fp32": {
+            "max_abs": 0.0009000301361083984,
+            "nrmse": 0.0001432073040632531,
+            "strict_mismatches": 156
+          },
+          "vs_native": {
+            "max_abs": 4.76837158203125e-07,
+            "nrmse": 6.719267986454724e-08,
+            "strict_mismatches": 0
+          },
+          "native_overlap": 1.0,
+          "fp32_overlap": 1.0,
+          "changed_boundary_distance": 0.0
+        },
+        "precise": {
+          "vs_fp32": {
+            "max_abs": 4.76837158203125e-07,
+            "nrmse": 6.781326788996012e-08,
+            "strict_mismatches": 0
+          },
+          "vs_native": {
+            "max_abs": 0.0009000301361083984,
+            "nrmse": 0.000143212586408481,
+            "strict_mismatches": 156
+          },
+          "native_overlap": 1.0,
+          "fp32_overlap": 1.0,
+          "changed_boundary_distance": 0.0
+        }
+      },
+      "native_fp32_overlap": 1.0
+    },
+    {
+      "keys": 65536,
+      "distribution": "signed_weights",
+      "row": 1,
+      "native_vs_fp32": {
+        "max_abs": 0.0008971691131591797,
+        "nrmse": 0.00010064079833682626,
+        "strict_mismatches": 64
+      },
+      "variants": {
+        "wgmma": {
+          "vs_fp32": {
+            "max_abs": 0.0008974075317382812,
+            "nrmse": 0.00010064269736176357,
+            "strict_mismatches": 64
+          },
+          "vs_native": {
+            "max_abs": 9.5367431640625e-07,
+            "nrmse": 6.132704299943725e-08,
+            "strict_mismatches": 0
+          },
+          "native_overlap": 1.0,
+          "fp32_overlap": 1.0,
+          "changed_boundary_distance": 0.0
+        },
+        "precise": {
+          "vs_fp32": {
+            "max_abs": 4.76837158203125e-07,
+            "nrmse": 5.181539464160778e-08,
+            "strict_mismatches": 0
+          },
+          "vs_native": {
+            "max_abs": 0.0008971691131591797,
+            "nrmse": 0.00010064566595247015,
+            "strict_mismatches": 64
+          },
+          "native_overlap": 1.0,
+          "fp32_overlap": 1.0,
+          "changed_boundary_distance": 0.0
+        }
+      },
+      "native_fp32_overlap": 1.0
+    },
+    {
+      "keys": 65536,
+      "distribution": "signed_weights",
+      "row": 2,
+      "native_vs_fp32": {
+        "max_abs": 0.0009903907775878906,
+        "nrmse": 0.00013703349395655096,
+        "strict_mismatches": 241
+      },
+      "variants": {
+        "wgmma": {
+          "vs_fp32": {
+            "max_abs": 0.0009902715682983398,
+            "nrmse": 0.00013703477452509105,
+            "strict_mismatches": 241
+          },
+          "vs_native": {
+            "max_abs": 4.76837158203125e-07,
+            "nrmse": 6.635642790797647e-08,
+            "strict_mismatches": 0
+          },
+          "native_overlap": 1.0,
+          "fp32_overlap": 1.0,
+          "changed_boundary_distance": 0.0
+        },
+        "precise": {
+          "vs_fp32": {
+            "max_abs": 7.152557373046875e-07,
+            "nrmse": 6.590676804307805e-08,
+            "strict_mismatches": 0
+          },
+          "vs_native": {
+            "max_abs": 0.0009905099868774414,
+            "nrmse": 0.0001370384416077286,
+            "strict_mismatches": 240
+          },
+          "native_overlap": 1.0,
+          "fp32_overlap": 1.0,
+          "changed_boundary_distance": 0.0
+        }
+      },
+      "native_fp32_overlap": 1.0
+    },
+    {
+      "keys": 65536,
+      "distribution": "signed_weights",
+      "row": 3,
+      "native_vs_fp32": {
+        "max_abs": 0.0011444091796875,
+        "nrmse": 0.00011556882236618549,
+        "strict_mismatches": 198
+      },
+      "variants": {
+        "wgmma": {
+          "vs_fp32": {
+            "max_abs": 0.0011444091796875,
+            "nrmse": 0.00011557035031728446,
+            "strict_mismatches": 197
+          },
+          "vs_native": {
+            "max_abs": 9.5367431640625e-07,
+            "nrmse": 6.102487759562791e-08,
+            "strict_mismatches": 0
+          },
+          "native_overlap": 1.0,
+          "fp32_overlap": 1.0,
+          "changed_boundary_distance": 0.0
+        },
+        "precise": {
+          "vs_fp32": {
+            "max_abs": 9.5367431640625e-07,
+            "nrmse": 5.524937307654909e-08,
+            "strict_mismatches": 0
+          },
+          "vs_native": {
+            "max_abs": 0.0011444091796875,
+            "nrmse": 0.00011557422112673521,
+            "strict_mismatches": 199
+          },
+          "native_overlap": 1.0,
+          "fp32_overlap": 1.0,
+          "changed_boundary_distance": 0.0
+        }
+      },
+      "native_fp32_overlap": 1.0
+    },
+    {
+      "keys": 65536,
+      "distribution": "positive_weights",
+      "row": 0,
+      "native_vs_fp32": {
+        "max_abs": 0.0011878013610839844,
+        "nrmse": 5.9291905927238986e-05,
+        "strict_mismatches": 0
+      },
+      "variants": {
+        "wgmma": {
+          "vs_fp32": {
+            "max_abs": 0.0011878013610839844,
+            "nrmse": 5.929214967181906e-05,
+            "strict_mismatches": 0
+          },
+          "vs_native": {
+            "max_abs": 9.5367431640625e-07,
+            "nrmse": 5.001202652010761e-08,
+            "strict_mismatches": 0
+          },
+          "native_overlap": 1.0,
+          "fp32_overlap": 1.0,
+          "changed_boundary_distance": 0.0
+        },
+        "precise": {
+          "vs_fp32": {
+            "max_abs": 9.5367431640625e-07,
+            "nrmse": 3.953724458938268e-08,
+            "strict_mismatches": 0
+          },
+          "vs_native": {
+            "max_abs": 0.0011878013610839844,
+            "nrmse": 5.92945289099589e-05,
+            "strict_mismatches": 0
+          },
+          "native_overlap": 1.0,
+          "fp32_overlap": 1.0,
+          "changed_boundary_distance": 0.0
+        }
+      },
+      "native_fp32_overlap": 1.0
+    },
+    {
+      "keys": 65536,
+      "distribution": "positive_weights",
+      "row": 1,
+      "native_vs_fp32": {
+        "max_abs": 0.0010962486267089844,
+        "nrmse": 5.554231029236689e-05,
+        "strict_mismatches": 0
+      },
+      "variants": {
+        "wgmma": {
+          "vs_fp32": {
+            "max_abs": 0.0010957717895507812,
+            "nrmse": 5.554223389481194e-05,
+            "strict_mismatches": 0
+          },
+          "vs_native": {
+            "max_abs": 9.5367431640625e-07,
+            "nrmse": 5.008918080307012e-08,
+            "strict_mismatches": 0
+          },
+          "native_overlap": 1.0,
+          "fp32_overlap": 1.0,
+          "changed_boundary_distance": 0.0
+        },
+        "precise": {
+          "vs_fp32": {
+            "max_abs": 9.5367431640625e-07,
+            "nrmse": 3.660702319052689e-08,
+            "strict_mismatches": 0
+          },
+          "vs_native": {
+            "max_abs": 0.0010962486267089844,
+            "nrmse": 5.5544183851452544e-05,
+            "strict_mismatches": 0
+          },
+          "native_overlap": 1.0,
+          "fp32_overlap": 1.0,
+          "changed_boundary_distance": 0.0
+        }
+      },
+      "native_fp32_overlap": 1.0
+    },
+    {
+      "keys": 65536,
+      "distribution": "positive_weights",
+      "row": 2,
+      "native_vs_fp32": {
+        "max_abs": 0.0009627342224121094,
+        "nrmse": 5.610417065327056e-05,
+        "strict_mismatches": 0
+      },
+      "variants": {
+        "wgmma": {
+          "vs_fp32": {
+            "max_abs": 0.0009627342224121094,
+            "nrmse": 5.610365769825876e-05,
+            "strict_mismatches": 0
+          },
+          "vs_native": {
+            "max_abs": 9.5367431640625e-07,
+            "nrmse": 5.1041574522514566e-08,
+            "strict_mismatches": 0
+          },
+          "native_overlap": 1.0,
+          "fp32_overlap": 1.0,
+          "changed_boundary_distance": 0.0
+        },
+        "precise": {
+          "vs_fp32": {
+            "max_abs": 9.5367431640625e-07,
+            "nrmse": 3.960225924970473e-08,
+            "strict_mismatches": 0
+          },
+          "vs_native": {
+            "max_abs": 0.0009629726409912109,
+            "nrmse": 5.610681910184212e-05,
+            "strict_mismatches": 0
+          },
+          "native_overlap": 1.0,
+          "fp32_overlap": 1.0,
+          "changed_boundary_distance": 0.0
+        }
+      },
+      "native_fp32_overlap": 1.0
+    },
+    {
+      "keys": 65536,
+      "distribution": "positive_weights",
+      "row": 3,
+      "native_vs_fp32": {
+        "max_abs": 0.0010981559753417969,
+        "nrmse": 5.896208676858805e-05,
+        "strict_mismatches": 0
+      },
+      "variants": {
+        "wgmma": {
+          "vs_fp32": {
+            "max_abs": 0.0010981559753417969,
+            "nrmse": 5.8962083130609244e-05,
+            "strict_mismatches": 0
+          },
+          "vs_native": {
+            "max_abs": 9.5367431640625e-07,
+            "nrmse": 4.929312424906129e-08,
+            "strict_mismatches": 0
+          },
+          "native_overlap": 1.0,
+          "fp32_overlap": 1.0,
+          "changed_boundary_distance": 0.0
+        },
+        "precise": {
+          "vs_fp32": {
+            "max_abs": 9.5367431640625e-07,
+            "nrmse": 3.8653539036204165e-08,
+            "strict_mismatches": 0
+          },
+          "vs_native": {
+            "max_abs": 0.0010981559753417969,
+            "nrmse": 5.8965073549188673e-05,
+            "strict_mismatches": 0
+          },
+          "native_overlap": 1.0,
+          "fp32_overlap": 1.0,
+          "changed_boundary_distance": 0.0
+        }
+      },
+      "native_fp32_overlap": 1.0
+    },
+    {
+      "keys": 65536,
+      "distribution": "zero_query",
+      "row": 0,
+      "native_vs_fp32": {
+        "max_abs": 0.0,
+        "nrmse": 0.0,
+        "strict_mismatches": 0
+      },
+      "variants": {
+        "wgmma": {
+          "vs_fp32": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "strict_mismatches": 0
+          },
+          "vs_native": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "strict_mismatches": 0
+          },
+          "native_overlap": 1.0,
+          "fp32_overlap": 1.0,
+          "changed_boundary_distance": 0.0
+        },
+        "precise": {
+          "vs_fp32": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "strict_mismatches": 0
+          },
+          "vs_native": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "strict_mismatches": 0
+          },
+          "native_overlap": 1.0,
+          "fp32_overlap": 1.0,
+          "changed_boundary_distance": 0.0
+        }
+      },
+      "native_fp32_overlap": 1.0
+    },
+    {
+      "keys": 65536,
+      "distribution": "zero_query",
+      "row": 1,
+      "native_vs_fp32": {
+        "max_abs": 0.0,
+        "nrmse": 0.0,
+        "strict_mismatches": 0
+      },
+      "variants": {
+        "wgmma": {
+          "vs_fp32": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "strict_mismatches": 0
+          },
+          "vs_native": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "strict_mismatches": 0
+          },
+          "native_overlap": 1.0,
+          "fp32_overlap": 1.0,
+          "changed_boundary_distance": 0.0
+        },
+        "precise": {
+          "vs_fp32": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "strict_mismatches": 0
+          },
+          "vs_native": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "strict_mismatches": 0
+          },
+          "native_overlap": 1.0,
+          "fp32_overlap": 1.0,
+          "changed_boundary_distance": 0.0
+        }
+      },
+      "native_fp32_overlap": 1.0
+    },
+    {
+      "keys": 65536,
+      "distribution": "zero_query",
+      "row": 2,
+      "native_vs_fp32": {
+        "max_abs": 0.0,
+        "nrmse": 0.0,
+        "strict_mismatches": 0
+      },
+      "variants": {
+        "wgmma": {
+          "vs_fp32": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "strict_mismatches": 0
+          },
+          "vs_native": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "strict_mismatches": 0
+          },
+          "native_overlap": 1.0,
+          "fp32_overlap": 1.0,
+          "changed_boundary_distance": 0.0
+        },
+        "precise": {
+          "vs_fp32": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "strict_mismatches": 0
+          },
+          "vs_native": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "strict_mismatches": 0
+          },
+          "native_overlap": 1.0,
+          "fp32_overlap": 1.0,
+          "changed_boundary_distance": 0.0
+        }
+      },
+      "native_fp32_overlap": 1.0
+    },
+    {
+      "keys": 65536,
+      "distribution": "zero_query",
+      "row": 3,
+      "native_vs_fp32": {
+        "max_abs": 0.0,
+        "nrmse": 0.0,
+        "strict_mismatches": 0
+      },
+      "variants": {
+        "wgmma": {
+          "vs_fp32": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "strict_mismatches": 0
+          },
+          "vs_native": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "strict_mismatches": 0
+          },
+          "native_overlap": 1.0,
+          "fp32_overlap": 1.0,
+          "changed_boundary_distance": 0.0
+        },
+        "precise": {
+          "vs_fp32": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "strict_mismatches": 0
+          },
+          "vs_native": {
+            "max_abs": 0.0,
+            "nrmse": 0.0,
+            "strict_mismatches": 0
+          },
+          "native_overlap": 1.0,
+          "fp32_overlap": 1.0,
+          "changed_boundary_distance": 0.0
+        }
+      },
+      "native_fp32_overlap": 1.0
+    }
+  ]
+}

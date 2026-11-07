@@ -1,0 +1,59 @@
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/dist-packages/triton/language/core.py", line 43, in wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/triton/language/core.py", line 2090, in dot
+    res = _semantic.dot(input, other, acc, input_precision, max_num_imprecise_acc, out_dtype)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/triton/language/semantic.py", line 1578, in dot
+    raise ValueError(f"max_num_imprecise_acc ({max_num_imprecise_acc}) must be <= K ({K})")
+ValueError: max_num_imprecise_acc (2147483647) must be <= K (128)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/root/dsv41-indexer-port/benchmarks/kernels/dsv41_indexer/verify_module.py", line 128, in <module>
+    main()
+  File "/root/dsv41-indexer-port/benchmarks/kernels/dsv41_indexer/verify_module.py", line 119, in main
+    results = run_checks()
+              ^^^^^^^^^^^^
+  File "/root/dsv41-indexer-port/benchmarks/kernels/dsv41_indexer/verify_module.py", line 51, in run_checks
+    op.forward()
+  File "/root/dsv41-indexer-port/vllm_dsv41_indexer/module.py", line 124, in forward
+    self.score()
+  File "/root/dsv41-indexer-port/vllm_dsv41_indexer/module.py", line 102, in score
+    grouped_scores(
+  File "/root/dsv41-indexer-port/vllm_dsv41_indexer/full_score.py", line 125, in grouped_scores
+    _grouped_scores[grid](
+  File "/usr/local/lib/python3.12/dist-packages/triton/runtime/jit.py", line 370, in <lambda>
+    return lambda *args, **kwargs: self.run(grid=grid, warmup=False, *args, **kwargs)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/triton/runtime/jit.py", line 739, in run
+    kernel = self._do_compile(key, signature, device, constexprs, options, attrs, warmup)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/triton/runtime/jit.py", line 884, in _do_compile
+    kernel = self.compile(src, target=target, options=options.__dict__)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/triton/compiler/compiler.py", line 307, in compile
+    module = src.make_ir(target, options, codegen_fns, module_map, context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/triton/compiler/compiler.py", line 80, in make_ir
+    return ast_to_ttir(self.fn, self, context=context, options=options, codegen_fns=codegen_fns,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+triton.compiler.errors.CompilationError: at 60:15:
+            ),
+            valid,
+            1,
+        )
+        h = tl.arange(0, GROUP_ROWS * 32)
+        qrows = tl.gather(rows, h // 32, 0)
+        queries = tl.load(
+            Q + qrows[:, None] * 4096 + (h % 32)[:, None] * 128 + d[None, :],
+            qrows[:, None] >= 0,
+            0.0,
+        )
+        dots = tl.dot(
+               ^
+max_num_imprecise_acc (2147483647) must be <= K (128)

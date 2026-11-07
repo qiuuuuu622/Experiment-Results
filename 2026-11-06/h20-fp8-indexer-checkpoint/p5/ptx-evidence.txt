@@ -1,0 +1,4 @@
+/root/.triton/cache/KCU2KV7V6V32UZTIEMQRSBKR57ZE2536CJC7YHTKRA7GJQ25RDYQ/_score.ptx:	wgmma.mma_async.sync.aligned.m64n32k32.f32.e4m3.e4m3 {%r45,%r46,%r47,%r48,%r49,%r50,%r51,%r52,%r53,%r54,%r55,%r56,%r57,%r58,%r59,%r60}, %rd14, %rd15, 0, 1, 1;
+/root/.triton/cache/KCU2KV7V6V32UZTIEMQRSBKR57ZE2536CJC7YHTKRA7GJQ25RDYQ/_score.ptx:	wgmma.mma_async.sync.aligned.m64n32k32.f32.e4m3.e4m3 {%r45,%r46,%r47,%r48,%r49,%r50,%r51,%r52,%r53,%r54,%r55,%r56,%r57,%r58,%r59,%r60}, %rd16, %rd17, %p8, 1, 1;
+/root/.triton/cache/AH2PECOUFMCQTKRO5SFDFUW5HT45AKXHALPX7HJYEOF6YEFMYI7Q/_score.ptx:	wgmma.mma_async.sync.aligned.m64n32k32.f32.e4m3.e4m3 {%r44,%r45,%r46,%r47,%r48,%r49,%r50,%r51,%r52,%r53,%r54,%r55,%r56,%r57,%r58,%r59}, %rd14, %rd15, 0, 1, 1;
+/root/.triton/cache/AH2PECOUFMCQTKRO5SFDFUW5HT45AKXHALPX7HJYEOF6YEFMYI7Q/_score.ptx:	wgmma.mma_async.sync.aligned.m64n32k32.f32.e4m3.e4m3 {%r44,%r45,%r46,%r47,%r48,%r49,%r50,%r51,%r52,%r53,%r54,%r55,%r56,%r57,%r58,%r59}, %rd16, %rd17, %p9, 1, 1;

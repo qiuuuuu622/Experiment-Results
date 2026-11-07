@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "file_payloads": 327,
+  "archives_inspected": 9,
+  "patterns": [
+    "private_key",
+    "github_token",
+    "bearer",
+    "secret_assignment",
+    "personal_user_path"
+  ],
+  "findings": [],
+  "limitations": "Pattern-based scan plus explicit environment minimization; not a proof that arbitrary text can never contain a secret."
+}

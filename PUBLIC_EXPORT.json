@@ -1,0 +1,46 @@
+{
+  "source_checkpoint": "20261106-153700",
+  "source_manifest_verified": 109,
+  "changes": [
+    {
+      "path": "2026-11-06/h20-fp8-indexer-checkpoint/environment.json",
+      "action": "omit unrelated host inventory",
+      "original_sha256": "a42e9f6758292bbe12c0ac88ce0804e1ef16eb41d5c84c851e5d08627379227f"
+    },
+    {
+      "path": "2026-11-06/h20-fp8-indexer-checkpoint/p3/environment.json",
+      "action": "omit unrelated host inventory",
+      "original_sha256": "a42e9f6758292bbe12c0ac88ce0804e1ef16eb41d5c84c851e5d08627379227f"
+    },
+    {
+      "path": "2026-11-06/h20-fp8-indexer-checkpoint/p2-source.tgz",
+      "action": "omit interpreter cache only; source bytes unchanged",
+      "removed": [
+        "vllm_dsv41_indexer/__pycache__",
+        "vllm_dsv41_indexer/__pycache__/workspace.cpython-312.pyc",
+        "vllm_dsv41_indexer/__pycache__/native.cpython-312.pyc",
+        "vllm_dsv41_indexer/__pycache__/prepare.cpython-312.pyc",
+        "vllm_dsv41_indexer/__pycache__/score.cpython-312.pyc",
+        "vllm_dsv41_indexer/__pycache__/module.cpython-312.pyc",
+        "vllm_dsv41_indexer/__pycache__/full_score.cpython-312.pyc",
+        "vllm_dsv41_indexer/__pycache__/reference.cpython-312.pyc",
+        "vllm_dsv41_indexer/__pycache__/parallel.cpython-312.pyc",
+        "vllm_dsv41_indexer/__pycache__/__init__.cpython-312.pyc",
+        "vllm_dsv41_indexer/__pycache__/contract.cpython-312.pyc",
+        "benchmarks/kernels/dsv41_indexer/__pycache__",
+        "benchmarks/kernels/dsv41_indexer/__pycache__/__init__.cpython-312.pyc",
+        "benchmarks/kernels/dsv41_indexer/__pycache__/verify.cpython-312.pyc",
+        "benchmarks/kernels/dsv41_indexer/__pycache__/common.cpython-312.pyc",
+        "benchmarks/kernels/dsv41_indexer/__pycache__/inputs.cpython-312.pyc",
+        "benchmarks/kernels/dsv41_indexer/__pycache__/environment.cpython-312.pyc",
+        "benchmarks/kernels/dsv41_indexer/__pycache__/verify_module.cpython-312.pyc",
+        "benchmarks/kernels/dsv41_indexer/__pycache__/verify_compact.cpython-312.pyc",
+        "benchmarks/kernels/dsv41_indexer/__pycache__/calibrate.cpython-312.pyc",
+        "benchmarks/kernels/dsv41_indexer/__pycache__/benchmark.cpython-312.pyc",
+        "benchmarks/kernels/dsv41_indexer/__pycache__/legacy.cpython-312.pyc"
+      ],
+      "original_sha256": "dab05a6ab73bb988404eaae7c9af3e9222beeedb89d65dc446a55ace605311d2"
+    }
+  ],
+  "private_originals_modified": false
+}

@@ -1,0 +1,282 @@
+{
+  "status": "passed",
+  "paired": true,
+  "checks": [
+    {
+      "group": 1,
+      "ratio": 1,
+      "keys": 517,
+      "rows": 2,
+      "native_mode": "native_grouped",
+      "max_abs": 2.384185791015625e-07,
+      "status": "passed"
+    },
+    {
+      "group": 1,
+      "ratio": 2,
+      "keys": 517,
+      "rows": 2,
+      "native_mode": "native_grouped",
+      "max_abs": 2.384185791015625e-07,
+      "status": "passed"
+    },
+    {
+      "group": 1,
+      "ratio": 1,
+      "keys": 4099,
+      "rows": 2,
+      "native_mode": "native_grouped",
+      "max_abs": 4.76837158203125e-07,
+      "status": "passed"
+    },
+    {
+      "group": 1,
+      "ratio": 2,
+      "keys": 4099,
+      "rows": 2,
+      "native_mode": "native_grouped",
+      "max_abs": 4.76837158203125e-07,
+      "status": "passed"
+    },
+    {
+      "group": 1,
+      "ratio": 1,
+      "keys": 65536,
+      "rows": 2,
+      "native_mode": "native_grouped",
+      "max_abs": 4.76837158203125e-07,
+      "status": "passed"
+    },
+    {
+      "group": 1,
+      "ratio": 2,
+      "keys": 65536,
+      "rows": 2,
+      "native_mode": "native_grouped",
+      "max_abs": 4.76837158203125e-07,
+      "status": "passed"
+    },
+    {
+      "group": 2,
+      "ratio": 1,
+      "keys": 517,
+      "rows": 4,
+      "native_mode": "native_grouped",
+      "max_abs": 3.5762786865234375e-07,
+      "status": "passed"
+    },
+    {
+      "group": 2,
+      "ratio": 2,
+      "keys": 517,
+      "rows": 4,
+      "native_mode": "native_grouped",
+      "max_abs": 3.5762786865234375e-07,
+      "status": "passed"
+    },
+    {
+      "group": 2,
+      "ratio": 1,
+      "keys": 4099,
+      "rows": 4,
+      "native_mode": "native_grouped",
+      "max_abs": 4.76837158203125e-07,
+      "status": "passed"
+    },
+    {
+      "group": 2,
+      "ratio": 2,
+      "keys": 4099,
+      "rows": 4,
+      "native_mode": "native_grouped",
+      "max_abs": 4.76837158203125e-07,
+      "status": "passed"
+    },
+    {
+      "group": 2,
+      "ratio": 1,
+      "keys": 65536,
+      "rows": 4,
+      "native_mode": "native_grouped",
+      "max_abs": 9.5367431640625e-07,
+      "status": "passed"
+    },
+    {
+      "group": 2,
+      "ratio": 2,
+      "keys": 65536,
+      "rows": 4,
+      "native_mode": "native_grouped",
+      "max_abs": 9.5367431640625e-07,
+      "status": "passed"
+    },
+    {
+      "group": 4,
+      "ratio": 1,
+      "keys": 517,
+      "rows": 8,
+      "native_mode": "native_grouped",
+      "max_abs": 4.76837158203125e-07,
+      "status": "passed"
+    },
+    {
+      "group": 4,
+      "ratio": 2,
+      "keys": 517,
+      "rows": 8,
+      "native_mode": "native_grouped",
+      "max_abs": 4.76837158203125e-07,
+      "status": "passed"
+    },
+    {
+      "group": 4,
+      "ratio": 1,
+      "keys": 4099,
+      "rows": 8,
+      "native_mode": "native_grouped",
+      "max_abs": 9.5367431640625e-07,
+      "status": "passed"
+    },
+    {
+      "group": 4,
+      "ratio": 2,
+      "keys": 4099,
+      "rows": 8,
+      "native_mode": "native_grouped",
+      "max_abs": 9.5367431640625e-07,
+      "status": "passed"
+    },
+    {
+      "group": 4,
+      "ratio": 1,
+      "keys": 65536,
+      "rows": 8,
+      "native_mode": "native_grouped",
+      "max_abs": 9.5367431640625e-07,
+      "status": "passed"
+    },
+    {
+      "group": 4,
+      "ratio": 2,
+      "keys": 65536,
+      "rows": 8,
+      "native_mode": "native_grouped",
+      "max_abs": 9.5367431640625e-07,
+      "status": "passed"
+    },
+    {
+      "group": 6,
+      "ratio": 1,
+      "keys": 517,
+      "rows": 12,
+      "native_mode": "expanded_single_row",
+      "max_abs": 4.76837158203125e-07,
+      "status": "passed"
+    },
+    {
+      "group": 6,
+      "ratio": 2,
+      "keys": 517,
+      "rows": 12,
+      "native_mode": "expanded_single_row",
+      "max_abs": 4.76837158203125e-07,
+      "status": "passed"
+    },
+    {
+      "group": 6,
+      "ratio": 1,
+      "keys": 4099,
+      "rows": 12,
+      "native_mode": "expanded_single_row",
+      "max_abs": 5.960464477539062e-07,
+      "status": "passed"
+    },
+    {
+      "group": 6,
+      "ratio": 2,
+      "keys": 4099,
+      "rows": 12,
+      "native_mode": "expanded_single_row",
+      "max_abs": 5.960464477539062e-07,
+      "status": "passed"
+    },
+    {
+      "group": 6,
+      "ratio": 1,
+      "keys": 65536,
+      "rows": 12,
+      "native_mode": "expanded_single_row",
+      "max_abs": 9.5367431640625e-07,
+      "status": "passed"
+    },
+    {
+      "group": 6,
+      "ratio": 2,
+      "keys": 65536,
+      "rows": 12,
+      "native_mode": "expanded_single_row",
+      "max_abs": 9.5367431640625e-07,
+      "status": "passed"
+    },
+    {
+      "group": 8,
+      "ratio": 1,
+      "keys": 517,
+      "rows": 16,
+      "native_mode": "expanded_single_row",
+      "max_abs": 4.76837158203125e-07,
+      "status": "passed"
+    },
+    {
+      "group": 8,
+      "ratio": 2,
+      "keys": 517,
+      "rows": 16,
+      "native_mode": "expanded_single_row",
+      "max_abs": 4.76837158203125e-07,
+      "status": "passed"
+    },
+    {
+      "group": 8,
+      "ratio": 1,
+      "keys": 4099,
+      "rows": 16,
+      "native_mode": "expanded_single_row",
+      "max_abs": 4.76837158203125e-07,
+      "status": "passed"
+    },
+    {
+      "group": 8,
+      "ratio": 2,
+      "keys": 4099,
+      "rows": 16,
+      "native_mode": "expanded_single_row",
+      "max_abs": 4.76837158203125e-07,
+      "status": "passed"
+    },
+    {
+      "group": 8,
+      "ratio": 1,
+      "keys": 65536,
+      "rows": 16,
+      "native_mode": "expanded_single_row",
+      "max_abs": 9.5367431640625e-07,
+      "status": "passed"
+    },
+    {
+      "group": 8,
+      "ratio": 2,
+      "keys": 65536,
+      "rows": 16,
+      "native_mode": "expanded_single_row",
+      "max_abs": 9.5367431640625e-07,
+      "status": "passed"
+    },
+    {
+      "group": "ragged",
+      "keys": 4099,
+      "rows": 21,
+      "status": "passed"
+    }
+  ]
+}

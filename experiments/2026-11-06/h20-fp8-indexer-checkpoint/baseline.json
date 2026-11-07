@@ -1,0 +1,35 @@
+{
+  "vllm_commit": "29be941d8d5746cd98135bdd5e710eeebd8d7014",
+  "ant_commit": "6e6d5d9e13915adb01db0856b15d6908eaaa2c48",
+  "files": [
+    {
+      "source": "vllm/utils/deep_gemm.py",
+      "sha256": "3fae19d459c220d36eb00f1f4818c07fdfe28c0056c5a48dbee9e907a74b0bc8"
+    },
+    {
+      "source": "vllm/model_executor/layers/indexer_topk.py",
+      "sha256": "4dc91f83043c659304e0f0808bd9082574f919361b0b12f7c87fef5e261469bb"
+    },
+    {
+      "source": "vllm/model_executor/kernels/attention/dsa/candidate_blocks.py",
+      "sha256": "45f1eaa3b5f1d9f6a7b554697709646ce41d79d55f2d82415d008e6b00a1136f"
+    },
+    {
+      "source": "vllm/model_executor/layers/sparse_attn_indexer.py",
+      "sha256": "75d14da5e2b8c237f7fc0a807d2b72677660a945c70d23825da3517801d9ca10"
+    },
+    {
+      "source": "vllm/models/deepseek_v41/attention.py",
+      "sha256": "dd146642fc7d7034f32feecf35ff4d7d9460f59a8a57444c0dd6f367fe8f15fb"
+    },
+    {
+      "source": "vllm/models/deepseek_v41/common/ops/indexer_k_store.py",
+      "sha256": "d89d7043ec7924f1636f8ef257acf5ed0c66687681c7e905ceb16321155360f6"
+    },
+    {
+      "source": "vllm/models/deepseek_v4/common/ops/fused_indexer_q.py",
+      "sha256": "5d27632f3b1fc67a407393221ba06f72a8cbc2a138bc8ee5076423000d56e7eb"
+    }
+  ],
+  "note": "HEAD Python snapshots only; installed binaries are identified separately, never asserted built from this HEAD."
+}

@@ -1,0 +1,59 @@
+{
+  "status": "passed",
+  "kind": "publication validation; no new GPU runs",
+  "created_utc": "2026-11-07T09:41:50.306094+00:00",
+  "branch": "DSV4.1-Flash-Indexer-opt",
+  "main_modified": false,
+  "evidence_base_commit": "548fe680b53febbfbea9d908ff3b49a6b06225bc",
+  "checks": {
+    "archive_files": {
+      "status": "passed",
+      "original_files": 748,
+      "hash_verified_nonmanifest_files": 747,
+      "dependency_mappings": 417,
+      "command": "python experiments/verify_repository.py"
+    },
+    "source_snapshot": {
+      "status": "passed",
+      "files": 98,
+      "changed_vs_baseline": 71,
+      "added": 64,
+      "modified": 7,
+      "python_ast_files": 70
+    },
+    "patch": {
+      "status": "passed",
+      "method": "git apply --check and git apply in temporary isolated baseline tree; all 98 resulting exported files matched SHA256",
+      "note": "Two whitespace warnings originate from preserved embedded patch context lines; exported source bytes were not rewritten"
+    },
+    "cpu_tests": {
+      "status": "passed",
+      "passed": 38,
+      "elapsed_seconds": 0.07,
+      "command": "PYTHONDONTWRITEBYTECODE=1 PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 /path/to/.venv/bin/python -m pytest -c tests/kernels/dsv41_indexer/pytest.ini -p no:cacheprovider tests/kernels/dsv41_indexer/test_dispatch.py tests/kernels/dsv41_indexer/test_perquery_dispatch.py -q",
+      "output": "...................................... [100%]\n38 passed in 0.07s"
+    },
+    "new_document_links": {
+      "status": "passed",
+      "relative_links": 95,
+      "scope": "README, current plan, docs; historical frozen documents unchanged"
+    },
+    "publication_scan": {
+      "status": "passed",
+      "report": "RELEASE_SCAN.json",
+      "archives": 55,
+      "archive_members": 9126
+    },
+    "file_size": {
+      "status": "passed",
+      "max_bytes": 30375061,
+      "limit_bytes": 104857600
+    }
+  },
+  "scope_limits": [
+    "No new GPU performance measurements",
+    "No full model, serving, model accuracy, TTFT or TPOT verification",
+    "Historical FP32 strict failures and numerical explanations preserved",
+    "Source repository and existing main-thread checkout left unchanged"
+  ]
+}

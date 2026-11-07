@@ -2,7 +2,9 @@
 
 本仓库保存已完成实验的原始数值、日志、源码快照、许可证与审计证据。范围是 **H20 上 FP8 index cache 的函数／模块级研究**，不是完整模型推理或服务性能报告。
 
-截至本次发布：**P0–P6 已完成各自独立研究阶段；P7、P8 尚未完成。** 后续正在进行的实验不混入本次已完成结果。
+截至本次发布：**P0–P4、P6的已发布研究完成；P5已测实现结果保留，但新增“蚂蚁专用prefill keys-major FP8适配与直接A/B”尚未完成。P7/P8新实验正在另行验收归档。**
+
+**P5覆盖更正：**此前`backend="gluon"`调用grouped decode/verify内核，不是蚂蚁专用`sm90_fp8_prefill_keys_major.py`。其无收益结论不能排除蚂蚁专用路线。见[覆盖更正及未完成清单](2026-11-07/p5-coverage-correction/README.md)。历史快照和原始数据不覆盖。
 
 |目录|内容与状态|
 |---|---|
@@ -19,7 +21,7 @@
 - **P2**：[候选发布与compact consumer](2026-11-06/h20-fp8-indexer-checkpoint/P2报告.md)，含实际四卡复制正确性；不能将复制模式等同于四卡行分摊收益。
 - **P3**：[full/source decode](2026-11-07/p3-full-source/REPORT.md)，原生DeepGEMM打分与确定性选择组合、source发布和四consumer，以及隔离的mixed-zero预取修复。
 - **P4**：[grouped verify](2026-11-06/h20-fp8-indexer-checkpoint/p4/REPORT.md)，实现同请求key tile共享，报告无收益形状以及候选共享资格重规划成本。
-- **P5**：[FP8 prefill](2026-11-06/h20-fp8-indexer-checkpoint/p5/REPORT.md)，32条主实验记录及[独立Gluon补充](2026-11-06/h20-fp8-indexer-checkpoint/p5/GLUON_REPORT.md)8条记录；无收益实现不进入自动路径。
+- **P5已有实现（迁移覆盖未完成）**：[FP8 prefill](2026-11-06/h20-fp8-indexer-checkpoint/p5/REPORT.md)，32条主实验记录及[独立Gluon补充](2026-11-06/h20-fp8-indexer-checkpoint/p5/GLUON_REPORT.md)8条记录；负结果仅限所测grouped实现，不能替代蚂蚁专用内核的直接A/B。
 - **P6**：[确定性top-k](2026-11-06/h20-fp8-indexer-checkpoint/p6/REPORT.md)，360项固定logit检查及6项ragged检查、29个性能形状的正反顺序记录。
 
 ### 必须保留的解释
@@ -30,7 +32,7 @@ P3/P4/P5/P6性能主要为各自独占GPU的单卡函数实验。P3修复使用�
 
 数值回归比较优化和原生路径；FP32参考另行诊断。不能声称全部分数逐位一致。固定相同logits的稳定top-k、候选规范化和逻辑位置映射要求精确；原生不保证稳定同分的回退不能冒充确定性。
 
-P4动态共享资格host重规划成本、P5不同query候选集合/显存峰值的范围、P6长行无收益区间均详见各报告。快照内方案书和报告是历史记录，其当时的勾选状态保留原样；最新阶段状态以本README和11月7日审计为准。
+P4动态共享资格host重规划成本、P5不同query候选集合/显存峰值的范围、P6长行无收益区间均详见各报告。快照内方案书和报告是历史记录，其当时的勾选状态保留原样；最新覆盖状态以本README及[P5覆盖更正](2026-11-07/p5-coverage-correction/README.md)为准。
 
 ## 公开副本、哈希与复现
 

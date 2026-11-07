@@ -902,6 +902,16 @@
       "sha256": "3ddd1145a6f4ea0cb55be78d9dd36f193b5928f55d333b2ec2d5f191ed44bc76"
     },
     {
+      "path": "2026-11-07/p5-coverage-correction/H20优化方案书.md",
+      "bytes": 18781,
+      "sha256": "e46da6a2e8ad366b87a3189a9c7731d1e1fe13301b8426f66b9a3385bedde461"
+    },
+    {
+      "path": "2026-11-07/p5-coverage-correction/README.md",
+      "bytes": 1544,
+      "sha256": "108107f30c0c8c97b3b2623cde8807f7017a639017d37d4ceac0a41511c36398"
+    },
+    {
       "path": "2026-11-07/p8-grouped-final-v1/ORIGINAL_PRIVATE_MANIFEST.json",
       "bytes": 2345,
       "sha256": "0b4603b43e5e12d7e4629eb029ae858aeb16683d82c97ca7aadcf5daecd45a28"
@@ -1093,8 +1103,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 5434,
-      "sha256": "c60e6de847b4f71a559cd6a5a258fcdccd185bc8714a76ef36cd6ec39495da1e"
+      "bytes": 5933,
+      "sha256": "82c6b5365cd8d33587f18db93bad4d6b067823ba95fb24a82e51c2c7ac91a84d"
     },
     {
       "path": "licenses/INDEXER_SOURCE_ATTRIBUTION.md",

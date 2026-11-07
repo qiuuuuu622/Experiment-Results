@@ -40,7 +40,28 @@
         "benchmarks/kernels/dsv41_indexer/__pycache__/legacy.cpython-312.pyc"
       ],
       "original_sha256": "dab05a6ab73bb988404eaae7c9af3e9222beeedb89d65dc446a55ace605311d2"
+    },
+    {
+      "path": "2026-11-07/p8-grouped-final-v1/environment.json",
+      "action": "omit unrelated host inventory",
+      "original_sha256": "adcc094d8d579b84e3c065d0d186d0a14278b99659d39d066af23cd8dbd6d8a5"
+    },
+    {
+      "path": "2026-11-07/p8-prefill-final-v1/environment.json",
+      "action": "omit unrelated host inventory",
+      "original_sha256": "347d09867034177edc1c1fee3c2c473a2a146e7502a8d9406b678bcd909ce617"
+    },
+    {
+      "path": "2026-11-07/p3-full-source/full-final-v1/gpus.csv",
+      "action": "omit host/GPU UUID inventory; reports retain named execution host and device index",
+      "original_sha256": "c0f3c761b251a611236314db26cd0c468bf941cca3fcb8468ef5a3772d821757"
+    },
+    {
+      "path": "2026-11-07/p3-full-source/full-final-v1/hostname.txt",
+      "action": "omit host/GPU UUID inventory; reports retain named execution host and device index",
+      "original_sha256": "f06dd8829e18c1bea2385f0dae56b3d6e17204ffa45f16598842faa4b654e045"
     }
   ],
-  "private_originals_modified": false
+  "private_originals_modified": false,
+  "incremental_scope": "P3 completed study and P4/P5 final-source measurements; P7/P8 not yet complete"
 }

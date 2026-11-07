@@ -1,0 +1,81 @@
+{
+  "status": "completed",
+  "source_directory_covered_by": "source-identity.json and source.tgz",
+  "files": [
+    {
+      "path": "REPORT.md",
+      "bytes": 3114,
+      "sha256": "71b490bffbe65f64caccc0a5283be114d7c5ed24a2aa9f28aebda69077a8f17c"
+    },
+    {
+      "path": "benchmark-only.patch",
+      "bytes": 1325,
+      "sha256": "ed22985a41e312ed631a0e874de250f352c673175a92bef6499ebe5271d854f1"
+    },
+    {
+      "path": "environment.json",
+      "bytes": 45993,
+      "sha256": "adcc094d8d579b84e3c065d0d186d0a14278b99659d39d066af23cd8dbd6d8a5"
+    },
+    {
+      "path": "environment.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "final.json",
+      "bytes": 955843,
+      "sha256": "43095e1c0778f3453442169cbd3f7b3c6abe8796320a4493c610a818431c2ecb"
+    },
+    {
+      "path": "final.log",
+      "bytes": 8654,
+      "sha256": "6e762d724812dc9e6e5c11b8b6d627f712a0af87093e22c824e3176472393c36"
+    },
+    {
+      "path": "native-identity.json",
+      "bytes": 850100,
+      "sha256": "fd7b4b53f408baeb7263a71dfd54e3ea9d0095bff6a5dbb43f4ee1227f5c674c"
+    },
+    {
+      "path": "planning.json",
+      "bytes": 129439,
+      "sha256": "7513a240947a8261db363bb60f34d3a9d97612e9bae2a41b87d58934e65bdde4"
+    },
+    {
+      "path": "planning.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "post-run-identity.json",
+      "bytes": 73,
+      "sha256": "587fde9b6736c77d3eebb8f1e3851b505694d15139e26994faef60cfb75d4389"
+    },
+    {
+      "path": "run.sh",
+      "bytes": 1514,
+      "sha256": "c541f30afb0c5fb37aeabd2b8a46d8b1c5c5771deb5a6357a50d2ac13e7ba398"
+    },
+    {
+      "path": "source-identity.json",
+      "bytes": 14986,
+      "sha256": "01e3af8a1585a02245fbd3cb44266f6f4f68e9fbe7ebaf2f9bd91bc5e1b5ce33"
+    },
+    {
+      "path": "source.tgz",
+      "bytes": 139214,
+      "sha256": "4b373028dd3b469e42f425224c6570e03bd4d39fe98c6f04f5f1605aaa554061"
+    },
+    {
+      "path": "verify.json",
+      "bytes": 5902,
+      "sha256": "333dbe5b7f8daa5ddca1bd1aaec132fd1cc8a8a97bb42dafd19f9b8c04fce872"
+    },
+    {
+      "path": "verify.log",
+      "bytes": 45,
+      "sha256": "dfc8c3571faf753d77dfc58cd72b010a4e8d334c143849d442f2f29b11f5441f"
+    }
+  ]
+}

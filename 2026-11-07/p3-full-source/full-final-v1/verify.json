@@ -1,0 +1,116 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "ratio": 1,
+      "index_keys": 1,
+      "logical_context": 1,
+      "max_abs_vs_native": 1.1920928955078125e-07,
+      "source_token_and_block_topk": "exact_for_fixed_scores",
+      "four_consumer_graph_replays": 3,
+      "request_reorder_and_physical_pages": "passed"
+    },
+    {
+      "ratio": 1,
+      "index_keys": 7,
+      "logical_context": 7,
+      "max_abs_vs_native": 4.76837158203125e-07,
+      "source_token_and_block_topk": "exact_for_fixed_scores",
+      "four_consumer_graph_replays": 3,
+      "request_reorder_and_physical_pages": "passed"
+    },
+    {
+      "ratio": 1,
+      "index_keys": 517,
+      "logical_context": 517,
+      "max_abs_vs_native": 4.76837158203125e-07,
+      "source_token_and_block_topk": "exact_for_fixed_scores",
+      "four_consumer_graph_replays": 3,
+      "request_reorder_and_physical_pages": "passed"
+    },
+    {
+      "ratio": 1,
+      "index_keys": 4099,
+      "logical_context": 4099,
+      "max_abs_vs_native": 9.5367431640625e-07,
+      "source_token_and_block_topk": "exact_for_fixed_scores",
+      "four_consumer_graph_replays": 3,
+      "request_reorder_and_physical_pages": "passed"
+    },
+    {
+      "ratio": 1,
+      "index_keys": 65536,
+      "logical_context": 65536,
+      "max_abs_vs_native": 9.5367431640625e-07,
+      "source_token_and_block_topk": "exact_for_fixed_scores",
+      "four_consumer_graph_replays": 3,
+      "request_reorder_and_physical_pages": "passed"
+    },
+    {
+      "ratio": 2,
+      "index_keys": 1,
+      "logical_context": 2,
+      "max_abs_vs_native": 1.1920928955078125e-07,
+      "source_token_and_block_topk": "exact_for_fixed_scores",
+      "four_consumer_graph_replays": 3,
+      "request_reorder_and_physical_pages": "passed"
+    },
+    {
+      "ratio": 2,
+      "index_keys": 7,
+      "logical_context": 14,
+      "max_abs_vs_native": 4.76837158203125e-07,
+      "source_token_and_block_topk": "exact_for_fixed_scores",
+      "four_consumer_graph_replays": 3,
+      "request_reorder_and_physical_pages": "passed"
+    },
+    {
+      "ratio": 2,
+      "index_keys": 517,
+      "logical_context": 1034,
+      "max_abs_vs_native": 4.76837158203125e-07,
+      "source_token_and_block_topk": "exact_for_fixed_scores",
+      "four_consumer_graph_replays": 3,
+      "request_reorder_and_physical_pages": "passed"
+    },
+    {
+      "ratio": 2,
+      "index_keys": 4099,
+      "logical_context": 8198,
+      "max_abs_vs_native": 9.5367431640625e-07,
+      "source_token_and_block_topk": "exact_for_fixed_scores",
+      "four_consumer_graph_replays": 3,
+      "request_reorder_and_physical_pages": "passed"
+    },
+    {
+      "ratio": 2,
+      "index_keys": 65536,
+      "logical_context": 131072,
+      "max_abs_vs_native": 9.5367431640625e-07,
+      "source_token_and_block_topk": "exact_for_fixed_scores",
+      "four_consumer_graph_replays": 3,
+      "request_reorder_and_physical_pages": "passed"
+    }
+  ],
+  "real_budget": {
+    "arena_bytes": 1073741824,
+    "peak_allocated_bytes": 1399984640,
+    "rows": 1025,
+    "planned_index_keys": 262144,
+    "ranges": [
+      [
+        0,
+        1024
+      ],
+      [
+        1024,
+        1025
+      ]
+    ],
+    "visible_lengths_initial": "1024 rows \u00d7 513 keys, last row \u00d7 262144",
+    "all_rows_full_256k_scoring": false,
+    "analytic_zero_query_reference": "passed",
+    "graph_replays": 2
+  },
+  "deep_gemm_package": "/root/dsv41-indexer-resume-20261107/runs/deep-gemm-p3-zero-prefetch-v1"
+}

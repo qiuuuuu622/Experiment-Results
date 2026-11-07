@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/root/dsv41-indexer-resume-20261107/runs/p3-full-final-v1/benchmarks/kernels/dsv41_indexer/benchmark_full.py", line 322, in <module>
+    main()
+  File "/root/dsv41-indexer-resume-20261107/runs/p3-full-final-v1/benchmarks/kernels/dsv41_indexer/benchmark_full.py", line 295, in main
+    result = run_case(requests, length, group, args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/dsv41-indexer-resume-20261107/runs/p3-full-final-v1/benchmarks/kernels/dsv41_indexer/benchmark_full.py", line 237, in run_case
+    score_nrmse=(error.norm() / native.scores[:, :length][mask].norm()).item(),
+                                ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+IndexError: The shape of the mask [4096] at index 0 does not match the shape of the indexed tensor [32, 4096] at index 0

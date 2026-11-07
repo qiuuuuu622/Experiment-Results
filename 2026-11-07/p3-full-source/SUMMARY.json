@@ -1,0 +1,51 @@
+{
+  "status": "P3_research_complete",
+  "batches": [
+    {
+      "file": "full-final-v1/ratio1-forward.json",
+      "status": "completed",
+      "cases": 5
+    },
+    {
+      "file": "full-final-v1/ratio1-reverse.json",
+      "status": "completed",
+      "cases": 5
+    },
+    {
+      "file": "full-final-v1/ratio2-forward.json",
+      "status": "completed",
+      "cases": 1
+    },
+    {
+      "file": "full-final-v1/ratio2-reverse.json",
+      "status": "completed",
+      "cases": 1
+    },
+    {
+      "file": "full-final-v1/unpatched-forward.json",
+      "status": "completed",
+      "cases": 2
+    },
+    {
+      "file": "full-final-v1/unpatched-reverse.json",
+      "status": "completed",
+      "cases": 2
+    },
+    {
+      "file": "composition-v2/forward.json",
+      "status": "completed",
+      "cases": 4
+    },
+    {
+      "file": "composition-v2/reverse.json",
+      "status": "completed",
+      "cases": 4
+    }
+  ],
+  "timing_rows": 691,
+  "additional_noise_rounds": 123,
+  "score_cache_large_bytes": 2214592512,
+  "full_matrix_owned_by": "P8",
+  "cpu_tests": "14 passed, 1 GPU skipped locally",
+  "lint": "passed"
+}

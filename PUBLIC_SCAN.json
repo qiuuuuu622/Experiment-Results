@@ -1,7 +1,7 @@
 {
   "status": "passed",
-  "file_payloads": 327,
-  "archives_inspected": 9,
+  "file_payloads": 5289,
+  "archives_inspected": 21,
   "patterns": [
     "private_key",
     "github_token",
@@ -10,5 +10,5 @@
     "personal_user_path"
   ],
   "findings": [],
-  "limitations": "Pattern-based scan plus explicit environment minimization; not a proof that arbitrary text can never contain a secret."
+  "limitations": "Pattern scan and explicit inventory minimization; no universal secret-detection guarantee."
 }

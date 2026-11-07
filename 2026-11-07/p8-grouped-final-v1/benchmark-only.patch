@@ -1,0 +1,40 @@
+--- local/benchmark_grouped.py
++++ frozen/benchmark_grouped.py
+@@ -37,7 +37,7 @@
+         page_size=64,
+         candidate_blocks=2048,
+         candidate_positions_limit=16384,
+-        physical_gpu=3,
++        physical_gpu=int(__import__("os").environ["CUDA_VISIBLE_DEVICES"]),
+         cache_condition="warm repeated calls; no L2 flush",
+     )
+     q, _, w, cache, table, req, lens, blocks = make_inputs(case)
+@@ -171,7 +171,7 @@
+         device=device_info(),
+         source=check_sources(),
+         baseline=baseline,
+-        physical_gpu=3,
++        physical_gpu=int(__import__("os").environ["CUDA_VISIBLE_DEVICES"]),
+         paired=args.paired,
+         cases=[],
+     )
+--- local/benchmark_prefill.py
++++ frozen/benchmark_prefill.py
+@@ -39,7 +39,7 @@
+         for backend in (
+             ("deepgemm", "row_tiled", "keys_major", "indirect")
+             if compact
+-            else ("deepgemm", "row_tiled", "keys_major", "indirect", "gluon")
++            else ("deepgemm", "row_tiled", "keys_major", "indirect")
+         )
+     }
+ 
+@@ -188,7 +188,7 @@
+         source=check_sources(),
+         device=device_info(),
+         args=vars(args),
+-        physical_gpu=1,
++        physical_gpu=int(__import__("os").environ["CUDA_VISIBLE_DEVICES"]),
+         cases=[],
+         scope="function/module only",
+     )

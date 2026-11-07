@@ -1,0 +1,56 @@
+{
+  "status": "completed",
+  "gpu_experiments": "4 independent single-GPU shapes, not TP4",
+  "ant_core_sha256": "957557aa4ac9944073ae4e2c2a370775df446f93437fa82de821b3051d3184c9",
+  "source_tar_sha256": "31863c46ad5e956f06b9cbea72c9498fbeb17f13f1964fa44d7a37daea8c4280",
+  "files": {
+    "REPORT.md": {
+      "sha256": "7d9d1c76b32036ed36239eecfabd4aab4cc9ceb946130ee12aa6de6a6e396a5f",
+      "bytes": 4797
+    },
+    "benchmark_ant_grid.py": {
+      "sha256": "ece60eec53e1772a88966236a6e7c277fffd1e630da27d08ef6d704df1baf421",
+      "bytes": 9398
+    },
+    "frozen-p5-source.tar.gz": {
+      "sha256": "31863c46ad5e956f06b9cbea72c9498fbeb17f13f1964fa44d7a37daea8c4280",
+      "bytes": 130872
+    },
+    "gpu0-shape0.json": {
+      "sha256": "30d9bc9f9a8176054f844ead70ec407473f1b2e2b0831c6f412103c0d46afe90",
+      "bytes": 138516
+    },
+    "gpu0-shape0.log": {
+      "sha256": "cef7e7fe5dd8c518fef4892b25243a0efc56d76a19fe5588dd9d09f9f2a783f1",
+      "bytes": 8121
+    },
+    "gpu1-shape1.json": {
+      "sha256": "08041c6505fc91c623283485eb2debd0989f1bbfbef30e0e8aed5a4b534225e4",
+      "bytes": 119328
+    },
+    "gpu1-shape1.log": {
+      "sha256": "276028012af92788a872f6a935071cb3879aad62f45aec9b58987914602770fb",
+      "bytes": 8143
+    },
+    "gpu2-shape2.json": {
+      "sha256": "ffdf8365a37bff0677735b017c3c0253265dce0c8121757c2e89bf53d299c893",
+      "bytes": 126611
+    },
+    "gpu2-shape2.log": {
+      "sha256": "418390a672fd745dd640ed5958f8385a54b2ad79e3194a81b10a4b860f99225d",
+      "bytes": 8190
+    },
+    "gpu3-shape3.json": {
+      "sha256": "f7961b3d85db48c9893f03f8188a7bc7c85b82377fd8bbc22b0b278dfe087c60",
+      "bytes": 118820
+    },
+    "gpu3-shape3.log": {
+      "sha256": "c08bfb1dc37a5e47e51702d7590c50ab15df7db2624984a47642bc187f44fc19",
+      "bytes": 8243
+    },
+    "summary.json": {
+      "sha256": "2a80cb56346923045cf75ae173489e804eedd504d852df852197d7bf7db1c15e",
+      "bytes": 1332
+    }
+  }
+}

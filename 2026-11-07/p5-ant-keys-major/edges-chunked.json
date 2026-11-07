@@ -1,0 +1,55 @@
+{
+  "status": "passed",
+  "cases": [
+    {
+      "distribution": "zero_query",
+      "compact": false,
+      "chunks": 5,
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "distribution": "zero_query",
+      "compact": true,
+      "chunks": 5,
+      "max_abs": 0.0,
+      "passed": true
+    },
+    {
+      "distribution": "repeated_key",
+      "compact": false,
+      "chunks": 5,
+      "max_abs": 5.960464477539063e-08,
+      "passed": true
+    },
+    {
+      "distribution": "repeated_key",
+      "compact": true,
+      "chunks": 5,
+      "max_abs": 5.960464477539063e-08,
+      "passed": true
+    },
+    {
+      "distribution": "mixed_scale",
+      "compact": false,
+      "chunks": 5,
+      "max_abs": 1.430511474609375e-06,
+      "passed": true
+    },
+    {
+      "distribution": "mixed_scale",
+      "compact": true,
+      "chunks": 5,
+      "max_abs": 1.430511474609375e-06,
+      "passed": true
+    }
+  ],
+  "ptx_sha256": "39e4fea8e43fbd52fdec2053faf7e9e46f3b4529420402d917369cb80580fcdc",
+  "shared_bytes": 184360,
+  "fp8_wgmma": true,
+  "wait_groups": [
+    1,
+    0
+  ],
+  "fp16_mma": false
+}

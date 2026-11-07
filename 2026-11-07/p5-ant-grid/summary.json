@@ -1,0 +1,68 @@
+{
+  "status": "completed",
+  "runs": [
+    {
+      "file": "gpu0-shape0.json",
+      "records": 48,
+      "runs": 57,
+      "visible_scores": 1048456,
+      "max_abs": 1.430511474609375e-06,
+      "min_overlap": 1.0,
+      "peak_GiB": 0.10071325302124023
+    },
+    {
+      "file": "gpu1-shape1.json",
+      "records": 48,
+      "runs": 48,
+      "visible_scores": 4192288,
+      "max_abs": 1.430511474609375e-06,
+      "min_overlap": 1.0,
+      "peak_GiB": 0.23348140716552734
+    },
+    {
+      "file": "gpu2-shape2.json",
+      "records": 48,
+      "runs": 51,
+      "visible_scores": 4161664,
+      "max_abs": 1.430511474609375e-06,
+      "min_overlap": 1.0,
+      "peak_GiB": 0.1949472427368164
+    },
+    {
+      "file": "gpu3-shape3.json",
+      "records": 48,
+      "runs": 48,
+      "visible_scores": 16253440,
+      "max_abs": 1.9073486328125e-06,
+      "min_overlap": 1.0,
+      "peak_GiB": 0.7350163459777832
+    }
+  ],
+  "noisy_initial_measurements": 4,
+  "noisy_cases": [
+    [
+      "16\u00d764K",
+      "eager",
+      "full",
+      "ant_grid_39"
+    ],
+    [
+      "16\u00d764K",
+      "eager",
+      "full",
+      "ant_grid_78"
+    ],
+    [
+      "16\u00d764K",
+      "eager",
+      "score_only",
+      "ant_grid_156"
+    ],
+    [
+      "256\u00d716K",
+      "eager",
+      "full",
+      "ant_grid_312"
+    ]
+  ]
+}

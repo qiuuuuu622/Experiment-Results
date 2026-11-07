@@ -1,0 +1,16 @@
+{
+  "repository": "https://github.com/antgroup/sglang",
+  "commit": "6e6d5d9e13915adb01db0856b15d6908eaaa2c48",
+  "source_path": "python/sglang/kernels/ops/attention/dsv4/sm90_fp8_prefill_keys_major.py",
+  "license": "Apache-2.0",
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747"
+    },
+    {
+      "path": "sm90_fp8_prefill_keys_major.py",
+      "sha256": "0bdde39dd1ddb4805492badbd838aa40a51a7dc79f29c070d27b661fc3f66b3f"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "status": "passed",
-  "file_payloads": 7812,
-  "archives_inspected": 33,
+  "file_payloads": 8019,
+  "archives_inspected": 35,
   "patterns": [
     "private_key",
     "github_token",
@@ -88,6 +88,26 @@
       "archive": "2026-11-07/p3-full-source/zero-prefetch-v1/source.tgz",
       "member": "vllm_dsv41_indexer/third_party/ant/LICENSE",
       "sha256": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747"
+    },
+    {
+      "archive": "2026-11-07/p5-ant-grid/frozen-p5-source.tar.gz",
+      "member": "vllm_dsv41_indexer/third_party/ant/LICENSE",
+      "sha256": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747"
+    },
+    {
+      "archive": "2026-11-07/p5-ant-grid/frozen-p5-source.tar.gz",
+      "member": "vllm_dsv41_indexer/NOTICE.md",
+      "sha256": "8d33c55261fdfb8ce31a04f402ab99a75869438ed35591ff4c77289c78acc5bc"
+    },
+    {
+      "archive": "2026-11-07/p5-ant-keys-major/frozen/source.tar.gz",
+      "member": "vllm_dsv41_indexer/third_party/ant/LICENSE",
+      "sha256": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747"
+    },
+    {
+      "archive": "2026-11-07/p5-ant-keys-major/frozen/source.tar.gz",
+      "member": "vllm_dsv41_indexer/NOTICE.md",
+      "sha256": "8d33c55261fdfb8ce31a04f402ab99a75869438ed35591ff4c77289c78acc5bc"
     },
     {
       "archive": "2026-11-07/p7-tp4-row-sharding/source-compact-v1.tar.gz",

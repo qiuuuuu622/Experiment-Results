@@ -1,0 +1,19 @@
+{
+  "status": "failed_native_gate",
+  "ant_vs_native": {
+    "max_abs": 0.001191854476928711,
+    "nrmse": 0.00011945949518121779,
+    "strict_mismatches": 180
+  },
+  "ant_vs_fp32": {
+    "max_abs": 0.0002574920654296875,
+    "nrmse": 4.4514290493680164e-05,
+    "strict_mismatches": 0
+  },
+  "native_vs_fp32": {
+    "max_abs": 0.0012366771697998047,
+    "nrmse": 0.00012837938265874982,
+    "strict_mismatches": 184
+  },
+  "formula": "4 independent D32 partial dots; no BF16; FP32 scale/weights"
+}

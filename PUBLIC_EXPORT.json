@@ -2418,5 +2418,464 @@
         "bytes": 5468
       }
     ]
+  },
+  "p5b_synthetic_export": {
+    "scope": "23 synthetic shapes + 4 independent single-GPU grid shapes + CPU review; model-role-aligned 23-point main matrix unfinished and excluded",
+    "source_files_verified": 63,
+    "checkpoint_evidence_files": 59,
+    "json_nonstring_invariance_checks": 0,
+    "files": [
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-keys-major/SUMMARY.json",
+        "public_path": "2026-11-07/p5-ant-keys-major/SUMMARY.json",
+        "original_sha256": "e72f2d7e502cbe670f49ec22bb4f68757b5d2c2b5830bc2cf691d95530bdf238",
+        "public_sha256": "e72f2d7e502cbe670f49ec22bb4f68757b5d2c2b5830bc2cf691d95530bdf238",
+        "bytes": 198056
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-keys-major/TABLE.md",
+        "public_path": "2026-11-07/p5-ant-keys-major/TABLE.md",
+        "original_sha256": "8d1b6919d28df498ac89cfed2c675a6d19b1d55f0df0f4b5141a47eb871f2791",
+        "public_sha256": "8d1b6919d28df498ac89cfed2c675a6d19b1d55f0df0f4b5141a47eb871f2791",
+        "bytes": 1181
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-keys-major/edges-chunked.json",
+        "public_path": "2026-11-07/p5-ant-keys-major/edges-chunked.json",
+        "original_sha256": "92712e58bfc2a7a56a9dd949d239e66b5c1b04695aeda74ca78631b11742ee4e",
+        "public_sha256": "92712e58bfc2a7a56a9dd949d239e66b5c1b04695aeda74ca78631b11742ee4e",
+        "bytes": 1116
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-keys-major/edges-chunked.log",
+        "public_path": "2026-11-07/p5-ant-keys-major/edges-chunked.log",
+        "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-keys-major/edges-chunked.ptx",
+        "public_path": "2026-11-07/p5-ant-keys-major/edges-chunked.ptx",
+        "original_sha256": "39e4fea8e43fbd52fdec2053faf7e9e46f3b4529420402d917369cb80580fcdc",
+        "public_sha256": "39e4fea8e43fbd52fdec2053faf7e9e46f3b4529420402d917369cb80580fcdc",
+        "bytes": 250529
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-keys-major/edges.json",
+        "public_path": "2026-11-07/p5-ant-keys-major/edges.json",
+        "original_sha256": "fd30a2a685faff3789183962f0f274aa5ece58042863b7895abae99814cbd890",
+        "public_sha256": "fd30a2a685faff3789183962f0f274aa5ece58042863b7895abae99814cbd890",
+        "bytes": 1116
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-keys-major/edges.log",
+        "public_path": "2026-11-07/p5-ant-keys-major/edges.log",
+        "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-keys-major/edges.ptx",
+        "public_path": "2026-11-07/p5-ant-keys-major/edges.ptx",
+        "original_sha256": "39e4fea8e43fbd52fdec2053faf7e9e46f3b4529420402d917369cb80580fcdc",
+        "public_sha256": "39e4fea8e43fbd52fdec2053faf7e9e46f3b4529420402d917369cb80580fcdc",
+        "bytes": 250529
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-keys-major/frozen/AGENTS.md",
+        "public_path": "2026-11-07/p5-ant-keys-major/frozen/AGENTS.md",
+        "original_sha256": "b1e37b8005a44e253709730f8ddecc377998fea2e4f6a0e6dcfb93ce774c866f",
+        "public_sha256": "b1e37b8005a44e253709730f8ddecc377998fea2e4f6a0e6dcfb93ce774c866f",
+        "bytes": 5825
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-keys-major/frozen/LICENSE",
+        "public_path": "2026-11-07/p5-ant-keys-major/frozen/LICENSE",
+        "original_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+        "public_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+        "bytes": 11357
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-keys-major/frozen/source.tar.gz",
+        "public_path": "2026-11-07/p5-ant-keys-major/frozen/source.tar.gz",
+        "original_sha256": "31863c46ad5e956f06b9cbea72c9498fbeb17f13f1964fa44d7a37daea8c4280",
+        "public_sha256": "31863c46ad5e956f06b9cbea72c9498fbeb17f13f1964fa44d7a37daea8c4280",
+        "bytes": 130872
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-keys-major/large-forward.json",
+        "public_path": "2026-11-07/p5-ant-keys-major/large-forward.json",
+        "original_sha256": "f9f031fb259331b1ba8dffe4e547168c547d9af0c75d8bae7b5b2bcfab8407c5",
+        "public_sha256": "f9f031fb259331b1ba8dffe4e547168c547d9af0c75d8bae7b5b2bcfab8407c5",
+        "bytes": 431026
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-keys-major/large-forward.log",
+        "public_path": "2026-11-07/p5-ant-keys-major/large-forward.log",
+        "original_sha256": "8d8aeefdacd2611d3a9cc259be56262d4ae2f5f72754fe6f391afb530abfce45",
+        "public_sha256": "8d8aeefdacd2611d3a9cc259be56262d4ae2f5f72754fe6f391afb530abfce45",
+        "bytes": 4755
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-keys-major/large-reverse.json",
+        "public_path": "2026-11-07/p5-ant-keys-major/large-reverse.json",
+        "original_sha256": "ed4a3777576a651c2b5de32b615106ddf2abe6ad62600e6ff82c92d615e33fb6",
+        "public_sha256": "ed4a3777576a651c2b5de32b615106ddf2abe6ad62600e6ff82c92d615e33fb6",
+        "bytes": 423658
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-keys-major/large-reverse.log",
+        "public_path": "2026-11-07/p5-ant-keys-major/large-reverse.log",
+        "original_sha256": "47ebac299c4502c41b69caa3e3c65ecd494db715f9040c199fc2b2fd9a522cdc",
+        "public_sha256": "47ebac299c4502c41b69caa3e3c65ecd494db715f9040c199fc2b2fd9a522cdc",
+        "bytes": 4755
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-keys-major/mixed-forward.json",
+        "public_path": "2026-11-07/p5-ant-keys-major/mixed-forward.json",
+        "original_sha256": "0f8ff89cee6b6ac7ff310ee8efc5665e2fa49b2f23bdd1a4153d1a636f487107",
+        "public_sha256": "0f8ff89cee6b6ac7ff310ee8efc5665e2fa49b2f23bdd1a4153d1a636f487107",
+        "bytes": 498211
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-keys-major/mixed-forward.log",
+        "public_path": "2026-11-07/p5-ant-keys-major/mixed-forward.log",
+        "original_sha256": "d5dddca4d238b993b53871b775667f22148222152417b946fdd616312db5ab77",
+        "public_sha256": "d5dddca4d238b993b53871b775667f22148222152417b946fdd616312db5ab77",
+        "bytes": 5472
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-keys-major/mixed-reverse.json",
+        "public_path": "2026-11-07/p5-ant-keys-major/mixed-reverse.json",
+        "original_sha256": "3ec06cad6252fc8ec4635649ef66368bbe61b74374c83a48edeb4f549f5a9163",
+        "public_sha256": "3ec06cad6252fc8ec4635649ef66368bbe61b74374c83a48edeb4f549f5a9163",
+        "bytes": 444555
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-keys-major/mixed-reverse.log",
+        "public_path": "2026-11-07/p5-ant-keys-major/mixed-reverse.log",
+        "original_sha256": "bae3434c5eddae4fb2a2e0c9f4b53a8a8684a023e708bb36c62f18d7af7231ac",
+        "public_sha256": "bae3434c5eddae4fb2a2e0c9f4b53a8a8684a023e708bb36c62f18d7af7231ac",
+        "bytes": 5473
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-keys-major/numerical-v1/diagnostic.json",
+        "public_path": "2026-11-07/p5-ant-keys-major/numerical-v1/diagnostic.json",
+        "original_sha256": "0e591dc8c39bf5a4f2adb2f137e85e97e04be69e31951604947af1ebc77563df",
+        "public_sha256": "0e591dc8c39bf5a4f2adb2f137e85e97e04be69e31951604947af1ebc77563df",
+        "bytes": 498
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-keys-major/numerical-v1/prefill_keys_major_ant.py",
+        "public_path": "2026-11-07/p5-ant-keys-major/numerical-v1/prefill_keys_major_ant.py",
+        "original_sha256": "f2ba3293174154d3b5174bd34990c765b2bab44789fb1db09d14d2a86049c75b",
+        "public_sha256": "f2ba3293174154d3b5174bd34990c765b2bab44789fb1db09d14d2a86049c75b",
+        "bytes": 19722
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-keys-major/runtime-identity.json",
+        "public_path": "2026-11-07/p5-ant-keys-major/runtime-identity.json",
+        "original_sha256": "69a449863567f0bddd6924fa4e9be20626264cb5b253ffffbac5153eb83d36ee",
+        "public_sha256": "69a449863567f0bddd6924fa4e9be20626264cb5b253ffffbac5153eb83d36ee",
+        "bytes": 146246
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-keys-major/scripts/capture_identity.py",
+        "public_path": "2026-11-07/p5-ant-keys-major/scripts/capture_identity.py",
+        "original_sha256": "5838840bec474a57f5af61e538c0bab83600a8cd564612de6544b58aa3d65d43",
+        "public_sha256": "5838840bec474a57f5af61e538c0bab83600a8cd564612de6544b58aa3d65d43",
+        "bytes": 1816
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-keys-major/scripts/collect_case_metadata.py",
+        "public_path": "2026-11-07/p5-ant-keys-major/scripts/collect_case_metadata.py",
+        "original_sha256": "8a2862b07b27d00977accdfb257e103eac6ffcbfe9c84388602c79b6b33aecb8",
+        "public_sha256": "8a2862b07b27d00977accdfb257e103eac6ffcbfe9c84388602c79b6b33aecb8",
+        "bytes": 1491
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-keys-major/scripts/summarize.py",
+        "public_path": "2026-11-07/p5-ant-keys-major/scripts/summarize.py",
+        "original_sha256": "28e5248635e59843ad3e9804a283b01ae3537322c03264bb8d54843e453f5fbc",
+        "public_sha256": "28e5248635e59843ad3e9804a283b01ae3537322c03264bb8d54843e453f5fbc",
+        "bytes": 2366
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-keys-major/small-forward.json",
+        "public_path": "2026-11-07/p5-ant-keys-major/small-forward.json",
+        "original_sha256": "96a485b1c5eff0097df0e7da046cc3e05a2f49f24f9963e69830997576a89268",
+        "public_sha256": "96a485b1c5eff0097df0e7da046cc3e05a2f49f24f9963e69830997576a89268",
+        "bytes": 490363
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-keys-major/small-forward.log",
+        "public_path": "2026-11-07/p5-ant-keys-major/small-forward.log",
+        "original_sha256": "7a7607ed802e48c2c928e05e9bcf400607bb9d0069f3f1d61eaeec24fe0fffe8",
+        "public_sha256": "7a7607ed802e48c2c928e05e9bcf400607bb9d0069f3f1d61eaeec24fe0fffe8",
+        "bytes": 5391
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-keys-major/small-reverse.json",
+        "public_path": "2026-11-07/p5-ant-keys-major/small-reverse.json",
+        "original_sha256": "c88c5d86666d99483896f64ed7fc21994391563cae0cd23d09b7c4a53ab689d3",
+        "public_sha256": "c88c5d86666d99483896f64ed7fc21994391563cae0cd23d09b7c4a53ab689d3",
+        "bytes": 512643
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-keys-major/small-reverse.log",
+        "public_path": "2026-11-07/p5-ant-keys-major/small-reverse.log",
+        "original_sha256": "b6a41dd68eab1ff0292cefb4984e74b374d159549de69ee4189c3b6166c58b85",
+        "public_sha256": "b6a41dd68eab1ff0292cefb4984e74b374d159549de69ee4189c3b6166c58b85",
+        "bytes": 5398
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-keys-major/upstream/LICENSE",
+        "public_path": "2026-11-07/p5-ant-keys-major/upstream/LICENSE",
+        "original_sha256": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747",
+        "public_sha256": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747",
+        "bytes": 11346
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-keys-major/upstream/SOURCE.json",
+        "public_path": "2026-11-07/p5-ant-keys-major/upstream/SOURCE.json",
+        "original_sha256": "c64d8b158fcaffdc948d1c5b27e1f98e05600399d72f6d4145c3ca0baa78a4e9",
+        "public_sha256": "c64d8b158fcaffdc948d1c5b27e1f98e05600399d72f6d4145c3ca0baa78a4e9",
+        "bytes": 514
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-keys-major/upstream/sm90_fp8_prefill_keys_major.py",
+        "public_path": "2026-11-07/p5-ant-keys-major/upstream/sm90_fp8_prefill_keys_major.py",
+        "original_sha256": "0bdde39dd1ddb4805492badbd838aa40a51a7dc79f29c070d27b661fc3f66b3f",
+        "public_sha256": "0bdde39dd1ddb4805492badbd838aa40a51a7dc79f29c070d27b661fc3f66b3f",
+        "bytes": 19505
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-keys-major/verify-v2.json",
+        "public_path": "2026-11-07/p5-ant-keys-major/verify-v2.json",
+        "original_sha256": "1c61dfb0e0fe84988bd4e00eedf8bcb34d49d3610e7db4fe84abb04621b9beab",
+        "public_sha256": "1c61dfb0e0fe84988bd4e00eedf8bcb34d49d3610e7db4fe84abb04621b9beab",
+        "bytes": 4990
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-keys-major/verify-v2.log",
+        "public_path": "2026-11-07/p5-ant-keys-major/verify-v2.log",
+        "original_sha256": "12b33a07fb1c6c05d79bf8617eb89d9473d01225db2133c7a49e2c51f96060fd",
+        "public_sha256": "12b33a07fb1c6c05d79bf8617eb89d9473d01225db2133c7a49e2c51f96060fd",
+        "bytes": 3951
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-keys-major/verify-v3.json",
+        "public_path": "2026-11-07/p5-ant-keys-major/verify-v3.json",
+        "original_sha256": "1c61dfb0e0fe84988bd4e00eedf8bcb34d49d3610e7db4fe84abb04621b9beab",
+        "public_sha256": "1c61dfb0e0fe84988bd4e00eedf8bcb34d49d3610e7db4fe84abb04621b9beab",
+        "bytes": 4990
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-keys-major/verify-v3.log",
+        "public_path": "2026-11-07/p5-ant-keys-major/verify-v3.log",
+        "original_sha256": "12b33a07fb1c6c05d79bf8617eb89d9473d01225db2133c7a49e2c51f96060fd",
+        "public_sha256": "12b33a07fb1c6c05d79bf8617eb89d9473d01225db2133c7a49e2c51f96060fd",
+        "bytes": 3951
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-keys-major/verify-v4.json",
+        "public_path": "2026-11-07/p5-ant-keys-major/verify-v4.json",
+        "original_sha256": "62dbe5b413592b4bad5061a81e9a6200e9c2a33527636822c4595adfe967e69b",
+        "public_sha256": "62dbe5b413592b4bad5061a81e9a6200e9c2a33527636822c4595adfe967e69b",
+        "bytes": 4990
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-keys-major/verify-v4.log",
+        "public_path": "2026-11-07/p5-ant-keys-major/verify-v4.log",
+        "original_sha256": "979c3f0143d0e26805a882761d6a83f83923a7548b69c4710275de4c980da141",
+        "public_sha256": "979c3f0143d0e26805a882761d6a83f83923a7548b69c4710275de4c980da141",
+        "bytes": 3951
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-grid/MANIFEST.json",
+        "public_path": "2026-11-07/p5-ant-grid/MANIFEST.json",
+        "original_sha256": "1ff3b9449e6034d89c7b48e9272bc69c17b7421f0e1369cf369434660fc36340",
+        "public_sha256": "1ff3b9449e6034d89c7b48e9272bc69c17b7421f0e1369cf369434660fc36340",
+        "bytes": 1941
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-grid/REPORT.md",
+        "public_path": "2026-11-07/p5-ant-grid/REPORT.md",
+        "original_sha256": "7d9d1c76b32036ed36239eecfabd4aab4cc9ceb946130ee12aa6de6a6e396a5f",
+        "public_sha256": "7d9d1c76b32036ed36239eecfabd4aab4cc9ceb946130ee12aa6de6a6e396a5f",
+        "bytes": 4797
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-grid/benchmark_ant_grid.py",
+        "public_path": "2026-11-07/p5-ant-grid/benchmark_ant_grid.py",
+        "original_sha256": "ece60eec53e1772a88966236a6e7c277fffd1e630da27d08ef6d704df1baf421",
+        "public_sha256": "ece60eec53e1772a88966236a6e7c277fffd1e630da27d08ef6d704df1baf421",
+        "bytes": 9398
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-grid/frozen-p5-source.tar.gz",
+        "public_path": "2026-11-07/p5-ant-grid/frozen-p5-source.tar.gz",
+        "original_sha256": "31863c46ad5e956f06b9cbea72c9498fbeb17f13f1964fa44d7a37daea8c4280",
+        "public_sha256": "31863c46ad5e956f06b9cbea72c9498fbeb17f13f1964fa44d7a37daea8c4280",
+        "bytes": 130872
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-grid/gpu0-shape0.json",
+        "public_path": "2026-11-07/p5-ant-grid/gpu0-shape0.json",
+        "original_sha256": "30d9bc9f9a8176054f844ead70ec407473f1b2e2b0831c6f412103c0d46afe90",
+        "public_sha256": "30d9bc9f9a8176054f844ead70ec407473f1b2e2b0831c6f412103c0d46afe90",
+        "bytes": 138516
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-grid/gpu0-shape0.log",
+        "public_path": "2026-11-07/p5-ant-grid/gpu0-shape0.log",
+        "original_sha256": "cef7e7fe5dd8c518fef4892b25243a0efc56d76a19fe5588dd9d09f9f2a783f1",
+        "public_sha256": "cef7e7fe5dd8c518fef4892b25243a0efc56d76a19fe5588dd9d09f9f2a783f1",
+        "bytes": 8121
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-grid/gpu1-shape1.json",
+        "public_path": "2026-11-07/p5-ant-grid/gpu1-shape1.json",
+        "original_sha256": "08041c6505fc91c623283485eb2debd0989f1bbfbef30e0e8aed5a4b534225e4",
+        "public_sha256": "08041c6505fc91c623283485eb2debd0989f1bbfbef30e0e8aed5a4b534225e4",
+        "bytes": 119328
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-grid/gpu1-shape1.log",
+        "public_path": "2026-11-07/p5-ant-grid/gpu1-shape1.log",
+        "original_sha256": "276028012af92788a872f6a935071cb3879aad62f45aec9b58987914602770fb",
+        "public_sha256": "276028012af92788a872f6a935071cb3879aad62f45aec9b58987914602770fb",
+        "bytes": 8143
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-grid/gpu2-shape2.json",
+        "public_path": "2026-11-07/p5-ant-grid/gpu2-shape2.json",
+        "original_sha256": "ffdf8365a37bff0677735b017c3c0253265dce0c8121757c2e89bf53d299c893",
+        "public_sha256": "ffdf8365a37bff0677735b017c3c0253265dce0c8121757c2e89bf53d299c893",
+        "bytes": 126611
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-grid/gpu2-shape2.log",
+        "public_path": "2026-11-07/p5-ant-grid/gpu2-shape2.log",
+        "original_sha256": "418390a672fd745dd640ed5958f8385a54b2ad79e3194a81b10a4b860f99225d",
+        "public_sha256": "418390a672fd745dd640ed5958f8385a54b2ad79e3194a81b10a4b860f99225d",
+        "bytes": 8190
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-grid/gpu3-shape3.json",
+        "public_path": "2026-11-07/p5-ant-grid/gpu3-shape3.json",
+        "original_sha256": "f7961b3d85db48c9893f03f8188a7bc7c85b82377fd8bbc22b0b278dfe087c60",
+        "public_sha256": "f7961b3d85db48c9893f03f8188a7bc7c85b82377fd8bbc22b0b278dfe087c60",
+        "bytes": 118820
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-grid/gpu3-shape3.log",
+        "public_path": "2026-11-07/p5-ant-grid/gpu3-shape3.log",
+        "original_sha256": "c08bfb1dc37a5e47e51702d7590c50ab15df7db2624984a47642bc187f44fc19",
+        "public_sha256": "c08bfb1dc37a5e47e51702d7590c50ab15df7db2624984a47642bc187f44fc19",
+        "bytes": 8243
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-grid/summary.json",
+        "public_path": "2026-11-07/p5-ant-grid/summary.json",
+        "original_sha256": "2a80cb56346923045cf75ae173489e804eedd504d852df852197d7bf7db1c15e",
+        "public_sha256": "2a80cb56346923045cf75ae173489e804eedd504d852df852197d7bf7db1c15e",
+        "bytes": 1332
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-review/BENCHMARK_FAIRNESS.md",
+        "public_path": "2026-11-07/p5-ant-review/BENCHMARK_FAIRNESS.md",
+        "original_sha256": "6074c10510e181c72c84e6e7b9fc7296d79bc81b0b2d9b3413054ec0fff7a86f",
+        "public_sha256": "6074c10510e181c72c84e6e7b9fc7296d79bc81b0b2d9b3413054ec0fff7a86f",
+        "bytes": 3815
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-review/BENCHMARK_REVIEW_SOURCE.json",
+        "public_path": "2026-11-07/p5-ant-review/BENCHMARK_REVIEW_SOURCE.json",
+        "original_sha256": "d67805282cb62405bddd418192ca8686329951578cb7f071c2b10d1cc51ad1ef",
+        "public_sha256": "d67805282cb62405bddd418192ca8686329951578cb7f071c2b10d1cc51ad1ef",
+        "bytes": 830
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-review/LICENSE",
+        "public_path": "2026-11-07/p5-ant-review/LICENSE",
+        "original_sha256": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747",
+        "public_sha256": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747",
+        "bytes": 11346
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-review/MANIFEST.json",
+        "public_path": "2026-11-07/p5-ant-review/MANIFEST.json",
+        "original_sha256": "d7ff00fc68305bb9677221ceeadae2834fd3d79df5b8e535a166473acddcc1fe",
+        "public_sha256": "d7ff00fc68305bb9677221ceeadae2834fd3d79df5b8e535a166473acddcc1fe",
+        "bytes": 685
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-review/REVIEW.md",
+        "public_path": "2026-11-07/p5-ant-review/REVIEW.md",
+        "original_sha256": "c072bd5a36a33b3d6c9a316b76516341b4ff1cdb5921b0392454b5bda1b0c884",
+        "public_sha256": "c072bd5a36a33b3d6c9a316b76516341b4ff1cdb5921b0392454b5bda1b0c884",
+        "bytes": 11329
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-review/fp8-d32-counterexample.json",
+        "public_path": "2026-11-07/p5-ant-review/fp8-d32-counterexample.json",
+        "original_sha256": "5efa76d8a35c84f772d0a5ccce9310078fbb411e5c2e8157c60b800e65be522a",
+        "public_sha256": "5efa76d8a35c84f772d0a5ccce9310078fbb411e5c2e8157c60b800e65be522a",
+        "bytes": 1137
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-review/sm90_fp8_prefill.original.py",
+        "public_path": "2026-11-07/p5-ant-review/sm90_fp8_prefill.original.py",
+        "original_sha256": "b0c8984b2b012a22ca21565bb522ef39f5c2baede8dbe25faa6b0120c09bee12",
+        "public_sha256": "b0c8984b2b012a22ca21565bb522ef39f5c2baede8dbe25faa6b0120c09bee12",
+        "bytes": 19873
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-review/sm90_fp8_prefill_keys_major.original.py",
+        "public_path": "2026-11-07/p5-ant-review/sm90_fp8_prefill_keys_major.original.py",
+        "original_sha256": "0bdde39dd1ddb4805492badbd838aa40a51a7dc79f29c070d27b661fc3f66b3f",
+        "public_sha256": "0bdde39dd1ddb4805492badbd838aa40a51a7dc79f29c070d27b661fc3f66b3f",
+        "bytes": 19505
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-checkpoint/CHECKPOINT.md",
+        "public_path": "2026-11-07/p5-ant-checkpoint/CHECKPOINT.md",
+        "original_sha256": "0c4af1be15927942a3ac91b34d418a9729938fcdd067bc11af0da26356036ac4",
+        "public_sha256": "0c4af1be15927942a3ac91b34d418a9729938fcdd067bc11af0da26356036ac4",
+        "bytes": 5421
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-checkpoint/INVENTORY.json",
+        "public_path": "2026-11-07/p5-ant-checkpoint/INVENTORY.json",
+        "original_sha256": "882adb0e2fafd476021475e26f1f6ec4b85dbe72c881745befb1e374ae1fe565",
+        "public_sha256": "882adb0e2fafd476021475e26f1f6ec4b85dbe72c881745befb1e374ae1fe565",
+        "bytes": 296442
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p5-ant-checkpoint/audit.py",
+        "public_path": "2026-11-07/p5-ant-checkpoint/audit.py",
+        "original_sha256": "068802acb15269943321a4745cc034921a7f855469e30841c004040c0d50ab77",
+        "public_sha256": "068802acb15269943321a4745cc034921a7f855469e30841c004040c0d50ab77",
+        "bytes": 7724
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/H20优化方案书.md",
+        "public_path": "H20优化方案书.md",
+        "original_sha256": "380405cab22c8bb4783ca3d3d8c99a5100c2fd9383f1731dfc54663a09365d84",
+        "public_sha256": "380405cab22c8bb4783ca3d3d8c99a5100c2fd9383f1731dfc54663a09365d84",
+        "bytes": 20724
+      }
+    ],
+    "checkpoint_helper_recovery": [
+      {
+        "path": "2026-11-07/p5-ant-keys-major/scripts/capture_identity.py",
+        "checkpoint_original_sha256": "5838840bec474a57f5af61e538c0bab83600a8cd564612de6544b58aa3d65d43",
+        "current_private_sha256": "48d02491cbe74a51b0fbaf04135d1cd22819d575d5731e7c466f2e3525f6318d",
+        "action": "Recovered old helper by reversing later before/after-output and added dependency edits; 1816 bytes and exact preexisting checkpoint SHA verified. After owner moved the new helper into the excluded model-aligned/scripts directory, coordinator explicitly authorized restoring these original bytes to the old private path. All 59 original checkpoint hashes then reverified; no other evidence modified.",
+        "private_old_path_restored_to_checkpoint": true
+      }
+    ],
+    "private_originals_modified": false
   }
 }

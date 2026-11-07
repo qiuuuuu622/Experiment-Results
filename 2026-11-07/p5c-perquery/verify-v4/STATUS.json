@@ -1,0 +1,9 @@
+{
+  "status": "failed",
+  "reason": "same unordered comparison failure; extended matrix incomplete",
+  "not_final_acceptance": true,
+  "host": "h20-4",
+  "gpu": 1,
+  "source_sha256": "d2fd992fcd259ba3843af3313ec0ab5e214d209890ee10bfb59c0789429f243f",
+  "command": "CUDA_VISIBLE_DEVICES=1 .venv/bin/python -m benchmarks.kernels.dsv41_indexer.verify_prefill_perquery --output /root/dsv41-indexer-resume-20261107/results/indexer/20261107-resume/p5c-perquery/verify-v4/result.json"
+}

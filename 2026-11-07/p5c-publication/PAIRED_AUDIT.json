@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "inventory_files": 76,
+  "canonical_cases": 8,
+  "paired_cases": 4,
+  "records": 64,
+  "rounds": 64,
+  "samples": 1920,
+  "input_byte_fields_checked": [
+    "cache",
+    "candidate_canonical",
+    "candidate_raw",
+    "lengths",
+    "q",
+    "requests",
+    "source_q",
+    "source_weights",
+    "table",
+    "weights"
+  ],
+  "same_objects_and_unchanged_inputs": true,
+  "source_three_canonical_sets_identical": true,
+  "unordered_source_changed_cases": [
+    "initial_32k",
+    "steady_64k",
+    "steady_256k",
+    "tail_1m",
+    "ragged"
+  ],
+  "old_raw_canonical_hash_reconstructed": false,
+  "limits": "Independent supplementary rerun; old performance outputs lacked canonical hashes and their unsaved tensors are not reconstructed"
+}

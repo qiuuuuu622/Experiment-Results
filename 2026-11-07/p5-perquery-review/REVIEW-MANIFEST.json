@@ -1,0 +1,197 @@
+{
+  "status": "complete_native_compatible_module_scope",
+  "phase": "P5c independent P8 exact-contract selection",
+  "admission_status": "admitted",
+  "exact_records": 16,
+  "real_gpu_bind_cases": 8,
+  "cpu_tests": 38,
+  "old_p8_admissions_unchanged": 400,
+  "raw_review": {
+    "status": "review_complete_native_compatible_module_scope",
+    "manifest_sha256": "efb48152efa7d7b0b9b57a6e311412f3086194879c1b48308b731c1754852868",
+    "bind_sha256": "1decd6b4cde3ff7a2bdfc3fe8ea5689a1e68bc6afbae968b32743e323e9816c1",
+    "exact_contract_records": 16,
+    "choices": [
+      {
+        "label": "initial_2k",
+        "execution": "eager",
+        "strategy": "full_keys_major_mask",
+        "evidence": "original"
+      },
+      {
+        "label": "initial_2k",
+        "execution": "graph",
+        "strategy": "full_deepgemm_mask",
+        "evidence": "original"
+      },
+      {
+        "label": "initial_8k",
+        "execution": "eager",
+        "strategy": "full_deepgemm_mask",
+        "evidence": "original"
+      },
+      {
+        "label": "initial_8k",
+        "execution": "graph",
+        "strategy": "full_deepgemm_mask",
+        "evidence": "original"
+      },
+      {
+        "label": "initial_32k",
+        "execution": "eager",
+        "strategy": "full_deepgemm_mask",
+        "evidence": "original"
+      },
+      {
+        "label": "initial_32k",
+        "execution": "graph",
+        "strategy": "full_deepgemm_mask",
+        "evidence": "original"
+      },
+      {
+        "label": "steady_16k",
+        "execution": "eager",
+        "strategy": "full_keys_major_mask",
+        "evidence": "original"
+      },
+      {
+        "label": "steady_16k",
+        "execution": "graph",
+        "strategy": "full_keys_major_mask",
+        "evidence": "original"
+      },
+      {
+        "label": "steady_64k",
+        "execution": "eager",
+        "strategy": "direct",
+        "evidence": "paired_same_object"
+      },
+      {
+        "label": "steady_64k",
+        "execution": "graph",
+        "strategy": "direct",
+        "evidence": "paired_same_object"
+      },
+      {
+        "label": "steady_256k",
+        "execution": "eager",
+        "strategy": "direct",
+        "evidence": "paired_same_object"
+      },
+      {
+        "label": "steady_256k",
+        "execution": "graph",
+        "strategy": "direct",
+        "evidence": "paired_same_object"
+      },
+      {
+        "label": "tail_1m",
+        "execution": "eager",
+        "strategy": "direct",
+        "evidence": "paired_same_object"
+      },
+      {
+        "label": "tail_1m",
+        "execution": "graph",
+        "strategy": "direct",
+        "evidence": "paired_same_object"
+      },
+      {
+        "label": "ragged",
+        "execution": "eager",
+        "strategy": "direct",
+        "evidence": "paired_same_object"
+      },
+      {
+        "label": "ragged",
+        "execution": "graph",
+        "strategy": "direct",
+        "evidence": "paired_same_object"
+      }
+    ],
+    "original_raw_rounds": 3561,
+    "paired_raw_rounds": 64,
+    "artifact_files_checked": 17,
+    "measured_source_files_checked": 87,
+    "native_identity_files": 589,
+    "real_default_bind_cases": 8,
+    "poison_first_graph_phases": 24,
+    "numerical_forward_once": {
+      "rows": 50560,
+      "max_abs_vs_native": 1.9073486328125e-06,
+      "max_nrmse_vs_native": 6.410410105455567e-08,
+      "minimum_topk_overlap": 1.0,
+      "fp32_sample_score_failures": 4120,
+      "native_fp32_sample_score_failures": 4121,
+      "fp32_max_abs": 0.0016641616821289062,
+      "fp32_initial_gate": "not fully passed; diagnostic locations, not failing rows"
+    },
+    "tp4_correctness": {
+      "ranks": 4,
+      "shapes": 3,
+      "phases_per_shape": 7,
+      "variants_per_phase": 12,
+      "speed_evidence": false
+    },
+    "immutable_old_p8": "old 400 admissions unchanged",
+    "limitations": [
+      "no service or model accuracy",
+      "no automatic TP4 performance policy",
+      "replan if length/grouping/mode/budgets change",
+      "original candidate canonical hashes not retrospectively reconstructed"
+    ]
+  },
+  "source_sha256": {
+    "vllm_dsv41_indexer/perquery_dispatch.py": "acd61a3bf72292ff865e7bf730475dd43cf5f2c782bb2b9bdc3d4963d06926cc",
+    "benchmarks/kernels/dsv41_indexer/collect_perquery_dispatch.py": "fa14c363a20f278b0137077623626e3d120017f9bac4c93db91944208b8b4abb",
+    "benchmarks/kernels/dsv41_indexer/verify_perquery_dispatch.py": "13a7ca03b7d41b02a79f1fc908fdabb9fdf06436d181c8afbec12d1653df76a5",
+    "tests/kernels/dsv41_indexer/test_perquery_dispatch.py": "b489508ffbf2666eb70cf66522edcfdcfc97be93cf0c095b04bd70699fe1ffe4"
+  },
+  "artifact_sha256": {
+    "results/indexer/20261107-resume/p5-perquery-review/SOURCE.json": "12156c5ff94a545be9628997aa6277fa278ff5ebefbcf3e219bb72a9383f5278",
+    "results/indexer/20261107-resume/p5-perquery-review/BENCHMARK_FAIRNESS.md": "53fce34df2cf8914839da423ef784e6aa8bc5145e93562d06a88dd025e36407f",
+    "results/indexer/20261107-resume/p5-perquery-review/FINAL_RAW_REVIEW.json": "2c44045d18e5b94c54783c2f27d318084e8e0eea2be6ad932975319cbbec590b",
+    "results/indexer/20261107-resume/p5-perquery-review/REVIEW.md": "98db211d06045c377b5f530d9c7d8da1e646a29e01aee68d2ca6413fa81436bd",
+    "results/indexer/20261107-resume/p5-perquery-review/cpu-tests.txt": "70f1d517f9c42c95c7f8988ac129c0067d1ba2934ea4feaec427f5438c3a24cd",
+    "results/indexer/20261107-resume/p5-perquery-review/audit_final.py": "e45b217f755eddb0c9f630948ec89f63e14a3299ab9ffbb891ec8ed19225fca2",
+    "results/indexer/20261107-resume/p5-perquery-review/INITIAL_CPU_REVIEW.md": "dbbb32434009e58453473d3ddab4d4185c0079a50f213144bad9e90c942660a7",
+    "results/indexer/20261107-resume/p5-perquery-review/admission.json": "efb48152efa7d7b0b9b57a6e311412f3086194879c1b48308b731c1754852868",
+    "results/indexer/20261107-resume/p5-perquery-review/bind-v2/verify.json": "1decd6b4cde3ff7a2bdfc3fe8ea5689a1e68bc6afbae968b32743e323e9816c1",
+    "results/indexer/20261107-resume/p5-perquery-review/bind-v2/run.log": "3ed01c46202987805837fd47f8d70a30ae4597524876fce9c97b793787998ec3",
+    "results/indexer/20261107-resume/p5-perquery-review/bind-v2/exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "results/indexer/20261107-resume/p5-perquery-review/bind-v1/verify.json": "40effe3f27cf4af1d07bf3b44264d0bf4d43290c82c52703a5faf9799da4784f",
+    "results/indexer/20261107-resume/p5-perquery-review/bind-v1/run.log": "3ed01c46202987805837fd47f8d70a30ae4597524876fce9c97b793787998ec3",
+    "results/indexer/20261107-resume/p5-perquery-review/bind-v1/admission-provisional.json": "9384ac8e49dd164c9035212bdeffa1fd58cf4e1e8c98e0f31cff3cd84e2308d8",
+    "results/indexer/20261107-resume/p5-perquery-review/bind-v1/exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "results/indexer/20261107-resume/p5-perquery-review/frozen/planner-source.tar.gz": "d55c00bbd970af04663760abbc249750471234be72d48c483b7e7d5df0021a25",
+    "results/indexer/20261107-resume/p5-perquery-review/source/vllm_dsv41_indexer/perquery_prefill.py": "78aa85bc1400d22f8886848516055fb7b355926bebf80c4900b659fe5692c0f9",
+    "results/indexer/20261107-resume/p5-perquery-review/source/vllm_dsv41_indexer/workspace.py": "5c5a86c2e71d3d95e4f996780a81f1045cb31fa594170d7301aa9c3fd792fbb0",
+    "results/indexer/20261107-resume/p5-perquery-review/source/vllm_dsv41_indexer/prepare.py": "8234723ab24dab5c37fe4898ef925032e8fef1a3e2a3403d1d7abe0076d27fd2",
+    "results/indexer/20261107-resume/p5-perquery-review/source/vllm_dsv41_indexer/score.py": "669a839062a0d9de642fa3709bb93f5cd056612b2f30455d7de8ce94f29a237b",
+    "results/indexer/20261107-resume/p5-perquery-review/source/benchmarks/kernels/dsv41_indexer/verify_prefill_perquery.py": "7572ddd082684df37b8f297089449946769e2cc5dba208a52dfdcf050e5dd04d"
+  },
+  "evidence_dependencies": {
+    "results/indexer/20261107-resume/p5c-perquery/final-v1/runtime-before.json": "e3adc2b4e59bebfc2ed96c9aee5fc38cac68c8d88c7a4ae6af63250a31d4e47c",
+    "results/indexer/20261107-resume/p5c-perquery/final-v1/runtime-after-a.json": "2273d24704344961e85c4772080a67e2bc8b9d9ba5b93b00c1fa06f866a00e55",
+    "results/indexer/20261107-resume/p5c-perquery/final-v1/runtime-after-b.json": "8f2a7fd5c2b16484ac0f19b64b3d776bc159ab378521084d662528eeb708e570",
+    "results/indexer/20261107-resume/p5c-perquery/final-v1/frozen/source.tar.gz": "b4c1a3dbda6778ea48d226b44ff77809dce604a50fd63b9b3aac15184e83e41b",
+    "results/indexer/20261107-resume/p5c-perquery/final-v1/verify.json": "3917181adb4cdf9c964157a0dc8ad574618652782e17c6651cc532139c45867e",
+    "results/indexer/20261107-resume/p5c-perquery/final-v1/preflight.json": "89c0fe2cc24bca7bb1e9365dd66e5534f0857231e07ff1b4582e03c2309aab80",
+    "results/indexer/20261107-resume/p5c-perquery/final-v1/group-a-forward.json": "90282488c56347067092fc086b0b5e740f75e4db70dbabd61304bfe7c0ee5323",
+    "results/indexer/20261107-resume/p5c-perquery/final-v1/group-a-reverse.json": "c1558b972d209bf5ce7ebdf5f64c747e7af5e4885daffb60eb7de81f36f7b224",
+    "results/indexer/20261107-resume/p5c-perquery/final-v1/group-b-forward.json": "8fab3a24fe03ae23d887ba332bcb2fefb8cc113e3607a2ea6a49e24baa2d28f2",
+    "results/indexer/20261107-resume/p5c-perquery/final-v1/group-b-reverse.json": "38a2cd4729c0bed8fec3a61aca248b91bc344a7eb8587fe7ef9ff11d533dd071",
+    "results/indexer/20261107-resume/p5c-perquery/paired-v1/paired_pipeline.py": "5b8ffddff4f4f51b145a862439b57575b9f7c8d221d1612643f6563052da83f3",
+    "results/indexer/20261107-resume/p5c-perquery/paired-v1/runtime-before-a.json": "ff73e00704d803ce55fcc1e4a35ca604ccdb717bd2bafbadfdb42615b9f9ab46",
+    "results/indexer/20261107-resume/p5c-perquery/paired-v1/runtime-after-a.json": "2273d24704344961e85c4772080a67e2bc8b9d9ba5b93b00c1fa06f866a00e55",
+    "results/indexer/20261107-resume/p5c-perquery/paired-v1/group-a.json": "3412b20bd6c852121dcfac3e61517252c2dc62e73d33db0a8b90f0f8ae9274ae",
+    "results/indexer/20261107-resume/p5c-perquery/paired-v1/runtime-before-b.json": "c594bb848dd106fe8b3a5756120bc847e5317670220c867eaba47e318f814c8b",
+    "results/indexer/20261107-resume/p5c-perquery/paired-v1/runtime-after-b.json": "8f2a7fd5c2b16484ac0f19b64b3d776bc159ab378521084d662528eeb708e570",
+    "results/indexer/20261107-resume/p5c-perquery/paired-v1/group-b.json": "3a68a58a9aa9a067afcface816528593f8b79cff67d6a504df08d2651515de8c"
+  },
+  "limitations": [
+    "FP32 initial strict gate not fully passed; native-compatible selection only",
+    "No model/service accuracy or TTFT/TPOT",
+    "No new TP4 performance admission"
+  ]
+}

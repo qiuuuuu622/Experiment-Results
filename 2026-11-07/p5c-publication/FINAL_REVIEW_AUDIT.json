@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "final_admission_sha256": "efb48152efa7d7b0b9b57a6e311412f3086194879c1b48308b731c1754852868",
+  "final_default_bind_sha256": "1decd6b4cde3ff7a2bdfc3fe8ea5689a1e68bc6afbae968b32743e323e9816c1",
+  "artifact_and_dependency_hashes_checked": 38,
+  "frozen_planner_sources_checked": 4,
+  "real_default_bind_cases": 8,
+  "poison_first_graph_phases": 24,
+  "public_device_pseudonyms_unique": 4,
+  "public_device_pseudonyms_consistent_across_ranks": true,
+  "limits": "CPU identity and archived evidence audit; no new GPU performance measurement"
+}

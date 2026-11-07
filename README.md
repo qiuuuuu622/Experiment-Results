@@ -2,9 +2,37 @@
 
 本仓库保存H20上 **FP8 index cache 函数／模块级实验**的原始样本、日志、源码快照、许可证及独立审阅。没有启动完整模型或 `vllm serve`，不能外推为模型准确率、TTFT、TPOT或服务吞吐。
 
-**最新状态：P0–P4、P6、P7以及P8既有路径已归档；P5b专用Ant prefill的模型对齐研究已验收，不新增自动调度。P5整体仍未完成，P5c真实逐query compact consumer正在独立实施，未包含在本次发布中。** 详见[最新H20优化方案书](H20优化方案书.md)。
+**最新状态：P0–P8的函数／模块研究和验证已完成。** P5b专用Ant D128 prefill适配未新增稳定收益；P5c补齐真实逐query compact consumer，新增独立16项精确合同选择，保留旧P8的400项结果。完成状态不表示初始FP32逐元素门槛全部通过，也不表示完整模型或服务验证。详见[最新H20优化方案书](H20优化方案书.md)。
 
-## 本次P5b结论
+## P5c最终结果
+
+[完整报告](2026-11-07/p5c-perquery/REPORT.md)比较真实 `[Q,2048]` 逐query候选的四条完整路径：DeepGEMM full-score+mask、已有keys-major full-score+mask、直接间接读取候选、先gather候选后自定义FP8 WGMMA。均采用FP8 cache、32 index heads、D128、独立FP32 K scale及共同稳定selector，计时包含候选发布、全部chunk、打分和逻辑位置映射/top-k。
+
+|形状|同对象正反补充实验的Graph保守加速（direct相对最快full）|最终选择|
+|---|---:|---|
+|steady 64K|1.473×|direct|
+|steady 256K|6.117×|direct|
+|1M上下文，Q256尾chunk|22.044×|direct|
+|ragged双请求|1.308×|direct|
+|initial 2K/8K/32K、steady 16K|compact无净收益|保留full路径|
+
+Q是prefill query行数，不能把Q256写成256并发。以上是单consumer、固定随机输入的模块性能，不包含source候选生成、模型投影或通信；source生成单独计时。gathered WGMMA在已测8点均慢于direct，不选择该路径。四卡新增证据只验证正确性，没有新的TP4性能承诺。
+
+原始8形状四方正反共3,360条记录、3,561轮、106,830个GPU样本及同数量host wall样本；所有CV追加轮保留。旧原始记录只保存无序候选buffer的hash，部分正反不同，未保存的旧tensor和canonical hash不能恢复。为补齐计时输入一致性，另外执行8点source三次canonical核验，并对4个收益点进行**同一对象、十类输入字节前后不变**的四方正反计时：64条记录、1,920个样本，得到上表收益。原始证据与补充证据分别保存。
+
+正序50,560 query行对native最大score差1.90735e-6，已测top-k集合100%重合；同logits稳定选择精确。初始FP32 strict仍有4,120个优化/4,121个native抽样score元素失败，最大约0.001664，不能写成FP32完全通过。详见数值诊断及原始记录。
+
+|证据|内容|
+|---|---|
+|[P5c owner报告](2026-11-07/p5c-perquery/REPORT.md)|8形状、四方完整成本、内存与分块、失败修复和限制。|
+|[正式原始样本](2026-11-07/p5c-perquery/final-v1/)|87源码、589 native身份前后一致，固定core及完整计时。|
+|[同对象补充验证](2026-11-07/p5c-perquery/paired-v1/AUDIT.json)|8点canonical稳定、4点paired pipeline、原始数据与独立runner。|
+|[真实四卡正确性](2026-11-07/p5-perquery-tp4/REPORT.md)|4独立设备、3形状×7阶段；1,008项比较、86,016次逻辑行比较，页表独立置换。无性能计时。|
+|[最终独立调度审阅](2026-11-07/p5-perquery-review/BENCHMARK_FAIRNESS.md)|16精确合同、38 CPU测试，默认实际绑定8项和24个poison-first Graph阶段。|
+|[最终选择表](2026-11-07/p5-perquery-review/admission.json)|单卡精确匹配；未测合同回退，变更长度/分组/模式/预算须重新规划。|
+|[发布独立校验](2026-11-07/p5c-publication/PUBLICATION_GATE.json)|采样重算、四卡身份、补充输入一致性与公开导出边界。|
+
+## P5b结论与适用边界
 
 [完整报告](2026-11-07/p5-ant-keys-major/REPORT.md)覆盖真实DSV4.1 Flash结构约束下的23个形状、正反测试和独立复测：32个index heads、dim128、top512；ratio2 FULL层2/8/14、ratio1 SOURCE层20、ratio1 CONSUMER层24/28/32/36。逐query可见key数为 `floor((prefix+j+1)/ratio)`，候选为 `[query,2048]`，每块8个index-key位置。
 
@@ -45,15 +73,15 @@
 |[Ant机制审阅](2026-11-07/p5-ant-review/REVIEW.md)|固定上游文件、许可证、FP8数值反例与CPU机制审阅。|
 |[许可证及来源](licenses/)|源码包保留原许可证和来源哈希。|
 
-历史快照中的勾选状态按当时记录保留。旧ratio2 consumer是通用API压力形状，不是真实模型consumer角色；旧request-shared候选不能证明真实逐query compact覆盖。P5b完成不能替代正在实施的P5c。
+历史快照中的勾选状态按当时记录保留。旧ratio2 consumer是通用API压力形状，不是真实模型consumer角色；旧request-shared候选不能证明真实逐query compact覆盖。P5b完成不能替代P5c；P5c现已通过上方独立实施、测试与审阅补齐。
 
 ## 来源、公开副本与复现
 
 基线Python wrappers对应vLLM `29be941d8d5746cd98135bdd5e710eeebd8d7014`；参考Ant `6e6d5d9e13915adb01db0856b15d6908eaaa2c48`。预装vLLM二进制build commit未知，没有把wheel名当成当前HEAD重编译证明。各阶段native环境分别有身份记录，不能拼成一个伪造统一环境。
 
-本次发布保留所有原始数值和源码计算逻辑，私有原证据不修改。公开脱敏与历史处理详见[PUBLIC_EXPORT.json](PUBLIC_EXPORT.json)：个人Mac工作目录替换为`/workspace/...`，必要时去除无关主机/GPU UUID或个人tar owner元数据；旧包移除解释器缓存的既有记录继续保留。许可证文本不改。最新根方案书替换前的副本保存在[合成发布时方案书](2026-11-07/p5-ant-checkpoint/PLAN_AT_SYNTHETIC_EXPORT.md)，历史映射继续可校验。
+本次发布保留所有原始数值和源码计算逻辑，私有原证据不修改。公开脱敏与历史处理详见[PUBLIC_EXPORT.json](PUBLIC_EXPORT.json)：个人Mac工作目录替换为`/workspace/...`，必要时去除无关主机或个人tar owner元数据；P5c四卡UUID采用跨文件一致的确定性伪名，保留四卡唯一性，旧阶段脱敏方式按历史记录保留；旧包移除解释器缓存的既有记录继续保留。许可证文本不改。最新根方案书替换前的副本保存在[合成发布时方案书](2026-11-07/p5-ant-checkpoint/PLAN_AT_SYNTHETIC_EXPORT.md)，P5b发布时的根方案书另保存在[P5b发布时方案书](2026-11-07/p5c-publication/PLAN_AT_P5B_PUBLICATION.md)，历史映射继续可校验。
 
-阶段内部SHA表示原始私有运行溯源；脱敏后不能直接用它校验公开字节。原始私有校验清单以`ORIGINAL_PRIVATE_*`保留。**公开文件以根[SHA256SUMS.json](SHA256SUMS.json)为准**，[PUBLIC_DEPENDENCIES.json](PUBLIC_DEPENDENCIES.json)保留公开对象、私有原SHA和公开SHA的映射，包括P5b报告的外部动态/数值/grid证据。P5c活动代码和结果没有被混入已完成证据。
+阶段内部SHA表示原始私有运行溯源；脱敏后不能直接用它校验公开字节。原始私有校验清单以`ORIGINAL_PRIVATE_*`保留。**公开文件以根[SHA256SUMS.json](SHA256SUMS.json)为准**，[PUBLIC_DEPENDENCIES.json](PUBLIC_DEPENDENCIES.json)保留公开对象、私有原SHA和公开SHA的映射，包括P5b报告的外部动态/数值/grid证据及P5c最终调度、paired和四卡证据。P5c最终代码快照、失败尝试、原始及补充结果均以独立目录保存；没有覆盖P5b历史证据。
 
 ```sh
 /path/to/.venv/bin/python verify_repository.py

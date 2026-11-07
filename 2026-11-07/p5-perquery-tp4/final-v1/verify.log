@@ -1,0 +1,35 @@
+/usr/local/lib/python3.12/dist-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/usr/local/lib/python3.12/dist-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/usr/local/lib/python3.12/dist-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/usr/local/lib/python3.12/dist-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/usr/local/lib/python3.12/dist-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+{"rows": 64, "keys": 16384, "phase": "initial", "status": "passed"}
+/usr/local/lib/python3.12/dist-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/usr/local/lib/python3.12/dist-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+{"rows": 64, "keys": 16384, "phase": "candidate_length_update", "status": "passed"}
+{"rows": 64, "keys": 16384, "phase": "empty_candidates", "status": "passed"}
+{"rows": 64, "keys": 16384, "phase": "zero_query", "status": "passed"}
+{"rows": 64, "keys": 16384, "phase": "request_and_physical_page_remap", "status": "passed"}
+{"rows": 64, "keys": 16384, "phase": "all_zero_and_page_remap", "status": "passed"}
+{"rows": 64, "keys": 16384, "phase": "restore", "status": "passed"}
+{"rows": 64, "keys": 65536, "phase": "initial", "status": "passed"}
+{"rows": 64, "keys": 65536, "phase": "candidate_length_update", "status": "passed"}
+{"rows": 64, "keys": 65536, "phase": "empty_candidates", "status": "passed"}
+{"rows": 64, "keys": 65536, "phase": "zero_query", "status": "passed"}
+{"rows": 64, "keys": 65536, "phase": "request_and_physical_page_remap", "status": "passed"}
+{"rows": 64, "keys": 65536, "phase": "all_zero_and_page_remap", "status": "passed"}
+{"rows": 64, "keys": 65536, "phase": "restore", "status": "passed"}
+{"rows": 128, "keys": 65536, "phase": "initial", "status": "passed"}
+{"rows": 128, "keys": 65536, "phase": "candidate_length_update", "status": "passed"}
+{"rows": 128, "keys": 65536, "phase": "empty_candidates", "status": "passed"}
+{"rows": 128, "keys": 65536, "phase": "zero_query", "status": "passed"}
+{"rows": 128, "keys": 65536, "phase": "request_and_physical_page_remap", "status": "passed"}
+{"rows": 128, "keys": 65536, "phase": "all_zero_and_page_remap", "status": "passed"}
+{"rows": 128, "keys": 65536, "phase": "restore", "status": "passed"}

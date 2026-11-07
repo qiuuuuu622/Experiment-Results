@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "manifest_files": 24,
+  "comparisons": 1008,
+  "logical_row_comparisons": 86016,
+  "distinct_gpu_uuids": 4,
+  "identical_logical_inputs_distinct_physical_tables": true,
+  "source_native_versions_unchanged": true,
+  "performance_claim": false,
+  "limits": "CPU artifact consistency check; GPU computations are reported by frozen verifier"
+}

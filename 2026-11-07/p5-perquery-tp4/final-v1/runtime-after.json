@@ -1,0 +1,2460 @@
+{
+  "source_archive_sha256": "100a0baa88bea1474c76357993e39582f993e2df7c0f9ffacafb7d1af4bb7641",
+  "source_archive_matches_post_run": true,
+  "source_files": {
+    "benchmarks/kernels/dsv41_indexer/benchmark_prefill_ant.py": "697cd682162371babce4d7b5dc17d7326e73a2e6913f141c35c7940c7d3ad458",
+    "benchmarks/kernels/dsv41_indexer/benchmark_full.py": "db8b6fbc594f64619cd48baa9769ce7378cc878df6242578870e7626d905071d",
+    "benchmarks/kernels/dsv41_indexer/verify_prefill_ant.py": "ec7e7e59ebc1b7f42e541ec2b6b3302d68d90d0a1829ce6672d05c6e91220274",
+    "benchmarks/kernels/dsv41_indexer/repro_zero_prefetch.py": "de8173744de2d94bfa5835c93c560b1048dccebdb8cbb53ab28e0cebff860019",
+    "benchmarks/kernels/dsv41_indexer/verify_topk.py": "a3aa6922665e064012319a55c6a80474597672b2c98fd51ec55660c0eee3b5b0",
+    "benchmarks/kernels/dsv41_indexer/verify_projection_tp4.py": "14e41fcef430d5951a79608d5dfa0775ee55c9c1504b257ed88422f3dee08cc6",
+    "benchmarks/kernels/dsv41_indexer/benchmark.py": "44dd83646151440cba2963c91ed8947eee4e5a1510d31bdec20ba6638dc7d8ec",
+    "benchmarks/kernels/dsv41_indexer/legacy.py": "4cf328e24123db3bb9a0b6f4cc91ac7dab412ddc8523879425ea03e67ed1cc77",
+    "benchmarks/kernels/dsv41_indexer/verify_module.py": "c88cffe738bb081c3e9045e590b25f5ac864503b50a5eed5a32d0c446a8b7fef",
+    "benchmarks/kernels/dsv41_indexer/benchmark_grouped.py": "99b97de1ff34e47a94d4fcd517b8d5152a95ebc075168e329efcf92a9ffd91ff",
+    "benchmarks/kernels/dsv41_indexer/verify_compact.py": "644d6756ce8b935e49fc809b54217142ef2aa8dd31cb85183bb132c362065816",
+    "benchmarks/kernels/dsv41_indexer/04_full_verify.sh": "a5c23e1a808f84af7bfaeb88a75dd31c2944c333b5ab685891ea8ea6a1b7f4d1",
+    "benchmarks/kernels/dsv41_indexer/benchmark_grouped_planning.py": "f42c1bc18f78004ed1b7fbf727f887ecb9cebe6493440e9ecbc75e3695bfc71d",
+    "benchmarks/kernels/dsv41_indexer/06_prefill_gluon.sh": "b6beb2be478957fa7369c3de4a25b10bbf81a1bf2843e0eabeaa4cd82b590882",
+    "benchmarks/kernels/dsv41_indexer/benchmark_final.py": "06a44677f7e8f182d2086f87f7753d6ebdd4437ec1f11fa73f27ee4e5b1c667f",
+    "benchmarks/kernels/dsv41_indexer/verify_prefill_model.py": "fd406778241d6d9e53f58266d1e4cab9ffc2e4812f09ebe6378f8b8c246ad0a4",
+    "benchmarks/kernels/dsv41_indexer/verify_tp4.py": "5d65fa431b5836995470365dd6c2cf87785669967339b2555349090aebfb42c0",
+    "benchmarks/kernels/dsv41_indexer/benchmark_topk.py": "fa776ca54a04532189f853d283fa0c9ba1af89360120f5d68293d001a18ece38",
+    "benchmarks/kernels/dsv41_indexer/03_p2.sh": "e7b66c302b47033e7675daf032e7bb1c19934bb0add0a8b34c5257af113569fb",
+    "benchmarks/kernels/dsv41_indexer/__init__.py": "e3c55cbb0d7a8bd47df6f3378835644645f5d3bc89b45793b5d5a02d013e5c58",
+    "benchmarks/kernels/dsv41_indexer/benchmark_ant_grid.py": "ece60eec53e1772a88966236a6e7c277fffd1e630da27d08ef6d704df1baf421",
+    "benchmarks/kernels/dsv41_indexer/verify_resume_modules.py": "9f7d1b74ee562994ad9179677bc8d118da967080ad52003df2fe2a4db25d79fc",
+    "benchmarks/kernels/dsv41_indexer/05_prefill.sh": "92bbb315b35f8c1ee181fdd7d3fb1ce4fbf76289fd671a799be14f005b675253",
+    "benchmarks/kernels/dsv41_indexer/summarize.py": "532729b1f94d26017230bb9b08e1ab16ee95e1d9b6c28356537aef438b53e6e2",
+    "benchmarks/kernels/dsv41_indexer/verify_prefill_ant_edges.py": "3977becf3d9d70b877aaa9a935aa72892a6342aab47a496e71202ceca3eccdb2",
+    "benchmarks/kernels/dsv41_indexer/benchmark_prefill.py": "e77329e87052756c4036797ea1fc7274eb0f6aceb16945daf7b348cb41fd294c",
+    "benchmarks/kernels/dsv41_indexer/tp4_cases.py": "f033ed3dd5229ad127c559dbb7b4c539ed95a1a351bc71c4822c640ec1041ac5",
+    "benchmarks/kernels/dsv41_indexer/verify_full.py": "dfdb783f88733948526ae3b124b110c8a6deb481cb617fbc99f2eb84d000f17f",
+    "benchmarks/kernels/dsv41_indexer/benchmark_prefill_model.py": "f422bdd3a5593e031c16e9270f0e93fb3dd343402c4eacd13cfe087987c7ef49",
+    "benchmarks/kernels/dsv41_indexer/verify_prefill.py": "46b1d4b721fdc8ff88fdaf2cad0b792a3db98440fa3726775fde739bfb083691",
+    "benchmarks/kernels/dsv41_indexer/06_topk.sh": "bd9fa2d158433061539e3312376bc69907a79efb0299b28abe60ce92639e97d0",
+    "benchmarks/kernels/dsv41_indexer/baseline.json": "0331b099289d70d7058bba90e7ba1f3566ebcdb10edaf117cca1e5b22839dcab",
+    "benchmarks/kernels/dsv41_indexer/verify_dispatch.py": "88ca4a3fa50f6e28e32f89804f7a9a56882eaaade08308992c416760368cedd9",
+    "benchmarks/kernels/dsv41_indexer/inputs.py": "9710a3078c5f7ec170374d208ac4cb96ca057af518c3620f9ba30e76c68cc56c",
+    "benchmarks/kernels/dsv41_indexer/common.py": "7c2cd4daf8c8e5d702c3aa19905db0ef05729b497b73ca76c1009d30e459895f",
+    "benchmarks/kernels/dsv41_indexer/benchmark_tp4_stages.py": "61f6d6ccae5f5d2c90247415cd8a32e925c963376d512ffebcd5cc563e0d7808",
+    "benchmarks/kernels/dsv41_indexer/diagnose_prefill_model.py": "c7250768f6df86ec5e9ffcf1cd33c48215060793ad93a15752b7afc9b1937b77",
+    "benchmarks/kernels/dsv41_indexer/benchmark_tp4.py": "2086d218dc761ac600ad5f61f43d588c3eed46d74d9fb9164b362b63cecad905",
+    "benchmarks/kernels/dsv41_indexer/verify_prefill_perquery.py": "d8e9efb85e3f9c3890baf69bfacbe07b6cb90099f5733a49fa259579174858ce",
+    "benchmarks/kernels/dsv41_indexer/environment.py": "6d4d608efcf755087c63720aaa643c1d5c45f3f0a818bad44bd339647db68755",
+    "benchmarks/kernels/dsv41_indexer/audit_resume.py": "1d8eb47988c6b60a89563c6b37baae006adc77650b7827e67c0cbcfbd98f4a6f",
+    "benchmarks/kernels/dsv41_indexer/calibrate.py": "a6e9eb94396439e2408def6d070fbf89d76179cb3c9899303590e6a56a767ff7",
+    "benchmarks/kernels/dsv41_indexer/verify_grouped.py": "adeadecfed359694a1346161e3d1d23acf1a844ab797693dbb53d5b6b3ad8ee5",
+    "benchmarks/kernels/dsv41_indexer/verify.py": "64632ffc88e62049cddd8acdc3d07dff9a480104c20aded7f9168b0202408b0f",
+    "benchmarks/kernels/dsv41_indexer/benchmark_prefill_perquery.py": "40f50488bfa7213ae3354340c08786e954f7403f2c8d81ebfcd4a2fa8feb96d4",
+    "benchmarks/kernels/dsv41_indexer/03_p3_gpu0.sh": "83f2035a550eafe0a63d35b8eeff888d8231c7768368c211fe90b7bd2e552f9d",
+    "benchmarks/kernels/dsv41_indexer/04_p4_gpu3.sh": "4c0e11807bc3f494c2178b47341a06bbeac74dbe03cca45e23ac26e28b1042f7",
+    "benchmarks/kernels/dsv41_indexer/freeze_p3.py": "4af68c2fcc8b16ae9860c04f20b349f80eba65c0142cfbc073151e105131f621",
+    "benchmarks/kernels/dsv41_indexer/verify_perquery_tp4.py": "7b3f1c9ceeaf6b9ad58f792ba921b1f92e3c20adf2d44e46ac9a618e8ca9a5c1",
+    "vllm_dsv41_indexer/csrc/candidate_publish.cuh": "4c7928614af36aa75f5bbb2abf70556144d7ed176ea9285f2ab2a8f9fa68fdef",
+    "vllm_dsv41_indexer/full_score.py": "848781706a598e7102e8fd069e4b22644474e5b4659031b59e4095c0e783c63a",
+    "vllm_dsv41_indexer/patches/README.md": "d9fa55d07f2abc2a7a2b80e5411fb8fddbde1a49eea5d76326feadb506ccba4d",
+    "vllm_dsv41_indexer/patches/deepgemm-sm90-empty-query-prefetch.patch": "ac616f67feb4682cb4d4d645fca5765ed406ce4ba091fce4921088becc0397fa",
+    "vllm_dsv41_indexer/dispatch.py": "25485a3a35262a2ed206a1239e5dc9d55b7916b4947d9ec93ffc2b7e88a61f5f",
+    "vllm_dsv41_indexer/__init__.py": "a88ad038e844912d9fac664aceccbe4d2423258a3698b6ea62f942b383d7c9a4",
+    "vllm_dsv41_indexer/native.py": "ac8ec647cf2f35ea0a7d8ff5b9bf9aff2b857b95d1bf84ad8e94dd2b5383d40a",
+    "vllm_dsv41_indexer/grouped_score.py": "5d0b1fd5496f6a2946d685e028ea06e813a9688b648ab1304f26922e5b36e94c",
+    "vllm_dsv41_indexer/third_party/ant/csrc/deepseek_v4/topk_v2.cuh": "36578d30b309cfe67df436bc7a4d5d56ba29d574ad8fedd575598afca7e5e2bb",
+    "vllm_dsv41_indexer/third_party/ant/sources.json": "55bf3d8fe6bef42bd05dfb47452365c9e6df08cdac47a0b132110dab617859f8",
+    "vllm_dsv41_indexer/third_party/ant/LICENSE": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747",
+    "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/utils.h": "fe54010a29dd4d65110bf4afe60ff91b0f37f3b9704bb5bae4f1086347d7e32d",
+    "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/utils.cuh": "18b0bb2e27dccc20d7509e8b6b6c16e2b57a5ce98be648865fb75059be8a13db",
+    "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/vec.cuh": "11224cc483b7fbc93e2bcb1c2092715d80f1fa645920f4c82ee0e1d45a4eb551",
+    "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/math.cuh": "73e182466976d821f8ad89017fd2492c50ea456d5e7007d4e869cb6730568477",
+    "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/deepseek_v4/topk_impl.cuh": "14e8a8973a4161e8adb5e12f1726b8f72bc89e94ad9d7cf0d51029aeca8dda57",
+    "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/tile.cuh": "692446727a0353f1eb0d7249f6564d2c79ee6c9066e2c61e2ab450014fb217b7",
+    "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/warp.cuh": "264e64c3f386a70de938ed831f05f7a5f3c4b3ed9cfea58e1fbad433a8f860db",
+    "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/runtime.cuh": "1f989a2dee7a32ab519eeb49adf407c5e4054195faa77aa92ce4211343973213",
+    "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/tensor.h": "c66eba28e0f7661711947309c12014d2e880025c7d91ff8a7ac544d4ece60ce2",
+    "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/source_location.h": "300026cbeeabe03b10b0c46b70e2e85b19a743cbe9ff462faa1dff4268cf806e",
+    "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/type.cuh": "4c72b0892e8d003490bdab2633056172a674bc6a9689be552861564c7aaf8edc",
+    "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/bits.h": "5bab56d2578d151d3224994eeeae0abb939c26a1ac1e84205a1c942dab9cd605",
+    "vllm_dsv41_indexer/perquery_prefill.py": "77a7ffbf34ebe4495e560612c9b6943b17214b5fd01a9cdfe613d5887dbe9b1c",
+    "vllm_dsv41_indexer/prefill.py": "78e49d3eeebc593b7604a6375d00f10b9bcbf21236510e1819d7c7fddb391ade",
+    "vllm_dsv41_indexer/prefill_keys_major_ant.py": "957557aa4ac9944073ae4e2c2a370775df446f93437fa82de821b3051d3184c9",
+    "vllm_dsv41_indexer/reference.py": "6984d36ec42272ca5ded2f8b1ac77a2dcf43ed5e56f93ce23975a098d4e75bd8",
+    "vllm_dsv41_indexer/row_shard.py": "4c33cd83aaeafc21cd443b73149d63e24fee695af311c24b12ebd89848720ec1",
+    "vllm_dsv41_indexer/module.py": "f9fdf95aacf3ccc3fd40b30148792552523874ecd75eb1cc03ba348863067dc9",
+    "vllm_dsv41_indexer/workspace.py": "5c5a86c2e71d3d95e4f996780a81f1045cb31fa594170d7301aa9c3fd792fbb0",
+    "vllm_dsv41_indexer/parallel.py": "78a3794c89b0188f519cdd1a0fb41f8efb544dff3dce7bb6605a4def94b1f82f",
+    "vllm_dsv41_indexer/topk.py": "90ceea7412f123245db61e3856d6db10844a12b333c371e7c7ce92aa639a3961",
+    "vllm_dsv41_indexer/contract.py": "35b073f106fd5770d1d05a2d7e2be7026c1ad23faf88ba20257259bc41a8858e",
+    "vllm_dsv41_indexer/grouped.py": "eccb9ee137fbf19d410b22c4c202ef8d2f3d079479ebf2248fd6d45e179b094b",
+    "vllm_dsv41_indexer/NOTICE.md": "8d33c55261fdfb8ce31a04f402ab99a75869438ed35591ff4c77289c78acc5bc",
+    "vllm_dsv41_indexer/prepare.py": "8234723ab24dab5c37fe4898ef925032e8fef1a3e2a3403d1d7abe0076d27fd2",
+    "vllm_dsv41_indexer/score.py": "669a839062a0d9de642fa3709bb93f5cd056612b2f30455d7de8ce94f29a237b"
+  },
+  "native_identity_capture": "after-run; baseline wrappers independently checked at each process start",
+  "imported_deep_gemm": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/__init__.py",
+  "imported_C": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/_C.py",
+  "native_files": [
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/_C_stable_libtorch.abi3.so",
+      "sha256": "ae9c8a293020e422e0b6b61d1024263dc476a772337f5d39d46d18baa7ce0ad9"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/model_executor/kernels/attention/dsa/candidate_blocks.py",
+      "sha256": "45f1eaa3b5f1d9f6a7b554697709646ce41d79d55f2d82415d008e6b00a1136f"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/_C.py",
+      "sha256": "9d9115aeba89db2ba53e974d025ef584f9b26dfe5ad9338035cda6a1469dcbf7"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/_C_extension.abi3.so",
+      "sha256": "0042598bc0770e70bc4ea4b9c3d27d8efc8e395d6f766d41e939c746c2bd3046"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/__init__.py",
+      "sha256": "5db6556d22b8d683deff5d8ea871e52a3faad22514e074667c6b4451b1b679db"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/envs.py",
+      "sha256": "1059461b6fb8d175de9db587cfb36ee3502bac1c8b54201fa3edf262abcf6a5c"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/aligned_buffer.h",
+      "sha256": "d9f024bd0e12e3c19a5c8619809b84594f9e5c018f5465ae875283b4251f0b2c"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/arch/arch.h",
+      "sha256": "1d972720299e91a7f4f0b840fb89fd06b474cb10a8eae8df1e2b5b7aff16530b"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/arch/barrier.h",
+      "sha256": "90716cfd8e3300cac27e6d0bfeca63fd013406f47da0985835982c17c20da2cf"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/arch/cache_operation.h",
+      "sha256": "66b10bb160c54e5ccb4ef8b6c16b9558a5d1501e47a23a7485be6753d08cc8be"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/arch/config.h",
+      "sha256": "fa43ab70628f699518e446dd528a0b4a4606432def639342b744ab22eafe07ab"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/arch/grid_dependency_control.h",
+      "sha256": "1c8ec8ec02ea42737ee8aa89abce83bae05b65bd1dae5ad4d2c5ed066b6d0d51"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/arch/memory.h",
+      "sha256": "e122de5fe050aef21e3004e5fe853da7fc541d5ee52b48136ec34a1772f7ae75"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/arch/memory_sm75.h",
+      "sha256": "205be5c3e8b2f9599eb9104ca7904d309d7c57c97abc60fffa8236ecbc53a647"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/arch/memory_sm80.h",
+      "sha256": "ac539b45732761f7d41edb7e6b7e35ccf0d552a323056c244f7d3ad845d41411"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/arch/mma.h",
+      "sha256": "995520aa528c8c3e8b3f2aceb91fd0f536255dd900eca24184bda0f9af020429"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/arch/mma_sm100.h",
+      "sha256": "d88fd3db3498ac3237ef14129319f825ef36b6b13ad813faf46f3e5a08be9fe9"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/arch/mma_sm50.h",
+      "sha256": "3cadc148bca05b97ba8e5a35307b24ceaea1c32ecb580e05076fec8d7e0f8c74"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/arch/mma_sm60.h",
+      "sha256": "421c584d982d200c260093a0e34c5dd5bac59d0905f590e1028328bc1511b9f4"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/arch/mma_sm61.h",
+      "sha256": "60ffa31a2e9dcb3ff97aaf3776c0aacf5714667d68f478842b132fba8261b8a4"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/arch/mma_sm70.h",
+      "sha256": "bb51d4bc0f1e869ec17299712d36b693955d7ddfe0a1c59d65cd0e0cabc7269c"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/arch/mma_sm75.h",
+      "sha256": "1b3b3cf8f6f5cec10e0b1a2025469212e6efd232e5ee6e8a645a88e5ef8142f9"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/arch/mma_sm80.h",
+      "sha256": "eaf7789b82bb0dacf9b63ad03615479be04eb3e8516f5739aa11812a3d2e00d0"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/arch/mma_sm89.h",
+      "sha256": "7937995bce66992cf10ab1733eee213ef3ee60f1924d326ac09c6a43cc582e51"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/arch/mma_sm90.h",
+      "sha256": "ecc03c51de3c03a5880ba664c4afe08da409f53f2b8d81e2aeb3ab11f9452e48"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/arch/mma_sparse_sm80.h",
+      "sha256": "fbf5a7de37560263a03eaa420a4a3d9e46ab472db395147784fe5162de41b536"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/arch/mma_sparse_sm89.h",
+      "sha256": "69928d200ea330b54fdcde6be064da07faac081542fa74c26924df95c1d8d621"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/arch/reg_reconfig.h",
+      "sha256": "02d929c9a49456c2648c98a22b01e81f01e39e4ff436c4f55eb53f94f67a97f9"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/arch/simd.h",
+      "sha256": "0d15befef4a420a6e91219319250c7dcc4be2d7a008021fb0d930e67c7355cea"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/arch/simd_sm60.h",
+      "sha256": "bc773ad062258b29fb7ec11b6b63c49fd8bbd765d7e6643dc7fdb12e1b7605b8"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/arch/simd_sm61.h",
+      "sha256": "0dd49c918c06bd6d71dbe558db798317f2b23386e154fd10f4b9e4ef0d665f21"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/arch/wmma.h",
+      "sha256": "aed335890d9fe5305d16f0c48bb5441cfadafdf1baeeedcc2e6c6547bddb853c"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/arch/wmma_sm70.h",
+      "sha256": "7d1fe05a79c2429eaf523690f63b45c4e682f1658e99462097b13ff60e85f6b3"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/arch/wmma_sm72.h",
+      "sha256": "f56b628c85b9567b66ad43e2e317aef04157d267b5a876787499278947b180cb"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/arch/wmma_sm75.h",
+      "sha256": "1e2eba2839d9b4ce6ffbfd9215b926696c0ec2b315d45bcf8e39aedf39a9f3db"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/array.h",
+      "sha256": "038bdd0e14c8aca1ef163957175a02f7cdca5db37b330f9f494001d19b52527d"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/array_planar_complex.h",
+      "sha256": "d8f77a667e4849f323e3b933c80b3cfe29fc123c8175d699c21cf8d422b699a7"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/array_subbyte.h",
+      "sha256": "19496f601472bde0d7fb9f4a36b8c49ac357781be2b9180630ab03fb697c6287"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/barrier.h",
+      "sha256": "27971bdaa2e217c0d535481c951e2b37e19456f83224a2e91a030d7b1685f468"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/bfloat16.h",
+      "sha256": "355024524c529f73ac8a8d7e406cad60e9cb1f4aac9ae5fa203216bf7a1dc86d"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/blas3.h",
+      "sha256": "2e72bb87dd453d49228a64298c25fcf4fac66be1393dc6624b3241b0e6b4267c"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/blas3_types.h",
+      "sha256": "850981f39d7d88e0959fdb8af5669b6764daf1aa357f291632ca6aa5b56008af"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/block_striped.h",
+      "sha256": "468f847a2d356bc5d477b73c0d75a14cd4abaf93a375fb1a6c79e4b4049b6364"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/complex.h",
+      "sha256": "ee6b42d0da5e22ef5c3d4ad8cf396943608da0c9d935936246c181360457135f"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/constants.h",
+      "sha256": "d676e2aff49f1561e3b92aadc0ec720ea38a64354e694e6a2664b1c5232c2d82"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/conv2d_problem_size.h",
+      "sha256": "a341c409c9ff1eeeb82b70fd20c0b23f61390086a16081f71b435cfd00e2fa15"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/conv3d_problem_size.h",
+      "sha256": "17e17e6f572a8abe2da85c856a71a72191c6f52ed3c7a0eac902804b12af6738"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/convolution.h",
+      "sha256": "bcd79d6d36415c0082fb1d16329d05ee25b27cab0d30c0f33df8fdd035c9d247"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/device/direct_convolution.h",
+      "sha256": "91f2f85f9fe1f9739874200ee640ed566b7da5950b0c9e1aaffe18aa33c75c6a"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/device/implicit_gemm_convolution.h",
+      "sha256": "42b645d3cd363a81f874621206ae634cb95be2236da3c287c57e39269405bd92"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/device/implicit_gemm_convolution_fusion.h",
+      "sha256": "a4730aff6ff355d4fb52c3da9677fcd95831289311eebfe310862fd11a98741a"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/kernel/default_conv2d.h",
+      "sha256": "3dd0a4f2632c48b145b9cdca3db43eeebbeade6c17537cb4dda30197a6648d1a"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/kernel/default_conv2d_dgrad.h",
+      "sha256": "3265a486c5dd41ac753e6a96e70b2847677a90a4bc8a20ab0890d7df228f9bee"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/kernel/default_conv2d_fprop.h",
+      "sha256": "a9e853438d035d6b6347d3bc12fe1156597e9e8c2c36b9c939b7fd01d5848101"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/kernel/default_conv2d_fprop_fusion.h",
+      "sha256": "481682866356638f2210b8a73e9d0d62f394a2ec1b0e0cae3bfa56855b005cf2"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/kernel/default_conv2d_fprop_with_absmax.h",
+      "sha256": "2d273cd7451173873b014a58631aa48aefe4eb7a208fe562bf5157ad615da30b"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/kernel/default_conv2d_fprop_with_broadcast.h",
+      "sha256": "d6f10c5dc643cff54141fcec7538e5c8344560fbd2bd4cd75f216684e4a0b598"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/kernel/default_conv2d_fprop_with_reduction.h",
+      "sha256": "7759f447022996e387e1482b0ca4d2d09ebfdbbb778534d295bc2e2c5903f0df"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/kernel/default_conv2d_group_fprop.h",
+      "sha256": "4f976c0cdb0397bf932dd87361040a6cd5be9516850f772ed5e3336e12da312b"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/kernel/default_conv2d_wgrad.h",
+      "sha256": "e1aabb2acebf428b734f0f4926950e6a4dca68deb77417b2a62e53164195035b"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/kernel/default_conv2d_wgrad_fusion.h",
+      "sha256": "7b61e5d8f1032da96a1c00abae2bee16ef40960f45a1a509dbc26c96e0a6eefa"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/kernel/default_conv3d_dgrad.h",
+      "sha256": "9aa4fe4d29217ac0fb114ed8bdcbf66a6fbe40ce1c7690d87ff793036977208c"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/kernel/default_conv3d_fprop.h",
+      "sha256": "ca6550b7bb515e79affc8b34254a80058b3408800dafa5541ca002ee87739038"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/kernel/default_conv3d_fprop_fusion.h",
+      "sha256": "88770277fccbcc8e627c676506beeb52b2c93b3edef9bdad9eff86ca9dc658a2"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/kernel/default_conv3d_fprop_with_broadcast.h",
+      "sha256": "4a0c0ca125b80aaf6131760f3378f5e5de1f94b2ddd19b1a657b72cb40e9701e"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/kernel/default_conv3d_wgrad.h",
+      "sha256": "2dd2dc5303e8e4396634e74c5468085c107d4e65b74e05f7117f00f87691696e"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/kernel/default_deconv2d.h",
+      "sha256": "aaa163b3df9894a596895e2eb00ae6579460f18e5d71eb8bcacc03828ea4e6db"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/kernel/default_deconv2d_with_broadcast.h",
+      "sha256": "6fbb6b766eeb8ff8a1d4831f9afd7ccbe1ea1e6e9fbe504287374f68bcf31fab"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/kernel/default_deconv3d.h",
+      "sha256": "a483ba5c6130abcfff03192a2a325b2f8d63c1fb6a81d532aa2620a316dd3adc"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/kernel/default_deconv3d_with_broadcast.h",
+      "sha256": "c628fbc73f72ad9f13b7ee6c51a35f4fd552992edbbba52c923a17c551176bbd"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/kernel/default_depthwise_fprop.h",
+      "sha256": "668b7e8ec99221fe70a629a696458a3308246bd781463c6203238d77d509d88a"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/kernel/direct_convolution.h",
+      "sha256": "fd0f6b816ea6eb7734952823e6e5e7409451eafcac477d2f1ee8d7aac68c42d0"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/kernel/implicit_gemm_convolution.h",
+      "sha256": "156ecd95f818f830463469b692c9d1c5977823fd1feb0e095d836e8c60f4f9fc"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/kernel/implicit_gemm_convolution_fusion.h",
+      "sha256": "e42af3a2b026d2c89f2564ca097ca99a917d28dae95b03ac33e92541e27465e8"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/kernel/implicit_gemm_convolution_strided_dgrad.h",
+      "sha256": "14bfd33a7a93bd78abc122c3a207af8d5b6bd7747bbba411d42e1b2f4bf257e7"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/kernel/implicit_gemm_convolution_with_absmax.h",
+      "sha256": "e1dbe1be3c9c693453e19547a01f1e2896b481023b25b8e323afebfb44267085"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/kernel/implicit_gemm_convolution_with_fused_epilogue.h",
+      "sha256": "75ed67af22aee6acf61836884e3abbcdd2c6c10ed6cf3f755a220bcd93ac0e04"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/thread/depthwise_mma.h",
+      "sha256": "e59d9c8ed47ca2858ea760438afb4d9351b5f7998e7500ec092cdbfe59b2ceaa"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/threadblock/conv2d_dgrad_filter_tile_access_iterator_analytic.h",
+      "sha256": "5c625124e339b76e5a99eed6750f2cb74131e6f86a0cdffa036b21fd20e710e9"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/threadblock/conv2d_dgrad_filter_tile_access_iterator_optimized.h",
+      "sha256": "c958acad86642c74c195e331fcbae662db37f6a8e0065a9655c85b6e84d2270e"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/threadblock/conv2d_dgrad_output_gradient_tile_access_iterator_analytic.h",
+      "sha256": "943923924d7495a10c89fdc16ffdda79875ed8056766e095e311801a9290405e"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/threadblock/conv2d_dgrad_output_gradient_tile_access_iterator_optimized.h",
+      "sha256": "fababf526f027545bf572256983f3180e4e39b25edd1f5cd4ccfaa579d4fcb84"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/threadblock/conv2d_fprop_activation_tile_access_iterator_analytic.h",
+      "sha256": "d6931bf1ef4ebccdc20b8836675191a79819e98648a40204afa5e0c40b1c31f9"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/threadblock/conv2d_fprop_activation_tile_access_iterator_few_channels.h",
+      "sha256": "06582273387c884318b828c3fbb98e2c40a97c94da0bb033dc7a7f46086ec071"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/threadblock/conv2d_fprop_activation_tile_access_iterator_fixed_channels.h",
+      "sha256": "4bba2a024aae7c1dc57769b0227670caeb6b1e0d9049cf66db71c8b03244fa31"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/threadblock/conv2d_fprop_activation_tile_access_iterator_optimized.h",
+      "sha256": "444606e1a9dc0eccf479debdce05610fb36d872a926038c589260e1935fef6ea"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/threadblock/conv2d_fprop_filter_tile_access_iterator_analytic.h",
+      "sha256": "6a9f81a17babf49a2bb036d64caaf4ad463814838cb016832f631f5443abb5d1"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/threadblock/conv2d_fprop_filter_tile_access_iterator_few_channels.h",
+      "sha256": "8659b4556cba40d2a3b57edc8606ea73b165609696f5313aa1c953d5f0f35845"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/threadblock/conv2d_fprop_filter_tile_access_iterator_fixed_channels.h",
+      "sha256": "7cbfaf7e860d7ab43204ac12a0309071e1c74d58b14428db673fe2fda08cd91c"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/threadblock/conv2d_fprop_filter_tile_access_iterator_optimized.h",
+      "sha256": "b45f7d285954a1d5c60807ec35f6691c43a2f8dbcf6570f41f16951a137c6d5c"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/threadblock/conv2d_params.h",
+      "sha256": "474e924fdd23fa66264b37b74a7d5053eea1eb4c71e5f8f30f47467b686d2859"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/threadblock/conv2d_tile_iterator.h",
+      "sha256": "2b76cff6a4e799e3335ae5ab09dca08ddd5314a0f71c0fec5cddf58968f5c805"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/threadblock/conv2d_wgrad_activation_tile_access_iterator_analytic.h",
+      "sha256": "d94bf42017e6660d9bd811ec6698951b0ae724dcc305c9987a1b8ce61c850f55"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/threadblock/conv2d_wgrad_activation_tile_access_iterator_optimized.h",
+      "sha256": "8143ec7805cc5e5a749eb6161536e610c4aac0194a751d9b588259a800d2e985"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/threadblock/conv2d_wgrad_output_gradient_tile_access_iterator_analytic.h",
+      "sha256": "d0ea11386b667f55a94261d8614d66685e9411400414ff382eb230bc412afbc2"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/threadblock/conv2d_wgrad_output_gradient_tile_access_iterator_optimized.h",
+      "sha256": "dd8ee03f6c62a5785688550326712e7011c3cc30af9691bff897cc2f102f2291"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/threadblock/conv3d_dgrad_filter_tile_access_iterator_analytic.h",
+      "sha256": "d16740e33e4981a02401d40e35675320c99016dc08daff7784b3075116ad7da7"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/threadblock/conv3d_dgrad_filter_tile_access_iterator_optimized.h",
+      "sha256": "17dbc795b9722b30eb124a5dc3fd36f4d91c644f54227bdf71f29905f6825cac"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/threadblock/conv3d_dgrad_output_gradient_tile_access_iterator_analytic.h",
+      "sha256": "7812ca22b0fa81758ab40381cee866565adfa9c05b16793aecb93ece8679069f"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/threadblock/conv3d_dgrad_output_gradient_tile_access_iterator_optimized.h",
+      "sha256": "7bc802602d5b6dcaa0c1ef57b5a6fdad1006cb6e9052b8b0097b21feebe903e6"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/threadblock/conv3d_fprop_activation_tile_access_iterator_analytic.h",
+      "sha256": "54e1d75ec6570b966bb4d814325e2aa5067f108c5fcf2c302ce7dfe46c54411d"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/threadblock/conv3d_fprop_activation_tile_access_iterator_optimized.h",
+      "sha256": "06448bb7a6a6b83083861d5315177a46a4cf64dc6197a019c83a2e8926236244"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/threadblock/conv3d_fprop_filter_tile_access_iterator_analytic.h",
+      "sha256": "b38a416f9bf9a6c6d48d149dd909033bbe9c47c052077b22709845457ce68fde"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/threadblock/conv3d_fprop_filter_tile_access_iterator_optimized.h",
+      "sha256": "0af9d7f157f613a4cfd6496187277f22b5bde9f48b6c345fd3dff418d51e6942"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/threadblock/conv3d_params.h",
+      "sha256": "ab7dfdab52c6a9ff22e4525028e22213f0dae0962c994a2db88f425c9d226900"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/threadblock/conv3d_wgrad_activation_tile_access_iterator_analytic.h",
+      "sha256": "01eb0081ede4d8ade0454105d5babb99a928184589ba4d1f95c25bd2706cca9a"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/threadblock/conv3d_wgrad_activation_tile_access_iterator_optimized.h",
+      "sha256": "946ec3af0da2696726f6cdacc0519ad27b42011d12646c1af0a6ee46723539b8"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/threadblock/conv3d_wgrad_output_gradient_tile_access_iterator_analytic.h",
+      "sha256": "0cb3b899b8871aaeb92b226fd7bfa1a1777ef31ff2fba4c3cfb6b46fa31deeb8"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/threadblock/conv3d_wgrad_output_gradient_tile_access_iterator_optimized.h",
+      "sha256": "8f8e9171bcf34cd57e1ebe1a3b166b8103c09933d8ffd45ae2b6d87d968a16cd"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/threadblock/depthwise_direct_conv_params.h",
+      "sha256": "e96623b61895aed7a5e1b9b99576ccf385f5fb49e0cf2d85c44fb8b25cc6a947"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/threadblock/depthwise_fprop_activation_tile_access_iterator_direct_conv_fixed_stride_dilation.h",
+      "sha256": "c4fb254d5dcba5e74f49177b2b1568fcc7e58e30f98a3ef4aced555d7b52c19e"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/threadblock/depthwise_fprop_activation_tile_access_iterator_direct_conv_optimized.h",
+      "sha256": "b5d0dc439b523c058bc2df695e6a22e9399f34aa6dd3ac36e8bbb19f374f3fa8"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/threadblock/depthwise_fprop_direct_conv_multistage.h",
+      "sha256": "a5d86324724e09439263e2f23bf3f71cca2496c81869826bc47c57e0921d02ee"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/threadblock/depthwise_fprop_filter_tile_access_iterator_direct_conv_optimized.h",
+      "sha256": "c5da1cddab89349f302dffe2b6012143e4fd4c1b1a07b5fbd90a257239a60898"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/threadblock/depthwise_fprop_pipelined.h",
+      "sha256": "001a4e1fac05ee3f8e0aa0474738f290972568fdcef9a9d38a8ecfb5c95985cc"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/threadblock/depthwise_mma_base.h",
+      "sha256": "17a3b22ae74f7f30766e61aeb410ab2468b05c7a920f0f8f2fe3610dbc523fd5"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/threadblock/depthwise_mma_core_with_lane_access_size.h",
+      "sha256": "d9739fd996e8e7d72b05ff5336c58357dc21b527a3e8e0faada18a3c33e8cd89"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/threadblock/implicit_gemm_fprop_fusion_multistage.h",
+      "sha256": "3000038ca9feefb5890e0f26320c9a3b8763a096b37ef9593dff784447ea67eb"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/threadblock/implicit_gemm_multistage.h",
+      "sha256": "b628331404305ff8d486d7de635cf71c4ec11508d4a63a34350509347c76cc05"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/threadblock/implicit_gemm_pipelined.h",
+      "sha256": "4819466c7e4d9ea46c43bad3ad0f9cabaae03afef35488ecfb379e06635f1118"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/threadblock/implicit_gemm_wgrad_fusion_multistage.h",
+      "sha256": "152f6dd209df00e922e08eec82c5425799fde6305142158780be61fd9bc65803"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/threadblock/predicated_scale_bias_vector_access_iterator.h",
+      "sha256": "7457fbb4558e0d952029cc9a0cad7c42b13ebc5c9c6ac39e9be60d0c8b328108"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/threadblock/predicated_scale_bias_vector_iterator.h",
+      "sha256": "e972d619710bd9bd864f45f22d6016aa9a49bdf148a9a6734b5dbdab9b8439ac"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/threadblock/threadblock_swizzle.h",
+      "sha256": "9656c5f1842b9fa01b0737a098d206b02121bbf7b016398da3fb173c3fa99048"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/warp/mma_depthwise_simt.h",
+      "sha256": "cd03da0160ab79331cc4aab97c5222668c50cfa285801719d17485fec90c37e7"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/warp/mma_depthwise_simt_tile_iterator.h",
+      "sha256": "350c0967cc5cb7db4eabc868af61c5a0246788f1585344c9e74b1974a995bd35"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/conv/warp/scale_bias_relu_transform.h",
+      "sha256": "69c0a237781499628a3c6022ef4e0c79876ed79a7b836afb09f78bf918c35756"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/coord.h",
+      "sha256": "221601f0f502d7ace04c66c58cafeaf0b8b10e15c283e4ddfb284dbc8c61544d"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/core_io.h",
+      "sha256": "47649140f1df9d488a306dc2fed79aaae9e1f7982db9cc7bab25b5f0da81484b"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/cutlass.h",
+      "sha256": "b0983633d014d2d7955d6e4963fe3338e8f444ad3ae4ff7096041f4d87fcf82e"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/device_kernel.h",
+      "sha256": "c5b234f7812d4bee7b2b781851cdc36cafa0fde8799e6b9da0f5ee5630e80363"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/thread/activation.h",
+      "sha256": "01abb59ffece48adb266eaf1a5b58d422631eb955a59231e2db9fd56f6d8091d"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/thread/conversion_op.h",
+      "sha256": "5ba6550b7c74c546a8b506cc7d742670ed0c47102bfab0a1badf785a2995176e"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/thread/linear_combination.h",
+      "sha256": "e70c257c3722979a0ffa0dd73482ca8e7238c273ef3ca6c4269577eab7cfab08"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/thread/linear_combination_bias_elementwise.h",
+      "sha256": "d59049f0cd0cea7db908821aee7ec4c83ddea432df8f8666ff3ab850e03c77f0"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/thread/linear_combination_bias_relu.h",
+      "sha256": "13970e2dc281b8de848dfeb499d8fd39802ec45f9ab82cd2b6c08e6be7fb2877"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/thread/linear_combination_clamp.h",
+      "sha256": "648df71fa5cf31297a9cc5ff66784528e353028224b4edf2d2ea58d2f6906446"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/thread/linear_combination_dgelu.h",
+      "sha256": "dfe5bd3afc0a8600a97dc648bcd1fdf15ce8db1c3324e74ef13e7f8baa8360f9"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/thread/linear_combination_drelu.h",
+      "sha256": "ef85350eca86eec1fe91359fe9b8405d449ef490153f8fd943738aa2cb4aab20"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/thread/linear_combination_gelu.h",
+      "sha256": "d164ab6bb0623a3a3aef7d3987a789d39f372d136c46855a31ec28baa0a51c38"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/thread/linear_combination_generic.h",
+      "sha256": "08947670037c27d02fe5ace0aac7ec3fa9c256b0391366ac4bdeec579728dbef"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/thread/linear_combination_generic_with_scaling.h",
+      "sha256": "efac2b274664c00acd2d38f1de0521fc562428b3046d62ef8c24bfe9e293a08b"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/thread/linear_combination_hardswish.h",
+      "sha256": "82a5f1cbdbd52a19a883a04f1197da5d0ef12f38c6b2e6d0793c4312a3af8f34"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/thread/linear_combination_leaky_relu.h",
+      "sha256": "05b91e823a5befb1e2d32267f320ff23aa70a96dc8d3a1aee35cd419a2c0bb32"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/thread/linear_combination_params.h",
+      "sha256": "b382568642170f2dce308085a7a389e7450e9563fa91d5003946c727a085be27"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/thread/linear_combination_planar_complex.h",
+      "sha256": "c5a1c3dcc40e973f95e754c6686fda33e78a49823222857d7438db67969fd186"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/thread/linear_combination_relu.h",
+      "sha256": "900b0fb6ca3536aa3e9f090187cf67d26605f52ea6fd3177d941bcd67c320344"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/thread/linear_combination_relu0.h",
+      "sha256": "b57723042af39ec52345ef5b71c979b2e7005c6337fdf9581d0b6351195d2929"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/thread/linear_combination_residual_block.h",
+      "sha256": "85f9b683846b0228682afac86ef361c0cd2a4ec9308bb3e4acdc5749e7da439c"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/thread/linear_combination_sigmoid.h",
+      "sha256": "5880c8fd533346abaa8f42697a5c91a883a470b3f0f400207592c06fdd053972"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/thread/linear_combination_silu.h",
+      "sha256": "2aedea01a3bd3ee15875cc3c6cc27c5a7558beb9463089dd8872ef77648830fa"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/thread/linear_combination_with_elementwise.h",
+      "sha256": "cf90329b48d2ee0023d02bef9b9d0b6f69279a1ef7b4ed35f8b702942d484949"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/thread/reduction_op.h",
+      "sha256": "493532c6161be66adf1a57337472c41115807111e134ba5fb1d4151af53f12e0"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/thread/scale_type.h",
+      "sha256": "f45767eb8a06a73d84667bafb31f6e9146e51ff4225ffe4ff3cbd8c5f721c74e"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/threadblock/default_epilogue_complex_tensor_op.h",
+      "sha256": "9f9485300f037226a819abc83d6662158a107e2cf0d0704f2fc3c174baef579b"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/threadblock/default_epilogue_complex_tensor_op_blas3.h",
+      "sha256": "0afebdd56a2ff2825224c000ebc878c4e12e17c9a0c18f9a4712f12adcd2adb0"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/threadblock/default_epilogue_direct_store.h",
+      "sha256": "2913178fde0fdc91efedd9b28c8b4bcc21a3fc8395a91e6841681c8b78da9a7a"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/threadblock/default_epilogue_planar_complex.h",
+      "sha256": "914b87d1a66e53c30b02233c2fa03ab5fc1d8f8ba1d22b3cc6014fde13270344"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/threadblock/default_epilogue_simt.h",
+      "sha256": "65f45cc87757cf83576eb9657d789333d415145506f304e567f3e624fc019656"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/threadblock/default_epilogue_tensor_op.h",
+      "sha256": "b6f1428e7cae08344631e52fe9b252888a0ac67b7345661db0ddf7b3d407e4ae"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/threadblock/default_epilogue_tensor_op_blas3.h",
+      "sha256": "b2359cedfe08e699a660cf9d4bc3110273369c1eee5be8d51d1549536033f661"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/threadblock/default_epilogue_volta_tensor_op.h",
+      "sha256": "f31c9726b0763c3db6dc170c7222077fae69c50c5e525dd9de8c8b53198d9424"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/threadblock/default_epilogue_with_absmax.h",
+      "sha256": "b84088a0c2578a326306b57e2f339aa7993f572fdc730d91586e7b60d0a9fcc0"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/threadblock/default_epilogue_with_broadcast.h",
+      "sha256": "0cad0fb1675e26f5824e9bf0cc91e87be11cf66dd7f3c82517de9ff5c8429a26"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/threadblock/default_epilogue_with_reduction.h",
+      "sha256": "a12c0d0358f82f07570d65e6d82006e7599b73ac5c4fa38870e2a6985122cb63"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/threadblock/default_epilogue_wmma_tensor_op.h",
+      "sha256": "992c3f5b9c8a128ec9c06a7815c5b4b99b5bd698954c13b659b93085bec1571a"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/threadblock/default_thread_map_simt.h",
+      "sha256": "03e0a932d7dd97391cad1beef4fd073666dadabba10a5f1b57784e75d79f8c9a"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/threadblock/default_thread_map_tensor_op.h",
+      "sha256": "4055c599c13cde7d90aefa45f736b0414f4ee197844a1a4a2c4f7138818f4c0c"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/threadblock/default_thread_map_volta_tensor_op.h",
+      "sha256": "2d9b37c69b4ffb9c1d452ba97fb5ce5ebde46b2f67c61f0a188f5a9b30495c33"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/threadblock/default_thread_map_wmma_tensor_op.h",
+      "sha256": "a71e99c4b567d52ac727e74cca31317140a6ddd96df9237b53e6c7862e737124"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/threadblock/direct_store_epilogue_iterator.h",
+      "sha256": "ac009c785511a2bf0ae126063d86f5aa36e5f0088bedb1fef9ca63e6fbd80c85"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/threadblock/epilogue.h",
+      "sha256": "68854dd467eded2c517aaa2533a3af2bc899a9172f1d91c44482b22a303a48e9"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/threadblock/epilogue_base.h",
+      "sha256": "4601f0bdf2c14758979b0ac890231744a6f5428bf0f7707c2e3a0f33c67a838c"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/threadblock/epilogue_base_streamk.h",
+      "sha256": "7bf621b7cfbe98800b86c1a9d5aa9b6875386d95ff606ed9ceb084c3aca0972d"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/threadblock/epilogue_depthwise.h",
+      "sha256": "bef93f0415680366723c60fac0c68ceb9503e17adfa8c8731a0ad433e289c6af"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/threadblock/epilogue_direct_store.h",
+      "sha256": "6b71e3101384b38eb5651620de4fe84c08da10db25ed7e134c0b9760a1fe1084"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/threadblock/epilogue_gemm_k_reduction.h",
+      "sha256": "f61443fd73481bf1612269854cb6175cfae644e167ff763acf0a46a8167e799c"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/threadblock/epilogue_planar_complex.h",
+      "sha256": "164bf5d65d08886b3f25682f2f425c78afc29912c4f761fefa08d1927ca0dfcc"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/threadblock/epilogue_smem_accumulator.h",
+      "sha256": "a7208d7ba3261b423a123c20a8e28b37b84f7f67fd085decd4ac5725776eff23"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/threadblock/epilogue_streamk_with_broadcast.h",
+      "sha256": "9c360b378fa7bd8c17b69cd0e1c1789221c12f8fce42f33049944c77ae342e7e"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/threadblock/epilogue_visitor_with_softmax.h",
+      "sha256": "24f0f0e948e78655c0bba6c57c0afd265a826df86185675687a878cad10915d3"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/threadblock/epilogue_with_absmax.h",
+      "sha256": "27a8369fb67dfcd25688c7a7200fb971a6f8f5be2b071558fa6fb129e3099d8b"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/threadblock/epilogue_with_broadcast.h",
+      "sha256": "23f5f35b0c73369c39520d794b073d8237d982ec7f75da0a64f22a90ea334460"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/threadblock/epilogue_with_reduction.h",
+      "sha256": "4d09e4be3f26d2db5f15b843a4212244b31a3e2ef16e940a711724048ad507cd"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/threadblock/epilogue_with_scaling_factor.h",
+      "sha256": "b680896b0ed17943650005204e0220ce278598e590a6ff333f2eb30a81b24c88"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/threadblock/epilogue_with_visitor.h",
+      "sha256": "9afe6fb88c875215ace6ac7e5e1e5026502679b482686868fcd7489bff586c1d"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/threadblock/epilogue_with_visitor_callbacks.h",
+      "sha256": "31bb21295e90a7b8fb66aae4ed89226886c747e115788015487864f23a1c3c87"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/threadblock/epilogue_workspace.h",
+      "sha256": "8208740e630bcca16e1c55bb42329864c590bb8ba1e8fbbf2beaa7d4ae73b3d2"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/threadblock/interleaved_epilogue.h",
+      "sha256": "6abbc6d2459fdf699c3ea347b3201d42a71e6b5b35e366c84c6205e39069e48f"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/threadblock/output_iterator_parameter.h",
+      "sha256": "75bbef3d282aef1374d7adbdc8aa870b46620c6af78ecfbfbcdc9659e960b090"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/threadblock/output_tile_thread_map.h",
+      "sha256": "8080c54418faa996e5a2aa2cb7def7ca4e380b5008756913197d55df9ea4b8b8"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/threadblock/predicated_tile_iterator.h",
+      "sha256": "ea396417bd649522e1492b5ff532dec40bacc1c2ef051f99a6366398f7a945fa"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/threadblock/predicated_tile_iterator_affine.h",
+      "sha256": "9a1e957f06f172dd9f7ce19baf2d378b804573c52d2fadc04d37d5b8ad7b8309"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/threadblock/predicated_tile_iterator_affine_layout_params.h",
+      "sha256": "3f4dc1ee953a67a039d2a8e0baea405305a1c96a36e9348746399593a0e31ee0"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/threadblock/predicated_tile_iterator_blas3.h",
+      "sha256": "e269e000b2f21803e098f54c38b0e5a29dad0141f3941952a204fa16a6aa861f"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/threadblock/predicated_tile_iterator_conv.h",
+      "sha256": "9d3b6e9c602056ce4f5c84be1dc5abefe8a0db31bd1bc8bb1c56c3094c0d7834"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/threadblock/predicated_tile_iterator_direct_conv.h",
+      "sha256": "17199f7c09ba3d22a4d10534ad47d9ec22ab9904f448a28527752b33a1752416"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/threadblock/predicated_tile_iterator_params.h",
+      "sha256": "e14565ba6023fccbb84b19989418197a2192aaa897c24d2635f6bea502de9887"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/threadblock/predicated_tile_iterator_predicates.h",
+      "sha256": "af12e2448f5e50bd0f37bbe42f0d582799719dd517b214286ef278b3177feca1"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/threadblock/predicated_tile_iterator_strided_dgrad.h",
+      "sha256": "a8acd6922bfebd2294cd04dfe113c9bf935115e39ed6f7f0b45f8af99d1d1a1b"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/threadblock/shared_load_iterator.h",
+      "sha256": "0304d3ed2f9881ae8f64c2d0abffbfd277efb37e44165c1fede5f91ef5057038"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/threadblock/shared_load_iterator_mixed.h",
+      "sha256": "665b75676311136dcb4ae5f486b27ab1582c200deb8dbe597962b0b5591f5bc5"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/threadblock/shared_load_iterator_pitch_linear.h",
+      "sha256": "3f41714b23157def7b2d5211005a9c697fd034ef93619e4ac4f70859f4d8f69b"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/warp/fragment_iterator_complex_tensor_op.h",
+      "sha256": "079e79d86c07ce5740da8b8d22970bdbc84744316e11740dc04c2e112bfeb86d"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/warp/fragment_iterator_gaussian_complex_tensor_op.h",
+      "sha256": "f2813506fd1ec8b3c4e644f3cb89c63a7bcbfc280ca0f362df5f406259fa9a25"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/warp/fragment_iterator_simt.h",
+      "sha256": "b7892fdaec55d678b0b1bc21542de97e2e54b545d85fd798eab09e9fb798fa16"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/warp/fragment_iterator_tensor_op.h",
+      "sha256": "26aac0f3bda2172d58852bbd3d7ba549b4199765924baa31f6548f3aa0c8bc8e"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/warp/fragment_iterator_volta_tensor_op.h",
+      "sha256": "db267b954bd80346ca3091f253518120e90cc659da4a680279a72dd95f7c6b00"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/warp/fragment_iterator_wmma_tensor_op.h",
+      "sha256": "ed51c4c4b1ebe4b012bada087a05be616d638b9189d925cac0a0eeda73d82090"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/warp/simt_policy.h",
+      "sha256": "ea00a65d7148cd0619cae32d1bea19a6613bd3a1db3bbcd38c7d0cde4bac4fab"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/warp/tensor_op_policy.h",
+      "sha256": "3c2a3d403f1c00e2074975f30094d25e615336660ad7edf61807e43aa95853db"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/warp/tile_iterator_simt.h",
+      "sha256": "91b7064d936671278b976cefcbb5b805d5eedc45c8562a2a87d53a0c2615bcc6"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/warp/tile_iterator_tensor_op.h",
+      "sha256": "a60f4fe115eaaa5d907bd6aa1c920f263b5d1034b55375f69aa77f36c4f92de3"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/warp/tile_iterator_tensor_op_mixed.h",
+      "sha256": "626e067923955162090dc8257317644cdfc8e94992c8741378e9748940a7b8df"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/warp/tile_iterator_volta_tensor_op.h",
+      "sha256": "5d520da82dae8faa51a5551195ec4538fbc768f700b5060ed3430c48c90aaa59"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/warp/tile_iterator_wmma_tensor_op.h",
+      "sha256": "28f650ff35496c39fe76de822e79ec8ac151d0cc80a93f56894bf2767ca7080b"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/warp/volta_tensor_op_policy.h",
+      "sha256": "1319d74d0a253a7b45c5c53600503504f4bc21e4059f5cdcb02005bf13c1e0e3"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/epilogue/warp/wmma_tensor_op_policy.h",
+      "sha256": "6f4aed66ed34c28b0caab2b1d1cd5fa2e2f9af0c478803409fc7ba7cb145e8e8"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/exmy_base.h",
+      "sha256": "49bdc92fd4e2f2264ab777358b7a2810d697ef7069b484a5eaa9715def8db859"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/fast_math.h",
+      "sha256": "f51dcb1972da008666c2a3bb24ddc20a192c3bb3bc3bc553b29d04fc621a1258"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/float8.h",
+      "sha256": "6963b577695eecfb9c0ad1d56fed071b268c16cc247c08a356a7292f3d5ef268"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/float_subbyte.h",
+      "sha256": "a55205c2c17e85651a049fc9825a08b92908ee52e82a5107b97a05b181f287e6"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/floating_point_nvrtc.h",
+      "sha256": "9e460f494422cc738a3d9c224df0ff89079002eec477b99cfcb475033d784c2c"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/functional.h",
+      "sha256": "440f47886e4677973e3552ca0af605f53476f8f3d722bbf8f47e9203f721bf7f"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/device/base_grouped.h",
+      "sha256": "60b726003a226e2bcb363ff5157ac4a848973f29ccf632c9aa4e04c189f906d6"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/device/default_gemm_configuration.h",
+      "sha256": "3850d5933fff925707b12d5260affc594523859aaadb97ab5d55a91f484076b7"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/device/ell_gemm.h",
+      "sha256": "6fd4a0660610ebe3cd3f1227cf3fea222e928d63e013fdd9483aee109cbcfb1f"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/device/gemm.h",
+      "sha256": "09b6452d552d840853a461272655031f5e548d5543d6cc96010fdeafa82a2e32"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/device/gemm_array.h",
+      "sha256": "f1598d660028ffb4f48fb0524e4c7859afafb90652bde5315ebdddcfa3a4a3d0"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/device/gemm_batched.h",
+      "sha256": "b308ffaf3d89b51ee60a5f8482343b652d6a68bf1c223b4ecb0d1f74850fa6ad"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/device/gemm_complex.h",
+      "sha256": "89e9f3fca903eff4d213bbe5ca9a55e369ec79b12133c000be3566705c8c2583"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/device/gemm_grouped.h",
+      "sha256": "60775ad07c45851c55f1a84c96e9e25fbdae29234db18270e2c3b5efbe9b1657"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/device/gemm_layernorm_mainloop_fusion.h",
+      "sha256": "591bfc9f609a10324cbfa7c829b30143e8e43e34b28cd508acef8f2c0e6da241"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/device/gemm_sparse.h",
+      "sha256": "86f06c690cfd6f2f5f779fec1dcbf13c39589791f319b021986e184a19389fb3"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/device/gemm_sparse_universal.h",
+      "sha256": "0154c9d165f5b77d2e494624199ee2210f41f28694f334c3b9ebc7d82199cf63"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/device/gemm_sparse_universal_with_absmax.h",
+      "sha256": "c679422a528715b22e627d20d89473048f2da1ea9f2f5f06cb997c9dec9e0ba8"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/device/gemm_sparse_with_absmax.h",
+      "sha256": "e326672b61fd5d108dfc3055e0dfc1695a324fc6604a92a88ab7329a68a8fcd4"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/device/gemm_sparse_with_visitor.h",
+      "sha256": "f602857a5c9716b017e704ed5c1035be0c917f97937cb7b2d4cc8b93a519cbc9"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/device/gemm_splitk_parallel.h",
+      "sha256": "e6364cae26f816491d7389332cc90cc1603017799ea5da0934fdb64b1b266c10"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/device/gemm_universal.h",
+      "sha256": "99147aaf43d012f4adb99c3765b8f7d5bf8e76d71f5071b8aa8a1cb52ade8286"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/device/gemm_universal_adapter.h",
+      "sha256": "a006f48a0e04e47ccc0c0089c8aa001933b7a6ad09a06f58b8d382c31d6ff95e"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/device/gemm_universal_base.h",
+      "sha256": "4fb6960565db62922c8642681b1e1aabbda359fbd7dc9ea6386c2305380733bd"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/device/gemm_universal_streamk_with_broadcast.h",
+      "sha256": "273909e7ee195e2fd25f7a8af44042ad402dcb1da55a3924699e5dd7a974434b"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/device/gemm_universal_with_absmax.h",
+      "sha256": "373b17062ad2ee1f492ce406ef4927e1117a689c14c54fb3b1a41e2ab3be1743"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/device/gemm_universal_with_broadcast.h",
+      "sha256": "554b651a76629100aaef995bde7a57cda72cf77a37606910c941288ab766c9d8"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/device/gemm_with_k_reduction.h",
+      "sha256": "02689961541a9842cc4c8d36d4c3d3de860a73258561324ae560c16eef1f9a46"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/device/gemv.h",
+      "sha256": "c2d975f0baece0dfc287c35a67a35671bddb1e432d5c85c1a10f9af48fb4d212"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/device/gemv_blockscaled.h",
+      "sha256": "cd81f392b0309612e35e408c7d11966ed51580bb1847d879e0ee961b6c8bb417"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/device/rank_2k.h",
+      "sha256": "5fe83bb7d386696015d25064cb232c6eebd673f8d6570126d5e54c7b4bd53242"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/device/rank_2k_grouped.h",
+      "sha256": "e0ad11b36f255cc03910c0df21db443912ed73b825793dd58574fa11cbc79add"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/device/rank_k.h",
+      "sha256": "d7156ece53365468fa113e5e31df2e3b28a653668d20e43a1aecbbd7a34d333e"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/device/symm.h",
+      "sha256": "856aa9bf2259d29bd78aa3f8e067aac84da35b015e160a17aac8a7c871d4a91c"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/device/trmm.h",
+      "sha256": "793d8a9bc97a255d406af9ccd25103617167e2ea87afcbe8bd23c40a173105cb"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/gemm.h",
+      "sha256": "bc3413d897c767a0aba7dc1f5b1954cb3e1f3367c4fbc4018596b4639827fc6e"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/gemm_enumerated_types.h",
+      "sha256": "93833fb86b1a2bf87f0ec4b64d51d2d5f65399ea40ba84cdef2e8b3489a8c144"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/default_ell_gemm.h",
+      "sha256": "9755352fe35ed312a6198cd5d526640cfe60938752ade83e6933d445fd37e9c6"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/default_gemm.h",
+      "sha256": "6bec4b81e9502ed0c7f1af5b8305ee83ffae68c95222c565784e8cdd510aba50"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/default_gemm_complex.h",
+      "sha256": "c6f269fb477c6ca20f38fd570079dc80abb88bd948605c8c2c5820d9889a28ff"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/default_gemm_grouped.h",
+      "sha256": "397f99226768c8999ae89265d81e7a410109a0c0e5a8a6e6f9afb4199a50758f"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/default_gemm_grouped_per_group_scale.h",
+      "sha256": "586261a89487519bcefd1c86c7d332c4af6e9176dfd4ed12cba7734654ea49df"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/default_gemm_grouped_softmax_mainloop_fusion.h",
+      "sha256": "648b4c2cc8ceea91bfe3eed7d9f163be57e4b5e187c2d5b8942f100ab3ec4d73"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/default_gemm_layernorm_mainloop_fusion.h",
+      "sha256": "887e9510a5ca85ac6e0ea696698656fdabb4d71e2bc8ea4b44bbd4dc9f40d91f"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/default_gemm_planar_complex_universal.h",
+      "sha256": "2a3b4023f5802423d92487a2e4c2d323a0403527635ea23d19416dfc44d207e2"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/default_gemm_sparse.h",
+      "sha256": "3f73d988e6df161e79259dcde374fbd3383104f8fa36dbd928e01f1f6cfec9ea"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/default_gemm_sparse_universal.h",
+      "sha256": "776c280e6e368be2b6bf578855e641dbeffc94db2269ee998b6bd39d106be0bc"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/default_gemm_sparse_universal_with_absmax.h",
+      "sha256": "ab3f0b7e4df7fc04761e86720af3799e8796742bf4fd4ec52c42447ddb6a55ee"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/default_gemm_sparse_with_absmax.h",
+      "sha256": "d873ac5410a97c53ca529e764d95f948c1f4147e7a9ae72217259b23c94bc3d8"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/default_gemm_sparse_with_visitor.h",
+      "sha256": "10b487527db8b60be0c2f53050659146ac4e9ac95c530b9c4eb7b89972edeb2c"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/default_gemm_splitk_parallel.h",
+      "sha256": "0403ccfe2032d65e9a9dd444c5ecadb7a8d2d17d7e6c47bef79e93f7c0c6280d"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/default_gemm_streamk_with_broadcast.h",
+      "sha256": "e5eab86b364fb0fce3b457035a8b9de1c2673c67ae48cd80cf18133f18522e59"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/default_gemm_universal.h",
+      "sha256": "38bc8813c5801a049f6b6d778d6becc3a12470cd32a86c70e748676734c35693"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/default_gemm_universal_with_visitor.h",
+      "sha256": "221cb62cda94f08cb698fd9f9c0d231cc10334e9871d0aec5737c3cae33c77a7"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/default_gemm_with_absmax.h",
+      "sha256": "6cd04920abfff5dfb989c68281ed9ffa2a6a3e1adb00cec0699beb0e71611005"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/default_gemm_with_broadcast.h",
+      "sha256": "efd0f4f8e377b2d333cdeeeb1401d83c1d65b1d58ef97273e13e344b0a6c31be"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/default_gemm_with_k_reduction.h",
+      "sha256": "c31bcdb36522ce8dcc7a823fa90584c6e86ff527702c39124dbb47b3b33ba03e"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/default_gemm_with_reduction.h",
+      "sha256": "655eb1081a835db66d550621e94e8728e8ca0d968131b6ebb9f54c75c47057fa"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/default_gemv.h",
+      "sha256": "3dccacd5836230cd219ecc8afdd8f24f3c7c4124ef1e0f3f2b4979f0f6a97b26"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/default_rank_2k.h",
+      "sha256": "b81b877f9dd4277d27b6e5d2b6c6901cde7c1506eabdf0e4117807dff6f08630"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/default_rank_2k_complex.h",
+      "sha256": "aa46bb1be238d8b28eb2f7a64176808a3f14f62892b02fdc0f5c6aaa78fd9187"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/default_rank_2k_grouped.h",
+      "sha256": "f30e0b0d55dcb537223c31e7209464be88ba164acb4cc06356f6a83a2bbacee9"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/default_rank_2k_universal.h",
+      "sha256": "0135956653b8df0f7060a49f41c42ae79267690ac469c445c02c36b1924a8dcc"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/default_rank_k.h",
+      "sha256": "63712f163d7ec04e81fde6641a96f078a840c01fe5363d4bf7df1d066d80dce1"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/default_rank_k_complex.h",
+      "sha256": "ef0807cce11fdc43087911be2a5352bddd834a3bf9365918b0f3a23bef786c94"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/default_rank_k_universal.h",
+      "sha256": "d9e711548109f6d8d4f31667c5dad6c605ddb576aeeea424877bd4f87a142ef5"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/default_symm.h",
+      "sha256": "6fa42ef0a1d2c7fba24094a163fd014176ba86d4ac828a513b7d9386d5c3810e"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/default_symm_complex.h",
+      "sha256": "0727fa574477edd63836d87a59813023f3d4b019d37f941fd31bcb8e044d15e5"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/default_symm_universal.h",
+      "sha256": "bb2b75b3aa934e297d55651d02f5d22165cd5ff374e6fbccfbbec344bb047695"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/default_trmm.h",
+      "sha256": "327b137d5462b3741a07aa57aa955260a4c093bbde14fba2d2be663202e5f7c2"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/default_trmm_complex.h",
+      "sha256": "70ddf3a2ce56d41341b34e769c1437f7d415913877d9ca4e4238ee08ea269037"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/default_trmm_universal.h",
+      "sha256": "99595ffbeac6d25f38a0914648f77fd9563512d597d795f0634f3eff52276e50"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/ell_gemm.h",
+      "sha256": "1c6be29679b7c1bd5301cf0229a2016d45679ff973e0e8747efa2524ba6bb19b"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/gemm.h",
+      "sha256": "2ef84bbf3f223518cba2f97bd6bcfe8b30d9c3fc57519f56f6f56b7663bf21ec"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/gemm_array.h",
+      "sha256": "aa8032cd4b63bdffbf358ccc98f06b8f1cffe4730c8bc9a188f1bc566658f8e3"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/gemm_batched.h",
+      "sha256": "aea47ba7bb13d956f57fa971e6fc2122113fb5e94f743dfd8b83606f445e496e"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/gemm_grouped.h",
+      "sha256": "c12637231e08519cbaa18fcc739e5db60145cc504bf9995b7c1b8a66d66ab2e4"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/gemm_grouped_per_group_scale.h",
+      "sha256": "79ec6bb93b4eeb2f806141a99515381ab57e5b6cdc954d500468e98a7eb418d7"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/gemm_grouped_problem_visitor.h",
+      "sha256": "0d3544883cebe2ef1ee24fe77d21c824a1d38f5ef10be25445c5fc7f28cc4334"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/gemm_grouped_softmax_mainloop_fusion.h",
+      "sha256": "b8ae2f3533e6d37c12104abcf204e5580207fc41438d0446b6e6c96c379e43cb"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/gemm_layernorm_mainloop_fusion.h",
+      "sha256": "5bc748e2671b6fd1206506530435c5d8fba63c2f41405dbc7b6afa670d4f997d"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/gemm_params.h",
+      "sha256": "2687b6e590f5745b98c3bb47ceb11369a5d38f06b249b5794be1c8d09c7b29d4"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/gemm_pipelined.h",
+      "sha256": "fcbb4e594a6871e14eb02bc47c815f9190435b0ecffac0f7be8c28c7c4c8b0a3"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/gemm_planar_complex.h",
+      "sha256": "4f44613cf307a47bda34bbc6a7adcaa6637fb2b6a4a2a47f6b109689015eda1e"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/gemm_planar_complex_array.h",
+      "sha256": "19e4949b01ded3625c28b01714d0de31b88cade692aefae09e71b431160180db"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/gemm_sparse_universal.h",
+      "sha256": "cfe94c6955795cb616289d1fc08ad7bbe3f00062d7defef6fb0dccc4a593e78a"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/gemm_sparse_universal_with_absmax.h",
+      "sha256": "ade6f2666ddd09abc8836d2abbcd11f7f5ace2b049fe77e32ff27f100856cef4"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/gemm_splitk_parallel.h",
+      "sha256": "37f4a64bb95a845de8b10ed15411d7f148c51b23ef0c21dec53e394812dbeceb"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/gemm_streamk_with_fused_epilogue.h",
+      "sha256": "ff9aa6f87f4335714ee14e0dd8851f96dedff5651224b5ad2329b1672ecaa6b3"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/gemm_transpose_operands.h",
+      "sha256": "ba7889f80af1cacb81426ca78997e4cb99c205860eb5ac533e25e734e003c081"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/gemm_universal.h",
+      "sha256": "1d1fe23d25674e3559e73b568f5d2b0b44c33baa9923e4d5e3d038db8ce79f97"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/gemm_universal_decl.h",
+      "sha256": "d40c2a481ad3a1ce385fa14db85f332487efc8fb3784225ae503fb3f9aa2546a"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/gemm_universal_streamk.h",
+      "sha256": "89d65c55ebe7474415f227884a76d896767146b606a23f4eaeca4bfd2a2164fc"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/gemm_universal_with_visitor.h",
+      "sha256": "b3460e90391c6ab475057a6de130b8e79ad8320aa3cc3a938a20869b41fb6bf8"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/gemm_universal_with_visitor_streamk.h",
+      "sha256": "97e901fb0f465861c4cdeef53b3992da801b56679c3f8b92204c0463857d89ba"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/gemm_with_absmax.h",
+      "sha256": "945b76e0d94e9a63425d4de4928d22f8f98959e4286708e9cd8a1572e7c19b7b"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/gemm_with_fused_epilogue.h",
+      "sha256": "74d89f0852bf4890587f61e4ce0c43612bceb855d63597dcb5ae9cac08b75327"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/gemm_with_k_reduction.h",
+      "sha256": "30209eebd39bfcba7e74b670fc41cceb059f5c4b0aebc1f4bbed8a0ab0604b35"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/gemv.h",
+      "sha256": "522ac8d06b3dd86985a69aab2f8b9a39bcdb2e76924689779f4b5ab7ac2b6f58"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/gemv_batched_strided.h",
+      "sha256": "07d087978ad64bc2c4c5fed27551665acd6241f097def29ffef24c347617fa0f"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/gemv_blockscaled.h",
+      "sha256": "b8db28680773ba9119bfb66ed9b30d53bc281a993718e1d84317a4f7584c57b9"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/grouped_problem_visitor.h",
+      "sha256": "3629375a2f2837cca3be176dda60afbf206ffcfc29fed264b6664a78ee2d503a"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/params_sparse_base.h",
+      "sha256": "f986082734e04e52fafbe745f6acdc3fa1862455e01e3fe507425d84977fc923"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/params_universal_base.h",
+      "sha256": "172ef99d535082469ef8c3b4cca62867d9df730ec5a8a046b143221770282c12"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/rank_2k_grouped.h",
+      "sha256": "5bf56b48bba7a3ebabc52d42bcd5321acdae92de3b9c351970da0da4eded693f"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/rank_2k_grouped_problem_visitor.h",
+      "sha256": "1ebd5ba99443daafb67ed83d64fcd31f3b5cefec7e27cb457ea498740eefa516"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/rank_2k_transpose_operands.h",
+      "sha256": "1bc69b8eb25b423e5e590a7d32d080b8eebbcdee7e7aa65a51811424a46b7d76"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/rank_2k_universal.h",
+      "sha256": "5b6b3924bf543364f809efe33b79006936828bc7be633e1a8ee1e1638d2dd5d8"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/rank_k_universal.h",
+      "sha256": "f03b88e863a03fa1a459a3cfc6e76b3fe6632808d0c4f3b4ddf963f2abdb6b69"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/sparse_gemm.h",
+      "sha256": "04dc8fa9b12749d7ddfa51adbd73248f5cfbeddae7e1460116cc6e4c24280b8a"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/sparse_gemm_with_absmax.h",
+      "sha256": "ac98673b0972425b561ade60116857c717cd8679a5c9470e5e90a3c8bf01f3fe"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/sparse_gemm_with_visitor.h",
+      "sha256": "95b0e4cb84de98e066dbeba1045012db57f17598fa63691a26669ada2752b45f"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/symm_universal.h",
+      "sha256": "04058b7b6dfa4dcf39a627ef12f9fbae10c1d25aa490d5884f6b865cd3c68f07"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/tile_scheduler_params.h",
+      "sha256": "6d06370136bd2e261583e035bf23cb77295973df553795dd4bd764829a18e50a"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/kernel/trmm_universal.h",
+      "sha256": "da347406c11b21849804d294a20fd4c62255472b93eaaf8b23f9947f7baaaff4"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/thread/mma.h",
+      "sha256": "130c112fb274b71fefb87d63edd6a964e7fd9e7b56bdffd027a5d9e02bcf36ee"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/thread/mma_sm50.h",
+      "sha256": "d15be778ba0f05283b382ea143efaaff6072b73cb066b963a32ab1dd1c0fc206"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/thread/mma_sm60.h",
+      "sha256": "b0551820e736d19b5a15efc5b5e095ecb8c72c015d53c5188c20f771448f4174"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/thread/mma_sm61.h",
+      "sha256": "ad7a2a5dd4e99639fccbdb026343d934dd29d3781979a849114196b732aa2272"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/threadblock/default_ell_mma.h",
+      "sha256": "1b791b41097c586338557ecca950943d0c40dd96f7a7eabb8be8941127bb33b4"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/threadblock/default_gemv_core.h",
+      "sha256": "130bbbbb60a3dbd3a0cb8ba131904a7ca5f2d30be014d1bfaa76f453147902a0"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/threadblock/default_mma.h",
+      "sha256": "0ac1ced6ab44558921aec22b8592949f060fbcd50974ec10a74175dce95c5477"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/threadblock/default_mma_core.h",
+      "sha256": "5ce37063015a5d7a86e0b5f255a6b7f815c5e7f6ea16ee7e7ca0a5d8f6f88a2f"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/threadblock/default_mma_core_simt.h",
+      "sha256": "7de1d009e3f6eddfde47f72ee3aefe338ad387ca3f508c4cb269a5160ee7b746"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/threadblock/default_mma_core_sm70.h",
+      "sha256": "34d28ac60196b90785ee88444f67ff954d2cdf2d723dd50dea21558febc7f23f"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/threadblock/default_mma_core_sm75.h",
+      "sha256": "80659cf69513641a3f72b1d9ff9c152c303b9746a8ee32bf5337d8566e1d76e4"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/threadblock/default_mma_core_sm80.h",
+      "sha256": "ab3b955a3e60e6b9a2fb1221bdc5759c2cc68adb5a7f32da29280474421db268"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/threadblock/default_mma_core_sparse_sm80.h",
+      "sha256": "20b2e482bde96a3bc83709cbdd27501815e07b8bdabfe071297921fca4ff5794"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/threadblock/default_mma_core_with_access_size.h",
+      "sha256": "640d6333f2e710decd1e4a7c508ab602cf45e2d02f457321771b02b30aef2f35"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/threadblock/default_mma_core_with_reduction.h",
+      "sha256": "c1e0dbc8acb3985711e014c55ad76e5f6a8b97c04763a89cd28ba075bc4cbca0"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/threadblock/default_mma_core_wmma.h",
+      "sha256": "29a6cb0db7c373bd22d3f5283cefbee9c8c6d5bd9287e09b919752859ce9034f"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/threadblock/default_mma_layernorm_mainloop_fusion.h",
+      "sha256": "8f684c3a7a806dc6a893b2f6c0d3aa35911220ffe6db638fd0da52067be26170"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/threadblock/default_mma_planar_complex_multistage.h",
+      "sha256": "8982fce3dfcc42a1e1c3f772ffc29e70f877b9bf16b180769a57b0e221f83b00"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/threadblock/default_mma_planar_complex_pipelined.h",
+      "sha256": "a3c4afb3358140b421f1d4eaa86ef2feda729e9e4da2c05724ec4520465047ad"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/threadblock/default_mma_softmax_mainloop_fusion.h",
+      "sha256": "e15555be54f49462fe68998b9174651242ab7abf0b4b01f8c0b10ff425296f0b"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/threadblock/default_mma_with_reduction.h",
+      "sha256": "1aacf38f0b05e1c160d6f75ceabd9629d2771e4103a98d961d3a317fdfd129bd"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/threadblock/default_multistage_mma_complex.h",
+      "sha256": "f1c4641f5d5aa94113d0863afe2ff7233cd5f2f4d6e50528ce7d0e6cac928bd9"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/threadblock/default_multistage_mma_complex_core.h",
+      "sha256": "b6fad473d3d1c661f22410424731aa65256463e83d5879a98025d9ee0cee418c"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/threadblock/default_multistage_mma_complex_core_sm80.h",
+      "sha256": "a03739d0fd1d0c4eac8ffa7d5d50d699017eba359541ba7d8e9620ca5ed7f9ed"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/threadblock/default_multistage_trmm_complex.h",
+      "sha256": "681f2d18e63bc55cc2f2ffa658dbc4bec11acc9aab4fd8d0951ccf1b9be53510"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/threadblock/default_sparse_mma.h",
+      "sha256": "15836042c234e3d640369e12bb66672657afe1db45bc428c862c689b03d88838"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/threadblock/default_trmm.h",
+      "sha256": "663325e77c3020ff6fbd4b166b97305c5b9901eb19e70731b76824222e25c2f9"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/threadblock/ell_mma_multistage.h",
+      "sha256": "b557b0699393d680ef622a466a353442ecfea165725ec91cc17110fe2494e073"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/threadblock/ell_mma_pipelined.h",
+      "sha256": "6e3acbcaf297587e876af7fe4c3a093168a270555624ea84feafa4cb4eba550c"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/threadblock/gemv.h",
+      "sha256": "f349d3de8286c5800567da6e77c23067e0a1a4554099c5c0c5ebb58db8c03100"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/threadblock/index_remat.h",
+      "sha256": "3f54c9134212c45a2bb328febcf60c6f3d62aa477b290f214ab7154c442c2906"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/threadblock/mma_base.h",
+      "sha256": "b912b7b24e246d0b77428e83a86575143b1191b6334b5d30877498819a40fdb6"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/threadblock/mma_blas3_multistage.h",
+      "sha256": "235f7f2c260e5f4e488226cb80df790a2881f91e15920bdb135a8cf644616d49"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/threadblock/mma_layernorm_mainloop_fusion_multistage.h",
+      "sha256": "a6b843a3b81b057f4c5f661c6f470147731153f9b63cdaae510134731a5e0ed6"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/threadblock/mma_multistage.h",
+      "sha256": "3f89e410ca96b06e4a56ba19f90399e8fdd2744a28c45d458a60940708b4171b"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/threadblock/mma_pipelined.h",
+      "sha256": "fac90ae04135ccacc0ea48440d20c1059c555ad6355a8608df0e6a74a8a7b4e5"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/threadblock/mma_planar_complex_base.h",
+      "sha256": "e96095627fce77ea514c727117d34f450b4541bbd90c33386de35872fed1bacb"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/threadblock/mma_planar_complex_multistage.h",
+      "sha256": "a4fa9a48763d2526b144a29ad081fc9d7ed473126fc188e4b276092d6863f5c4"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/threadblock/mma_planar_complex_pipelined.h",
+      "sha256": "c0f57cd888e54347615b9c24a7417f7c7808d01d70a4bb72d158a0bbaaa9a0f3"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/threadblock/mma_singlestage.h",
+      "sha256": "07582ba2aa5ed85c58f1c6a34c1f0082723525520c68feac631b737181f85564"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/threadblock/mma_softmax_mainloop_fusion_multistage.h",
+      "sha256": "518e893f1a9486f38386983ea164c28db33c79ca43d0c75d4e1131040ec32904"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/threadblock/mma_sparse_base.h",
+      "sha256": "3a390fee174e2e6be5be5d502175cc91edaa6b28488d0791a81ea85b062cd6a0"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/threadblock/mma_sparse_multistage.h",
+      "sha256": "34f8b8fda11accfc6d4e0b113b8c86a08a0542b04bb0cd67d0b119f97cace00e"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/threadblock/mma_with_reduction_multistage.h",
+      "sha256": "4c97e30b9d59b7d5f95e45d3c5133a488d766f41e474ce451ff20da4436fda22"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/threadblock/threadblock_swizzle.h",
+      "sha256": "6d68c3d8abf7aaca1337b36cce3724934bec551d02127e7973486ce916095579"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/threadblock/threadblock_swizzle_streamk.h",
+      "sha256": "2ed84c51c9752fb6c1af334f86aba49be50fdb4de1c1c0cf740110871e70e6eb"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/warp/default_mma_complex_tensor_op.h",
+      "sha256": "6d865922a45cb9bb5e6aa3da983fd169d901236d189e081458b7c56916f004da"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/warp/default_mma_sparse_tensor_op.h",
+      "sha256": "4a364094e1c91a9889e94ba4209ad460a9807ac3596770113c638c7632ae3c7b"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/warp/default_mma_tensor_op.h",
+      "sha256": "46d2d8299db997c3aed1b5e4bed4f2903c06cd3b882ec56c9d1187b5c34bdee2"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/warp/default_mma_tensor_op_sm80.h",
+      "sha256": "b8ff50c262b391d399ed92fc0ceb513cd4ad62a3c8b6a228a53f71305c6c475b"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/warp/default_mma_with_reduction_tensor_op.h",
+      "sha256": "776cb088a6847fe33a28722072859deab57d58c00b0c1405eb5960fbfd459e58"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/warp/default_mma_wmma_tensor_op.h",
+      "sha256": "916de96d75a1ea5aaf4dd812e3e01d3863a842393c6e191eb0c9074137efa303"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/warp/layernorm_scale_bias_transform.h",
+      "sha256": "53a77c5e4a5f15daef007c33d928cb40523d73e06047776b930ab3321d8e2bd2"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/warp/mma.h",
+      "sha256": "f972411fdcdcf8274baad170b9afb61403053fba68b4ebdb1e3bbfacd9d83563"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/warp/mma_complex_tensor_op.h",
+      "sha256": "063ef7bf36e08487e060efe76f03a9a107920b6b99bb60e50ba18bcfa0b675d3"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/warp/mma_complex_tensor_op_fast_f32.h",
+      "sha256": "5dd3d3e0696b4ab4c21577a2233a56cd22cbd8dc6cfdadf18a0ce212d05a2a21"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/warp/mma_complex_tensor_op_tile_iterator_sm80.h",
+      "sha256": "91ebd0266d2a649a6bf7f4fc8d2d875c172348d9e28affb273b76670d0c0c2b6"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/warp/mma_gaussian_complex_tensor_op.h",
+      "sha256": "4414c02af6fa60ae6b75209ecc20cf95faa763c9790a862dab2c41308163b45b"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/warp/mma_gaussian_complex_tensor_op_tile_iterator_sm80.h",
+      "sha256": "f41176552ebdc6e183b3c4e26f7e7e6325950c6706d053609de0c319dbcdabd0"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/warp/mma_mixed_input_tensor_op.h",
+      "sha256": "0a27c6943e45127dec62c49cf8185dbe44ea54460ba1a9556eee3939c28989bb"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/warp/mma_planar_complex.h",
+      "sha256": "ed11b8a67dc7471aa236019fba88c82ece41e85e9b35a0a74cb0fc544f7bfc6c"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/warp/mma_simt.h",
+      "sha256": "dc2e3b55842dd235f790e6b1c00528ddf0066d0f43a5a609c94da0dc07fc6002"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/warp/mma_simt_policy.h",
+      "sha256": "0469c741a85400a6702a9910584ae1d2546d5f238458cb2a66b3af97ea1078ab"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/warp/mma_simt_tile_iterator.h",
+      "sha256": "95031c798a5df4e10192dcb37a27b030874a70d0c45459c9544a7b49165cbb67"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/warp/mma_sparse_tensor_op.h",
+      "sha256": "9aed1a437c480d0bc4fec436d63a3c526c3173ef8bbb8a26cd320354aa342d1a"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/warp/mma_tensor_op.h",
+      "sha256": "6642025020444930188fee16b9870c7edee249736e2213432aa26dac0a9eee51"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/warp/mma_tensor_op_fast_f32.h",
+      "sha256": "1707213d882effb724f8f1642b77c84334566ea188c146b99d39eafb27e8b882"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/warp/mma_tensor_op_fragment_iterator.h",
+      "sha256": "9ddc0c943eda0a50f7fa32b5b4a01008b4ebc6b22d38ae80b732ef44ea2cb174"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/warp/mma_tensor_op_policy.h",
+      "sha256": "65e570dda86e8c87b0584668afea1409b2996f9f2c7ecdb55a9a334cbde8d121"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/warp/mma_tensor_op_sm70.h",
+      "sha256": "49d9b316e52eacd1365a5061cba568ff2220de967ae6c221335bc851d4f5a865"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/warp/mma_tensor_op_tile_access_iterator.h",
+      "sha256": "09afc49bf994244ce9bf34fc2cff1e01f407f680e5b86173a7819deba3e79cf9"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/warp/mma_tensor_op_tile_iterator.h",
+      "sha256": "87b7b522608a9ae1cecaa7b2913ddbe56b7ffb7d184742526e84f915f256dc1d"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/warp/mma_tensor_op_tile_iterator_sm70.h",
+      "sha256": "9109a6e8716bfaaeae1025c27b52b16fe7d37858e991db44c1dd940b873cb9c2"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/warp/mma_tensor_op_tile_iterator_sm80.h",
+      "sha256": "74c8d2e51aa13e8cfe95a7a38b1bdcd1cf3752aef2d6cc9e5e66d6372a747dc6"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/warp/mma_tensor_op_tile_iterator_sparse.h",
+      "sha256": "fe8183095df6ef40d37dcb434168eb918b500f8499f825e94618166d7817b843"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/warp/mma_tensor_op_tile_iterator_wmma.h",
+      "sha256": "9f70dfed1d845445488be4b0cdad5e91f5ca4a93c781a158577437e75c0ed2e0"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/warp/mma_tensor_op_wmma.h",
+      "sha256": "0e8498ad650b483806a60aad419cea6193f4302851b931eeea7d24e6586ab508"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/warp/mma_with_reduction_tensor_op.h",
+      "sha256": "881bbaca182c1fc1ed0f732828d34d415adb0b7cdabc50769249cd2aca234b17"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/warp/scale_bias_tile_iterator.h",
+      "sha256": "6c533f9279901d64bff3295504b7ae9b5a04694abe2bc6cf4deffbe122774ba5"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/warp/softmax_scale_bias_transform.h",
+      "sha256": "e99a2a8319cea2454e03b852dc7bffdb7794704fcbc1d4126853a37f8e2fc53a"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm/warp/tile_iterator_planar_complex.h",
+      "sha256": "aea61a730ac29d973ec05311fa2aea55154bdcb15fe8db56a7da00a1a2c38fa4"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/gemm_coord.h",
+      "sha256": "1b9d463105ef5a9f3b66b7ee4c589e3e9535241ec44d146fe4a12c5209f29ac9"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/half.h",
+      "sha256": "1da1a1eba18a9fa62e7d3eabd5977af312cb589213f2188a48234d61bb15ed4d"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/integer_subbyte.h",
+      "sha256": "0100c6f35ffda1419fc5f06c2b8db129f4e31f0229d57c14eac65ef7e9b2a467"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/kernel_hardware_info.h",
+      "sha256": "ef86f98aa102be4671e1e5dc05087d9c3d8321ee41d1389a927553f09ae5d0c6"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/kernel_launch.h",
+      "sha256": "d9cb7d3bea0446c1f6f7a441758ce3357403796ba5fa98f1f1b39c71b3a681e3"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/layout/layout.h",
+      "sha256": "259da643dfd0498946ea81718676afbd68d2348cac171da6b41bf896f94b0d08"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/layout/matrix.h",
+      "sha256": "f7ff90051e0b2c7ea6f1295e62a2550e89aec5f8385a26c38ad38890a670341d"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/layout/permute.h",
+      "sha256": "bbba15b1896db9e072ee0aa8f86312e22637176b3f6fa5152400440481e4c30c"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/layout/pitch_linear.h",
+      "sha256": "f3d01d0cafed30d817c41ec5c4acc8c89d405bce9854eb7f0cd68f8363ed146a"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/layout/tensor.h",
+      "sha256": "80a337895d3efc47d400ab573ca7a4763bd0f8c83ec949d47d88654f4b21361f"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/layout/tensor_op_multiplicand_sm70.h",
+      "sha256": "9299f947d97c8a66c0a39fb2904bdd1513e54743e204e02fd144f770cc023f2e"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/layout/tensor_op_multiplicand_sm75.h",
+      "sha256": "d4fef95a420e5724b775f854252352fa0447742d19e35fd26e7e70c72051db2f"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/layout/tensor_op_multiplicand_sm80.h",
+      "sha256": "8ca98951049a3ecd2cf0027d7aaa07f6fddeb01e0c1d9356bdf66707c7231b97"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/layout/vector.h",
+      "sha256": "4c08c6e7935d76ba92318c281abb803b3cf669a76ac87f15881fdc8ab526c90a"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/matrix.h",
+      "sha256": "1f49e26e9f35de517ffcbc26bd67199f62037ecde1e7404e3a2f329ae2a6a848"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/matrix_coord.h",
+      "sha256": "22b96274790f0f1dfd44aa476c1575c3ba44ac905353efc3325404530e39fe7e"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/matrix_shape.h",
+      "sha256": "a5aa67691c6391a462696556df9a50d84746005d52f5980ee57870165edc0722"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/numeric_conversion.h",
+      "sha256": "a0ca8f57c5ffb29de746ed5680559acc5f0c2257a22791c44a07c7d70b809be5"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/numeric_size.h",
+      "sha256": "8b6948eb7e6e2675e95b57f3c32e90fbfcd53a1c05043305b34ccbec1642bf26"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/numeric_types.h",
+      "sha256": "d0caaa13b790351b7052aef6f0811fd11a06814b56389680c4d32955dd77aaeb"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/pitch_linear_coord.h",
+      "sha256": "5ae2681cc9098e616dafebe3386bdd5d56c7dce33754beb6f6485716d127c952"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/platform/platform.h",
+      "sha256": "bbd3f04c800d32ab68c95a146ebec55b2c2773271d89a200df12a22e2270380e"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/predicate_vector.h",
+      "sha256": "8ba1b9b35e68878f1192996b13fe33fe636c0ee89160c92a647c50d531e1814e"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/quaternion.h",
+      "sha256": "521209fca5d47f6a11fecbcbe03af5ad0e84375e63f44d2031614b3b4e1d4bd6"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/real.h",
+      "sha256": "6fd96474fd128d6ee44bfdc9274a9cabf805bd726ff7a1563b70fd3b41fbbf44"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/reduction/device/reduce_split_k.h",
+      "sha256": "ce389e886522f0df573df924b718246a1b251b701b32b4cfea53a945c3b2820b"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/reduction/device/tensor_reduce.h",
+      "sha256": "be4a0a1e39a65f18954ae232b2d890be12c8dd252bc5e0e59e37a34db5ae4565"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/reduction/device/tensor_reduce_affine_contiguous.h",
+      "sha256": "553f8810f1219f51a142e49fe5a5d0bfc8a9a553a041fe872b269b74907bbc6b"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/reduction/device/tensor_reduce_affine_strided.h",
+      "sha256": "b8bf2b3799d731100d986d5f96d37e44b47750ea1b4126a51b2e2315067d69c3"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/reduction/kernel/reduce_softmax_final.h",
+      "sha256": "71ee31eebddd64d055a1ac341bea5f8cf9551fc58deebb90c43660ae99f37d66"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/reduction/kernel/reduce_split_k.h",
+      "sha256": "8eeb4aec22b215a8b1ba85ab0fb7e4dbb3620f222571d268a2ffc9d1335a8895"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/reduction/kernel/tensor_reduce_affine_contiguous.h",
+      "sha256": "ccb697a588dc1302179e9419d4df1a4e6e9c61c034935da2d476982e7f3f749a"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/reduction/kernel/tensor_reduce_affine_strided.h",
+      "sha256": "945ec58286b7d85a26877f082efe63574ce7b201194063280aef6f3ae966ae94"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/reduction/thread/reduce.h",
+      "sha256": "7aab1efe95a5d3c504ce88933e1f3cf7d8515d8c4a451be0b58ba30108eb121b"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/reduction/thread/reduction_operators.h",
+      "sha256": "d0eb73d4a9ff0c78f4c3044ce2711b090077175020da639b6d7018290918afc4"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/reduction/threadblock_swizzle.h",
+      "sha256": "cf3dd7adf51c771fce3fbee0bc4d50f0ac77c6a119513af0f8e83481a7518706"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/relatively_equal.h",
+      "sha256": "2eee9418695a4e1b9e3134e32288e811f8ad6fc0a8e3b348c385e6b97994bf50"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/semaphore.h",
+      "sha256": "854eeafb6d774891c40ec2a6a8dffae9277450e300486d2b182b949aade7fe06"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/subbyte_reference.h",
+      "sha256": "e49ab0b69c5d1cff243946d4678dc3bf56e0835d2278235f49de6894feca276b"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/tensor_coord.h",
+      "sha256": "e97dbe66edce5c63d4207355163188fc50c10a86359f51e111478f51f7089214"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/tensor_ref.h",
+      "sha256": "734908cf9b867f28439ae59023fde6b1e36a71f7aacd8ee065146e8d3b23863e"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/tensor_ref_planar_complex.h",
+      "sha256": "4185256d3b5a3ab9be5d234bef9f8a616273ba39cbf6ae49243371a0d270b26f"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/tensor_view.h",
+      "sha256": "026cc5dd6c3352da4785365f1184ad17af34c77523df04d447d552bc3ed6bc68"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/tensor_view_planar_complex.h",
+      "sha256": "0e2292afec05131952ca030920ae95ccec39716933a1ad047b349800822047d1"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/tfloat32.h",
+      "sha256": "16a926b8caf6eef11d511f998fa51b922f6065a1fc4a5bde788dceaf241b2228"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/thread/matrix.h",
+      "sha256": "281fc2699998893a083737526532b38cc2ca33a5f782a6a30f9631aad50eaf9f"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/trace.h",
+      "sha256": "b124b4c1cb13a7877188f142a39fb88f652ac3ff0bf7a1d8af9faed29b805f96"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/transform/pitch_linear_thread_map.h",
+      "sha256": "d28cee3534a897b4d2379868a2f4d733d79638802e4d6d63cb35ac27b733aa89"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/transform/thread/transpose.h",
+      "sha256": "81cca89f50a27ad09821c35cd804687f71d3b990158b541db42f399acd32aabf"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/transform/thread/unary_op.h",
+      "sha256": "7f9a91bdc04947599cecede830e1f33ed90d9ee8beb4c446cb0d62d66a1929f5"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/transform/threadblock/ell_iterator.h",
+      "sha256": "452ca74528dd650b7633c983ba327f73003cb97973eb5fd96aca712e9876a272"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/transform/threadblock/ell_predicated_tile_access_iterator.h",
+      "sha256": "7af6f6a7603a730b63c5fc34ff1f9161f445b4947884bfdf4e33f19e7a99687b"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/transform/threadblock/ell_predicated_tile_iterator.h",
+      "sha256": "7c96296bf63349b0714ca06c6291bbe899e6a017cb1d5876dded34e8f3d37128"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/transform/threadblock/predicated_scale_bias_vector_access_iterator.h",
+      "sha256": "9a4c9211605c22b1d40d7f5949c6ee9f154f3c9c15a15f6e143d2d2cd7c80e76"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/transform/threadblock/predicated_scale_bias_vector_iterator.h",
+      "sha256": "c77cd5a7571b1e821bf5b92b8112fe4b3b48d09dc7fa533fb6b5ea9cb226d4f7"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/transform/threadblock/predicated_tile_access_iterator.h",
+      "sha256": "bea46e994f412ddabe7ff091d5f632a9fb7dd5edbd74902c4d9dd022f128f318"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/transform/threadblock/predicated_tile_access_iterator_2dthreadtile.h",
+      "sha256": "41a6278aa465a774b0b81a445594a8dfd167f2447053d6d7040738dac7f39ab9"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/transform/threadblock/predicated_tile_access_iterator_params.h",
+      "sha256": "3efa8edd754f72fe97aed17188d5fe77c0df0431e7df162609f40801bf318359"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/transform/threadblock/predicated_tile_access_iterator_triangular_matrix.h",
+      "sha256": "de5b2eb430cb98a311384bb43cc05afc8e3152294bd5110667aa764bb4fceab4"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/transform/threadblock/predicated_tile_iterator.h",
+      "sha256": "f3a7c5f6251bb0ef8b590117c2c1acb3c11d78eda8dfaad00b6f2804a2378006"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/transform/threadblock/predicated_tile_iterator_2dthreadtile.h",
+      "sha256": "4a6d88d2beca239f42b2ada64249fa2f9ae51a3f03e4fe149732ba44f404a694"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/transform/threadblock/predicated_tile_iterator_triangular_matrix.h",
+      "sha256": "72c301ae50bc72bb45c0b5508cc2db21527be446eec5606e567839f060db6210"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/transform/threadblock/predicated_vector_access_iterator.h",
+      "sha256": "312504157bf6caa33db9b104499ae657994ce99b17f91eadf59394b4fede0d0e"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/transform/threadblock/regular_scale_bias_vector_access_iterator.h",
+      "sha256": "23ee41cf5a4b448465f24373440eb1d6cc272945ccc4a92b8e33fd735f587398"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/transform/threadblock/regular_tile_access_iterator.h",
+      "sha256": "46734ebbba2c2f82eec138c61dc90dd7cf84bd8a28564cb5e1b176cdd7b4a221"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/transform/threadblock/regular_tile_access_iterator_pitch_linear.h",
+      "sha256": "1061192cb8ddfd6515462d2eba76e658ef83d5cd73e8c9515a8567819176c0be"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/transform/threadblock/regular_tile_access_iterator_pitch_linear_direct_conv.h",
+      "sha256": "dc0ab04cd73313c1405b4ec13c6e4050f5651ab9a03a8299eaf56b1c69470347"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/transform/threadblock/regular_tile_access_iterator_tensor_op.h",
+      "sha256": "d3eb84b73dcddda1720684fe7051dfe98a48624c970261dea51a93810ca7bb24"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/transform/threadblock/regular_tile_access_iterator_tensor_op_sm80.h",
+      "sha256": "ecad65270e7f57998726d42168272eb941b0a6d627205a620a2340bc330409f7"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/transform/threadblock/regular_tile_iterator.h",
+      "sha256": "d37179eebba723577b2b1e6c56ebd2d4addf15c57baabb8baf5446690d072008"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/transform/threadblock/regular_tile_iterator_pitch_linear.h",
+      "sha256": "1098ae3846e7812ec194a27cce48f699433dc7faadc62bc72c687519bc3d2e9e"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/transform/threadblock/regular_tile_iterator_pitch_linear_2dthreadtile.h",
+      "sha256": "00d925a5f5c4721ba40e946e7351849fe9fe10f0662d17ed391d94bf294f9d13"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/transform/threadblock/regular_tile_iterator_tensor_op.h",
+      "sha256": "8da22500088ab7fe4416a9699caa0396307d7e73a31fb19b5cf8aa2f493a49a3"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/transform/threadblock/regular_tile_iterator_tensor_op_sm70.h",
+      "sha256": "bec085104ab1934791dd94a401b04c5ab77f391d37a67a7fc152c0d21407b9f3"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/transform/threadblock/vector_iterator.h",
+      "sha256": "9306bdbee848ecc5dce74357d933ae34e041197b8e5d220009d684eb9ce7caad"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/transform/warp/vector_fragment_iterator.h",
+      "sha256": "bfd6a8365d9d35199500686bacaebc0ce92afb7582aba943b010cc40ef2ba8e5"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/uint128.h",
+      "sha256": "f7ad2b619b69be1ea9caa2280d856a5c4ad07f57334b5f737dd5332805fe3c00"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/uint256.h",
+      "sha256": "c3ab76ecc5fff8cc57bef0d7c4406521e1aae480e65a22f70c7c8138cf075578"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/version.h",
+      "sha256": "471048c340f3a7d8b2bc1618919fd4368c05f357755e2445c34fda652182783d"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/wmma_array.h",
+      "sha256": "747b26a6980c2e20b7f5f80d907ea40ea6dabeec8ec23be26fa9f5da61c6a63d"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/cutlass/workspace.h",
+      "sha256": "24b6c737521332445c0d6b08698234442c2a3a4fd7b0ed87c14488b2be13cb12"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/comm/barrier.cuh",
+      "sha256": "95325b933444609abc798b4c62777cfe6d0a59b740391321c67371780e5099a7"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/common/compile.cuh",
+      "sha256": "a13373053608b286c1ac39ce771cdd6ab133f44ec4f016bd6fcbc5032132a1a9"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/common/cute_tie.cuh",
+      "sha256": "872af0b873a9b367c01eaf68c321ddcd9d0f3c26ce7b8d3abfc8a66d89b8ad65"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/common/exception.cuh",
+      "sha256": "ab6b2bd75c06c054fbbe97d5897efa7909d380ad531620770c031b3debdf2123"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/common/math.cuh",
+      "sha256": "576e9db1a1889087f77b3f74d74d011bf452f16c0e5c030bdd661e961c074ddc"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/common/packing.cuh",
+      "sha256": "7b216c4a4f94e6691e2f553b204f697257eac1312b71fd7d24e7b420815c67b8"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/common/ring_pipeline.cuh",
+      "sha256": "d231e0ceb5e41d3128a82b3e326b6cfc5c46b58013edf0bfd48bf1704859711e"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/common/sm120_utils.cuh",
+      "sha256": "18b8f99f38bb53f145b3861417e68511e77b31daad68599c1fa151223f08c45a"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/common/tma_copy.cuh",
+      "sha256": "aa5ba45a086adab4c14f85c7e8f820978778e1dc4fc06cb43167d8eedcafa199"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/common/types.cuh",
+      "sha256": "a5fc39709678359f8a326dcb6c216edf09aa7dc7443bacbe91cc416a8802e74a"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/common/utils.cuh",
+      "sha256": "6791c5cc7bb4f94042bf2ef16d5249b49271746116c48f2c48845a90d4633032"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/epilogue/clean_logits.cuh",
+      "sha256": "06331e5023fa6209c8a6c903ac0bd296308def4278ec53ad93ca60786314620d"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/epilogue/sm100_mega_gate.cuh",
+      "sha256": "f6a5a9c433ecd5dfc49a5594047d11474e2fd9d4113a63c57f04f9929dea590c"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/epilogue/sm100_mega_mhc.cuh",
+      "sha256": "5bfb051b4d5d3705b00919a7100d9f11fc6466be5b436930b721d5dc051d2813"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/epilogue/sm100_store_cd.cuh",
+      "sha256": "34264511eadb165477cfd92059e03f7cc7dbb5b694298f7e4e9f1074294dc4ad"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/epilogue/sm100_store_cd_swap_ab.cuh",
+      "sha256": "77c280afab2a284d7a105323f3a878549d1e7f358ab0a28190c43958aed247d2"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/epilogue/transform.cuh",
+      "sha256": "85c5159fbfa9cfbda4a1f99885e72668e4df771d01e200001fe39ab89da17ccb"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/impls/sm100_bf16_gemm.cuh",
+      "sha256": "305553baec2adfd920b9921f86ce8864ae3efa3926a9d5d46774a380e3d87c88"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/impls/sm100_bf16_mega_gate.cuh",
+      "sha256": "5d97dba2eacaad4a71487f5fe12ba41725b002d4147624b79aed854977359370"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/impls/sm100_bf16_mega_moe.cuh",
+      "sha256": "5be3956f225721043ee18a464731f82292a24e88d2204d19243279e156ad0def"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/impls/sm100_bmk_bnk_mn.cuh",
+      "sha256": "49f167d1a23a65ba9d2000e1a5e675818ac4357a558509643aa1bfffdb1aba0e"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/impls/sm100_fp8_fp4_gemm_1d1d.cuh",
+      "sha256": "0b42d290fbcaea544a7b1c2c786429e52453fc60a74a939c20fa73ce960abf69"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/impls/sm100_fp8_fp4_mega_moe.cuh",
+      "sha256": "2e725484419819a1e87bfe76ed5c90799b980701fb8f9f2816910a4d2082ca9b"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/impls/sm100_fp8_fp4_mega_moe_situ.cuh",
+      "sha256": "569e21dac6a1362381d62d45a83ee4eb9835e42fbdd1112db0e6e60dd8e23b5d"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/impls/sm100_mega_mhc.cuh",
+      "sha256": "77fe3a79ad04c803fd24364f90e6f3b86b45ba8cbd67097b7ba928550c478f68"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/impls/sm100_mqa_logits.cuh",
+      "sha256": "2baf84765fbec5748cb25833d5628b6e44011124c404536efee1e784883db28b"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/impls/sm100_nvfp4_mega_moe.cuh",
+      "sha256": "6e57c2a6cbcf5f9d7160d354f149494c203c52857e89c2dcf0095c6dfb4ffdf9"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/impls/sm100_sparse_mqa_logits.cuh",
+      "sha256": "f20343222d59976b52f40cf3662593734e53b7b0410d1e33671b1a5996b3c707"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/impls/sm100_tf32_hc_prenorm_gemm.cuh",
+      "sha256": "37d28d517a7805c65e75d233ddf4ea63fc91f132660ce2887d8732b09c10822b"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/impls/sm120_bf16_gemm.cuh",
+      "sha256": "22478c1e35781f67396c758523b8097005b89edc2fa563fdd0b30403d86d387a"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/impls/sm120_bmk_bnk_mn.cuh",
+      "sha256": "98b36415b6cc14d1090d1b61bd0677ca04e143efaebfc3551d57cd333955345b"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/impls/sm120_fp4_mqa_logits.cuh",
+      "sha256": "280634d7bc61056c6bd1528fe45913dff273126324a5545a7ddb4539c1e21d4d"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/impls/sm120_fp4_paged_mqa_logits.cuh",
+      "sha256": "faa7bdcacb79b406c8e66b0b15b5b6bc734bc39f251f6a0ecc596f00ae744b01"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/impls/sm120_fp8_fp4_gemm_1d1d.cuh",
+      "sha256": "9969531b0f2f91703d0ebb111756a76c28aa5ee0d447db74276123fbdb0402cc"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/impls/sm120_fp8_fp4_sparse_mqa_logits.cuh",
+      "sha256": "d6c3454b08d1c22f2c6fa67378f2637d9dec8459a2a79c53b3c6cb3c93b4183f"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/impls/sm120_fp8_mqa_logits.cuh",
+      "sha256": "6f6dbf1158c2e5571bb90835a673f74cfc64f4c28e22a0f3f77ce73c554d702c"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/impls/sm120_fp8_paged_mqa_logits.cuh",
+      "sha256": "bbf7f7fb397adaa54bcf16eff299cb340edc380b1f0fe0c2b5a23c604454804e"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/impls/sm120_padding.cuh",
+      "sha256": "3c1c00fc798861d7012c73d997f7720ab1074f0451804063022247d932d526e6"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/impls/sm120_split_k_reduce.cuh",
+      "sha256": "2cbcf08cba3305f2175ac878adfb9122be69e837dee6564b14c1a21bb82d74b8"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/impls/sm120_tf32_hc_prenorm_gemm.cuh",
+      "sha256": "65e4d20ddd73576105ed13d284125459f6e3491fac2d069a1473ba95344d1c82"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/impls/sm90_bf16_gemm.cuh",
+      "sha256": "3f12ad05796d7b8451604ff12e0a45ad1d9725a313919557bcdd9aa11c50e285"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/impls/sm90_bmk_bnk_mn.cuh",
+      "sha256": "d1f90ceda13820c2d229e08982bf2b8bd8659a5a59e19ef86f181952f2f11ad6"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/impls/sm90_fp8_gemm_1d1d.cuh",
+      "sha256": "b35b34607e466c9c455b07e37618847dbb0604510c4b3d259cb37e8089355bae"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/impls/sm90_fp8_gemm_1d2d.cuh",
+      "sha256": "af3b1b26646869ecc7b6f8b9bf3fc5a42b20ba19f383671317fbe04b56a38b17"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/impls/sm90_fp8_mqa_logits.cuh",
+      "sha256": "d04c888c33951179e211c472e9bf575cd47efa9ee6a0d39423decff2e108f6d3"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/impls/sm90_fp8_paged_mqa_logits.cuh",
+      "sha256": "556b45f66e74062dd02eefa2e1992d7f1fd772ca3687f75ea59d3b20b8f2ddec"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/impls/sm90_tf32_hc_prenorm_gemm.cuh",
+      "sha256": "57f8d0f19f421f5a98a679cc0b8fb09908297621044260814ae59a6e541e131b"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/impls/smxx_layout.cuh",
+      "sha256": "cb72206057f00bd25cdc2d502997535948aaf18d2c678f97447548e317ca1ea3"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/layout/gemm.cuh",
+      "sha256": "b692f024495a4160dc65a8094bb13eae65be4c902d10436fce6446e6919d2b57"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/layout/mega_gate.cuh",
+      "sha256": "1a3d7908b6f024b06d2c320b1e7fcdc1fdf5362468d89de4723672cd397b4dc6"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/layout/mega_mhc.cuh",
+      "sha256": "c7a3afc14c6292ed69d14e0ad080cbf94855e98424ae0715cd07599dc82e6fd4"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/layout/mega_moe.cuh",
+      "sha256": "43b0f07bed73a6ed0a7c53b42308d709ccd42b824ad8eb2738875207c097bb68"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/layout/mqa_logits.cuh",
+      "sha256": "151de0f8dfb2d9e8a7b587c9fb5bedbbcb34fc885aa1d297a656281ab5d0c4f2"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/layout/nvfp4_mega_moe.cuh",
+      "sha256": "2167c2800546d6df22792864f715c41a1551d037c764b12c09d0770fcd5488e0"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/layout/sparse_mqa_logits.cuh",
+      "sha256": "ed4ea09e5e774808e2b25792af0c6e9992c47ff4b6a5609288eba85e7bfd1c0a"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/layout/sym_buffer.cuh",
+      "sha256": "b157512fd62a20bf09a8fab489d4dc209751d0560c1343829e78374dbf6578cb"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/mma/sm100.cuh",
+      "sha256": "439c57d8aa4914c01dcb55a874ace4fdaecec4682ea1099ba36e3cb8b23f41ab"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/mma/sm120.cuh",
+      "sha256": "5199232b50c8b9518a60f377cb3b1286c8fb14e6129369e2e1c2415073b3217c"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/mma/sm90.cuh",
+      "sha256": "548fe0c63d7f36527a3d2b87d5ee8f1330c6fb5cc98bec1bc4bd9e20735482ff"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/ptx/ld_st.cuh",
+      "sha256": "072effb9ca3011db86becf49e674606b5140c666c65393f311cf06f6bbf3ec78"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/ptx/nvfp4.cuh",
+      "sha256": "a7099a3c0542373a7183e729d58bacc82c4367c089e95811b2481655999c3813"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/ptx/tcgen05.cuh",
+      "sha256": "7760eef80c6a38ee424974f6f48f8923a56465326c159c8a795e6e8f4fa76b42"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/ptx/tma.cuh",
+      "sha256": "519bf2f4c26ef7368e6cd239027061ee2725fbb3efc89b7574233037de228d4a"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/ptx/utils.cuh",
+      "sha256": "8a9d5e03afdeb20f53b1027e9f6f3a2ef45bb33152dba2b61d778684e1716412"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/ptx/wgmma.cuh",
+      "sha256": "dad341b3c4d2a1ea3a68c6028b454c72c6ce6105e86dfcdea6aaef243164ec1b"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/scheduler/gemm.cuh",
+      "sha256": "7b53d5a937bda32cdcbf022de63bd0e28d622e4066da659f06455f281b89500a"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/scheduler/mega_gate.cuh",
+      "sha256": "ae756c4bffe3f6f2cb96bfba1bc9582ce28ce068915590496c6982c9ec377639"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/scheduler/mega_mhc.cuh",
+      "sha256": "bf774cfaa8ce01cd31d77463637c9e543ee6684ef82386790baffc105bae73e5"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/scheduler/mega_moe.cuh",
+      "sha256": "10a75e0e450e61b350fd18d5815097fb52296681303508aaa2c6526f3e2e57b3"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/scheduler/sm100_mqa_logits.cuh",
+      "sha256": "60258e5cefb23384c0be5a61c2a75b9ec839a14dd849e682e5ef23f5913133cf"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/scheduler/sm100_mqa_logits_metadata.cuh",
+      "sha256": "ac76298b76931a740403afbccd734c1ea47eedeb21dee154680e3b936a7f0f7c"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/scheduler/sm100_paged_mqa_logits.cuh",
+      "sha256": "271f6204b18d1e6d2f17c15329b1c8427234f8e0cc77ddef7caf333a8a9d6868"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/scheduler/sm100_sparse_mqa_logits_metadata.cuh",
+      "sha256": "c2d8c12744309b08881666eecfd3cbe9fd59f07930b18750f5a9076fd87a2276"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/scheduler/sm120_gemm.cuh",
+      "sha256": "3d186b16abece603c148f299de0a6e8c975f463284421bbce99621537d7a5763"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/scheduler/sm120_paged_mqa_logits.cuh",
+      "sha256": "6d11444e533a7adeaacc760eee73841df1198b260b1c71e28cdc0aa240636b89"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/include/deep_gemm/scheduler/sm90_paged_mqa_logits.cuh",
+      "sha256": "78dff045c138dbac29766856b2024fd042b48a905ae409bbc0684e588e4d81ee"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/legacy/__init__.py",
+      "sha256": "667f5068c618eceec4d9c839b8367273ddd8c2bd688be4510f0d0cd25296efde"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/legacy/a_fused_k_grouped_gemm.py",
+      "sha256": "9b4b5c96b17667b41d4e5ba7ebb75ae731fc92577a3a0d3872f379caa3568966"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/legacy/a_fused_m_grouped_gemm.py",
+      "sha256": "6d997188e26caf96e02c9e72edba269bab50c4a863830f57e7014b6642df1084"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/legacy/b_fused_k_grouped_gemm.py",
+      "sha256": "72cfbe2d38421fc3a6eeef5cc8f41497f42b10464112895d7e86ed55869b6f73"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/legacy/m_grouped_gemm.py",
+      "sha256": "dcbc27c583cbe0e600a94b66c2c28d51b5b79f46188582efbfd8fec801207044"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/legacy/tune_options.py",
+      "sha256": "73696872fa80d4b72cf25a469de55534f6689f4dfea84b66d150d57ded004b26"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/mega/__init__.py",
+      "sha256": "3a221b6d380fd0c94e9be1bd45c2e79554f48a25a68f88a78bca1b0fd98bac38"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/mega/nvfp4.py",
+      "sha256": "66d66b00b555b04738e7766b138211922ad64ef7f20d2ce8e5b0cfed584e85c4"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/testing/__init__.py",
+      "sha256": "860e35af472f2e293883f8d06b928058f05fd5c32a4f108e2d774958ee198529"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/testing/bench.py",
+      "sha256": "478d694e5fe95cca78a2c6ee53f7436fc906dc4851cf51ab88a5a9b617142332"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/testing/numeric.py",
+      "sha256": "de92b73f28acb3c5f560fbb942161c88c7e849e6c52bb38fd20c67b8e4d747c7"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/testing/utils.py",
+      "sha256": "20e5e4450cec023dabd8e92e32d9d6b7500991b9264d1068e942999aa52afec0"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/utils/__init__.py",
+      "sha256": "bf31f6e9fc30482ef83a73d63fdb6ed4d46deec847b35c0f9d39816d9b923bb4"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/utils/dist.py",
+      "sha256": "acf0fc25aa44ca5a54f2f757a39d462f43cf4ea1585d49f3feb59deecffefee3"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/utils/layout.py",
+      "sha256": "eb8ad89745ebfa72bf1a6ded9129ee57f15515857787f0308bb92c61dcbc5b5a"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/utils/math.py",
+      "sha256": "9cdecd0c0a0a8b3c64af87107464c91510876110eb80bdb485ff1f74eda8ea0e"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/utils/nvfp4.py",
+      "sha256": "0f385e55c0c9d73eb1a3c355726a27238aff5dfee816749d442a9525c16c7c4f"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/utils/deep_gemm.py",
+      "sha256": "3fae19d459c220d36eb00f1f4818c07fdfe28c0056c5a48dbee9e907a74b0bc8"
+    }
+  ],
+  "versions": {
+    "torch": "2.13.0+cu130",
+    "triton": "3.7.1",
+    "vllm": "0.32.0",
+    "apache-tvm-ffi": "0.1.11"
+  },
+  "binary_build_commit": "unknown; wheel name is not current HEAD provenance"
+}

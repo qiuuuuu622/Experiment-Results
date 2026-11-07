@@ -1,0 +1,9 @@
+{
+  "status": "failed",
+  "reason": "verifier fixture arity failure after first 3 shapes",
+  "not_final_acceptance": true,
+  "host": "h20-4",
+  "gpu": 1,
+  "source_sha256": "1cc9ef116c844eaa2fb780c67730bd9925a2f4f929ebfe62974deb0278ff79da",
+  "command": "CUDA_VISIBLE_DEVICES=1 .venv/bin/python -m benchmarks.kernels.dsv41_indexer.verify_prefill_perquery --output /root/dsv41-indexer-resume-20261107/results/indexer/20261107-resume/p5c-perquery/verify-v5/result.json"
+}

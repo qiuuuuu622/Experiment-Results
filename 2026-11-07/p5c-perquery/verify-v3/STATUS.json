@@ -1,0 +1,9 @@
+{
+  "status": "failed",
+  "reason": "verifier failed on unordered Eager/Graph topk positionwise comparison",
+  "not_final_acceptance": true,
+  "host": "h20-4",
+  "gpu": 1,
+  "source_sha256": "091149978c3727db73f178a0aa0b38799eb015a8cb5d2fdf7361ace441c455f5",
+  "command": "CUDA_VISIBLE_DEVICES=1 .venv/bin/python -m benchmarks.kernels.dsv41_indexer.verify_prefill_perquery --output /root/dsv41-indexer-resume-20261107/results/indexer/20261107-resume/p5c-perquery/verify-v3/result.json"
+}

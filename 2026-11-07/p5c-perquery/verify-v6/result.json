@@ -1,0 +1,1711 @@
+{
+  "status": "passed",
+  "device": {
+    "name": "NVIDIA H20",
+    "sm_count": 78,
+    "topology": "\t\u001b[4mGPU0\tGPU1\tGPU2\tGPU3\tNIC0\tNIC1\tNIC2\tNIC3\tCPU Affinity\tNUMA Affinity\tGPU NUMA ID\u001b[0m\nGPU0\t X \tNV18\tNV18\tNV18\tPXB\tPIX\tPXB\tPXB\t0-187\t0-1\t\tN/A\nGPU1\tNV18\t X \tNV18\tNV18\tPXB\tPIX\tPXB\tPXB\t0-187\t0-1\t\tN/A\nGPU2\tNV18\tNV18\t X \tNV18\tPXB\tPXB\tPIX\tPXB\t0-187\t0-1\t\tN/A\nGPU3\tNV18\tNV18\tNV18\t X \tPXB\tPXB\tPIX\tPXB\t0-187\t0-1\t\tN/A\nNIC0\tPXB\tPXB\tPXB\tPXB\t X \tPXB\tPXB\tPXB\t\t\t\t\nNIC1\tPIX\tPIX\tPXB\tPXB\tPXB\t X \tPXB\tPXB\t\t\t\t\nNIC2\tPXB\tPXB\tPIX\tPIX\tPXB\tPXB\t X \tPXB\t\t\t\t\nNIC3\tPXB\tPXB\tPXB\tPXB\tPXB\tPXB\tPXB\t X \t\t\t\t\n\nLegend:\n\n  X    = Self\n  SYS  = Connection traversing PCIe as well as the SMP interconnect between NUMA nodes (e.g., QPI/UPI)\n  NODE = Connection traversing PCIe as well as the interconnect between PCIe Host Bridges within a NUMA node\n  PHB  = Connection traversing PCIe as well as a PCIe Host Bridge (typically the CPU)\n  PXB  = Connection traversing multiple PCIe bridges (without traversing the PCIe Host Bridge)\n  PIX  = Connection traversing at most a single PCIe bridge\n  NV#  = Connection traversing a bonded set of # NVLinks\n\nNIC Legend:\n\n  NIC0: mlx5_0\n  NIC1: mlx5_1\n  NIC2: mlx5_2\n  NIC3: mlx5_3\n\n",
+    "torch": "2.13.0+cu130",
+    "cuda": "13.0",
+    "memory_bytes": 101997346816
+  },
+  "cases": [
+    {
+      "rows": 1,
+      "requests": 1,
+      "index_keys": 7,
+      "step": "initial",
+      "source_unique": false,
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 5.960464477539063e-08,
+          "nrmse_vs_native": 5.9590527045367117e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.00037354230880737305,
+          "fp32_strict_failures": 1,
+          "native_fp32_strict_failures": 1,
+          "native_fp32_max_abs": 0.00037360191345214844,
+          "score_bytes": 256,
+          "gather_bytes": 0,
+          "chunks": 1,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 5.960464477539063e-08,
+          "nrmse_vs_native": 5.9590527045367117e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.00037354230880737305,
+          "fp32_strict_failures": 1,
+          "native_fp32_strict_failures": 1,
+          "native_fp32_max_abs": 0.00037360191345214844,
+          "score_bytes": 256,
+          "gather_bytes": 8448,
+          "chunks": 1,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "graph_protocol": "poison buffers, replay, clone all outputs, then oracle and eager"
+      }
+    },
+    {
+      "rows": 1,
+      "requests": 1,
+      "index_keys": 7,
+      "step": "changed_candidates_lengths",
+      "source_unique": false,
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "fp32_strict_failures": 0,
+          "native_fp32_strict_failures": 0,
+          "native_fp32_max_abs": 0.0,
+          "score_bytes": 256,
+          "gather_bytes": 0,
+          "chunks": 1,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "fp32_strict_failures": 0,
+          "native_fp32_strict_failures": 0,
+          "native_fp32_max_abs": 0.0,
+          "score_bytes": 256,
+          "gather_bytes": 8448,
+          "chunks": 1,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "graph_protocol": "poison buffers, replay, clone all outputs, then oracle and eager"
+      }
+    },
+    {
+      "rows": 1,
+      "requests": 1,
+      "index_keys": 7,
+      "step": "empty_candidates",
+      "source_unique": false,
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "fp32_strict_failures": 0,
+          "native_fp32_strict_failures": 0,
+          "native_fp32_max_abs": 0.0,
+          "score_bytes": 256,
+          "gather_bytes": 0,
+          "chunks": 1,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "fp32_strict_failures": 0,
+          "native_fp32_strict_failures": 0,
+          "native_fp32_max_abs": 0.0,
+          "score_bytes": 256,
+          "gather_bytes": 8448,
+          "chunks": 1,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "graph_protocol": "poison buffers, replay, clone all outputs, then oracle and eager"
+      }
+    },
+    {
+      "rows": 1,
+      "requests": 1,
+      "index_keys": 7,
+      "step": "zero_query",
+      "source_unique": false,
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "fp32_strict_failures": 0,
+          "native_fp32_strict_failures": 0,
+          "native_fp32_max_abs": 0.0,
+          "score_bytes": 256,
+          "gather_bytes": 0,
+          "chunks": 1,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "fp32_strict_failures": 0,
+          "native_fp32_strict_failures": 0,
+          "native_fp32_max_abs": 0.0,
+          "score_bytes": 256,
+          "gather_bytes": 8448,
+          "chunks": 1,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "graph_protocol": "poison buffers, replay, clone all outputs, then oracle and eager"
+      }
+    },
+    {
+      "rows": 1,
+      "requests": 1,
+      "index_keys": 7,
+      "step": "zero_lengths",
+      "source_unique": false,
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "fp32_strict_failures": 0,
+          "native_fp32_strict_failures": 0,
+          "native_fp32_max_abs": 0.0,
+          "score_bytes": 256,
+          "gather_bytes": 0,
+          "chunks": 1,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "fp32_strict_failures": 0,
+          "native_fp32_strict_failures": 0,
+          "native_fp32_max_abs": 0.0,
+          "score_bytes": 256,
+          "gather_bytes": 8448,
+          "chunks": 1,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "graph_protocol": "poison buffers, replay, clone all outputs, then oracle and eager"
+      }
+    },
+    {
+      "rows": 1,
+      "requests": 1,
+      "index_keys": 7,
+      "step": "request_page_reorder",
+      "source_unique": false,
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 1.1920928955078125e-07,
+          "nrmse_vs_native": 6.525204863815013e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0003737807273864746,
+          "fp32_strict_failures": 1,
+          "native_fp32_strict_failures": 1,
+          "native_fp32_max_abs": 0.0003737807273864746,
+          "score_bytes": 256,
+          "gather_bytes": 0,
+          "chunks": 1,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 1.1920928955078125e-07,
+          "nrmse_vs_native": 6.525204863815013e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0003737807273864746,
+          "fp32_strict_failures": 1,
+          "native_fp32_strict_failures": 1,
+          "native_fp32_max_abs": 0.0003737807273864746,
+          "score_bytes": 256,
+          "gather_bytes": 8448,
+          "chunks": 1,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "graph_protocol": "poison buffers, replay, clone all outputs, then oracle and eager"
+      }
+    },
+    {
+      "rows": 1,
+      "requests": 1,
+      "index_keys": 7,
+      "step": "restore",
+      "source_unique": false,
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 5.960464477539063e-08,
+          "nrmse_vs_native": 5.9590527045367117e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.00037354230880737305,
+          "fp32_strict_failures": 1,
+          "native_fp32_strict_failures": 1,
+          "native_fp32_max_abs": 0.00037360191345214844,
+          "score_bytes": 256,
+          "gather_bytes": 0,
+          "chunks": 1,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 5.960464477539063e-08,
+          "nrmse_vs_native": 5.9590527045367117e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.00037354230880737305,
+          "fp32_strict_failures": 1,
+          "native_fp32_strict_failures": 1,
+          "native_fp32_max_abs": 0.00037360191345214844,
+          "score_bytes": 256,
+          "gather_bytes": 8448,
+          "chunks": 1,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "graph_protocol": "poison buffers, replay, clone all outputs, then oracle and eager"
+      }
+    },
+    {
+      "rows": 10,
+      "requests": 2,
+      "index_keys": 517,
+      "step": "initial",
+      "source_unique": false,
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 9.5367431640625e-07,
+          "nrmse_vs_native": 8.413608948511549e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0013866424560546875,
+          "fp32_strict_failures": 33,
+          "native_fp32_strict_failures": 33,
+          "native_fp32_max_abs": 0.001386880874633789,
+          "score_bytes": 6912,
+          "gather_bytes": 0,
+          "chunks": 4,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 9.5367431640625e-07,
+          "nrmse_vs_native": 8.413608948511549e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0013866424560546875,
+          "fp32_strict_failures": 33,
+          "native_fp32_strict_failures": 33,
+          "native_fp32_max_abs": 0.001386880874633789,
+          "score_bytes": 4608,
+          "gather_bytes": 152064,
+          "chunks": 5,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "graph_protocol": "poison buffers, replay, clone all outputs, then oracle and eager"
+      }
+    },
+    {
+      "rows": 10,
+      "requests": 2,
+      "index_keys": 517,
+      "step": "changed_candidates_lengths",
+      "source_unique": false,
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 9.5367431640625e-07,
+          "nrmse_vs_native": 8.353988255185064e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0008511543273925781,
+          "fp32_strict_failures": 24,
+          "native_fp32_strict_failures": 24,
+          "native_fp32_max_abs": 0.0008513927459716797,
+          "score_bytes": 6912,
+          "gather_bytes": 0,
+          "chunks": 4,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 9.5367431640625e-07,
+          "nrmse_vs_native": 8.353988255185064e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0008511543273925781,
+          "fp32_strict_failures": 24,
+          "native_fp32_strict_failures": 24,
+          "native_fp32_max_abs": 0.0008513927459716797,
+          "score_bytes": 4608,
+          "gather_bytes": 152064,
+          "chunks": 5,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "graph_protocol": "poison buffers, replay, clone all outputs, then oracle and eager"
+      }
+    },
+    {
+      "rows": 10,
+      "requests": 2,
+      "index_keys": 517,
+      "step": "empty_candidates",
+      "source_unique": false,
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "fp32_strict_failures": 0,
+          "native_fp32_strict_failures": 0,
+          "native_fp32_max_abs": 0.0,
+          "score_bytes": 6912,
+          "gather_bytes": 0,
+          "chunks": 4,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "fp32_strict_failures": 0,
+          "native_fp32_strict_failures": 0,
+          "native_fp32_max_abs": 0.0,
+          "score_bytes": 4608,
+          "gather_bytes": 152064,
+          "chunks": 5,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "graph_protocol": "poison buffers, replay, clone all outputs, then oracle and eager"
+      }
+    },
+    {
+      "rows": 10,
+      "requests": 2,
+      "index_keys": 517,
+      "step": "zero_query",
+      "source_unique": false,
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "fp32_strict_failures": 0,
+          "native_fp32_strict_failures": 0,
+          "native_fp32_max_abs": 0.0,
+          "score_bytes": 6912,
+          "gather_bytes": 0,
+          "chunks": 4,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "fp32_strict_failures": 0,
+          "native_fp32_strict_failures": 0,
+          "native_fp32_max_abs": 0.0,
+          "score_bytes": 4608,
+          "gather_bytes": 152064,
+          "chunks": 5,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "graph_protocol": "poison buffers, replay, clone all outputs, then oracle and eager"
+      }
+    },
+    {
+      "rows": 10,
+      "requests": 2,
+      "index_keys": 517,
+      "step": "zero_lengths",
+      "source_unique": false,
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "fp32_strict_failures": 0,
+          "native_fp32_strict_failures": 0,
+          "native_fp32_max_abs": 0.0,
+          "score_bytes": 6912,
+          "gather_bytes": 0,
+          "chunks": 4,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "fp32_strict_failures": 0,
+          "native_fp32_strict_failures": 0,
+          "native_fp32_max_abs": 0.0,
+          "score_bytes": 4608,
+          "gather_bytes": 152064,
+          "chunks": 5,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "graph_protocol": "poison buffers, replay, clone all outputs, then oracle and eager"
+      }
+    },
+    {
+      "rows": 10,
+      "requests": 2,
+      "index_keys": 517,
+      "step": "request_page_reorder",
+      "source_unique": false,
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 9.5367431640625e-07,
+          "nrmse_vs_native": 8.764610689845292e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0008741617202758789,
+          "fp32_strict_failures": 30,
+          "native_fp32_strict_failures": 30,
+          "native_fp32_max_abs": 0.0008741617202758789,
+          "score_bytes": 6912,
+          "gather_bytes": 0,
+          "chunks": 4,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 9.5367431640625e-07,
+          "nrmse_vs_native": 8.764610689845292e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0008741617202758789,
+          "fp32_strict_failures": 30,
+          "native_fp32_strict_failures": 30,
+          "native_fp32_max_abs": 0.0008741617202758789,
+          "score_bytes": 4608,
+          "gather_bytes": 152064,
+          "chunks": 5,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "graph_protocol": "poison buffers, replay, clone all outputs, then oracle and eager"
+      }
+    },
+    {
+      "rows": 10,
+      "requests": 2,
+      "index_keys": 517,
+      "step": "restore",
+      "source_unique": false,
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 9.5367431640625e-07,
+          "nrmse_vs_native": 8.413608948511549e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0013866424560546875,
+          "fp32_strict_failures": 33,
+          "native_fp32_strict_failures": 33,
+          "native_fp32_max_abs": 0.001386880874633789,
+          "score_bytes": 6912,
+          "gather_bytes": 0,
+          "chunks": 4,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 9.5367431640625e-07,
+          "nrmse_vs_native": 8.413608948511549e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0013866424560546875,
+          "fp32_strict_failures": 33,
+          "native_fp32_strict_failures": 33,
+          "native_fp32_max_abs": 0.001386880874633789,
+          "score_bytes": 4608,
+          "gather_bytes": 152064,
+          "chunks": 5,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "graph_protocol": "poison buffers, replay, clone all outputs, then oracle and eager"
+      }
+    },
+    {
+      "rows": 33,
+      "requests": 3,
+      "index_keys": 4099,
+      "step": "initial",
+      "source_unique": false,
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 1.430511474609375e-06,
+          "nrmse_vs_native": 9.206967423652713e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0013360977172851562,
+          "fp32_strict_failures": 181,
+          "native_fp32_strict_failures": 181,
+          "native_fp32_max_abs": 0.0013366937637329102,
+          "score_bytes": 49920,
+          "gather_bytes": 0,
+          "chunks": 11,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 1.430511474609375e-06,
+          "nrmse_vs_native": 9.206967423652713e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0013360977172851562,
+          "fp32_strict_failures": 181,
+          "native_fp32_strict_failures": 181,
+          "native_fp32_max_abs": 0.0013366937637329102,
+          "score_bytes": 33280,
+          "gather_bytes": 1098240,
+          "chunks": 17,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "graph_protocol": "poison buffers, replay, clone all outputs, then oracle and eager"
+      }
+    },
+    {
+      "rows": 33,
+      "requests": 3,
+      "index_keys": 4099,
+      "step": "changed_candidates_lengths",
+      "source_unique": false,
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 1.430511474609375e-06,
+          "nrmse_vs_native": 9.164407915078722e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0013360977172851562,
+          "fp32_strict_failures": 110,
+          "native_fp32_strict_failures": 110,
+          "native_fp32_max_abs": 0.0013366937637329102,
+          "score_bytes": 49920,
+          "gather_bytes": 0,
+          "chunks": 11,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 1.430511474609375e-06,
+          "nrmse_vs_native": 9.164407915078722e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0013360977172851562,
+          "fp32_strict_failures": 110,
+          "native_fp32_strict_failures": 110,
+          "native_fp32_max_abs": 0.0013366937637329102,
+          "score_bytes": 33280,
+          "gather_bytes": 1098240,
+          "chunks": 17,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "graph_protocol": "poison buffers, replay, clone all outputs, then oracle and eager"
+      }
+    },
+    {
+      "rows": 33,
+      "requests": 3,
+      "index_keys": 4099,
+      "step": "empty_candidates",
+      "source_unique": false,
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "fp32_strict_failures": 0,
+          "native_fp32_strict_failures": 0,
+          "native_fp32_max_abs": 0.0,
+          "score_bytes": 49920,
+          "gather_bytes": 0,
+          "chunks": 11,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "fp32_strict_failures": 0,
+          "native_fp32_strict_failures": 0,
+          "native_fp32_max_abs": 0.0,
+          "score_bytes": 33280,
+          "gather_bytes": 1098240,
+          "chunks": 17,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "graph_protocol": "poison buffers, replay, clone all outputs, then oracle and eager"
+      }
+    },
+    {
+      "rows": 33,
+      "requests": 3,
+      "index_keys": 4099,
+      "step": "zero_query",
+      "source_unique": false,
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "fp32_strict_failures": 0,
+          "native_fp32_strict_failures": 0,
+          "native_fp32_max_abs": 0.0,
+          "score_bytes": 49920,
+          "gather_bytes": 0,
+          "chunks": 11,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "fp32_strict_failures": 0,
+          "native_fp32_strict_failures": 0,
+          "native_fp32_max_abs": 0.0,
+          "score_bytes": 33280,
+          "gather_bytes": 1098240,
+          "chunks": 17,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "graph_protocol": "poison buffers, replay, clone all outputs, then oracle and eager"
+      }
+    },
+    {
+      "rows": 33,
+      "requests": 3,
+      "index_keys": 4099,
+      "step": "zero_lengths",
+      "source_unique": false,
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "fp32_strict_failures": 0,
+          "native_fp32_strict_failures": 0,
+          "native_fp32_max_abs": 0.0,
+          "score_bytes": 49920,
+          "gather_bytes": 0,
+          "chunks": 11,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "fp32_strict_failures": 0,
+          "native_fp32_strict_failures": 0,
+          "native_fp32_max_abs": 0.0,
+          "score_bytes": 33280,
+          "gather_bytes": 1098240,
+          "chunks": 17,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "graph_protocol": "poison buffers, replay, clone all outputs, then oracle and eager"
+      }
+    },
+    {
+      "rows": 33,
+      "requests": 3,
+      "index_keys": 4099,
+      "step": "request_page_reorder",
+      "source_unique": false,
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 9.5367431640625e-07,
+          "nrmse_vs_native": 9.19127643314484e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0012519359588623047,
+          "fp32_strict_failures": 186,
+          "native_fp32_strict_failures": 186,
+          "native_fp32_max_abs": 0.0012519359588623047,
+          "score_bytes": 49920,
+          "gather_bytes": 0,
+          "chunks": 11,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 9.5367431640625e-07,
+          "nrmse_vs_native": 9.19127643314484e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0012519359588623047,
+          "fp32_strict_failures": 186,
+          "native_fp32_strict_failures": 186,
+          "native_fp32_max_abs": 0.0012519359588623047,
+          "score_bytes": 33280,
+          "gather_bytes": 1098240,
+          "chunks": 17,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "graph_protocol": "poison buffers, replay, clone all outputs, then oracle and eager"
+      }
+    },
+    {
+      "rows": 33,
+      "requests": 3,
+      "index_keys": 4099,
+      "step": "restore",
+      "source_unique": false,
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 1.430511474609375e-06,
+          "nrmse_vs_native": 9.206967423652713e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0013360977172851562,
+          "fp32_strict_failures": 181,
+          "native_fp32_strict_failures": 181,
+          "native_fp32_max_abs": 0.0013366937637329102,
+          "score_bytes": 49920,
+          "gather_bytes": 0,
+          "chunks": 11,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 1.430511474609375e-06,
+          "nrmse_vs_native": 9.206967423652713e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0013360977172851562,
+          "fp32_strict_failures": 181,
+          "native_fp32_strict_failures": 181,
+          "native_fp32_max_abs": 0.0013366937637329102,
+          "score_bytes": 33280,
+          "gather_bytes": 1098240,
+          "chunks": 17,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "graph_protocol": "poison buffers, replay, clone all outputs, then oracle and eager"
+      }
+    },
+    {
+      "rows": 8,
+      "requests": 2,
+      "index_keys": 20003,
+      "step": "initial",
+      "source_unique": false,
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 9.5367431640625e-07,
+          "nrmse_vs_native": 8.343070920306039e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0016634464263916016,
+          "fp32_strict_failures": 396,
+          "native_fp32_strict_failures": 395,
+          "native_fp32_max_abs": 0.0016634464263916016,
+          "score_bytes": 196608,
+          "gather_bytes": 0,
+          "chunks": 3,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 9.5367431640625e-07,
+          "nrmse_vs_native": 8.343070920306039e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0016634464263916016,
+          "fp32_strict_failures": 396,
+          "native_fp32_strict_failures": 395,
+          "native_fp32_max_abs": 0.0016634464263916016,
+          "score_bytes": 131072,
+          "gather_bytes": 4325376,
+          "chunks": 4,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "graph_protocol": "poison buffers, replay, clone all outputs, then oracle and eager"
+      }
+    },
+    {
+      "rows": 8,
+      "requests": 2,
+      "index_keys": 20003,
+      "step": "changed_candidates_lengths",
+      "source_unique": false,
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 9.5367431640625e-07,
+          "nrmse_vs_native": 8.622628435884036e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0016634464263916016,
+          "fp32_strict_failures": 364,
+          "native_fp32_strict_failures": 363,
+          "native_fp32_max_abs": 0.0016634464263916016,
+          "score_bytes": 196608,
+          "gather_bytes": 0,
+          "chunks": 3,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 9.5367431640625e-07,
+          "nrmse_vs_native": 8.622628435884036e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0016634464263916016,
+          "fp32_strict_failures": 364,
+          "native_fp32_strict_failures": 363,
+          "native_fp32_max_abs": 0.0016634464263916016,
+          "score_bytes": 131072,
+          "gather_bytes": 4325376,
+          "chunks": 4,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "graph_protocol": "poison buffers, replay, clone all outputs, then oracle and eager"
+      }
+    },
+    {
+      "rows": 8,
+      "requests": 2,
+      "index_keys": 20003,
+      "step": "empty_candidates",
+      "source_unique": false,
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "fp32_strict_failures": 0,
+          "native_fp32_strict_failures": 0,
+          "native_fp32_max_abs": 0.0,
+          "score_bytes": 196608,
+          "gather_bytes": 0,
+          "chunks": 3,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "fp32_strict_failures": 0,
+          "native_fp32_strict_failures": 0,
+          "native_fp32_max_abs": 0.0,
+          "score_bytes": 131072,
+          "gather_bytes": 4325376,
+          "chunks": 4,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "graph_protocol": "poison buffers, replay, clone all outputs, then oracle and eager"
+      }
+    },
+    {
+      "rows": 8,
+      "requests": 2,
+      "index_keys": 20003,
+      "step": "zero_query",
+      "source_unique": false,
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "fp32_strict_failures": 0,
+          "native_fp32_strict_failures": 0,
+          "native_fp32_max_abs": 0.0,
+          "score_bytes": 196608,
+          "gather_bytes": 0,
+          "chunks": 3,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "fp32_strict_failures": 0,
+          "native_fp32_strict_failures": 0,
+          "native_fp32_max_abs": 0.0,
+          "score_bytes": 131072,
+          "gather_bytes": 4325376,
+          "chunks": 4,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "graph_protocol": "poison buffers, replay, clone all outputs, then oracle and eager"
+      }
+    },
+    {
+      "rows": 8,
+      "requests": 2,
+      "index_keys": 20003,
+      "step": "zero_lengths",
+      "source_unique": false,
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "fp32_strict_failures": 0,
+          "native_fp32_strict_failures": 0,
+          "native_fp32_max_abs": 0.0,
+          "score_bytes": 196608,
+          "gather_bytes": 0,
+          "chunks": 3,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "fp32_strict_failures": 0,
+          "native_fp32_strict_failures": 0,
+          "native_fp32_max_abs": 0.0,
+          "score_bytes": 131072,
+          "gather_bytes": 4325376,
+          "chunks": 4,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "graph_protocol": "poison buffers, replay, clone all outputs, then oracle and eager"
+      }
+    },
+    {
+      "rows": 8,
+      "requests": 2,
+      "index_keys": 20003,
+      "step": "request_page_reorder",
+      "source_unique": false,
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 9.5367431640625e-07,
+          "nrmse_vs_native": 8.330108729706853e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0018990039825439453,
+          "fp32_strict_failures": 376,
+          "native_fp32_strict_failures": 376,
+          "native_fp32_max_abs": 0.0018992424011230469,
+          "score_bytes": 196608,
+          "gather_bytes": 0,
+          "chunks": 3,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 9.5367431640625e-07,
+          "nrmse_vs_native": 8.330108729706853e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0018990039825439453,
+          "fp32_strict_failures": 376,
+          "native_fp32_strict_failures": 376,
+          "native_fp32_max_abs": 0.0018992424011230469,
+          "score_bytes": 131072,
+          "gather_bytes": 4325376,
+          "chunks": 4,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "graph_protocol": "poison buffers, replay, clone all outputs, then oracle and eager"
+      }
+    },
+    {
+      "rows": 8,
+      "requests": 2,
+      "index_keys": 20003,
+      "step": "restore",
+      "source_unique": false,
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 9.5367431640625e-07,
+          "nrmse_vs_native": 8.343070920306039e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0016634464263916016,
+          "fp32_strict_failures": 396,
+          "native_fp32_strict_failures": 395,
+          "native_fp32_max_abs": 0.0016634464263916016,
+          "score_bytes": 196608,
+          "gather_bytes": 0,
+          "chunks": 3,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 9.5367431640625e-07,
+          "nrmse_vs_native": 8.343070920306039e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0016634464263916016,
+          "fp32_strict_failures": 396,
+          "native_fp32_strict_failures": 395,
+          "native_fp32_max_abs": 0.0016634464263916016,
+          "score_bytes": 131072,
+          "gather_bytes": 4325376,
+          "chunks": 4,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "graph_protocol": "poison buffers, replay, clone all outputs, then oracle and eager"
+      }
+    },
+    {
+      "rows": 32,
+      "requests": 2,
+      "index_keys": 16396,
+      "step": "initial",
+      "source_unique": true,
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 1.1920928955078125e-06,
+          "nrmse_vs_native": 8.569478213254267e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.001468658447265625,
+          "fp32_strict_failures": 745,
+          "native_fp32_strict_failures": 745,
+          "native_fp32_max_abs": 0.001468658447265625,
+          "score_bytes": 196608,
+          "gather_bytes": 0,
+          "chunks": 11,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 1.1920928955078125e-06,
+          "nrmse_vs_native": 8.569478213254267e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.001468658447265625,
+          "fp32_strict_failures": 745,
+          "native_fp32_strict_failures": 745,
+          "native_fp32_max_abs": 0.001468658447265625,
+          "score_bytes": 131072,
+          "gather_bytes": 4325376,
+          "chunks": 16,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "graph_protocol": "poison buffers, replay, clone all outputs, then oracle and eager"
+      }
+    },
+    {
+      "rows": 32,
+      "requests": 2,
+      "index_keys": 16396,
+      "step": "changed_candidates_lengths",
+      "source_unique": true,
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 1.1920928955078125e-06,
+          "nrmse_vs_native": 8.5272012426598e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.001468658447265625,
+          "fp32_strict_failures": 419,
+          "native_fp32_strict_failures": 419,
+          "native_fp32_max_abs": 0.001468658447265625,
+          "score_bytes": 196608,
+          "gather_bytes": 0,
+          "chunks": 11,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 1.1920928955078125e-06,
+          "nrmse_vs_native": 8.5272012426598e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.001468658447265625,
+          "fp32_strict_failures": 419,
+          "native_fp32_strict_failures": 419,
+          "native_fp32_max_abs": 0.001468658447265625,
+          "score_bytes": 131072,
+          "gather_bytes": 4325376,
+          "chunks": 16,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "graph_protocol": "poison buffers, replay, clone all outputs, then oracle and eager"
+      }
+    },
+    {
+      "rows": 32,
+      "requests": 2,
+      "index_keys": 16396,
+      "step": "empty_candidates",
+      "source_unique": true,
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "fp32_strict_failures": 0,
+          "native_fp32_strict_failures": 0,
+          "native_fp32_max_abs": 0.0,
+          "score_bytes": 196608,
+          "gather_bytes": 0,
+          "chunks": 11,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "fp32_strict_failures": 0,
+          "native_fp32_strict_failures": 0,
+          "native_fp32_max_abs": 0.0,
+          "score_bytes": 131072,
+          "gather_bytes": 4325376,
+          "chunks": 16,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "graph_protocol": "poison buffers, replay, clone all outputs, then oracle and eager"
+      }
+    },
+    {
+      "rows": 32,
+      "requests": 2,
+      "index_keys": 16396,
+      "step": "zero_query",
+      "source_unique": true,
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "fp32_strict_failures": 0,
+          "native_fp32_strict_failures": 0,
+          "native_fp32_max_abs": 0.0,
+          "score_bytes": 196608,
+          "gather_bytes": 0,
+          "chunks": 11,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "fp32_strict_failures": 0,
+          "native_fp32_strict_failures": 0,
+          "native_fp32_max_abs": 0.0,
+          "score_bytes": 131072,
+          "gather_bytes": 4325376,
+          "chunks": 16,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "graph_protocol": "poison buffers, replay, clone all outputs, then oracle and eager"
+      }
+    },
+    {
+      "rows": 32,
+      "requests": 2,
+      "index_keys": 16396,
+      "step": "zero_lengths",
+      "source_unique": true,
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "fp32_strict_failures": 0,
+          "native_fp32_strict_failures": 0,
+          "native_fp32_max_abs": 0.0,
+          "score_bytes": 196608,
+          "gather_bytes": 0,
+          "chunks": 11,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "fp32_strict_failures": 0,
+          "native_fp32_strict_failures": 0,
+          "native_fp32_max_abs": 0.0,
+          "score_bytes": 131072,
+          "gather_bytes": 4325376,
+          "chunks": 16,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "graph_protocol": "poison buffers, replay, clone all outputs, then oracle and eager"
+      }
+    },
+    {
+      "rows": 32,
+      "requests": 2,
+      "index_keys": 16396,
+      "step": "request_page_reorder",
+      "source_unique": true,
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 1.1920928955078125e-06,
+          "nrmse_vs_native": 8.570284525194977e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0013270378112792969,
+          "fp32_strict_failures": 733,
+          "native_fp32_strict_failures": 733,
+          "native_fp32_max_abs": 0.0013272762298583984,
+          "score_bytes": 196608,
+          "gather_bytes": 0,
+          "chunks": 11,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 1.1920928955078125e-06,
+          "nrmse_vs_native": 8.570284525194977e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0013270378112792969,
+          "fp32_strict_failures": 733,
+          "native_fp32_strict_failures": 733,
+          "native_fp32_max_abs": 0.0013272762298583984,
+          "score_bytes": 131072,
+          "gather_bytes": 4325376,
+          "chunks": 16,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "graph_protocol": "poison buffers, replay, clone all outputs, then oracle and eager"
+      }
+    },
+    {
+      "rows": 32,
+      "requests": 2,
+      "index_keys": 16396,
+      "step": "restore",
+      "source_unique": true,
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 1.1920928955078125e-06,
+          "nrmse_vs_native": 8.569478213254267e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.001468658447265625,
+          "fp32_strict_failures": 745,
+          "native_fp32_strict_failures": 745,
+          "native_fp32_max_abs": 0.001468658447265625,
+          "score_bytes": 196608,
+          "gather_bytes": 0,
+          "chunks": 11,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 1.1920928955078125e-06,
+          "nrmse_vs_native": 8.569478213254267e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.001468658447265625,
+          "fp32_strict_failures": 745,
+          "native_fp32_strict_failures": 745,
+          "native_fp32_max_abs": 0.001468658447265625,
+          "score_bytes": 131072,
+          "gather_bytes": 4325376,
+          "chunks": 16,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "graph_protocol": "poison buffers, replay, clone all outputs, then oracle and eager"
+      }
+    },
+    {
+      "rows": 8,
+      "requests": 2,
+      "index_keys": 20003,
+      "step": "initial",
+      "source_unique": true,
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 9.5367431640625e-07,
+          "nrmse_vs_native": 8.343070920306039e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0016634464263916016,
+          "fp32_strict_failures": 396,
+          "native_fp32_strict_failures": 395,
+          "native_fp32_max_abs": 0.0016634464263916016,
+          "score_bytes": 196608,
+          "gather_bytes": 0,
+          "chunks": 3,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 9.5367431640625e-07,
+          "nrmse_vs_native": 8.343070920306039e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0016634464263916016,
+          "fp32_strict_failures": 396,
+          "native_fp32_strict_failures": 395,
+          "native_fp32_max_abs": 0.0016634464263916016,
+          "score_bytes": 131072,
+          "gather_bytes": 4325376,
+          "chunks": 4,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "graph_protocol": "poison buffers, replay, clone all outputs, then oracle and eager"
+      }
+    },
+    {
+      "rows": 8,
+      "requests": 2,
+      "index_keys": 20003,
+      "step": "changed_candidates_lengths",
+      "source_unique": true,
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 9.5367431640625e-07,
+          "nrmse_vs_native": 8.622365685724093e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0016634464263916016,
+          "fp32_strict_failures": 364,
+          "native_fp32_strict_failures": 363,
+          "native_fp32_max_abs": 0.0016634464263916016,
+          "score_bytes": 196608,
+          "gather_bytes": 0,
+          "chunks": 3,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 9.5367431640625e-07,
+          "nrmse_vs_native": 8.622365685724093e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0016634464263916016,
+          "fp32_strict_failures": 364,
+          "native_fp32_strict_failures": 363,
+          "native_fp32_max_abs": 0.0016634464263916016,
+          "score_bytes": 131072,
+          "gather_bytes": 4325376,
+          "chunks": 4,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "graph_protocol": "poison buffers, replay, clone all outputs, then oracle and eager"
+      }
+    },
+    {
+      "rows": 8,
+      "requests": 2,
+      "index_keys": 20003,
+      "step": "empty_candidates",
+      "source_unique": true,
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "fp32_strict_failures": 0,
+          "native_fp32_strict_failures": 0,
+          "native_fp32_max_abs": 0.0,
+          "score_bytes": 196608,
+          "gather_bytes": 0,
+          "chunks": 3,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "fp32_strict_failures": 0,
+          "native_fp32_strict_failures": 0,
+          "native_fp32_max_abs": 0.0,
+          "score_bytes": 131072,
+          "gather_bytes": 4325376,
+          "chunks": 4,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "graph_protocol": "poison buffers, replay, clone all outputs, then oracle and eager"
+      }
+    },
+    {
+      "rows": 8,
+      "requests": 2,
+      "index_keys": 20003,
+      "step": "zero_query",
+      "source_unique": true,
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "fp32_strict_failures": 0,
+          "native_fp32_strict_failures": 0,
+          "native_fp32_max_abs": 0.0,
+          "score_bytes": 196608,
+          "gather_bytes": 0,
+          "chunks": 3,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "fp32_strict_failures": 0,
+          "native_fp32_strict_failures": 0,
+          "native_fp32_max_abs": 0.0,
+          "score_bytes": 131072,
+          "gather_bytes": 4325376,
+          "chunks": 4,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "graph_protocol": "poison buffers, replay, clone all outputs, then oracle and eager"
+      }
+    },
+    {
+      "rows": 8,
+      "requests": 2,
+      "index_keys": 20003,
+      "step": "zero_lengths",
+      "source_unique": true,
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "fp32_strict_failures": 0,
+          "native_fp32_strict_failures": 0,
+          "native_fp32_max_abs": 0.0,
+          "score_bytes": 196608,
+          "gather_bytes": 0,
+          "chunks": 3,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "fp32_strict_failures": 0,
+          "native_fp32_strict_failures": 0,
+          "native_fp32_max_abs": 0.0,
+          "score_bytes": 131072,
+          "gather_bytes": 4325376,
+          "chunks": 4,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "graph_protocol": "poison buffers, replay, clone all outputs, then oracle and eager"
+      }
+    },
+    {
+      "rows": 8,
+      "requests": 2,
+      "index_keys": 20003,
+      "step": "request_page_reorder",
+      "source_unique": true,
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 9.5367431640625e-07,
+          "nrmse_vs_native": 8.330108729706853e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0018990039825439453,
+          "fp32_strict_failures": 376,
+          "native_fp32_strict_failures": 376,
+          "native_fp32_max_abs": 0.0018992424011230469,
+          "score_bytes": 196608,
+          "gather_bytes": 0,
+          "chunks": 3,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 9.5367431640625e-07,
+          "nrmse_vs_native": 8.330108729706853e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0018990039825439453,
+          "fp32_strict_failures": 376,
+          "native_fp32_strict_failures": 376,
+          "native_fp32_max_abs": 0.0018992424011230469,
+          "score_bytes": 131072,
+          "gather_bytes": 4325376,
+          "chunks": 4,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "graph_protocol": "poison buffers, replay, clone all outputs, then oracle and eager"
+      }
+    },
+    {
+      "rows": 8,
+      "requests": 2,
+      "index_keys": 20003,
+      "step": "restore",
+      "source_unique": true,
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 9.5367431640625e-07,
+          "nrmse_vs_native": 8.343070920306039e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0016634464263916016,
+          "fp32_strict_failures": 396,
+          "native_fp32_strict_failures": 395,
+          "native_fp32_max_abs": 0.0016634464263916016,
+          "score_bytes": 196608,
+          "gather_bytes": 0,
+          "chunks": 3,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 9.5367431640625e-07,
+          "nrmse_vs_native": 8.343070920306039e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0016634464263916016,
+          "fp32_strict_failures": 396,
+          "native_fp32_strict_failures": 395,
+          "native_fp32_max_abs": 0.0016634464263916016,
+          "score_bytes": 131072,
+          "gather_bytes": 4325376,
+          "chunks": 4,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "graph_protocol": "poison buffers, replay, clone all outputs, then oracle and eager"
+      }
+    }
+  ],
+  "compiled": {
+    "direct": {
+      "ptx_sha256": "15d767fb5019963368cdf5b31d91e006861b3c2f3f4ac7f4627bae9dac84433c",
+      "n_regs": 112,
+      "n_spills": 0,
+      "shared_bytes": 12544,
+      "fp8_wgmma": true,
+      "fp16_mma": false
+    },
+    "gathered_wgmma": {
+      "ptx_sha256": "685af01dde2633ded567f495d95a002b625d97f16f06418f947b94ac49fd054d",
+      "n_regs": 56,
+      "n_spills": 0,
+      "shared_bytes": 12544,
+      "fp8_wgmma": true,
+      "fp16_mma": false
+    }
+  }
+}

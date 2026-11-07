@@ -1,0 +1,61 @@
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/dist-packages/triton/experimental/gluon/language/_core.py", line 96, in wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/triton/experimental/gluon/language/nvidia/hopper/tma.py", line 129, in async_copy_global_to_shared
+    coord = _semantic._convert_to_ir_values(coord, require_i64=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/triton/language/semantic.py", line 1888, in _convert_to_ir_values
+    return [self._convert_elem_to_ir_value(elem, require_i64) for elem in list_like]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/triton/language/semantic.py", line 1881, in _convert_elem_to_ir_value
+    assert False, "Block pointers only support 32 bit `offsets/block_shape`, " \
+           ^^^^^
+AssertionError: Block pointers only support 32 bit `offsets/block_shape`, add a `.to(tl.int32)` or use regular indexing for 64 bit support
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/root/dsv41-indexer-resume-20261107/runs/p5c-perquery-v1/benchmarks/kernels/dsv41_indexer/verify_prefill_perquery.py", line 207, in <module>
+    main()
+  File "/root/dsv41-indexer-resume-20261107/runs/p5c-perquery-v1/benchmarks/kernels/dsv41_indexer/verify_prefill_perquery.py", line 203, in main
+    save(a.output, run())
+                   ^^^^^
+  File "/root/dsv41-indexer-resume-20261107/runs/p5c-perquery-v1/benchmarks/kernels/dsv41_indexer/verify_prefill_perquery.py", line 148, in run
+    op.forward()
+  File "/root/dsv41-indexer-resume-20261107/runs/p5c-perquery-v1/vllm_dsv41_indexer/perquery_prefill.py", line 286, in forward
+    self.score_chunk(chunk)
+  File "/root/dsv41-indexer-resume-20261107/runs/p5c-perquery-v1/vllm_dsv41_indexer/perquery_prefill.py", line 257, in score_chunk
+    _gathered_gemm[(rows, lanes)](
+  File "/usr/local/lib/python3.12/dist-packages/triton/runtime/jit.py", line 370, in <lambda>
+    return lambda *args, **kwargs: self.run(grid=grid, warmup=False, *args, **kwargs)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/triton/runtime/jit.py", line 739, in run
+    kernel = self._do_compile(key, signature, device, constexprs, options, attrs, warmup)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/triton/runtime/jit.py", line 884, in _do_compile
+    kernel = self.compile(src, target=target, options=options.__dict__)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/triton/compiler/compiler.py", line 307, in compile
+    module = src.make_ir(target, options, codegen_fns, module_map, context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/triton/experimental/gluon/_runtime.py", line 40, in make_ir
+    module = ast_to_ttir(self.fn, self, context=context, options=options, codegen_fns=codegen_fns,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+triton.compiler.errors.CompilationError: at 31:4:
+    )
+    key_layout: gl.constexpr = gl.SliceLayout(1, gl.SliceLayout(2, layout3))
+    q_smem = gl.allocate_shared_memory(gl.float8e4nv, [32, 128], q_desc.layout)
+    k_smem = gl.allocate_shared_memory(
+        gl.float8e4nv,
+        [64, 128],
+        gl.NVMMASharedLayout.get_default_for([64, 128], gl.float8e4nv),
+    )
+    bar = mbarrier.allocate_mbarrier()
+    mbarrier.init(bar, count=1)
+    mbarrier.expect(bar, 32 * 128)
+    tma.async_copy_global_to_shared(q_desc, [row * 32, 0], bar, q_smem)
+    ^
+Block pointers only support 32 bit `offsets/block_shape`, add a `.to(tl.int32)` or use regular indexing for 64 bit support

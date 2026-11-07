@@ -1,0 +1,58 @@
+{
+  "status": "pending_candidate_identity",
+  "candidate_hash_differences": [
+    {
+      "case": "initial_32k",
+      "forward": "943ae5efe100e78f900dfee36245bb264cec58a65d434d37e5f3c4f5ba1a3bcb",
+      "reverse": "847d3583c73f29cd0bf7bc83f3af365d65f398f75f24f366aa3423ebe11940e3"
+    },
+    {
+      "case": "steady_64k",
+      "forward": "aaae8d528290484d39c0ca580b55f2bf52dbe4c337a88d5c79605da44a4d08f4",
+      "reverse": "2efe4251fc059d34a99ded97ce13de91405e5faf3b301000794d824c48fff186"
+    },
+    {
+      "case": "steady_256k",
+      "forward": "da05dc07e7dce19a4adb6710a051cdba698b5a58be9cf8c54c20b87a72a8eafb",
+      "reverse": "c8ca5ebebaf803b2226ec366f31fcdb5567dc9d1747db2229a206d50263198f4"
+    },
+    {
+      "case": "tail_1m",
+      "forward": "524903ff513eba17a1dfce8cd9ca5754662f12ed32895d8b105653fe3252cc07",
+      "reverse": "344abd040dfa3dcbb3eaeb7dc0703ea096fae47c76800e62d8686a24fc5896ee"
+    },
+    {
+      "case": "ragged",
+      "forward": "fe6b252936a16bdd949b0f2f0eb93dbe8fa292c030810dbdd287253a42ca871b",
+      "reverse": "3551fdc20b681b69b4283a5b69d141ed65bae80a1d301eec19cf20a15775e74c"
+    }
+  ],
+  "shapes": 8,
+  "orders": 2,
+  "measurement_records": 3360,
+  "sample_rounds": 3561,
+  "gpu_samples": 106830,
+  "wall_samples": 106830,
+  "source_archive_sha256": "b4c1a3dbda6778ea48d226b44ff77809dce604a50fd63b9b3aac15184e83e41b",
+  "source_files": 87,
+  "native_files": 589,
+  "files": [
+    {
+      "path": "p5c-perquery/final-v1/group-a-forward.json",
+      "sha256": "90282488c56347067092fc086b0b5e740f75e4db70dbabd61304bfe7c0ee5323"
+    },
+    {
+      "path": "p5c-perquery/final-v1/group-a-reverse.json",
+      "sha256": "c1558b972d209bf5ce7ebdf5f64c747e7af5e4885daffb60eb7de81f36f7b224"
+    },
+    {
+      "path": "p5c-perquery/final-v1/group-b-forward.json",
+      "sha256": "8fab3a24fe03ae23d887ba332bcb2fefb8cc113e3607a2ea6a49e24baa2d28f2"
+    },
+    {
+      "path": "p5c-perquery/final-v1/group-b-reverse.json",
+      "sha256": "38a2cd4729c0bed8fec3a61aca248b91bc344a7eb8587fe7ef9ff11d533dd071"
+    }
+  ],
+  "limits": "CPU sample/hash/workspace coverage gate; not independent numerical recomputation or TP4 acceptance"
+}

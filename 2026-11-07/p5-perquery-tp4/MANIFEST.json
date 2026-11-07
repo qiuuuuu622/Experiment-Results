@@ -1,0 +1,30 @@
+{
+  "scope": "P5c independent true four-GPU correctness; no performance claims",
+  "original_raw_path": "/root/dsv41-indexer-resume-20261107/results/indexer/20261107-resume/p5c-perquery/tp4-verify-v1",
+  "files": {
+    "REPORT.md": "4188d7f21be3ba2ae5a1c27ca12546bed8e64991d6cfeb459061b43989a80380",
+    "final-v1/exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "final-v1/frozen/source.tar.gz": "100a0baa88bea1474c76357993e39582f993e2df7c0f9ffacafb7d1af4bb7641",
+    "final-v1/rank0-128-65536.json": "64199a512816e2701bc41571124e8eb238b8935eef0b9758b865c3dfeb7ae837",
+    "final-v1/rank0-64-16384.json": "ed7271cc0c9d5fe5edce397adb4355e65a360d9c403e93f9a9dc0c56f0d6b65c",
+    "final-v1/rank0-64-65536.json": "302b6c942f3b7081a62f7323b5af7d52f13a03f10c6f2e28c7b8c9ac517ade78",
+    "final-v1/rank0.json": "0be4336af6a084a78659d761f6959321750f5fe730eb3d8bd2a48bed0c581d75",
+    "final-v1/rank1-128-65536.json": "6165011a1b7694c998b871d580a19c370725d2ab17c93d07fc146d56b00136e5",
+    "final-v1/rank1-64-16384.json": "c6edf382b933e122f5aafa6bec3ef37a06726a74f15105c27e218b716804ad72",
+    "final-v1/rank1-64-65536.json": "59e4d9dc2d5ff610e63e4dd6bfb6e1b66000968713eec417c55316cd90ac2945",
+    "final-v1/rank1.json": "723b834d525f9466d99377a2964e94bd4e82a8cdc25012b3ddabf6d914f0c334",
+    "final-v1/rank2-128-65536.json": "4d74d77a1c96baa11a0045d919e378b0efb474ead268236c4b3bbe8d235cf13e",
+    "final-v1/rank2-64-16384.json": "b251d3ca4c3503d8fd35b805059997b322ae44c073f05ff7b7c247aa49c44f5e",
+    "final-v1/rank2-64-65536.json": "d0862b9e179254fcf3b527a6c6f060c70ee22a7df9b22aae3a7f8540895602b0",
+    "final-v1/rank2.json": "e4d87dc722031b62e94a469286f5423ba33c4ef9c12eea35bf2f50a58b9af7e6",
+    "final-v1/rank3-128-65536.json": "6582223bf96200f3024235eded43070e29b72a33397168234ef98cc15929d974",
+    "final-v1/rank3-64-16384.json": "7bd119fe1582a3873ba77f9bd6aa71f3233295840ead6dae82b62d02770d562c",
+    "final-v1/rank3-64-65536.json": "b6cf40218fbf7bc0d2354409f974559c8986cf496a42fde8171308fcd0197d0b",
+    "final-v1/rank3.json": "af001b23e9ff0698fb9740264a6d25be1906b2fb3cfde271cc2759db243300bb",
+    "final-v1/run.sh": "fb2f2f656e464851d8db27316c87d575f4fb049347a5968d7debcfe13735111e",
+    "final-v1/runtime-after.json": "f18eea6232c87ab01f811cc9c52a5730cc91b80b55609394ab335abf38fe3c7c",
+    "final-v1/runtime-before.json": "3070c2a310caa265992149459b541f7f66251df0c4df7db2afb73c36d8a59bd6",
+    "final-v1/verify.log": "5bebf86942f42fb37b8a7787629a8909145f719f08e03ef473d7211997c8204c",
+    "summary.json": "105206159e432dcb51d989cf702784527252fbd439c4a6ee98047b37d5fee56a"
+  }
+}

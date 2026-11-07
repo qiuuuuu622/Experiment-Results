@@ -1,0 +1,56 @@
+{
+  "status": "passed",
+  "source_sha256": {
+    "vllm_dsv41_indexer/perquery_prefill.py": "77a7ffbf34ebe4495e560612c9b6943b17214b5fd01a9cdfe613d5887dbe9b1c",
+    "benchmarks/kernels/dsv41_indexer/verify_prefill_perquery.py": "d8e9efb85e3f9c3890baf69bfacbe07b6cb90099f5733a49fa259579174858ce",
+    "benchmarks/kernels/dsv41_indexer/benchmark_prefill_perquery.py": "98958468373ff404fbb311f0734f8b76fbac74f8b721a908cab46de10bbcf0cd"
+  },
+  "fixtures": [
+    [
+      1,
+      1,
+      7,
+      false
+    ],
+    [
+      10,
+      2,
+      517,
+      false
+    ],
+    [
+      33,
+      3,
+      4099,
+      false
+    ],
+    [
+      8,
+      2,
+      20003,
+      false
+    ],
+    [
+      32,
+      2,
+      16396,
+      true
+    ],
+    [
+      8,
+      2,
+      20003,
+      true
+    ]
+  ],
+  "checks": [
+    "AST compilation of all three files",
+    "ruff check all three",
+    "6 fixtures arity and legal shapes",
+    "benchmark rejects unknown case and phase names",
+    "both module CLI --help imports and argument parsing passed without GPU",
+    "non-power-of-two key scales and dynamic scale restore included"
+  ],
+  "gpu_run": false,
+  "awaiting_independent_review": true
+}

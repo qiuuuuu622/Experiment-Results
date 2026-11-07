@@ -1,0 +1,40 @@
+{
+  "status": "completed",
+  "world_size": 4,
+  "devices": [
+    {
+      "rank": 0,
+      "physical_gpu": "0",
+      "uuid": "GPU-PSEUDONYM-35e2765a41c51b7b128731d8"
+    },
+    {
+      "rank": 1,
+      "physical_gpu": "1",
+      "uuid": "GPU-PSEUDONYM-0cdcd3fce9f25fb1af81d50a"
+    },
+    {
+      "rank": 2,
+      "physical_gpu": "2",
+      "uuid": "GPU-PSEUDONYM-d63e7ca0b567d269ab193c54"
+    },
+    {
+      "rank": 3,
+      "physical_gpu": "3",
+      "uuid": "GPU-PSEUDONYM-3a62a7aa1eaf409a737a6709"
+    }
+  ],
+  "shape_count": 3,
+  "phases_per_shape": 7,
+  "phase_variant_execution_rank_checks": 1008,
+  "logical_row_comparisons": 86016,
+  "root_oracle_row_checks": 3584,
+  "minimum_topk_overlap_native": 1.0,
+  "maximum_abs_score_error_native": 1.9073486328125e-06,
+  "maximum_fp32_diagnostic_error": 0.0019866228103637695,
+  "core_sha256": "77a7ffbf34ebe4495e560612c9b6943b17214b5fd01a9cdfe613d5887dbe9b1c",
+  "source_archive_sha256": "100a0baa88bea1474c76357993e39582f993e2df7c0f9ffacafb7d1af4bb7641",
+  "pre_post_source_native_versions_equal": true,
+  "performance_claim": false,
+  "original_output_dir": "/root/dsv41-indexer-resume-20261107/results/indexer/20261107-resume/p5c-perquery/tp4-verify-v1",
+  "final_archive_dir": "results/indexer/20261107-resume/p5-perquery-tp4/final-v1"
+}

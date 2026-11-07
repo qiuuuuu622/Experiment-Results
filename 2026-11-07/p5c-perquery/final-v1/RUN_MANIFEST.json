@@ -1,0 +1,33 @@
+{
+  "status": "completed",
+  "correctness": "42 poison-first dynamic cases passed; final 4-path 64K/ragged validation-only passed",
+  "host": "h20-4",
+  "source_archive_sha256": "b4c1a3dbda6778ea48d226b44ff77809dce604a50fd63b9b3aac15184e83e41b",
+  "model_config_sha256": "8be45ce0476004a3f529fd896115a4a2e800a129ad2d3ec05b16050f52e21879",
+  "gpu_groups": {
+    "1": [
+      "initial_2k",
+      "initial_8k",
+      "initial_32k",
+      "steady_16k"
+    ],
+    "2": [
+      "steady_64k",
+      "steady_256k",
+      "tail_1m",
+      "ragged"
+    ]
+  },
+  "order": "each shape forward and reverse on same physical GPU",
+  "commands": [
+    "bash /root/dsv41-indexer-resume-20261107/runs/p5c-final-v1/run-group.sh a",
+    "bash /root/dsv41-indexer-resume-20261107/runs/p5c-final-v1/run-group.sh b"
+  ],
+  "scope": "single consumer; source generation timed separately; no model weights/serve/accuracy",
+  "measurement_records": 3360,
+  "rounds": 3561,
+  "extra_noise_rounds": 201,
+  "samples": 106830,
+  "runtime_before_after": "source_files/native_files/archive/versions exact in both groups",
+  "dispatch_changed": false
+}

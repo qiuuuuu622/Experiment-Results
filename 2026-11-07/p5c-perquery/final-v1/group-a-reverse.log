@@ -1,0 +1,4 @@
+{"case": "initial_2k", "status": "completed", "records": 38}
+{"case": "initial_8k", "status": "completed", "records": 162}
+{"case": "initial_32k", "status": "completed", "records": 1090}
+{"case": "steady_16k", "status": "completed", "records": 46}

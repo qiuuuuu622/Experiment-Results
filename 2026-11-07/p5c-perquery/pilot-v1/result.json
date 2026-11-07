@@ -1,0 +1,237 @@
+{
+  "status": "completed",
+  "purpose": "validation_only",
+  "args": {
+    "cases": [
+      "steady_64k",
+      "ragged"
+    ],
+    "reverse": false,
+    "validate_only": true,
+    "phases": [],
+    "output": "/root/dsv41-indexer-resume-20261107/results/indexer/20261107-resume/p5c-perquery/pilot-v1/result.json",
+    "identity": "/root/dsv41-indexer-resume-20261107/results/indexer/20261107-resume/p5c-perquery/pilot-v1/runtime-before.json"
+  },
+  "device": {
+    "name": "NVIDIA H20",
+    "sm_count": 78,
+    "topology": "\t\u001b[4mGPU0\tGPU1\tGPU2\tGPU3\tNIC0\tNIC1\tNIC2\tNIC3\tCPU Affinity\tNUMA Affinity\tGPU NUMA ID\u001b[0m\nGPU0\t X \tNV18\tNV18\tNV18\tPXB\tPIX\tPXB\tPXB\t0-187\t0-1\t\tN/A\nGPU1\tNV18\t X \tNV18\tNV18\tPXB\tPIX\tPXB\tPXB\t0-187\t0-1\t\tN/A\nGPU2\tNV18\tNV18\t X \tNV18\tPXB\tPXB\tPIX\tPXB\t0-187\t0-1\t\tN/A\nGPU3\tNV18\tNV18\tNV18\t X \tPXB\tPXB\tPIX\tPXB\t0-187\t0-1\t\tN/A\nNIC0\tPXB\tPXB\tPXB\tPXB\t X \tPXB\tPXB\tPXB\t\t\t\t\nNIC1\tPIX\tPIX\tPXB\tPXB\tPXB\t X \tPXB\tPXB\t\t\t\t\nNIC2\tPXB\tPXB\tPIX\tPIX\tPXB\tPXB\t X \tPXB\t\t\t\t\nNIC3\tPXB\tPXB\tPXB\tPXB\tPXB\tPXB\tPXB\t X \t\t\t\t\n\nLegend:\n\n  X    = Self\n  SYS  = Connection traversing PCIe as well as the SMP interconnect between NUMA nodes (e.g., QPI/UPI)\n  NODE = Connection traversing PCIe as well as the interconnect between PCIe Host Bridges within a NUMA node\n  PHB  = Connection traversing PCIe as well as a PCIe Host Bridge (typically the CPU)\n  PXB  = Connection traversing multiple PCIe bridges (without traversing the PCIe Host Bridge)\n  PIX  = Connection traversing at most a single PCIe bridge\n  NV#  = Connection traversing a bonded set of # NVLinks\n\nNIC Legend:\n\n  NIC0: mlx5_0\n  NIC1: mlx5_1\n  NIC2: mlx5_2\n  NIC3: mlx5_3\n\n",
+    "torch": "2.13.0+cu130",
+    "cuda": "13.0",
+    "memory_bytes": 101997346816
+  },
+  "physical_gpu": "1",
+  "identity_sha256": "408702408fbfd568e6d577b4f99401a8c0e0cc91fff0b84f4d5ae60e54419608",
+  "cases": [
+    {
+      "case": "steady_64k",
+      "query_lens": [
+        2048
+      ],
+      "contexts": [
+        65536
+      ],
+      "rows": 2048,
+      "ratio": 1,
+      "heads": 32,
+      "head_dim": 128,
+      "candidate_layout": "[Q,2048] perquery",
+      "candidate_positions_min": 16377,
+      "candidate_positions_max": 16384,
+      "candidate_positions_sum": 33547264,
+      "different_adjacent_candidate_sets": 2047,
+      "candidate_sha256": "71e34b9762e27587585a3a062ea5f07ac0b379cb16ea75aa59e3353bfe16763a",
+      "correctness": {
+        "rows": 2048,
+        "max_abs_vs_native": 1.9073486328125e-06,
+        "min_topk_overlap": 1.0,
+        "fp32_strict_failures": 713,
+        "native_fp32_strict_failures": 713,
+        "fp32_max_abs": 0.0013964176177978516,
+        "native_fp32_max_abs": 0.00139617919921875,
+        "nrmse_vs_native": 6.376291352785881e-08,
+        "compact_direct_gather_score_comparison": "all candidate scores bitwise equal",
+        "fixed_logits_topk": "all rows exact logical sets"
+      },
+      "records": [],
+      "workspaces": {
+        "direct": {
+          "score_bytes": 134217728,
+          "gather_bytes": 0,
+          "capacity": 2048,
+          "chunks": [
+            [
+              0,
+              2048
+            ]
+          ]
+        },
+        "gathered_wgmma": {
+          "score_bytes": 8126464,
+          "gather_bytes": 268173312,
+          "capacity": 124,
+          "chunks": [
+            [
+              0,
+              124
+            ],
+            [
+              124,
+              248
+            ],
+            [
+              248,
+              372
+            ],
+            [
+              372,
+              496
+            ],
+            [
+              496,
+              620
+            ],
+            [
+              620,
+              744
+            ],
+            [
+              744,
+              868
+            ],
+            [
+              868,
+              992
+            ],
+            [
+              992,
+              1116
+            ],
+            [
+              1116,
+              1240
+            ],
+            [
+              1240,
+              1364
+            ],
+            [
+              1364,
+              1488
+            ],
+            [
+              1488,
+              1612
+            ],
+            [
+              1612,
+              1736
+            ],
+            [
+              1736,
+              1860
+            ],
+            [
+              1860,
+              1984
+            ],
+            [
+              1984,
+              2048
+            ]
+          ]
+        }
+      },
+      "baseline": "existing keys_major fullscore + perquery mask + same Ant selector; DeepGEMM used for numerical gate",
+      "scope": "single consumer: publication/normalize, all gather/score chunks, fused map/topk; source generation separately measured",
+      "score_only_parts": "each score/selector chunk measured after own preparation; sums are derived, not continuous invocation timings",
+      "cache": "warm repeated calls, no L2 flush",
+      "peak_scope": "all compared variants and independent source resident",
+      "source_generation_in_consumer_pipeline": false
+    },
+    {
+      "case": "ragged",
+      "query_lens": [
+        512,
+        128
+      ],
+      "contexts": [
+        65535,
+        16384
+      ],
+      "rows": 640,
+      "ratio": 1,
+      "heads": 32,
+      "head_dim": 128,
+      "candidate_layout": "[Q,2048] perquery",
+      "candidate_positions_min": 16257,
+      "candidate_positions_max": 16384,
+      "candidate_positions_sum": 10475840,
+      "different_adjacent_candidate_sets": 527,
+      "candidate_sha256": "a3e6b8a571915597fc2d618486118058c167ca5fe1908e20265b54d38c07c670",
+      "correctness": {
+        "rows": 640,
+        "max_abs_vs_native": 9.5367431640625e-07,
+        "min_topk_overlap": 1.0,
+        "fp32_strict_failures": 710,
+        "native_fp32_strict_failures": 710,
+        "fp32_max_abs": 0.0016641616821289062,
+        "native_fp32_max_abs": 0.001664280891418457,
+        "nrmse_vs_native": 6.373940625255464e-08,
+        "compact_direct_gather_score_comparison": "all candidate scores bitwise equal",
+        "fixed_logits_topk": "all rows exact logical sets"
+      },
+      "records": [],
+      "workspaces": {
+        "direct": {
+          "score_bytes": 41943040,
+          "gather_bytes": 0,
+          "capacity": 640,
+          "chunks": [
+            [
+              0,
+              640
+            ]
+          ]
+        },
+        "gathered_wgmma": {
+          "score_bytes": 8126464,
+          "gather_bytes": 268173312,
+          "capacity": 124,
+          "chunks": [
+            [
+              0,
+              124
+            ],
+            [
+              124,
+              248
+            ],
+            [
+              248,
+              372
+            ],
+            [
+              372,
+              496
+            ],
+            [
+              496,
+              620
+            ],
+            [
+              620,
+              640
+            ]
+          ]
+        }
+      },
+      "baseline": "existing keys_major fullscore + perquery mask + same Ant selector; DeepGEMM used for numerical gate",
+      "scope": "single consumer: publication/normalize, all gather/score chunks, fused map/topk; source generation separately measured",
+      "score_only_parts": "each score/selector chunk measured after own preparation; sums are derived, not continuous invocation timings",
+      "cache": "warm repeated calls, no L2 flush",
+      "peak_scope": "all compared variants and independent source resident",
+      "source_generation_in_consumer_pipeline": false
+    }
+  ]
+}

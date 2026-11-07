@@ -1,0 +1,10 @@
+{
+  "scope": "CPU read-only review; no GPU test",
+  "source_hashes": {
+    "vllm_dsv41_indexer/perquery_prefill.py": "78aa85bc1400d22f8886848516055fb7b355926bebf80c4900b659fe5692c0f9",
+    "benchmarks/kernels/dsv41_indexer/verify_prefill_perquery.py": "7572ddd082684df37b8f297089449946769e2cc5dba208a52dfdcf050e5dd04d",
+    "vllm_dsv41_indexer/score.py": "669a839062a0d9de642fa3709bb93f5cd056612b2f30455d7de8ce94f29a237b",
+    "vllm_dsv41_indexer/workspace.py": "5c5a86c2e71d3d95e4f996780a81f1045cb31fa594170d7301aa9c3fd792fbb0",
+    "vllm_dsv41_indexer/prepare.py": "8234723ab24dab5c37fe4898ef925032e8fef1a3e2a3403d1d7abe0076d27fd2"
+  }
+}

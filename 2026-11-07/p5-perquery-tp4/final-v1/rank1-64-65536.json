@@ -1,0 +1,68 @@
+{
+  "status": "completed",
+  "records": [
+    {
+      "phase": "initial",
+      "rank": 1,
+      "logical_output_sha256": "1dc3637a5c5ac52afca1123a4704a74fe184e8fe10a511bc01dea45ccb5122cf",
+      "graph_and_eager_variants": 12,
+      "exact_rows_per_variant": 64,
+      "oracle_rank0": null,
+      "local_physical_table_sha256": "054013978cf6c1a9f14bb1e1fdcdaedd021dffec30384af9584bb5c55600d832"
+    },
+    {
+      "phase": "candidate_length_update",
+      "rank": 1,
+      "logical_output_sha256": "007779791dbaa90cf01fcb13609b22c06c456b93dc19146613802662348e2718",
+      "graph_and_eager_variants": 12,
+      "exact_rows_per_variant": 64,
+      "oracle_rank0": null,
+      "local_physical_table_sha256": "054013978cf6c1a9f14bb1e1fdcdaedd021dffec30384af9584bb5c55600d832"
+    },
+    {
+      "phase": "empty_candidates",
+      "rank": 1,
+      "logical_output_sha256": "b5a41c3758763bbec72769fab4a2533bf2db0b6312d93d25a695f9e4b9e02260",
+      "graph_and_eager_variants": 12,
+      "exact_rows_per_variant": 64,
+      "oracle_rank0": null,
+      "local_physical_table_sha256": "054013978cf6c1a9f14bb1e1fdcdaedd021dffec30384af9584bb5c55600d832"
+    },
+    {
+      "phase": "zero_query",
+      "rank": 1,
+      "logical_output_sha256": "cd4b4f6c9e758c8a61b98f706a47f38cc0cbc99b954eed863107d1abb7c3fff3",
+      "graph_and_eager_variants": 12,
+      "exact_rows_per_variant": 64,
+      "oracle_rank0": null,
+      "local_physical_table_sha256": "054013978cf6c1a9f14bb1e1fdcdaedd021dffec30384af9584bb5c55600d832"
+    },
+    {
+      "phase": "request_and_physical_page_remap",
+      "rank": 1,
+      "logical_output_sha256": "6acaddb66adf3df76ffbc7455d32c6ac9373422a62dae9a8b89c1bd468ccfa2d",
+      "graph_and_eager_variants": 12,
+      "exact_rows_per_variant": 64,
+      "oracle_rank0": null,
+      "local_physical_table_sha256": "bfd7fff11cc455076025f450754ad0b385a4da825a774c7df923401c2d668e2e"
+    },
+    {
+      "phase": "all_zero_and_page_remap",
+      "rank": 1,
+      "logical_output_sha256": "b5a41c3758763bbec72769fab4a2533bf2db0b6312d93d25a695f9e4b9e02260",
+      "graph_and_eager_variants": 12,
+      "exact_rows_per_variant": 64,
+      "oracle_rank0": null,
+      "local_physical_table_sha256": "8d9cd48cf4c613b125f6f19b31d8b073f5666cb718fe132e9f8d2975dd6150ab"
+    },
+    {
+      "phase": "restore",
+      "rank": 1,
+      "logical_output_sha256": "1dc3637a5c5ac52afca1123a4704a74fe184e8fe10a511bc01dea45ccb5122cf",
+      "graph_and_eager_variants": 12,
+      "exact_rows_per_variant": 64,
+      "oracle_rank0": null,
+      "local_physical_table_sha256": "054013978cf6c1a9f14bb1e1fdcdaedd021dffec30384af9584bb5c55600d832"
+    }
+  ]
+}

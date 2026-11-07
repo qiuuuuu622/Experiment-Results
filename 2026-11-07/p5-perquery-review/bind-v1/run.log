@@ -1,0 +1,8 @@
+{"label": "initial_2k", "execution": "eager", "strategy": "full_keys_major_mask", "status": "passed"}
+{"label": "initial_2k", "execution": "graph", "strategy": "full_deepgemm_mask", "status": "passed"}
+{"label": "steady_16k", "execution": "eager", "strategy": "full_keys_major_mask", "status": "passed"}
+{"label": "steady_16k", "execution": "graph", "strategy": "full_keys_major_mask", "status": "passed"}
+{"label": "steady_64k", "execution": "eager", "strategy": "direct", "status": "passed"}
+{"label": "steady_64k", "execution": "graph", "strategy": "direct", "status": "passed"}
+{"label": "ragged", "execution": "eager", "strategy": "direct", "status": "passed"}
+{"label": "ragged", "execution": "graph", "strategy": "direct", "status": "passed"}

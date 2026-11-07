@@ -1,0 +1,135 @@
+{
+  "status": "review_complete_native_compatible_module_scope",
+  "manifest_sha256": "efb48152efa7d7b0b9b57a6e311412f3086194879c1b48308b731c1754852868",
+  "bind_sha256": "1decd6b4cde3ff7a2bdfc3fe8ea5689a1e68bc6afbae968b32743e323e9816c1",
+  "exact_contract_records": 16,
+  "choices": [
+    {
+      "label": "initial_2k",
+      "execution": "eager",
+      "strategy": "full_keys_major_mask",
+      "evidence": "original"
+    },
+    {
+      "label": "initial_2k",
+      "execution": "graph",
+      "strategy": "full_deepgemm_mask",
+      "evidence": "original"
+    },
+    {
+      "label": "initial_8k",
+      "execution": "eager",
+      "strategy": "full_deepgemm_mask",
+      "evidence": "original"
+    },
+    {
+      "label": "initial_8k",
+      "execution": "graph",
+      "strategy": "full_deepgemm_mask",
+      "evidence": "original"
+    },
+    {
+      "label": "initial_32k",
+      "execution": "eager",
+      "strategy": "full_deepgemm_mask",
+      "evidence": "original"
+    },
+    {
+      "label": "initial_32k",
+      "execution": "graph",
+      "strategy": "full_deepgemm_mask",
+      "evidence": "original"
+    },
+    {
+      "label": "steady_16k",
+      "execution": "eager",
+      "strategy": "full_keys_major_mask",
+      "evidence": "original"
+    },
+    {
+      "label": "steady_16k",
+      "execution": "graph",
+      "strategy": "full_keys_major_mask",
+      "evidence": "original"
+    },
+    {
+      "label": "steady_64k",
+      "execution": "eager",
+      "strategy": "direct",
+      "evidence": "paired_same_object"
+    },
+    {
+      "label": "steady_64k",
+      "execution": "graph",
+      "strategy": "direct",
+      "evidence": "paired_same_object"
+    },
+    {
+      "label": "steady_256k",
+      "execution": "eager",
+      "strategy": "direct",
+      "evidence": "paired_same_object"
+    },
+    {
+      "label": "steady_256k",
+      "execution": "graph",
+      "strategy": "direct",
+      "evidence": "paired_same_object"
+    },
+    {
+      "label": "tail_1m",
+      "execution": "eager",
+      "strategy": "direct",
+      "evidence": "paired_same_object"
+    },
+    {
+      "label": "tail_1m",
+      "execution": "graph",
+      "strategy": "direct",
+      "evidence": "paired_same_object"
+    },
+    {
+      "label": "ragged",
+      "execution": "eager",
+      "strategy": "direct",
+      "evidence": "paired_same_object"
+    },
+    {
+      "label": "ragged",
+      "execution": "graph",
+      "strategy": "direct",
+      "evidence": "paired_same_object"
+    }
+  ],
+  "original_raw_rounds": 3561,
+  "paired_raw_rounds": 64,
+  "artifact_files_checked": 17,
+  "measured_source_files_checked": 87,
+  "native_identity_files": 589,
+  "real_default_bind_cases": 8,
+  "poison_first_graph_phases": 24,
+  "numerical_forward_once": {
+    "rows": 50560,
+    "max_abs_vs_native": 1.9073486328125e-06,
+    "max_nrmse_vs_native": 6.410410105455567e-08,
+    "minimum_topk_overlap": 1.0,
+    "fp32_sample_score_failures": 4120,
+    "native_fp32_sample_score_failures": 4121,
+    "fp32_max_abs": 0.0016641616821289062,
+    "fp32_initial_gate": "not fully passed; diagnostic locations, not failing rows"
+  },
+  "tp4_correctness": {
+    "ranks": 4,
+    "shapes": 3,
+    "phases_per_shape": 7,
+    "variants_per_phase": 12,
+    "speed_evidence": false
+  },
+  "immutable_old_p8": "old 400 admissions unchanged",
+  "limitations": [
+    "no service or model accuracy",
+    "no automatic TP4 performance policy",
+    "replan if length/grouping/mode/budgets change",
+    "original candidate canonical hashes not retrospectively reconstructed"
+  ]
+}

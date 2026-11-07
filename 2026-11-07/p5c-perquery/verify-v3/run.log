@@ -1,0 +1,23 @@
+{"rows": 1, "keys": 7, "step": "initial", "status": "passed"}
+{"rows": 1, "keys": 7, "step": "changed_candidates_lengths", "status": "passed"}
+{"rows": 1, "keys": 7, "step": "zero_query", "status": "passed"}
+{"rows": 1, "keys": 7, "step": "zero_lengths", "status": "passed"}
+{"rows": 1, "keys": 7, "step": "request_page_reorder", "status": "passed"}
+{"rows": 1, "keys": 7, "step": "restore", "status": "passed"}
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/root/dsv41-indexer-resume-20261107/runs/p5c-perquery-v3/benchmarks/kernels/dsv41_indexer/verify_prefill_perquery.py", line 225, in <module>
+    main()
+  File "/root/dsv41-indexer-resume-20261107/runs/p5c-perquery-v3/benchmarks/kernels/dsv41_indexer/verify_prefill_perquery.py", line 221, in main
+    save(a.output, run())
+                   ^^^^^
+  File "/root/dsv41-indexer-resume-20261107/runs/p5c-perquery-v3/benchmarks/kernels/dsv41_indexer/verify_prefill_perquery.py", line 199, in run
+    torch.testing.assert_close(
+  File "/usr/local/lib/python3.12/dist-packages/torch/testing/_comparison.py", line 1631, in assert_close
+    raise error_metas[0].to_error(msg)
+AssertionError: Tensor-likes are not equal!
+
+Mismatched elements: 2153 / 5120 (42.1%)
+Greatest absolute difference: 513 at index (8, 97)
+Greatest relative difference: inf at index (0, 0)

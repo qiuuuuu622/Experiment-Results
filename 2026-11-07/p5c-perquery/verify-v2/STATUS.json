@@ -1,0 +1,9 @@
+{
+  "status": "passed_prototype",
+  "reason": "passed initial 4 shapes x 6 stages; predates poison/source_unique checks",
+  "not_final_acceptance": true,
+  "host": "h20-4",
+  "gpu": 1,
+  "source_sha256": "667abc36bf918d18f8bfe2c6c0cd3275708391b0427fd27dc5ba52496fe22c1b",
+  "command": "CUDA_VISIBLE_DEVICES=1 .venv/bin/python -m benchmarks.kernels.dsv41_indexer.verify_prefill_perquery --output /root/dsv41-indexer-resume-20261107/results/indexer/20261107-resume/p5c-perquery/verify-v2/result.json"
+}

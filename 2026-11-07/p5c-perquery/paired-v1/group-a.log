@@ -1,0 +1,6 @@
+{"case": "initial_2k", "paired": false, "status": "completed"}
+{"case": "initial_8k", "paired": false, "status": "completed"}
+{"case": "initial_32k", "paired": false, "status": "completed"}
+{"case": "steady_16k", "paired": false, "status": "completed"}
+{"case": "steady_64k", "paired": true, "status": "completed"}
+{"case": "steady_256k", "paired": true, "status": "completed"}

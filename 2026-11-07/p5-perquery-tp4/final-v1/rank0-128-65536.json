@@ -1,0 +1,285 @@
+{
+  "status": "completed",
+  "records": [
+    {
+      "phase": "initial",
+      "rank": 0,
+      "logical_output_sha256": "7109539274d313c62eec44412b4571637970b8549a7928e1bd052e4a4f84b0d9",
+      "graph_and_eager_variants": 12,
+      "exact_rows_per_variant": 128,
+      "oracle_rank0": {
+        "direct": {
+          "max_abs_vs_native": 1.430511474609375e-06,
+          "nrmse_vs_native": 8.665486115998686e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0019866228103637695,
+          "fp32_strict_failures": 902,
+          "native_fp32_strict_failures": 901,
+          "native_fp32_max_abs": 0.001987159252166748,
+          "score_bytes": 327680,
+          "gather_bytes": 0,
+          "chunks": 26,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 1.430511474609375e-06,
+          "nrmse_vs_native": 8.665486115998686e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0019866228103637695,
+          "fp32_strict_failures": 902,
+          "native_fp32_strict_failures": 901,
+          "native_fp32_max_abs": 0.001987159252166748,
+          "score_bytes": 196608,
+          "gather_bytes": 6488064,
+          "chunks": 43,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        }
+      },
+      "local_physical_table_sha256": "1e2d56dd69d9ba39643107bbabe1a9a024cf51d4af9ba0ce7ea6fb917706daea"
+    },
+    {
+      "phase": "candidate_length_update",
+      "rank": 0,
+      "logical_output_sha256": "5705e064389f2b01c172f6019e30b7eae206845def1e95640b746d9b43e61f4c",
+      "graph_and_eager_variants": 12,
+      "exact_rows_per_variant": 128,
+      "oracle_rank0": {
+        "direct": {
+          "max_abs_vs_native": 1.430511474609375e-06,
+          "nrmse_vs_native": 8.663853231526496e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0011916160583496094,
+          "fp32_strict_failures": 482,
+          "native_fp32_strict_failures": 483,
+          "native_fp32_max_abs": 0.0011917352676391602,
+          "score_bytes": 327680,
+          "gather_bytes": 0,
+          "chunks": 26,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 1.430511474609375e-06,
+          "nrmse_vs_native": 8.663853231526496e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0011916160583496094,
+          "fp32_strict_failures": 482,
+          "native_fp32_strict_failures": 483,
+          "native_fp32_max_abs": 0.0011917352676391602,
+          "score_bytes": 196608,
+          "gather_bytes": 6488064,
+          "chunks": 43,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        }
+      },
+      "local_physical_table_sha256": "1e2d56dd69d9ba39643107bbabe1a9a024cf51d4af9ba0ce7ea6fb917706daea"
+    },
+    {
+      "phase": "empty_candidates",
+      "rank": 0,
+      "logical_output_sha256": "3b874d3ba46c638fc3094f8e92fb744ca974893873f8885f54e23760f9b6311b",
+      "graph_and_eager_variants": 12,
+      "exact_rows_per_variant": 128,
+      "oracle_rank0": {
+        "direct": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "fp32_strict_failures": 0,
+          "native_fp32_strict_failures": 0,
+          "native_fp32_max_abs": 0.0,
+          "score_bytes": 327680,
+          "gather_bytes": 0,
+          "chunks": 26,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "fp32_strict_failures": 0,
+          "native_fp32_strict_failures": 0,
+          "native_fp32_max_abs": 0.0,
+          "score_bytes": 196608,
+          "gather_bytes": 6488064,
+          "chunks": 43,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        }
+      },
+      "local_physical_table_sha256": "1e2d56dd69d9ba39643107bbabe1a9a024cf51d4af9ba0ce7ea6fb917706daea"
+    },
+    {
+      "phase": "zero_query",
+      "rank": 0,
+      "logical_output_sha256": "a93615c11b8fb2f82d064f384ce6598261016e9e5649606b2e2a847592e26fc2",
+      "graph_and_eager_variants": 12,
+      "exact_rows_per_variant": 128,
+      "oracle_rank0": {
+        "direct": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "fp32_strict_failures": 0,
+          "native_fp32_strict_failures": 0,
+          "native_fp32_max_abs": 0.0,
+          "score_bytes": 327680,
+          "gather_bytes": 0,
+          "chunks": 26,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "fp32_strict_failures": 0,
+          "native_fp32_strict_failures": 0,
+          "native_fp32_max_abs": 0.0,
+          "score_bytes": 196608,
+          "gather_bytes": 6488064,
+          "chunks": 43,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        }
+      },
+      "local_physical_table_sha256": "1e2d56dd69d9ba39643107bbabe1a9a024cf51d4af9ba0ce7ea6fb917706daea"
+    },
+    {
+      "phase": "request_and_physical_page_remap",
+      "rank": 0,
+      "logical_output_sha256": "3c5b8251c9d42b9d3f6156dc8169c7a20ead72550d372e9425b40ac509495788",
+      "graph_and_eager_variants": 12,
+      "exact_rows_per_variant": 128,
+      "oracle_rank0": {
+        "direct": {
+          "max_abs_vs_native": 1.9073486328125e-06,
+          "nrmse_vs_native": 8.67062915330749e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0016124248504638672,
+          "fp32_strict_failures": 590,
+          "native_fp32_strict_failures": 591,
+          "native_fp32_max_abs": 0.0016124248504638672,
+          "score_bytes": 327680,
+          "gather_bytes": 0,
+          "chunks": 26,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 1.9073486328125e-06,
+          "nrmse_vs_native": 8.67062915330749e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0016124248504638672,
+          "fp32_strict_failures": 590,
+          "native_fp32_strict_failures": 591,
+          "native_fp32_max_abs": 0.0016124248504638672,
+          "score_bytes": 196608,
+          "gather_bytes": 6488064,
+          "chunks": 43,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        }
+      },
+      "local_physical_table_sha256": "f8576aa23adebae9fbb44063d7a968967f7986694a87828a676d9b91c81f87bd"
+    },
+    {
+      "phase": "all_zero_and_page_remap",
+      "rank": 0,
+      "logical_output_sha256": "3b874d3ba46c638fc3094f8e92fb744ca974893873f8885f54e23760f9b6311b",
+      "graph_and_eager_variants": 12,
+      "exact_rows_per_variant": 128,
+      "oracle_rank0": {
+        "direct": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "fp32_strict_failures": 0,
+          "native_fp32_strict_failures": 0,
+          "native_fp32_max_abs": 0.0,
+          "score_bytes": 327680,
+          "gather_bytes": 0,
+          "chunks": 26,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "fp32_strict_failures": 0,
+          "native_fp32_strict_failures": 0,
+          "native_fp32_max_abs": 0.0,
+          "score_bytes": 196608,
+          "gather_bytes": 6488064,
+          "chunks": 43,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        }
+      },
+      "local_physical_table_sha256": "5c6a5e8f1a311672c346bed609fe39b97b4b14b195966e31cc1d1fbecf53c3e3"
+    },
+    {
+      "phase": "restore",
+      "rank": 0,
+      "logical_output_sha256": "7109539274d313c62eec44412b4571637970b8549a7928e1bd052e4a4f84b0d9",
+      "graph_and_eager_variants": 12,
+      "exact_rows_per_variant": 128,
+      "oracle_rank0": {
+        "direct": {
+          "max_abs_vs_native": 1.430511474609375e-06,
+          "nrmse_vs_native": 8.665486115998686e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0019866228103637695,
+          "fp32_strict_failures": 902,
+          "native_fp32_strict_failures": 901,
+          "native_fp32_max_abs": 0.001987159252166748,
+          "score_bytes": 327680,
+          "gather_bytes": 0,
+          "chunks": 26,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 1.430511474609375e-06,
+          "nrmse_vs_native": 8.665486115998686e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0019866228103637695,
+          "fp32_strict_failures": 902,
+          "native_fp32_strict_failures": 901,
+          "native_fp32_max_abs": 0.001987159252166748,
+          "score_bytes": 196608,
+          "gather_bytes": 6488064,
+          "chunks": 43,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        }
+      },
+      "local_physical_table_sha256": "1e2d56dd69d9ba39643107bbabe1a9a024cf51d4af9ba0ce7ea6fb917706daea"
+    }
+  ]
+}

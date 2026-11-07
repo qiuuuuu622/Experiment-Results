@@ -1,0 +1,4238 @@
+{
+  "status": "completed",
+  "args": {
+    "frozen_root": "/root/dsv41-indexer-resume-20261107/runs/p5c-final-v1",
+    "identity": "/root/dsv41-indexer-resume-20261107/results/indexer/20261107-resume/p5c-perquery/paired-v1/runtime-before-a.json",
+    "group": "a",
+    "output": "/root/dsv41-indexer-resume-20261107/results/indexer/20261107-resume/p5c-perquery/paired-v1/group-a.json"
+  },
+  "host": "h20-4",
+  "physical_gpu": "1",
+  "device": {
+    "name": "NVIDIA H20",
+    "sm_count": 78,
+    "topology": "\t\u001b[4mGPU0\tGPU1\tGPU2\tGPU3\tNIC0\tNIC1\tNIC2\tNIC3\tCPU Affinity\tNUMA Affinity\tGPU NUMA ID\u001b[0m\nGPU0\t X \tNV18\tNV18\tNV18\tPXB\tPIX\tPXB\tPXB\t0-187\t0-1\t\tN/A\nGPU1\tNV18\t X \tNV18\tNV18\tPXB\tPIX\tPXB\tPXB\t0-187\t0-1\t\tN/A\nGPU2\tNV18\tNV18\t X \tNV18\tPXB\tPXB\tPIX\tPXB\t0-187\t0-1\t\tN/A\nGPU3\tNV18\tNV18\tNV18\t X \tPXB\tPXB\tPIX\tPXB\t0-187\t0-1\t\tN/A\nNIC0\tPXB\tPXB\tPXB\tPXB\t X \tPXB\tPXB\tPXB\t\t\t\t\nNIC1\tPIX\tPIX\tPXB\tPXB\tPXB\t X \tPXB\tPXB\t\t\t\t\nNIC2\tPXB\tPXB\tPIX\tPIX\tPXB\tPXB\t X \tPXB\t\t\t\t\nNIC3\tPXB\tPXB\tPXB\tPXB\tPXB\tPXB\tPXB\t X \t\t\t\t\n\nLegend:\n\n  X    = Self\n  SYS  = Connection traversing PCIe as well as the SMP interconnect between NUMA nodes (e.g., QPI/UPI)\n  NODE = Connection traversing PCIe as well as the interconnect between PCIe Host Bridges within a NUMA node\n  PHB  = Connection traversing PCIe as well as a PCIe Host Bridge (typically the CPU)\n  PXB  = Connection traversing multiple PCIe bridges (without traversing the PCIe Host Bridge)\n  PIX  = Connection traversing at most a single PCIe bridge\n  NV#  = Connection traversing a bonded set of # NVLinks\n\nNIC Legend:\n\n  NIC0: mlx5_0\n  NIC1: mlx5_1\n  NIC2: mlx5_2\n  NIC3: mlx5_3\n\n",
+    "torch": "2.13.0+cu130",
+    "cuda": "13.0",
+    "memory_bytes": 101997346816
+  },
+  "runner_sha256": "5b8ffddff4f4f51b145a862439b57575b9f7c8d221d1612643f6563052da83f3",
+  "frozen_driver": {
+    "path": "/root/dsv41-indexer-resume-20261107/runs/p5c-final-v1/benchmarks/kernels/dsv41_indexer/benchmark_prefill_perquery.py",
+    "sha256": "40f50488bfa7213ae3354340c08786e954f7403f2c8d81ebfcd4a2fa8feb96d4"
+  },
+  "frozen_core": {
+    "path": "/root/dsv41-indexer-resume-20261107/runs/p5c-final-v1/vllm_dsv41_indexer/perquery_prefill.py",
+    "sha256": "77a7ffbf34ebe4495e560612c9b6943b17214b5fd01a9cdfe613d5887dbe9b1c"
+  },
+  "identity_sha256": "ff73e00704d803ce55fcc1e4a35ca604ccdb717bd2bafbadfdb42615b9f9ab46",
+  "cases": [
+    {
+      "case": "initial_2k",
+      "query_lens": [
+        2048
+      ],
+      "contexts": [
+        2048
+      ],
+      "ratio": 1,
+      "heads": 32,
+      "head_dim": 128,
+      "paired_pipeline": false,
+      "input_before": {
+        "q": {
+          "shape": [
+            2048,
+            32,
+            128
+          ],
+          "dtype": "torch.float8_e4m3fn",
+          "sha256": "2d9118a7c655cbf407a1333d0ba12ca81bb04e8fef6e579df1df02c3f5eb9e4a"
+        },
+        "weights": {
+          "shape": [
+            2048,
+            32
+          ],
+          "dtype": "torch.float32",
+          "sha256": "72d07c8be3776a03be3b2d6ba905507ff3b83f38929a14307fe58a44a31806d9"
+        },
+        "cache": {
+          "shape": [
+            32,
+            64,
+            1,
+            132
+          ],
+          "dtype": "torch.uint8",
+          "sha256": "eccd1b23d68940d7cebbd6c8e6fedefdbf4c08533241d6410aae8087db87340f"
+        },
+        "table": {
+          "shape": [
+            1,
+            32
+          ],
+          "dtype": "torch.int32",
+          "sha256": "e40df5fd3e6d56389110a71bf4e8db7f91363ad59de2947c207d137d8ae2a298"
+        },
+        "requests": {
+          "shape": [
+            2048
+          ],
+          "dtype": "torch.int32",
+          "sha256": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47"
+        },
+        "lengths": {
+          "shape": [
+            2048
+          ],
+          "dtype": "torch.int32",
+          "sha256": "791f77305adabfcc6ed5741c707fbdd16658a735be6412ea97ba1b014ff096f5"
+        },
+        "source_q": {
+          "shape": [
+            2048,
+            32,
+            128
+          ],
+          "dtype": "torch.float8_e4m3fn",
+          "sha256": "55f3206fbb87883136263328212da2fe029861da2200b4409dc764ff2c809f65"
+        },
+        "source_weights": {
+          "shape": [
+            2048,
+            32
+          ],
+          "dtype": "torch.float32",
+          "sha256": "329ee6e58372e891a83943fbbbed0926a6e367e6cf6109ec4a004b16da6f06cc"
+        },
+        "candidate_raw": {
+          "shape": [
+            2048,
+            2048
+          ],
+          "dtype": "torch.int32",
+          "sha256": "8b4baf247df8855f803baa513dc560da6e7989be36949ec96dea065182403719"
+        },
+        "candidate_canonical": {
+          "shape": [
+            2048,
+            2048
+          ],
+          "dtype": "torch.int32",
+          "sha256": "bf58c61b50402e0ca54e33b22a5c4a32e46e7cd85e0115865ad6f1aaa640762f"
+        }
+      },
+      "input_after": {
+        "q": {
+          "shape": [
+            2048,
+            32,
+            128
+          ],
+          "dtype": "torch.float8_e4m3fn",
+          "sha256": "2d9118a7c655cbf407a1333d0ba12ca81bb04e8fef6e579df1df02c3f5eb9e4a"
+        },
+        "weights": {
+          "shape": [
+            2048,
+            32
+          ],
+          "dtype": "torch.float32",
+          "sha256": "72d07c8be3776a03be3b2d6ba905507ff3b83f38929a14307fe58a44a31806d9"
+        },
+        "cache": {
+          "shape": [
+            32,
+            64,
+            1,
+            132
+          ],
+          "dtype": "torch.uint8",
+          "sha256": "eccd1b23d68940d7cebbd6c8e6fedefdbf4c08533241d6410aae8087db87340f"
+        },
+        "table": {
+          "shape": [
+            1,
+            32
+          ],
+          "dtype": "torch.int32",
+          "sha256": "e40df5fd3e6d56389110a71bf4e8db7f91363ad59de2947c207d137d8ae2a298"
+        },
+        "requests": {
+          "shape": [
+            2048
+          ],
+          "dtype": "torch.int32",
+          "sha256": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47"
+        },
+        "lengths": {
+          "shape": [
+            2048
+          ],
+          "dtype": "torch.int32",
+          "sha256": "791f77305adabfcc6ed5741c707fbdd16658a735be6412ea97ba1b014ff096f5"
+        },
+        "source_q": {
+          "shape": [
+            2048,
+            32,
+            128
+          ],
+          "dtype": "torch.float8_e4m3fn",
+          "sha256": "55f3206fbb87883136263328212da2fe029861da2200b4409dc764ff2c809f65"
+        },
+        "source_weights": {
+          "shape": [
+            2048,
+            32
+          ],
+          "dtype": "torch.float32",
+          "sha256": "329ee6e58372e891a83943fbbbed0926a6e367e6cf6109ec4a004b16da6f06cc"
+        },
+        "candidate_raw": {
+          "shape": [
+            2048,
+            2048
+          ],
+          "dtype": "torch.int32",
+          "sha256": "8b4baf247df8855f803baa513dc560da6e7989be36949ec96dea065182403719"
+        },
+        "candidate_canonical": {
+          "shape": [
+            2048,
+            2048
+          ],
+          "dtype": "torch.int32",
+          "sha256": "bf58c61b50402e0ca54e33b22a5c4a32e46e7cd85e0115865ad6f1aaa640762f"
+        }
+      },
+      "input_bytes_unchanged": true,
+      "source_repeats": [
+        {
+          "raw": {
+            "shape": [
+              2048,
+              2048
+            ],
+            "dtype": "torch.int32",
+            "sha256": "8b4baf247df8855f803baa513dc560da6e7989be36949ec96dea065182403719"
+          },
+          "canonical": {
+            "shape": [
+              2048,
+              2048
+            ],
+            "dtype": "torch.int32",
+            "sha256": "bf58c61b50402e0ca54e33b22a5c4a32e46e7cd85e0115865ad6f1aaa640762f"
+          }
+        },
+        {
+          "raw": {
+            "shape": [
+              2048,
+              2048
+            ],
+            "dtype": "torch.int32",
+            "sha256": "8b4baf247df8855f803baa513dc560da6e7989be36949ec96dea065182403719"
+          },
+          "canonical": {
+            "shape": [
+              2048,
+              2048
+            ],
+            "dtype": "torch.int32",
+            "sha256": "bf58c61b50402e0ca54e33b22a5c4a32e46e7cd85e0115865ad6f1aaa640762f"
+          }
+        },
+        {
+          "raw": {
+            "shape": [
+              2048,
+              2048
+            ],
+            "dtype": "torch.int32",
+            "sha256": "8b4baf247df8855f803baa513dc560da6e7989be36949ec96dea065182403719"
+          },
+          "canonical": {
+            "shape": [
+              2048,
+              2048
+            ],
+            "dtype": "torch.int32",
+            "sha256": "bf58c61b50402e0ca54e33b22a5c4a32e46e7cd85e0115865ad6f1aaa640762f"
+          }
+        }
+      ],
+      "source_canonical_sets_exact": true,
+      "source_raw_order_changed": false,
+      "candidate_positions_min": 1,
+      "candidate_positions_max": 2048,
+      "candidate_positions_sum": 2098176,
+      "path_object_identity": null,
+      "correctness": null,
+      "records": [],
+      "source_generation_in_pipeline": false,
+      "scope": "Same inputs/candidates/paths for both orders in one process; complete pipelines only; source repeats precede timing."
+    },
+    {
+      "case": "initial_8k",
+      "query_lens": [
+        8192
+      ],
+      "contexts": [
+        8192
+      ],
+      "ratio": 1,
+      "heads": 32,
+      "head_dim": 128,
+      "paired_pipeline": false,
+      "input_before": {
+        "q": {
+          "shape": [
+            8192,
+            32,
+            128
+          ],
+          "dtype": "torch.float8_e4m3fn",
+          "sha256": "6eb9db06a3f77d5104c210101ff6c9dfa654354374b10fdd56bac99681de7104"
+        },
+        "weights": {
+          "shape": [
+            8192,
+            32
+          ],
+          "dtype": "torch.float32",
+          "sha256": "b241bbd2a979f24663b4144c1d5e6dbc12fb7c1ee93cbb3ac42aaef8e98aad59"
+        },
+        "cache": {
+          "shape": [
+            128,
+            64,
+            1,
+            132
+          ],
+          "dtype": "torch.uint8",
+          "sha256": "fd06e7a10aa5a8fa9e058edf443f36b37145ff753f28adfa483bea6488187114"
+        },
+        "table": {
+          "shape": [
+            1,
+            128
+          ],
+          "dtype": "torch.int32",
+          "sha256": "4156a416c87221ba8f53faaae5c022e62a82bcdc5a22c39f497b1c1eac14c321"
+        },
+        "requests": {
+          "shape": [
+            8192
+          ],
+          "dtype": "torch.int32",
+          "sha256": "c35020473aed1b4642cd726cad727b63fff2824ad68cedd7ffb73c7cbd890479"
+        },
+        "lengths": {
+          "shape": [
+            8192
+          ],
+          "dtype": "torch.int32",
+          "sha256": "b8112a0a563536d196c32fb5b9c26cb5e404b7168e19537a32ce2e526a667f32"
+        },
+        "source_q": {
+          "shape": [
+            8192,
+            32,
+            128
+          ],
+          "dtype": "torch.float8_e4m3fn",
+          "sha256": "3232471dacb4432fd6092ad2721c828e1803affad61d8b714b4c942d323765ce"
+        },
+        "source_weights": {
+          "shape": [
+            8192,
+            32
+          ],
+          "dtype": "torch.float32",
+          "sha256": "93600fbed172e5611b193ca477687c296ff31f5b6280c0fdb01de25f21b31e6f"
+        },
+        "candidate_raw": {
+          "shape": [
+            8192,
+            2048
+          ],
+          "dtype": "torch.int32",
+          "sha256": "35cba6d8e5c039f82a0bd027989f2fcf5ff96afc38b244091ac1421b3f5d4df1"
+        },
+        "candidate_canonical": {
+          "shape": [
+            8192,
+            2048
+          ],
+          "dtype": "torch.int32",
+          "sha256": "9dd35fb823ec14799a3abe3abdfc4c68270158c97d6807156fae51d9f0dd8af0"
+        }
+      },
+      "input_after": {
+        "q": {
+          "shape": [
+            8192,
+            32,
+            128
+          ],
+          "dtype": "torch.float8_e4m3fn",
+          "sha256": "6eb9db06a3f77d5104c210101ff6c9dfa654354374b10fdd56bac99681de7104"
+        },
+        "weights": {
+          "shape": [
+            8192,
+            32
+          ],
+          "dtype": "torch.float32",
+          "sha256": "b241bbd2a979f24663b4144c1d5e6dbc12fb7c1ee93cbb3ac42aaef8e98aad59"
+        },
+        "cache": {
+          "shape": [
+            128,
+            64,
+            1,
+            132
+          ],
+          "dtype": "torch.uint8",
+          "sha256": "fd06e7a10aa5a8fa9e058edf443f36b37145ff753f28adfa483bea6488187114"
+        },
+        "table": {
+          "shape": [
+            1,
+            128
+          ],
+          "dtype": "torch.int32",
+          "sha256": "4156a416c87221ba8f53faaae5c022e62a82bcdc5a22c39f497b1c1eac14c321"
+        },
+        "requests": {
+          "shape": [
+            8192
+          ],
+          "dtype": "torch.int32",
+          "sha256": "c35020473aed1b4642cd726cad727b63fff2824ad68cedd7ffb73c7cbd890479"
+        },
+        "lengths": {
+          "shape": [
+            8192
+          ],
+          "dtype": "torch.int32",
+          "sha256": "b8112a0a563536d196c32fb5b9c26cb5e404b7168e19537a32ce2e526a667f32"
+        },
+        "source_q": {
+          "shape": [
+            8192,
+            32,
+            128
+          ],
+          "dtype": "torch.float8_e4m3fn",
+          "sha256": "3232471dacb4432fd6092ad2721c828e1803affad61d8b714b4c942d323765ce"
+        },
+        "source_weights": {
+          "shape": [
+            8192,
+            32
+          ],
+          "dtype": "torch.float32",
+          "sha256": "93600fbed172e5611b193ca477687c296ff31f5b6280c0fdb01de25f21b31e6f"
+        },
+        "candidate_raw": {
+          "shape": [
+            8192,
+            2048
+          ],
+          "dtype": "torch.int32",
+          "sha256": "35cba6d8e5c039f82a0bd027989f2fcf5ff96afc38b244091ac1421b3f5d4df1"
+        },
+        "candidate_canonical": {
+          "shape": [
+            8192,
+            2048
+          ],
+          "dtype": "torch.int32",
+          "sha256": "9dd35fb823ec14799a3abe3abdfc4c68270158c97d6807156fae51d9f0dd8af0"
+        }
+      },
+      "input_bytes_unchanged": true,
+      "source_repeats": [
+        {
+          "raw": {
+            "shape": [
+              8192,
+              2048
+            ],
+            "dtype": "torch.int32",
+            "sha256": "35cba6d8e5c039f82a0bd027989f2fcf5ff96afc38b244091ac1421b3f5d4df1"
+          },
+          "canonical": {
+            "shape": [
+              8192,
+              2048
+            ],
+            "dtype": "torch.int32",
+            "sha256": "9dd35fb823ec14799a3abe3abdfc4c68270158c97d6807156fae51d9f0dd8af0"
+          }
+        },
+        {
+          "raw": {
+            "shape": [
+              8192,
+              2048
+            ],
+            "dtype": "torch.int32",
+            "sha256": "35cba6d8e5c039f82a0bd027989f2fcf5ff96afc38b244091ac1421b3f5d4df1"
+          },
+          "canonical": {
+            "shape": [
+              8192,
+              2048
+            ],
+            "dtype": "torch.int32",
+            "sha256": "9dd35fb823ec14799a3abe3abdfc4c68270158c97d6807156fae51d9f0dd8af0"
+          }
+        },
+        {
+          "raw": {
+            "shape": [
+              8192,
+              2048
+            ],
+            "dtype": "torch.int32",
+            "sha256": "35cba6d8e5c039f82a0bd027989f2fcf5ff96afc38b244091ac1421b3f5d4df1"
+          },
+          "canonical": {
+            "shape": [
+              8192,
+              2048
+            ],
+            "dtype": "torch.int32",
+            "sha256": "9dd35fb823ec14799a3abe3abdfc4c68270158c97d6807156fae51d9f0dd8af0"
+          }
+        }
+      ],
+      "source_canonical_sets_exact": true,
+      "source_raw_order_changed": false,
+      "candidate_positions_min": 1,
+      "candidate_positions_max": 8192,
+      "candidate_positions_sum": 33558528,
+      "path_object_identity": null,
+      "correctness": null,
+      "records": [],
+      "source_generation_in_pipeline": false,
+      "scope": "Same inputs/candidates/paths for both orders in one process; complete pipelines only; source repeats precede timing."
+    },
+    {
+      "case": "initial_32k",
+      "query_lens": [
+        32768
+      ],
+      "contexts": [
+        32768
+      ],
+      "ratio": 1,
+      "heads": 32,
+      "head_dim": 128,
+      "paired_pipeline": false,
+      "input_before": {
+        "q": {
+          "shape": [
+            32768,
+            32,
+            128
+          ],
+          "dtype": "torch.float8_e4m3fn",
+          "sha256": "d525c6b18aee7161da1e3b46cab90aeeffe21f88b6470658b8566c31ae6c1c46"
+        },
+        "weights": {
+          "shape": [
+            32768,
+            32
+          ],
+          "dtype": "torch.float32",
+          "sha256": "c7c08125873a00590ad6c0e256b893aef7815b15cef6c0c9319c63f5640e807b"
+        },
+        "cache": {
+          "shape": [
+            512,
+            64,
+            1,
+            132
+          ],
+          "dtype": "torch.uint8",
+          "sha256": "5072bdf5370bbbfd8edaf158ad48b77a67323e673e0a82be53686021aa5db10c"
+        },
+        "table": {
+          "shape": [
+            1,
+            512
+          ],
+          "dtype": "torch.int32",
+          "sha256": "17c8450a40f871966def3b7590228db2ea5240eab7c7b3ad6174f885a11491a3"
+        },
+        "requests": {
+          "shape": [
+            32768
+          ],
+          "dtype": "torch.int32",
+          "sha256": "fa43239bcee7b97ca62f007cc68487560a39e19f74f3dde7486db3f98df8e471"
+        },
+        "lengths": {
+          "shape": [
+            32768
+          ],
+          "dtype": "torch.int32",
+          "sha256": "82a9a2e0a3155d951f351c5059f182c4e81347456174e4d24a606d315f8ee716"
+        },
+        "source_q": {
+          "shape": [
+            32768,
+            32,
+            128
+          ],
+          "dtype": "torch.float8_e4m3fn",
+          "sha256": "60056db5f313ba50acd0dcbf7e0e46f3bd5d0835ca68333c6a7420c4656af929"
+        },
+        "source_weights": {
+          "shape": [
+            32768,
+            32
+          ],
+          "dtype": "torch.float32",
+          "sha256": "44c3c0f656e1aa4175bdcfe434127a9df90d8b2f53e8c6e648dcfdcdae535041"
+        },
+        "candidate_raw": {
+          "shape": [
+            32768,
+            2048
+          ],
+          "dtype": "torch.int32",
+          "sha256": "add89eb29d77c2438d577848e2b3c09089f00078fbe1e3d981bed936561a79f0"
+        },
+        "candidate_canonical": {
+          "shape": [
+            32768,
+            2048
+          ],
+          "dtype": "torch.int32",
+          "sha256": "9c523b25a88b47ecefbbe800740bf6176b89e5d7c9a6049b2797c269ae505c5b"
+        }
+      },
+      "input_after": {
+        "q": {
+          "shape": [
+            32768,
+            32,
+            128
+          ],
+          "dtype": "torch.float8_e4m3fn",
+          "sha256": "d525c6b18aee7161da1e3b46cab90aeeffe21f88b6470658b8566c31ae6c1c46"
+        },
+        "weights": {
+          "shape": [
+            32768,
+            32
+          ],
+          "dtype": "torch.float32",
+          "sha256": "c7c08125873a00590ad6c0e256b893aef7815b15cef6c0c9319c63f5640e807b"
+        },
+        "cache": {
+          "shape": [
+            512,
+            64,
+            1,
+            132
+          ],
+          "dtype": "torch.uint8",
+          "sha256": "5072bdf5370bbbfd8edaf158ad48b77a67323e673e0a82be53686021aa5db10c"
+        },
+        "table": {
+          "shape": [
+            1,
+            512
+          ],
+          "dtype": "torch.int32",
+          "sha256": "17c8450a40f871966def3b7590228db2ea5240eab7c7b3ad6174f885a11491a3"
+        },
+        "requests": {
+          "shape": [
+            32768
+          ],
+          "dtype": "torch.int32",
+          "sha256": "fa43239bcee7b97ca62f007cc68487560a39e19f74f3dde7486db3f98df8e471"
+        },
+        "lengths": {
+          "shape": [
+            32768
+          ],
+          "dtype": "torch.int32",
+          "sha256": "82a9a2e0a3155d951f351c5059f182c4e81347456174e4d24a606d315f8ee716"
+        },
+        "source_q": {
+          "shape": [
+            32768,
+            32,
+            128
+          ],
+          "dtype": "torch.float8_e4m3fn",
+          "sha256": "60056db5f313ba50acd0dcbf7e0e46f3bd5d0835ca68333c6a7420c4656af929"
+        },
+        "source_weights": {
+          "shape": [
+            32768,
+            32
+          ],
+          "dtype": "torch.float32",
+          "sha256": "44c3c0f656e1aa4175bdcfe434127a9df90d8b2f53e8c6e648dcfdcdae535041"
+        },
+        "candidate_raw": {
+          "shape": [
+            32768,
+            2048
+          ],
+          "dtype": "torch.int32",
+          "sha256": "add89eb29d77c2438d577848e2b3c09089f00078fbe1e3d981bed936561a79f0"
+        },
+        "candidate_canonical": {
+          "shape": [
+            32768,
+            2048
+          ],
+          "dtype": "torch.int32",
+          "sha256": "9c523b25a88b47ecefbbe800740bf6176b89e5d7c9a6049b2797c269ae505c5b"
+        }
+      },
+      "input_bytes_unchanged": true,
+      "source_repeats": [
+        {
+          "raw": {
+            "shape": [
+              32768,
+              2048
+            ],
+            "dtype": "torch.int32",
+            "sha256": "8ab9ef94c21d8532dd9430c6bf214cd810d3c4871627b9d69ff2a433d40172eb"
+          },
+          "canonical": {
+            "shape": [
+              32768,
+              2048
+            ],
+            "dtype": "torch.int32",
+            "sha256": "9c523b25a88b47ecefbbe800740bf6176b89e5d7c9a6049b2797c269ae505c5b"
+          }
+        },
+        {
+          "raw": {
+            "shape": [
+              32768,
+              2048
+            ],
+            "dtype": "torch.int32",
+            "sha256": "718f6e4100001a8084f08f75e99d156bd5f5b830be3cce2702dbd16f55cbcfca"
+          },
+          "canonical": {
+            "shape": [
+              32768,
+              2048
+            ],
+            "dtype": "torch.int32",
+            "sha256": "9c523b25a88b47ecefbbe800740bf6176b89e5d7c9a6049b2797c269ae505c5b"
+          }
+        },
+        {
+          "raw": {
+            "shape": [
+              32768,
+              2048
+            ],
+            "dtype": "torch.int32",
+            "sha256": "0a991e7601e01647eabeeadcaf39041e1a731c1fb223c250a8f0a655169f0f4c"
+          },
+          "canonical": {
+            "shape": [
+              32768,
+              2048
+            ],
+            "dtype": "torch.int32",
+            "sha256": "9c523b25a88b47ecefbbe800740bf6176b89e5d7c9a6049b2797c269ae505c5b"
+          }
+        }
+      ],
+      "source_canonical_sets_exact": true,
+      "source_raw_order_changed": true,
+      "candidate_positions_min": 1,
+      "candidate_positions_max": 16384,
+      "candidate_positions_sum": 402604032,
+      "path_object_identity": null,
+      "correctness": null,
+      "records": [],
+      "source_generation_in_pipeline": false,
+      "scope": "Same inputs/candidates/paths for both orders in one process; complete pipelines only; source repeats precede timing."
+    },
+    {
+      "case": "steady_16k",
+      "query_lens": [
+        512
+      ],
+      "contexts": [
+        16384
+      ],
+      "ratio": 1,
+      "heads": 32,
+      "head_dim": 128,
+      "paired_pipeline": false,
+      "input_before": {
+        "q": {
+          "shape": [
+            512,
+            32,
+            128
+          ],
+          "dtype": "torch.float8_e4m3fn",
+          "sha256": "3bcd8b320b6bd1039384ebb7ec3825e1dfc392fcfddd93d234fd559222615252"
+        },
+        "weights": {
+          "shape": [
+            512,
+            32
+          ],
+          "dtype": "torch.float32",
+          "sha256": "740a87d94a762dd0065b5955fd28c378d24ef676eca5e334ae2005df5fa6c47d"
+        },
+        "cache": {
+          "shape": [
+            256,
+            64,
+            1,
+            132
+          ],
+          "dtype": "torch.uint8",
+          "sha256": "3a2f9ebf9ae43d0e1c7b79b7dd69b9ee37c1c38b7d7b23f71a9804a8b54541c5"
+        },
+        "table": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.int32",
+          "sha256": "a9444efdab176eccf2049848f6fc244b20768ae5eee72bba057c8fcca01b7ba7"
+        },
+        "requests": {
+          "shape": [
+            512
+          ],
+          "dtype": "torch.int32",
+          "sha256": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+        },
+        "lengths": {
+          "shape": [
+            512
+          ],
+          "dtype": "torch.int32",
+          "sha256": "c76ad5bffffb9ae5f2020a99595e4cbf6053121ce563539f58d076c9ea40168c"
+        },
+        "source_q": {
+          "shape": [
+            512,
+            32,
+            128
+          ],
+          "dtype": "torch.float8_e4m3fn",
+          "sha256": "db3e1027ab5f307f64873e2752bee7b3bd706207558659282f1e6212efda5da2"
+        },
+        "source_weights": {
+          "shape": [
+            512,
+            32
+          ],
+          "dtype": "torch.float32",
+          "sha256": "749714ce78b5810c3a43e7bf0aa43113a0bf7c7eb18007a6e8247367fb489fb9"
+        },
+        "candidate_raw": {
+          "shape": [
+            512,
+            2048
+          ],
+          "dtype": "torch.int32",
+          "sha256": "0e157ac08ecd95c758f0c804b8140bda79a1a58f0a173aaab8b0a72933a1672a"
+        },
+        "candidate_canonical": {
+          "shape": [
+            512,
+            2048
+          ],
+          "dtype": "torch.int32",
+          "sha256": "f891b33af853ae9eaa09ad0719cafaf62ad5e3cab0f9a66645297fb28d0d35c9"
+        }
+      },
+      "input_after": {
+        "q": {
+          "shape": [
+            512,
+            32,
+            128
+          ],
+          "dtype": "torch.float8_e4m3fn",
+          "sha256": "3bcd8b320b6bd1039384ebb7ec3825e1dfc392fcfddd93d234fd559222615252"
+        },
+        "weights": {
+          "shape": [
+            512,
+            32
+          ],
+          "dtype": "torch.float32",
+          "sha256": "740a87d94a762dd0065b5955fd28c378d24ef676eca5e334ae2005df5fa6c47d"
+        },
+        "cache": {
+          "shape": [
+            256,
+            64,
+            1,
+            132
+          ],
+          "dtype": "torch.uint8",
+          "sha256": "3a2f9ebf9ae43d0e1c7b79b7dd69b9ee37c1c38b7d7b23f71a9804a8b54541c5"
+        },
+        "table": {
+          "shape": [
+            1,
+            256
+          ],
+          "dtype": "torch.int32",
+          "sha256": "a9444efdab176eccf2049848f6fc244b20768ae5eee72bba057c8fcca01b7ba7"
+        },
+        "requests": {
+          "shape": [
+            512
+          ],
+          "dtype": "torch.int32",
+          "sha256": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+        },
+        "lengths": {
+          "shape": [
+            512
+          ],
+          "dtype": "torch.int32",
+          "sha256": "c76ad5bffffb9ae5f2020a99595e4cbf6053121ce563539f58d076c9ea40168c"
+        },
+        "source_q": {
+          "shape": [
+            512,
+            32,
+            128
+          ],
+          "dtype": "torch.float8_e4m3fn",
+          "sha256": "db3e1027ab5f307f64873e2752bee7b3bd706207558659282f1e6212efda5da2"
+        },
+        "source_weights": {
+          "shape": [
+            512,
+            32
+          ],
+          "dtype": "torch.float32",
+          "sha256": "749714ce78b5810c3a43e7bf0aa43113a0bf7c7eb18007a6e8247367fb489fb9"
+        },
+        "candidate_raw": {
+          "shape": [
+            512,
+            2048
+          ],
+          "dtype": "torch.int32",
+          "sha256": "0e157ac08ecd95c758f0c804b8140bda79a1a58f0a173aaab8b0a72933a1672a"
+        },
+        "candidate_canonical": {
+          "shape": [
+            512,
+            2048
+          ],
+          "dtype": "torch.int32",
+          "sha256": "f891b33af853ae9eaa09ad0719cafaf62ad5e3cab0f9a66645297fb28d0d35c9"
+        }
+      },
+      "input_bytes_unchanged": true,
+      "source_repeats": [
+        {
+          "raw": {
+            "shape": [
+              512,
+              2048
+            ],
+            "dtype": "torch.int32",
+            "sha256": "0e157ac08ecd95c758f0c804b8140bda79a1a58f0a173aaab8b0a72933a1672a"
+          },
+          "canonical": {
+            "shape": [
+              512,
+              2048
+            ],
+            "dtype": "torch.int32",
+            "sha256": "f891b33af853ae9eaa09ad0719cafaf62ad5e3cab0f9a66645297fb28d0d35c9"
+          }
+        },
+        {
+          "raw": {
+            "shape": [
+              512,
+              2048
+            ],
+            "dtype": "torch.int32",
+            "sha256": "0e157ac08ecd95c758f0c804b8140bda79a1a58f0a173aaab8b0a72933a1672a"
+          },
+          "canonical": {
+            "shape": [
+              512,
+              2048
+            ],
+            "dtype": "torch.int32",
+            "sha256": "f891b33af853ae9eaa09ad0719cafaf62ad5e3cab0f9a66645297fb28d0d35c9"
+          }
+        },
+        {
+          "raw": {
+            "shape": [
+              512,
+              2048
+            ],
+            "dtype": "torch.int32",
+            "sha256": "0e157ac08ecd95c758f0c804b8140bda79a1a58f0a173aaab8b0a72933a1672a"
+          },
+          "canonical": {
+            "shape": [
+              512,
+              2048
+            ],
+            "dtype": "torch.int32",
+            "sha256": "f891b33af853ae9eaa09ad0719cafaf62ad5e3cab0f9a66645297fb28d0d35c9"
+          }
+        }
+      ],
+      "source_canonical_sets_exact": true,
+      "source_raw_order_changed": false,
+      "candidate_positions_min": 15873,
+      "candidate_positions_max": 16384,
+      "candidate_positions_sum": 8257792,
+      "path_object_identity": null,
+      "correctness": null,
+      "records": [],
+      "source_generation_in_pipeline": false,
+      "scope": "Same inputs/candidates/paths for both orders in one process; complete pipelines only; source repeats precede timing."
+    },
+    {
+      "case": "steady_64k",
+      "query_lens": [
+        2048
+      ],
+      "contexts": [
+        65536
+      ],
+      "ratio": 1,
+      "heads": 32,
+      "head_dim": 128,
+      "paired_pipeline": true,
+      "input_before": {
+        "q": {
+          "shape": [
+            2048,
+            32,
+            128
+          ],
+          "dtype": "torch.float8_e4m3fn",
+          "sha256": "56ca47791d212134d841ce6891f3bfbcbaf32f704d7f45fa20e52b3051e690f4"
+        },
+        "weights": {
+          "shape": [
+            2048,
+            32
+          ],
+          "dtype": "torch.float32",
+          "sha256": "6174b1bb04296478cca9dabf80f97a5268c0f12ceedfae557a6ffbf5c7324a59"
+        },
+        "cache": {
+          "shape": [
+            1024,
+            64,
+            1,
+            132
+          ],
+          "dtype": "torch.uint8",
+          "sha256": "e779864e2c961c9e63741a6cf13229d243ece7c979693cb5a95bc689ecbb2099"
+        },
+        "table": {
+          "shape": [
+            1,
+            1024
+          ],
+          "dtype": "torch.int32",
+          "sha256": "81728803b67642e9660c3f2b6c49c0fddb1bcbd08df5909adb0da68fe31ba5d0"
+        },
+        "requests": {
+          "shape": [
+            2048
+          ],
+          "dtype": "torch.int32",
+          "sha256": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47"
+        },
+        "lengths": {
+          "shape": [
+            2048
+          ],
+          "dtype": "torch.int32",
+          "sha256": "890aa4a57660f3e081a524e38ddff00c6af1e90e45578b549c464d29818e86ea"
+        },
+        "source_q": {
+          "shape": [
+            2048,
+            32,
+            128
+          ],
+          "dtype": "torch.float8_e4m3fn",
+          "sha256": "55f3206fbb87883136263328212da2fe029861da2200b4409dc764ff2c809f65"
+        },
+        "source_weights": {
+          "shape": [
+            2048,
+            32
+          ],
+          "dtype": "torch.float32",
+          "sha256": "329ee6e58372e891a83943fbbbed0926a6e367e6cf6109ec4a004b16da6f06cc"
+        },
+        "candidate_raw": {
+          "shape": [
+            2048,
+            2048
+          ],
+          "dtype": "torch.int32",
+          "sha256": "fe61d4ac2e5f14b8e2c07e318b3f2ff79c82137c9efe00aa8f6826791b7c6ded"
+        },
+        "candidate_canonical": {
+          "shape": [
+            2048,
+            2048
+          ],
+          "dtype": "torch.int32",
+          "sha256": "b5088904e93d1ead64aad293649586de9e23ddf4ad1f526a133c419ad94359c0"
+        }
+      },
+      "input_after": {
+        "q": {
+          "shape": [
+            2048,
+            32,
+            128
+          ],
+          "dtype": "torch.float8_e4m3fn",
+          "sha256": "56ca47791d212134d841ce6891f3bfbcbaf32f704d7f45fa20e52b3051e690f4"
+        },
+        "weights": {
+          "shape": [
+            2048,
+            32
+          ],
+          "dtype": "torch.float32",
+          "sha256": "6174b1bb04296478cca9dabf80f97a5268c0f12ceedfae557a6ffbf5c7324a59"
+        },
+        "cache": {
+          "shape": [
+            1024,
+            64,
+            1,
+            132
+          ],
+          "dtype": "torch.uint8",
+          "sha256": "e779864e2c961c9e63741a6cf13229d243ece7c979693cb5a95bc689ecbb2099"
+        },
+        "table": {
+          "shape": [
+            1,
+            1024
+          ],
+          "dtype": "torch.int32",
+          "sha256": "81728803b67642e9660c3f2b6c49c0fddb1bcbd08df5909adb0da68fe31ba5d0"
+        },
+        "requests": {
+          "shape": [
+            2048
+          ],
+          "dtype": "torch.int32",
+          "sha256": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47"
+        },
+        "lengths": {
+          "shape": [
+            2048
+          ],
+          "dtype": "torch.int32",
+          "sha256": "890aa4a57660f3e081a524e38ddff00c6af1e90e45578b549c464d29818e86ea"
+        },
+        "source_q": {
+          "shape": [
+            2048,
+            32,
+            128
+          ],
+          "dtype": "torch.float8_e4m3fn",
+          "sha256": "55f3206fbb87883136263328212da2fe029861da2200b4409dc764ff2c809f65"
+        },
+        "source_weights": {
+          "shape": [
+            2048,
+            32
+          ],
+          "dtype": "torch.float32",
+          "sha256": "329ee6e58372e891a83943fbbbed0926a6e367e6cf6109ec4a004b16da6f06cc"
+        },
+        "candidate_raw": {
+          "shape": [
+            2048,
+            2048
+          ],
+          "dtype": "torch.int32",
+          "sha256": "fe61d4ac2e5f14b8e2c07e318b3f2ff79c82137c9efe00aa8f6826791b7c6ded"
+        },
+        "candidate_canonical": {
+          "shape": [
+            2048,
+            2048
+          ],
+          "dtype": "torch.int32",
+          "sha256": "b5088904e93d1ead64aad293649586de9e23ddf4ad1f526a133c419ad94359c0"
+        }
+      },
+      "input_bytes_unchanged": true,
+      "source_repeats": [
+        {
+          "raw": {
+            "shape": [
+              2048,
+              2048
+            ],
+            "dtype": "torch.int32",
+            "sha256": "eb65350cc335481cca23bf77cb749e78c72a01dc2647c9290c82271ddcdadf0f"
+          },
+          "canonical": {
+            "shape": [
+              2048,
+              2048
+            ],
+            "dtype": "torch.int32",
+            "sha256": "b5088904e93d1ead64aad293649586de9e23ddf4ad1f526a133c419ad94359c0"
+          }
+        },
+        {
+          "raw": {
+            "shape": [
+              2048,
+              2048
+            ],
+            "dtype": "torch.int32",
+            "sha256": "6997be1ea126d48b999941cbce626198d03f193da020a7dbb0b65ea041e3e5a8"
+          },
+          "canonical": {
+            "shape": [
+              2048,
+              2048
+            ],
+            "dtype": "torch.int32",
+            "sha256": "b5088904e93d1ead64aad293649586de9e23ddf4ad1f526a133c419ad94359c0"
+          }
+        },
+        {
+          "raw": {
+            "shape": [
+              2048,
+              2048
+            ],
+            "dtype": "torch.int32",
+            "sha256": "f6ed82596109e6b482d2e4817387d0e66a70745496f5a6350a5365ae4202d172"
+          },
+          "canonical": {
+            "shape": [
+              2048,
+              2048
+            ],
+            "dtype": "torch.int32",
+            "sha256": "b5088904e93d1ead64aad293649586de9e23ddf4ad1f526a133c419ad94359c0"
+          }
+        }
+      ],
+      "source_canonical_sets_exact": true,
+      "source_raw_order_changed": true,
+      "candidate_positions_min": 16377,
+      "candidate_positions_max": 16384,
+      "candidate_positions_sum": 33547264,
+      "path_object_identity": {
+        "full_deepgemm_mask": {
+          "python_id": 139916270118736,
+          "candidate_data_ptr": 139916730171392,
+          "q_data_ptr": 139916755337216,
+          "cache_data_ptr": 139916788891648
+        },
+        "full_keys_major_mask": {
+          "python_id": 139916270123632,
+          "candidate_data_ptr": 139916730171392,
+          "q_data_ptr": 139916755337216,
+          "cache_data_ptr": 139916788891648
+        },
+        "direct": {
+          "python_id": 139916239156240,
+          "candidate_data_ptr": 139916730171392,
+          "q_data_ptr": 139916755337216,
+          "cache_data_ptr": 139916788891648
+        },
+        "gathered_wgmma": {
+          "python_id": 139916273334512,
+          "candidate_data_ptr": 139916730171392,
+          "q_data_ptr": 139916755337216,
+          "cache_data_ptr": 139916788891648
+        }
+      },
+      "correctness": {
+        "rows": 2048,
+        "max_abs_vs_native": 1.9073486328125e-06,
+        "min_topk_overlap": 1.0,
+        "fp32_strict_failures": 713,
+        "native_fp32_strict_failures": 713,
+        "fp32_max_abs": 0.0013964176177978516,
+        "native_fp32_max_abs": 0.00139617919921875,
+        "nrmse_vs_native": 6.376291352785881e-08,
+        "compact_direct_gather_score_comparison": "all candidate scores bitwise equal",
+        "fixed_logits_topk": "all rows exact logical sets",
+        "full_baselines": {
+          "full_deepgemm_mask": {
+            "max_abs_vs_native": 0.0,
+            "checked_rows": 2048
+          },
+          "full_keys_major_mask": {
+            "max_abs_vs_native": 1.9073486328125e-06,
+            "checked_rows": 2048
+          }
+        }
+      },
+      "records": [
+        {
+          "order": "forward",
+          "execution": "eager",
+          "variant": "full_deepgemm_mask",
+          "phase": "pipeline",
+          "measurement": {
+            "p50_us": 4654.979133605957,
+            "p90_us": 4671.327972412109,
+            "p95_us": 4681.615829467773,
+            "samples_us": [
+              4681.615829467773,
+              4671.327972412109,
+              4657.558441162109,
+              4666.259384155273,
+              4657.724761962891,
+              4657.593536376953,
+              4688.284683227539,
+              4686.652755737305,
+              4654.975891113281,
+              4653.811264038086,
+              4651.638412475586,
+              4652.4993896484375,
+              4652.048110961914,
+              4653.011322021484,
+              4653.13606262207,
+              4653.987121582031,
+              4670.329666137695,
+              4667.462539672852,
+              4660.33935546875,
+              4653.612899780273,
+              4656.3232421875,
+              4654.982376098633,
+              4654.803085327148,
+              4660.784149169922,
+              4654.4830322265625,
+              4654.691314697266,
+              4652.684783935547,
+              4656.051254272461,
+              4651.750564575195,
+              4654.217529296875
+            ],
+            "wall_p50_us": 4659.80645,
+            "wall_samples_us": [
+              4697.2996,
+              4679.0766,
+              4663.2232,
+              4672.6471,
+              4663.3673,
+              4666.6113,
+              4704.6175,
+              4697.932699999999,
+              4658.8036,
+              4657.2073,
+              4654.903899999999,
+              4655.8681,
+              4655.1728,
+              4656.510700000001,
+              4656.9544000000005,
+              4659.8072,
+              4678.3396,
+              4674.3432999999995,
+              4665.0207,
+              4657.9532,
+              4660.805399999999,
+              4659.8034,
+              4659.8057,
+              4665.8877999999995,
+              4658.7503,
+              4658.719999999999,
+              4656.7652,
+              4660.2034,
+              4655.406300000001,
+              4658.9042
+            ],
+            "coefficient_of_variation": 0.0021620419093120236,
+            "peak_allocated_bytes": 2281074176,
+            "warmup": 20,
+            "repeats": 30,
+            "inner": 10,
+            "rank_aggregation": "single_rank"
+          }
+        },
+        {
+          "order": "forward",
+          "execution": "eager",
+          "variant": "full_keys_major_mask",
+          "phase": "pipeline",
+          "measurement": {
+            "p50_us": 4602.777671813965,
+            "p90_us": 4606.5185546875,
+            "p95_us": 4606.793594360352,
+            "samples_us": [
+              4597.00813293457,
+              4592.521667480469,
+              4594.748687744141,
+              4592.371368408203,
+              4595.900726318359,
+              4601.424026489258,
+              4603.055953979492,
+              4602.11181640625,
+              4601.881790161133,
+              4606.793594360352,
+              4603.667068481445,
+              4609.043121337891,
+              4603.216171264648,
+              4601.532745361328,
+              4612.089538574219,
+              4600.675201416016,
+              4600.777435302734,
+              4602.355194091797,
+              4606.262588500977,
+              4601.715087890625,
+              4603.219223022461,
+              4603.763198852539,
+              4606.5185546875,
+              4606.444931030273,
+              4603.567886352539,
+              4602.758407592773,
+              4602.796936035156,
+              4604.45442199707,
+              4601.366424560547,
+              4606.217575073242
+            ],
+            "wall_p50_us": 4607.309650000001,
+            "wall_samples_us": [
+              4603.2545,
+              4596.438700000001,
+              4598.6511,
+              4596.3119,
+              4600.3625,
+              4605.6111,
+              4607.6122000000005,
+              4605.8151,
+              4605.4025,
+              4612.714,
+              4608.902,
+              4614.7459,
+              4607.6339,
+              4607.007100000001,
+              4618.5612,
+              4604.2197,
+              4604.1305,
+              4606.9032,
+              4610.5371,
+              4605.3609,
+              4607.6266000000005,
+              4609.0019,
+              4612.6363,
+              4611.8959,
+              4608.110500000001,
+              4606.8613,
+              4607.8718,
+              4609.0615,
+              4605.6239000000005,
+              4611.3011
+            ],
+            "coefficient_of_variation": 0.0009457359130419987,
+            "peak_allocated_bytes": 1742106112,
+            "warmup": 20,
+            "repeats": 30,
+            "inner": 10,
+            "rank_aggregation": "single_rank"
+          }
+        },
+        {
+          "order": "forward",
+          "execution": "eager",
+          "variant": "direct",
+          "phase": "pipeline",
+          "measurement": {
+            "p50_us": 3117.475128173828,
+            "p90_us": 3125.836753845215,
+            "p95_us": 3127.4816513061523,
+            "samples_us": [
+              3118.0320739746094,
+              3117.2319412231445,
+              3118.0416107177734,
+              3123.8784790039062,
+              3128.60164642334,
+              3125.491142272949,
+              3112.0479583740234,
+              3111.3279342651367,
+              3113.3312225341797,
+              3111.030387878418,
+              3111.052894592285,
+              3112.835121154785,
+              3121.206474304199,
+              3123.801612854004,
+              3127.4816513061523,
+              3121.4431762695312,
+              3113.7535095214844,
+              3111.542320251465,
+              3113.1616592407227,
+              3117.228889465332,
+              3116.7327880859375,
+              3115.772819519043,
+              3115.1168823242188,
+              3117.7183151245117,
+              3120.275115966797,
+              3125.836753845215,
+              3139.0623092651367,
+              3124.448013305664,
+              3120.425605773926,
+              3111.235237121582
+            ],
+            "wall_p50_us": 3121.0955,
+            "wall_samples_us": [
+              3122.9865,
+              3120.4393,
+              3121.4316,
+              3127.9476999999997,
+              3133.3626,
+              3129.5003,
+              3116.1525,
+              3115.1987,
+              3116.5209999999997,
+              3113.8363,
+              3114.3993,
+              3116.9614,
+              3125.6893,
+              3127.9824,
+              3132.4528999999998,
+              3125.9275000000002,
+              3117.2909,
+              3114.818,
+              3117.5106,
+              3120.7594,
+              3119.5796,
+              3118.4378,
+              3118.4,
+              3121.9769,
+              3126.6463,
+              3176.5224,
+              3145.596,
+              3128.5334,
+              3125.0952,
+              3115.1655
+            ],
+            "coefficient_of_variation": 0.0020817958541852694,
+            "peak_allocated_bytes": 1725326848,
+            "warmup": 20,
+            "repeats": 30,
+            "inner": 10,
+            "rank_aggregation": "single_rank"
+          }
+        },
+        {
+          "order": "forward",
+          "execution": "eager",
+          "variant": "gathered_wgmma",
+          "phase": "pipeline",
+          "measurement": {
+            "p50_us": 3694.563102722168,
+            "p90_us": 4456.243133544922,
+            "p95_us": 4456.902313232422,
+            "samples_us": [
+              3689.2959594726562,
+              3668.4383392333984,
+              3666.2559509277344,
+              3666.019058227539,
+              3663.702392578125,
+              3662.335968017578,
+              3661.8080139160156,
+              3657.5103759765625,
+              3654.7550201416016,
+              3676.28173828125,
+              3677.094268798828,
+              3665.6543731689453,
+              3685.6510162353516,
+              3679.8721313476562,
+              3686.742401123047,
+              3877.824020385742,
+              4101.193618774414,
+              4313.254547119141,
+              4456.902313232422,
+              4475.856018066406,
+              4530.70068359375,
+              4456.243133544922,
+              4109.190368652344,
+              3871.6064453125,
+              3800.6591796875,
+              3769.615936279297,
+              3757.139205932617,
+              3743.366241455078,
+              3716.252899169922,
+              3699.8302459716797
+            ],
+            "wall_p50_us": 3703.0478,
+            "wall_samples_us": [
+              3695.9313,
+              3673.4631999999997,
+              3669.7300000000005,
+              3672.9932,
+              3675.3088000000002,
+              3671.0644,
+              3671.3932,
+              3665.4489999999996,
+              3658.6364000000003,
+              3680.0968000000003,
+              3680.1034,
+              3669.0362,
+              3689.0794,
+              3686.4885999999997,
+              3703.2519999999995,
+              3892.8982000000005,
+              4107.086,
+              4317.6102,
+              4461.0113,
+              4479.894200000001,
+              4534.3249000000005,
+              4459.7757,
+              4113.1932,
+              3875.2538999999997,
+              3803.9651,
+              3772.9394,
+              3760.4555,
+              3746.9554,
+              3719.2888,
+              3702.8436
+            ],
+            "coefficient_of_variation": 0.07464469210506931,
+            "peak_allocated_bytes": 1725326848,
+            "warmup": 20,
+            "repeats": 30,
+            "inner": 10,
+            "rank_aggregation": "single_rank"
+          }
+        },
+        {
+          "order": "forward",
+          "execution": "graph",
+          "variant": "full_deepgemm_mask",
+          "phase": "pipeline",
+          "measurement": {
+            "p50_us": 4650.427055358887,
+            "p90_us": 4681.488037109375,
+            "p95_us": 4683.391952514648,
+            "samples_us": [
+              4692.115020751953,
+              4681.488037109375,
+              4683.391952514648,
+              4685.676956176758,
+              4651.558303833008,
+              4645.87516784668,
+              4650.870513916016,
+              4651.67350769043,
+              4652.691268920898,
+              4651.20964050293,
+              4648.105621337891,
+              4651.3153076171875,
+              4650.316619873047,
+              4652.256011962891,
+              4651.824188232422,
+              4650.105667114258,
+              4648.5504150390625,
+              4651.808166503906,
+              4650.537490844727,
+              4649.558258056641,
+              4649.552154541016,
+              4651.2542724609375,
+              4648.921585083008,
+              4648.579025268555,
+              4648.774337768555,
+              4647.075271606445,
+              4648.185729980469,
+              4647.520065307617,
+              4648.204803466797,
+              4648.236846923828
+            ],
+            "wall_p50_us": 4663.42365,
+            "wall_samples_us": [
+              4699.526400000001,
+              4691.025299999999,
+              4701.8528,
+              4704.9945,
+              4671.8871,
+              4663.8998,
+              4667.9483,
+              4669.864,
+              4671.7153,
+              4662.964,
+              4657.8515,
+              4666.6564,
+              4664.349,
+              4668.644200000001,
+              4664.1473,
+              4655.3996,
+              4659.2756,
+              4668.3255,
+              4663.8832999999995,
+              4661.5265,
+              4660.7087,
+              4661.5674,
+              4658.3517,
+              4655.246,
+              4652.4765,
+              4649.8579,
+              4650.5366,
+              4649.9746,
+              4651.5387,
+              4652.5284
+            ],
+            "coefficient_of_variation": 0.0026625086024044658,
+            "peak_allocated_bytes": 1725327872,
+            "warmup": 20,
+            "repeats": 30,
+            "inner": 10,
+            "rank_aggregation": "single_rank"
+          }
+        },
+        {
+          "order": "forward",
+          "execution": "graph",
+          "variant": "full_keys_major_mask",
+          "phase": "pipeline",
+          "measurement": {
+            "p50_us": 4587.0832443237305,
+            "p90_us": 4587.865447998047,
+            "p95_us": 4587.913513183594,
+            "samples_us": [
+              4594.838333129883,
+              4584.908676147461,
+              4586.06071472168,
+              4587.46223449707,
+              4586.131286621094,
+              4587.478256225586,
+              4587.510299682617,
+              4587.913513183594,
+              4587.071990966797,
+              4587.094497680664,
+              4587.318420410156,
+              4586.579132080078,
+              4587.366485595703,
+              4585.46257019043,
+              4587.356948852539,
+              4587.804794311523,
+              4586.460876464844,
+              4586.729431152344,
+              4585.871887207031,
+              4587.356948852539,
+              4587.865447998047,
+              4586.012649536133,
+              4586.707305908203,
+              4585.987091064453,
+              4588.070297241211,
+              4586.332702636719,
+              4585.785675048828,
+              4586.838531494141,
+              4587.276840209961,
+              4587.231826782227
+            ],
+            "wall_p50_us": 4589.9643,
+            "wall_samples_us": [
+              4599.9438,
+              4588.1246,
+              4588.8478000000005,
+              4589.9907,
+              4588.2845,
+              4590.5796,
+              4589.9851,
+              4590.4235,
+              4589.7576,
+              4590.4095,
+              4590.6083,
+              4589.558999999999,
+              4590.4164,
+              4588.1404,
+              4590.0347,
+              4590.2437,
+              4588.9658,
+              4589.1377,
+              4588.5302,
+              4590.606,
+              4590.9282,
+              4589.0614000000005,
+              4589.527700000001,
+              4817.5148,
+              4593.6797,
+              4588.9733,
+              4588.59,
+              4589.742899999999,
+              4590.1327,
+              4589.943499999999
+            ],
+            "coefficient_of_variation": 0.0003562124351558791,
+            "peak_allocated_bytes": 1725327872,
+            "warmup": 20,
+            "repeats": 30,
+            "inner": 10,
+            "rank_aggregation": "single_rank"
+          }
+        },
+        {
+          "order": "forward",
+          "execution": "graph",
+          "variant": "direct",
+          "phase": "pipeline",
+          "measurement": {
+            "p50_us": 3111.5280151367188,
+            "p90_us": 3118.0992126464844,
+            "p95_us": 3118.684768676758,
+            "samples_us": [
+              3115.667152404785,
+              3111.6640090942383,
+              3111.9808197021484,
+              3111.903953552246,
+              3110.063934326172,
+              3112.041664123535,
+              3111.587142944336,
+              3111.952018737793,
+              3110.8383178710938,
+              3110.723114013672,
+              3117.4047470092773,
+              3118.0992126464844,
+              3119.4591522216797,
+              3111.2960815429688,
+              3107.9872131347656,
+              3107.7760696411133,
+              3109.0591430664062,
+              3110.611152648926,
+              3111.4688873291016,
+              3111.2319946289062,
+              3111.3632202148438,
+              3111.3279342651367,
+              3110.9472274780273,
+              3111.12003326416,
+              3112.2655868530273,
+              3111.6735458374023,
+              3116.7648315429688,
+              3118.7488555908203,
+              3118.684768676758,
+              3111.44962310791
+            ],
+            "wall_p50_us": 3114.02935,
+            "wall_samples_us": [
+              3119.8869,
+              3114.2043000000003,
+              3114.1716,
+              3114.0418,
+              3112.2509999999997,
+              3114.1663,
+              3114.3115000000003,
+              3114.843,
+              3113.3863,
+              3113.2223000000004,
+              3121.0739000000003,
+              3120.4723999999997,
+              3121.9821,
+              3113.8962,
+              3110.4133,
+              3110.0713,
+              3111.2226,
+              3112.8615,
+              3113.7,
+              3114.0169,
+              3114.1185,
+              3113.6706999999997,
+              3113.4178,
+              3113.9283,
+              3114.5542,
+              3113.8347000000003,
+              3119.1225,
+              3121.2535,
+              3121.0052,
+              3113.8767
+            ],
+            "coefficient_of_variation": 0.0010070444966529398,
+            "peak_allocated_bytes": 1725327872,
+            "warmup": 20,
+            "repeats": 30,
+            "inner": 10,
+            "rank_aggregation": "single_rank"
+          }
+        },
+        {
+          "order": "forward",
+          "execution": "graph",
+          "variant": "gathered_wgmma",
+          "phase": "pipeline",
+          "measurement": {
+            "p50_us": 3661.2911224365234,
+            "p90_us": 4357.241439819336,
+            "p95_us": 4378.505706787109,
+            "samples_us": [
+              3550.678253173828,
+              3568.4959411621094,
+              3608.9344024658203,
+              3649.3759155273438,
+              3660.2272033691406,
+              3645.0111389160156,
+              3629.334259033203,
+              3628.3199310302734,
+              3647.2415924072266,
+              3637.014389038086,
+              3614.575958251953,
+              3631.526565551758,
+              3645.894241333008,
+              3654.8065185546875,
+              3646.7201232910156,
+              3812.6399993896484,
+              4039.632034301758,
+              4153.542327880859,
+              4378.505706787109,
+              4428.569412231445,
+              4470.896148681641,
+              4357.241439819336,
+              4162.035369873047,
+              4057.4752807617188,
+              3814.883041381836,
+              3744.278335571289,
+              3722.195053100586,
+              3691.632080078125,
+              3674.1920471191406,
+              3662.3550415039062
+            ],
+            "wall_p50_us": 3669.4397,
+            "wall_samples_us": [
+              3557.9239000000002,
+              3571.9875999999995,
+              3613.2009,
+              3651.5879,
+              3662.6788,
+              3647.6955000000003,
+              3631.9040999999997,
+              3632.1491,
+              3650.0025,
+              3639.3795,
+              3616.9427000000005,
+              3633.9723,
+              3656.0765,
+              3672.2141,
+              3661.8404,
+              3829.1976999999997,
+              4051.6262,
+              4163.673000000001,
+              4394.2113,
+              4444.8884,
+              4486.2238,
+              4372.3919000000005,
+              4176.0625,
+              4072.2604,
+              3831.1933,
+              3754.9211999999998,
+              3726.2135000000003,
+              3695.2632,
+              3678.3161999999998,
+              3666.6652999999997
+            ],
+            "coefficient_of_variation": 0.07362919189804654,
+            "peak_allocated_bytes": 1725327872,
+            "warmup": 20,
+            "repeats": 30,
+            "inner": 10,
+            "rank_aggregation": "single_rank"
+          }
+        },
+        {
+          "order": "reverse",
+          "execution": "eager",
+          "variant": "gathered_wgmma",
+          "phase": "pipeline",
+          "measurement": {
+            "p50_us": 3734.873580932617,
+            "p90_us": 4184.832000732422,
+            "p95_us": 4475.177764892578,
+            "samples_us": [
+              3630.0094604492188,
+              3676.544189453125,
+              3687.6190185546875,
+              3663.83056640625,
+              3669.683074951172,
+              3673.7857818603516,
+              3672.4510192871094,
+              3679.324722290039,
+              3669.2798614501953,
+              3677.1617889404297,
+              3678.4862518310547,
+              3673.1712341308594,
+              3717.4400329589844,
+              3785.337448120117,
+              3813.4464263916016,
+              3779.9232482910156,
+              3783.116912841797,
+              3756.5216064453125,
+              3778.0990600585938,
+              4089.1361236572266,
+              4714.1632080078125,
+              4790.240097045898,
+              4475.177764892578,
+              4184.832000732422,
+              3971.148681640625,
+              3818.7713623046875,
+              3790.2366638183594,
+              3745.888137817383,
+              3723.8590240478516,
+              3694.553756713867
+            ],
+            "wall_p50_us": 3739.8448,
+            "wall_samples_us": [
+              3637.6534,
+              3681.0775999999996,
+              3692.4440000000004,
+              3669.3705999999997,
+              3675.5515,
+              3679.3944,
+              3677.7306,
+              3684.6534,
+              3675.7599,
+              3681.7722999999996,
+              3683.3815999999997,
+              3678.1821000000004,
+              3722.7175,
+              3789.9803999999995,
+              3818.6472999999996,
+              3785.2402,
+              3787.1978000000004,
+              3760.7631,
+              3783.8952,
+              4094.4362,
+              4721.1723,
+              4796.281300000001,
+              4481.574500000001,
+              4190.6972000000005,
+              3976.2753,
+              3823.9807,
+              3795.1714999999995,
+              3751.1661999999997,
+              3728.5233999999996,
+              3698.7379
+            ],
+            "coefficient_of_variation": 0.07786596807331791,
+            "peak_allocated_bytes": 1725326848,
+            "warmup": 20,
+            "repeats": 30,
+            "inner": 10,
+            "rank_aggregation": "single_rank"
+          }
+        },
+        {
+          "order": "reverse",
+          "execution": "eager",
+          "variant": "direct",
+          "phase": "pipeline",
+          "measurement": {
+            "p50_us": 3118.721580505371,
+            "p90_us": 3147.0624923706055,
+            "p95_us": 3150.912094116211,
+            "samples_us": [
+              3187.9776000976562,
+              3150.912094116211,
+              3146.8544006347656,
+              3147.0624923706055,
+              3144.1823959350586,
+              3138.751983642578,
+              3178.1312942504883,
+              3141.3888931274414,
+              3141.811180114746,
+              3132.921600341797,
+              3113.212776184082,
+              3111.6512298583984,
+              3112.518310546875,
+              3112.4767303466797,
+              3118.8095092773438,
+              3118.6336517333984,
+              3117.286491394043,
+              3117.9840087890625,
+              3117.865562438965,
+              3118.4383392333984,
+              3123.699188232422,
+              3131.3568115234375,
+              3126.576042175293,
+              3119.820785522461,
+              3113.78231048584,
+              3116.6688919067383,
+              3112.294387817383,
+              3115.6959533691406,
+              3115.670394897461,
+              3114.8576736450195
+            ],
+            "wall_p50_us": 3123.8503,
+            "wall_samples_us": [
+              3195.3017,
+              3155.0413,
+              3150.667,
+              3152.0227999999997,
+              3148.8190999999997,
+              3147.8957,
+              3191.7997,
+              3147.0564999999997,
+              3147.1491,
+              3137.7522,
+              3117.4998,
+              3115.6979,
+              3118.1489,
+              3117.2596000000003,
+              3123.7864,
+              3123.9142,
+              3121.7853,
+              3122.3837,
+              3122.8,
+              3123.3864000000003,
+              3129.5279,
+              3138.8559,
+              3131.6135,
+              3125.2916,
+              3120.5443999999998,
+              3121.3607,
+              3115.371,
+              3118.8296,
+              3118.8646,
+              3119.7508000000003
+            ],
+            "coefficient_of_variation": 0.0060683316194858885,
+            "peak_allocated_bytes": 1725326848,
+            "warmup": 20,
+            "repeats": 30,
+            "inner": 10,
+            "rank_aggregation": "single_rank"
+          }
+        },
+        {
+          "order": "reverse",
+          "execution": "eager",
+          "variant": "full_keys_major_mask",
+          "phase": "pipeline",
+          "measurement": {
+            "p50_us": 4601.8768310546875,
+            "p90_us": 4606.0638427734375,
+            "p95_us": 4607.276916503906,
+            "samples_us": [
+              4620.6207275390625,
+              4619.292831420898,
+              4606.0638427734375,
+              4599.820709228516,
+              4598.003387451172,
+              4595.484924316406,
+              4596.646499633789,
+              4601.990509033203,
+              4601.929473876953,
+              4605.46875,
+              4601.09748840332,
+              4601.142501831055,
+              4601.299285888672,
+              4607.276916503906,
+              4604.313659667969,
+              4600.620651245117,
+              4602.284622192383,
+              4599.459075927734,
+              4601.795196533203,
+              4601.379013061523,
+              4602.143859863281,
+              4601.09748840332,
+              4605.22575378418,
+              4603.721618652344,
+              4604.7454833984375,
+              4601.654434204102,
+              4601.398468017578,
+              4601.862335205078,
+              4601.891326904297,
+              4603.513717651367
+            ],
+            "wall_p50_us": 4605.331249999999,
+            "wall_samples_us": [
+              4627.6269999999995,
+              4625.187400000001,
+              4612.4643,
+              4605.3074,
+              4604.437,
+              4600.9501,
+              4600.173000000001,
+              4605.485500000001,
+              4605.3551,
+              4609.8079,
+              4604.3604,
+              4605.0345,
+              4604.6131000000005,
+              4610.7462,
+              4608.1421,
+              4603.8417,
+              4605.6089999999995,
+              4602.7566,
+              4605.0498,
+              4605.2145,
+              4605.733200000001,
+              4604.1741999999995,
+              4608.7674,
+              4607.7474,
+              4608.0824999999995,
+              4604.8998,
+              4605.0137,
+              4605.1229,
+              4606.2453000000005,
+              4607.356
+            ],
+            "coefficient_of_variation": 0.0011204194352060512,
+            "peak_allocated_bytes": 1742106112,
+            "warmup": 20,
+            "repeats": 30,
+            "inner": 10,
+            "rank_aggregation": "single_rank"
+          }
+        },
+        {
+          "order": "reverse",
+          "execution": "eager",
+          "variant": "full_deepgemm_mask",
+          "phase": "pipeline",
+          "measurement": {
+            "p50_us": 4663.97762298584,
+            "p90_us": 4667.436981201172,
+            "p95_us": 4667.836761474609,
+            "samples_us": [
+              4667.836761474609,
+              4665.846252441406,
+              4663.57421875,
+              4665.641784667969,
+              4665.948867797852,
+              4671.222305297852,
+              4668.5760498046875,
+              4664.0960693359375,
+              4664.041519165039,
+              4661.9873046875,
+              4667.436981201172,
+              4664.287948608398,
+              4662.796783447266,
+              4663.734436035156,
+              4664.182281494141,
+              4664.6240234375,
+              4664.115142822266,
+              4664.448165893555,
+              4661.315155029297,
+              4662.015914916992,
+              4665.958404541016,
+              4663.689422607422,
+              4662.924957275391,
+              4663.267135620117,
+              4661.811065673828,
+              4663.209533691406,
+              4662.134552001953,
+              4663.100814819336,
+              4663.913726806641,
+              4660.745620727539
+            ],
+            "wall_p50_us": 4667.9214,
+            "wall_samples_us": [
+              4675.0932999999995,
+              4670.2396,
+              4667.5163,
+              4671.8074,
+              4670.4748,
+              4676.8444,
+              4673.963900000001,
+              4669.8863,
+              4667.8183,
+              4666.4454,
+              4671.8485,
+              4668.5179,
+              4666.7218,
+              4667.7803,
+              4668.1099,
+              4668.7466,
+              4668.0555,
+              4667.9591,
+              4665.1432,
+              4665.7267999999995,
+              4669.8985,
+              4667.6372,
+              4668.1941,
+              4667.133400000001,
+              4665.7569,
+              4666.8706,
+              4665.8372,
+              4666.5689,
+              4667.2561000000005,
+              4667.8837
+            ],
+            "coefficient_of_variation": 0.00048050797783333977,
+            "peak_allocated_bytes": 2281074176,
+            "warmup": 20,
+            "repeats": 30,
+            "inner": 10,
+            "rank_aggregation": "single_rank"
+          }
+        },
+        {
+          "order": "reverse",
+          "execution": "graph",
+          "variant": "gathered_wgmma",
+          "phase": "pipeline",
+          "measurement": {
+            "p50_us": 3684.3137741088867,
+            "p90_us": 4283.788681030273,
+            "p95_us": 4373.971176147461,
+            "samples_us": [
+              3594.918441772461,
+              3556.8862915039062,
+              3662.5919342041016,
+              3653.567886352539,
+              3662.4542236328125,
+              3663.6417388916016,
+              3643.155288696289,
+              3625.0049591064453,
+              3624.2176055908203,
+              3633.4495544433594,
+              3684.4993591308594,
+              3657.267379760742,
+              3631.5425872802734,
+              3619.3504333496094,
+              3636.073684692383,
+              3810.7967376708984,
+              4012.78076171875,
+              4168.3135986328125,
+              4283.788681030273,
+              4373.971176147461,
+              4478.422546386719,
+              4392.140960693359,
+              4142.409515380859,
+              4095.6382751464844,
+              3976.812744140625,
+              3807.766342163086,
+              3772.1534729003906,
+              3788.995361328125,
+              3726.358413696289,
+              3684.128189086914
+            ],
+            "wall_p50_us": 3690.9763,
+            "wall_samples_us": [
+              3600.8509,
+              3559.6328999999996,
+              3665.9271,
+              3656.1636,
+              3664.7943,
+              3665.8495000000003,
+              3645.2825,
+              3627.4316,
+              3627.1832000000004,
+              3642.9536999999996,
+              3695.2106,
+              3659.5108999999998,
+              3633.8246,
+              3621.5947,
+              3638.3242,
+              3813.3228000000004,
+              4014.9838000000004,
+              4170.692300000001,
+              4286.1008999999995,
+              4376.1392,
+              4481.0648,
+              4394.7931,
+              4146.3976999999995,
+              4099.0022,
+              3980.6741,
+              3810.8050000000003,
+              3774.4456,
+              3791.7538,
+              3728.957,
+              3686.7419999999997
+            ],
+            "coefficient_of_variation": 0.07041111945841487,
+            "peak_allocated_bytes": 1725327872,
+            "warmup": 20,
+            "repeats": 30,
+            "inner": 10,
+            "rank_aggregation": "single_rank"
+          }
+        },
+        {
+          "order": "reverse",
+          "execution": "graph",
+          "variant": "direct",
+          "phase": "pipeline",
+          "measurement": {
+            "p50_us": 3111.4367485046387,
+            "p90_us": 3140.9408569335938,
+            "p95_us": 3141.7407989501953,
+            "samples_us": [
+              3167.228889465332,
+              3135.001564025879,
+              3134.7007751464844,
+              3137.8047943115234,
+              3141.7407989501953,
+              3142.2496795654297,
+              3140.9408569335938,
+              3135.465621948242,
+              3135.03360748291,
+              3118.9823150634766,
+              3108.185577392578,
+              3107.4655532836914,
+              3106.825637817383,
+              3109.28955078125,
+              3110.4415893554688,
+              3109.9807739257812,
+              3110.041618347168,
+              3110.5695724487305,
+              3110.2783203125,
+              3111.5455627441406,
+              3110.8543395996094,
+              3111.3279342651367,
+              3112.019157409668,
+              3119.3727493286133,
+              3119.2991256713867,
+              3119.0879821777344,
+              3109.3631744384766,
+              3106.7520141601562,
+              3106.8031311035156,
+              3110.166358947754
+            ],
+            "wall_p50_us": 3113.7279,
+            "wall_samples_us": [
+              3171.3364,
+              3137.3857,
+              3137.0587,
+              3140.6174,
+              3144.322,
+              3144.7652,
+              3143.1436000000003,
+              3137.686,
+              3137.2968,
+              3121.1838,
+              3111.264,
+              3110.6706,
+              3109.0544,
+              3111.3962,
+              3112.5191,
+              3112.1215,
+              3112.2594,
+              3112.6502,
+              3112.4610000000002,
+              3113.8334,
+              3113.1786,
+              3113.6223999999997,
+              3114.214,
+              3121.9892,
+              3121.7059,
+              3121.5330999999996,
+              3112.2514,
+              3110.279,
+              3110.2325,
+              3113.4933
+            ],
+            "coefficient_of_variation": 0.004815487709208333,
+            "peak_allocated_bytes": 1725327872,
+            "warmup": 20,
+            "repeats": 30,
+            "inner": 10,
+            "rank_aggregation": "single_rank"
+          }
+        },
+        {
+          "order": "reverse",
+          "execution": "graph",
+          "variant": "full_keys_major_mask",
+          "phase": "pipeline",
+          "measurement": {
+            "p50_us": 4584.777641296387,
+            "p90_us": 4585.590362548828,
+            "p95_us": 4585.724639892578,
+            "samples_us": [
+              4596.480178833008,
+              4584.393692016602,
+              4584.969711303711,
+              4584.304046630859,
+              4583.7310791015625,
+              4582.332611083984,
+              4584.828948974609,
+              4584.553527832031,
+              4584.80339050293,
+              4585.443115234375,
+              4584.617614746094,
+              4584.006500244141,
+              4584.735870361328,
+              4585.408020019531,
+              4585.225677490234,
+              4584.844970703125,
+              4583.513641357422,
+              4585.590362548828,
+              4587.8814697265625,
+              4584.751892089844,
+              4584.316635131836,
+              4585.724639892578,
+              4584.064102172852,
+              4584.988784790039,
+              4584.051132202148,
+              4584.908676147461,
+              4584.85107421875,
+              4584.656143188477,
+              4584.511947631836,
+              4585.187149047852
+            ],
+            "wall_p50_us": 4587.53825,
+            "wall_samples_us": [
+              4601.8377,
+              4587.0427,
+              4587.4758,
+              4587.1763,
+              4586.7756,
+              4584.7881,
+              4587.2582999999995,
+              4587.3223,
+              4587.4997,
+              4587.7254,
+              4586.7793,
+              4586.7309000000005,
+              4587.783,
+              4587.9457999999995,
+              4587.5185,
+              4587.8881,
+              4587.6327,
+              4590.3007,
+              4593.3705,
+              4587.7684,
+              4590.1381,
+              4592.046,
+              4587.218,
+              4587.558,
+              4586.4577,
+              4589.1175,
+              4589.9489,
+              4587.4552,
+              4586.8573,
+              4588.2795
+            ],
+            "coefficient_of_variation": 0.0004988373126203797,
+            "peak_allocated_bytes": 1725327872,
+            "warmup": 20,
+            "repeats": 30,
+            "inner": 10,
+            "rank_aggregation": "single_rank"
+          }
+        },
+        {
+          "order": "reverse",
+          "execution": "graph",
+          "variant": "full_deepgemm_mask",
+          "phase": "pipeline",
+          "measurement": {
+            "p50_us": 4646.72794342041,
+            "p90_us": 4649.286270141602,
+            "p95_us": 4649.385452270508,
+            "samples_us": [
+              4655.427169799805,
+              4645.264053344727,
+              4646.944046020508,
+              4645.948791503906,
+              4643.753433227539,
+              4646.5057373046875,
+              4645.619201660156,
+              4646.188735961914,
+              4647.043228149414,
+              4648.332977294922,
+              4646.828842163086,
+              4647.875213623047,
+              4645.49446105957,
+              4647.8912353515625,
+              4647.145462036133,
+              4645.078277587891,
+              4648.015975952148,
+              4645.8526611328125,
+              4645.379257202148,
+              4645.974349975586,
+              4645.347213745117,
+              4646.035385131836,
+              4646.876907348633,
+              4647.190475463867,
+              4649.385452270508,
+              4647.96142578125,
+              4646.284866333008,
+              4646.627044677734,
+              4649.286270141602,
+              4650.537490844727
+            ],
+            "wall_p50_us": 4650.427900000001,
+            "wall_samples_us": [
+              4662.0768,
+              4648.6783000000005,
+              4649.6113,
+              4648.3716,
+              4646.1845,
+              4648.8549,
+              4648.8645,
+              4650.5133000000005,
+              8367.3984,
+              4659.2076,
+              4649.9478,
+              4650.342500000001,
+              4647.9732,
+              4650.7035000000005,
+              4651.4321,
+              4654.3948,
+              4657.5438,
+              4649.0294,
+              4648.3151,
+              4648.7827,
+              4648.268,
+              4649.2168,
+              4650.0117,
+              4652.4113,
+              4661.8948,
+              4658.5595,
+              4650.7303999999995,
+              4653.3619,
+              4662.7749,
+              4662.7298
+            ],
+            "coefficient_of_variation": 0.00045213315316444235,
+            "peak_allocated_bytes": 1725327872,
+            "warmup": 20,
+            "repeats": 30,
+            "inner": 10,
+            "rank_aggregation": "single_rank"
+          }
+        }
+      ],
+      "source_generation_in_pipeline": false,
+      "scope": "Same inputs/candidates/paths for both orders in one process; complete pipelines only; source repeats precede timing."
+    },
+    {
+      "case": "steady_256k",
+      "query_lens": [
+        4096
+      ],
+      "contexts": [
+        262144
+      ],
+      "ratio": 1,
+      "heads": 32,
+      "head_dim": 128,
+      "paired_pipeline": true,
+      "input_before": {
+        "q": {
+          "shape": [
+            4096,
+            32,
+            128
+          ],
+          "dtype": "torch.float8_e4m3fn",
+          "sha256": "542acdd689b918b5af6ee78bf0283037b020d1f4c7d0f51a7d2ac2d20b0bfc93"
+        },
+        "weights": {
+          "shape": [
+            4096,
+            32
+          ],
+          "dtype": "torch.float32",
+          "sha256": "56183e52a723543907e719c4f120fe04a4963932113512bde0c80fe324d16495"
+        },
+        "cache": {
+          "shape": [
+            4096,
+            64,
+            1,
+            132
+          ],
+          "dtype": "torch.uint8",
+          "sha256": "cba93ea7463f002acd2bf30b66216f90c95561667ed48c0b99bbb9cc9a01c645"
+        },
+        "table": {
+          "shape": [
+            1,
+            4096
+          ],
+          "dtype": "torch.int32",
+          "sha256": "3a68194469086dd0c241e819ad98d8fa3fef2bcb3cdec42de3c74c2e1d9a038d"
+        },
+        "requests": {
+          "shape": [
+            4096
+          ],
+          "dtype": "torch.int32",
+          "sha256": "4fe7b59af6de3b665b67788cc2f99892ab827efae3a467342b3bb4e3bc8e5bfe"
+        },
+        "lengths": {
+          "shape": [
+            4096
+          ],
+          "dtype": "torch.int32",
+          "sha256": "46f62d6242ba34687be6be358b73e888025f6abe078d8c2382c844c85bc7a416"
+        },
+        "source_q": {
+          "shape": [
+            4096,
+            32,
+            128
+          ],
+          "dtype": "torch.float8_e4m3fn",
+          "sha256": "bffff3f380c16586a4195618c52018ef0d165d6fcf97f5361ca07b708b328f15"
+        },
+        "source_weights": {
+          "shape": [
+            4096,
+            32
+          ],
+          "dtype": "torch.float32",
+          "sha256": "c7e983ee14e915ce845aaeec1e7df259888ac82f1b7c6a7706255a877f95e390"
+        },
+        "candidate_raw": {
+          "shape": [
+            4096,
+            2048
+          ],
+          "dtype": "torch.int32",
+          "sha256": "e7007d9200c122471645f093d1e3b0748fb190ec9559bdb169806a6ee282f7c8"
+        },
+        "candidate_canonical": {
+          "shape": [
+            4096,
+            2048
+          ],
+          "dtype": "torch.int32",
+          "sha256": "974acb4adfd5e6227de1a7bc1e044b5024aad3e6ee6b3b1697ba7a63cdf85a87"
+        }
+      },
+      "input_after": {
+        "q": {
+          "shape": [
+            4096,
+            32,
+            128
+          ],
+          "dtype": "torch.float8_e4m3fn",
+          "sha256": "542acdd689b918b5af6ee78bf0283037b020d1f4c7d0f51a7d2ac2d20b0bfc93"
+        },
+        "weights": {
+          "shape": [
+            4096,
+            32
+          ],
+          "dtype": "torch.float32",
+          "sha256": "56183e52a723543907e719c4f120fe04a4963932113512bde0c80fe324d16495"
+        },
+        "cache": {
+          "shape": [
+            4096,
+            64,
+            1,
+            132
+          ],
+          "dtype": "torch.uint8",
+          "sha256": "cba93ea7463f002acd2bf30b66216f90c95561667ed48c0b99bbb9cc9a01c645"
+        },
+        "table": {
+          "shape": [
+            1,
+            4096
+          ],
+          "dtype": "torch.int32",
+          "sha256": "3a68194469086dd0c241e819ad98d8fa3fef2bcb3cdec42de3c74c2e1d9a038d"
+        },
+        "requests": {
+          "shape": [
+            4096
+          ],
+          "dtype": "torch.int32",
+          "sha256": "4fe7b59af6de3b665b67788cc2f99892ab827efae3a467342b3bb4e3bc8e5bfe"
+        },
+        "lengths": {
+          "shape": [
+            4096
+          ],
+          "dtype": "torch.int32",
+          "sha256": "46f62d6242ba34687be6be358b73e888025f6abe078d8c2382c844c85bc7a416"
+        },
+        "source_q": {
+          "shape": [
+            4096,
+            32,
+            128
+          ],
+          "dtype": "torch.float8_e4m3fn",
+          "sha256": "bffff3f380c16586a4195618c52018ef0d165d6fcf97f5361ca07b708b328f15"
+        },
+        "source_weights": {
+          "shape": [
+            4096,
+            32
+          ],
+          "dtype": "torch.float32",
+          "sha256": "c7e983ee14e915ce845aaeec1e7df259888ac82f1b7c6a7706255a877f95e390"
+        },
+        "candidate_raw": {
+          "shape": [
+            4096,
+            2048
+          ],
+          "dtype": "torch.int32",
+          "sha256": "e7007d9200c122471645f093d1e3b0748fb190ec9559bdb169806a6ee282f7c8"
+        },
+        "candidate_canonical": {
+          "shape": [
+            4096,
+            2048
+          ],
+          "dtype": "torch.int32",
+          "sha256": "974acb4adfd5e6227de1a7bc1e044b5024aad3e6ee6b3b1697ba7a63cdf85a87"
+        }
+      },
+      "input_bytes_unchanged": true,
+      "source_repeats": [
+        {
+          "raw": {
+            "shape": [
+              4096,
+              2048
+            ],
+            "dtype": "torch.int32",
+            "sha256": "5de647794c9d5e0b50db85aa90bfef933cf167444c208f6db9455a3173bace22"
+          },
+          "canonical": {
+            "shape": [
+              4096,
+              2048
+            ],
+            "dtype": "torch.int32",
+            "sha256": "974acb4adfd5e6227de1a7bc1e044b5024aad3e6ee6b3b1697ba7a63cdf85a87"
+          }
+        },
+        {
+          "raw": {
+            "shape": [
+              4096,
+              2048
+            ],
+            "dtype": "torch.int32",
+            "sha256": "39e257a7d49511cf991e2a3a7e684aa6139fa950e4af8eee16d03696d893f709"
+          },
+          "canonical": {
+            "shape": [
+              4096,
+              2048
+            ],
+            "dtype": "torch.int32",
+            "sha256": "974acb4adfd5e6227de1a7bc1e044b5024aad3e6ee6b3b1697ba7a63cdf85a87"
+          }
+        },
+        {
+          "raw": {
+            "shape": [
+              4096,
+              2048
+            ],
+            "dtype": "torch.int32",
+            "sha256": "70a497108a1f7835d431a58a67b7df268dc1df871beeac6ba417ac3dd37bfedc"
+          },
+          "canonical": {
+            "shape": [
+              4096,
+              2048
+            ],
+            "dtype": "torch.int32",
+            "sha256": "974acb4adfd5e6227de1a7bc1e044b5024aad3e6ee6b3b1697ba7a63cdf85a87"
+          }
+        }
+      ],
+      "source_canonical_sets_exact": true,
+      "source_raw_order_changed": true,
+      "candidate_positions_min": 16377,
+      "candidate_positions_max": 16384,
+      "candidate_positions_sum": 67094528,
+      "path_object_identity": {
+        "full_deepgemm_mask": {
+          "python_id": 139916270124832,
+          "candidate_data_ptr": 139916839223296,
+          "q_data_ptr": 139916746948608,
+          "cache_data_ptr": 139916872777728
+        },
+        "full_keys_major_mask": {
+          "python_id": 139916233467968,
+          "candidate_data_ptr": 139916839223296,
+          "q_data_ptr": 139916746948608,
+          "cache_data_ptr": 139916872777728
+        },
+        "direct": {
+          "python_id": 139912852123824,
+          "candidate_data_ptr": 139916839223296,
+          "q_data_ptr": 139916746948608,
+          "cache_data_ptr": 139916872777728
+        },
+        "gathered_wgmma": {
+          "python_id": 139912852123776,
+          "candidate_data_ptr": 139916839223296,
+          "q_data_ptr": 139916746948608,
+          "cache_data_ptr": 139916872777728
+        }
+      },
+      "correctness": {
+        "rows": 4096,
+        "max_abs_vs_native": 9.5367431640625e-07,
+        "min_topk_overlap": 1.0,
+        "fp32_strict_failures": 646,
+        "native_fp32_strict_failures": 646,
+        "fp32_max_abs": 0.001164078712463379,
+        "native_fp32_max_abs": 0.0011639595031738281,
+        "nrmse_vs_native": 6.36528431932549e-08,
+        "compact_direct_gather_score_comparison": "all candidate scores bitwise equal",
+        "fixed_logits_topk": "all rows exact logical sets",
+        "full_baselines": {
+          "full_deepgemm_mask": {
+            "max_abs_vs_native": 0.0,
+            "checked_rows": 4096
+          },
+          "full_keys_major_mask": {
+            "max_abs_vs_native": 1.9073486328125e-06,
+            "checked_rows": 4096
+          }
+        }
+      },
+      "records": [
+        {
+          "order": "forward",
+          "execution": "eager",
+          "variant": "full_deepgemm_mask",
+          "phase": "pipeline",
+          "measurement": {
+            "p50_us": 42318.641662597656,
+            "p90_us": 42332.19909667969,
+            "p95_us": 42334.12170410156,
+            "samples_us": [
+              42343.19763183594,
+              42301.47705078125,
+              42334.12170410156,
+              42302.96630859375,
+              42300.787353515625,
+              42330.82275390625,
+              42325.55236816406,
+              42324.01428222656,
+              42328.448486328125,
+              42290.70129394531,
+              42292.66052246094,
+              42317.242431640625,
+              42288.36364746094,
+              42290.5517578125,
+              42281.988525390625,
+              42350.8544921875,
+              42305.72509765625,
+              42311.75231933594,
+              42298.3642578125,
+              42319.122314453125,
+              42319.33898925781,
+              42328.5400390625,
+              42322.42431640625,
+              42321.490478515625,
+              42306.78405761719,
+              42320.4833984375,
+              42304.962158203125,
+              42318.22814941406,
+              42332.19909667969,
+              42319.05517578125
+            ],
+            "wall_p50_us": 42334.34655,
+            "wall_samples_us": [
+              42359.6317,
+              42316.374200000006,
+              42350.8683,
+              42312.125799999994,
+              42317.7832,
+              42355.4649,
+              42342.5599,
+              42340.804599999996,
+              42340.4327,
+              42296.586800000005,
+              42301.468,
+              42327.473,
+              42293.9359,
+              42295.858,
+              42299.2706,
+              42374.7262,
+              42317.062,
+              42322.9234,
+              42310.138900000005,
+              42334.3465,
+              42340.009999999995,
+              42352.2816,
+              42339.3504,
+              42336.446899999995,
+              42321.6068,
+              42334.346600000004,
+              42318.043300000005,
+              42336.8333,
+              42349.2228,
+              42335.054
+            ],
+            "coefficient_of_variation": 0.00039288609967033975,
+            "peak_allocated_bytes": 4320086528,
+            "warmup": 20,
+            "repeats": 30,
+            "inner": 10,
+            "rank_aggregation": "single_rank"
+          }
+        },
+        {
+          "order": "forward",
+          "execution": "eager",
+          "variant": "full_keys_major_mask",
+          "phase": "pipeline",
+          "measurement": {
+            "p50_us": 38028.99169921875,
+            "p90_us": 38057.818603515625,
+            "p95_us": 38061.553955078125,
+            "samples_us": [
+              38040.6982421875,
+              38039.642333984375,
+              38028.39050292969,
+              38061.553955078125,
+              38040.42053222656,
+              38021.85363769531,
+              38040.20690917969,
+              38033.71887207031,
+              38019.915771484375,
+              38043.20983886719,
+              38057.818603515625,
+              38029.59289550781,
+              38037.70446777344,
+              38036.55090332031,
+              38027.72216796875,
+              38033.19091796875,
+              38037.939453125,
+              38075.79650878906,
+              38026.50146484375,
+              38020.721435546875,
+              38025.4150390625,
+              38021.00830078125,
+              38021.26770019531,
+              38020.79772949219,
+              38063.31787109375,
+              38023.56872558594,
+              38017.66357421875,
+              38017.66052246094,
+              38020.20263671875,
+              38017.86804199219
+            ],
+            "wall_p50_us": 38044.91725,
+            "wall_samples_us": [
+              38056.8781,
+              38054.6066,
+              38044.858,
+              38079.217300000004,
+              38054.5745,
+              38034.056300000004,
+              38057.2772,
+              38046.7435,
+              38031.7047,
+              38065.7034,
+              38081.034,
+              38044.976500000004,
+              38054.877,
+              38052.2144,
+              38041.470400000006,
+              38048.1059,
+              38055.061,
+              38088.7115,
+              38033.1611,
+              38025.9108,
+              38032.128600000004,
+              38025.9963,
+              38026.4718,
+              38031.3287,
+              38079.0404,
+              38028.9274,
+              38022.2802,
+              38022.5328,
+              38025.4331,
+              38027.9343
+            ],
+            "coefficient_of_variation": 0.00038823089772906626,
+            "peak_allocated_bytes": 3244247552,
+            "warmup": 20,
+            "repeats": 30,
+            "inner": 10,
+            "rank_aggregation": "single_rank"
+          }
+        },
+        {
+          "order": "forward",
+          "execution": "eager",
+          "variant": "direct",
+          "phase": "pipeline",
+          "measurement": {
+            "p50_us": 6216.017532348633,
+            "p90_us": 6228.895950317383,
+            "p95_us": 6228.960037231445,
+            "samples_us": [
+              6228.960037231445,
+              6215.423965454102,
+              6224.748611450195,
+              6233.433532714844,
+              6217.212677001953,
+              6215.9454345703125,
+              6216.089630126953,
+              6214.262390136719,
+              6217.606353759766,
+              6230.153656005859,
+              6224.684906005859,
+              6214.374542236328,
+              6215.897750854492,
+              6214.438247680664,
+              6214.729690551758,
+              6222.723388671875,
+              6228.895950317383,
+              6215.488052368164,
+              6214.6942138671875,
+              6214.012908935547,
+              6225.392150878906,
+              6226.092910766602,
+              6214.089584350586,
+              6215.702438354492,
+              6214.473724365234,
+              6214.691162109375,
+              6220.070266723633,
+              6228.031921386719,
+              6219.059371948242,
+              6214.79377746582
+            ],
+            "wall_p50_us": 6221.19155,
+            "wall_samples_us": [
+              6239.1437,
+              6220.784900000001,
+              6231.7215,
+              6241.4856,
+              6222.462,
+              6221.9456,
+              6220.9451,
+              6218.3175,
+              6221.438,
+              6234.747,
+              6229.5088000000005,
+              6218.0411,
+              6219.7788,
+              6218.051799999999,
+              6218.3115,
+              6226.6745,
+              6233.2121,
+              6219.6665,
+              6218.5851999999995,
+              6217.4946,
+              6229.3235,
+              6229.3835,
+              6217.7,
+              6219.745,
+              6218.8444,
+              6219.8116,
+              6224.162200000001,
+              6231.812599999999,
+              6223.617899999999,
+              6217.9646
+            ],
+            "coefficient_of_variation": 0.0009511980438300641,
+            "peak_allocated_bytes": 3210692096,
+            "warmup": 20,
+            "repeats": 30,
+            "inner": 10,
+            "rank_aggregation": "single_rank"
+          }
+        },
+        {
+          "order": "forward",
+          "execution": "eager",
+          "variant": "gathered_wgmma",
+          "phase": "pipeline",
+          "measurement": {
+            "p50_us": 7813.942337036133,
+            "p90_us": 8812.124633789062,
+            "p95_us": 8874.899291992188,
+            "samples_us": [
+              7691.053009033203,
+              7672.003173828125,
+              7692.396545410156,
+              7667.852783203125,
+              7660.070037841797,
+              7788.553619384766,
+              8581.059265136719,
+              8812.124633789062,
+              9159.99984741211,
+              8917.120361328125,
+              8017.036437988281,
+              7816.508483886719,
+              7811.376190185547,
+              7717.4560546875,
+              7721.327972412109,
+              7746.7041015625,
+              7735.820770263672,
+              7949.5391845703125,
+              8222.892761230469,
+              8748.806762695312,
+              8874.899291992188,
+              8810.022735595703,
+              8327.12631225586,
+              7935.890960693359,
+              7874.269104003906,
+              7797.737884521484,
+              7792.755126953125,
+              7743.965148925781,
+              7753.9520263671875,
+              8098.239898681641
+            ],
+            "wall_p50_us": 7838.9862,
+            "wall_samples_us": [
+              7698.327,
+              7677.1078,
+              7697.4769,
+              7672.849,
+              7665.0005,
+              7793.027800000001,
+              8584.5909,
+              8816.0026,
+              9163.975199999999,
+              8920.8036,
+              8021.010700000001,
+              7860.3079,
+              7817.664500000001,
+              7722.2857,
+              7725.4452,
+              7750.6617,
+              7739.8844,
+              7953.315,
+              8226.579099999999,
+              8752.474400000001,
+              8879.2709,
+              8815.4607,
+              8331.6245,
+              7939.888199999999,
+              7877.9567,
+              7801.635799999999,
+              7796.2744,
+              7747.6660999999995,
+              7757.727400000001,
+              8101.950999999999
+            ],
+            "coefficient_of_variation": 0.05696390929692982,
+            "peak_allocated_bytes": 3210692096,
+            "warmup": 20,
+            "repeats": 30,
+            "inner": 10,
+            "rank_aggregation": "single_rank"
+          }
+        },
+        {
+          "order": "forward",
+          "execution": "graph",
+          "variant": "full_deepgemm_mask",
+          "phase": "pipeline",
+          "measurement": {
+            "p50_us": 42302.33612060547,
+            "p90_us": 42311.37390136719,
+            "p95_us": 42322.09167480469,
+            "samples_us": [
+              42324.48425292969,
+              42296.87805175781,
+              42303.1005859375,
+              42292.76428222656,
+              42293.792724609375,
+              42300.81481933594,
+              42303.0029296875,
+              42302.57263183594,
+              42306.951904296875,
+              42301.971435546875,
+              42302.276611328125,
+              42300.75378417969,
+              42344.56787109375,
+              42299.359130859375,
+              42304.93469238281,
+              42297.894287109375,
+              42303.192138671875,
+              42297.69287109375,
+              42300.50048828125,
+              42299.6826171875,
+              42300.38146972656,
+              42300.37536621094,
+              42305.4443359375,
+              42301.65710449219,
+              42310.17150878906,
+              42303.253173828125,
+              42302.39562988281,
+              42304.42199707031,
+              42311.37390136719,
+              42322.09167480469
+            ],
+            "wall_p50_us": 42321.49805,
+            "wall_samples_us": [
+              42331.1192,
+              42301.418699999995,
+              42307.032900000006,
+              42296.1287,
+              42301.9219,
+              42317.2678,
+              42320.5603,
+              42326.056800000006,
+              42335.6933,
+              42322.552899999995,
+              42319.0539,
+              42322.8241,
+              42361.5581,
+              42317.125400000004,
+              42322.2583,
+              42307.4389,
+              42317.742,
+              42310.2005,
+              42318.647600000004,
+              42318.8428,
+              42309.9547,
+              42321.7822,
+              42330.452600000004,
+              42326.224,
+              42341.7713,
+              42329.4201,
+              42321.2139,
+              42328.977100000004,
+              42336.9278,
+              42344.2721
+            ],
+            "coefficient_of_variation": 0.00023491875644055072,
+            "peak_allocated_bytes": 3210693120,
+            "warmup": 20,
+            "repeats": 30,
+            "inner": 10,
+            "rank_aggregation": "single_rank"
+          }
+        },
+        {
+          "order": "forward",
+          "execution": "graph",
+          "variant": "full_keys_major_mask",
+          "phase": "pipeline",
+          "measurement": {
+            "p50_us": 38000.39367675781,
+            "p90_us": 38009.19189453125,
+            "p95_us": 38023.5595703125,
+            "samples_us": [
+              37963.1103515625,
+              37943.77136230469,
+              37946.728515625,
+              37942.376708984375,
+              37998.18420410156,
+              38003.67736816406,
+              38005.33752441406,
+              38002.57263183594,
+              38009.19189453125,
+              38001.24816894531,
+              38000.46081542969,
+              38003.02429199219,
+              38000.46081542969,
+              37999.603271484375,
+              37999.871826171875,
+              38006.79931640625,
+              38000.567626953125,
+              37998.67248535156,
+              37999.3896484375,
+              38026.83410644531,
+              37999.700927734375,
+              38000.32653808594,
+              37999.853515625,
+              38000.13732910156,
+              37999.615478515625,
+              37998.91052246094,
+              38028.5888671875,
+              38004.20837402344,
+              38023.5595703125,
+              38001.48010253906
+            ],
+            "wall_p50_us": 38008.56185,
+            "wall_samples_us": [
+              37975.3293,
+              37961.9396,
+              37964.389899999995,
+              37969.024900000004,
+              38026.5492,
+              38019.7944,
+              38020.4516,
+              38025.3034,
+              38027.2509,
+              38004.874200000006,
+              38007.5893,
+              38011.9713,
+              38004.0716,
+              38002.947499999995,
+              38009.5344,
+              38019.9098,
+              38004.5829,
+              38002.4431,
+              38013.6275,
+              38044.3836,
+              38004.0556,
+              38005.7849,
+              38003.863,
+              38005.1454,
+              38003.293300000005,
+              38012.4587,
+              38051.7678,
+              38018.073599999996,
+              38032.9055,
+              38012.5927
+            ],
+            "coefficient_of_variation": 0.0005417188722430898,
+            "peak_allocated_bytes": 3210693120,
+            "warmup": 20,
+            "repeats": 30,
+            "inner": 10,
+            "rank_aggregation": "single_rank"
+          }
+        },
+        {
+          "order": "forward",
+          "execution": "graph",
+          "variant": "direct",
+          "phase": "pipeline",
+          "measurement": {
+            "p50_us": 6210.158348083496,
+            "p90_us": 6219.343948364258,
+            "p95_us": 6223.747253417969,
+            "samples_us": [
+              6215.228652954102,
+              6210.396957397461,
+              6217.728042602539,
+              6223.747253417969,
+              6209.558486938477,
+              6210.224151611328,
+              6208.972930908203,
+              6208.774566650391,
+              6210.44807434082,
+              6210.80322265625,
+              6219.343948364258,
+              6224.409484863281,
+              6210.0128173828125,
+              6209.26399230957,
+              6210.2142333984375,
+              6209.247970581055,
+              6209.785461425781,
+              6211.606216430664,
+              6209.852981567383,
+              6209.215927124023,
+              6208.649444580078,
+              6215.379333496094,
+              6224.006271362305,
+              6215.110397338867,
+              6208.950424194336,
+              6209.199905395508,
+              6208.809661865234,
+              6210.428619384766,
+              6209.964752197266,
+              6210.102462768555
+            ],
+            "wall_p50_us": 6212.50275,
+            "wall_samples_us": [
+              6219.9824,
+              6213.1103,
+              6220.2494,
+              6226.0008,
+              6212.0224,
+              6212.2967,
+              6211.1615,
+              6211.002399999999,
+              6212.628500000001,
+              6213.0893,
+              6221.6612000000005,
+              6226.5591,
+              6212.2432,
+              6211.3915,
+              6212.4745,
+              6211.409799999999,
+              6214.3534,
+              6217.42,
+              6213.3499,
+              6211.6203000000005,
+              6211.0142,
+              6217.7964999999995,
+              6226.3588,
+              6217.3259,
+              6211.0682,
+              6211.4123,
+              6210.9408,
+              6212.531,
+              6212.0634,
+              6212.1873
+            ],
+            "coefficient_of_variation": 0.0007634964038997641,
+            "peak_allocated_bytes": 3210693120,
+            "warmup": 20,
+            "repeats": 30,
+            "inner": 10,
+            "rank_aggregation": "single_rank"
+          }
+        },
+        {
+          "order": "forward",
+          "execution": "graph",
+          "variant": "gathered_wgmma",
+          "phase": "pipeline",
+          "measurement": {
+            "p50_us": 7872.632217407227,
+            "p90_us": 8640.137481689453,
+            "p95_us": 8647.277069091797,
+            "samples_us": [
+              7457.027435302734,
+              7631.065368652344,
+              7566.159820556641,
+              7576.076507568359,
+              7611.682891845703,
+              7790.665435791016,
+              8480.105590820312,
+              8791.321563720703,
+              8948.957061767578,
+              8420.553588867188,
+              7987.789154052734,
+              8406.038665771484,
+              7821.222686767578,
+              7674.076843261719,
+              7645.244598388672,
+              7613.974761962891,
+              7676.15966796875,
+              7924.041748046875,
+              8493.68667602539,
+              8640.137481689453,
+              8647.277069091797,
+              8458.89892578125,
+              8399.481964111328,
+              8322.128295898438,
+              7998.764801025391,
+              7819.49462890625,
+              7671.4141845703125,
+              7613.3026123046875,
+              7754.0130615234375,
+              8032.585906982422
+            ],
+            "wall_p50_us": 7880.27785,
+            "wall_samples_us": [
+              7465.3346,
+              7636.8604000000005,
+              7578.3559,
+              7586.616599999999,
+              7614.6756,
+              7793.5244999999995,
+              8482.5733,
+              8793.9237,
+              8954.3146,
+              8426.294100000001,
+              7990.2432,
+              8413.150599999999,
+              7834.0833,
+              7686.6121,
+              7661.4763,
+              7628.8365,
+              7685.6462,
+              7926.472400000001,
+              8499.2624,
+              8652.689699999999,
+              8663.9754,
+              8468.228,
+              8402.2454,
+              8324.8208,
+              8001.6637,
+              7821.972,
+              7673.8657,
+              7615.6898,
+              7756.2455,
+              8034.883199999999
+            ],
+            "coefficient_of_variation": 0.05327393091836726,
+            "peak_allocated_bytes": 3210693120,
+            "warmup": 20,
+            "repeats": 30,
+            "inner": 10,
+            "rank_aggregation": "single_rank"
+          }
+        },
+        {
+          "order": "reverse",
+          "execution": "eager",
+          "variant": "gathered_wgmma",
+          "phase": "pipeline",
+          "measurement": {
+            "p50_us": 7781.7840576171875,
+            "p90_us": 8961.1328125,
+            "p95_us": 9114.192199707031,
+            "samples_us": [
+              7725.974273681641,
+              7718.125152587891,
+              7740.140533447266,
+              7715.583801269531,
+              7675.920104980469,
+              7661.8560791015625,
+              7677.772521972656,
+              7827.260589599609,
+              9283.164978027344,
+              9736.934661865234,
+              8862.876892089844,
+              8128.498840332031,
+              7803.6895751953125,
+              7809.3475341796875,
+              7765.177917480469,
+              7744.032287597656,
+              7761.840057373047,
+              7745.603179931641,
+              7758.803558349609,
+              8291.645050048828,
+              8961.1328125,
+              9114.192199707031,
+              8780.342102050781,
+              8345.420837402344,
+              8084.137725830078,
+              7913.334655761719,
+              7798.390197753906,
+              7744.844818115234,
+              7742.22412109375,
+              7759.619140625
+            ],
+            "wall_p50_us": 7785.400250000001,
+            "wall_samples_us": [
+              7736.2976,
+              7721.94,
+              7743.304300000001,
+              7719.6802,
+              7679.5065,
+              7665.5745,
+              7681.556200000001,
+              7831.111599999999,
+              9287.1534,
+              9741.394400000001,
+              8866.371000000001,
+              8132.2712,
+              7807.4938999999995,
+              7813.1136,
+              7769.1404999999995,
+              7748.051600000001,
+              7766.5127999999995,
+              7749.9758,
+              7762.738899999999,
+              8301.5826,
+              8975.1973,
+              9118.564,
+              8784.694899999999,
+              8349.507000000001,
+              8087.640799999999,
+              7916.460499999999,
+              7801.660000000001,
+              7747.9175000000005,
+              7745.3817,
+              7763.013400000001
+            ],
+            "coefficient_of_variation": 0.0693442038342853,
+            "peak_allocated_bytes": 3210692096,
+            "warmup": 20,
+            "repeats": 30,
+            "inner": 10,
+            "rank_aggregation": "single_rank"
+          }
+        },
+        {
+          "order": "reverse",
+          "execution": "eager",
+          "variant": "direct",
+          "phase": "pipeline",
+          "measurement": {
+            "p50_us": 6215.366363525391,
+            "p90_us": 6249.497604370117,
+            "p95_us": 6253.670501708984,
+            "samples_us": [
+              6253.670501708984,
+              6269.276809692383,
+              6265.9393310546875,
+              6249.497604370117,
+              6212.201690673828,
+              6212.227249145508,
+              6212.956619262695,
+              6212.883377075195,
+              6212.534332275391,
+              6213.103866577148,
+              6218.384170532227,
+              6228.255844116211,
+              6225.360107421875,
+              6215.097427368164,
+              6215.635299682617,
+              6217.023849487305,
+              6215.990447998047,
+              6247.132873535156,
+              6223.769760131836,
+              6213.478469848633,
+              6214.131164550781,
+              6212.499237060547,
+              6213.1744384765625,
+              6222.524642944336,
+              6228.131103515625,
+              6216.214370727539,
+              6213.113784790039,
+              6213.017654418945,
+              6213.452911376953,
+              6213.532638549805
+            ],
+            "wall_p50_us": 6220.0792,
+            "wall_samples_us": [
+              6258.9911999999995,
+              6272.128500000001,
+              6269.0327,
+              6252.7745,
+              6215.1114,
+              6214.8595000000005,
+              6215.776,
+              6215.6001,
+              6215.3732,
+              6215.8186000000005,
+              6221.2078,
+              6233.9017,
+              6232.3144999999995,
+              6218.7858,
+              6221.121300000001,
+              6224.1858999999995,
+              6225.3322,
+              6258.3819,
+              6226.780000000001,
+              6216.3564,
+              6217.2434,
+              6215.2611,
+              6218.1388,
+              6227.719,
+              6230.8881,
+              6219.0371,
+              6215.9177,
+              6215.6824,
+              6216.0923999999995,
+              6222.4101
+            ],
+            "coefficient_of_variation": 0.0026136781605208674,
+            "peak_allocated_bytes": 3210692096,
+            "warmup": 20,
+            "repeats": 30,
+            "inner": 10,
+            "rank_aggregation": "single_rank"
+          }
+        },
+        {
+          "order": "reverse",
+          "execution": "eager",
+          "variant": "full_keys_major_mask",
+          "phase": "pipeline",
+          "measurement": {
+            "p50_us": 38052.105712890625,
+            "p90_us": 38081.640625,
+            "p95_us": 38099.79553222656,
+            "samples_us": [
+              38100.262451171875,
+              38049.35607910156,
+              38076.495361328125,
+              38099.79553222656,
+              38075.79650878906,
+              38081.640625,
+              38101.27258300781,
+              38053.778076171875,
+              38052.89001464844,
+              38075.579833984375,
+              38078.338623046875,
+              38051.715087890625,
+              38048.07434082031,
+              38048.80065917969,
+              38049.15466308594,
+              38050.1708984375,
+              38054.705810546875,
+              38054.583740234375,
+              38050.47607421875,
+              38050.85754394531,
+              38074.74060058594,
+              38052.496337890625,
+              38050.72326660156,
+              38049.41101074219,
+              38050.45166015625,
+              38046.07849121094,
+              38049.20349121094,
+              38050.08544921875,
+              38051.190185546875,
+              38059.210205078125
+            ],
+            "wall_p50_us": 38059.562900000004,
+            "wall_samples_us": [
+              38109.4869,
+              38059.551400000004,
+              38093.543699999995,
+              38116.282,
+              38096.2396,
+              38104.2789,
+              38114.0918,
+              38061.9804,
+              38063.7158,
+              38088.9591,
+              38085.4574,
+              38056.9208,
+              38053.0545,
+              38053.9125,
+              38053.3384,
+              38055.305,
+              38060.9082,
+              38059.5744,
+              38055.8945,
+              38060.4811,
+              38087.659100000004,
+              38058.4553,
+              38056.6321,
+              38053.896,
+              38054.6204,
+              38050.240600000005,
+              38053.883799999996,
+              38054.5646,
+              38057.514299999995,
+              38066.505
+            ],
+            "coefficient_of_variation": 0.00044134368639207465,
+            "peak_allocated_bytes": 3244247552,
+            "warmup": 20,
+            "repeats": 30,
+            "inner": 10,
+            "rank_aggregation": "single_rank"
+          }
+        },
+        {
+          "order": "reverse",
+          "execution": "eager",
+          "variant": "full_deepgemm_mask",
+          "phase": "pipeline",
+          "measurement": {
+            "p50_us": 42344.097900390625,
+            "p90_us": 42434.26513671875,
+            "p95_us": 42442.05017089844,
+            "samples_us": [
+              42442.596435546875,
+              42455.78918457031,
+              42442.05017089844,
+              42434.26513671875,
+              42426.31530761719,
+              42427.34069824219,
+              42426.873779296875,
+              42421.11511230469,
+              42432.15637207031,
+              42417.79479980469,
+              42334.61608886719,
+              42340.04211425781,
+              42332.49206542969,
+              42341.25061035156,
+              42376.959228515625,
+              42356.93054199219,
+              42345.20568847656,
+              42342.657470703125,
+              42346.8994140625,
+              42341.326904296875,
+              42342.0166015625,
+              42341.412353515625,
+              42340.869140625,
+              42343.0908203125,
+              42340.972900390625,
+              42342.13562011719,
+              42337.00866699219,
+              42345.10498046875,
+              42337.50305175781,
+              42339.24255371094
+            ],
+            "wall_p50_us": 42354.1167,
+            "wall_samples_us": [
+              42454.4972,
+              42466.5021,
+              42452.4451,
+              42444.1811,
+              42433.1327,
+              42433.6624,
+              42433.2941,
+              42427.6213,
+              42440.7564,
+              42425.034700000004,
+              42342.1159,
+              42346.894199999995,
+              42338.2586,
+              42355.956300000005,
+              42397.0539,
+              42368.257,
+              42354.268,
+              42352.4112,
+              42354.9456,
+              42349.2071,
+              42349.8815,
+              42348.951199999996,
+              42348.6274,
+              42351.659700000004,
+              42348.475099999996,
+              42350.9023,
+              42344.341499999995,
+              42353.9654,
+              42345.0988,
+              42348.9628
+            ],
+            "coefficient_of_variation": 0.0010190256233786167,
+            "peak_allocated_bytes": 4320086528,
+            "warmup": 20,
+            "repeats": 30,
+            "inner": 10,
+            "rank_aggregation": "single_rank"
+          }
+        },
+        {
+          "order": "reverse",
+          "execution": "graph",
+          "variant": "gathered_wgmma",
+          "phase": "pipeline",
+          "measurement": {
+            "p50_us": 7978.977584838867,
+            "p90_us": 8661.270141601562,
+            "p95_us": 8764.339447021484,
+            "samples_us": [
+              7456.8511962890625,
+              7668.537902832031,
+              7662.525177001953,
+              7699.382019042969,
+              7682.358551025391,
+              7658.428955078125,
+              8024.956512451172,
+              8834.03549194336,
+              9130.326080322266,
+              8661.270141601562,
+              8351.46255493164,
+              8547.561645507812,
+              8084.828948974609,
+              7869.075012207031,
+              7704.991912841797,
+              7684.687805175781,
+              7709.4207763671875,
+              7847.478485107422,
+              8307.13882446289,
+              8643.196868896484,
+              8764.339447021484,
+              8572.48306274414,
+              8526.809692382812,
+              8432.959747314453,
+              8141.907501220703,
+              8072.892761230469,
+              7879.666900634766,
+              7728.173065185547,
+              7761.980438232422,
+              7932.9986572265625
+            ],
+            "wall_p50_us": 7981.97425,
+            "wall_samples_us": [
+              7464.4163,
+              7671.965700000001,
+              7665.244500000001,
+              7702.065799999999,
+              7685.0848,
+              7661.160099999999,
+              8028.2837,
+              8837.242900000001,
+              9133.4709,
+              8664.384600000001,
+              8354.2758,
+              8550.132399999999,
+              8087.2062000000005,
+              7871.419100000001,
+              7707.662399999999,
+              7687.073200000001,
+              7711.7507,
+              7849.7768,
+              8309.838,
+              8646.5509,
+              8767.4508,
+              8575.1717,
+              8529.625,
+              8435.3489,
+              8144.8832999999995,
+              8076.0187000000005,
+              7882.9972,
+              7730.8516,
+              7764.3910000000005,
+              7935.6648000000005
+            ],
+            "coefficient_of_variation": 0.05395033145601383,
+            "peak_allocated_bytes": 3210693120,
+            "warmup": 20,
+            "repeats": 30,
+            "inner": 10,
+            "rank_aggregation": "single_rank"
+          }
+        },
+        {
+          "order": "reverse",
+          "execution": "graph",
+          "variant": "direct",
+          "phase": "pipeline",
+          "measurement": {
+            "p50_us": 6211.878395080566,
+            "p90_us": 6253.065490722656,
+            "p95_us": 6254.790496826172,
+            "samples_us": [
+              6254.790496826172,
+              6253.065490722656,
+              6256.025695800781,
+              6268.1182861328125,
+              6223.231887817383,
+              6202.793502807617,
+              6207.065582275391,
+              6210.451126098633,
+              6210.36491394043,
+              6212.643051147461,
+              6211.113739013672,
+              6209.0911865234375,
+              6213.996887207031,
+              6224.220657348633,
+              6214.041519165039,
+              6209.222412109375,
+              6209.8846435546875,
+              6208.30078125,
+              6208.979034423828,
+              6210.259246826172,
+              6208.684921264648,
+              6208.774566650391,
+              6218.473434448242,
+              6224.224090576172,
+              6210.512161254883,
+              6215.795135498047,
+              6223.920059204102,
+              6213.0462646484375,
+              6211.027145385742,
+              6223.712158203125
+            ],
+            "wall_p50_us": 6216.16345,
+            "wall_samples_us": [
+              6259.5527999999995,
+              6256.0551,
+              6259.082,
+              6271.384,
+              6225.5655,
+              6205.1196,
+              6209.4191,
+              6213.0131,
+              6219.366,
+              6223.5904,
+              6214.0094,
+              6211.6954,
+              6217.0432,
+              6226.723,
+              6216.76,
+              6212.2876,
+              6212.5887999999995,
+              6210.772,
+              6211.5563,
+              6212.4277,
+              6210.807,
+              6211.0061000000005,
+              6220.9525,
+              6226.680399999999,
+              6213.1260999999995,
+              6218.0201,
+              6226.1156,
+              6215.5669,
+              6214.0317000000005,
+              6226.3394
+            ],
+            "coefficient_of_variation": 0.002627100081667191,
+            "peak_allocated_bytes": 3210693120,
+            "warmup": 20,
+            "repeats": 30,
+            "inner": 10,
+            "rank_aggregation": "single_rank"
+          }
+        },
+        {
+          "order": "reverse",
+          "execution": "graph",
+          "variant": "full_keys_major_mask",
+          "phase": "pipeline",
+          "measurement": {
+            "p50_us": 38009.608459472656,
+            "p90_us": 38034.05456542969,
+            "p95_us": 38034.283447265625,
+            "samples_us": [
+              38036.40441894531,
+              38008.953857421875,
+              38009.62829589844,
+              38008.55407714844,
+              38009.26513671875,
+              38009.64660644531,
+              38009.60998535156,
+              38010.45227050781,
+              38009.0087890625,
+              38008.96301269531,
+              38008.37707519531,
+              38006.72912597656,
+              38008.80432128906,
+              38011.08703613281,
+              38007.52868652344,
+              38010.67810058594,
+              38034.283447265625,
+              38008.74328613281,
+              38010.01892089844,
+              38008.28857421875,
+              38009.29870605469,
+              38034.05456542969,
+              38011.883544921875,
+              38009.60693359375,
+              38010.63537597656,
+              38009.89074707031,
+              38035.65979003906,
+              38008.57849121094,
+              38008.97521972656,
+              38009.77478027344
+            ],
+            "wall_p50_us": 38013.71465,
+            "wall_samples_us": [
+              38043.4298,
+              38014.5896,
+              38013.6742,
+              38012.8358,
+              38013.6059,
+              38013.8645,
+              38013.888900000005,
+              38014.3984,
+              38012.4315,
+              38012.1566,
+              38011.683899999996,
+              38010.8624,
+              38013.0777,
+              38015.322,
+              38011.1951,
+              38014.3495,
+              38037.8747,
+              38012.597499999996,
+              38014.3867,
+              38012.2655,
+              38013.414000000004,
+              38044.315,
+              38022.591700000004,
+              38013.1899,
+              38014.643599999996,
+              38014.2096,
+              38039.786,
+              38012.9382,
+              38013.6837,
+              38013.7456
+            ],
+            "coefficient_of_variation": 0.00023200482388613093,
+            "peak_allocated_bytes": 3210693120,
+            "warmup": 20,
+            "repeats": 30,
+            "inner": 10,
+            "rank_aggregation": "single_rank"
+          }
+        },
+        {
+          "order": "reverse",
+          "execution": "graph",
+          "variant": "full_deepgemm_mask",
+          "phase": "pipeline",
+          "measurement": {
+            "p50_us": 42314.7216796875,
+            "p90_us": 42319.27490234375,
+            "p95_us": 42362.69226074219,
+            "samples_us": [
+              42362.69226074219,
+              42314.739990234375,
+              42315.15197753906,
+              42314.12658691406,
+              42311.669921875,
+              42311.61193847656,
+              42312.60986328125,
+              42314.48669433594,
+              42306.11877441406,
+              42311.810302734375,
+              42319.27490234375,
+              42315.191650390625,
+              42400.06103515625,
+              42381.121826171875,
+              42314.68505859375,
+              42314.30969238281,
+              42311.71875,
+              42317.62390136719,
+              42312.97607421875,
+              42314.703369140625,
+              42315.05432128906,
+              42315.19775390625,
+              42318.59130859375,
+              42318.3837890625,
+              42311.761474609375,
+              42316.65954589844,
+              42315.869140625,
+              42315.39001464844,
+              42313.32092285156,
+              42309.6435546875
+            ],
+            "wall_p50_us": 42331.6752,
+            "wall_samples_us": [
+              42369.913199999995,
+              42320.7764,
+              42320.2836,
+              42318.750799999994,
+              42315.7181,
+              42316.2212,
+              42316.3346,
+              42318.772600000004,
+              42310.6513,
+              42322.2705,
+              42335.5283,
+              42332.072,
+              42416.4291,
+              42398.323599999996,
+              42332.9494,
+              42331.894799999995,
+              42328.656,
+              42336.062900000004,
+              42329.774900000004,
+              42331.7334,
+              42331.617,
+              42331.7856,
+              42335.3645,
+              42335.4519,
+              42328.2567,
+              42335.0741,
+              42333.1829,
+              42333.4482,
+              42324.8598,
+              42314.7912
+            ],
+            "coefficient_of_variation": 0.0004932403373452331,
+            "peak_allocated_bytes": 3210693120,
+            "warmup": 20,
+            "repeats": 30,
+            "inner": 10,
+            "rank_aggregation": "single_rank"
+          }
+        }
+      ],
+      "source_generation_in_pipeline": false,
+      "scope": "Same inputs/candidates/paths for both orders in one process; complete pipelines only; source repeats precede timing."
+    }
+  ],
+  "old_raw_canonical_hash_reconstructed": false
+}

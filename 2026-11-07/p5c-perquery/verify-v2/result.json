@@ -1,0 +1,781 @@
+{
+  "status": "passed",
+  "device": {
+    "name": "NVIDIA H20",
+    "sm_count": 78,
+    "topology": "\t\u001b[4mGPU0\tGPU1\tGPU2\tGPU3\tNIC0\tNIC1\tNIC2\tNIC3\tCPU Affinity\tNUMA Affinity\tGPU NUMA ID\u001b[0m\nGPU0\t X \tNV18\tNV18\tNV18\tPXB\tPIX\tPXB\tPXB\t0-187\t0-1\t\tN/A\nGPU1\tNV18\t X \tNV18\tNV18\tPXB\tPIX\tPXB\tPXB\t0-187\t0-1\t\tN/A\nGPU2\tNV18\tNV18\t X \tNV18\tPXB\tPXB\tPIX\tPXB\t0-187\t0-1\t\tN/A\nGPU3\tNV18\tNV18\tNV18\t X \tPXB\tPXB\tPIX\tPXB\t0-187\t0-1\t\tN/A\nNIC0\tPXB\tPXB\tPXB\tPXB\t X \tPXB\tPXB\tPXB\t\t\t\t\nNIC1\tPIX\tPIX\tPXB\tPXB\tPXB\t X \tPXB\tPXB\t\t\t\t\nNIC2\tPXB\tPXB\tPIX\tPIX\tPXB\tPXB\t X \tPXB\t\t\t\t\nNIC3\tPXB\tPXB\tPXB\tPXB\tPXB\tPXB\tPXB\t X \t\t\t\t\n\nLegend:\n\n  X    = Self\n  SYS  = Connection traversing PCIe as well as the SMP interconnect between NUMA nodes (e.g., QPI/UPI)\n  NODE = Connection traversing PCIe as well as the interconnect between PCIe Host Bridges within a NUMA node\n  PHB  = Connection traversing PCIe as well as a PCIe Host Bridge (typically the CPU)\n  PXB  = Connection traversing multiple PCIe bridges (without traversing the PCIe Host Bridge)\n  PIX  = Connection traversing at most a single PCIe bridge\n  NV#  = Connection traversing a bonded set of # NVLinks\n\nNIC Legend:\n\n  NIC0: mlx5_0\n  NIC1: mlx5_1\n  NIC2: mlx5_2\n  NIC3: mlx5_3\n\n",
+    "torch": "2.13.0+cu130",
+    "cuda": "13.0",
+    "memory_bytes": 101997346816
+  },
+  "cases": [
+    {
+      "rows": 1,
+      "requests": 1,
+      "index_keys": 7,
+      "step": "initial",
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 1.1920928955078125e-07,
+          "nrmse_vs_native": 1.1620152729540219e-07,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0002872347831726074,
+          "score_bytes": 256,
+          "gather_bytes": 0,
+          "chunks": 1,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 1.1920928955078125e-07,
+          "nrmse_vs_native": 1.1620152729540219e-07,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0002872347831726074,
+          "score_bytes": 256,
+          "gather_bytes": 8448,
+          "chunks": 1,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        }
+      }
+    },
+    {
+      "rows": 1,
+      "requests": 1,
+      "index_keys": 7,
+      "step": "changed_candidates_lengths",
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "score_bytes": 256,
+          "gather_bytes": 0,
+          "chunks": 1,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "score_bytes": 256,
+          "gather_bytes": 8448,
+          "chunks": 1,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        }
+      }
+    },
+    {
+      "rows": 1,
+      "requests": 1,
+      "index_keys": 7,
+      "step": "zero_query",
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "score_bytes": 256,
+          "gather_bytes": 0,
+          "chunks": 1,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "score_bytes": 256,
+          "gather_bytes": 8448,
+          "chunks": 1,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        }
+      }
+    },
+    {
+      "rows": 1,
+      "requests": 1,
+      "index_keys": 7,
+      "step": "zero_lengths",
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "score_bytes": 256,
+          "gather_bytes": 0,
+          "chunks": 1,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "score_bytes": 256,
+          "gather_bytes": 8448,
+          "chunks": 1,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        }
+      }
+    },
+    {
+      "rows": 1,
+      "requests": 1,
+      "index_keys": 7,
+      "step": "request_page_reorder",
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 5.960464477539063e-08,
+          "nrmse_vs_native": 6.245020209247913e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0002873539924621582,
+          "score_bytes": 256,
+          "gather_bytes": 0,
+          "chunks": 1,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 5.960464477539063e-08,
+          "nrmse_vs_native": 6.245020209247913e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0002873539924621582,
+          "score_bytes": 256,
+          "gather_bytes": 8448,
+          "chunks": 1,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        }
+      }
+    },
+    {
+      "rows": 1,
+      "requests": 1,
+      "index_keys": 7,
+      "step": "restore",
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 1.1920928955078125e-07,
+          "nrmse_vs_native": 1.1620152729540219e-07,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0002872347831726074,
+          "score_bytes": 256,
+          "gather_bytes": 0,
+          "chunks": 1,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 1.1920928955078125e-07,
+          "nrmse_vs_native": 1.1620152729540219e-07,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0002872347831726074,
+          "score_bytes": 256,
+          "gather_bytes": 8448,
+          "chunks": 1,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        }
+      }
+    },
+    {
+      "rows": 10,
+      "requests": 2,
+      "index_keys": 517,
+      "step": "initial",
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 4.76837158203125e-07,
+          "nrmse_vs_native": 6.490232497895428e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0010666847229003906,
+          "score_bytes": 6912,
+          "gather_bytes": 0,
+          "chunks": 4,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 4.76837158203125e-07,
+          "nrmse_vs_native": 6.490232497895428e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0010666847229003906,
+          "score_bytes": 4608,
+          "gather_bytes": 152064,
+          "chunks": 5,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        }
+      }
+    },
+    {
+      "rows": 10,
+      "requests": 2,
+      "index_keys": 517,
+      "step": "changed_candidates_lengths",
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 4.76837158203125e-07,
+          "nrmse_vs_native": 6.492737948831373e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0006551742553710938,
+          "score_bytes": 6912,
+          "gather_bytes": 0,
+          "chunks": 4,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 4.76837158203125e-07,
+          "nrmse_vs_native": 6.492737948831373e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0006551742553710938,
+          "score_bytes": 4608,
+          "gather_bytes": 152064,
+          "chunks": 5,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        }
+      }
+    },
+    {
+      "rows": 10,
+      "requests": 2,
+      "index_keys": 517,
+      "step": "zero_query",
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "score_bytes": 6912,
+          "gather_bytes": 0,
+          "chunks": 4,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "score_bytes": 4608,
+          "gather_bytes": 152064,
+          "chunks": 5,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        }
+      }
+    },
+    {
+      "rows": 10,
+      "requests": 2,
+      "index_keys": 517,
+      "step": "zero_lengths",
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "score_bytes": 6912,
+          "gather_bytes": 0,
+          "chunks": 4,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "score_bytes": 4608,
+          "gather_bytes": 152064,
+          "chunks": 5,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        }
+      }
+    },
+    {
+      "rows": 10,
+      "requests": 2,
+      "index_keys": 517,
+      "step": "request_page_reorder",
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 4.76837158203125e-07,
+          "nrmse_vs_native": 6.309893571956438e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0006721019744873047,
+          "score_bytes": 6912,
+          "gather_bytes": 0,
+          "chunks": 4,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 4.76837158203125e-07,
+          "nrmse_vs_native": 6.309893571956438e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0006721019744873047,
+          "score_bytes": 4608,
+          "gather_bytes": 152064,
+          "chunks": 5,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        }
+      }
+    },
+    {
+      "rows": 10,
+      "requests": 2,
+      "index_keys": 517,
+      "step": "restore",
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 4.76837158203125e-07,
+          "nrmse_vs_native": 6.490232497895428e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0010666847229003906,
+          "score_bytes": 6912,
+          "gather_bytes": 0,
+          "chunks": 4,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 4.76837158203125e-07,
+          "nrmse_vs_native": 6.490232497895428e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0010666847229003906,
+          "score_bytes": 4608,
+          "gather_bytes": 152064,
+          "chunks": 5,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        }
+      }
+    },
+    {
+      "rows": 33,
+      "requests": 3,
+      "index_keys": 4099,
+      "step": "initial",
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 9.5367431640625e-07,
+          "nrmse_vs_native": 6.56581016873992e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.001027822494506836,
+          "score_bytes": 49920,
+          "gather_bytes": 0,
+          "chunks": 11,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 9.5367431640625e-07,
+          "nrmse_vs_native": 6.56581016873992e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.001027822494506836,
+          "score_bytes": 33280,
+          "gather_bytes": 1098240,
+          "chunks": 17,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        }
+      }
+    },
+    {
+      "rows": 33,
+      "requests": 3,
+      "index_keys": 4099,
+      "step": "changed_candidates_lengths",
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 9.5367431640625e-07,
+          "nrmse_vs_native": 6.538166544560838e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.001027822494506836,
+          "score_bytes": 49920,
+          "gather_bytes": 0,
+          "chunks": 11,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 9.5367431640625e-07,
+          "nrmse_vs_native": 6.538166544560838e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.001027822494506836,
+          "score_bytes": 33280,
+          "gather_bytes": 1098240,
+          "chunks": 17,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        }
+      }
+    },
+    {
+      "rows": 33,
+      "requests": 3,
+      "index_keys": 4099,
+      "step": "zero_query",
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "score_bytes": 49920,
+          "gather_bytes": 0,
+          "chunks": 11,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "score_bytes": 33280,
+          "gather_bytes": 1098240,
+          "chunks": 17,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        }
+      }
+    },
+    {
+      "rows": 33,
+      "requests": 3,
+      "index_keys": 4099,
+      "step": "zero_lengths",
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "score_bytes": 49920,
+          "gather_bytes": 0,
+          "chunks": 11,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "score_bytes": 33280,
+          "gather_bytes": 1098240,
+          "chunks": 17,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        }
+      }
+    },
+    {
+      "rows": 33,
+      "requests": 3,
+      "index_keys": 4099,
+      "step": "request_page_reorder",
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 9.5367431640625e-07,
+          "nrmse_vs_native": 6.570757361181703e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0009628534317016602,
+          "score_bytes": 49920,
+          "gather_bytes": 0,
+          "chunks": 11,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 9.5367431640625e-07,
+          "nrmse_vs_native": 6.570757361181703e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0009628534317016602,
+          "score_bytes": 33280,
+          "gather_bytes": 1098240,
+          "chunks": 17,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        }
+      }
+    },
+    {
+      "rows": 33,
+      "requests": 3,
+      "index_keys": 4099,
+      "step": "restore",
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 9.5367431640625e-07,
+          "nrmse_vs_native": 6.56581016873992e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.001027822494506836,
+          "score_bytes": 49920,
+          "gather_bytes": 0,
+          "chunks": 11,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 9.5367431640625e-07,
+          "nrmse_vs_native": 6.56581016873992e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.001027822494506836,
+          "score_bytes": 33280,
+          "gather_bytes": 1098240,
+          "chunks": 17,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        }
+      }
+    },
+    {
+      "rows": 8,
+      "requests": 2,
+      "index_keys": 20003,
+      "step": "initial",
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 9.5367431640625e-07,
+          "nrmse_vs_native": 6.173695495654026e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0012797117233276367,
+          "score_bytes": 196608,
+          "gather_bytes": 0,
+          "chunks": 3,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 9.5367431640625e-07,
+          "nrmse_vs_native": 6.173695495654026e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0012797117233276367,
+          "score_bytes": 131072,
+          "gather_bytes": 4325376,
+          "chunks": 4,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        }
+      }
+    },
+    {
+      "rows": 8,
+      "requests": 2,
+      "index_keys": 20003,
+      "step": "changed_candidates_lengths",
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 4.76837158203125e-07,
+          "nrmse_vs_native": 6.270449334187521e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0012797117233276367,
+          "score_bytes": 196608,
+          "gather_bytes": 0,
+          "chunks": 3,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 4.76837158203125e-07,
+          "nrmse_vs_native": 6.270449334187521e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0012797117233276367,
+          "score_bytes": 131072,
+          "gather_bytes": 4325376,
+          "chunks": 4,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        }
+      }
+    },
+    {
+      "rows": 8,
+      "requests": 2,
+      "index_keys": 20003,
+      "step": "zero_query",
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "score_bytes": 196608,
+          "gather_bytes": 0,
+          "chunks": 3,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "score_bytes": 131072,
+          "gather_bytes": 4325376,
+          "chunks": 4,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        }
+      }
+    },
+    {
+      "rows": 8,
+      "requests": 2,
+      "index_keys": 20003,
+      "step": "zero_lengths",
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "score_bytes": 196608,
+          "gather_bytes": 0,
+          "chunks": 3,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 0.0,
+          "nrmse_vs_native": 0.0,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0,
+          "score_bytes": 131072,
+          "gather_bytes": 4325376,
+          "chunks": 4,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        }
+      }
+    },
+    {
+      "rows": 8,
+      "requests": 2,
+      "index_keys": 20003,
+      "step": "request_page_reorder",
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 9.5367431640625e-07,
+          "nrmse_vs_native": 6.179749921115412e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0014606714248657227,
+          "score_bytes": 196608,
+          "gather_bytes": 0,
+          "chunks": 3,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 9.5367431640625e-07,
+          "nrmse_vs_native": 6.179749921115412e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0014606714248657227,
+          "score_bytes": 131072,
+          "gather_bytes": 4325376,
+          "chunks": 4,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        }
+      }
+    },
+    {
+      "rows": 8,
+      "requests": 2,
+      "index_keys": 20003,
+      "step": "restore",
+      "checks": {
+        "direct": {
+          "max_abs_vs_native": 9.5367431640625e-07,
+          "nrmse_vs_native": 6.173695495654026e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0012797117233276367,
+          "score_bytes": 196608,
+          "gather_bytes": 0,
+          "chunks": 3,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        },
+        "gathered_wgmma": {
+          "max_abs_vs_native": 9.5367431640625e-07,
+          "nrmse_vs_native": 6.173695495654026e-08,
+          "min_topk_overlap": 1.0,
+          "changed_rows": 0,
+          "fp32_diagnostic_max_abs": 0.0012797117233276367,
+          "score_bytes": 131072,
+          "gather_bytes": 4325376,
+          "chunks": 4,
+          "fixed_logits_selection": "exact",
+          "direct_gather_scores": "bitwise_equal"
+        }
+      }
+    }
+  ]
+}

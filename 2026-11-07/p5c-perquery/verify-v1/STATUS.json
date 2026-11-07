@@ -1,0 +1,9 @@
+{
+  "status": "failed",
+  "reason": "failed: TMA int32 descriptor offset required; compile fixed in v2",
+  "not_final_acceptance": true,
+  "host": "h20-4",
+  "gpu": 1,
+  "source_sha256": "3bc55bf4fb095a56c0f48e161852b8b6da7154e726e6e1ce4ffa0003d368ae71",
+  "command": "CUDA_VISIBLE_DEVICES=1 .venv/bin/python -m benchmarks.kernels.dsv41_indexer.verify_prefill_perquery --output /root/dsv41-indexer-resume-20261107/results/indexer/20261107-resume/p5c-perquery/verify-v1/result.json"
+}

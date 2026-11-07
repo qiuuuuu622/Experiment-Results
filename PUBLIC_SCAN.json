@@ -1,7 +1,7 @@
 {
   "status": "passed",
-  "file_payloads": 8989,
-  "archives_inspected": 55,
+  "file_payloads": 9993,
+  "archives_inspected": 66,
   "patterns": [
     "private_key",
     "github_token",
@@ -198,6 +198,151 @@
       "archive": "2026-11-07/p5-model-shapes/numerical-diagnostic/frozen/source.tar.gz",
       "member": "vllm_dsv41_indexer/NOTICE.md",
       "sha256": "8d33c55261fdfb8ce31a04f402ab99a75869438ed35591ff4c77289c78acc5bc"
+    },
+    {
+      "archive": "2026-11-07/p5-perquery-tp4/final-v1/frozen/source.tar.gz",
+      "member": "vllm_dsv41_indexer/third_party/ant/LICENSE",
+      "sha256": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747"
+    },
+    {
+      "archive": "2026-11-07/p5-perquery-tp4/final-v1/frozen/source.tar.gz",
+      "member": "vllm_dsv41_indexer/NOTICE.md",
+      "sha256": "8d33c55261fdfb8ce31a04f402ab99a75869438ed35591ff4c77289c78acc5bc"
+    },
+    {
+      "archive": "2026-11-07/p5c-perquery/final-v1/frozen/source.tar.gz",
+      "member": "vllm_dsv41_indexer/NOTICE.md",
+      "sha256": "8d33c55261fdfb8ce31a04f402ab99a75869438ed35591ff4c77289c78acc5bc"
+    },
+    {
+      "archive": "2026-11-07/p5c-perquery/final-v1/frozen/source.tar.gz",
+      "member": "vllm_dsv41_indexer/third_party/ant/LICENSE",
+      "sha256": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747"
+    },
+    {
+      "archive": "2026-11-07/p5c-perquery/final-v1/frozen/source.tar.gz",
+      "member": "LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "archive": "2026-11-07/p5c-perquery/paired-v1/frozen/source.tar.gz",
+      "member": "vllm_dsv41_indexer/NOTICE.md",
+      "sha256": "8d33c55261fdfb8ce31a04f402ab99a75869438ed35591ff4c77289c78acc5bc"
+    },
+    {
+      "archive": "2026-11-07/p5c-perquery/paired-v1/frozen/source.tar.gz",
+      "member": "vllm_dsv41_indexer/third_party/ant/LICENSE",
+      "sha256": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747"
+    },
+    {
+      "archive": "2026-11-07/p5c-perquery/paired-v1/frozen/source.tar.gz",
+      "member": "LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "archive": "2026-11-07/p5c-perquery/pilot-v1/frozen/source.tar.gz",
+      "member": "vllm_dsv41_indexer/NOTICE.md",
+      "sha256": "8d33c55261fdfb8ce31a04f402ab99a75869438ed35591ff4c77289c78acc5bc"
+    },
+    {
+      "archive": "2026-11-07/p5c-perquery/pilot-v1/frozen/source.tar.gz",
+      "member": "vllm_dsv41_indexer/third_party/ant/LICENSE",
+      "sha256": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747"
+    },
+    {
+      "archive": "2026-11-07/p5c-perquery/pilot-v1/frozen/source.tar.gz",
+      "member": "LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "archive": "2026-11-07/p5c-perquery/verify-v1/source.tgz",
+      "member": "vllm_dsv41_indexer/NOTICE.md",
+      "sha256": "8d33c55261fdfb8ce31a04f402ab99a75869438ed35591ff4c77289c78acc5bc"
+    },
+    {
+      "archive": "2026-11-07/p5c-perquery/verify-v1/source.tgz",
+      "member": "vllm_dsv41_indexer/third_party/ant/LICENSE",
+      "sha256": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747"
+    },
+    {
+      "archive": "2026-11-07/p5c-perquery/verify-v1/source.tgz",
+      "member": "LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "archive": "2026-11-07/p5c-perquery/verify-v2/source.tgz",
+      "member": "vllm_dsv41_indexer/NOTICE.md",
+      "sha256": "8d33c55261fdfb8ce31a04f402ab99a75869438ed35591ff4c77289c78acc5bc"
+    },
+    {
+      "archive": "2026-11-07/p5c-perquery/verify-v2/source.tgz",
+      "member": "vllm_dsv41_indexer/third_party/ant/LICENSE",
+      "sha256": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747"
+    },
+    {
+      "archive": "2026-11-07/p5c-perquery/verify-v2/source.tgz",
+      "member": "LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "archive": "2026-11-07/p5c-perquery/verify-v3/source.tgz",
+      "member": "vllm_dsv41_indexer/NOTICE.md",
+      "sha256": "8d33c55261fdfb8ce31a04f402ab99a75869438ed35591ff4c77289c78acc5bc"
+    },
+    {
+      "archive": "2026-11-07/p5c-perquery/verify-v3/source.tgz",
+      "member": "vllm_dsv41_indexer/third_party/ant/LICENSE",
+      "sha256": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747"
+    },
+    {
+      "archive": "2026-11-07/p5c-perquery/verify-v3/source.tgz",
+      "member": "LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "archive": "2026-11-07/p5c-perquery/verify-v4/source.tgz",
+      "member": "vllm_dsv41_indexer/NOTICE.md",
+      "sha256": "8d33c55261fdfb8ce31a04f402ab99a75869438ed35591ff4c77289c78acc5bc"
+    },
+    {
+      "archive": "2026-11-07/p5c-perquery/verify-v4/source.tgz",
+      "member": "vllm_dsv41_indexer/third_party/ant/LICENSE",
+      "sha256": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747"
+    },
+    {
+      "archive": "2026-11-07/p5c-perquery/verify-v4/source.tgz",
+      "member": "LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "archive": "2026-11-07/p5c-perquery/verify-v5/source.tgz",
+      "member": "vllm_dsv41_indexer/NOTICE.md",
+      "sha256": "8d33c55261fdfb8ce31a04f402ab99a75869438ed35591ff4c77289c78acc5bc"
+    },
+    {
+      "archive": "2026-11-07/p5c-perquery/verify-v5/source.tgz",
+      "member": "vllm_dsv41_indexer/third_party/ant/LICENSE",
+      "sha256": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747"
+    },
+    {
+      "archive": "2026-11-07/p5c-perquery/verify-v5/source.tgz",
+      "member": "LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "archive": "2026-11-07/p5c-perquery/verify-v6/frozen/source.tar.gz",
+      "member": "vllm_dsv41_indexer/NOTICE.md",
+      "sha256": "8d33c55261fdfb8ce31a04f402ab99a75869438ed35591ff4c77289c78acc5bc"
+    },
+    {
+      "archive": "2026-11-07/p5c-perquery/verify-v6/frozen/source.tar.gz",
+      "member": "vllm_dsv41_indexer/third_party/ant/LICENSE",
+      "sha256": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747"
+    },
+    {
+      "archive": "2026-11-07/p5c-perquery/verify-v6/frozen/source.tar.gz",
+      "member": "LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
     },
     {
       "archive": "2026-11-07/p7-tp4-row-sharding/source-compact-v1.tar.gz",

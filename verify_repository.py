@@ -15,3 +15,14 @@ for item in manifest["files"]:
     assert path.stat().st_size == item["bytes"], path
     assert hashlib.sha256(path.read_bytes()).hexdigest() == item["sha256"], path
 print(f"Verified {len(expected)} published files")
+
+# Internal stage digests retain private-run provenance; check the explicit
+# public artifact mapping after privacy-preserving export instead.
+dependencies = root / "PUBLIC_DEPENDENCIES.json"
+if dependencies.exists():
+    entries = json.loads(dependencies.read_text())["files"]
+    for item in entries:
+        artifact = root / item["public_path"]
+        assert artifact.is_file(), artifact
+        assert hashlib.sha256(artifact.read_bytes()).hexdigest() == item["public_sha256"], artifact
+    print(f"Verified {len(entries)} public evidence mappings")

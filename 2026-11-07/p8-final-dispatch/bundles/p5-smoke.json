@@ -1,0 +1,32 @@
+{
+  "stage": "final",
+  "family": "prefill",
+  "forward": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8-prefill-final-v1/smoke-forward.json",
+  "reverse": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8-prefill-final-v1/smoke-reverse.json",
+  "source_manifest": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8-prefill-final-v1/source-identity.json",
+  "correctness": [
+    "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8-prefill-final-v1/verify.json"
+  ],
+  "native_identity": {
+    "path": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bundles/p5-smoke-native-artifact.data.json",
+    "sha256": "fd7b4b53f408baeb7263a71dfd54e3ea9d0095bff6a5dbb43f4ee1227f5c674c"
+  },
+  "reviewed_driver_differences": {
+    "benchmarks/kernels/dsv41_indexer/benchmark_full.py": {
+      "frozen": "cd5cf4afd5ea04017e165b839d231832ed2fbbd31a1cf04c919dbf9c5428fc8c",
+      "current": "db8b6fbc594f64619cd48baa9769ce7378cc878df6242578870e7626d905071d",
+      "reason": "Reviewed unified diff: only adds the separate hybrid_source_full_consumers callable, fixed-score check and variant registration. Existing timed callables unchanged. Composition-v2 directly measures the new callable."
+    },
+    "benchmarks/kernels/dsv41_indexer/benchmark_grouped.py": {
+      "frozen": "8b50e9c8e62d99721cbe5199d7f9962d083bbb352b9986332cc18667e5b0749c",
+      "current": "99b97de1ff34e47a94d4fcd517b8d5152a95ebc075168e329efcf92a9ffd91ff",
+      "reason": "Reviewed diff: records physical GPU from CUDA_VISIBLE_DEVICES instead of hardcoded GPU3; timed callables and CTA tuning unchanged."
+    },
+    "benchmarks/kernels/dsv41_indexer/benchmark_prefill.py": {
+      "frozen": "15d2dcfa16bd57cecf729627533b8f2b97a7e96cd37ee57c68d56069fe07d487",
+      "current": "e77329e87052756c4036797ea1fc7274eb0f6aceb16945daf7b348cb41fd294c",
+      "reason": "Reviewed diff: final frozen driver removes losing Gluon allocations/calls and records actual GPU; retained backend callables unchanged. Peak/interference corresponds to this explicitly frozen variant set."
+    }
+  },
+  "performance_native_package": "installed"
+}

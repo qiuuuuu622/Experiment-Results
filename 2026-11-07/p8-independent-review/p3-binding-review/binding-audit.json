@@ -1,0 +1,91 @@
+{
+  "status": "passed",
+  "scope": "single-representative-strategy-bindings",
+  "checks": 28,
+  "environments": [
+    {
+      "file": "verify-7414f0932e1e.json",
+      "sha256": "bca4a060dbdfa02c32276af272791dcb4e95d56de9a16f4d30a6d0a083f96d86",
+      "environment_digest": "7414f0932e1ef941ba51f06f07eb96ef8037b81497f3a5ceb13f339a6350a578",
+      "status": "passed",
+      "checks": 3,
+      "actual_native_package": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm",
+      "verified_native_files": 4040,
+      "planner_strategy_matches": true
+    },
+    {
+      "file": "verify-8528280c7188.json",
+      "sha256": "43ae6d4c1b266cd0e11aa97b27519933764be0117200e1b4cecceceea4c88f69",
+      "environment_digest": "8528280c7188f033097340d7931fe440c0d58fbf0cd8e2ff228d25876290776a",
+      "status": "passed",
+      "checks": 1,
+      "actual_native_package": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm",
+      "verified_native_files": 4040,
+      "planner_strategy_matches": true
+    },
+    {
+      "file": "verify-89cf09983578.json",
+      "sha256": "01afe61c09fe54253794f3e1d7c44453bbd66bf1f0336bc060dfeb907002b169",
+      "environment_digest": "89cf099835780f3929ce13130121ccca7c23bbb1cda35458b2c372eeaaa1c0c6",
+      "status": "passed",
+      "checks": 8,
+      "actual_native_package": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm",
+      "verified_native_files": 4040,
+      "planner_strategy_matches": true
+    },
+    {
+      "file": "verify-9653c78abe44.json",
+      "sha256": "c6a0cade171b33c1bbe60fe1d7973a3f826708cb5d30862cbce57a3519f6be01",
+      "environment_digest": "9653c78abe440326fb86f873ffbb24c7e64b07924ecd42ac79fd43529b742e41",
+      "status": "passed",
+      "checks": 3,
+      "actual_native_package": "/root/dsv41-indexer-resume-20261107/runs/deep-gemm-p3-zero-prefetch-v1",
+      "verified_native_files": 879,
+      "planner_strategy_matches": true
+    },
+    {
+      "file": "verify-aee8d03e85ce.json",
+      "sha256": "a550c88c7c26e97daacaf9f96c4b3d5753eb2dcab3584e1b66e1cf9985fdef33",
+      "environment_digest": "aee8d03e85ce978b43a088b62718f6060fffe2b18db87134074f07c36f9e9d9b",
+      "status": "passed",
+      "checks": 4,
+      "actual_native_package": "/root/dsv41-indexer-resume-20261107/runs/deep-gemm-p3-zero-prefetch-v1",
+      "verified_native_files": 879,
+      "planner_strategy_matches": true
+    },
+    {
+      "file": "verify-c2388e732a95.json",
+      "sha256": "9a37cd35493bfe80b41720efa82e6f1a2f07a3e177304e76cd63a9850c391a06",
+      "environment_digest": "c2388e732a9519fa24e48abd4116bbfd73ba3d5cd8687204e7520b4c8b7f9867",
+      "status": "passed",
+      "checks": 3,
+      "actual_native_package": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm",
+      "verified_native_files": 4040,
+      "planner_strategy_matches": true
+    },
+    {
+      "file": "verify-f0d078d72c43.json",
+      "sha256": "6d845212d9016e0e9731a9af4b3d2ff09b04d952d664ad09789480e92edeb556",
+      "environment_digest": "f0d078d72c43717f86c735eb54fcb066bc887b56fc8a57a9b485fc8fd1f8c7c1",
+      "status": "passed",
+      "checks": 4,
+      "actual_native_package": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm",
+      "verified_native_files": 4040,
+      "planner_strategy_matches": true
+    },
+    {
+      "file": "verify-f1fc1c214e8c.json",
+      "sha256": "a879dc0902c36d85a38bf50a21720dd37c667323476ae7646148db5fb7ae845c",
+      "environment_digest": "f1fc1c214e8cb1f566b31d3137234e464d246ba5111c3aeb89a15f9999e796ff",
+      "status": "passed",
+      "checks": 2,
+      "actual_native_package": "/root/dsv41-indexer-resume-20261107/runs/deep-gemm-p3-zero-prefetch-v1",
+      "verified_native_files": 879,
+      "planner_strategy_matches": true
+    }
+  ],
+  "dispatch_cpu_tests": "17 passed",
+  "external_deep_gemm_spec_h20_dsk": null,
+  "external_deep_gemm_spec_h20_4": null,
+  "source_archive_sha256": "e6739f606f19c6f33c2e3af73f3624e30169bbe6b949e71a9e117738b7b09ef2"
+}

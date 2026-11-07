@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "kind": "post_run_importer_identity_audit",
+  "files": [
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/__init__.py",
+      "sha256": "5db6556d22b8d683deff5d8ea871e52a3faad22514e074667c6b4451b1b679db"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/_C.py",
+      "sha256": "9d9115aeba89db2ba53e974d025ef584f9b26dfe5ad9338035cda6a1469dcbf7"
+    },
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/_C_extension.abi3.so",
+      "sha256": "0042598bc0770e70bc4ea4b9c3d27d8efc8e395d6f766d41e939c746c2bd3046"
+    }
+  ],
+  "actually_loaded_binaries": [
+    "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/_C_extension.abi3.so"
+  ]
+}

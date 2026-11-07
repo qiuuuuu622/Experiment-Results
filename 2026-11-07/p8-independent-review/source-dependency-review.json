@@ -1,0 +1,72 @@
+{
+  "runtime_source": {
+    "digest": "7ae5397042d6703e8d1f817595e717fd0e27822041ae9b1397d64de262d215e6",
+    "files": {
+      "vllm_dsv41_indexer/__init__.py": "a88ad038e844912d9fac664aceccbe4d2423258a3698b6ea62f942b383d7c9a4",
+      "vllm_dsv41_indexer/contract.py": "35b073f106fd5770d1d05a2d7e2be7026c1ad23faf88ba20257259bc41a8858e",
+      "vllm_dsv41_indexer/csrc/candidate_publish.cuh": "4c7928614af36aa75f5bbb2abf70556144d7ed176ea9285f2ab2a8f9fa68fdef",
+      "vllm_dsv41_indexer/full_score.py": "848781706a598e7102e8fd069e4b22644474e5b4659031b59e4095c0e783c63a",
+      "vllm_dsv41_indexer/grouped.py": "eccb9ee137fbf19d410b22c4c202ef8d2f3d079479ebf2248fd6d45e179b094b",
+      "vllm_dsv41_indexer/grouped_score.py": "5d0b1fd5496f6a2946d685e028ea06e813a9688b648ab1304f26922e5b36e94c",
+      "vllm_dsv41_indexer/module.py": "f9fdf95aacf3ccc3fd40b30148792552523874ecd75eb1cc03ba348863067dc9",
+      "vllm_dsv41_indexer/native.py": "ac8ec647cf2f35ea0a7d8ff5b9bf9aff2b857b95d1bf84ad8e94dd2b5383d40a",
+      "vllm_dsv41_indexer/parallel.py": "78a3794c89b0188f519cdd1a0fb41f8efb544dff3dce7bb6605a4def94b1f82f",
+      "vllm_dsv41_indexer/patches/deepgemm-sm90-empty-query-prefetch.patch": "ac616f67feb4682cb4d4d645fca5765ed406ce4ba091fce4921088becc0397fa",
+      "vllm_dsv41_indexer/prefill.py": "78e49d3eeebc593b7604a6375d00f10b9bcbf21236510e1819d7c7fddb391ade",
+      "vllm_dsv41_indexer/prepare.py": "8234723ab24dab5c37fe4898ef925032e8fef1a3e2a3403d1d7abe0076d27fd2",
+      "vllm_dsv41_indexer/reference.py": "6984d36ec42272ca5ded2f8b1ac77a2dcf43ed5e56f93ce23975a098d4e75bd8",
+      "vllm_dsv41_indexer/score.py": "669a839062a0d9de642fa3709bb93f5cd056612b2f30455d7de8ce94f29a237b",
+      "vllm_dsv41_indexer/third_party/ant/csrc/deepseek_v4/topk_v2.cuh": "36578d30b309cfe67df436bc7a4d5d56ba29d574ad8fedd575598afca7e5e2bb",
+      "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/bits.h": "5bab56d2578d151d3224994eeeae0abb939c26a1ac1e84205a1c942dab9cd605",
+      "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/deepseek_v4/topk_impl.cuh": "14e8a8973a4161e8adb5e12f1726b8f72bc89e94ad9d7cf0d51029aeca8dda57",
+      "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/math.cuh": "73e182466976d821f8ad89017fd2492c50ea456d5e7007d4e869cb6730568477",
+      "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/runtime.cuh": "1f989a2dee7a32ab519eeb49adf407c5e4054195faa77aa92ce4211343973213",
+      "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/source_location.h": "300026cbeeabe03b10b0c46b70e2e85b19a743cbe9ff462faa1dff4268cf806e",
+      "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/tensor.h": "c66eba28e0f7661711947309c12014d2e880025c7d91ff8a7ac544d4ece60ce2",
+      "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/tile.cuh": "692446727a0353f1eb0d7249f6564d2c79ee6c9066e2c61e2ab450014fb217b7",
+      "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/type.cuh": "4c72b0892e8d003490bdab2633056172a674bc6a9689be552861564c7aaf8edc",
+      "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/utils.cuh": "18b0bb2e27dccc20d7509e8b6b6c16e2b57a5ce98be648865fb75059be8a13db",
+      "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/utils.h": "fe54010a29dd4d65110bf4afe60ff91b0f37f3b9704bb5bae4f1086347d7e32d",
+      "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/vec.cuh": "11224cc483b7fbc93e2bcb1c2092715d80f1fa645920f4c82ee0e1d45a4eb551",
+      "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/warp.cuh": "264e64c3f386a70de938ed831f05f7a5f3c4b3ed9cfea58e1fbad433a8f860db",
+      "vllm_dsv41_indexer/third_party/ant/sources.json": "55bf3d8fe6bef42bd05dfb47452365c9e6df08cdac47a0b132110dab617859f8",
+      "vllm_dsv41_indexer/topk.py": "90ceea7412f123245db61e3856d6db10844a12b333c371e7c7ce92aa639a3961",
+      "vllm_dsv41_indexer/workspace.py": "5c5a86c2e71d3d95e4f996780a81f1045cb31fa594170d7301aa9c3fd792fbb0"
+    }
+  },
+  "findings": [
+    {
+      "phase": "grouped",
+      "runtime_dependency_mismatches": [],
+      "all_current_differences": [
+        "benchmarks/kernels/dsv41_indexer/benchmark_full.py",
+        "benchmarks/kernels/dsv41_indexer/benchmark_grouped.py",
+        "benchmarks/kernels/dsv41_indexer/benchmark_prefill.py",
+        "benchmarks/kernels/dsv41_indexer/benchmark_tp4.py",
+        "benchmarks/kernels/dsv41_indexer/tp4_cases.py",
+        "tests/kernels/dsv41_indexer/.pytest_cache/v/cache/nodeids",
+        "tests/kernels/dsv41_indexer/test_dispatch.py",
+        "vllm_dsv41_indexer/dispatch.py",
+        "vllm_dsv41_indexer/row_shard.py"
+      ],
+      "source_archive": "4b373028dd3b469e42f425224c6570e03bd4d39fe98c6f04f5f1605aaa554061"
+    },
+    {
+      "phase": "prefill",
+      "runtime_dependency_mismatches": [],
+      "all_current_differences": [
+        "benchmarks/kernels/dsv41_indexer/benchmark_full.py",
+        "benchmarks/kernels/dsv41_indexer/benchmark_grouped.py",
+        "benchmarks/kernels/dsv41_indexer/benchmark_prefill.py",
+        "benchmarks/kernels/dsv41_indexer/benchmark_tp4.py",
+        "benchmarks/kernels/dsv41_indexer/tp4_cases.py",
+        "tests/kernels/dsv41_indexer/.pytest_cache/v/cache/nodeids",
+        "tests/kernels/dsv41_indexer/test_dispatch.py",
+        "vllm_dsv41_indexer/dispatch.py",
+        "vllm_dsv41_indexer/row_shard.py"
+      ],
+      "source_archive": "faf047d61f0c6603bbd4f6d7d4b7253c3a5eada0787290b5e7e58a78fca40dd4"
+    }
+  ],
+  "scope": "Compare actual recorded per-file hashes; original snapshot hashes remain unchanged"
+}

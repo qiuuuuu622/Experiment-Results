@@ -1,0 +1,22 @@
+{
+  "stage": "final",
+  "family": "topk",
+  "forward": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/final-p2-p6/results/p6/forward.json",
+  "reverse": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/final-p2-p6/results/p6/reverse.json",
+  "source_manifest": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/final-p2-p6/results/frozen/source.json",
+  "correctness": [
+    "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/final-p2-p6/results/p6/verify.json"
+  ],
+  "native_identity": {
+    "path": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bundles/p6-native-artifact.data.json",
+    "sha256": "51ecc0d549202e3757abe67856c2ada74ffe5d754f6ccde642ed362e26d570f1"
+  },
+  "reviewed_driver_differences": {
+    "benchmarks/kernels/dsv41_indexer/benchmark_full.py": {
+      "frozen": "cd5cf4afd5ea04017e165b839d231832ed2fbbd31a1cf04c919dbf9c5428fc8c",
+      "current": "db8b6fbc594f64619cd48baa9769ce7378cc878df6242578870e7626d905071d",
+      "reason": "Reviewed unified diff: only adds the separate hybrid_source_full_consumers callable, fixed-score check and variant registration. Existing timed callables unchanged. Composition-v2 directly measures the new callable."
+    }
+  },
+  "performance_native_package": "installed"
+}

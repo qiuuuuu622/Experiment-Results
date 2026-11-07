@@ -1,0 +1,13 @@
+{
+  "verify_status": "passed",
+  "physical_world": 4,
+  "checks_per_rank": 320,
+  "all_rank_output_equal": true,
+  "all_rank_page_tables_distinct": true,
+  "reviewed_verifier_hash": "f6b50a80a2a6f318b28db327c2a4f0124ccb9d367b47502383bac761e9293b8e",
+  "recorded_verifier_hash": "f6b50a80a2a6f318b28db327c2a4f0124ccb9d367b47502383bac761e9293b8e",
+  "benchmark_status": "complete",
+  "benchmark_records": 144,
+  "benchmark_backend": "native_stable",
+  "runtime_hashes_match": true
+}

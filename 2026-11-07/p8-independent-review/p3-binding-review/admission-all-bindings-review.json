@@ -1,0 +1,98 @@
+{
+  "status": "passed",
+  "scope": "CPU artifact integrity only; actual kernel binding/native runtime identity still require explicit verification report",
+  "manifest_sha256": "984a315aa4b50f1d8fa582515b487ae97b35c1bea5a57bb95bf66d3a2e99385f",
+  "admitted_records": 400,
+  "candidates": {
+    "one_sort_ant_topk_fused_map": 34,
+    "one_sort_ant_topk_separate_map": 25,
+    "streaming": 47,
+    "cluster_preplanned": 53,
+    "cluster_replan_each_call": 53,
+    "grouped_gluon_source": 12,
+    "shared_consumer_publish_included": 12,
+    "grouped_gluon_full": 2,
+    "row_tiled_pipeline": 29,
+    "keys_major_pipeline": 29,
+    "indirect_pipeline": 27,
+    "deepgemm_pipeline": 15,
+    "native_score_ant_token_and_source_topk": 11,
+    "grouped_source_fused_max": 6,
+    "grouped_source_separate_max": 6,
+    "optimized_source_four_consumers": 9,
+    "hybrid_source_four_consumers": 13,
+    "hybrid_source_full_consumers": 4,
+    "tp4:shard_request_groups_replicated_input": 11,
+    "tp4:shard_request_groups_root_input": 2
+  },
+  "checked_unique_artifacts": 41,
+  "verification": [
+    {
+      "path": "results/indexer/20261107-resume/p8-cpu-review/p3-binding-review/verify-7414f0932e1e.json",
+      "status": "passed",
+      "checks": 3,
+      "skipped": []
+    },
+    {
+      "path": "results/indexer/20261107-resume/p8-cpu-review/p3-binding-review/verify-8528280c7188.json",
+      "status": "passed",
+      "checks": 1,
+      "skipped": []
+    },
+    {
+      "path": "results/indexer/20261107-resume/p8-cpu-review/p3-binding-review/verify-89cf09983578.json",
+      "status": "passed",
+      "checks": 8,
+      "skipped": []
+    },
+    {
+      "path": "results/indexer/20261107-resume/p8-cpu-review/p3-binding-review/verify-9653c78abe44.json",
+      "status": "passed",
+      "checks": 3,
+      "skipped": []
+    },
+    {
+      "path": "results/indexer/20261107-resume/p8-cpu-review/p3-binding-review/verify-aee8d03e85ce.json",
+      "status": "passed",
+      "checks": 4,
+      "skipped": []
+    },
+    {
+      "path": "results/indexer/20261107-resume/p8-cpu-review/p3-binding-review/verify-c2388e732a95.json",
+      "status": "passed",
+      "checks": 3,
+      "skipped": []
+    },
+    {
+      "path": "results/indexer/20261107-resume/p8-cpu-review/p3-binding-review/verify-f0d078d72c43.json",
+      "status": "passed",
+      "checks": 4,
+      "skipped": []
+    },
+    {
+      "path": "results/indexer/20261107-resume/p8-cpu-review/p3-binding-review/verify-f1fc1c214e8c.json",
+      "status": "passed",
+      "checks": 2,
+      "skipped": []
+    },
+    {
+      "path": "results/indexer/20261107-resume/p8-cpu-review/p3-binding-review/tp4/verify-660bbec902c4.json",
+      "status": "passed",
+      "checks": 1,
+      "skipped": []
+    },
+    {
+      "path": "results/indexer/20261107-resume/p8-cpu-review/p3-binding-review/tp4/verify-79adeb1d054c.json",
+      "status": "passed",
+      "checks": 2,
+      "skipped": []
+    },
+    {
+      "path": "results/indexer/20261107-resume/p8-cpu-review/p3-binding-review/tp4/verify-e57a8a58f8fa.json",
+      "status": "passed",
+      "checks": 4,
+      "skipped": []
+    }
+  ],
+  "issues": []
+}

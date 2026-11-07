@@ -1,0 +1,10 @@
+{
+  "native-full-chain.json": {
+    "final_dispatch_eligible": false,
+    "reason": "Historical static metadata experiment. Native full selector is nondeterministic across cooperative/persistent tie cases. Replaced by native_stable per-step prepare plus Ant stable selector."
+  },
+  "verify-tp4.json": {
+    "runner_success": false,
+    "reason": "Kernel checks completed, but communicator destruction waited on live graphs. Own launcher terminated. Replaced by explicit graph.reset and later successful verifiers."
+  }
+}

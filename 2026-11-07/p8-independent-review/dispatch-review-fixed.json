@@ -1,0 +1,8 @@
+{
+  "scope": "synthetic CPU independent review; not GPU evidence",
+  "source_sha256": "ce2a011d9608301dfc6995df6b0fe38338cda7b71a43882ffecc9836a3df620b",
+  "extra_round_selection": "passed",
+  "raw_cv_validation": "passed",
+  "cv_rejection": "CV is inconsistent with raw samples",
+  "concurrent_full_cpu_suite": "16 passed, 1 TP4 regression failed; handed to owner"
+}

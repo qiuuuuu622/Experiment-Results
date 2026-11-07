@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "scope": "tp4-representative-strategy-bindings",
+  "checks": 7,
+  "environments": [
+    {
+      "file": "verify-660bbec902c4.json",
+      "sha256": "5bf927867bf3ccc539fab48f66c73fa637124e5348288156a7cbdafb9dd8e191",
+      "environment_digest": "660bbec902c46f39c7ce7bc43ea0f198a60affee2987383af24d77851cd3d5cf",
+      "status": "passed",
+      "checks": 1,
+      "actual_native_package": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm",
+      "verified_native_files": 4040,
+      "planner_strategy_matches": true
+    },
+    {
+      "file": "verify-79adeb1d054c.json",
+      "sha256": "989932dc118fd3fc9433b32b9ac66e1623e8cdb4745fec98ae41d01ec784985b",
+      "environment_digest": "79adeb1d054c8c5b118d5588471097107c13d72075cce7da56eff679c231ec7a",
+      "status": "passed",
+      "checks": 2,
+      "actual_native_package": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm",
+      "verified_native_files": 4040,
+      "planner_strategy_matches": true
+    },
+    {
+      "file": "verify-e57a8a58f8fa.json",
+      "sha256": "321aab579ffd62db6c28a013aa7b8533f933d23a4692e3114e19e91b99a992ec",
+      "environment_digest": "e57a8a58f8fa674625cfb91c924e69f90e9e5a3752dda98ffb58fcc8069aeff2",
+      "status": "passed",
+      "checks": 4,
+      "actual_native_package": "/root/dsv41-indexer-resume-20261107/runs/deep-gemm-p3-zero-prefetch-v1",
+      "verified_native_files": 566,
+      "planner_strategy_matches": true
+    }
+  ]
+}

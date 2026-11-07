@@ -1,0 +1,49 @@
+{
+  "scope": "synthetic CPU API review; NOT GPU performance evidence",
+  "source_sha256": "cdfeb23e7636e8b2936b351d6cc54a64e95d9ae0c6fb7996c17c9eb18f5e9215",
+  "extra_round_selection": {
+    "observed": "grouped_gluon_full",
+    "expected_conservative_fastest": "optimized_full",
+    "a_initial_us": 75,
+    "a_repeat_us": 90,
+    "b_all_us": 80,
+    "rejections": []
+  },
+  "raw_cv_validation": {
+    "observed_accepted_speedup": 2.0,
+    "raw_samples": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      99,
+      99,
+      99,
+      99,
+      99,
+      99,
+      99,
+      99,
+      99,
+      99,
+      99,
+      99,
+      99,
+      99,
+      99
+    ],
+    "reported_cv": 0.0,
+    "expected": "reject inconsistent CV or recompute and reject noisy gain"
+  }
+}

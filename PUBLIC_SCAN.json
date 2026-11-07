@@ -1,14 +1,194 @@
 {
   "status": "passed",
-  "file_payloads": 5289,
-  "archives_inspected": 21,
+  "file_payloads": 7812,
+  "archives_inspected": 33,
   "patterns": [
     "private_key",
     "github_token",
     "bearer",
     "secret_assignment",
-    "personal_user_path"
+    "personal_user_path",
+    "private_scheduler_hostname",
+    "gpu_uuid_inventory"
   ],
   "findings": [],
-  "limitations": "Pattern scan and explicit inventory minimization; no universal secret-detection guarantee."
+  "over_100MiB": [],
+  "source_license_members": [
+    {
+      "archive": "2026-11-06/h20-fp8-indexer-checkpoint/p2-source.tgz",
+      "member": "vllm_dsv41_indexer/third_party/ant/LICENSE",
+      "sha256": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747"
+    },
+    {
+      "archive": "2026-11-06/h20-fp8-indexer-checkpoint/p2-source.tgz",
+      "member": "vllm_dsv41_indexer/NOTICE.md",
+      "sha256": "8d33c55261fdfb8ce31a04f402ab99a75869438ed35591ff4c77289c78acc5bc"
+    },
+    {
+      "archive": "2026-11-06/h20-fp8-indexer-checkpoint/p3/verify-v1/source.tgz",
+      "member": "vllm_dsv41_indexer/NOTICE.md",
+      "sha256": "8d33c55261fdfb8ce31a04f402ab99a75869438ed35591ff4c77289c78acc5bc"
+    },
+    {
+      "archive": "2026-11-06/h20-fp8-indexer-checkpoint/p3/verify-v1/source.tgz",
+      "member": "vllm_dsv41_indexer/third_party/ant/LICENSE",
+      "sha256": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747"
+    },
+    {
+      "archive": "2026-11-06/h20-fp8-indexer-checkpoint/p6/source-snapshot.tgz",
+      "member": "vllm_dsv41_indexer/third_party/ant/LICENSE",
+      "sha256": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747"
+    },
+    {
+      "archive": "2026-11-07/p3-full-source/composition-v1/source.tgz",
+      "member": "vllm_dsv41_indexer/NOTICE.md",
+      "sha256": "8d33c55261fdfb8ce31a04f402ab99a75869438ed35591ff4c77289c78acc5bc"
+    },
+    {
+      "archive": "2026-11-07/p3-full-source/composition-v1/source.tgz",
+      "member": "vllm_dsv41_indexer/third_party/ant/LICENSE",
+      "sha256": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747"
+    },
+    {
+      "archive": "2026-11-07/p3-full-source/composition-v2/source.tgz",
+      "member": "vllm_dsv41_indexer/NOTICE.md",
+      "sha256": "8d33c55261fdfb8ce31a04f402ab99a75869438ed35591ff4c77289c78acc5bc"
+    },
+    {
+      "archive": "2026-11-07/p3-full-source/composition-v2/source.tgz",
+      "member": "vllm_dsv41_indexer/third_party/ant/LICENSE",
+      "sha256": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747"
+    },
+    {
+      "archive": "2026-11-07/p3-full-source/full-final-v1/source.tgz",
+      "member": "vllm_dsv41_indexer/NOTICE.md",
+      "sha256": "8d33c55261fdfb8ce31a04f402ab99a75869438ed35591ff4c77289c78acc5bc"
+    },
+    {
+      "archive": "2026-11-07/p3-full-source/full-final-v1/source.tgz",
+      "member": "vllm_dsv41_indexer/third_party/ant/LICENSE",
+      "sha256": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747"
+    },
+    {
+      "archive": "2026-11-07/p3-full-source/verify-v1/source.tgz",
+      "member": "vllm_dsv41_indexer/NOTICE.md",
+      "sha256": "8d33c55261fdfb8ce31a04f402ab99a75869438ed35591ff4c77289c78acc5bc"
+    },
+    {
+      "archive": "2026-11-07/p3-full-source/verify-v1/source.tgz",
+      "member": "vllm_dsv41_indexer/third_party/ant/LICENSE",
+      "sha256": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747"
+    },
+    {
+      "archive": "2026-11-07/p3-full-source/zero-prefetch-v1/source.tgz",
+      "member": "vllm_dsv41_indexer/NOTICE.md",
+      "sha256": "8d33c55261fdfb8ce31a04f402ab99a75869438ed35591ff4c77289c78acc5bc"
+    },
+    {
+      "archive": "2026-11-07/p3-full-source/zero-prefetch-v1/source.tgz",
+      "member": "vllm_dsv41_indexer/third_party/ant/LICENSE",
+      "sha256": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747"
+    },
+    {
+      "archive": "2026-11-07/p7-tp4-row-sharding/source-compact-v1.tar.gz",
+      "member": "vllm_dsv41_indexer/third_party/ant/LICENSE",
+      "sha256": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747"
+    },
+    {
+      "archive": "2026-11-07/p7-tp4-row-sharding/source-compact-v1.tar.gz",
+      "member": "vllm_dsv41_indexer/NOTICE.md",
+      "sha256": "8d33c55261fdfb8ce31a04f402ab99a75869438ed35591ff4c77289c78acc5bc"
+    },
+    {
+      "archive": "2026-11-07/p7-tp4-row-sharding/source-final-v2.tar.gz",
+      "member": "vllm_dsv41_indexer/third_party/ant/LICENSE",
+      "sha256": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747"
+    },
+    {
+      "archive": "2026-11-07/p7-tp4-row-sharding/source-final-v2.tar.gz",
+      "member": "vllm_dsv41_indexer/NOTICE.md",
+      "sha256": "8d33c55261fdfb8ce31a04f402ab99a75869438ed35591ff4c77289c78acc5bc"
+    },
+    {
+      "archive": "2026-11-07/p7-tp4-row-sharding/source-native-stable-final-v3.tar.gz",
+      "member": "vllm_dsv41_indexer/third_party/ant/LICENSE",
+      "sha256": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747"
+    },
+    {
+      "archive": "2026-11-07/p7-tp4-row-sharding/source-native-stable-final-v3.tar.gz",
+      "member": "vllm_dsv41_indexer/NOTICE.md",
+      "sha256": "8d33c55261fdfb8ce31a04f402ab99a75869438ed35591ff4c77289c78acc5bc"
+    },
+    {
+      "archive": "2026-11-07/p8-final-dispatch/bind-single-final/source-runtime.tgz",
+      "member": "vllm_dsv41_indexer/NOTICE.md",
+      "sha256": "8d33c55261fdfb8ce31a04f402ab99a75869438ed35591ff4c77289c78acc5bc"
+    },
+    {
+      "archive": "2026-11-07/p8-final-dispatch/bind-single-final/source-runtime.tgz",
+      "member": "vllm_dsv41_indexer/third_party/ant/LICENSE",
+      "sha256": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747"
+    },
+    {
+      "archive": "2026-11-07/p8-final-dispatch/bind-tp4-final/source-runtime.tgz",
+      "member": "vllm_dsv41_indexer/NOTICE.md",
+      "sha256": "8d33c55261fdfb8ce31a04f402ab99a75869438ed35591ff4c77289c78acc5bc"
+    },
+    {
+      "archive": "2026-11-07/p8-final-dispatch/bind-tp4-final/source-runtime.tgz",
+      "member": "vllm_dsv41_indexer/third_party/ant/LICENSE",
+      "sha256": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747"
+    },
+    {
+      "archive": "2026-11-07/p8-final-dispatch/final-p2-p6/p8-results.tgz!results/frozen/source.tgz",
+      "member": "vllm_dsv41_indexer/NOTICE.md",
+      "sha256": "8d33c55261fdfb8ce31a04f402ab99a75869438ed35591ff4c77289c78acc5bc"
+    },
+    {
+      "archive": "2026-11-07/p8-final-dispatch/final-p2-p6/p8-results.tgz!results/frozen/source.tgz",
+      "member": "vllm_dsv41_indexer/third_party/ant/LICENSE",
+      "sha256": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747"
+    },
+    {
+      "archive": "2026-11-07/p8-final-dispatch/final-p2-p6/results/frozen/source.tgz",
+      "member": "vllm_dsv41_indexer/NOTICE.md",
+      "sha256": "8d33c55261fdfb8ce31a04f402ab99a75869438ed35591ff4c77289c78acc5bc"
+    },
+    {
+      "archive": "2026-11-07/p8-final-dispatch/final-p2-p6/results/frozen/source.tgz",
+      "member": "vllm_dsv41_indexer/third_party/ant/LICENSE",
+      "sha256": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747"
+    },
+    {
+      "archive": "2026-11-07/p8-grouped-final-v1/source.tgz",
+      "member": "LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "archive": "2026-11-07/p8-grouped-final-v1/source.tgz",
+      "member": "vllm_dsv41_indexer/NOTICE.md",
+      "sha256": "8d33c55261fdfb8ce31a04f402ab99a75869438ed35591ff4c77289c78acc5bc"
+    },
+    {
+      "archive": "2026-11-07/p8-grouped-final-v1/source.tgz",
+      "member": "vllm_dsv41_indexer/third_party/ant/LICENSE",
+      "sha256": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747"
+    },
+    {
+      "archive": "2026-11-07/p8-prefill-final-v1/source.tgz",
+      "member": "LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "archive": "2026-11-07/p8-prefill-final-v1/source.tgz",
+      "member": "vllm_dsv41_indexer/NOTICE.md",
+      "sha256": "8d33c55261fdfb8ce31a04f402ab99a75869438ed35591ff4c77289c78acc5bc"
+    },
+    {
+      "archive": "2026-11-07/p8-prefill-final-v1/source.tgz",
+      "member": "vllm_dsv41_indexer/third_party/ant/LICENSE",
+      "sha256": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747"
+    }
+  ],
+  "limitations": "Pattern scan, recursive tar payload inspection and explicit inventory minimization; no universal secret-detection guarantee."
 }

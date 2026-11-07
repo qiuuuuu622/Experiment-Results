@@ -1,0 +1,78 @@
+{
+  "status": "passed",
+  "scope": "CPU artifact integrity only; actual kernel binding/native runtime identity still require explicit verification report",
+  "manifest_sha256": "6d7ff580f4886d39d19fc4b2431260a6272899ad2eab0a7c4481159b5f90edb9",
+  "admitted_records": 387,
+  "candidates": {
+    "one_sort_ant_topk_fused_map": 34,
+    "one_sort_ant_topk_separate_map": 25,
+    "streaming": 47,
+    "cluster_preplanned": 53,
+    "cluster_replan_each_call": 53,
+    "grouped_gluon_source": 12,
+    "shared_consumer_publish_included": 12,
+    "grouped_gluon_full": 2,
+    "row_tiled_pipeline": 29,
+    "keys_major_pipeline": 29,
+    "indirect_pipeline": 27,
+    "deepgemm_pipeline": 15,
+    "native_score_ant_token_and_source_topk": 11,
+    "grouped_source_fused_max": 6,
+    "grouped_source_separate_max": 6,
+    "optimized_source_four_consumers": 9,
+    "hybrid_source_four_consumers": 13,
+    "hybrid_source_full_consumers": 4
+  },
+  "checked_unique_artifacts": 33,
+  "verification": [
+    {
+      "path": "results/indexer/20261107-resume/p8-cpu-review/p3-binding-review/verify-7414f0932e1e.json",
+      "status": "passed",
+      "checks": 3,
+      "skipped": []
+    },
+    {
+      "path": "results/indexer/20261107-resume/p8-cpu-review/p3-binding-review/verify-8528280c7188.json",
+      "status": "passed",
+      "checks": 1,
+      "skipped": []
+    },
+    {
+      "path": "results/indexer/20261107-resume/p8-cpu-review/p3-binding-review/verify-89cf09983578.json",
+      "status": "passed",
+      "checks": 8,
+      "skipped": []
+    },
+    {
+      "path": "results/indexer/20261107-resume/p8-cpu-review/p3-binding-review/verify-9653c78abe44.json",
+      "status": "passed",
+      "checks": 3,
+      "skipped": []
+    },
+    {
+      "path": "results/indexer/20261107-resume/p8-cpu-review/p3-binding-review/verify-aee8d03e85ce.json",
+      "status": "passed",
+      "checks": 4,
+      "skipped": []
+    },
+    {
+      "path": "results/indexer/20261107-resume/p8-cpu-review/p3-binding-review/verify-c2388e732a95.json",
+      "status": "passed",
+      "checks": 3,
+      "skipped": []
+    },
+    {
+      "path": "results/indexer/20261107-resume/p8-cpu-review/p3-binding-review/verify-f0d078d72c43.json",
+      "status": "passed",
+      "checks": 4,
+      "skipped": []
+    },
+    {
+      "path": "results/indexer/20261107-resume/p8-cpu-review/p3-binding-review/verify-f1fc1c214e8c.json",
+      "status": "passed",
+      "checks": 2,
+      "skipped": []
+    }
+  ],
+  "issues": []
+}

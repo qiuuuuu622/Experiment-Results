@@ -1,0 +1,16 @@
+{
+  "stage": "final",
+  "family": "full",
+  "forward": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p3/composition-v2/forward.json",
+  "reverse": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p3/composition-v2/reverse.json",
+  "source_manifest": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p3/composition-v2/source.json",
+  "correctness": [
+    "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p3/full-final-v1/verify.json"
+  ],
+  "native_identity": {
+    "path": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bundles/p3-composition-native-artifact.data.json",
+    "sha256": "b0617f1fb7eb168ee9a48ed09c3561cc603bf1770087d8f77c4f22bc9397f313"
+  },
+  "reviewed_driver_differences": {},
+  "performance_native_package": "/root/dsv41-indexer-resume-20261107/runs/deep-gemm-p3-zero-prefetch-v1"
+}

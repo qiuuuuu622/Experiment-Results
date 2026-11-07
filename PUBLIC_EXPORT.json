@@ -60,8 +60,2363 @@
       "path": "2026-11-07/p3-full-source/full-final-v1/hostname.txt",
       "action": "omit host/GPU UUID inventory; reports retain named execution host and device index",
       "original_sha256": "f06dd8829e18c1bea2385f0dae56b3d6e17204ffa45f16598842faa4b654e045"
+    },
+    {
+      "path": "2026-11-07/p8-final-dispatch/ORIGINAL_PRIVATE_FINAL-SHA256.json",
+      "original_sha256": "a0831934dfe5434d451f4cd5a0b09b5752ab4e61bc3cab13a2ac3456ad4d0904",
+      "public_sha256": "a0831934dfe5434d451f4cd5a0b09b5752ab4e61bc3cab13a2ac3456ad4d0904",
+      "changes": [
+        {
+          "action": "rename private checksum list; root public SHA256SUMS.json is authoritative"
+        }
+      ]
+    },
+    {
+      "path": "2026-11-07/p8-final-dispatch/admission-single.json",
+      "original_sha256": "6d7ff580f4886d39d19fc4b2431260a6272899ad2eab0a7c4481159b5f90edb9",
+      "public_sha256": "2499346a9057fe086847625d67fcb93b11f23197bdf17daffcde578166450785",
+      "changes": [
+        {
+          "action": "replace personal local checkout prefix with /workspace/vllm_dsv41_flash_opt",
+          "occurrences": 4611
+        }
+      ]
+    },
+    {
+      "path": "2026-11-07/p8-final-dispatch/admission-tp4.json",
+      "original_sha256": "a66c5728277921b25459aa09509a6ae02f675f716436e24f9f4915b2ed844eb4",
+      "public_sha256": "9b4163154fbbc2d31874b5b876307c391a7375e131980e1ae7f8c9debdd9d93e",
+      "changes": [
+        {
+          "action": "replace personal local checkout prefix with /workspace/vllm_dsv41_flash_opt",
+          "occurrences": 261
+        }
+      ]
+    },
+    {
+      "path": "2026-11-07/p8-final-dispatch/admission.json",
+      "original_sha256": "984a315aa4b50f1d8fa582515b487ae97b35c1bea5a57bb95bf66d3a2e99385f",
+      "public_sha256": "0554e772f5cc0e70c5b5ab5452e205cd6dd9c1b8abbbfab82f6f01beff42cf65",
+      "changes": [
+        {
+          "action": "replace personal local checkout prefix with /workspace/vllm_dsv41_flash_opt",
+          "occurrences": 5221
+        }
+      ]
+    },
+    {
+      "path": "2026-11-07/p8-final-dispatch/bind-single-final/source-runtime.tgz",
+      "original_sha256": "e6739f606f19c6f33c2e3af73f3624e30169bbe6b949e71a9e117738b7b09ef2",
+      "public_sha256": "2de052aa9d2a7fa642beee8247c4623aceb475185407fcbf434b77cbc89ad4ee",
+      "changes": [
+        {
+          "member": "vllm_dsv41_indexer",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/csrc",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/full_score.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/patches",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/dispatch.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/__init__.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/native.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/grouped_score.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/third_party",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/prefill.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/reference.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/row_shard.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/module.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/workspace.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/parallel.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/topk.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/contract.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/grouped.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/NOTICE.md",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/prepare.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/score.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/third_party/ant",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/third_party/ant/csrc",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/third_party/ant/sources.json",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/third_party/ant/LICENSE",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/third_party/ant/include",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/utils.h",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/utils.cuh",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/vec.cuh",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/math.cuh",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/deepseek_v4",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/tile.cuh",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/warp.cuh",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/runtime.cuh",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/tensor.h",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/source_location.h",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/type.cuh",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/bits.h",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/deepseek_v4/topk_impl.cuh",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/third_party/ant/csrc/deepseek_v4",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/third_party/ant/csrc/deepseek_v4/topk_v2.cuh",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/patches/README.md",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/patches/deepgemm-sm90-empty-query-prefetch.patch",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/csrc/candidate_publish.cuh",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/benchmark_full.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/repro_zero_prefetch.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/verify_topk.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/verify_projection_tp4.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/benchmark.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/legacy.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/verify_module.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/benchmark_grouped.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/verify_compact.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/04_full_verify.sh",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/benchmark_grouped_planning.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/06_prefill_gluon.sh",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/benchmark_final.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/verify_tp4.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/benchmark_topk.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/03_p2.sh",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/__init__.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/verify_resume_modules.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/05_prefill.sh",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/summarize.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/benchmark_prefill.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/tp4_cases.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/verify_full.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/verify_prefill.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/06_topk.sh",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/baseline.json",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/verify_dispatch.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/inputs.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/common.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/benchmark_tp4_stages.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/benchmark_tp4.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/environment.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/audit_resume.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/calibrate.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/verify_grouped.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/verify.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/03_p3_gpu0.sh",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/04_p4_gpu3.sh",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/freeze_p3.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "tests/kernels/dsv41_indexer",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "tests/kernels/dsv41_indexer/test_dispatch.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "tests/kernels/dsv41_indexer/test_row_shard.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "tests/kernels/dsv41_indexer/pytest.ini",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "tests/kernels/dsv41_indexer/.pytest_cache",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "tests/kernels/dsv41_indexer/test_prefill.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "tests/kernels/dsv41_indexer/test_contract.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "tests/kernels/dsv41_indexer/test_grouped.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "tests/kernels/dsv41_indexer/.pytest_cache/CACHEDIR.TAG",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "tests/kernels/dsv41_indexer/.pytest_cache/README.md",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "tests/kernels/dsv41_indexer/.pytest_cache/.gitignore",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "tests/kernels/dsv41_indexer/.pytest_cache/v",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "tests/kernels/dsv41_indexer/.pytest_cache/v/cache",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "tests/kernels/dsv41_indexer/.pytest_cache/v/cache/nodeids",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "tests/kernels/dsv41_indexer/.pytest_cache/v/cache/lastfailed",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "results/indexer/20261107-resume/p8/admission-single.json",
+          "original_sha256": "6d7ff580f4886d39d19fc4b2431260a6272899ad2eab0a7c4481159b5f90edb9",
+          "public_sha256": "2499346a9057fe086847625d67fcb93b11f23197bdf17daffcde578166450785",
+          "changes": [
+            {
+              "action": "replace personal local checkout prefix with /workspace/vllm_dsv41_flash_opt",
+              "occurrences": 4611
+            }
+          ]
+        },
+        {
+          "member": "results/indexer/20261107-resume/p8/admission-single.json",
+          "action": "omit personal tar owner metadata"
+        }
+      ]
+    },
+    {
+      "path": "2026-11-07/p8-final-dispatch/bind-tp4-final/source-runtime.tgz",
+      "original_sha256": "6cb70459f47602b452584ce21354a3e95d2c97d85565035e97fca07f15df8267",
+      "public_sha256": "8ef612ddb427746aa1dbcd4af0df52219d325db8efe2224d69f8570f306993ce",
+      "changes": [
+        {
+          "member": "vllm_dsv41_indexer",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/csrc",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/full_score.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/patches",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/dispatch.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/__init__.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/native.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/grouped_score.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/third_party",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/prefill.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/reference.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/row_shard.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/module.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/workspace.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/parallel.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/topk.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/contract.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/grouped.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/NOTICE.md",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/prepare.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/score.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/third_party/ant",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/third_party/ant/csrc",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/third_party/ant/sources.json",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/third_party/ant/LICENSE",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/third_party/ant/include",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/utils.h",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/utils.cuh",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/vec.cuh",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/math.cuh",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/deepseek_v4",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/tile.cuh",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/warp.cuh",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/runtime.cuh",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/tensor.h",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/source_location.h",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/type.cuh",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/bits.h",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/deepseek_v4/topk_impl.cuh",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/third_party/ant/csrc/deepseek_v4",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/third_party/ant/csrc/deepseek_v4/topk_v2.cuh",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/patches/README.md",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/patches/deepgemm-sm90-empty-query-prefetch.patch",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "vllm_dsv41_indexer/csrc/candidate_publish.cuh",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/benchmark_full.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/repro_zero_prefetch.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/verify_topk.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/verify_projection_tp4.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/benchmark.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/legacy.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/verify_module.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/benchmark_grouped.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/verify_compact.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/04_full_verify.sh",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/benchmark_grouped_planning.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/06_prefill_gluon.sh",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/benchmark_final.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/verify_tp4.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/benchmark_topk.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/03_p2.sh",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/__init__.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/verify_resume_modules.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/05_prefill.sh",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/summarize.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/benchmark_prefill.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/tp4_cases.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/verify_full.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/verify_prefill.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/06_topk.sh",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/baseline.json",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/verify_dispatch.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/inputs.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/common.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/benchmark_tp4_stages.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/benchmark_tp4.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/environment.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/audit_resume.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/calibrate.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/verify_grouped.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/verify.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/03_p3_gpu0.sh",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/04_p4_gpu3.sh",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "benchmarks/kernels/dsv41_indexer/freeze_p3.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "tests/kernels/dsv41_indexer",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "tests/kernels/dsv41_indexer/test_dispatch.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "tests/kernels/dsv41_indexer/test_row_shard.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "tests/kernels/dsv41_indexer/pytest.ini",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "tests/kernels/dsv41_indexer/.pytest_cache",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "tests/kernels/dsv41_indexer/test_prefill.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "tests/kernels/dsv41_indexer/test_contract.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "tests/kernels/dsv41_indexer/test_grouped.py",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "tests/kernels/dsv41_indexer/.pytest_cache/CACHEDIR.TAG",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "tests/kernels/dsv41_indexer/.pytest_cache/README.md",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "tests/kernels/dsv41_indexer/.pytest_cache/.gitignore",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "tests/kernels/dsv41_indexer/.pytest_cache/v",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "tests/kernels/dsv41_indexer/.pytest_cache/v/cache",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "tests/kernels/dsv41_indexer/.pytest_cache/v/cache/nodeids",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "tests/kernels/dsv41_indexer/.pytest_cache/v/cache/lastfailed",
+          "action": "omit personal tar owner metadata"
+        },
+        {
+          "member": "results/indexer/20261107-resume/p8/admission-tp4.json",
+          "original_sha256": "a66c5728277921b25459aa09509a6ae02f675f716436e24f9f4915b2ed844eb4",
+          "public_sha256": "9b4163154fbbc2d31874b5b876307c391a7375e131980e1ae7f8c9debdd9d93e",
+          "changes": [
+            {
+              "action": "replace personal local checkout prefix with /workspace/vllm_dsv41_flash_opt",
+              "occurrences": 261
+            }
+          ]
+        },
+        {
+          "member": "results/indexer/20261107-resume/p8/admission-tp4.json",
+          "action": "omit personal tar owner metadata"
+        }
+      ]
+    },
+    {
+      "path": "2026-11-07/p8-final-dispatch/bundles/p2.json",
+      "original_sha256": "42959100720b0cf3427fa12a8884f32c7950e848f0dbe98c035e27b5861287f5",
+      "public_sha256": "34eedb8ae2ead898562d40a08d4946e2bdc776d782f073e124a16f1048c77ac5",
+      "changes": [
+        {
+          "action": "replace personal local checkout prefix with /workspace/vllm_dsv41_flash_opt",
+          "occurrences": 5
+        }
+      ]
+    },
+    {
+      "path": "2026-11-07/p8-final-dispatch/bundles/p3-composition.json",
+      "original_sha256": "54989850f7dae3f0e936cba12522cdfd8805ee9774f28d980c39446847deb277",
+      "public_sha256": "75343b221004f42278ad648140415bccad8c9a21b3c3888e7b9ee07c6942b3ef",
+      "changes": [
+        {
+          "action": "replace personal local checkout prefix with /workspace/vllm_dsv41_flash_opt",
+          "occurrences": 5
+        }
+      ]
+    },
+    {
+      "path": "2026-11-07/p8-final-dispatch/bundles/p3-ratio1.json",
+      "original_sha256": "5a53e436e7a4b94dd06cbfefe70b2bd8fa7c2aec2a68a24c2d8319118ed3e3af",
+      "public_sha256": "4fecdbeccf18229477fedad66a710b5e7bec0cd6901306c9399618b9598b18fb",
+      "changes": [
+        {
+          "action": "replace personal local checkout prefix with /workspace/vllm_dsv41_flash_opt",
+          "occurrences": 5
+        }
+      ]
+    },
+    {
+      "path": "2026-11-07/p8-final-dispatch/bundles/p3-ratio2.json",
+      "original_sha256": "9ac3c1e47a3d7165a7addb07e3745d4d4655728f185f9b088e8b9925e4273e78",
+      "public_sha256": "74b446a657d3fcede1158004534ef235fbf911cb3078b0e0f451dedf3ea4c6cf",
+      "changes": [
+        {
+          "action": "replace personal local checkout prefix with /workspace/vllm_dsv41_flash_opt",
+          "occurrences": 5
+        }
+      ]
+    },
+    {
+      "path": "2026-11-07/p8-final-dispatch/bundles/p4.json",
+      "original_sha256": "1b7fc4cce4191ceebe4347fe6fab065fc54fc52c89d88871accd88999b8c6245",
+      "public_sha256": "ac502b9f3fcaa71402b4fce17a0706293877f15d17dd68c486442f341be5091a",
+      "changes": [
+        {
+          "action": "replace personal local checkout prefix with /workspace/vllm_dsv41_flash_opt",
+          "occurrences": 5
+        }
+      ]
+    },
+    {
+      "path": "2026-11-07/p8-final-dispatch/bundles/p5-matrix.json",
+      "original_sha256": "39405e06050537a0d9b40be1dc7263eac6fd3ee4e624d9876aa1aa9bab843c60",
+      "public_sha256": "12f7903a2a5d0d30c0787df6d7cb86c3f32931c97b933d4d5e80e631a68c673c",
+      "changes": [
+        {
+          "action": "replace personal local checkout prefix with /workspace/vllm_dsv41_flash_opt",
+          "occurrences": 5
+        }
+      ]
+    },
+    {
+      "path": "2026-11-07/p8-final-dispatch/bundles/p5-smoke.json",
+      "original_sha256": "13a1b9ba4cbfadbf775f0d09d7fb0587cd155167ad936e894ef80ca60182b62b",
+      "public_sha256": "e9f984dbbddb6a2c6db050234e5e90a84f5854b7b8d4f9a822231cd920efbc85",
+      "changes": [
+        {
+          "action": "replace personal local checkout prefix with /workspace/vllm_dsv41_flash_opt",
+          "occurrences": 5
+        }
+      ]
+    },
+    {
+      "path": "2026-11-07/p8-final-dispatch/bundles/p6.json",
+      "original_sha256": "f82a9148c17f663f80c09f2857d5b28bebcee0e5bc2d0bd4a11dac2449912c4b",
+      "public_sha256": "d4ffbcbb652ef9b357ece8f66eb4895356be3143bae3ecf2734a9395878fa9f3",
+      "changes": [
+        {
+          "action": "replace personal local checkout prefix with /workspace/vllm_dsv41_flash_opt",
+          "occurrences": 5
+        }
+      ]
+    },
+    {
+      "path": "2026-11-07/p8-final-dispatch/bundles/p7-compact-extra-shapes.json",
+      "original_sha256": "8cff14357354bad8c235e5cbab9816f32d8d4148cee5d81f283cad4746bb7272",
+      "public_sha256": "cfb4ca737b6f31efb3f770b812815e419b9a8db4ec6fbfaa9e213b7cea2c9fd2",
+      "changes": [
+        {
+          "action": "replace personal local checkout prefix with /workspace/vllm_dsv41_flash_opt",
+          "occurrences": 5
+        }
+      ]
+    },
+    {
+      "path": "2026-11-07/p8-final-dispatch/bundles/p7-compact-final-recheck.json",
+      "original_sha256": "abcb2c2a207dc578f69e861f379716270d0c9f126a49ac911552c6ff560ba947",
+      "public_sha256": "b8d225d0fbd246f4584fe3c48e5e5f0509f0bec7353206d0ad045aa4dee2046f",
+      "changes": [
+        {
+          "action": "replace personal local checkout prefix with /workspace/vllm_dsv41_flash_opt",
+          "occurrences": 5
+        }
+      ]
+    },
+    {
+      "path": "2026-11-07/p8-final-dispatch/bundles/p7-compact-final-v3.json",
+      "original_sha256": "ff7cc8d7562292ff93e2cbccd4cfd45343de3579966826684bd31a5ba10e2b12",
+      "public_sha256": "71d947a1a2dcd08f515d8cd6dffc70abd4c990bde0868ea1d0e47adda71d873d",
+      "changes": [
+        {
+          "action": "replace personal local checkout prefix with /workspace/vllm_dsv41_flash_opt",
+          "occurrences": 5
+        }
+      ]
+    },
+    {
+      "path": "2026-11-07/p8-final-dispatch/bundles/p7-native-full-chain.json",
+      "original_sha256": "163bfbb1dce11266364a628fc744011df93bbb4b5774324aca900ddbaa3b4b8c",
+      "public_sha256": "2a4f924cce9853c77b0db5ef178fb393768a0ef6cf4cd3f372493c8c03b4b751",
+      "changes": [
+        {
+          "action": "replace personal local checkout prefix with /workspace/vllm_dsv41_flash_opt",
+          "occurrences": 5
+        }
+      ]
+    },
+    {
+      "path": "2026-11-07/p8-final-dispatch/bundles/p7-native-stable-full-chain.json",
+      "original_sha256": "f9f90d77b8a5650dcaded5cc51c7909741e915ab368c266af6e19ac23fc06977",
+      "public_sha256": "9bc31490711a06b4b6a0031bea957e01c96a7f373229d5bea282eae28b3047a1",
+      "changes": [
+        {
+          "action": "replace personal local checkout prefix with /workspace/vllm_dsv41_flash_opt",
+          "occurrences": 5
+        }
+      ]
+    },
+    {
+      "path": "2026-11-07/p8-final-dispatch/bundles/p7-projection-final-recheck.json",
+      "original_sha256": "f026f3e29f00bec9c7ef16d0811d96a385bf80ebbe97933900c2204a985f5ebc",
+      "public_sha256": "9ef4c7e2a27b29ec9032db463a10c895bcf9b708a908465143a91da047a4d60a",
+      "changes": [
+        {
+          "action": "replace personal local checkout prefix with /workspace/vllm_dsv41_flash_opt",
+          "occurrences": 5
+        }
+      ]
+    },
+    {
+      "path": "2026-11-07/p8-final-dispatch/bundles/p7-projection-final-v3.json",
+      "original_sha256": "2668c5f2b7c82c44147fdb655ba16ad7e018c13dbe2e91b90decd7eb56f9de74",
+      "public_sha256": "e82035a8e1ec94b458cac8a73b7a20f0d525f29549ddd4b9448792d0e5e7c598",
+      "changes": [
+        {
+          "action": "replace personal local checkout prefix with /workspace/vllm_dsv41_flash_opt",
+          "occurrences": 5
+        }
+      ]
+    },
+    {
+      "path": "2026-11-07/p8-final-dispatch/matrix.json",
+      "original_sha256": "928a884888ab279c654c83eb1cd2b133b9a9179cebea2ec1da759d27088d92e0",
+      "public_sha256": "92d60b9e6c7c9c77c59b730f61f9e18afe852454e20764e97cd6ae019f6a1f63",
+      "changes": [
+        {
+          "action": "replace personal local checkout prefix with /workspace/vllm_dsv41_flash_opt",
+          "occurrences": 304
+        }
+      ]
+    },
+    {
+      "path": "2026-11-07/p8-independent-review/p3-binding-review/ORIGINAL_PRIVATE_SHA256SUMS",
+      "original_sha256": "4d462c1ba4128776782704151ddf890f3fb5bc79ed827e3e9b124abbd3bbc534",
+      "public_sha256": "4d462c1ba4128776782704151ddf890f3fb5bc79ed827e3e9b124abbd3bbc534",
+      "changes": [
+        {
+          "action": "rename private checksum list; root public SHA256SUMS.json is authoritative"
+        }
+      ]
     }
   ],
   "private_originals_modified": false,
-  "incremental_scope": "P3 completed study and P4/P5 final-source measurements; P7/P8 not yet complete"
+  "incremental_scope": "P7 completed TP4 study and P8 completed original FP8 final admission/binding/reviews; dedicated Ant prefill P5b remains unfinished",
+  "incremental_export": {
+    "source_files_verified": 182,
+    "json_nonstring_invariance_checks": 21,
+    "private_internal_hashes_remain_provenance": true,
+    "public_checkout_prefix": "/workspace/vllm_dsv41_flash_opt",
+    "files": [
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7/README.md",
+        "public_path": "2026-11-07/p7-tp4-row-sharding/README.md",
+        "original_sha256": "6e409634b1ca4483ee8c2130af34a98e0176065701c663f8e0093f28a73d2195",
+        "public_sha256": "6e409634b1ca4483ee8c2130af34a98e0176065701c663f8e0093f28a73d2195",
+        "bytes": 3616
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7/REPORT.md",
+        "public_path": "2026-11-07/p7-tp4-row-sharding/REPORT.md",
+        "original_sha256": "81b80553865a6dfa4d3c6e0fb337f71df2dda0b1686ee1d061f83216d58cd4c5",
+        "public_sha256": "81b80553865a6dfa4d3c6e0fb337f71df2dda0b1686ee1d061f83216d58cd4c5",
+        "bytes": 10322
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7/compact-decode.json",
+        "public_path": "2026-11-07/p7-tp4-row-sharding/compact-decode.json",
+        "original_sha256": "79dd1537493fbdd003a024c469460dd2328cb69f4966377e9030bb86f08fc49e",
+        "public_sha256": "79dd1537493fbdd003a024c469460dd2328cb69f4966377e9030bb86f08fc49e",
+        "bytes": 4945224
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7/compact-decode.log",
+        "public_path": "2026-11-07/p7-tp4-row-sharding/compact-decode.log",
+        "original_sha256": "365d173175b560068ed2cf9097b6d0dd8ecc26a1d0585d1874919adbafcc3b46",
+        "public_sha256": "365d173175b560068ed2cf9097b6d0dd8ecc26a1d0585d1874919adbafcc3b46",
+        "bytes": 179792
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7/compact-extra-shapes.json",
+        "public_path": "2026-11-07/p7-tp4-row-sharding/compact-extra-shapes.json",
+        "original_sha256": "280f0c594d5175f85514123f632e0cbbd84c002de5d6ef08d764db3dc97be24b",
+        "public_sha256": "280f0c594d5175f85514123f632e0cbbd84c002de5d6ef08d764db3dc97be24b",
+        "bytes": 1643679
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7/compact-extra-shapes.log",
+        "public_path": "2026-11-07/p7-tp4-row-sharding/compact-extra-shapes.log",
+        "original_sha256": "4413e106f27537ed91e9cc42e77bdd1a0a9917e820405209848cf8ff6687a013",
+        "public_sha256": "4413e106f27537ed91e9cc42e77bdd1a0a9917e820405209848cf8ff6687a013",
+        "bytes": 71504
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7/compact-final-recheck.json",
+        "public_path": "2026-11-07/p7-tp4-row-sharding/compact-final-recheck.json",
+        "original_sha256": "7d94f49ed016f07baadf2067e01ca26981f16058f5c4ffc73fd7b1f854d2128f",
+        "public_sha256": "7d94f49ed016f07baadf2067e01ca26981f16058f5c4ffc73fd7b1f854d2128f",
+        "bytes": 1698641
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7/compact-final-recheck.log",
+        "public_path": "2026-11-07/p7-tp4-row-sharding/compact-final-recheck.log",
+        "original_sha256": "bceffe6737709f206b8259870d0b0174b6104433f157583332e1995635432f76",
+        "public_sha256": "bceffe6737709f206b8259870d0b0174b6104433f157583332e1995635432f76",
+        "bytes": 77529
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7/compact-final-v3.json",
+        "public_path": "2026-11-07/p7-tp4-row-sharding/compact-final-v3.json",
+        "original_sha256": "6f8073c18e5220ed7fa2613bd5c38c8ea6d94b7a21174853f303f7f6c18c5ed1",
+        "public_sha256": "6f8073c18e5220ed7fa2613bd5c38c8ea6d94b7a21174853f303f7f6c18c5ed1",
+        "bytes": 1659464
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7/compact-final-v3.log",
+        "public_path": "2026-11-07/p7-tp4-row-sharding/compact-final-v3.log",
+        "original_sha256": "9ba9f0196013bc9fd658f11133a0232eaad11cd67f5c460543a88f1d1c3fea5d",
+        "public_sha256": "9ba9f0196013bc9fd658f11133a0232eaad11cd67f5c460543a88f1d1c3fea5d",
+        "bytes": 77539
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7/compact-ratio2.json",
+        "public_path": "2026-11-07/p7-tp4-row-sharding/compact-ratio2.json",
+        "original_sha256": "0b80e8d2517aca8fe4aed892fb30b09fea42705910943e5efcb3efed6dc675ac",
+        "public_sha256": "0b80e8d2517aca8fe4aed892fb30b09fea42705910943e5efcb3efed6dc675ac",
+        "bytes": 1561032
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7/compact-ratio2.log",
+        "public_path": "2026-11-07/p7-tp4-row-sharding/compact-ratio2.log",
+        "original_sha256": "64c45da995084c3efea46fc867307ee1463667ed2f44aa623f2208d3254bb8da",
+        "public_sha256": "64c45da995084c3efea46fc867307ee1463667ed2f44aa623f2208d3254bb8da",
+        "bytes": 62343
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7/compact-verify.json",
+        "public_path": "2026-11-07/p7-tp4-row-sharding/compact-verify.json",
+        "original_sha256": "581a95f9ae00e58d867bf4c38ead059aa15b67c15ef482bf237a0b9ee08530ee",
+        "public_sha256": "581a95f9ae00e58d867bf4c38ead059aa15b67c15ef482bf237a0b9ee08530ee",
+        "bytes": 4467936
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7/compact-verify.log",
+        "public_path": "2026-11-07/p7-tp4-row-sharding/compact-verify.log",
+        "original_sha256": "34420b31187ff43150155deb3e7398722cb645f95fafa19e02c40e5b305c8909",
+        "public_sha256": "34420b31187ff43150155deb3e7398722cb645f95fafa19e02c40e5b305c8909",
+        "bytes": 117918
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7/excluded-runs.json",
+        "public_path": "2026-11-07/p7-tp4-row-sharding/excluded-runs.json",
+        "original_sha256": "c9085629a4cceac7451022e72e29162bc41d653db438c7f60e16897a2fa356f1",
+        "public_sha256": "c9085629a4cceac7451022e72e29162bc41d653db438c7f60e16897a2fa356f1",
+        "bytes": 522
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7/inventory.json",
+        "public_path": "2026-11-07/p7-tp4-row-sharding/inventory.json",
+        "original_sha256": "a816514c5c0fe465f367e04b18e55c53eea4f5a8275b4eac6b40b35be821e792",
+        "public_sha256": "a816514c5c0fe465f367e04b18e55c53eea4f5a8275b4eac6b40b35be821e792",
+        "bytes": 9747
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7/native-full-chain.json",
+        "public_path": "2026-11-07/p7-tp4-row-sharding/native-full-chain.json",
+        "original_sha256": "5ef389a741df362dfd50245fee0b6ff1b1ab35ccf5ad2cab4ae4d1ddb168d2e4",
+        "public_sha256": "5ef389a741df362dfd50245fee0b6ff1b1ab35ccf5ad2cab4ae4d1ddb168d2e4",
+        "bytes": 4330530
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7/native-full-chain.log",
+        "public_path": "2026-11-07/p7-tp4-row-sharding/native-full-chain.log",
+        "original_sha256": "67efd6482e10f60b4f765aa846ab813aa3eab817058097413e279b833a7420fa",
+        "public_sha256": "67efd6482e10f60b4f765aa846ab813aa3eab817058097413e279b833a7420fa",
+        "bytes": 116208
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7/native-stable-full-chain.json",
+        "public_path": "2026-11-07/p7-tp4-row-sharding/native-stable-full-chain.json",
+        "original_sha256": "03a5883a1f6d3a4761c4ddd2580904a181885d0f5df402d81ed97c2b4d424612",
+        "public_sha256": "03a5883a1f6d3a4761c4ddd2580904a181885d0f5df402d81ed97c2b4d424612",
+        "bytes": 4215019
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7/native-stable-full-chain.log",
+        "public_path": "2026-11-07/p7-tp4-row-sharding/native-stable-full-chain.log",
+        "original_sha256": "d12dcbc8257f3940728074ee8a1705d9896a2d09e9deea9d14f88339526746bb",
+        "public_sha256": "d12dcbc8257f3940728074ee8a1705d9896a2d09e9deea9d14f88339526746bb",
+        "bytes": 120393
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7/native-stable-phase.json",
+        "public_path": "2026-11-07/p7-tp4-row-sharding/native-stable-phase.json",
+        "original_sha256": "478e32f860560282eb924bdc5265c2853aebb6695352c5e7e29853a567dfa523",
+        "public_sha256": "478e32f860560282eb924bdc5265c2853aebb6695352c5e7e29853a567dfa523",
+        "bytes": 2049941
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7/native-stable-phase.log",
+        "public_path": "2026-11-07/p7-tp4-row-sharding/native-stable-phase.log",
+        "original_sha256": "415f0cc1228f703128a55cdd59116c95c48e82f13cd7ca6bc0c8386d521b4b7e",
+        "public_sha256": "415f0cc1228f703128a55cdd59116c95c48e82f13cd7ca6bc0c8386d521b4b7e",
+        "bytes": 2406
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7/phase-breakdown.json",
+        "public_path": "2026-11-07/p7-tp4-row-sharding/phase-breakdown.json",
+        "original_sha256": "db59765d3fc586b0d57db3c66cde58ba235bff27315e8060296a1c099fb89631",
+        "public_sha256": "db59765d3fc586b0d57db3c66cde58ba235bff27315e8060296a1c099fb89631",
+        "bytes": 3858053
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7/phase-breakdown.log",
+        "public_path": "2026-11-07/p7-tp4-row-sharding/phase-breakdown.log",
+        "original_sha256": "415f0cc1228f703128a55cdd59116c95c48e82f13cd7ca6bc0c8386d521b4b7e",
+        "public_sha256": "415f0cc1228f703128a55cdd59116c95c48e82f13cd7ca6bc0c8386d521b4b7e",
+        "bytes": 2406
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7/projection-compact.json",
+        "public_path": "2026-11-07/p7-tp4-row-sharding/projection-compact.json",
+        "original_sha256": "3aa2c572f7baa1f329f5d8b6be9f66716d4a2b0c2843f864589825a2438cfe6c",
+        "public_sha256": "3aa2c572f7baa1f329f5d8b6be9f66716d4a2b0c2843f864589825a2438cfe6c",
+        "bytes": 1515269
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7/projection-compact.log",
+        "public_path": "2026-11-07/p7-tp4-row-sharding/projection-compact.log",
+        "original_sha256": "18ff5c0df0a990c9cbd7e81a9d4040a26e48dcd8d07c6c2cc6ee800d2657c6fc",
+        "public_sha256": "18ff5c0df0a990c9cbd7e81a9d4040a26e48dcd8d07c6c2cc6ee800d2657c6fc",
+        "bytes": 61371
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7/projection-errors-final.json",
+        "public_path": "2026-11-07/p7-tp4-row-sharding/projection-errors-final.json",
+        "original_sha256": "9c2edbac74076ffcbbfdc2928db181ead5d1274bb1f47c5585f59543cb02b0c4",
+        "public_sha256": "9c2edbac74076ffcbbfdc2928db181ead5d1274bb1f47c5585f59543cb02b0c4",
+        "bytes": 276584
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7/projection-errors-final.log",
+        "public_path": "2026-11-07/p7-tp4-row-sharding/projection-errors-final.log",
+        "original_sha256": "65b8cb7f9385f232ecb44ac24f1694a9ac7d7e9cbc05b3eb87b23d60b3e64828",
+        "public_sha256": "65b8cb7f9385f232ecb44ac24f1694a9ac7d7e9cbc05b3eb87b23d60b3e64828",
+        "bytes": 1251
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7/projection-final-recheck.json",
+        "public_path": "2026-11-07/p7-tp4-row-sharding/projection-final-recheck.json",
+        "original_sha256": "66ce5f5ad63a49dab1e3f642b35500048be49afa157e950b908e5e0feb41c5a6",
+        "public_sha256": "66ce5f5ad63a49dab1e3f642b35500048be49afa157e950b908e5e0feb41c5a6",
+        "bytes": 858179
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7/projection-final-recheck.log",
+        "public_path": "2026-11-07/p7-tp4-row-sharding/projection-final-recheck.log",
+        "original_sha256": "caa8eb5c23ae98bcd02c367eae163de7b8309a289e2d458fa2278f0ff35b87f7",
+        "public_sha256": "caa8eb5c23ae98bcd02c367eae163de7b8309a289e2d458fa2278f0ff35b87f7",
+        "bytes": 24477
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7/projection-final-v3.json",
+        "public_path": "2026-11-07/p7-tp4-row-sharding/projection-final-v3.json",
+        "original_sha256": "d14963cbaff035b17f2cb11bc9e1e78f0e42de04e57f70bfd641513d4d99e75e",
+        "public_sha256": "d14963cbaff035b17f2cb11bc9e1e78f0e42de04e57f70bfd641513d4d99e75e",
+        "bytes": 777952
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7/projection-final-v3.log",
+        "public_path": "2026-11-07/p7-tp4-row-sharding/projection-final-v3.log",
+        "original_sha256": "39bce94d6f0bc9b1eb3a85068162bb5512ea88195f2471d5bd07690ae67dc247",
+        "public_sha256": "39bce94d6f0bc9b1eb3a85068162bb5512ea88195f2471d5bd07690ae67dc247",
+        "bytes": 24476
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7/source-compact-v1.tar.gz",
+        "public_path": "2026-11-07/p7-tp4-row-sharding/source-compact-v1.tar.gz",
+        "original_sha256": "4220c5215ad33aecd3d89821c1adb5921ee2f3ea807878688b9b3396d95b1dc9",
+        "public_sha256": "4220c5215ad33aecd3d89821c1adb5921ee2f3ea807878688b9b3396d95b1dc9",
+        "bytes": 120851
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7/source-final-v2.tar.gz",
+        "public_path": "2026-11-07/p7-tp4-row-sharding/source-final-v2.tar.gz",
+        "original_sha256": "5430b84dc24b70b7bc8f4f2e07cb85ac26a53757e251c2d9bda13af6d5bfbe4f",
+        "public_sha256": "5430b84dc24b70b7bc8f4f2e07cb85ac26a53757e251c2d9bda13af6d5bfbe4f",
+        "bytes": 122028
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7/source-native-stable-final-v3.tar.gz",
+        "public_path": "2026-11-07/p7-tp4-row-sharding/source-native-stable-final-v3.tar.gz",
+        "original_sha256": "bda4a6c19a904cdeb92e3bb4980aaeef7923241462a583127a688be012975f71",
+        "public_sha256": "bda4a6c19a904cdeb92e3bb4980aaeef7923241462a583127a688be012975f71",
+        "bytes": 122685
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7/verify-native-allzero-restore.json",
+        "public_path": "2026-11-07/p7-tp4-row-sharding/verify-native-allzero-restore.json",
+        "original_sha256": "cde101e0a4a88e19dd1d46952431310249792e0a1042d5b8c23b22fa5d9c19ab",
+        "public_sha256": "cde101e0a4a88e19dd1d46952431310249792e0a1042d5b8c23b22fa5d9c19ab",
+        "bytes": 4872109
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7/verify-native-allzero-restore.log",
+        "public_path": "2026-11-07/p7-tp4-row-sharding/verify-native-allzero-restore.log",
+        "original_sha256": "f36e682d0aca7006b4c0aec63e2d5ac7b7eedc9597c2ac8edcc967715e6b0f82",
+        "public_sha256": "f36e682d0aca7006b4c0aec63e2d5ac7b7eedc9597c2ac8edcc967715e6b0f82",
+        "bytes": 7331
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7/verify-native-dynamic-final.json",
+        "public_path": "2026-11-07/p7-tp4-row-sharding/verify-native-dynamic-final.json",
+        "original_sha256": "eb5322e1ff33c1b5bf0bde3807ff90d89be7b3e5286d2615000f22b70d7b3e8a",
+        "public_sha256": "eb5322e1ff33c1b5bf0bde3807ff90d89be7b3e5286d2615000f22b70d7b3e8a",
+        "bytes": 3248813
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7/verify-native-dynamic-final.log",
+        "public_path": "2026-11-07/p7-tp4-row-sharding/verify-native-dynamic-final.log",
+        "original_sha256": "f36e682d0aca7006b4c0aec63e2d5ac7b7eedc9597c2ac8edcc967715e6b0f82",
+        "public_sha256": "f36e682d0aca7006b4c0aec63e2d5ac7b7eedc9597c2ac8edcc967715e6b0f82",
+        "bytes": 7331
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7/verify-native-dynamic.json",
+        "public_path": "2026-11-07/p7-tp4-row-sharding/verify-native-dynamic.json",
+        "original_sha256": "49874b3ad6ce51a6199c2b3b931e8a5163293aad095cab5c281685827c8283b1",
+        "public_sha256": "49874b3ad6ce51a6199c2b3b931e8a5163293aad095cab5c281685827c8283b1",
+        "bytes": 3248813
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7/verify-native-dynamic.log",
+        "public_path": "2026-11-07/p7-tp4-row-sharding/verify-native-dynamic.log",
+        "original_sha256": "f36e682d0aca7006b4c0aec63e2d5ac7b7eedc9597c2ac8edcc967715e6b0f82",
+        "public_sha256": "f36e682d0aca7006b4c0aec63e2d5ac7b7eedc9597c2ac8edcc967715e6b0f82",
+        "bytes": 7331
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7/verify-tp4-final.json",
+        "public_path": "2026-11-07/p7-tp4-row-sharding/verify-tp4-final.json",
+        "original_sha256": "ee2abe134869456c495a963481334523e2a64b29638a6402c2f45f44c3d03d1b",
+        "public_sha256": "ee2abe134869456c495a963481334523e2a64b29638a6402c2f45f44c3d03d1b",
+        "bytes": 2306960
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7/verify-tp4-final.log",
+        "public_path": "2026-11-07/p7-tp4-row-sharding/verify-tp4-final.log",
+        "original_sha256": "662512963ee1f2c7284101a9d4cdadcea8bdfc3575ed8e7e090bcbdd24f02506",
+        "public_sha256": "662512963ee1f2c7284101a9d4cdadcea8bdfc3575ed8e7e090bcbdd24f02506",
+        "bytes": 5946
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7/verify-tp4.json",
+        "public_path": "2026-11-07/p7-tp4-row-sharding/verify-tp4.json",
+        "original_sha256": "75f90b3a310aa8a98dd65fd167c25d402738474cd06e5d2c2451e4617fcb8382",
+        "public_sha256": "75f90b3a310aa8a98dd65fd167c25d402738474cd06e5d2c2451e4617fcb8382",
+        "bytes": 1746617
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7/verify-tp4.log",
+        "public_path": "2026-11-07/p7-tp4-row-sharding/verify-tp4.log",
+        "original_sha256": "c3ee04f177da39f0f577f5413360195f7d80aa0789e5300086633646a39fea3d",
+        "public_sha256": "c3ee04f177da39f0f577f5413360195f7d80aa0789e5300086633646a39fea3d",
+        "bytes": 3681
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/FINAL-SHA256.json",
+        "public_path": "2026-11-07/p8-final-dispatch/ORIGINAL_PRIVATE_FINAL-SHA256.json",
+        "original_sha256": "a0831934dfe5434d451f4cd5a0b09b5752ab4e61bc3cab13a2ac3456ad4d0904",
+        "public_sha256": "a0831934dfe5434d451f4cd5a0b09b5752ab4e61bc3cab13a2ac3456ad4d0904",
+        "bytes": 27674
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/REPORT.md",
+        "public_path": "2026-11-07/p8-final-dispatch/REPORT.md",
+        "original_sha256": "0ba448edeb741e329768e8a01fce8cd907885a5b10509b74bce10520a760daca",
+        "public_sha256": "0ba448edeb741e329768e8a01fce8cd907885a5b10509b74bce10520a760daca",
+        "bytes": 7288
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/admission-single.json",
+        "public_path": "2026-11-07/p8-final-dispatch/admission-single.json",
+        "original_sha256": "6d7ff580f4886d39d19fc4b2431260a6272899ad2eab0a7c4481159b5f90edb9",
+        "public_sha256": "2499346a9057fe086847625d67fcb93b11f23197bdf17daffcde578166450785",
+        "bytes": 18222653
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/admission-tp4.json",
+        "public_path": "2026-11-07/p8-final-dispatch/admission-tp4.json",
+        "original_sha256": "a66c5728277921b25459aa09509a6ae02f675f716436e24f9f4915b2ed844eb4",
+        "public_sha256": "9b4163154fbbc2d31874b5b876307c391a7375e131980e1ae7f8c9debdd9d93e",
+        "bytes": 11925216
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/admission.json",
+        "public_path": "2026-11-07/p8-final-dispatch/admission.json",
+        "original_sha256": "984a315aa4b50f1d8fa582515b487ae97b35c1bea5a57bb95bf66d3a2e99385f",
+        "public_sha256": "0554e772f5cc0e70c5b5ab5452e205cd6dd9c1b8abbbfab82f6f01beff42cf65",
+        "bytes": 30375061
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bind-single-final/bind-results.tgz",
+        "public_path": "2026-11-07/p8-final-dispatch/bind-single-final/bind-results.tgz",
+        "original_sha256": "cd657be52bac7f2350ab740db9a1cd5eb845cc575d61ca303a089734e2ba0360",
+        "public_sha256": "cd657be52bac7f2350ab740db9a1cd5eb845cc575d61ca303a089734e2ba0360",
+        "bytes": 1101038
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bind-single-final/loaded-native.json",
+        "public_path": "2026-11-07/p8-final-dispatch/bind-single-final/loaded-native.json",
+        "original_sha256": "b0524ce783a9ee8b68ddc0f2b18fb0137efc66cbdc9b3891c06bd8cc0f8d9b01",
+        "public_sha256": "b0524ce783a9ee8b68ddc0f2b18fb0137efc66cbdc9b3891c06bd8cc0f8d9b01",
+        "bytes": 842
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bind-single-final/p8-dispatch-gpu0.sh",
+        "public_path": "2026-11-07/p8-final-dispatch/bind-single-final/p8-dispatch-gpu0.sh",
+        "original_sha256": "2d8f2a38ec1f7832cee4e6550115ebdea6e8226794f9ccf664af85a224630221",
+        "public_sha256": "2d8f2a38ec1f7832cee4e6550115ebdea6e8226794f9ccf664af85a224630221",
+        "bytes": 1179
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bind-single-final/p8-dispatch-gpu1.sh",
+        "public_path": "2026-11-07/p8-final-dispatch/bind-single-final/p8-dispatch-gpu1.sh",
+        "original_sha256": "d706dbfe6c146fcf62ccb16cd5df7c39b18622862e4e279d51dcc1cba12a488d",
+        "public_sha256": "d706dbfe6c146fcf62ccb16cd5df7c39b18622862e4e279d51dcc1cba12a488d",
+        "bytes": 1179
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bind-single-final/p8-dispatch-gpu2.sh",
+        "public_path": "2026-11-07/p8-final-dispatch/bind-single-final/p8-dispatch-gpu2.sh",
+        "original_sha256": "ead031e617ca9cf62dfe23db3eb60c0a3796803cbc69488a9af1e1b1fa2e127e",
+        "public_sha256": "ead031e617ca9cf62dfe23db3eb60c0a3796803cbc69488a9af1e1b1fa2e127e",
+        "bytes": 891
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bind-single-final/source-runtime.tgz",
+        "public_path": "2026-11-07/p8-final-dispatch/bind-single-final/source-runtime.tgz",
+        "original_sha256": "e6739f606f19c6f33c2e3af73f3624e30169bbe6b949e71a9e117738b7b09ef2",
+        "public_sha256": "2de052aa9d2a7fa642beee8247c4623aceb475185407fcbf434b77cbc89ad4ee",
+        "bytes": 2534773
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bind-single-final/verify-7414f0932e1e.json",
+        "public_path": "2026-11-07/p8-final-dispatch/bind-single-final/verify-7414f0932e1e.json",
+        "original_sha256": "bca4a060dbdfa02c32276af272791dcb4e95d56de9a16f4d30a6d0a083f96d86",
+        "public_sha256": "bca4a060dbdfa02c32276af272791dcb4e95d56de9a16f4d30a6d0a083f96d86",
+        "bytes": 886610
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bind-single-final/verify-7414f0932e1e.log",
+        "public_path": "2026-11-07/p8-final-dispatch/bind-single-final/verify-7414f0932e1e.log",
+        "original_sha256": "2ce532dbf57eef6bbfe414634419a49402c2733674212914a611afc5e47415c0",
+        "public_sha256": "2ce532dbf57eef6bbfe414634419a49402c2733674212914a611afc5e47415c0",
+        "bytes": 1860
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bind-single-final/verify-8528280c7188.json",
+        "public_path": "2026-11-07/p8-final-dispatch/bind-single-final/verify-8528280c7188.json",
+        "original_sha256": "43ae6d4c1b266cd0e11aa97b27519933764be0117200e1b4cecceceea4c88f69",
+        "public_sha256": "43ae6d4c1b266cd0e11aa97b27519933764be0117200e1b4cecceceea4c88f69",
+        "bytes": 884944
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bind-single-final/verify-8528280c7188.log",
+        "public_path": "2026-11-07/p8-final-dispatch/bind-single-final/verify-8528280c7188.log",
+        "original_sha256": "94c0c75b922eee96aeb6668c3564ecc0e2231e63b736370d054bedd7f803849c",
+        "public_sha256": "94c0c75b922eee96aeb6668c3564ecc0e2231e63b736370d054bedd7f803849c",
+        "bytes": 628
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bind-single-final/verify-89cf09983578.json",
+        "public_path": "2026-11-07/p8-final-dispatch/bind-single-final/verify-89cf09983578.json",
+        "original_sha256": "01afe61c09fe54253794f3e1d7c44453bbd66bf1f0336bc060dfeb907002b169",
+        "public_sha256": "01afe61c09fe54253794f3e1d7c44453bbd66bf1f0336bc060dfeb907002b169",
+        "bytes": 890881
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bind-single-final/verify-89cf09983578.log",
+        "public_path": "2026-11-07/p8-final-dispatch/bind-single-final/verify-89cf09983578.log",
+        "original_sha256": "8e0028afa8d29d806be0828214911a00b9a4e13c49b2cf84a61c75beaa44313c",
+        "public_sha256": "8e0028afa8d29d806be0828214911a00b9a4e13c49b2cf84a61c75beaa44313c",
+        "bytes": 5046
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bind-single-final/verify-9653c78abe44.json",
+        "public_path": "2026-11-07/p8-final-dispatch/bind-single-final/verify-9653c78abe44.json",
+        "original_sha256": "c6a0cade171b33c1bbe60fe1d7973a3f826708cb5d30862cbce57a3519f6be01",
+        "public_sha256": "c6a0cade171b33c1bbe60fe1d7973a3f826708cb5d30862cbce57a3519f6be01",
+        "bytes": 220540
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bind-single-final/verify-9653c78abe44.log",
+        "public_path": "2026-11-07/p8-final-dispatch/bind-single-final/verify-9653c78abe44.log",
+        "original_sha256": "d2468bfc7cd0bf5424be70120095e71b575c6c18eb428443bb265fe0853e44e8",
+        "public_sha256": "d2468bfc7cd0bf5424be70120095e71b575c6c18eb428443bb265fe0853e44e8",
+        "bytes": 1889
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bind-single-final/verify-aee8d03e85ce.json",
+        "public_path": "2026-11-07/p8-final-dispatch/bind-single-final/verify-aee8d03e85ce.json",
+        "original_sha256": "a550c88c7c26e97daacaf9f96c4b3d5753eb2dcab3584e1b66e1cf9985fdef33",
+        "public_sha256": "a550c88c7c26e97daacaf9f96c4b3d5753eb2dcab3584e1b66e1cf9985fdef33",
+        "bytes": 221397
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bind-single-final/verify-aee8d03e85ce.log",
+        "public_path": "2026-11-07/p8-final-dispatch/bind-single-final/verify-aee8d03e85ce.log",
+        "original_sha256": "3da732cd6d34def3e76e783b1b8a0056c9792ce49b12b583a462c6e3c7b28488",
+        "public_sha256": "3da732cd6d34def3e76e783b1b8a0056c9792ce49b12b583a462c6e3c7b28488",
+        "bytes": 2529
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bind-single-final/verify-c2388e732a95.json",
+        "public_path": "2026-11-07/p8-final-dispatch/bind-single-final/verify-c2388e732a95.json",
+        "original_sha256": "9a37cd35493bfe80b41720efa82e6f1a2f07a3e177304e76cd63a9850c391a06",
+        "public_sha256": "9a37cd35493bfe80b41720efa82e6f1a2f07a3e177304e76cd63a9850c391a06",
+        "bytes": 886658
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bind-single-final/verify-c2388e732a95.log",
+        "public_path": "2026-11-07/p8-final-dispatch/bind-single-final/verify-c2388e732a95.log",
+        "original_sha256": "e32304724dbc3bfc39d6029e9663c5d24006d42c9f99488e0b2937e9a09483ba",
+        "public_sha256": "e32304724dbc3bfc39d6029e9663c5d24006d42c9f99488e0b2937e9a09483ba",
+        "bytes": 1908
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bind-single-final/verify-f0d078d72c43.json",
+        "public_path": "2026-11-07/p8-final-dispatch/bind-single-final/verify-f0d078d72c43.json",
+        "original_sha256": "6d845212d9016e0e9731a9af4b3d2ff09b04d952d664ad09789480e92edeb556",
+        "public_sha256": "6d845212d9016e0e9731a9af4b3d2ff09b04d952d664ad09789480e92edeb556",
+        "bytes": 887491
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bind-single-final/verify-f0d078d72c43.log",
+        "public_path": "2026-11-07/p8-final-dispatch/bind-single-final/verify-f0d078d72c43.log",
+        "original_sha256": "93a89f6d609283cca9fef2388fda73adeee7885b4bb4506e9ee50c8837bde872",
+        "public_sha256": "93a89f6d609283cca9fef2388fda73adeee7885b4bb4506e9ee50c8837bde872",
+        "bytes": 2524
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bind-single-final/verify-f1fc1c214e8c.json",
+        "public_path": "2026-11-07/p8-final-dispatch/bind-single-final/verify-f1fc1c214e8c.json",
+        "original_sha256": "a879dc0902c36d85a38bf50a21720dd37c667323476ae7646148db5fb7ae845c",
+        "public_sha256": "a879dc0902c36d85a38bf50a21720dd37c667323476ae7646148db5fb7ae845c",
+        "bytes": 219664
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bind-single-final/verify-f1fc1c214e8c.log",
+        "public_path": "2026-11-07/p8-final-dispatch/bind-single-final/verify-f1fc1c214e8c.log",
+        "original_sha256": "06d4ccd1142887706fec4154057dd8f5ea74563e3140daa1ae784c5c575d5584",
+        "public_sha256": "06d4ccd1142887706fec4154057dd8f5ea74563e3140daa1ae784c5c575d5584",
+        "bytes": 1230
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bind-tp4-final/bind-results.tgz",
+        "public_path": "2026-11-07/p8-final-dispatch/bind-tp4-final/bind-results.tgz",
+        "original_sha256": "f52ec31d64d9eeef058e5fcaf3fa1cfb215fbf14c4c4dd2743dec08685fc53e8",
+        "public_sha256": "f52ec31d64d9eeef058e5fcaf3fa1cfb215fbf14c4c4dd2743dec08685fc53e8",
+        "bytes": 416647
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bind-tp4-final/loaded-native.json",
+        "public_path": "2026-11-07/p8-final-dispatch/bind-tp4-final/loaded-native.json",
+        "original_sha256": "b0524ce783a9ee8b68ddc0f2b18fb0137efc66cbdc9b3891c06bd8cc0f8d9b01",
+        "public_sha256": "b0524ce783a9ee8b68ddc0f2b18fb0137efc66cbdc9b3891c06bd8cc0f8d9b01",
+        "bytes": 842
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bind-tp4-final/p8-tp4-bind.sh",
+        "public_path": "2026-11-07/p8-final-dispatch/bind-tp4-final/p8-tp4-bind.sh",
+        "original_sha256": "d5006c88a1467ed85303a3716735727b63c14f875b785f32cbb5ada4802e34b4",
+        "public_sha256": "d5006c88a1467ed85303a3716735727b63c14f875b785f32cbb5ada4802e34b4",
+        "bytes": 1378
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bind-tp4-final/source-runtime.tgz",
+        "public_path": "2026-11-07/p8-final-dispatch/bind-tp4-final/source-runtime.tgz",
+        "original_sha256": "6cb70459f47602b452584ce21354a3e95d2c97d85565035e97fca07f15df8267",
+        "public_sha256": "8ef612ddb427746aa1dbcd4af0df52219d325db8efe2224d69f8570f306993ce",
+        "bytes": 2433952
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bind-tp4-final/verify-660bbec902c4.json",
+        "public_path": "2026-11-07/p8-final-dispatch/bind-tp4-final/verify-660bbec902c4.json",
+        "original_sha256": "5bf927867bf3ccc539fab48f66c73fa637124e5348288156a7cbdafb9dd8e191",
+        "public_sha256": "5bf927867bf3ccc539fab48f66c73fa637124e5348288156a7cbdafb9dd8e191",
+        "bytes": 885368
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bind-tp4-final/verify-660bbec902c4.log",
+        "public_path": "2026-11-07/p8-final-dispatch/bind-tp4-final/verify-660bbec902c4.log",
+        "original_sha256": "34a5e84876251ddb64097d49ec19fb056a03149c13692d121e6da36bc7f6966b",
+        "public_sha256": "34a5e84876251ddb64097d49ec19fb056a03149c13692d121e6da36bc7f6966b",
+        "bytes": 4163
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bind-tp4-final/verify-79adeb1d054c.json",
+        "public_path": "2026-11-07/p8-final-dispatch/bind-tp4-final/verify-79adeb1d054c.json",
+        "original_sha256": "989932dc118fd3fc9433b32b9ac66e1623e8cdb4745fec98ae41d01ec784985b",
+        "public_sha256": "989932dc118fd3fc9433b32b9ac66e1623e8cdb4745fec98ae41d01ec784985b",
+        "bytes": 886326
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bind-tp4-final/verify-79adeb1d054c.log",
+        "public_path": "2026-11-07/p8-final-dispatch/bind-tp4-final/verify-79adeb1d054c.log",
+        "original_sha256": "9adb72dfb0f1e2fed76a6c8815aa90c6725222c9e8cf3403a41013aea5adfd50",
+        "public_sha256": "9adb72dfb0f1e2fed76a6c8815aa90c6725222c9e8cf3403a41013aea5adfd50",
+        "bytes": 6791
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bind-tp4-final/verify-e57a8a58f8fa.json",
+        "public_path": "2026-11-07/p8-final-dispatch/bind-tp4-final/verify-e57a8a58f8fa.json",
+        "original_sha256": "321aab579ffd62db6c28a013aa7b8533f933d23a4692e3114e19e91b99a992ec",
+        "public_sha256": "321aab579ffd62db6c28a013aa7b8533f933d23a4692e3114e19e91b99a992ec",
+        "bytes": 145831
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bind-tp4-final/verify-e57a8a58f8fa.log",
+        "public_path": "2026-11-07/p8-final-dispatch/bind-tp4-final/verify-e57a8a58f8fa.log",
+        "original_sha256": "5f2582d01499df849d38828177d6c171b70d8411f4f14f9674d64d035100ca10",
+        "public_sha256": "5f2582d01499df849d38828177d6c171b70d8411f4f14f9674d64d035100ca10",
+        "bytes": 14039
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bundles/p2-native-artifact.data.json",
+        "public_path": "2026-11-07/p8-final-dispatch/bundles/p2-native-artifact.data.json",
+        "original_sha256": "93bc89a0d6d58adb81107b00646f5803e52a72d8993d5ed0d078c5908f4cbc6e",
+        "public_sha256": "93bc89a0d6d58adb81107b00646f5803e52a72d8993d5ed0d078c5908f4cbc6e",
+        "bytes": 882627
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bundles/p2.json",
+        "public_path": "2026-11-07/p8-final-dispatch/bundles/p2.json",
+        "original_sha256": "42959100720b0cf3427fa12a8884f32c7950e848f0dbe98c035e27b5861287f5",
+        "public_sha256": "34eedb8ae2ead898562d40a08d4946e2bdc776d782f073e124a16f1048c77ac5",
+        "bytes": 1328
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bundles/p3-composition-native-artifact.data.json",
+        "public_path": "2026-11-07/p8-final-dispatch/bundles/p3-composition-native-artifact.data.json",
+        "original_sha256": "b0617f1fb7eb168ee9a48ed09c3561cc603bf1770087d8f77c4f22bc9397f313",
+        "public_sha256": "b0617f1fb7eb168ee9a48ed09c3561cc603bf1770087d8f77c4f22bc9397f313",
+        "bytes": 146918
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bundles/p3-composition.json",
+        "public_path": "2026-11-07/p8-final-dispatch/bundles/p3-composition.json",
+        "original_sha256": "54989850f7dae3f0e936cba12522cdfd8805ee9774f28d980c39446847deb277",
+        "public_sha256": "75343b221004f42278ad648140415bccad8c9a21b3c3888e7b9ee07c6942b3ef",
+        "bytes": 889
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bundles/p3-ratio1-native-artifact.data.json",
+        "public_path": "2026-11-07/p8-final-dispatch/bundles/p3-ratio1-native-artifact.data.json",
+        "original_sha256": "b0617f1fb7eb168ee9a48ed09c3561cc603bf1770087d8f77c4f22bc9397f313",
+        "public_sha256": "b0617f1fb7eb168ee9a48ed09c3561cc603bf1770087d8f77c4f22bc9397f313",
+        "bytes": 146918
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bundles/p3-ratio1.json",
+        "public_path": "2026-11-07/p8-final-dispatch/bundles/p3-ratio1.json",
+        "original_sha256": "5a53e436e7a4b94dd06cbfefe70b2bd8fa7c2aec2a68a24c2d8319118ed3e3af",
+        "public_sha256": "4fecdbeccf18229477fedad66a710b5e7bec0cd6901306c9399618b9598b18fb",
+        "bytes": 1367
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bundles/p3-ratio2-native-artifact.data.json",
+        "public_path": "2026-11-07/p8-final-dispatch/bundles/p3-ratio2-native-artifact.data.json",
+        "original_sha256": "b0617f1fb7eb168ee9a48ed09c3561cc603bf1770087d8f77c4f22bc9397f313",
+        "public_sha256": "b0617f1fb7eb168ee9a48ed09c3561cc603bf1770087d8f77c4f22bc9397f313",
+        "bytes": 146918
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bundles/p3-ratio2.json",
+        "public_path": "2026-11-07/p8-final-dispatch/bundles/p3-ratio2.json",
+        "original_sha256": "9ac3c1e47a3d7165a7addb07e3745d4d4655728f185f9b088e8b9925e4273e78",
+        "public_sha256": "74b446a657d3fcede1158004534ef235fbf911cb3078b0e0f451dedf3ea4c6cf",
+        "bytes": 1367
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bundles/p4-native-artifact.data.json",
+        "public_path": "2026-11-07/p8-final-dispatch/bundles/p4-native-artifact.data.json",
+        "original_sha256": "fd7b4b53f408baeb7263a71dfd54e3ea9d0095bff6a5dbb43f4ee1227f5c674c",
+        "public_sha256": "fd7b4b53f408baeb7263a71dfd54e3ea9d0095bff6a5dbb43f4ee1227f5c674c",
+        "bytes": 850100
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bundles/p4.json",
+        "public_path": "2026-11-07/p8-final-dispatch/bundles/p4.json",
+        "original_sha256": "1b7fc4cce4191ceebe4347fe6fab065fc54fc52c89d88871accd88999b8c6245",
+        "public_sha256": "ac502b9f3fcaa71402b4fce17a0706293877f15d17dd68c486442f341be5091a",
+        "bytes": 2155
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bundles/p5-matrix-native-artifact.data.json",
+        "public_path": "2026-11-07/p8-final-dispatch/bundles/p5-matrix-native-artifact.data.json",
+        "original_sha256": "fd7b4b53f408baeb7263a71dfd54e3ea9d0095bff6a5dbb43f4ee1227f5c674c",
+        "public_sha256": "fd7b4b53f408baeb7263a71dfd54e3ea9d0095bff6a5dbb43f4ee1227f5c674c",
+        "bytes": 850100
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bundles/p5-matrix.json",
+        "public_path": "2026-11-07/p8-final-dispatch/bundles/p5-matrix.json",
+        "original_sha256": "39405e06050537a0d9b40be1dc7263eac6fd3ee4e624d9876aa1aa9bab843c60",
+        "public_sha256": "12f7903a2a5d0d30c0787df6d7cb86c3f32931c97b933d4d5e80e631a68c673c",
+        "bytes": 2180
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bundles/p5-smoke-native-artifact.data.json",
+        "public_path": "2026-11-07/p8-final-dispatch/bundles/p5-smoke-native-artifact.data.json",
+        "original_sha256": "fd7b4b53f408baeb7263a71dfd54e3ea9d0095bff6a5dbb43f4ee1227f5c674c",
+        "public_sha256": "fd7b4b53f408baeb7263a71dfd54e3ea9d0095bff6a5dbb43f4ee1227f5c674c",
+        "bytes": 850100
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bundles/p5-smoke.json",
+        "public_path": "2026-11-07/p8-final-dispatch/bundles/p5-smoke.json",
+        "original_sha256": "13a1b9ba4cbfadbf775f0d09d7fb0587cd155167ad936e894ef80ca60182b62b",
+        "public_sha256": "e9f984dbbddb6a2c6db050234e5e90a84f5854b7b8d4f9a822231cd920efbc85",
+        "bytes": 2177
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bundles/p6-native-artifact.data.json",
+        "public_path": "2026-11-07/p8-final-dispatch/bundles/p6-native-artifact.data.json",
+        "original_sha256": "51ecc0d549202e3757abe67856c2ada74ffe5d754f6ccde642ed362e26d570f1",
+        "public_sha256": "51ecc0d549202e3757abe67856c2ada74ffe5d754f6ccde642ed362e26d570f1",
+        "bytes": 882595
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bundles/p6.json",
+        "public_path": "2026-11-07/p8-final-dispatch/bundles/p6.json",
+        "original_sha256": "f82a9148c17f663f80c09f2857d5b28bebcee0e5bc2d0bd4a11dac2449912c4b",
+        "public_sha256": "d4ffbcbb652ef9b357ece8f66eb4895356be3143bae3ecf2734a9395878fa9f3",
+        "bytes": 1325
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bundles/p7-compact-extra-shapes-native-artifact.data.json",
+        "public_path": "2026-11-07/p8-final-dispatch/bundles/p7-compact-extra-shapes-native-artifact.data.json",
+        "original_sha256": "9bf7767a184a504a8ce6fde551d0a0e659b52360df1cb7b366b01616353ea471",
+        "public_sha256": "9bf7767a184a504a8ce6fde551d0a0e659b52360df1cb7b366b01616353ea471",
+        "bytes": 1461
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bundles/p7-compact-extra-shapes.json",
+        "public_path": "2026-11-07/p8-final-dispatch/bundles/p7-compact-extra-shapes.json",
+        "original_sha256": "8cff14357354bad8c235e5cbab9816f32d8d4148cee5d81f283cad4746bb7272",
+        "public_sha256": "cfb4ca737b6f31efb3f770b812815e419b9a8db4ec6fbfaa9e213b7cea2c9fd2",
+        "bytes": 941
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bundles/p7-compact-final-recheck-native-artifact.data.json",
+        "public_path": "2026-11-07/p8-final-dispatch/bundles/p7-compact-final-recheck-native-artifact.data.json",
+        "original_sha256": "9bf7767a184a504a8ce6fde551d0a0e659b52360df1cb7b366b01616353ea471",
+        "public_sha256": "9bf7767a184a504a8ce6fde551d0a0e659b52360df1cb7b366b01616353ea471",
+        "bytes": 1461
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bundles/p7-compact-final-recheck.json",
+        "public_path": "2026-11-07/p8-final-dispatch/bundles/p7-compact-final-recheck.json",
+        "original_sha256": "abcb2c2a207dc578f69e861f379716270d0c9f126a49ac911552c6ff560ba947",
+        "public_sha256": "b8d225d0fbd246f4584fe3c48e5e5f0509f0bec7353206d0ad045aa4dee2046f",
+        "bytes": 945
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bundles/p7-compact-final-v3-native-artifact.data.json",
+        "public_path": "2026-11-07/p8-final-dispatch/bundles/p7-compact-final-v3-native-artifact.data.json",
+        "original_sha256": "fd7b4b53f408baeb7263a71dfd54e3ea9d0095bff6a5dbb43f4ee1227f5c674c",
+        "public_sha256": "fd7b4b53f408baeb7263a71dfd54e3ea9d0095bff6a5dbb43f4ee1227f5c674c",
+        "bytes": 850100
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bundles/p7-compact-final-v3.json",
+        "public_path": "2026-11-07/p8-final-dispatch/bundles/p7-compact-final-v3.json",
+        "original_sha256": "ff7cc8d7562292ff93e2cbccd4cfd45343de3579966826684bd31a5ba10e2b12",
+        "public_sha256": "71d947a1a2dcd08f515d8cd6dffc70abd4c990bde0868ea1d0e47adda71d873d",
+        "bytes": 774
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bundles/p7-native-full-chain-native-artifact.data.json",
+        "public_path": "2026-11-07/p8-final-dispatch/bundles/p7-native-full-chain-native-artifact.data.json",
+        "original_sha256": "85ef44b29f38dc782f4201496da97a4c91e72da4bf2e2a21ce3f31f41f8b062d",
+        "public_sha256": "85ef44b29f38dc782f4201496da97a4c91e72da4bf2e2a21ce3f31f41f8b062d",
+        "bytes": 75652
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bundles/p7-native-full-chain.json",
+        "public_path": "2026-11-07/p8-final-dispatch/bundles/p7-native-full-chain.json",
+        "original_sha256": "163bfbb1dce11266364a628fc744011df93bbb4b5774324aca900ddbaa3b4b8c",
+        "public_sha256": "2a4f924cce9853c77b0db5ef178fb393768a0ef6cf4cd3f372493c8c03b4b751",
+        "bytes": 929
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bundles/p7-native-stable-full-chain-native-artifact.data.json",
+        "public_path": "2026-11-07/p8-final-dispatch/bundles/p7-native-stable-full-chain-native-artifact.data.json",
+        "original_sha256": "59c042659e6fe328cb7ac205560a396a6f13b91c7fe7ad0982d0bbf9c53b4cae",
+        "public_sha256": "59c042659e6fe328cb7ac205560a396a6f13b91c7fe7ad0982d0bbf9c53b4cae",
+        "bytes": 74223
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bundles/p7-native-stable-full-chain.json",
+        "public_path": "2026-11-07/p8-final-dispatch/bundles/p7-native-stable-full-chain.json",
+        "original_sha256": "f9f90d77b8a5650dcaded5cc51c7909741e915ab368c266af6e19ac23fc06977",
+        "public_sha256": "9bc31490711a06b4b6a0031bea957e01c96a7f373229d5bea282eae28b3047a1",
+        "bytes": 880
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bundles/p7-projection-final-recheck-native-artifact.data.json",
+        "public_path": "2026-11-07/p8-final-dispatch/bundles/p7-projection-final-recheck-native-artifact.data.json",
+        "original_sha256": "9bf7767a184a504a8ce6fde551d0a0e659b52360df1cb7b366b01616353ea471",
+        "public_sha256": "9bf7767a184a504a8ce6fde551d0a0e659b52360df1cb7b366b01616353ea471",
+        "bytes": 1461
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bundles/p7-projection-final-recheck.json",
+        "public_path": "2026-11-07/p8-final-dispatch/bundles/p7-projection-final-recheck.json",
+        "original_sha256": "f026f3e29f00bec9c7ef16d0811d96a385bf80ebbe97933900c2204a985f5ebc",
+        "public_sha256": "9ef4c7e2a27b29ec9032db463a10c895bcf9b708a908465143a91da047a4d60a",
+        "bytes": 957
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bundles/p7-projection-final-v3-native-artifact.data.json",
+        "public_path": "2026-11-07/p8-final-dispatch/bundles/p7-projection-final-v3-native-artifact.data.json",
+        "original_sha256": "fd7b4b53f408baeb7263a71dfd54e3ea9d0095bff6a5dbb43f4ee1227f5c674c",
+        "public_sha256": "fd7b4b53f408baeb7263a71dfd54e3ea9d0095bff6a5dbb43f4ee1227f5c674c",
+        "bytes": 850100
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bundles/p7-projection-final-v3.json",
+        "public_path": "2026-11-07/p8-final-dispatch/bundles/p7-projection-final-v3.json",
+        "original_sha256": "2668c5f2b7c82c44147fdb655ba16ad7e018c13dbe2e91b90decd7eb56f9de74",
+        "public_sha256": "e82035a8e1ec94b458cac8a73b7a20f0d525f29549ddd4b9448792d0e5e7c598",
+        "bytes": 786
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/development-bind-v1-not-final.json",
+        "public_path": "2026-11-07/p8-final-dispatch/development-bind-v1-not-final.json",
+        "original_sha256": "ef7bff8f23fcb2c59440ae918e61bfb56cf4e9007af5ab031bc73449b7310270",
+        "public_sha256": "ef7bff8f23fcb2c59440ae918e61bfb56cf4e9007af5ab031bc73449b7310270",
+        "bytes": 25845
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/final-p2-p6/p8-results.tgz",
+        "public_path": "2026-11-07/p8-final-dispatch/final-p2-p6/p8-results.tgz",
+        "original_sha256": "fa37e974fb8e6e4609250a1f0a150077de9e8abf07208a370f9111f8a636d9d9",
+        "public_sha256": "fa37e974fb8e6e4609250a1f0a150077de9e8abf07208a370f9111f8a636d9d9",
+        "bytes": 3225109
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/final-p2-p6/results/STATUS",
+        "public_path": "2026-11-07/p8-final-dispatch/final-p2-p6/results/STATUS",
+        "original_sha256": "d3be030801b90ea8057d3997d9845c7f850cc7b784450645d5ec2811cc927d7a",
+        "public_sha256": "d3be030801b90ea8057d3997d9845c7f850cc7b784450645d5ec2811cc927d7a",
+        "bytes": 10
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/final-p2-p6/results/freeze.log",
+        "public_path": "2026-11-07/p8-final-dispatch/final-p2-p6/results/freeze.log",
+        "original_sha256": "bff882d45e12acb01e7d612e47a1c3fe4bf8eed1756403db97f01a8d2e294cba",
+        "public_sha256": "bff882d45e12acb01e7d612e47a1c3fe4bf8eed1756403db97f01a8d2e294cba",
+        "bytes": 79
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/final-p2-p6/results/frozen/native-include.tgz",
+        "public_path": "2026-11-07/p8-final-dispatch/final-p2-p6/results/frozen/native-include.tgz",
+        "original_sha256": "6392723d0bddde0e44ff6a7fdfb8ccfe991980cf560043305530ce03febaab88",
+        "public_sha256": "6392723d0bddde0e44ff6a7fdfb8ccfe991980cf560043305530ce03febaab88",
+        "bytes": 2455580
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/final-p2-p6/results/frozen/run.sh",
+        "public_path": "2026-11-07/p8-final-dispatch/final-p2-p6/results/frozen/run.sh",
+        "original_sha256": "917bdeff3855b7f9883f1b97b957f2c9c2c3bdfd9bee38aedaa09050f07bfe9a",
+        "public_sha256": "917bdeff3855b7f9883f1b97b957f2c9c2c3bdfd9bee38aedaa09050f07bfe9a",
+        "bytes": 1770
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/final-p2-p6/results/frozen/source.json",
+        "public_path": "2026-11-07/p8-final-dispatch/final-p2-p6/results/frozen/source.json",
+        "original_sha256": "50b8bb13b9896981f8d5a1b5bc336eb1f11dd66e38c98dd7d0f304f20a1d9122",
+        "public_sha256": "50b8bb13b9896981f8d5a1b5bc336eb1f11dd66e38c98dd7d0f304f20a1d9122",
+        "bytes": 160081
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/final-p2-p6/results/frozen/source.tgz",
+        "public_path": "2026-11-07/p8-final-dispatch/final-p2-p6/results/frozen/source.tgz",
+        "original_sha256": "55def05b3321e3b70f9268596945bdefd105ab9432a2d944dc16e4b84e02ce3e",
+        "public_sha256": "55def05b3321e3b70f9268596945bdefd105ab9432a2d944dc16e4b84e02ce3e",
+        "bytes": 126642
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/final-p2-p6/results/launcher.log",
+        "public_path": "2026-11-07/p8-final-dispatch/final-p2-p6/results/launcher.log",
+        "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/final-p2-p6/results/p2/forward.json",
+        "public_path": "2026-11-07/p8-final-dispatch/final-p2-p6/results/p2/forward.json",
+        "original_sha256": "a7e46d14f58247c91554dafdec5888e219d7dec3d17d08fb24d93373763b08b5",
+        "public_sha256": "a7e46d14f58247c91554dafdec5888e219d7dec3d17d08fb24d93373763b08b5",
+        "bytes": 952319
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/final-p2-p6/results/p2/forward.log",
+        "public_path": "2026-11-07/p8-final-dispatch/final-p2-p6/results/p2/forward.log",
+        "original_sha256": "f1be677ca18d5a66de7254cd0ff5ed38ede2997446cc1c5435ab447a6aa68c2c",
+        "public_sha256": "f1be677ca18d5a66de7254cd0ff5ed38ede2997446cc1c5435ab447a6aa68c2c",
+        "bytes": 36062
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/final-p2-p6/results/p2/reverse.json",
+        "public_path": "2026-11-07/p8-final-dispatch/final-p2-p6/results/p2/reverse.json",
+        "original_sha256": "54b73260edb0d7f2af34b31f04a4d2194aea125d5148565e69e836c745e3994b",
+        "public_sha256": "54b73260edb0d7f2af34b31f04a4d2194aea125d5148565e69e836c745e3994b",
+        "bytes": 944984
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/final-p2-p6/results/p2/reverse.log",
+        "public_path": "2026-11-07/p8-final-dispatch/final-p2-p6/results/p2/reverse.log",
+        "original_sha256": "1abe98586e3b1f5c64b2adc000a405fe77e687465294bb1db08404ad381cb903",
+        "public_sha256": "1abe98586e3b1f5c64b2adc000a405fe77e687465294bb1db08404ad381cb903",
+        "bytes": 36084
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/final-p2-p6/results/p2/verify.json",
+        "public_path": "2026-11-07/p8-final-dispatch/final-p2-p6/results/p2/verify.json",
+        "original_sha256": "f23f0c2d01a7bd74c830a1f056283df744d34349048e48cd3cead7191787e4b5",
+        "public_sha256": "f23f0c2d01a7bd74c830a1f056283df744d34349048e48cd3cead7191787e4b5",
+        "bytes": 3821
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/final-p2-p6/results/p2/verify.log",
+        "public_path": "2026-11-07/p8-final-dispatch/final-p2-p6/results/p2/verify.log",
+        "original_sha256": "c74dc877679ed551ee0cbc959f3ccb6ba43782d1a2c089ce28b670a3f2ce8e31",
+        "public_sha256": "c74dc877679ed551ee0cbc959f3ccb6ba43782d1a2c089ce28b670a3f2ce8e31",
+        "bytes": 52
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/final-p2-p6/results/p6/forward.json",
+        "public_path": "2026-11-07/p8-final-dispatch/final-p2-p6/results/p6/forward.json",
+        "original_sha256": "63f58018978bfde3fbf006c6b1ad3245d7b10ee903b6c9a33b00c7a695ba1fd1",
+        "public_sha256": "63f58018978bfde3fbf006c6b1ad3245d7b10ee903b6c9a33b00c7a695ba1fd1",
+        "bytes": 661691
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/final-p2-p6/results/p6/forward.log",
+        "public_path": "2026-11-07/p8-final-dispatch/final-p2-p6/results/p6/forward.log",
+        "original_sha256": "dc253198ce5efcc289aa7a5522654eda6e8193d1c1d5138d49ce3941d3002f4d",
+        "public_sha256": "dc253198ce5efcc289aa7a5522654eda6e8193d1c1d5138d49ce3941d3002f4d",
+        "bytes": 13416
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/final-p2-p6/results/p6/reverse.json",
+        "public_path": "2026-11-07/p8-final-dispatch/final-p2-p6/results/p6/reverse.json",
+        "original_sha256": "9a44b407548e150d84cbd1a97789fddd0b8d02720f5d6c8d6ec9657ee9730a3a",
+        "public_sha256": "9a44b407548e150d84cbd1a97789fddd0b8d02720f5d6c8d6ec9657ee9730a3a",
+        "bytes": 717246
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/final-p2-p6/results/p6/reverse.log",
+        "public_path": "2026-11-07/p8-final-dispatch/final-p2-p6/results/p6/reverse.log",
+        "original_sha256": "af93a203f0580e62d4d579fe08a9370a8fa95d73fe4bc7d1f52650c7a0cb12a6",
+        "public_sha256": "af93a203f0580e62d4d579fe08a9370a8fa95d73fe4bc7d1f52650c7a0cb12a6",
+        "bytes": 13421
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/final-p2-p6/results/p6/verify.json",
+        "public_path": "2026-11-07/p8-final-dispatch/final-p2-p6/results/p6/verify.json",
+        "original_sha256": "8207ccd0c3cc1534e957da9c59e4c2f384a8424ee5f3d36eb01057f8f26e3585",
+        "public_sha256": "8207ccd0c3cc1534e957da9c59e4c2f384a8424ee5f3d36eb01057f8f26e3585",
+        "bytes": 136078
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/final-p2-p6/results/p6/verify.log",
+        "public_path": "2026-11-07/p8-final-dispatch/final-p2-p6/results/p6/verify.log",
+        "original_sha256": "575235215167399276a37bbad06f486065c41b24bff881bc9d067836cfeb5c81",
+        "public_sha256": "575235215167399276a37bbad06f486065c41b24bff881bc9d067836cfeb5c81",
+        "bytes": 20062
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/final-p2-p6/run.sh",
+        "public_path": "2026-11-07/p8-final-dispatch/final-p2-p6/run.sh",
+        "original_sha256": "917bdeff3855b7f9883f1b97b957f2c9c2c3bdfd9bee38aedaa09050f07bfe9a",
+        "public_sha256": "917bdeff3855b7f9883f1b97b957f2c9c2c3bdfd9bee38aedaa09050f07bfe9a",
+        "bytes": 1770
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/matrix.json",
+        "public_path": "2026-11-07/p8-final-dispatch/matrix.json",
+        "original_sha256": "928a884888ab279c654c83eb1cd2b133b9a9179cebea2ec1da759d27088d92e0",
+        "public_sha256": "92d60b9e6c7c9c77c59b730f61f9e18afe852454e20764e97cd6ae019f6a1f63",
+        "bytes": 147594
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7-review-p3/REVIEW.md",
+        "public_path": "2026-11-07/p7-independent-review/REVIEW.md",
+        "original_sha256": "fc0937c6058fad9ada2160b467604fa3e0011456a3ac71fbd32c2f2e5e6131bf",
+        "public_sha256": "fc0937c6058fad9ada2160b467604fa3e0011456a3ac71fbd32c2f2e5e6131bf",
+        "bytes": 2895
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7-review-p3/native-review/ALLZERO_RESOLVED.md",
+        "public_path": "2026-11-07/p7-independent-review/native-review/ALLZERO_RESOLVED.md",
+        "original_sha256": "af4bc73baaa6a322a1624cadcce39867099600e1ccdad8f92d75be124130af67",
+        "public_sha256": "af4bc73baaa6a322a1624cadcce39867099600e1ccdad8f92d75be124130af67",
+        "bytes": 749
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7-review-p3/native-review/RESOLUTION.md",
+        "public_path": "2026-11-07/p7-independent-review/native-review/RESOLUTION.md",
+        "original_sha256": "4d7af53dd1877532e7d7f11d75218f328dabd54baec5c3484ba9a20bdd0fe0e0",
+        "public_sha256": "4d7af53dd1877532e7d7f11d75218f328dabd54baec5c3484ba9a20bdd0fe0e0",
+        "bytes": 2126
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7-review-p3/native-review/audit.json",
+        "public_path": "2026-11-07/p7-independent-review/native-review/audit.json",
+        "original_sha256": "8cf76185cb8dc761c8e93bde7f855b9d3815113571041f9a36554a3394394171",
+        "public_sha256": "8cf76185cb8dc761c8e93bde7f855b9d3815113571041f9a36554a3394394171",
+        "bytes": 481
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7-review-p3/native-review/native-stable-full-chain.json",
+        "public_path": "2026-11-07/p7-independent-review/native-review/native-stable-full-chain.json",
+        "original_sha256": "03a5883a1f6d3a4761c4ddd2580904a181885d0f5df402d81ed97c2b4d424612",
+        "public_sha256": "03a5883a1f6d3a4761c4ddd2580904a181885d0f5df402d81ed97c2b4d424612",
+        "bytes": 4215019
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7-review-p3/native-review/verify-native-allzero-restore.json",
+        "public_path": "2026-11-07/p7-independent-review/native-review/verify-native-allzero-restore.json",
+        "original_sha256": "cde101e0a4a88e19dd1d46952431310249792e0a1042d5b8c23b22fa5d9c19ab",
+        "public_sha256": "cde101e0a4a88e19dd1d46952431310249792e0a1042d5b8c23b22fa5d9c19ab",
+        "bytes": 4872109
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7-review-p3/native-review/verify-native-dynamic-final-readback.json",
+        "public_path": "2026-11-07/p7-independent-review/native-review/verify-native-dynamic-final-readback.json",
+        "original_sha256": "eb5322e1ff33c1b5bf0bde3807ff90d89be7b3e5286d2615000f22b70d7b3e8a",
+        "public_sha256": "eb5322e1ff33c1b5bf0bde3807ff90d89be7b3e5286d2615000f22b70d7b3e8a",
+        "bytes": 3248813
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7-review-p3/native-review/verify-native-dynamic-final.json",
+        "public_path": "2026-11-07/p7-independent-review/native-review/verify-native-dynamic-final.json",
+        "original_sha256": "eb5322e1ff33c1b5bf0bde3807ff90d89be7b3e5286d2615000f22b70d7b3e8a",
+        "public_sha256": "eb5322e1ff33c1b5bf0bde3807ff90d89be7b3e5286d2615000f22b70d7b3e8a",
+        "bytes": 3248813
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7-review-p3/native-review/verify-native-dynamic.json",
+        "public_path": "2026-11-07/p7-independent-review/native-review/verify-native-dynamic.json",
+        "original_sha256": "49874b3ad6ce51a6199c2b3b931e8a5163293aad095cab5c281685827c8283b1",
+        "public_sha256": "49874b3ad6ce51a6199c2b3b931e8a5163293aad095cab5c281685827c8283b1",
+        "bytes": 3248813
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7-review-p3/native-review/verify_tp4-reviewed.py",
+        "public_path": "2026-11-07/p7-independent-review/native-review/verify_tp4-reviewed.py",
+        "original_sha256": "f6b50a80a2a6f318b28db327c2a4f0124ccb9d367b47502383bac761e9293b8e",
+        "public_sha256": "f6b50a80a2a6f318b28db327c2a4f0124ccb9d367b47502383bac761e9293b8e",
+        "bytes": 10087
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7-review-p3/native-review/verify_tp4-sixstep-reviewed.py",
+        "public_path": "2026-11-07/p7-independent-review/native-review/verify_tp4-sixstep-reviewed.py",
+        "original_sha256": "5d65fa431b5836995470365dd6c2cf87785669967339b2555349090aebfb42c0",
+        "public_sha256": "5d65fa431b5836995470365dd6c2cf87785669967339b2555349090aebfb42c0",
+        "bytes": 10976
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7-review-p3/repro.py",
+        "public_path": "2026-11-07/p7-independent-review/repro.py",
+        "original_sha256": "1b6889fa0bd305a819f2ef371c05091f22b932b251fb4f2861370d2a63e2269c",
+        "public_sha256": "1b6889fa0bd305a819f2ef371c05091f22b932b251fb4f2861370d2a63e2269c",
+        "bytes": 967
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7-review-p3/result.json",
+        "public_path": "2026-11-07/p7-independent-review/result.json",
+        "original_sha256": "c6123a1c5833162483eef02f35af09a0c3cdd1e4a29cc8cd44cf27958194b93f",
+        "public_sha256": "c6123a1c5833162483eef02f35af09a0c3cdd1e4a29cc8cd44cf27958194b93f",
+        "bytes": 3313
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7-review-p3/run.sh",
+        "public_path": "2026-11-07/p7-independent-review/run.sh",
+        "original_sha256": "915f5ec3e94e5d4036f3d1ea533f84a9cc3c98fcdc9840f8260f16e4a3876e53",
+        "public_sha256": "915f5ec3e94e5d4036f3d1ea533f84a9cc3c98fcdc9840f8260f16e4a3876e53",
+        "bytes": 237
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7-review-p3/source.sha256",
+        "public_path": "2026-11-07/p7-independent-review/source.sha256",
+        "original_sha256": "48717f6b1c40ff113b47df4bd12f348e282c1568dd721fcc93ecd7b82a955ad9",
+        "public_sha256": "48717f6b1c40ff113b47df4bd12f348e282c1568dd721fcc93ecd7b82a955ad9",
+        "bytes": 376
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8-cpu-review/REPORT.md",
+        "public_path": "2026-11-07/p8-independent-review/REPORT.md",
+        "original_sha256": "4869e39880e4b5e4b20db32c27704512466036375f04733f304237a8e1e887f0",
+        "public_sha256": "4869e39880e4b5e4b20db32c27704512466036375f04733f304237a8e1e887f0",
+        "bytes": 2559
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8-cpu-review/admission-single-artifact-review.json",
+        "public_path": "2026-11-07/p8-independent-review/admission-single-artifact-review.json",
+        "original_sha256": "e48a92cb7927affbfb10faa2f97416348584243c0cec9cd150d2997f095ac6d4",
+        "public_sha256": "e48a92cb7927affbfb10faa2f97416348584243c0cec9cd150d2997f095ac6d4",
+        "bytes": 1003
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8-cpu-review/admission-single-p3-review.json",
+        "public_path": "2026-11-07/p8-independent-review/admission-single-p3-review.json",
+        "original_sha256": "e48a92cb7927affbfb10faa2f97416348584243c0cec9cd150d2997f095ac6d4",
+        "public_sha256": "e48a92cb7927affbfb10faa2f97416348584243c0cec9cd150d2997f095ac6d4",
+        "bytes": 1003
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8-cpu-review/audit_admission_artifacts.py",
+        "public_path": "2026-11-07/p8-independent-review/audit_admission_artifacts.py",
+        "original_sha256": "d2b76da70cd293d9d87634dbfb4cc4188ae5bf53b5a95e10f2375db6fbbf2fda",
+        "public_sha256": "d2b76da70cd293d9d87634dbfb4cc4188ae5bf53b5a95e10f2375db6fbbf2fda",
+        "bytes": 3668
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8-cpu-review/dispatch-review-fixed.json",
+        "public_path": "2026-11-07/p8-independent-review/dispatch-review-fixed.json",
+        "original_sha256": "1f0d69a9d543ad55addb882e8193ff6fc6fd9b2492d0655e2e2dcc76e985c98d",
+        "public_sha256": "1f0d69a9d543ad55addb882e8193ff6fc6fd9b2492d0655e2e2dcc76e985c98d",
+        "bytes": 368
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8-cpu-review/dispatch-review.json",
+        "public_path": "2026-11-07/p8-independent-review/dispatch-review.json",
+        "original_sha256": "ea4423b28669277e3f7f9343aaf6a377f9618973d61e56a1d8209d9342926b9b",
+        "public_sha256": "ea4423b28669277e3f7f9343aaf6a377f9618973d61e56a1d8209d9342926b9b",
+        "bytes": 854
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8-cpu-review/p3-binding-review/REPORT.md",
+        "public_path": "2026-11-07/p8-independent-review/p3-binding-review/REPORT.md",
+        "original_sha256": "e0c01dfa915670d32e7de8581cfda969e12f8d589e6b0f79ca0a7848fa12fafa",
+        "public_sha256": "e0c01dfa915670d32e7de8581cfda969e12f8d589e6b0f79ca0a7848fa12fafa",
+        "bytes": 3823
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8-cpu-review/p3-binding-review/SHA256SUMS",
+        "public_path": "2026-11-07/p8-independent-review/p3-binding-review/ORIGINAL_PRIVATE_SHA256SUMS",
+        "original_sha256": "4d462c1ba4128776782704151ddf890f3fb5bc79ed827e3e9b124abbd3bbc534",
+        "public_sha256": "4d462c1ba4128776782704151ddf890f3fb5bc79ed827e3e9b124abbd3bbc534",
+        "bytes": 2185
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8-cpu-review/p3-binding-review/admission-all-bindings-review.json",
+        "public_path": "2026-11-07/p8-independent-review/p3-binding-review/admission-all-bindings-review.json",
+        "original_sha256": "b1aa1855600e98a311a2b9bc7bffa4a3d9e9322fd314a2c95fe4fc93f232b852",
+        "public_sha256": "b1aa1855600e98a311a2b9bc7bffa4a3d9e9322fd314a2c95fe4fc93f232b852",
+        "bytes": 3140
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8-cpu-review/p3-binding-review/admission-and-binding-review.json",
+        "public_path": "2026-11-07/p8-independent-review/p3-binding-review/admission-and-binding-review.json",
+        "original_sha256": "150d63769729a8be5f64a3df7b2cbf6e72e9ddb750bd9e924f01e1703b8ea123",
+        "public_sha256": "150d63769729a8be5f64a3df7b2cbf6e72e9ddb750bd9e924f01e1703b8ea123",
+        "bytes": 2477
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8-cpu-review/p3-binding-review/admission-combined-artifact-review.json",
+        "public_path": "2026-11-07/p8-independent-review/p3-binding-review/admission-combined-artifact-review.json",
+        "original_sha256": "3461669c7fac28c19db7661afa460119e17427e80d7dacc5d4a5cc567b903842",
+        "public_sha256": "3461669c7fac28c19db7661afa460119e17427e80d7dacc5d4a5cc567b903842",
+        "bytes": 1102
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8-cpu-review/p3-binding-review/binding-audit.json",
+        "public_path": "2026-11-07/p8-independent-review/p3-binding-review/binding-audit.json",
+        "original_sha256": "2faed48712564b3131f108e26b9d9e8da3be4d5a5e3b1c0da7dcbc02a117e2f1",
+        "public_sha256": "2faed48712564b3131f108e26b9d9e8da3be4d5a5e3b1c0da7dcbc02a117e2f1",
+        "bytes": 4000
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8-cpu-review/p3-binding-review/loaded-native.json",
+        "public_path": "2026-11-07/p8-independent-review/p3-binding-review/loaded-native.json",
+        "original_sha256": "e32c91d87d92eb611bd8f87827bb2fffd6c3f5cc36e5ed7411500b9f701858a3",
+        "public_sha256": "e32c91d87d92eb611bd8f87827bb2fffd6c3f5cc36e5ed7411500b9f701858a3",
+        "bytes": 798
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8-cpu-review/p3-binding-review/p7-followup/ALLZERO_RESOLVED.md",
+        "public_path": "2026-11-07/p8-independent-review/p3-binding-review/p7-followup/ALLZERO_RESOLVED.md",
+        "original_sha256": "af4bc73baaa6a322a1624cadcce39867099600e1ccdad8f92d75be124130af67",
+        "public_sha256": "af4bc73baaa6a322a1624cadcce39867099600e1ccdad8f92d75be124130af67",
+        "bytes": 749
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8-cpu-review/p3-binding-review/p8-dispatch-gpu0.sh",
+        "public_path": "2026-11-07/p8-independent-review/p3-binding-review/p8-dispatch-gpu0.sh",
+        "original_sha256": "2d8f2a38ec1f7832cee4e6550115ebdea6e8226794f9ccf664af85a224630221",
+        "public_sha256": "2d8f2a38ec1f7832cee4e6550115ebdea6e8226794f9ccf664af85a224630221",
+        "bytes": 1179
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8-cpu-review/p3-binding-review/p8-dispatch-gpu1.sh",
+        "public_path": "2026-11-07/p8-independent-review/p3-binding-review/p8-dispatch-gpu1.sh",
+        "original_sha256": "d706dbfe6c146fcf62ccb16cd5df7c39b18622862e4e279d51dcc1cba12a488d",
+        "public_sha256": "d706dbfe6c146fcf62ccb16cd5df7c39b18622862e4e279d51dcc1cba12a488d",
+        "bytes": 1179
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8-cpu-review/p3-binding-review/p8-dispatch-gpu2.sh",
+        "public_path": "2026-11-07/p8-independent-review/p3-binding-review/p8-dispatch-gpu2.sh",
+        "original_sha256": "ead031e617ca9cf62dfe23db3eb60c0a3796803cbc69488a9af1e1b1fa2e127e",
+        "public_sha256": "ead031e617ca9cf62dfe23db3eb60c0a3796803cbc69488a9af1e1b1fa2e127e",
+        "bytes": 891
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8-cpu-review/p3-binding-review/tp4/binding-audit.json",
+        "public_path": "2026-11-07/p8-independent-review/p3-binding-review/tp4/binding-audit.json",
+        "original_sha256": "0578120e3e685580ee9271278bc82c74ce6203ed089242d5e6002706bdeef3af",
+        "public_sha256": "0578120e3e685580ee9271278bc82c74ce6203ed089242d5e6002706bdeef3af",
+        "bytes": 1489
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8-cpu-review/p3-binding-review/tp4/loaded-native.json",
+        "public_path": "2026-11-07/p8-independent-review/p3-binding-review/tp4/loaded-native.json",
+        "original_sha256": "e32c91d87d92eb611bd8f87827bb2fffd6c3f5cc36e5ed7411500b9f701858a3",
+        "public_sha256": "e32c91d87d92eb611bd8f87827bb2fffd6c3f5cc36e5ed7411500b9f701858a3",
+        "bytes": 798
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8-cpu-review/p3-binding-review/tp4/p8-tp4-bind.sh",
+        "public_path": "2026-11-07/p8-independent-review/p3-binding-review/tp4/p8-tp4-bind.sh",
+        "original_sha256": "d5006c88a1467ed85303a3716735727b63c14f875b785f32cbb5ada4802e34b4",
+        "public_sha256": "d5006c88a1467ed85303a3716735727b63c14f875b785f32cbb5ada4802e34b4",
+        "bytes": 1378
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8-cpu-review/p3-binding-review/tp4/verify-660bbec902c4.json",
+        "public_path": "2026-11-07/p8-independent-review/p3-binding-review/tp4/verify-660bbec902c4.json",
+        "original_sha256": "5bf927867bf3ccc539fab48f66c73fa637124e5348288156a7cbdafb9dd8e191",
+        "public_sha256": "5bf927867bf3ccc539fab48f66c73fa637124e5348288156a7cbdafb9dd8e191",
+        "bytes": 885368
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8-cpu-review/p3-binding-review/tp4/verify-79adeb1d054c.json",
+        "public_path": "2026-11-07/p8-independent-review/p3-binding-review/tp4/verify-79adeb1d054c.json",
+        "original_sha256": "989932dc118fd3fc9433b32b9ac66e1623e8cdb4745fec98ae41d01ec784985b",
+        "public_sha256": "989932dc118fd3fc9433b32b9ac66e1623e8cdb4745fec98ae41d01ec784985b",
+        "bytes": 886326
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8-cpu-review/p3-binding-review/tp4/verify-e57a8a58f8fa.json",
+        "public_path": "2026-11-07/p8-independent-review/p3-binding-review/tp4/verify-e57a8a58f8fa.json",
+        "original_sha256": "321aab579ffd62db6c28a013aa7b8533f933d23a4692e3114e19e91b99a992ec",
+        "public_sha256": "321aab579ffd62db6c28a013aa7b8533f933d23a4692e3114e19e91b99a992ec",
+        "bytes": 145831
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8-cpu-review/p3-binding-review/verify-7414f0932e1e.json",
+        "public_path": "2026-11-07/p8-independent-review/p3-binding-review/verify-7414f0932e1e.json",
+        "original_sha256": "bca4a060dbdfa02c32276af272791dcb4e95d56de9a16f4d30a6d0a083f96d86",
+        "public_sha256": "bca4a060dbdfa02c32276af272791dcb4e95d56de9a16f4d30a6d0a083f96d86",
+        "bytes": 886610
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8-cpu-review/p3-binding-review/verify-8528280c7188.json",
+        "public_path": "2026-11-07/p8-independent-review/p3-binding-review/verify-8528280c7188.json",
+        "original_sha256": "43ae6d4c1b266cd0e11aa97b27519933764be0117200e1b4cecceceea4c88f69",
+        "public_sha256": "43ae6d4c1b266cd0e11aa97b27519933764be0117200e1b4cecceceea4c88f69",
+        "bytes": 884944
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8-cpu-review/p3-binding-review/verify-89cf09983578.json",
+        "public_path": "2026-11-07/p8-independent-review/p3-binding-review/verify-89cf09983578.json",
+        "original_sha256": "01afe61c09fe54253794f3e1d7c44453bbd66bf1f0336bc060dfeb907002b169",
+        "public_sha256": "01afe61c09fe54253794f3e1d7c44453bbd66bf1f0336bc060dfeb907002b169",
+        "bytes": 890881
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8-cpu-review/p3-binding-review/verify-9653c78abe44.json",
+        "public_path": "2026-11-07/p8-independent-review/p3-binding-review/verify-9653c78abe44.json",
+        "original_sha256": "c6a0cade171b33c1bbe60fe1d7973a3f826708cb5d30862cbce57a3519f6be01",
+        "public_sha256": "c6a0cade171b33c1bbe60fe1d7973a3f826708cb5d30862cbce57a3519f6be01",
+        "bytes": 220540
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8-cpu-review/p3-binding-review/verify-aee8d03e85ce.json",
+        "public_path": "2026-11-07/p8-independent-review/p3-binding-review/verify-aee8d03e85ce.json",
+        "original_sha256": "a550c88c7c26e97daacaf9f96c4b3d5753eb2dcab3584e1b66e1cf9985fdef33",
+        "public_sha256": "a550c88c7c26e97daacaf9f96c4b3d5753eb2dcab3584e1b66e1cf9985fdef33",
+        "bytes": 221397
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8-cpu-review/p3-binding-review/verify-c2388e732a95.json",
+        "public_path": "2026-11-07/p8-independent-review/p3-binding-review/verify-c2388e732a95.json",
+        "original_sha256": "9a37cd35493bfe80b41720efa82e6f1a2f07a3e177304e76cd63a9850c391a06",
+        "public_sha256": "9a37cd35493bfe80b41720efa82e6f1a2f07a3e177304e76cd63a9850c391a06",
+        "bytes": 886658
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8-cpu-review/p3-binding-review/verify-f0d078d72c43.json",
+        "public_path": "2026-11-07/p8-independent-review/p3-binding-review/verify-f0d078d72c43.json",
+        "original_sha256": "6d845212d9016e0e9731a9af4b3d2ff09b04d952d664ad09789480e92edeb556",
+        "public_sha256": "6d845212d9016e0e9731a9af4b3d2ff09b04d952d664ad09789480e92edeb556",
+        "bytes": 887491
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8-cpu-review/p3-binding-review/verify-f1fc1c214e8c.json",
+        "public_path": "2026-11-07/p8-independent-review/p3-binding-review/verify-f1fc1c214e8c.json",
+        "original_sha256": "a879dc0902c36d85a38bf50a21720dd37c667323476ae7646148db5fb7ae845c",
+        "public_sha256": "a879dc0902c36d85a38bf50a21720dd37c667323476ae7646148db5fb7ae845c",
+        "bytes": 219664
+      },
+      {
+        "source": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8-cpu-review/source-dependency-review.json",
+        "public_path": "2026-11-07/p8-independent-review/source-dependency-review.json",
+        "original_sha256": "891549c72597040a549cc2a3d2c81482ea5ad5e7b3ee6de25514cad855a3c610",
+        "public_sha256": "891549c72597040a549cc2a3d2c81482ea5ad5e7b3ee6de25514cad855a3c610",
+        "bytes": 5468
+      }
+    ]
+  }
 }

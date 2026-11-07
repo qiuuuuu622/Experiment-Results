@@ -1,0 +1,15 @@
+{
+  "stage": "final",
+  "family": "tp4",
+  "forward": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7/native-stable-full-chain.json",
+  "reverse": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7/native-stable-full-chain.json",
+  "source_manifest": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7/native-stable-full-chain.json",
+  "correctness": [
+    "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p7/verify-native-allzero-restore.json"
+  ],
+  "native_identity": {
+    "path": "/workspace/vllm_dsv41_flash_opt/results/indexer/20261107-resume/p8/bundles/p7-native-stable-full-chain-native-artifact.data.json",
+    "sha256": "59c042659e6fe328cb7ac205560a396a6f13b91c7fe7ad0982d0bbf9c53b4cae"
+  },
+  "performance_native_package": "/root/dsv41-indexer-resume-20261107/runs/deep-gemm-p3-zero-prefetch-v1"
+}

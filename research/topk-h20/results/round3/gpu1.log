@@ -1,0 +1,74 @@
+{"rows": 32, "width": 131072, "order": "forward", "execution": "eager", "variant": "native", "p50_us": 40.10719954967499}
+{"rows": 32, "width": 131072, "order": "forward", "execution": "eager", "variant": "ant_streaming", "p50_us": 22.148799896240234}
+{"rows": 32, "width": 131072, "order": "forward", "execution": "eager", "variant": "stream_hist2", "p50_us": 22.737599909305573}
+{"rows": 32, "width": 131072, "order": "forward", "execution": "eager", "variant": "stream_warpagg", "p50_us": 143.03200244903564}
+{"rows": 32, "width": 131072, "order": "forward", "execution": "graph", "variant": "native", "p50_us": 38.11360001564026}
+{"rows": 32, "width": 131072, "order": "forward", "execution": "graph", "variant": "ant_streaming", "p50_us": 21.4479997754097}
+{"rows": 32, "width": 131072, "order": "forward", "execution": "graph", "variant": "stream_hist2", "p50_us": 21.697600185871124}
+{"rows": 32, "width": 131072, "order": "forward", "execution": "graph", "variant": "stream_warpagg", "p50_us": 142.09759831428528}
+{"rows": 32, "width": 131072, "order": "reverse", "execution": "eager", "variant": "stream_warpagg", "p50_us": 143.0255949497223}
+{"rows": 32, "width": 131072, "order": "reverse", "execution": "eager", "variant": "stream_hist2", "p50_us": 22.404800355434418}
+{"rows": 32, "width": 131072, "order": "reverse", "execution": "eager", "variant": "ant_streaming", "p50_us": 22.140800207853317}
+{"rows": 32, "width": 131072, "order": "reverse", "execution": "eager", "variant": "native", "p50_us": 40.15839993953705}
+{"rows": 32, "width": 131072, "order": "reverse", "execution": "graph", "variant": "stream_warpagg", "p50_us": 142.1343982219696}
+{"rows": 32, "width": 131072, "order": "reverse", "execution": "graph", "variant": "stream_hist2", "p50_us": 21.675200015306473}
+{"rows": 32, "width": 131072, "order": "reverse", "execution": "graph", "variant": "ant_streaming", "p50_us": 21.475200355052948}
+{"rows": 32, "width": 131072, "order": "reverse", "execution": "graph", "variant": "native", "p50_us": 38.27359974384308}
+{"rows": 32, "width": 262144, "order": "forward", "execution": "eager", "variant": "native", "p50_us": 69.37920153141022}
+{"rows": 32, "width": 262144, "order": "forward", "execution": "eager", "variant": "ant_streaming", "p50_us": 38.63840103149414}
+{"rows": 32, "width": 262144, "order": "forward", "execution": "eager", "variant": "stream_hist2", "p50_us": 38.358400762081146}
+{"rows": 32, "width": 262144, "order": "forward", "execution": "eager", "variant": "stream_warpagg", "p50_us": 279.4800043106079}
+{"rows": 32, "width": 262144, "order": "forward", "execution": "graph", "variant": "native", "p50_us": 66.95199906826019}
+{"rows": 32, "width": 262144, "order": "forward", "execution": "graph", "variant": "ant_streaming", "p50_us": 37.85439878702164}
+{"rows": 32, "width": 262144, "order": "forward", "execution": "graph", "variant": "stream_hist2", "p50_us": 37.60959953069687}
+{"rows": 32, "width": 262144, "order": "forward", "execution": "graph", "variant": "stream_warpagg", "p50_us": 278.7055969238281}
+{"rows": 32, "width": 262144, "order": "reverse", "execution": "eager", "variant": "stream_warpagg", "p50_us": 279.8959970474243}
+{"rows": 32, "width": 262144, "order": "reverse", "execution": "eager", "variant": "stream_hist2", "p50_us": 38.47679942846298}
+{"rows": 32, "width": 262144, "order": "reverse", "execution": "eager", "variant": "ant_streaming", "p50_us": 38.67039978504181}
+{"rows": 32, "width": 262144, "order": "reverse", "execution": "eager", "variant": "native", "p50_us": 69.56319808959961}
+{"rows": 32, "width": 262144, "order": "reverse", "execution": "graph", "variant": "stream_warpagg", "p50_us": 278.57919931411743}
+{"rows": 32, "width": 262144, "order": "reverse", "execution": "graph", "variant": "stream_hist2", "p50_us": 38.363200426101685}
+{"rows": 32, "width": 262144, "order": "reverse", "execution": "graph", "variant": "ant_streaming", "p50_us": 38.26240003108978}
+{"rows": 32, "width": 262144, "order": "reverse", "execution": "graph", "variant": "native", "p50_us": 67.10399985313416}
+{"rows": 32, "width": 131072, "order": "forward", "execution": "eager", "variant": "native", "p50_us": 41.36800020933151}
+{"rows": 32, "width": 131072, "order": "forward", "execution": "eager", "variant": "ant_streaming", "p50_us": 22.3471999168396}
+{"rows": 32, "width": 131072, "order": "forward", "execution": "eager", "variant": "stream_hist2", "p50_us": 22.63680025935173}
+{"rows": 32, "width": 131072, "order": "forward", "execution": "eager", "variant": "stream_warpagg", "p50_us": 143.45120191574097}
+{"rows": 32, "width": 131072, "order": "forward", "execution": "graph", "variant": "native", "p50_us": 38.99360001087189}
+{"rows": 32, "width": 131072, "order": "forward", "execution": "graph", "variant": "ant_streaming", "p50_us": 21.54719978570938}
+{"rows": 32, "width": 131072, "order": "forward", "execution": "graph", "variant": "stream_hist2", "p50_us": 21.755199879407883}
+{"rows": 32, "width": 131072, "order": "forward", "execution": "graph", "variant": "stream_warpagg", "p50_us": 142.6144003868103}
+{"rows": 32, "width": 131072, "order": "reverse", "execution": "eager", "variant": "stream_warpagg", "p50_us": 143.5200035572052}
+{"rows": 32, "width": 131072, "order": "reverse", "execution": "eager", "variant": "stream_hist2", "p50_us": 22.459200024604797}
+{"rows": 32, "width": 131072, "order": "reverse", "execution": "eager", "variant": "ant_streaming", "p50_us": 22.220800071954727}
+{"rows": 32, "width": 131072, "order": "reverse", "execution": "eager", "variant": "native", "p50_us": 41.08320027589798}
+{"rows": 32, "width": 131072, "order": "reverse", "execution": "graph", "variant": "stream_warpagg", "p50_us": 142.7519977092743}
+{"rows": 32, "width": 131072, "order": "reverse", "execution": "graph", "variant": "stream_hist2", "p50_us": 21.76159992814064}
+{"rows": 32, "width": 131072, "order": "reverse", "execution": "graph", "variant": "ant_streaming", "p50_us": 21.52319997549057}
+{"rows": 32, "width": 131072, "order": "reverse", "execution": "graph", "variant": "native", "p50_us": 38.98559957742691}
+{"rows": 32, "width": 262144, "order": "forward", "execution": "eager", "variant": "native", "p50_us": 70.83840072154999}
+{"rows": 32, "width": 262144, "order": "forward", "execution": "eager", "variant": "ant_streaming", "p50_us": 38.73920142650604}
+{"rows": 32, "width": 262144, "order": "forward", "execution": "eager", "variant": "stream_hist2", "p50_us": 38.66079896688461}
+{"rows": 32, "width": 262144, "order": "forward", "execution": "eager", "variant": "stream_warpagg", "p50_us": 280.74079751968384}
+{"rows": 32, "width": 262144, "order": "forward", "execution": "graph", "variant": "native", "p50_us": 68.30400228500366}
+{"rows": 32, "width": 262144, "order": "forward", "execution": "graph", "variant": "ant_streaming", "p50_us": 37.86719888448715}
+{"rows": 32, "width": 262144, "order": "forward", "execution": "graph", "variant": "stream_hist2", "p50_us": 37.74079978466034}
+{"rows": 32, "width": 262144, "order": "forward", "execution": "graph", "variant": "stream_warpagg", "p50_us": 279.7215938568115}
+{"rows": 32, "width": 262144, "order": "reverse", "execution": "eager", "variant": "stream_warpagg", "p50_us": 280.79519271850586}
+{"rows": 32, "width": 262144, "order": "reverse", "execution": "eager", "variant": "stream_hist2", "p50_us": 38.66399973630905}
+{"rows": 32, "width": 262144, "order": "reverse", "execution": "eager", "variant": "ant_streaming", "p50_us": 38.72639983892441}
+{"rows": 32, "width": 262144, "order": "reverse", "execution": "eager", "variant": "native", "p50_us": 70.77760100364685}
+{"rows": 32, "width": 262144, "order": "reverse", "execution": "graph", "variant": "stream_warpagg", "p50_us": 279.74400520324707}
+{"rows": 32, "width": 262144, "order": "reverse", "execution": "graph", "variant": "stream_hist2", "p50_us": 37.73120045661926}
+{"rows": 32, "width": 262144, "order": "reverse", "execution": "graph", "variant": "ant_streaming", "p50_us": 37.884800136089325}
+{"rows": 32, "width": 262144, "order": "reverse", "execution": "graph", "variant": "native", "p50_us": 68.27840209007263}
+{"verified_rows": 32, "width": 262144, "k": 512, "distribution": "random"}
+{"verified_rows": 32, "width": 262144, "k": 512, "distribution": "zero"}
+{"verified_rows": 32, "width": 262144, "k": 512, "distribution": "equal_nonzero"}
+{"verified_rows": 32, "width": 262144, "k": 512, "distribution": "cutoff_ties"}
+{"verified_rows": 32, "width": 262144, "k": 512, "distribution": "tie_bin_overflow"}
+{"verified_rows": 32, "width": 262144, "k": 2048, "distribution": "random"}
+{"verified_rows": 32, "width": 262144, "k": 2048, "distribution": "zero"}
+{"verified_rows": 32, "width": 262144, "k": 2048, "distribution": "equal_nonzero"}
+{"verified_rows": 32, "width": 262144, "k": 2048, "distribution": "cutoff_ties"}
+{"verified_rows": 32, "width": 262144, "k": 2048, "distribution": "tie_bin_overflow"}

@@ -8,4 +8,6 @@
 - [旧 NOTICE](../vllm_dsv41_indexer/NOTICE.md)描述初期 compact-only 编译。后续 P6 由 `native.load_kernels(mode)` 扩展 full/streaming/cluster，不能把旧句子理解为最新模块仅支持 compact；vendored 头文件仍未修改。
 - `candidate_publish.cuh` 是本项目的 CUB 适配，受 source 发布／consumer 复用机制启发，不冒称未修改的 Ant kernel。
 
-代码快照身份和修改清单见 [SOURCE_PROVENANCE.json](../SOURCE_PROVENANCE.json)。公开历史包曾有路径、设备 UUID 伪名和 tar owner 元数据脱敏，映射在 [PUBLIC_EXPORT.json](../experiments/PUBLIC_EXPORT.json)及 [PUBLIC_DEPENDENCIES.json](../experiments/PUBLIC_DEPENDENCIES.json)。本次新增浏览源码未作字节变换，归档文件也未重写。
+上述“vendored 头文件仍未修改”仅指根目录已验证模块。新增 Top-k 研究在独立目录中修改了 Ant 的 `topk_v2.cuh` 和 `topk_impl.cuh`，加入可配置 cluster 宽度及直方图消融，保留原有版权和许可。具体修改见 [研究 patch](../research/topk-h20/experimental-kernels.patch)，不能将研究副本称为未修改的上游代码。
+
+代码快照身份和修改清单见 [SOURCE_PROVENANCE.json](../SOURCE_PROVENANCE.json)。公开历史包曾有路径、设备 UUID 伪名和 tar owner 元数据脱敏，映射在 [PUBLIC_EXPORT.json](../experiments/PUBLIC_EXPORT.json)及 [PUBLIC_DEPENDENCIES.json](../experiments/PUBLIC_DEPENDENCIES.json)。这些历史归档保持原样。新研究源码字节保持实验版本；新研究的设备标识、容器名及归档 owner 元数据经过公开导出处理，映射见 [研究公开导出说明](../research/topk-h20/PUBLIC_EXPORT.json)。原始私有归档 hash 与公开 tar hash 不同，分别保存，不混用。

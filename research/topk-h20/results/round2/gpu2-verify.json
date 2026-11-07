@@ -1,0 +1,655 @@
+{
+  "status": "completed",
+  "args": {
+    "phase": "verify",
+    "rows": [
+      64
+    ],
+    "widths": [
+      262144
+    ],
+    "variants": [
+      "ant_c8_direct",
+      "ant_c4_direct",
+      "ant_c2_direct"
+    ],
+    "execution": [
+      "graph"
+    ],
+    "output": "results/round2/gpu2-verify.json",
+    "trace": false,
+    "distribution": "random"
+  },
+  "environment_before": {
+    "torch": "2.13.0+cu130",
+    "cuda": "13.0",
+    "triton": "3.7.1",
+    "tvm_ffi": "0.1.11",
+    "gpu_name": "NVIDIA H20",
+    "sm_count": 78,
+    "gpu_uuid": "c11d3e06-5df3-6db1-88e8-ab74cf61ccd4",
+    "visible_devices": "2",
+    "sources": {
+      "vllm_dsv41_indexer/NOTICE.md": "8d33c55261fdfb8ce31a04f402ab99a75869438ed35591ff4c77289c78acc5bc",
+      "vllm_dsv41_indexer/__init__.py": "a88ad038e844912d9fac664aceccbe4d2423258a3698b6ea62f942b383d7c9a4",
+      "vllm_dsv41_indexer/contract.py": "35b073f106fd5770d1d05a2d7e2be7026c1ad23faf88ba20257259bc41a8858e",
+      "vllm_dsv41_indexer/csrc/candidate_publish.cuh": "4c7928614af36aa75f5bbb2abf70556144d7ed176ea9285f2ab2a8f9fa68fdef",
+      "vllm_dsv41_indexer/dispatch.py": "25485a3a35262a2ed206a1239e5dc9d55b7916b4947d9ec93ffc2b7e88a61f5f",
+      "vllm_dsv41_indexer/full_score.py": "848781706a598e7102e8fd069e4b22644474e5b4659031b59e4095c0e783c63a",
+      "vllm_dsv41_indexer/grouped.py": "eccb9ee137fbf19d410b22c4c202ef8d2f3d079479ebf2248fd6d45e179b094b",
+      "vllm_dsv41_indexer/grouped_score.py": "5d0b1fd5496f6a2946d685e028ea06e813a9688b648ab1304f26922e5b36e94c",
+      "vllm_dsv41_indexer/module.py": "f9fdf95aacf3ccc3fd40b30148792552523874ecd75eb1cc03ba348863067dc9",
+      "vllm_dsv41_indexer/native.py": "ac8ec647cf2f35ea0a7d8ff5b9bf9aff2b857b95d1bf84ad8e94dd2b5383d40a",
+      "vllm_dsv41_indexer/parallel.py": "78a3794c89b0188f519cdd1a0fb41f8efb544dff3dce7bb6605a4def94b1f82f",
+      "vllm_dsv41_indexer/patches/README.md": "d9fa55d07f2abc2a7a2b80e5411fb8fddbde1a49eea5d76326feadb506ccba4d",
+      "vllm_dsv41_indexer/patches/deepgemm-sm90-empty-query-prefetch.patch": "ac616f67feb4682cb4d4d645fca5765ed406ce4ba091fce4921088becc0397fa",
+      "vllm_dsv41_indexer/perquery_dispatch.py": "acd61a3bf72292ff865e7bf730475dd43cf5f2c782bb2b9bdc3d4963d06926cc",
+      "vllm_dsv41_indexer/perquery_prefill.py": "77a7ffbf34ebe4495e560612c9b6943b17214b5fd01a9cdfe613d5887dbe9b1c",
+      "vllm_dsv41_indexer/prefill.py": "78e49d3eeebc593b7604a6375d00f10b9bcbf21236510e1819d7c7fddb391ade",
+      "vllm_dsv41_indexer/prefill_keys_major_ant.py": "957557aa4ac9944073ae4e2c2a370775df446f93437fa82de821b3051d3184c9",
+      "vllm_dsv41_indexer/prepare.py": "8234723ab24dab5c37fe4898ef925032e8fef1a3e2a3403d1d7abe0076d27fd2",
+      "vllm_dsv41_indexer/reference.py": "6984d36ec42272ca5ded2f8b1ac77a2dcf43ed5e56f93ce23975a098d4e75bd8",
+      "vllm_dsv41_indexer/row_shard.py": "4c33cd83aaeafc21cd443b73149d63e24fee695af311c24b12ebd89848720ec1",
+      "vllm_dsv41_indexer/score.py": "669a839062a0d9de642fa3709bb93f5cd056612b2f30455d7de8ce94f29a237b",
+      "vllm_dsv41_indexer/third_party/ant/LICENSE": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747",
+      "vllm_dsv41_indexer/third_party/ant/csrc/deepseek_v4/topk_v2.cuh": "660f6550bb2f59db097c605152be4a098a167afb420570f7dc152880eb48f50a",
+      "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/bits.h": "5bab56d2578d151d3224994eeeae0abb939c26a1ac1e84205a1c942dab9cd605",
+      "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/deepseek_v4/topk_impl.cuh": "14e8a8973a4161e8adb5e12f1726b8f72bc89e94ad9d7cf0d51029aeca8dda57",
+      "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/math.cuh": "73e182466976d821f8ad89017fd2492c50ea456d5e7007d4e869cb6730568477",
+      "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/runtime.cuh": "1f989a2dee7a32ab519eeb49adf407c5e4054195faa77aa92ce4211343973213",
+      "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/source_location.h": "300026cbeeabe03b10b0c46b70e2e85b19a743cbe9ff462faa1dff4268cf806e",
+      "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/tensor.h": "c66eba28e0f7661711947309c12014d2e880025c7d91ff8a7ac544d4ece60ce2",
+      "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/tile.cuh": "692446727a0353f1eb0d7249f6564d2c79ee6c9066e2c61e2ab450014fb217b7",
+      "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/type.cuh": "4c72b0892e8d003490bdab2633056172a674bc6a9689be552861564c7aaf8edc",
+      "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/utils.cuh": "18b0bb2e27dccc20d7509e8b6b6c16e2b57a5ce98be648865fb75059be8a13db",
+      "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/utils.h": "fe54010a29dd4d65110bf4afe60ff91b0f37f3b9704bb5bae4f1086347d7e32d",
+      "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/vec.cuh": "11224cc483b7fbc93e2bcb1c2092715d80f1fa645920f4c82ee0e1d45a4eb551",
+      "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/warp.cuh": "264e64c3f386a70de938ed831f05f7a5f3c4b3ed9cfea58e1fbad433a8f860db",
+      "vllm_dsv41_indexer/third_party/ant/sources.json": "55bf3d8fe6bef42bd05dfb47452365c9e6df08cdac47a0b132110dab617859f8",
+      "vllm_dsv41_indexer/topk.py": "90ceea7412f123245db61e3856d6db10844a12b333c371e7c7ce92aa639a3961",
+      "vllm_dsv41_indexer/workspace.py": "5c5a86c2e71d3d95e4f996780a81f1045cb31fa594170d7301aa9c3fd792fbb0",
+      "benchmarks/kernels/dsv41_indexer/03_p2.sh": "e7b66c302b47033e7675daf032e7bb1c19934bb0add0a8b34c5257af113569fb",
+      "benchmarks/kernels/dsv41_indexer/03_p3_gpu0.sh": "83f2035a550eafe0a63d35b8eeff888d8231c7768368c211fe90b7bd2e552f9d",
+      "benchmarks/kernels/dsv41_indexer/04_full_verify.sh": "a5c23e1a808f84af7bfaeb88a75dd31c2944c333b5ab685891ea8ea6a1b7f4d1",
+      "benchmarks/kernels/dsv41_indexer/04_p4_gpu3.sh": "4c0e11807bc3f494c2178b47341a06bbeac74dbe03cca45e23ac26e28b1042f7",
+      "benchmarks/kernels/dsv41_indexer/05_prefill.sh": "92bbb315b35f8c1ee181fdd7d3fb1ce4fbf76289fd671a799be14f005b675253",
+      "benchmarks/kernels/dsv41_indexer/06_prefill_gluon.sh": "b6beb2be478957fa7369c3de4a25b10bbf81a1bf2843e0eabeaa4cd82b590882",
+      "benchmarks/kernels/dsv41_indexer/06_topk.sh": "bd9fa2d158433061539e3312376bc69907a79efb0299b28abe60ce92639e97d0",
+      "benchmarks/kernels/dsv41_indexer/__init__.py": "e3c55cbb0d7a8bd47df6f3378835644645f5d3bc89b45793b5d5a02d013e5c58",
+      "benchmarks/kernels/dsv41_indexer/audit_resume.py": "1d8eb47988c6b60a89563c6b37baae006adc77650b7827e67c0cbcfbd98f4a6f",
+      "benchmarks/kernels/dsv41_indexer/baseline.json": "0331b099289d70d7058bba90e7ba1f3566ebcdb10edaf117cca1e5b22839dcab",
+      "benchmarks/kernels/dsv41_indexer/benchmark.py": "44dd83646151440cba2963c91ed8947eee4e5a1510d31bdec20ba6638dc7d8ec",
+      "benchmarks/kernels/dsv41_indexer/benchmark_ant_grid.py": "ece60eec53e1772a88966236a6e7c277fffd1e630da27d08ef6d704df1baf421",
+      "benchmarks/kernels/dsv41_indexer/benchmark_final.py": "06a44677f7e8f182d2086f87f7753d6ebdd4437ec1f11fa73f27ee4e5b1c667f",
+      "benchmarks/kernels/dsv41_indexer/benchmark_full.py": "db8b6fbc594f64619cd48baa9769ce7378cc878df6242578870e7626d905071d",
+      "benchmarks/kernels/dsv41_indexer/benchmark_grouped.py": "99b97de1ff34e47a94d4fcd517b8d5152a95ebc075168e329efcf92a9ffd91ff",
+      "benchmarks/kernels/dsv41_indexer/benchmark_grouped_planning.py": "f42c1bc18f78004ed1b7fbf727f887ecb9cebe6493440e9ecbc75e3695bfc71d",
+      "benchmarks/kernels/dsv41_indexer/benchmark_prefill.py": "e77329e87052756c4036797ea1fc7274eb0f6aceb16945daf7b348cb41fd294c",
+      "benchmarks/kernels/dsv41_indexer/benchmark_prefill_ant.py": "697cd682162371babce4d7b5dc17d7326e73a2e6913f141c35c7940c7d3ad458",
+      "benchmarks/kernels/dsv41_indexer/benchmark_prefill_model.py": "f422bdd3a5593e031c16e9270f0e93fb3dd343402c4eacd13cfe087987c7ef49",
+      "benchmarks/kernels/dsv41_indexer/benchmark_prefill_perquery.py": "40f50488bfa7213ae3354340c08786e954f7403f2c8d81ebfcd4a2fa8feb96d4",
+      "benchmarks/kernels/dsv41_indexer/benchmark_topk.py": "fa776ca54a04532189f853d283fa0c9ba1af89360120f5d68293d001a18ece38",
+      "benchmarks/kernels/dsv41_indexer/benchmark_tp4.py": "2086d218dc761ac600ad5f61f43d588c3eed46d74d9fb9164b362b63cecad905",
+      "benchmarks/kernels/dsv41_indexer/benchmark_tp4_stages.py": "61f6d6ccae5f5d2c90247415cd8a32e925c963376d512ffebcd5cc563e0d7808",
+      "benchmarks/kernels/dsv41_indexer/calibrate.py": "a6e9eb94396439e2408def6d070fbf89d76179cb3c9899303590e6a56a767ff7",
+      "benchmarks/kernels/dsv41_indexer/collect_perquery_dispatch.py": "fa14c363a20f278b0137077623626e3d120017f9bac4c93db91944208b8b4abb",
+      "benchmarks/kernels/dsv41_indexer/common.py": "7c2cd4daf8c8e5d702c3aa19905db0ef05729b497b73ca76c1009d30e459895f",
+      "benchmarks/kernels/dsv41_indexer/diagnose_prefill_model.py": "c7250768f6df86ec5e9ffcf1cd33c48215060793ad93a15752b7afc9b1937b77",
+      "benchmarks/kernels/dsv41_indexer/environment.py": "6d4d608efcf755087c63720aaa643c1d5c45f3f0a818bad44bd339647db68755",
+      "benchmarks/kernels/dsv41_indexer/freeze_p3.py": "4af68c2fcc8b16ae9860c04f20b349f80eba65c0142cfbc073151e105131f621",
+      "benchmarks/kernels/dsv41_indexer/inputs.py": "9710a3078c5f7ec170374d208ac4cb96ca057af518c3620f9ba30e76c68cc56c",
+      "benchmarks/kernels/dsv41_indexer/legacy.py": "4cf328e24123db3bb9a0b6f4cc91ac7dab412ddc8523879425ea03e67ed1cc77",
+      "benchmarks/kernels/dsv41_indexer/repro_zero_prefetch.py": "de8173744de2d94bfa5835c93c560b1048dccebdb8cbb53ab28e0cebff860019",
+      "benchmarks/kernels/dsv41_indexer/summarize.py": "532729b1f94d26017230bb9b08e1ab16ee95e1d9b6c28356537aef438b53e6e2",
+      "benchmarks/kernels/dsv41_indexer/tp4_cases.py": "f033ed3dd5229ad127c559dbb7b4c539ed95a1a351bc71c4822c640ec1041ac5",
+      "benchmarks/kernels/dsv41_indexer/verify.py": "64632ffc88e62049cddd8acdc3d07dff9a480104c20aded7f9168b0202408b0f",
+      "benchmarks/kernels/dsv41_indexer/verify_compact.py": "644d6756ce8b935e49fc809b54217142ef2aa8dd31cb85183bb132c362065816",
+      "benchmarks/kernels/dsv41_indexer/verify_dispatch.py": "88ca4a3fa50f6e28e32f89804f7a9a56882eaaade08308992c416760368cedd9",
+      "benchmarks/kernels/dsv41_indexer/verify_full.py": "dfdb783f88733948526ae3b124b110c8a6deb481cb617fbc99f2eb84d000f17f",
+      "benchmarks/kernels/dsv41_indexer/verify_grouped.py": "adeadecfed359694a1346161e3d1d23acf1a844ab797693dbb53d5b6b3ad8ee5",
+      "benchmarks/kernels/dsv41_indexer/verify_module.py": "c88cffe738bb081c3e9045e590b25f5ac864503b50a5eed5a32d0c446a8b7fef",
+      "benchmarks/kernels/dsv41_indexer/verify_perquery_dispatch.py": "13a7ca03b7d41b02a79f1fc908fdabb9fdf06436d181c8afbec12d1653df76a5",
+      "benchmarks/kernels/dsv41_indexer/verify_perquery_tp4.py": "7b3f1c9ceeaf6b9ad58f792ba921b1f92e3c20adf2d44e46ac9a618e8ca9a5c1",
+      "benchmarks/kernels/dsv41_indexer/verify_prefill.py": "46b1d4b721fdc8ff88fdaf2cad0b792a3db98440fa3726775fde739bfb083691",
+      "benchmarks/kernels/dsv41_indexer/verify_prefill_ant.py": "ec7e7e59ebc1b7f42e541ec2b6b3302d68d90d0a1829ce6672d05c6e91220274",
+      "benchmarks/kernels/dsv41_indexer/verify_prefill_ant_edges.py": "3977becf3d9d70b877aaa9a935aa72892a6342aab47a496e71202ceca3eccdb2",
+      "benchmarks/kernels/dsv41_indexer/verify_prefill_model.py": "fd406778241d6d9e53f58266d1e4cab9ffc2e4812f09ebe6378f8b8c246ad0a4",
+      "benchmarks/kernels/dsv41_indexer/verify_prefill_perquery.py": "d8e9efb85e3f9c3890baf69bfacbe07b6cb90099f5733a49fa259579174858ce",
+      "benchmarks/kernels/dsv41_indexer/verify_projection_tp4.py": "14e41fcef430d5951a79608d5dfa0775ee55c9c1504b257ed88422f3dee08cc6",
+      "benchmarks/kernels/dsv41_indexer/verify_resume_modules.py": "9f7d1b74ee562994ad9179677bc8d118da967080ad52003df2fe2a4db25d79fc",
+      "benchmarks/kernels/dsv41_indexer/verify_topk.py": "a3aa6922665e064012319a55c6a80474597672b2c98fd51ec55660c0eee3b5b0",
+      "benchmarks/kernels/dsv41_indexer/verify_tp4.py": "5d65fa431b5836995470365dd6c2cf87785669967339b2555349090aebfb42c0",
+      "tune_topk.py": "244c738188180319a543ba2131a4f5591f445a2daa29c45fc5fee43b6efa5e7c"
+    },
+    "nvidia_smi": "index, uuid, driver_version, temperature.gpu, clocks.current.sm [MHz], clocks.current.memory [MHz], power.draw [W], memory.used [MiB], utilization.gpu [%]\n0, GPU-public-topk-836fa8d877229361, 550.54.15, 37, 1980 MHz, 2619 MHz, 314.54 W, 867 MiB, 97 %\n1, GPU-public-topk-739c72c3ba757f7e, 550.54.15, 27, 1980 MHz, 2619 MHz, 119.40 W, 543 MiB, 0 %\n2, GPU-public-topk-1cf25932927cef0e, 550.54.15, 58, 345 MHz, 2619 MHz, 91.11 W, 3 MiB, 0 %\n3, GPU-public-topk-de211b22c7fbf800, 550.54.15, 28, 1980 MHz, 2619 MHz, 111.44 W, 0 MiB, 0 %\n"
+  },
+  "cases": [],
+  "checks": [
+    {
+      "rows": 64,
+      "width": 262144,
+      "k": 512,
+      "distribution": "random",
+      "variant": "ant_c8_direct",
+      "stages": [
+        "eager_full",
+        "graph_mixed",
+        "graph_zero",
+        "graph_restore"
+      ],
+      "status": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 262144,
+      "k": 512,
+      "distribution": "random",
+      "variant": "ant_c4_direct",
+      "stages": [
+        "eager_full",
+        "graph_mixed",
+        "graph_zero",
+        "graph_restore"
+      ],
+      "status": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 262144,
+      "k": 512,
+      "distribution": "random",
+      "variant": "ant_c2_direct",
+      "stages": [
+        "eager_full",
+        "graph_mixed",
+        "graph_zero",
+        "graph_restore"
+      ],
+      "status": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 262144,
+      "k": 512,
+      "distribution": "zero",
+      "variant": "ant_c8_direct",
+      "stages": [
+        "eager_full",
+        "graph_mixed",
+        "graph_zero",
+        "graph_restore"
+      ],
+      "status": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 262144,
+      "k": 512,
+      "distribution": "zero",
+      "variant": "ant_c4_direct",
+      "stages": [
+        "eager_full",
+        "graph_mixed",
+        "graph_zero",
+        "graph_restore"
+      ],
+      "status": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 262144,
+      "k": 512,
+      "distribution": "zero",
+      "variant": "ant_c2_direct",
+      "stages": [
+        "eager_full",
+        "graph_mixed",
+        "graph_zero",
+        "graph_restore"
+      ],
+      "status": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 262144,
+      "k": 512,
+      "distribution": "equal_nonzero",
+      "variant": "ant_c8_direct",
+      "stages": [
+        "eager_full",
+        "graph_mixed",
+        "graph_zero",
+        "graph_restore"
+      ],
+      "status": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 262144,
+      "k": 512,
+      "distribution": "equal_nonzero",
+      "variant": "ant_c4_direct",
+      "stages": [
+        "eager_full",
+        "graph_mixed",
+        "graph_zero",
+        "graph_restore"
+      ],
+      "status": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 262144,
+      "k": 512,
+      "distribution": "equal_nonzero",
+      "variant": "ant_c2_direct",
+      "stages": [
+        "eager_full",
+        "graph_mixed",
+        "graph_zero",
+        "graph_restore"
+      ],
+      "status": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 262144,
+      "k": 512,
+      "distribution": "cutoff_ties",
+      "variant": "ant_c8_direct",
+      "stages": [
+        "eager_full",
+        "graph_mixed",
+        "graph_zero",
+        "graph_restore"
+      ],
+      "status": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 262144,
+      "k": 512,
+      "distribution": "cutoff_ties",
+      "variant": "ant_c4_direct",
+      "stages": [
+        "eager_full",
+        "graph_mixed",
+        "graph_zero",
+        "graph_restore"
+      ],
+      "status": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 262144,
+      "k": 512,
+      "distribution": "cutoff_ties",
+      "variant": "ant_c2_direct",
+      "stages": [
+        "eager_full",
+        "graph_mixed",
+        "graph_zero",
+        "graph_restore"
+      ],
+      "status": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 262144,
+      "k": 512,
+      "distribution": "tie_bin_overflow",
+      "variant": "ant_c8_direct",
+      "stages": [
+        "eager_full",
+        "graph_mixed",
+        "graph_zero",
+        "graph_restore"
+      ],
+      "status": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 262144,
+      "k": 512,
+      "distribution": "tie_bin_overflow",
+      "variant": "ant_c4_direct",
+      "stages": [
+        "eager_full",
+        "graph_mixed",
+        "graph_zero",
+        "graph_restore"
+      ],
+      "status": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 262144,
+      "k": 512,
+      "distribution": "tie_bin_overflow",
+      "variant": "ant_c2_direct",
+      "stages": [
+        "eager_full",
+        "graph_mixed",
+        "graph_zero",
+        "graph_restore"
+      ],
+      "status": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "random",
+      "variant": "ant_c8_direct",
+      "stages": [
+        "eager_full",
+        "graph_mixed",
+        "graph_zero",
+        "graph_restore"
+      ],
+      "status": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "random",
+      "variant": "ant_c4_direct",
+      "stages": [
+        "eager_full",
+        "graph_mixed",
+        "graph_zero",
+        "graph_restore"
+      ],
+      "status": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "random",
+      "variant": "ant_c2_direct",
+      "stages": [
+        "eager_full",
+        "graph_mixed",
+        "graph_zero",
+        "graph_restore"
+      ],
+      "status": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "zero",
+      "variant": "ant_c8_direct",
+      "stages": [
+        "eager_full",
+        "graph_mixed",
+        "graph_zero",
+        "graph_restore"
+      ],
+      "status": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "zero",
+      "variant": "ant_c4_direct",
+      "stages": [
+        "eager_full",
+        "graph_mixed",
+        "graph_zero",
+        "graph_restore"
+      ],
+      "status": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "zero",
+      "variant": "ant_c2_direct",
+      "stages": [
+        "eager_full",
+        "graph_mixed",
+        "graph_zero",
+        "graph_restore"
+      ],
+      "status": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "equal_nonzero",
+      "variant": "ant_c8_direct",
+      "stages": [
+        "eager_full",
+        "graph_mixed",
+        "graph_zero",
+        "graph_restore"
+      ],
+      "status": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "equal_nonzero",
+      "variant": "ant_c4_direct",
+      "stages": [
+        "eager_full",
+        "graph_mixed",
+        "graph_zero",
+        "graph_restore"
+      ],
+      "status": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "equal_nonzero",
+      "variant": "ant_c2_direct",
+      "stages": [
+        "eager_full",
+        "graph_mixed",
+        "graph_zero",
+        "graph_restore"
+      ],
+      "status": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "cutoff_ties",
+      "variant": "ant_c8_direct",
+      "stages": [
+        "eager_full",
+        "graph_mixed",
+        "graph_zero",
+        "graph_restore"
+      ],
+      "status": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "cutoff_ties",
+      "variant": "ant_c4_direct",
+      "stages": [
+        "eager_full",
+        "graph_mixed",
+        "graph_zero",
+        "graph_restore"
+      ],
+      "status": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "cutoff_ties",
+      "variant": "ant_c2_direct",
+      "stages": [
+        "eager_full",
+        "graph_mixed",
+        "graph_zero",
+        "graph_restore"
+      ],
+      "status": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "tie_bin_overflow",
+      "variant": "ant_c8_direct",
+      "stages": [
+        "eager_full",
+        "graph_mixed",
+        "graph_zero",
+        "graph_restore"
+      ],
+      "status": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "tie_bin_overflow",
+      "variant": "ant_c4_direct",
+      "stages": [
+        "eager_full",
+        "graph_mixed",
+        "graph_zero",
+        "graph_restore"
+      ],
+      "status": "passed"
+    },
+    {
+      "rows": 64,
+      "width": 262144,
+      "k": 2048,
+      "distribution": "tie_bin_overflow",
+      "variant": "ant_c2_direct",
+      "stages": [
+        "eager_full",
+        "graph_mixed",
+        "graph_zero",
+        "graph_restore"
+      ],
+      "status": "passed"
+    }
+  ],
+  "cache": "warm repeated calls; no L2 flush",
+  "scope": "selector-only, single GPU per process; no TP4 claim",
+  "compile": [],
+  "environment_after": {
+    "torch": "2.13.0+cu130",
+    "cuda": "13.0",
+    "triton": "3.7.1",
+    "tvm_ffi": "0.1.11",
+    "gpu_name": "NVIDIA H20",
+    "sm_count": 78,
+    "gpu_uuid": "c11d3e06-5df3-6db1-88e8-ab74cf61ccd4",
+    "visible_devices": "2",
+    "sources": {
+      "vllm_dsv41_indexer/NOTICE.md": "8d33c55261fdfb8ce31a04f402ab99a75869438ed35591ff4c77289c78acc5bc",
+      "vllm_dsv41_indexer/__init__.py": "a88ad038e844912d9fac664aceccbe4d2423258a3698b6ea62f942b383d7c9a4",
+      "vllm_dsv41_indexer/contract.py": "35b073f106fd5770d1d05a2d7e2be7026c1ad23faf88ba20257259bc41a8858e",
+      "vllm_dsv41_indexer/csrc/candidate_publish.cuh": "4c7928614af36aa75f5bbb2abf70556144d7ed176ea9285f2ab2a8f9fa68fdef",
+      "vllm_dsv41_indexer/dispatch.py": "25485a3a35262a2ed206a1239e5dc9d55b7916b4947d9ec93ffc2b7e88a61f5f",
+      "vllm_dsv41_indexer/full_score.py": "848781706a598e7102e8fd069e4b22644474e5b4659031b59e4095c0e783c63a",
+      "vllm_dsv41_indexer/grouped.py": "eccb9ee137fbf19d410b22c4c202ef8d2f3d079479ebf2248fd6d45e179b094b",
+      "vllm_dsv41_indexer/grouped_score.py": "5d0b1fd5496f6a2946d685e028ea06e813a9688b648ab1304f26922e5b36e94c",
+      "vllm_dsv41_indexer/module.py": "f9fdf95aacf3ccc3fd40b30148792552523874ecd75eb1cc03ba348863067dc9",
+      "vllm_dsv41_indexer/native.py": "ac8ec647cf2f35ea0a7d8ff5b9bf9aff2b857b95d1bf84ad8e94dd2b5383d40a",
+      "vllm_dsv41_indexer/parallel.py": "78a3794c89b0188f519cdd1a0fb41f8efb544dff3dce7bb6605a4def94b1f82f",
+      "vllm_dsv41_indexer/patches/README.md": "d9fa55d07f2abc2a7a2b80e5411fb8fddbde1a49eea5d76326feadb506ccba4d",
+      "vllm_dsv41_indexer/patches/deepgemm-sm90-empty-query-prefetch.patch": "ac616f67feb4682cb4d4d645fca5765ed406ce4ba091fce4921088becc0397fa",
+      "vllm_dsv41_indexer/perquery_dispatch.py": "acd61a3bf72292ff865e7bf730475dd43cf5f2c782bb2b9bdc3d4963d06926cc",
+      "vllm_dsv41_indexer/perquery_prefill.py": "77a7ffbf34ebe4495e560612c9b6943b17214b5fd01a9cdfe613d5887dbe9b1c",
+      "vllm_dsv41_indexer/prefill.py": "78e49d3eeebc593b7604a6375d00f10b9bcbf21236510e1819d7c7fddb391ade",
+      "vllm_dsv41_indexer/prefill_keys_major_ant.py": "957557aa4ac9944073ae4e2c2a370775df446f93437fa82de821b3051d3184c9",
+      "vllm_dsv41_indexer/prepare.py": "8234723ab24dab5c37fe4898ef925032e8fef1a3e2a3403d1d7abe0076d27fd2",
+      "vllm_dsv41_indexer/reference.py": "6984d36ec42272ca5ded2f8b1ac77a2dcf43ed5e56f93ce23975a098d4e75bd8",
+      "vllm_dsv41_indexer/row_shard.py": "4c33cd83aaeafc21cd443b73149d63e24fee695af311c24b12ebd89848720ec1",
+      "vllm_dsv41_indexer/score.py": "669a839062a0d9de642fa3709bb93f5cd056612b2f30455d7de8ce94f29a237b",
+      "vllm_dsv41_indexer/third_party/ant/LICENSE": "1495e1e757ef4d0925a2350563cf5754bb23c51701a8ec4fb3c5cdcbedae6747",
+      "vllm_dsv41_indexer/third_party/ant/csrc/deepseek_v4/topk_v2.cuh": "660f6550bb2f59db097c605152be4a098a167afb420570f7dc152880eb48f50a",
+      "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/bits.h": "5bab56d2578d151d3224994eeeae0abb939c26a1ac1e84205a1c942dab9cd605",
+      "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/deepseek_v4/topk_impl.cuh": "14e8a8973a4161e8adb5e12f1726b8f72bc89e94ad9d7cf0d51029aeca8dda57",
+      "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/math.cuh": "73e182466976d821f8ad89017fd2492c50ea456d5e7007d4e869cb6730568477",
+      "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/runtime.cuh": "1f989a2dee7a32ab519eeb49adf407c5e4054195faa77aa92ce4211343973213",
+      "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/source_location.h": "300026cbeeabe03b10b0c46b70e2e85b19a743cbe9ff462faa1dff4268cf806e",
+      "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/tensor.h": "c66eba28e0f7661711947309c12014d2e880025c7d91ff8a7ac544d4ece60ce2",
+      "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/tile.cuh": "692446727a0353f1eb0d7249f6564d2c79ee6c9066e2c61e2ab450014fb217b7",
+      "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/type.cuh": "4c72b0892e8d003490bdab2633056172a674bc6a9689be552861564c7aaf8edc",
+      "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/utils.cuh": "18b0bb2e27dccc20d7509e8b6b6c16e2b57a5ce98be648865fb75059be8a13db",
+      "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/utils.h": "fe54010a29dd4d65110bf4afe60ff91b0f37f3b9704bb5bae4f1086347d7e32d",
+      "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/vec.cuh": "11224cc483b7fbc93e2bcb1c2092715d80f1fa645920f4c82ee0e1d45a4eb551",
+      "vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/warp.cuh": "264e64c3f386a70de938ed831f05f7a5f3c4b3ed9cfea58e1fbad433a8f860db",
+      "vllm_dsv41_indexer/third_party/ant/sources.json": "55bf3d8fe6bef42bd05dfb47452365c9e6df08cdac47a0b132110dab617859f8",
+      "vllm_dsv41_indexer/topk.py": "90ceea7412f123245db61e3856d6db10844a12b333c371e7c7ce92aa639a3961",
+      "vllm_dsv41_indexer/workspace.py": "5c5a86c2e71d3d95e4f996780a81f1045cb31fa594170d7301aa9c3fd792fbb0",
+      "benchmarks/kernels/dsv41_indexer/03_p2.sh": "e7b66c302b47033e7675daf032e7bb1c19934bb0add0a8b34c5257af113569fb",
+      "benchmarks/kernels/dsv41_indexer/03_p3_gpu0.sh": "83f2035a550eafe0a63d35b8eeff888d8231c7768368c211fe90b7bd2e552f9d",
+      "benchmarks/kernels/dsv41_indexer/04_full_verify.sh": "a5c23e1a808f84af7bfaeb88a75dd31c2944c333b5ab685891ea8ea6a1b7f4d1",
+      "benchmarks/kernels/dsv41_indexer/04_p4_gpu3.sh": "4c0e11807bc3f494c2178b47341a06bbeac74dbe03cca45e23ac26e28b1042f7",
+      "benchmarks/kernels/dsv41_indexer/05_prefill.sh": "92bbb315b35f8c1ee181fdd7d3fb1ce4fbf76289fd671a799be14f005b675253",
+      "benchmarks/kernels/dsv41_indexer/06_prefill_gluon.sh": "b6beb2be478957fa7369c3de4a25b10bbf81a1bf2843e0eabeaa4cd82b590882",
+      "benchmarks/kernels/dsv41_indexer/06_topk.sh": "bd9fa2d158433061539e3312376bc69907a79efb0299b28abe60ce92639e97d0",
+      "benchmarks/kernels/dsv41_indexer/__init__.py": "e3c55cbb0d7a8bd47df6f3378835644645f5d3bc89b45793b5d5a02d013e5c58",
+      "benchmarks/kernels/dsv41_indexer/audit_resume.py": "1d8eb47988c6b60a89563c6b37baae006adc77650b7827e67c0cbcfbd98f4a6f",
+      "benchmarks/kernels/dsv41_indexer/baseline.json": "0331b099289d70d7058bba90e7ba1f3566ebcdb10edaf117cca1e5b22839dcab",
+      "benchmarks/kernels/dsv41_indexer/benchmark.py": "44dd83646151440cba2963c91ed8947eee4e5a1510d31bdec20ba6638dc7d8ec",
+      "benchmarks/kernels/dsv41_indexer/benchmark_ant_grid.py": "ece60eec53e1772a88966236a6e7c277fffd1e630da27d08ef6d704df1baf421",
+      "benchmarks/kernels/dsv41_indexer/benchmark_final.py": "06a44677f7e8f182d2086f87f7753d6ebdd4437ec1f11fa73f27ee4e5b1c667f",
+      "benchmarks/kernels/dsv41_indexer/benchmark_full.py": "db8b6fbc594f64619cd48baa9769ce7378cc878df6242578870e7626d905071d",
+      "benchmarks/kernels/dsv41_indexer/benchmark_grouped.py": "99b97de1ff34e47a94d4fcd517b8d5152a95ebc075168e329efcf92a9ffd91ff",
+      "benchmarks/kernels/dsv41_indexer/benchmark_grouped_planning.py": "f42c1bc18f78004ed1b7fbf727f887ecb9cebe6493440e9ecbc75e3695bfc71d",
+      "benchmarks/kernels/dsv41_indexer/benchmark_prefill.py": "e77329e87052756c4036797ea1fc7274eb0f6aceb16945daf7b348cb41fd294c",
+      "benchmarks/kernels/dsv41_indexer/benchmark_prefill_ant.py": "697cd682162371babce4d7b5dc17d7326e73a2e6913f141c35c7940c7d3ad458",
+      "benchmarks/kernels/dsv41_indexer/benchmark_prefill_model.py": "f422bdd3a5593e031c16e9270f0e93fb3dd343402c4eacd13cfe087987c7ef49",
+      "benchmarks/kernels/dsv41_indexer/benchmark_prefill_perquery.py": "40f50488bfa7213ae3354340c08786e954f7403f2c8d81ebfcd4a2fa8feb96d4",
+      "benchmarks/kernels/dsv41_indexer/benchmark_topk.py": "fa776ca54a04532189f853d283fa0c9ba1af89360120f5d68293d001a18ece38",
+      "benchmarks/kernels/dsv41_indexer/benchmark_tp4.py": "2086d218dc761ac600ad5f61f43d588c3eed46d74d9fb9164b362b63cecad905",
+      "benchmarks/kernels/dsv41_indexer/benchmark_tp4_stages.py": "61f6d6ccae5f5d2c90247415cd8a32e925c963376d512ffebcd5cc563e0d7808",
+      "benchmarks/kernels/dsv41_indexer/calibrate.py": "a6e9eb94396439e2408def6d070fbf89d76179cb3c9899303590e6a56a767ff7",
+      "benchmarks/kernels/dsv41_indexer/collect_perquery_dispatch.py": "fa14c363a20f278b0137077623626e3d120017f9bac4c93db91944208b8b4abb",
+      "benchmarks/kernels/dsv41_indexer/common.py": "7c2cd4daf8c8e5d702c3aa19905db0ef05729b497b73ca76c1009d30e459895f",
+      "benchmarks/kernels/dsv41_indexer/diagnose_prefill_model.py": "c7250768f6df86ec5e9ffcf1cd33c48215060793ad93a15752b7afc9b1937b77",
+      "benchmarks/kernels/dsv41_indexer/environment.py": "6d4d608efcf755087c63720aaa643c1d5c45f3f0a818bad44bd339647db68755",
+      "benchmarks/kernels/dsv41_indexer/freeze_p3.py": "4af68c2fcc8b16ae9860c04f20b349f80eba65c0142cfbc073151e105131f621",
+      "benchmarks/kernels/dsv41_indexer/inputs.py": "9710a3078c5f7ec170374d208ac4cb96ca057af518c3620f9ba30e76c68cc56c",
+      "benchmarks/kernels/dsv41_indexer/legacy.py": "4cf328e24123db3bb9a0b6f4cc91ac7dab412ddc8523879425ea03e67ed1cc77",
+      "benchmarks/kernels/dsv41_indexer/repro_zero_prefetch.py": "de8173744de2d94bfa5835c93c560b1048dccebdb8cbb53ab28e0cebff860019",
+      "benchmarks/kernels/dsv41_indexer/summarize.py": "532729b1f94d26017230bb9b08e1ab16ee95e1d9b6c28356537aef438b53e6e2",
+      "benchmarks/kernels/dsv41_indexer/tp4_cases.py": "f033ed3dd5229ad127c559dbb7b4c539ed95a1a351bc71c4822c640ec1041ac5",
+      "benchmarks/kernels/dsv41_indexer/verify.py": "64632ffc88e62049cddd8acdc3d07dff9a480104c20aded7f9168b0202408b0f",
+      "benchmarks/kernels/dsv41_indexer/verify_compact.py": "644d6756ce8b935e49fc809b54217142ef2aa8dd31cb85183bb132c362065816",
+      "benchmarks/kernels/dsv41_indexer/verify_dispatch.py": "88ca4a3fa50f6e28e32f89804f7a9a56882eaaade08308992c416760368cedd9",
+      "benchmarks/kernels/dsv41_indexer/verify_full.py": "dfdb783f88733948526ae3b124b110c8a6deb481cb617fbc99f2eb84d000f17f",
+      "benchmarks/kernels/dsv41_indexer/verify_grouped.py": "adeadecfed359694a1346161e3d1d23acf1a844ab797693dbb53d5b6b3ad8ee5",
+      "benchmarks/kernels/dsv41_indexer/verify_module.py": "c88cffe738bb081c3e9045e590b25f5ac864503b50a5eed5a32d0c446a8b7fef",
+      "benchmarks/kernels/dsv41_indexer/verify_perquery_dispatch.py": "13a7ca03b7d41b02a79f1fc908fdabb9fdf06436d181c8afbec12d1653df76a5",
+      "benchmarks/kernels/dsv41_indexer/verify_perquery_tp4.py": "7b3f1c9ceeaf6b9ad58f792ba921b1f92e3c20adf2d44e46ac9a618e8ca9a5c1",
+      "benchmarks/kernels/dsv41_indexer/verify_prefill.py": "46b1d4b721fdc8ff88fdaf2cad0b792a3db98440fa3726775fde739bfb083691",
+      "benchmarks/kernels/dsv41_indexer/verify_prefill_ant.py": "ec7e7e59ebc1b7f42e541ec2b6b3302d68d90d0a1829ce6672d05c6e91220274",
+      "benchmarks/kernels/dsv41_indexer/verify_prefill_ant_edges.py": "3977becf3d9d70b877aaa9a935aa72892a6342aab47a496e71202ceca3eccdb2",
+      "benchmarks/kernels/dsv41_indexer/verify_prefill_model.py": "fd406778241d6d9e53f58266d1e4cab9ffc2e4812f09ebe6378f8b8c246ad0a4",
+      "benchmarks/kernels/dsv41_indexer/verify_prefill_perquery.py": "d8e9efb85e3f9c3890baf69bfacbe07b6cb90099f5733a49fa259579174858ce",
+      "benchmarks/kernels/dsv41_indexer/verify_projection_tp4.py": "14e41fcef430d5951a79608d5dfa0775ee55c9c1504b257ed88422f3dee08cc6",
+      "benchmarks/kernels/dsv41_indexer/verify_resume_modules.py": "9f7d1b74ee562994ad9179677bc8d118da967080ad52003df2fe2a4db25d79fc",
+      "benchmarks/kernels/dsv41_indexer/verify_topk.py": "a3aa6922665e064012319a55c6a80474597672b2c98fd51ec55660c0eee3b5b0",
+      "benchmarks/kernels/dsv41_indexer/verify_tp4.py": "5d65fa431b5836995470365dd6c2cf87785669967339b2555349090aebfb42c0",
+      "tune_topk.py": "244c738188180319a543ba2131a4f5591f445a2daa29c45fc5fee43b6efa5e7c"
+    },
+    "nvidia_smi": "index, uuid, driver_version, temperature.gpu, clocks.current.sm [MHz], clocks.current.memory [MHz], power.draw [W], memory.used [MiB], utilization.gpu [%]\n0, GPU-public-topk-836fa8d877229361, 550.54.15, 34, 1980 MHz, 2619 MHz, 289.47 W, 867 MiB, 62 %\n1, GPU-public-topk-739c72c3ba757f7e, 550.54.15, 27, 1980 MHz, 2619 MHz, 112.05 W, 0 MiB, 0 %\n2, GPU-public-topk-1cf25932927cef0e, 550.54.15, 60, 1980 MHz, 2619 MHz, 158.81 W, 609 MiB, 35 %\n3, GPU-public-topk-de211b22c7fbf800, 550.54.15, 27, 360 MHz, 2619 MHz, 88.70 W, 0 MiB, 0 %\n"
+  }
+}

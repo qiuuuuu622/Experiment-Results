@@ -1,0 +1,24 @@
+--- a/vllm_dsv41_indexer/third_party/ant/csrc/deepseek_v4/topk_v2.cuh
++++ b/vllm_dsv41_indexer/third_party/ant/csrc/deepseek_v4/topk_v2.cuh
+@@ -1,3 +1,6 @@
++#ifndef DSV41_EXPERIMENT_CLUSTER_SIZE
++#define DSV41_EXPERIMENT_CLUSTER_SIZE 8
++#endif
+ /**
+  * \file topk_v2.cuh
+  * \brief TopK kernel for DeepSeek v4.
+@@ -1180,12 +1183,12 @@
+ 
+       if constexpr (kNumPersistentClusters > 0) {
+         if (batch_size <= kNumPersistentClusters) {
+-          constexpr uint32_t kClusterSize = 8;
++          constexpr uint32_t kClusterSize = DSV41_EXPERIMENT_CLUSTER_SIZE;
+           return LaunchKernel({batch_size, kClusterSize}, kBlockSize, device)
+               .config({.use_pdl = kUsePDL, .cluster_dim = dim3{1, kClusterSize}})
+               .launch(topk_small_batch_cluster_kernel<kUsePDL, kMode, kClusterSize, 2>, params);
+         } else {
+-          constexpr uint32_t kClusterSize = 8;
++          constexpr uint32_t kClusterSize = DSV41_EXPERIMENT_CLUSTER_SIZE;
+           const uint32_t num_clusters = std::min(batch_size, kNumPersistentClusters);
+           LaunchKernel({num_clusters, kClusterSize}, kBlockSize, device)
+               .config({.use_pdl = kUsePDL, .cluster_dim = dim3{1, kClusterSize}})

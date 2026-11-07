@@ -98,6 +98,10 @@ P5c 的 gathered 路径是先聚集候选 K，再使用**自定义 FP8 WGMMA**�
 
 预规划和每次重新规划分别测量。部分大 batch 长行 cluster 很慢，不能统一启用。若业务明确要求确定性，不得为了速度回退到同分不确定的 selector 并声称语义不变。
 
+**补充H20大行数实验：** 当前根模块的cluster配置仍是8个block协作一行。最新[研究代码](../research/topk-h20/tune_topk.py)扩展为cluster-2/4/8及不同pool；增加direct分支对照，避免把大量行全部送入persistent循环。32行×128K/256K、64行×256K采用cluster-2有收益，128行仍保留streaming。512的direct路由常量只是强制每行一个cluster，不代表同时驻留512个cluster。
+
+研究代码还提供streaming直方图副本和warp聚合消融，均未产生可采用的新胜区；hist4编译失败。根模块未替换这些实验头文件，因为新策略尚未完成完整Indexer组合验证。[研究diff](../research/topk-h20/experimental-kernels.patch)保留全部尝试，默认调度与候选研究代码明确区分。
+
 ## P7/P8：四卡行分摊与显式选路
 
 复制模式四卡拥有完整 index heads 和逻辑 cache，独立置换物理页，计算相同 query。行分摊按请求组分配 query，尽量保持 verify 组完整，各 rank 只计算归属行，再 all-gather 逻辑 top-k 位置、恢复原行序。物理页号不跨 rank 传输。

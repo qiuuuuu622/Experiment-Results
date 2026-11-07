@@ -1,5 +1,7 @@
 # 复现与发布校验
 
+最新Top-k研究使用独立[研究目录](../research/topk-h20/REPORT.md)及各轮源码快照；最终命令见[scripts/06_final.sh](../research/topk-h20/scripts/06_final.sh)。复跑历史轮次需恢复匹配快照，不使用最终runner默认全variant列表；其中保留了显式可选、已知编译失败的hist4研究配置。正式最终脚本不选择hist4。公开数据中的GPU UUID使用一致伪名，归档tar的owner已标准化，映射见[PUBLIC_EXPORT.json](../research/topk-h20/PUBLIC_EXPORT.json)，数值样本未改变。
+
 ## 先检查公开文件
 
 在此分支根目录运行：

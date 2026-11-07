@@ -1,0 +1,12 @@
+{
+  "captured_utc": "2026-11-07T11:52:03.190050+00:00",
+  "imported_package": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/__init__.py",
+  "package_binary_inventory": [
+    {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/third_party/deep_gemm/_C_extension.abi3.so",
+      "bytes": 36595112,
+      "sha256": "0042598bc0770e70bc4ea4b9c3d27d8efc8e395d6f766d41e939c746c2bd3046"
+    }
+  ],
+  "note": "Post-run imported-package inventory; not a before-run identity check"
+}

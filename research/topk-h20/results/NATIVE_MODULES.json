@@ -1,0 +1,15 @@
+{
+  "captured_utc": "2026-11-07T11:51:08.298907+00:00",
+  "modules": {
+    "vllm._C_stable_libtorch": {
+      "path": "/usr/local/lib/python3.12/dist-packages/vllm/_C_stable_libtorch.abi3.so",
+      "sha256": "ae9c8a293020e422e0b6b61d1024263dc476a772337f5d39d46d18baa7ce0ad9",
+      "bytes": 78786064
+    }
+  },
+  "import_errors": {
+    "vllm._C": "No module named 'vllm._C'",
+    "deep_gemm": "No module named 'deep_gemm'"
+  },
+  "note": "Post-run identity capture, not before-run attestation"
+}

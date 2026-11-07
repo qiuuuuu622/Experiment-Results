@@ -55,5 +55,28 @@
     "No full model, serving, model accuracy, TTFT or TPOT verification",
     "Historical FP32 strict failures and numerical explanations preserved",
     "Source repository and existing main-thread checkout left unchanged"
-  ]
+  ],
+  "topk_publication_update": {
+    "status": "passed",
+    "created_utc": "2026-11-07T12:03:57.046903+00:00",
+    "base_commit": "93a4e8247ef6c30ef54e7ae89ec6de3a7ab9e57a",
+    "kind": "Publication validation; no new GPU runs",
+    "checks": {
+      "public_export_mappings": 254,
+      "final_source_files": 99,
+      "frozen_runner_identities": 48,
+      "raw_sample_summaries": "recomputed exactly in temporary copy",
+      "prior_source_files_unchanged": 98,
+      "prior_experiments_unchanged": true,
+      "cpu_tests": "38 passed in 0.06s",
+      "current_document_links": 123,
+      "publication_scan": "RELEASE_SCAN.json",
+      "research_python_ast": "passed"
+    },
+    "limits": [
+      "Four independent GPU comparisons, not TP4 latency",
+      "Selector only; root dispatch unchanged",
+      "Historical failures retained"
+    ]
+  }
 }

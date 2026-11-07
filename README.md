@@ -8,6 +8,7 @@ H20 上 DeepSeek V4.1 Flash **FP8 index cache 函数／模块级优化**的代�
 
 |内容|入口|
 |---|---|
+|最新：四卡 Top-k 大行数调优|[完整报告与数据](research/topk-h20/REPORT.md)、[研究代码](research/topk-h20/tune_topk.py)、[CUDA 改动](research/topk-h20/experimental-kernels.patch)|
 |优化前后机制、source＋4 consumer 链路|[机制详解](docs/MECHANISMS.md)|
 |性能对照、正反序、收益和负结果|[性能汇总](docs/PERFORMANCE.md)|
 |核心源码与对应实验|[代码地图](docs/CODE_MAP.md)、[完整模块](vllm_dsv41_indexer/)|
@@ -17,7 +18,20 @@ H20 上 DeepSeek V4.1 Flash **FP8 index cache 函数／模块级优化**的代�
 |复现、环境、验证范围|[复现说明](docs/REPRODUCE.md)、[限制与验收](docs/STATUS_AND_LIMITS.md)|
 |逐文件版本与完整性|[源码来源](SOURCE_PROVENANCE.json)、[发布校验清单](SHA256SUMS.json)|
 
-## 主要结果
+## 最新 Top-k 调优（2026-11-07）
+
+h20-dsk 四卡分别执行独立同卡 A/B，完成 cluster-8/4/2、persistent/direct 调度和直方图消融。下面是最终三轮正反序的 **selector-only Graph P50**，输入由随机 FP8 Q/K 经实际 Indexer 打分生成；不是完整模型采样，也不是 TP4 延迟。
+
+|形状，top-512|原有最佳稳定路径 μs|新结果 μs|结论|
+|---|---:|---:|---|
+|32×128K|21.446|16.502|cluster-2，约1.30×|
+|32×256K|37.902|25.336|cluster-2，约1.50×|
+|64×256K|61.958|47.859|cluster-2，约1.29×|
+|128×256K|84.456|hist2为84.256|无稳定>5%收益，保留streaming|
+
+8行仍优先cluster-8；64×128K仍保留streaming。690项配置检查、2760个执行阶段通过，49590个GPU原始样本及同数量wall样本已保存。新代码在 [`research/topk-h20/`](research/topk-h20/)，包含可配置cluster宽度/工作池及负结果实现；根目录已验证模块和默认dispatch保持原行为，尚未验证新selector在完整Indexer链中的净收益。详细统计、失败记录与来源边界见[报告](research/topk-h20/REPORT.md)。
+
+## 已有模块结果
 
 以下为不同实验的代表性 **CUDA Graph 模块耗时**，单位 μs；统计口径和完整证据见性能页。不同 workload 的倍数不能相乘。
 
@@ -40,6 +54,6 @@ H20 上 DeepSeek V4.1 Flash **FP8 index cache 函数／模块级优化**的代�
 /path/to/.venv/bin/python scripts/verify_release.py
 ```
 
-该命令校验发布文件、98 份可浏览源码与历史公开映射，不执行 GPU 实验。[发布验证记录](RELEASE_VALIDATION.json)单独说明本次实际运行的检查。原有 748 个公开归档文件整体放入 `experiments/`，内容字节保持不变；该目录的历史报告仍保留当时状态，最新结论以本页和当前方案书为准。
+该命令校验全部发布文件、98份原模块源码、最新Top-k研究的公开映射与研究源码，以及历史归档，不执行GPU实验。[发布验证记录](RELEASE_VALIDATION.json)说明本次实际检查。原有748个公开归档文件位于`experiments/`，内容字节保持不变；新Top-k实验单独位于`research/topk-h20/`，避免把不同版本的证据混用。历史报告保留当时状态，最新结论以本页和当前方案书为准。
 
 新增浏览目录保留 SPDX 和上游归属，见 [LICENSE](LICENSE)、[原模块 NOTICE](vllm_dsv41_indexer/NOTICE.md)、[补充来源说明](docs/ATTRIBUTION.md)及[实验许可证](experiments/licenses/)。不包含模型权重、认证材料或本轮未验证的服务接入草稿。

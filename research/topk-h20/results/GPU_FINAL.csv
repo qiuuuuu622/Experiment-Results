@@ -1,0 +1,5 @@
+index, uuid, memory.used [MiB], utilization.gpu [%]
+0, GPU-public-topk-836fa8d877229361, 0 MiB, 0 %
+1, GPU-public-topk-739c72c3ba757f7e, 0 MiB, 0 %
+2, GPU-public-topk-1cf25932927cef0e, 0 MiB, 0 %
+3, GPU-public-topk-de211b22c7fbf800, 0 MiB, 0 %

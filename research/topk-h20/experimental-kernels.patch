@@ -1,0 +1,93 @@
+diff --git a/vllm_dsv41_indexer/third_party/ant/csrc/deepseek_v4/topk_v2.cuh b/vllm_dsv41_indexer/third_party/ant/csrc/deepseek_v4/topk_v2.cuh
+--- a/vllm_dsv41_indexer/third_party/ant/csrc/deepseek_v4/topk_v2.cuh
++++ b/vllm_dsv41_indexer/third_party/ant/csrc/deepseek_v4/topk_v2.cuh
+@@ -1,3 +1,6 @@
++#ifndef DSV41_EXPERIMENT_CLUSTER_SIZE
++#define DSV41_EXPERIMENT_CLUSTER_SIZE 8
++#endif
+ /**
+  * \file topk_v2.cuh
+  * \brief TopK kernel for DeepSeek v4.
+@@ -1180,12 +1183,12 @@
+ 
+       if constexpr (kNumPersistentClusters > 0) {
+         if (batch_size <= kNumPersistentClusters) {
+-          constexpr uint32_t kClusterSize = 8;
++          constexpr uint32_t kClusterSize = DSV41_EXPERIMENT_CLUSTER_SIZE;
+           return LaunchKernel({batch_size, kClusterSize}, kBlockSize, device)
+               .config({.use_pdl = kUsePDL, .cluster_dim = dim3{1, kClusterSize}})
+               .launch(topk_small_batch_cluster_kernel<kUsePDL, kMode, kClusterSize, 2>, params);
+         } else {
+-          constexpr uint32_t kClusterSize = 8;
++          constexpr uint32_t kClusterSize = DSV41_EXPERIMENT_CLUSTER_SIZE;
+           const uint32_t num_clusters = std::min(batch_size, kNumPersistentClusters);
+           LaunchKernel({num_clusters, kClusterSize}, kBlockSize, device)
+               .config({.use_pdl = kUsePDL, .cluster_dim = dim3{1, kClusterSize}})
+diff --git a/vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/deepseek_v4/topk_impl.cuh b/vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/deepseek_v4/topk_impl.cuh
+--- a/vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/deepseek_v4/topk_impl.cuh
++++ b/vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/deepseek_v4/topk_impl.cuh
+@@ -1,3 +1,9 @@
++#ifndef DSV41_STREAM_HIST_GROUPS
++#define DSV41_STREAM_HIST_GROUPS 1
++#endif
++#ifndef DSV41_STREAM_WARP_AGG
++#define DSV41_STREAM_WARP_AGG 0
++#endif
+ /// \file topk_impl.cuh
+ /// \brief DeepSeek-V4 (DSA indexer) top-k implementation classes.
+ ///
+@@ -846,6 +852,11 @@
+ 
+ struct TopKStreaming : TopKRadixBase<12> {
+  public:
++#if DSV41_STREAM_HIST_GROUPS > 1
++  struct Smem : TopKRadixBase<12>::Smem {
++    uint32_t replica_hist[(DSV41_STREAM_HIST_GROUPS - 1) * kHistSize];
++  };
++#endif
+   static constexpr uint32_t kMaxSeqLen = std::numeric_limits<uint32_t>::max();
+ 
+   template <bool kUsePDL>
+@@ -854,6 +865,10 @@
+     const auto smem = static_cast<Smem*>(_smem);
+ 
+     init_histogram(smem->histogram, tx);
++#if DSV41_STREAM_HIST_GROUPS > 1
++    for (uint32_t i = tx; i < (DSV41_STREAM_HIST_GROUPS - 1) * kHistSize; i += kBlockSize)
++      smem->replica_hist[i] = 0;
++#endif
+     if (tx == 0) {
+       smem->count_eq = 0;
+       smem->count_gt = 0;
+@@ -864,8 +879,30 @@
+     // Phase 1: Load and build histogram
+     for_each_input(problem.in, problem.seq_len, [&](float val, uint32_t) {
+       const auto bin = extract_coarse_bin<kHistBits>(val);
+-      atomicAdd(&smem->histogram[bin], 1);
++      uint32_t* histogram = smem->histogram;
++#if DSV41_STREAM_HIST_GROUPS > 1
++      const uint32_t group = (tx / 32) % DSV41_STREAM_HIST_GROUPS;
++      if (group > 0) histogram = smem->replica_hist + (group - 1) * kHistSize;
++#endif
++#if DSV41_STREAM_WARP_AGG
++      const uint32_t peers = __match_any_sync(__activemask(), bin);
++      if ((tx & 31) == static_cast<uint32_t>(__ffs(peers) - 1))
++        atomicAdd(&histogram[bin], __popc(peers));
++#else
++      atomicAdd(&histogram[bin], 1);
++#endif
+     });
++#if DSV41_STREAM_HIST_GROUPS > 1
++    __syncthreads();
++    for (uint32_t bin = tx; bin < kHistSize; bin += kBlockSize) {
++      uint32_t count = smem->histogram[bin];
++#pragma unroll
++      for (uint32_t group = 1; group < DSV41_STREAM_HIST_GROUPS; ++group)
++        count += smem->replica_hist[(group - 1) * kHistSize + bin];
++      smem->histogram[bin] = count;
++    }
++    __syncthreads();
++#endif
+     const auto num_padding = problem.input_start;
+     if (tx == 0 && num_padding != 0) {
+       atomicSub(&smem->histogram[extract_coarse_bin<kHistBits>(padding_value())], num_padding);

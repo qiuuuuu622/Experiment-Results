@@ -37,6 +37,7 @@ def main():
         if sha256(ROOT / item["path"]) != item["sha256"]:
             raise RuntimeError(f"Source snapshot mismatch: {item['path']}")
     subprocess.run([sys.executable, str(ROOT / "experiments/verify_repository.py")], check=True)
+    subprocess.run([sys.executable, str(ROOT / "scripts/verify_topk_publication.py")], check=True)
     print(f"Verified {len(expected)} release files and {len(provenance['files'])} source files")
 
 

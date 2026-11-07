@@ -1,5 +1,14 @@
 # 核心代码与证据地图
 
+**最新Top-k实验代码在独立目录 [`research/topk-h20/`](../research/topk-h20/)**：
+
+- [tune_topk.py](../research/topk-h20/tune_topk.py)：cluster宽度/pool、direct调度、直方图消融的JIT包装、同输入A/B、动态验证。
+- [CUDA修改diff](../research/topk-h20/experimental-kernels.patch)：相对本分支93a4e82原Ant头文件的两文件变更。
+- [修改后的topk_v2.cuh](../research/topk-h20/vllm_dsv41_indexer/third_party/ant/csrc/deepseek_v4/topk_v2.cuh)、[topk_impl.cuh](../research/topk-h20/vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/deepseek_v4/topk_impl.cuh)：包含正负结果实现。
+- [最终执行脚本](../research/topk-h20/scripts/06_final.sh)、[CPU汇总/审计](../research/topk-h20/collect_results.py)、[冻结源码](../research/topk-h20/snapshots/)。
+
+根目录模块继续对应已有P0–P8验收版本；本次发布不把selector实验伪装成已接入默认dispatch的完整模块优化。
+
 根目录导出 98 个模块、benchmark、测试及依赖文件，字节未改写。相对 `29be941d`，其中 64 个新增、7 个修改、27 个未修改依赖；[来源清单](../SOURCE_PROVENANCE.json)逐项列出。可直接阅读源码，不必先解压历史 tar 包。
 
 |机制|源码入口|实验／验证入口|

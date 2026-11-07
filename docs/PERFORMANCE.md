@@ -83,6 +83,25 @@ P5c 的 [逐query compact 完整报告](../experiments/2026-11-07/p5c-perquery/R
 
 ## Top-k：收益与代价同时保留
 
+**2026-11-07补充：大行数不能只在原cluster-8和streaming之间选择。** 新增cluster-2在部分形状有收益；下面是[最新四卡独立实验](../research/topk-h20/REPORT.md)，与后面的旧P6数据分开保存。最终输入采用实际FP8 Indexer生成的logits，三次独立进程、每次正反序；表为全部保留Graph样本P50（μs）。
+
+|行×规划宽度，k512|原生|原有最佳稳定selector|新配置|建议|
+|---|---:|---:|---:|---|
+|8×128K|20.184|cluster-8：11.418|cluster-2：16.106|保留cluster-8|
+|8×256K|26.739|cluster-8：15.990|cluster-2：23.731|保留cluster-8|
+|32×128K|38.923|streaming：21.446|cluster-2：16.502|约1.30×|
+|32×256K|68.186|streaming：37.902|cluster-2：25.336|约1.50×|
+|64×128K|50.106|streaming：21.504|cluster-2：24.826|保留streaming|
+|64×256K|82.781|streaming：61.958|cluster-2：47.859|约1.29×|
+|128×128K|54.826|streaming：44.477|hist2：44.779|保留streaming|
+|128×256K|79.963|streaming：84.456|hist2：84.256|差异不足5%，保留streaming|
+
+32×256K筛选期约24μs不能替代最终三轮合并的25.336μs。每个形状三轮输入hash一致；完整[P90/CV/wall和轮次范围](../research/topk-h20/results/FINAL_SUMMARY.json)、[原始样本](../research/topk-h20/results/final-v1/)保留。690项配置检查、2760执行阶段通过；1620条测量记录、1653轮、49590个GPU样本。
+
+新cluster-2通过调整cluster宽度及路由减少协作/排队；这两个因素需要分开理解。128×256K直接cluster-2约94μs，仍不胜streaming。hist2基本持平，warp聚合明显变慢，hist4静态shared memory超限编译失败。详见[代码diff](../research/topk-h20/experimental-kernels.patch)。这些都是selector-only数据，未证明完整Indexer或TP4通信下的净收益，未写入根模块默认dispatch。
+
+### 历史 P6 / P8 对照
+
 [P6 selector 研究](../experiments/2026-11-06/h20-fp8-indexer-checkpoint/p6/REPORT.md)保留 29 形状、360 固定 logits 和 6 ragged 检查；[P8 最终 raw](../experiments/2026-11-07/p8-final-dispatch/final-p2-p6/)重新绑定最终版本。代表最终 Graph 正反数据：
 
 |行×宽度，k512|原生|稳定 cluster，含每次 plan|结论|

@@ -1,0 +1,135 @@
+Traceback (most recent call last):
+  File "/root/dsv41-topk-h20-tuning-20261107/tune_topk.py", line 238, in <module>
+    if __name__=="__main__":main()
+                            ^^^^^^
+  File "/root/dsv41-topk-h20-tuning-20261107/tune_topk.py", line 225, in main
+    start=time.perf_counter();size,pool,_=VARIANTS[name];load_variant(size,pool)
+                                                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/dsv41-topk-h20-tuning-20261107/tune_topk.py", line 67, in load_variant
+    result = load_inline("dsv41_tune_" + digest.hexdigest()[:16], cuda_sources=source,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/tvm_ffi/cpp/extension.py", line 1123, in load_inline
+    build_inline(
+  File "/usr/local/lib/python3.12/dist-packages/tvm_ffi/cpp/extension.py", line 965, in build_inline
+    return _build_impl(
+           ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/tvm_ffi/cpp/extension.py", line 729, in _build_impl
+    build_ninja(str(build_dir))
+  File "/usr/local/lib/python3.12/dist-packages/tvm_ffi/cpp/extension.py", line 601, in build_ninja
+    raise RuntimeError("\n".join(msg))
+RuntimeError: ninja exited with status 2
+stdout:
+[1/2] /usr/local/cuda/bin/nvcc  --generate-dependencies-with-compile --dependency-output cuda_0.o.d -Xcompiler -fPIC -std=c++17 -O2 -gencode=arch=compute_90,code=sm_90 -std=c++20 -O3 --expt-relaxed-constexpr -gencode=arch=compute_90a,code=sm_90a -DSGL_CUDA_ARCH=900 -DSGL_TOPK_DET_TIES=1 -DSGL_TOPK_V2_MAX_C8_OCC2=0 -DSGL_TOPK_V2_MAX_C16_OCC1=0 -DDSV41_EXPERIMENT_CLUSTER_SIZE=8 -I/usr/local/lib/python3.12/dist-packages/tvm_ffi/include -I/usr/local/lib/python3.12/dist-packages/tvm_ffi/include -I/root/dsv41-topk-h20-tuning-20261107/vllm_dsv41_indexer/third_party/ant/csrc -I/root/dsv41-topk-h20-tuning-20261107/vllm_dsv41_indexer/third_party/ant/include -c /root/.cache/tvm-ffi/dsv41_tune_06c467d052a47937_197d1f7ff976f10c/cuda.cu -o cuda_0.o
+FAILED: [code=2] cuda_0.o 
+/usr/local/cuda/bin/nvcc  --generate-dependencies-with-compile --dependency-output cuda_0.o.d -Xcompiler -fPIC -std=c++17 -O2 -gencode=arch=compute_90,code=sm_90 -std=c++20 -O3 --expt-relaxed-constexpr -gencode=arch=compute_90a,code=sm_90a -DSGL_CUDA_ARCH=900 -DSGL_TOPK_DET_TIES=1 -DSGL_TOPK_V2_MAX_C8_OCC2=0 -DSGL_TOPK_V2_MAX_C16_OCC1=0 -DDSV41_EXPERIMENT_CLUSTER_SIZE=8 -I/usr/local/lib/python3.12/dist-packages/tvm_ffi/include -I/usr/local/lib/python3.12/dist-packages/tvm_ffi/include -I/root/dsv41-topk-h20-tuning-20261107/vllm_dsv41_indexer/third_party/ant/csrc -I/root/dsv41-topk-h20-tuning-20261107/vllm_dsv41_indexer/third_party/ant/include -c /root/.cache/tvm-ffi/dsv41_tune_06c467d052a47937_197d1f7ff976f10c/cuda.cu -o cuda_0.o
+nvcc warning : incompatible redefinition for option 'std', the last value of this option was used
+nvcc warning : incompatible redefinition for option 'optimize', the last value of this option was used
+/root/.cache/tvm-ffi/dsv41_tune_06c467d052a47937_197d1f7ff976f10c/cuda.cu(7): error: expected a declaration
+  +#include <tvm/ffi/function.h>
+  ^
+
+/root/.cache/tvm-ffi/dsv41_tune_06c467d052a47937_197d1f7ff976f10c/cuda.cu(7): error: "#" not expected here
+  +#include <tvm/ffi/function.h>
+   ^
+
+/usr/local/cuda/bin/../targets/x86_64-linux/include/cuda.h(62): warning #12-D: parsing restarts here after previous syntax error
+  typedef uint32_t cuuint32_t;
+                             ^
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/usr/local/cuda/bin/../targets/x86_64-linux/include/cuda.h(549): error: identifier "cuuint32_t" is undefined
+              cuuint32_t value;
+              ^
+
+/usr/local/cuda/bin/../targets/x86_64-linux/include/cuda.h(559): error: identifier "cuuint32_t" is undefined
+              cuuint32_t value;
+              ^
+
+/usr/local/cuda/bin/../targets/x86_64-linux/include/cuda.h(12625): error: identifier "cuuint32_t" is undefined
+      cuuint32_t *dstActBytes;
+      ^
+
+/usr/local/cuda/bin/../targets/x86_64-linux/include/cuda.h(16936): error: identifier "cuuint32_t" is undefined
+  CUresult cuStreamWaitValue32_v2(CUstream stream, CUdeviceptr addr, cuuint32_t value, unsigned int flags);
+                                                                     ^
+
+/usr/local/cuda/bin/../targets/x86_64-linux/include/cuda.h(17008): error: identifier "cuuint32_t" is undefined
+  CUresult cuStreamWriteValue32_v2(CUstream stream, CUdeviceptr addr, cuuint32_t value, unsigned int flags);
+                                                                      ^
+
+/usr/local/cuda/bin/../targets/x86_64-linux/include/cuda.h(23403): error: identifier "cuuint32_t" is undefined
+  CUresult cuTensorMapEncodeTiled(CUtensorMap *tensorMap, CUtensorMapDataType tensorDataType, cuuint32_t tensorRank, void *globalAddress, const cuuint64_t *globalDim, const cuuint64_t *globalStrides, const cuuint32_t *boxDim, const cuuint32_t *elementStrides, CUtensorMapInterleave interleave, CUtensorMapSwizzle swizzle, CUtensorMapL2promotion l2Promotion, CUtensorMapFloatOOBfill oobFill);
+                                                                                              ^
+
+/usr/local/cuda/bin/../targets/x86_64-linux/include/cuda.h(23403): error: identifier "cuuint32_t" is undefined
+  CUresult cuTensorMapEncodeTiled(CUtensorMap *tensorMap, CUtensorMapDataType tensorDataType, cuuint32_t tensorRank, void *globalAddress, const cuuint64_t *globalDim, const cuuint64_t *globalStrides, const cuuint32_t *boxDim, const cuuint32_t *elementStrides, CUtensorMapInterleave interleave, CUtensorMapSwizzle swizzle, CUtensorMapL2promotion l2Promotion, CUtensorMapFloatOOBfill oobFill);
+                                                                                                                                                                                                              ^
+
+/usr/local/cuda/bin/../targets/x86_64-linux/include/cuda.h(23403): error: identifier "cuuint32_t" is undefined
+  CUresult cuTensorMapEncodeTiled(CUtensorMap *tensorMap, CUtensorMapDataType tensorDataType, cuuint32_t tensorRank, void *globalAddress, const cuuint64_t *globalDim, const cuuint64_t *globalStrides, const cuuint32_t *boxDim, const cuuint32_t *elementStrides, CUtensorMapInterleave interleave, CUtensorMapSwizzle swizzle, CUtensorMapL2promotion l2Promotion, CUtensorMapFloatOOBfill oobFill);
+                                                                                                                                                                                                                                        ^
+
+/usr/local/cuda/bin/../targets/x86_64-linux/include/cuda.h(23588): error: identifier "cuuint32_t" is undefined
+  CUresult cuTensorMapEncodeIm2col(CUtensorMap *tensorMap, CUtensorMapDataType tensorDataType, cuuint32_t tensorRank, void *globalAddress, const cuuint64_t *globalDim, const cuuint64_t *globalStrides, const int *pixelBoxLowerCorner, const int *pixelBoxUpperCorner, cuuint32_t channelsPerPixel, cuuint32_t pixelsPerColumn, const cuuint32_t *elementStrides, CUtensorMapInterleave interleave, CUtensorMapSwizzle swizzle, CUtensorMapL2promotion l2Promotion, CUtensorMapFloatOOBfill oobFill);
+                                                                                               ^
+
+/usr/local/cuda/bin/../targets/x86_64-linux/include/cuda.h(23588): error: identifier "cuuint32_t" is undefined
+  CUresult cuTensorMapEncodeIm2col(CUtensorMap *tensorMap, CUtensorMapDataType tensorDataType, cuuint32_t tensorRank, void *globalAddress, const cuuint64_t *globalDim, const cuuint64_t *globalStrides, const int *pixelBoxLowerCorner, const int *pixelBoxUpperCorner, cuuint32_t channelsPerPixel, cuuint32_t pixelsPerColumn, const cuuint32_t *elementStrides, CUtensorMapInterleave interleave, CUtensorMapSwizzle swizzle, CUtensorMapL2promotion l2Promotion, CUtensorMapFloatOOBfill oobFill);
+                                                                                                                                                                                                                                                                         ^
+
+/usr/local/cuda/bin/../targets/x86_64-linux/include/cuda.h(23588): error: identifier "cuuint32_t" is undefined
+  CUresult cuTensorMapEncodeIm2col(CUtensorMap *tensorMap, CUtensorMapDataType tensorDataType, cuuint32_t tensorRank, void *globalAddress, const cuuint64_t *globalDim, const cuuint64_t *globalStrides, const int *pixelBoxLowerCorner, const int *pixelBoxUpperCorner, cuuint32_t channelsPerPixel, cuuint32_t pixelsPerColumn, const cuuint32_t *elementStrides, CUtensorMapInterleave interleave, CUtensorMapSwizzle swizzle, CUtensorMapL2promotion l2Promotion, CUtensorMapFloatOOBfill oobFill);
+                                                                                                                                                                                                                                                                                                      ^
+
+/usr/local/cuda/bin/../targets/x86_64-linux/include/cuda.h(23588): error: identifier "cuuint32_t" is undefined
+  CUresult cuTensorMapEncodeIm2col(CUtensorMap *tensorMap, CUtensorMapDataType tensorDataType, cuuint32_t tensorRank, void *globalAddress, const cuuint64_t *globalDim, const cuuint64_t *globalStrides, const int *pixelBoxLowerCorner, const int *pixelBoxUpperCorner, cuuint32_t channelsPerPixel, cuuint32_t pixelsPerColumn, const cuuint32_t *elementStrides, CUtensorMapInterleave interleave, CUtensorMapSwizzle swizzle, CUtensorMapL2promotion l2Promotion, CUtensorMapFloatOOBfill oobFill);
+                                                                                                                                                                                                                                                                                                                                        ^
+
+/usr/local/cuda/bin/../targets/x86_64-linux/include/cuda.h(23772): error: identifier "cuuint32_t" is undefined
+  CUresult cuTensorMapEncodeIm2colWide(CUtensorMap *tensorMap, CUtensorMapDataType tensorDataType, cuuint32_t tensorRank, void *globalAddress, const cuuint64_t *globalDim, const cuuint64_t *globalStrides, int pixelBoxLowerCornerWidth, int pixelBoxUpperCornerWidth, cuuint32_t channelsPerPixel, cuuint32_t pixelsPerColumn, const cuuint32_t *elementStrides, CUtensorMapInterleave interleave, CUtensorMapIm2ColWideMode mode, CUtensorMapSwizzle swizzle, CUtensorMapL2promotion l2Promotion, CUtensorMapFloatOOBfill oobFill);
+                                                                                                   ^
+
+/usr/local/cuda/bin/../targets/x86_64-linux/include/cuda.h(23772): error: identifier "cuuint32_t" is undefined
+  CUresult cuTensorMapEncodeIm2colWide(CUtensorMap *tensorMap, CUtensorMapDataType tensorDataType, cuuint32_t tensorRank, void *globalAddress, const cuuint64_t *globalDim, const cuuint64_t *globalStrides, int pixelBoxLowerCornerWidth, int pixelBoxUpperCornerWidth, cuuint32_t channelsPerPixel, cuuint32_t pixelsPerColumn, const cuuint32_t *elementStrides, CUtensorMapInterleave interleave, CUtensorMapIm2ColWideMode mode, CUtensorMapSwizzle swizzle, CUtensorMapL2promotion l2Promotion, CUtensorMapFloatOOBfill oobFill);
+                                                                                                                                                                                                                                                                         ^
+
+/usr/local/cuda/bin/../targets/x86_64-linux/include/cuda.h(23772): error: identifier "cuuint32_t" is undefined
+  CUresult cuTensorMapEncodeIm2colWide(CUtensorMap *tensorMap, CUtensorMapDataType tensorDataType, cuuint32_t tensorRank, void *globalAddress, const cuuint64_t *globalDim, const cuuint64_t *globalStrides, int pixelBoxLowerCornerWidth, int pixelBoxUpperCornerWidth, cuuint32_t channelsPerPixel, cuuint32_t pixelsPerColumn, const cuuint32_t *elementStrides, CUtensorMapInterleave interleave, CUtensorMapIm2ColWideMode mode, CUtensorMapSwizzle swizzle, CUtensorMapL2promotion l2Promotion, CUtensorMapFloatOOBfill oobFill);
+                                                                                                                                                                                                                                                                                                      ^
+
+/usr/local/cuda/bin/../targets/x86_64-linux/include/cuda.h(23772): error: identifier "cuuint32_t" is undefined
+  CUresult cuTensorMapEncodeIm2colWide(CUtensorMap *tensorMap, CUtensorMapDataType tensorDataType, cuuint32_t tensorRank, void *globalAddress, const cuuint64_t *globalDim, const cuuint64_t *globalStrides, int pixelBoxLowerCornerWidth, int pixelBoxUpperCornerWidth, cuuint32_t channelsPerPixel, cuuint32_t pixelsPerColumn, const cuuint32_t *elementStrides, CUtensorMapInterleave interleave, CUtensorMapIm2ColWideMode mode, CUtensorMapSwizzle swizzle, CUtensorMapL2promotion l2Promotion, CUtensorMapFloatOOBfill oobFill);
+                                                                                                                                                                                                                                                                                                                                        ^
+
+/root/dsv41-topk-h20-tuning-20261107/vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/utils.cuh(165): error: namespace "sglang::host" has no member "is_pow2"
+    static_assert(kNumThreads <= 32 && host::is_pow2(kNumThreads));
+                                             ^
+
+/root/dsv41-topk-h20-tuning-20261107/vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/tensor.h(535): error: identifier "is_pow2" is undefined
+      RuntimeCheck(is_pow2<uint64_t>(alignment), "Alignment must be a power of 2");
+                   ^
+
+/root/dsv41-topk-h20-tuning-20261107/vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/warp.cuh(75): error: namespace "sglang::host" has no member "is_pow2"
+    static_assert(host::is_pow2(kStart) && host::is_pow2(kFinish));
+                        ^
+
+/root/dsv41-topk-h20-tuning-20261107/vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/warp.cuh(75): error: namespace "sglang::host" has no member "is_pow2"
+    static_assert(host::is_pow2(kStart) && host::is_pow2(kFinish));
+                                                 ^
+
+/root/dsv41-topk-h20-tuning-20261107/vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/warp.cuh(181): error: namespace "sglang::host" has no member "is_pow2"
+    static_assert(host::is_pow2(kStart) && host::is_pow2(kFinish));
+                        ^
+
+/root/dsv41-topk-h20-tuning-20261107/vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/warp.cuh(181): error: namespace "sglang::host" has no member "is_pow2"
+    static_assert(host::is_pow2(kStart) && host::is_pow2(kFinish));
+                                                 ^
+
+/root/dsv41-topk-h20-tuning-20261107/vllm_dsv41_indexer/third_party/ant/include/sgl_kernel/warp.cuh(222): error: namespace "sglang::host" has no member "is_pow2"
+    static_assert(host::is_pow2(kWidth) && kWidth <= kFullWidth);
+                        ^
+
+25 errors detected in the compilation of "/root/.cache/tvm-ffi/dsv41_tune_06c467d052a47937_197d1f7ff976f10c/cuda.cu".
+ninja: build stopped: subcommand failed.
+

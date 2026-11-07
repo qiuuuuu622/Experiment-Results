@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "scope": "All published working-tree files, including recursively inspected tar members; no extraction",
+  "scope": "All published working-tree files including recursively inspected tar members",
   "patterns": [
     "private_key",
     "github_token",
@@ -10,11 +10,11 @@
     "url_credentials"
   ],
   "counts": {
-    "files": 859,
-    "archive_members": 9126,
-    "archives": 55,
-    "bytes_scanned": 502046675
+    "files": 1120,
+    "archive_members": 9674,
+    "archives": 60,
+    "bytes_scanned": 515725146
   },
   "findings": [],
-  "note": "Pattern scan is evidence of the checks performed, not a guarantee that arbitrary secret formats are detectable."
+  "note": "Pattern checks are not a guarantee that arbitrary secret formats are detectable."
 }
